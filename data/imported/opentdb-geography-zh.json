@@ -1,0 +1,137 @@
+[
+  {
+    "level": "旅行新手",
+    "region": "世界地理",
+    "q": "世界上面積最大的國家是？",
+    "options": ["俄羅斯", "加拿大", "中國", "美國"],
+    "answer": 0,
+    "fact": "俄羅斯橫跨歐亞兩洲，是世界面積最大的國家。",
+    "source": "OpenTDB #geography"
+  },
+  {
+    "level": "旅行新手",
+    "region": "世界地理",
+    "q": "日本的首都是？",
+    "options": ["東京", "京都", "大阪", "札幌"],
+    "answer": 0,
+    "fact": "東京是日本首都，也是重要的國際航空門戶。",
+    "source": "OpenTDB #geography"
+  },
+  {
+    "level": "旅行新手",
+    "region": "世界地理",
+    "q": "義大利的首都是？",
+    "options": ["羅馬", "米蘭", "威尼斯", "佛羅倫斯"],
+    "answer": 0,
+    "fact": "羅馬是義大利首都，古蹟與梵蒂岡都在此。",
+    "source": "OpenTDB #geography"
+  },
+  {
+    "level": "城市旅人",
+    "region": "歐洲",
+    "q": "西班牙的首都是？",
+    "options": ["馬德里", "巴塞隆納", "塞維亞", "瓦倫西亞"],
+    "answer": 0,
+    "fact": "馬德里是西班牙首都，普拉多博物館等景點聞名。",
+    "source": "OpenTDB #geography"
+  },
+  {
+    "level": "城市旅人",
+    "region": "歐洲",
+    "q": "德國的首都是？",
+    "options": ["柏林", "慕尼黑", "漢堡", "法蘭克福"],
+    "answer": 0,
+    "fact": "柏林是德國首都，布蘭登堡門是著名地標。",
+    "source": "OpenTDB #geography"
+  },
+  {
+    "level": "城市旅人",
+    "region": "非洲",
+    "q": "奈及利亞的首都是？",
+    "options": ["阿布賈", "拉哥斯", "開羅", "奈洛比"],
+    "answer": 0,
+    "fact": "阿布賈是奈及利亞首都，拉哥斯則是最大城市。",
+    "source": "OpenTDB #geography"
+  },
+  {
+    "level": "國家達人",
+    "region": "世界地理",
+    "q": "喜馬拉雅山脈主要位於哪一洲？",
+    "options": ["亞洲", "歐洲", "非洲", "南美洲"],
+    "answer": 0,
+    "fact": "喜馬拉雅山脈橫跨南亞與中亞多國，最高峰為珠穆朗瑪峰。",
+    "source": "OpenTDB #geography"
+  },
+  {
+    "level": "國家達人",
+    "region": "世界地理",
+    "q": "尼羅河主要流經哪一洲？",
+    "options": ["非洲", "亞洲", "歐洲", "南美洲"],
+    "answer": 0,
+    "fact": "尼羅河被視為世界最長河流之一，流經東北非洲多國。",
+    "source": "OpenTDB #geography"
+  },
+  {
+    "level": "國家達人",
+    "region": "南美洲",
+    "q": "亞馬遜雨林主要位於哪一國？",
+    "options": ["巴西", "阿根廷", "智利", "哥倫比亞"],
+    "answer": 0,
+    "fact": "亞馬遜雨林橫跨多國，但最大部分位於巴西境內。",
+    "source": "OpenTDB #geography"
+  },
+  {
+    "level": "洲際領隊",
+    "region": "世界地理",
+    "q": "地中海與大西洋之間的海峽是？",
+    "options": ["直布羅陀海峽", "英吉利海峽", "馬六甲海峽", "白令海峽"],
+    "answer": 0,
+    "fact": "直布羅陀海峽是歐非之間的重要航道。",
+    "source": "OpenTDB #geography"
+  },
+  {
+    "level": "洲際領隊",
+    "region": "極地",
+    "q": "北極圈內看不到哪種自然現象？",
+    "options": ["永夜", "極光", "熱帶雨林", "永晝"],
+    "answer": 2,
+    "fact": "北極圈以寒帶與極地景觀為主，沒有熱帶雨林。",
+    "source": "OpenTDB #geography"
+  },
+  {
+    "level": "洲際領隊",
+    "region": "世界地理",
+    "q": "世界上人口最多的國家是？",
+    "options": ["印度", "美國", "印尼", "巴西"],
+    "answer": 0,
+    "fact": "依近年統計，印度已超越中國成為人口最多國家。",
+    "source": "OpenTDB #geography"
+  },
+  {
+    "level": "環球旅行家",
+    "region": "世界地理",
+    "q": "「國際換日線」大約沿哪個經度？",
+    "options": ["180° 經線", "0° 經線", "90° 東經", "赤道"],
+    "answer": 0,
+    "fact": "國際換日線約在 180° 經線附近，日期由此劃分。",
+    "source": "OpenTDB #geography"
+  },
+  {
+    "level": "環球旅行家",
+    "region": "世界地理",
+    "q": "「環太平洋火山帶」主要圍繞哪個大洋？",
+    "options": ["太平洋", "大西洋", "印度洋", "北極海"],
+    "answer": 0,
+    "fact": "環太平洋火山帶沿太平洋邊緣分布，地震與火山活動頻繁。",
+    "source": "OpenTDB #geography"
+  },
+  {
+    "level": "環球旅行家",
+    "region": "世界地理",
+    "q": "「內陸國」是指？",
+    "options": ["沒有海岸線的國家", "只有一個港口的國家", "島國", "有內海的國家"],
+    "answer": 0,
+    "fact": "例如蒙古、哈薩克、瑞士等皆為內陸國。",
+    "source": "OpenTDB #geography"
+  }
+]
