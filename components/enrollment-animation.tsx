@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect } from "react";
+import { ORGANIZATION_NAME } from "../lib/brand";
 
 const ENROLLMENT_DURATION_MS = 5400;
 
@@ -24,7 +25,7 @@ export function EnrollmentAnimation({ onComplete }: { onComplete: () => void }) 
             <div className="enrollment-roof" />
             <div className="enrollment-building">
               <span className="enrollment-flag" />
-              <span className="enrollment-school-name">民國教育委員會</span>
+              <span className="enrollment-school-name">{ORGANIZATION_NAME}</span>
               <span className="enrollment-window" />
               <span className="enrollment-window" />
               <span className="enrollment-door" />

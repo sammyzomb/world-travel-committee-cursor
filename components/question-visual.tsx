@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 export type QuestionVisualData = {
   type: "map" | "photo";
@@ -12,11 +12,6 @@ export type QuestionVisualData = {
 
 export function QuestionVisual({ visual }: { visual: QuestionVisualData }) {
   const [imageFailed, setImageFailed] = useState(false);
-
-  useEffect(() => {
-    setImageFailed(false);
-  }, [visual.image, visual.label]);
-
   const showPhoto = visual.type === "photo" && visual.image && !imageFailed;
 
   if (showPhoto) {

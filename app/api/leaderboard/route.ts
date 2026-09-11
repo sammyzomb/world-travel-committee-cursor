@@ -1,4 +1,4 @@
-import { desc } from "drizzle-orm";
+import { desc, notInArray } from "drizzle-orm";
 import { getDb } from "../../../db";
 import { leaderboardEntries } from "../../../db/schema";
 
@@ -81,6 +81,17 @@ export async function POST(request: Request) {
       .insert(leaderboardEntries)
       .values({ playerName, score, stageReached, completed })
       .returning();
+
+    const topRows = await db
+      .select({ id: leaderboardEntries.id })
+      .from(leaderboardEntries)
+      .orderBy(desc(leaderboardEntries.score), desc(leaderboardEntries.id))
+      .limit(TOP_LIMIT);
+
+    const keepIds = topRows.map((row) => row.id);
+    if (keepIds.length > 0) {
+      await db.delete(leaderboardEntries).where(notInArray(leaderboardEntries.id, keepIds));
+    }
 
     return Response.json({ qualified: true, entry }, { status: 201 });
   } catch (error) {

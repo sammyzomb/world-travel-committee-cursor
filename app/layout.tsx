@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
+import { GAME_NAME, ORGANIZATION_NAME } from "../lib/brand";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "國民教育委員會｜世界旅遊委員會",
-  description: "國民教育委員會世界旅遊委員會：從小一開始，挑戰世界地理與旅行知識。",
+  title: `${ORGANIZATION_NAME}｜${GAME_NAME}`,
+  description: `${ORGANIZATION_NAME}${GAME_NAME}：從小一開始，挑戰世界地理與旅行知識。`,
   icons: {
     icon: "/favicon.svg",
     shortcut: "/favicon.svg",

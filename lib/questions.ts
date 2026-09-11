@@ -95,8 +95,16 @@ function buildExpandedQuestions(facts: ExpandedFact[]): Question[] {
   const countries = facts.map((item) => item[1]);
   const capitals = facts.map((item) => item[3]);
   const continents = ["亞洲", "歐洲", "非洲", "北美洲", "南美洲", "大洋洲"] as const;
+  const shuffleStrings = <T,>(items: T[]) => {
+    const result = [...items];
+    for (let index = result.length - 1; index > 0; index -= 1) {
+      const swapIndex = Math.floor(Math.random() * (index + 1));
+      [result[index], result[swapIndex]] = [result[swapIndex], result[index]];
+    }
+    return result;
+  };
   const distractor = (values: readonly string[], answer: string) =>
-    [...values.filter((value) => value !== answer)].slice(0, 3);
+    shuffleStrings(values.filter((value) => value !== answer)).slice(0, 3);
 
   return facts.flatMap((fact, factIndex) => {
     const [city, country, continent, capital, landmark] = fact;
