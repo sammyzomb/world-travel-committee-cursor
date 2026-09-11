@@ -2,15 +2,28 @@
 
 import { Crown, Globe2 } from "lucide-react";
 import { EnrollmentAnimation } from "../components/enrollment-animation";
+import { MapQuizScreen } from "../components/game/map-quiz-screen";
+import { ModeQuizScreen } from "../components/game/mode-quiz-screen";
 import { PlayScreen } from "../components/game/play-screen";
 import { ResultScreen } from "../components/game/result-screen";
 import { RewardScreen } from "../components/game/reward-screen";
+import { SideResultScreen } from "../components/game/side-result-screen";
 import { StartScreen } from "../components/game/start-screen";
+import { TrainingPickerScreen } from "../components/game/training-picker-screen";
+import { useEntertainmentModes } from "../hooks/use-entertainment-modes";
 import { useGameState } from "../hooks/use-game-state";
+import { ACHIEVEMENTS } from "../lib/achievements";
 import { GAME_NAME, ORGANIZATION_NAME } from "../lib/brand";
 
 export default function Home() {
   const game = useGameState();
+  const entertainment = useEntertainmentModes(game.goToStart);
+  const showStart = game.screen === "start" && entertainment.screen === "idle";
+
+  function goHome() {
+    entertainment.resetToIdle();
+    game.goToStart();
+  }
 
   return (
     <main className="game-shell min-h-dvh text-white">
@@ -24,30 +37,113 @@ export default function Home() {
             <p className="text-lg font-black tracking-wide">{GAME_NAME}</p>
           </div>
         </div>
-        <button className="rank-button" onClick={game.goToStart}>
+        <button className="rank-button" onClick={goHome}>
           <Crown size={17} /> 永久排行榜
         </button>
       </header>
 
-      {game.screen === "start" && (
+      {showStart && (
         <StartScreen
           leaderboard={game.leaderboard}
           leaderboardLoading={game.leaderboardLoading}
           leaderboardError={game.leaderboardError}
+          profile={entertainment.profile}
+          achievements={ACHIEVEMENTS}
           onBegin={game.beginFromFirstGrade}
+          onDaily={entertainment.startDaily}
+          onTraining={entertainment.startTrainingPick}
+          onReview={entertainment.startReview}
+          onMapQuiz={entertainment.startMapQuiz}
         />
       )}
 
-      {game.screen === "enroll" && <EnrollmentAnimation onComplete={game.finishEnrollment} />}
+      {entertainment.screen === "training-pick" && (
+        <TrainingPickerScreen
+          onPick={entertainment.startTraining}
+          onBack={goHome}
+        />
+      )}
 
-      {game.screen === "play" && !game.current && (
+      {entertainment.screen === "daily" && entertainment.questions[0] && (
+        <ModeQuizScreen
+          title="每日一題"
+          subtitle="DAILY CHALLENGE"
+          current={entertainment.questions[0]}
+          questionNumber={1}
+          totalQuestions={1}
+          lives={entertainment.lives}
+          score={entertainment.score}
+          selected={entertainment.selected}
+          onChoose={entertainment.chooseOption}
+          onNext={entertainment.advance}
+        />
+      )}
+
+      {entertainment.screen === "training-play" && entertainment.questions[entertainment.index] && (
+        <ModeQuizScreen
+          title={`${entertainment.trainingContinent ?? ""}特訓`}
+          subtitle="SIDE MODE"
+          current={entertainment.questions[entertainment.index]}
+          questionNumber={entertainment.index + 1}
+          totalQuestions={entertainment.questions.length}
+          lives={entertainment.lives}
+          score={entertainment.score}
+          selected={entertainment.selected}
+          onChoose={entertainment.chooseOption}
+          onNext={entertainment.advance}
+        />
+      )}
+
+      {entertainment.screen === "review-play" && entertainment.questions[entertainment.index] && (
+        <ModeQuizScreen
+          title="錯題再戰"
+          subtitle="REVENGE RUN"
+          current={entertainment.questions[entertainment.index]}
+          questionNumber={entertainment.index + 1}
+          totalQuestions={entertainment.questions.length}
+          lives={entertainment.lives}
+          score={entertainment.score}
+          selected={entertainment.selected}
+          onChoose={entertainment.chooseOption}
+          onNext={entertainment.advance}
+        />
+      )}
+
+      {entertainment.screen === "map-play" && entertainment.mapItems[entertainment.index] && (
+        <MapQuizScreen
+          current={entertainment.mapItems[entertainment.index]}
+          questionNumber={entertainment.index + 1}
+          totalQuestions={entertainment.mapItems.length}
+          lives={entertainment.lives}
+          score={entertainment.score}
+          selectedContinent={entertainment.selectedContinent}
+          onChoose={entertainment.chooseMapContinent}
+          onNext={entertainment.advance}
+        />
+      )}
+
+      {entertainment.screen === "side-result" && entertainment.sideResult && (
+        <SideResultScreen
+          result={entertainment.sideResult}
+          newAchievements={entertainment.newAchievements}
+          achievements={entertainment.achievements}
+          unlocked={entertainment.profile.unlockedAchievements}
+          onHome={entertainment.closeSideResult}
+        />
+      )}
+
+      {game.screen === "enroll" && entertainment.screen === "idle" && (
+        <EnrollmentAnimation onComplete={game.finishEnrollment} />
+      )}
+
+      {game.screen === "play" && entertainment.screen === "idle" && !game.current && (
         <section className="mx-auto w-full max-w-4xl px-4 py-20 text-center sm:px-8">
           <p className="mb-6 text-slate-300">題目載入異常，請重新開始挑戰。</p>
-          <button className="primary-button mx-auto" onClick={game.restart}>從小一重新挑戰</button>
+          <button className="primary-button mx-auto" onClick={game.restart}>再開一局</button>
         </section>
       )}
 
-      {game.screen === "play" && game.current && (
+      {game.screen === "play" && entertainment.screen === "idle" && game.current && (
         <PlayScreen
           stageIndex={game.stageIndex}
           stage={game.stage}
@@ -61,12 +157,13 @@ export default function Home() {
           endedEarly={game.endedEarly}
           roundLength={game.round.length}
           questionIndex={game.index}
+          runStreak={game.runStreak}
           onChoose={game.choose}
           onNext={game.next}
         />
       )}
 
-      {game.screen === "reward" && (
+      {game.screen === "reward" && entertainment.screen === "idle" && (
         <RewardScreen
           isGraduationStage={game.isGraduationStage}
           stage={game.stage}
@@ -77,11 +174,15 @@ export default function Home() {
         />
       )}
 
-      {game.screen === "result" && (
+      {game.screen === "result" && entertainment.screen === "idle" && (
         <ResultScreen
           endedEarly={game.endedEarly}
           stageName={game.stage.name}
           score={game.score}
+          maxRunStreak={game.maxRunStreak}
+          playerProfile={game.playerProfile}
+          achievements={ACHIEVEMENTS}
+          newAchievements={game.newAchievements}
           playerName={game.playerName}
           submitState={game.submitState}
           submitMessage={game.submitMessage}

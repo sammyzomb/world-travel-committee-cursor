@@ -1,11 +1,19 @@
 import { ArrowUpRight, CalendarDays, Crown, GraduationCap, MapPinned, Sparkles } from "lucide-react";
 import { CheerAnimation } from "../cheer-animation";
+import { AchievementsPanel } from "./achievements-panel";
+import { ShareScoreCard } from "./share-score-card";
+import type { AchievementDef } from "../../lib/achievements";
 import type { SubmitState } from "../../lib/leaderboard-types";
+import type { PlayerProfile } from "../../lib/player-storage";
 
 type ResultScreenProps = {
   endedEarly: boolean;
   stageName: string;
   score: number;
+  maxRunStreak: number;
+  playerProfile: PlayerProfile;
+  achievements: AchievementDef[];
+  newAchievements: string[];
   playerName: string;
   submitState: SubmitState;
   submitMessage: string | null;
@@ -18,6 +26,10 @@ export function ResultScreen({
   endedEarly,
   stageName,
   score,
+  maxRunStreak,
+  playerProfile,
+  achievements,
+  newAchievements,
   playerName,
   submitState,
   submitMessage,
@@ -49,15 +61,38 @@ export function ResultScreen({
             <Sparkles />
           </div>
         )}
-        <p className="mini-label mt-4">{endedEarly ? "挑戰結束" : "QUEST BANK CLEAR・題庫全破"}</p>
+        <p className="mini-label mt-4">{endedEarly ? "本局 GG" : "QUEST BANK CLEAR・題庫全破"}</p>
         {!endedEarly && <h2 className="final-graduation-title">題庫挑戰完成！</h2>}
-        <span className="degree-badge">{!endedEarly ? "世界旅遊博士" : `${stageName}程度`}</span>
+        <span className="degree-badge">{!endedEarly ? "世界旅遊博士" : `${stageName}止步`}</span>
         <h1>{score.toLocaleString()} 分</h1>
+        <p className="run-streak-copy">本局最高連勝 {maxRunStreak} 題 · 歷史最佳 {playerProfile.bestRunStreak} 題</p>
         <p>
           {endedEarly
-            ? `${stageName}尚未通過，再挑戰一次會換一組題目。`
-            : `恭喜在 ${stageName} 完成題庫中所有題目，研究所沒有畢業典禮，但你的地理功力已達博士級！`}
+            ? `在【${stageName}】被題目終結，換一組再來复仇！`
+            : `在【${stageName}】打通題庫，地理功力已達博士級！`}
         </p>
+
+        {newAchievements.length > 0 && (
+          <div className="new-achievements">
+            <p className="mini-label">NEW BADGE</p>
+            <p>
+              新成就：
+              {newAchievements
+                .map((id) => achievements.find((item) => item.id === id)?.title)
+                .filter(Boolean)
+                .join("、")}
+            </p>
+          </div>
+        )}
+
+        <ShareScoreCard
+          stageName={stageName}
+          score={score}
+          runStreak={maxRunStreak}
+          bestRunStreak={playerProfile.bestRunStreak}
+          endedEarly={endedEarly}
+        />
+
         {score > 0 && (
           <div className="score-submit-card">
             <p className="mini-label">SUBMIT SCORE</p>
@@ -94,9 +129,12 @@ export function ResultScreen({
           </div>
         )}
         <button className="primary-button mx-auto" onClick={onRestart}>
-          從小一重新挑戰
+          再開一局
         </button>
       </div>
+
+      <AchievementsPanel achievements={achievements} unlocked={playerProfile.unlockedAchievements} compact />
+
       <div className="travel-invitation">
         <p className="mini-label">把答對的世界，變成親眼看見的風景</p>
         <h2>下一站，跟著航向世界出發</h2>

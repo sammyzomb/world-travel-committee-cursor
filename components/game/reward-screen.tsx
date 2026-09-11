@@ -38,13 +38,13 @@ export function RewardScreen({
           <Sparkles />
         </div>
         <p className="mini-label">
-          {isGraduationStage ? "GRADUATION・畢業達成" : "STAGE CLEAR・學業完成"}
+          {isGraduationStage ? "GRADUATION・畢業爽感" : "STAGE CLEAR・通關"}
         </p>
         <h1>{isGraduationStage ? `${stage.group}畢業！` : "恭喜！"}</h1>
         <p className="completion-copy">
           恭喜完成{ORGANIZATION_NAME}
           <br />
-          <b>{getStageCompletionLabel(stage, isGraduationStage)}學業</b>
+          <b>{getStageCompletionLabel(stage, isGraduationStage)}關卡</b>
         </p>
         <p>
           本級答對 {stageCorrect} 題，接下來將升上 <b>{nextStage.name}</b>

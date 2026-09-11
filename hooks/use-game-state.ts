@@ -12,7 +12,15 @@ import {
   passRequiredForStage,
   type RoundPlan,
 } from "../lib/game-round";
+import { evaluateAchievements } from "../lib/achievements";
 import type { LeaderboardEntry, SubmitState } from "../lib/leaderboard-types";
+import {
+  loadPlayerProfile,
+  recordMainRunResult,
+  recordWrongQuestion,
+  unlockAchievement,
+  type PlayerProfile,
+} from "../lib/player-storage";
 import type { Question } from "../lib/questions";
 
 export type GameScreen = "start" | "enroll" | "play" | "reward" | "result";
@@ -33,6 +41,11 @@ export function useGameState() {
   const [playerName, setPlayerName] = useState("");
   const [submitState, setSubmitState] = useState<SubmitState>("idle");
   const [submitMessage, setSubmitMessage] = useState<string | null>(null);
+  const [runStreak, setRunStreak] = useState(0);
+  const [maxRunStreak, setMaxRunStreak] = useState(0);
+  const [newAchievements, setNewAchievements] = useState<string[]>([]);
+  const [playerProfile, setPlayerProfile] = useState<PlayerProfile>(() => loadPlayerProfile());
+  const resultRecorded = useRef(false);
 
   const loadLeaderboard = useCallback(async () => {
     setLeaderboardLoading(true);
@@ -52,6 +65,7 @@ export function useGameState() {
   useEffect(() => {
     if (screen === "start" || screen === "result") {
       loadLeaderboard();
+      setPlayerProfile(loadPlayerProfile());
     }
   }, [screen, loadLeaderboard]);
 
@@ -82,6 +96,10 @@ export function useGameState() {
     setPlayerName("");
     setSubmitState("idle");
     setSubmitMessage(null);
+    setRunStreak(0);
+    setMaxRunStreak(0);
+    setNewAchievements([]);
+    resultRecorded.current = false;
   }, []);
 
   const choose = useCallback(
@@ -91,8 +109,15 @@ export function useGameState() {
       if (option === current.answer) {
         setScore((value) => value + POINTS_PER_CORRECT);
         setStageCorrect((value) => value + 1);
+        setRunStreak((value) => {
+          const next = value + 1;
+          setMaxRunStreak((peak) => Math.max(peak, next));
+          return next;
+        });
         return;
       }
+      setRunStreak(0);
+      recordWrongQuestion(current.q);
       setLives((value) => {
         const next = value - 1;
         if (next === 0) setEndedEarly(true);
@@ -170,6 +195,53 @@ export function useGameState() {
 
   const goToStart = useCallback(() => setScreen("start"), []);
 
+  useEffect(() => {
+    if (screen !== "reward" || !isGraduationStage || stageIndex !== 5) return;
+    const profile = loadPlayerProfile();
+    const unlocked = evaluateAchievements({
+      dailyStreak: profile.dailyStreak,
+      dailyWonToday: profile.dailyWonToday,
+      runStreak: maxRunStreak,
+      score,
+      stageIndex,
+      isGraduationStage: true,
+      completed: false,
+      mapPerfect: false,
+      trainingContinent: null,
+      reviewCleared: false,
+      alreadyUnlocked: profile.unlockedAchievements,
+    });
+    for (const id of unlocked) unlockAchievement(id);
+    if (unlocked.length > 0) setNewAchievements((value) => [...value, ...unlocked]);
+  }, [isGraduationStage, maxRunStreak, score, screen, stageIndex]);
+
+  useEffect(() => {
+    if (screen !== "result" || resultRecorded.current) return;
+    resultRecorded.current = true;
+    const profile = loadPlayerProfile();
+    recordMainRunResult({
+      score,
+      runStreak: maxRunStreak,
+      stageName: stage.name,
+      completed: !endedEarly,
+    });
+    const unlocked = evaluateAchievements({
+      dailyStreak: profile.dailyStreak,
+      dailyWonToday: profile.dailyWonToday,
+      runStreak: maxRunStreak,
+      score,
+      stageIndex,
+      isGraduationStage,
+      completed: !endedEarly,
+      mapPerfect: false,
+      trainingContinent: null,
+      reviewCleared: false,
+      alreadyUnlocked: profile.unlockedAchievements,
+    });
+    for (const id of unlocked) unlockAchievement(id);
+    if (unlocked.length > 0) setNewAchievements(unlocked);
+  }, [endedEarly, isGraduationStage, maxRunStreak, score, screen, stage.name, stageIndex]);
+
   const submitScore = useCallback(async () => {
     const trimmed = playerName.trim();
     if (!trimmed) {
@@ -244,5 +316,9 @@ export function useGameState() {
     finishEnrollment,
     goToStart,
     submitScore,
+    runStreak,
+    maxRunStreak,
+    newAchievements,
+    playerProfile,
   };
 }

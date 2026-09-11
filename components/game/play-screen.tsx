@@ -16,6 +16,7 @@ type PlayScreenProps = {
   endedEarly: boolean;
   roundLength: number;
   questionIndex: number;
+  runStreak?: number;
   onChoose: (option: number) => void;
   onNext: () => void;
 };
@@ -51,6 +52,7 @@ export function PlayScreen({
   endedEarly,
   roundLength,
   questionIndex,
+  runStreak = 0,
   onChoose,
   onNext,
 }: PlayScreenProps) {
@@ -74,7 +76,7 @@ export function PlayScreen({
             {stage.group}・{stage.name}　第 {stageQuestion} 題 / {stageLength}
             {current.level === "送分題" ? "・送分題" : ""}
           </p>
-          <h2 className="text-xl font-black sm:text-2xl">{stage.name}旅行測驗</h2>
+          <h2 className="text-xl font-black sm:text-2xl">{stage.name}闖關中</h2>
         </div>
         <div className="flex gap-2">
           <span className="life-pill" aria-label={`整局剩餘 ${lives} 次機會`}>
@@ -85,6 +87,7 @@ export function PlayScreen({
             ))}
           </span>
           <span className="score-pill">{score.toLocaleString()} 分</span>
+          {runStreak >= 2 && <span className="score-pill streak-pill">連勝 {runStreak}</span>}
         </div>
       </div>
 

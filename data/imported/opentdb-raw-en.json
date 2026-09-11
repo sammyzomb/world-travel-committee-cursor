@@ -1,0 +1,497 @@
+[
+  {
+    "difficulty": "easy",
+    "question": "Vatican City, the smallest country in the world, is fully enclosed by which country?",
+    "correct_answer": "Italy",
+    "incorrect_answers": [
+      "France",
+      "Spain",
+      "Germany"
+    ],
+    "source": "OpenTDB"
+  },
+  {
+    "difficulty": "easy",
+    "question": "Which European city is known as the \"City of Light\"?",
+    "correct_answer": "Paris",
+    "incorrect_answers": [
+      "Rome",
+      "London",
+      "Madrid"
+    ],
+    "source": "OpenTDB"
+  },
+  {
+    "difficulty": "easy",
+    "question": "The Space Needle is located in which city?",
+    "correct_answer": "Seattle",
+    "incorrect_answers": [
+      "Los Angles",
+      "Toronto",
+      "Vancouver"
+    ],
+    "source": "OpenTDB"
+  },
+  {
+    "difficulty": "easy",
+    "question": "Which Borough is the farthest in the north of New York City?",
+    "correct_answer": "Bronx",
+    "incorrect_answers": [
+      "Queens",
+      "Brooklyn",
+      "Manhattan"
+    ],
+    "source": "OpenTDB"
+  },
+  {
+    "difficulty": "easy",
+    "question": "What is the capital of Jamaica?",
+    "correct_answer": "Kingston",
+    "incorrect_answers": [
+      "San Juan",
+      "Port-au-Prince",
+      "Bridgetown"
+    ],
+    "source": "OpenTDB"
+  },
+  {
+    "difficulty": "easy",
+    "question": "Which UK country features a dragon on their flag?",
+    "correct_answer": "Wales",
+    "incorrect_answers": [
+      "England",
+      "North Ireland",
+      "Scotland"
+    ],
+    "source": "OpenTDB"
+  },
+  {
+    "difficulty": "easy",
+    "question": "The derisive acronym \"PIIGS\" refers to which of the following European countries and their economic statuses?",
+    "correct_answer": "Portugal, Ireland, Italy, Greece, Spain",
+    "incorrect_answers": [
+      "Poland, Iceland, Italy, Greece, Serbia",
+      "Poland, Iceland, Italy, Greenland, Spain",
+      "Portugal, Iceland, Ireland, Greece, Serbia"
+    ],
+    "source": "OpenTDB"
+  },
+  {
+    "difficulty": "easy",
+    "question": "In which country is the city of Rio de Janeiro?",
+    "correct_answer": "Brazil",
+    "incorrect_answers": [
+      "Peru",
+      "Chile",
+      "Venezuela"
+    ],
+    "source": "OpenTDB"
+  },
+  {
+    "difficulty": "easy",
+    "question": "What is the name of New Zealand's indigenous people?",
+    "correct_answer": "Maori",
+    "incorrect_answers": [
+      "Vikings",
+      "Polynesians",
+      "Samoans"
+    ],
+    "source": "OpenTDB"
+  },
+  {
+    "difficulty": "easy",
+    "question": "In which ocean is the Réunion island?",
+    "correct_answer": "Indian Ocean",
+    "incorrect_answers": [
+      "Atlantic Ocean",
+      "South Pacific Ocean",
+      "North Pacific Ocean"
+    ],
+    "source": "OpenTDB"
+  },
+  {
+    "difficulty": "easy",
+    "question": "What is the largest hot desert in the world?",
+    "correct_answer": "Sahara",
+    "incorrect_answers": [
+      "Gobi",
+      "Mojave",
+      "Kalahari"
+    ],
+    "source": "OpenTDB"
+  },
+  {
+    "difficulty": "easy",
+    "question": "How many federal states does Germany have?",
+    "correct_answer": "16",
+    "incorrect_answers": [
+      "13",
+      "32",
+      "25"
+    ],
+    "source": "OpenTDB"
+  },
+  {
+    "difficulty": "easy",
+    "question": "What is the capital of Spain?",
+    "correct_answer": "Madrid",
+    "incorrect_answers": [
+      "Barcelona",
+      "Sevilla",
+      "Toledo"
+    ],
+    "source": "OpenTDB"
+  },
+  {
+    "difficulty": "easy",
+    "question": "What is the capital of Bangladesh?",
+    "correct_answer": "Dhaka",
+    "incorrect_answers": [
+      "Khulna",
+      "London",
+      "Lahore"
+    ],
+    "source": "OpenTDB"
+  },
+  {
+    "difficulty": "easy",
+    "question": "Harvard University is located in which city?",
+    "correct_answer": "Cambridge",
+    "incorrect_answers": [
+      "Providence",
+      "New York",
+      "Washington D.C."
+    ],
+    "source": "OpenTDB"
+  },
+  {
+    "difficulty": "medium",
+    "question": "What is the capital of Brazil?",
+    "correct_answer": "Brasilia",
+    "incorrect_answers": [
+      "Rio de Janeiro",
+      "Sao Paolo",
+      "Curitiba"
+    ],
+    "source": "OpenTDB"
+  },
+  {
+    "difficulty": "medium",
+    "question": "In Washington, D.C. what does the \"C\" stand for?",
+    "correct_answer": "Columbia",
+    "incorrect_answers": [
+      "Caledonia",
+      "Corinthia",
+      "City"
+    ],
+    "source": "OpenTDB"
+  },
+  {
+    "difficulty": "medium",
+    "question": "Which of these countries is not a United Nations member state?",
+    "correct_answer": "Niue",
+    "incorrect_answers": [
+      "Tuvalu",
+      "South Sudan",
+      "Montenegro"
+    ],
+    "source": "OpenTDB"
+  },
+  {
+    "difficulty": "medium",
+    "question": "What is the longest river in Europe?",
+    "correct_answer": "Volga",
+    "incorrect_answers": [
+      "Danube",
+      "Rhine",
+      "Thames"
+    ],
+    "source": "OpenTDB"
+  },
+  {
+    "difficulty": "medium",
+    "question": "What event led to Liechenstein adding a crown to its flag?",
+    "correct_answer": "The 1936 Olympics",
+    "incorrect_answers": [
+      "Coronation of Prince Johann I Joseph in 1805",
+      "Charles VI's decree in 1719",
+      "Signing of the 1862 Constitution of Liechtenstein"
+    ],
+    "source": "OpenTDB"
+  },
+  {
+    "difficulty": "medium",
+    "question": "Which is the world's longest river?",
+    "correct_answer": "Nile",
+    "incorrect_answers": [
+      "Missouri",
+      "Amazon",
+      "Yangtze"
+    ],
+    "source": "OpenTDB"
+  },
+  {
+    "difficulty": "medium",
+    "question": "In which English county is the city of Portsmouth?",
+    "correct_answer": "Hampshire",
+    "incorrect_answers": [
+      "Oxfordshire",
+      "Buckinghamshire",
+      "Surrey"
+    ],
+    "source": "OpenTDB"
+  },
+  {
+    "difficulty": "medium",
+    "question": "What is the capital of Peru?",
+    "correct_answer": "Lima",
+    "incorrect_answers": [
+      "Santiago",
+      "Montevideo",
+      "Buenos Aires"
+    ],
+    "source": "OpenTDB"
+  },
+  {
+    "difficulty": "medium",
+    "question": "Which of these countries is not written in its native language?",
+    "correct_answer": "Slova&scaron;ko",
+    "incorrect_answers": [
+      "Suomi",
+      "Schweiz",
+      "Ell&aacute;da"
+    ],
+    "source": "OpenTDB"
+  },
+  {
+    "difficulty": "medium",
+    "question": "What is the busiest port in Europe?",
+    "correct_answer": "Port of Rotterdam",
+    "incorrect_answers": [
+      "Port of Antwerp",
+      "Port of Hamburg",
+      "Port of Amsterdam"
+    ],
+    "source": "OpenTDB"
+  },
+  {
+    "difficulty": "medium",
+    "question": "In the 2016 Global Peace Index poll, out of 163 countries, what was the United States of America ranked?",
+    "correct_answer": "103",
+    "incorrect_answers": [
+      "10",
+      "59",
+      "79"
+    ],
+    "source": "OpenTDB"
+  },
+  {
+    "difficulty": "medium",
+    "question": "What is the official language of Bhutan?",
+    "correct_answer": "Dzongkha",
+    "incorrect_answers": [
+      "Ladakhi",
+      "Karen",
+      "Groma"
+    ],
+    "source": "OpenTDB"
+  },
+  {
+    "difficulty": "medium",
+    "question": "Which of the following cities is the capital of Latvia?",
+    "correct_answer": "Riga",
+    "incorrect_answers": [
+      "Minsk",
+      "Tallinn",
+      "Vilnius"
+    ],
+    "source": "OpenTDB"
+  },
+  {
+    "difficulty": "medium",
+    "question": "What island in the Canary Islands was the scene of one of the worst air disasters in history with the collision of two jumbo jets?",
+    "correct_answer": "Tenerife",
+    "incorrect_answers": [
+      "Fuerteventura",
+      "Gran Canaria",
+      "Maui"
+    ],
+    "source": "OpenTDB"
+  },
+  {
+    "difficulty": "medium",
+    "question": "How many timezones does Russia have?",
+    "correct_answer": "11",
+    "incorrect_answers": [
+      "6",
+      "24",
+      "16"
+    ],
+    "source": "OpenTDB"
+  },
+  {
+    "difficulty": "hard",
+    "question": "Ouagadougou is the capital of which African country?",
+    "correct_answer": "Burkina Faso",
+    "incorrect_answers": [
+      "Central African Republic",
+      "Senegal",
+      "Zambia"
+    ],
+    "source": "OpenTDB"
+  },
+  {
+    "difficulty": "hard",
+    "question": "Where is the city of Haarlem located?",
+    "correct_answer": "The Netherlands",
+    "incorrect_answers": [
+      "Germany",
+      "United States",
+      "Switzerland"
+    ],
+    "source": "OpenTDB"
+  },
+  {
+    "difficulty": "hard",
+    "question": "Which river was dammed to create Gatun Lake and the Panama Canal?",
+    "correct_answer": "Chagres River",
+    "incorrect_answers": [
+      "Tuira River",
+      "Chucunaque River",
+      "Chepo River "
+    ],
+    "source": "OpenTDB"
+  },
+  {
+    "difficulty": "hard",
+    "question": "What is the official German name of the Swiss Federal Railways?",
+    "correct_answer": "Schweizerische Bundesbahnen",
+    "incorrect_answers": [
+      "Schweizerische Nationalbahnen",
+      "Bundesbahnen der Schweiz",
+      "Schweizerische Staatsbahnen"
+    ],
+    "source": "OpenTDB"
+  },
+  {
+    "difficulty": "hard",
+    "question": "Which of these countries is NOT the only country to start with that letter of the alphabet?",
+    "correct_answer": "Zambia",
+    "incorrect_answers": [
+      "Qatar",
+      "Yemen",
+      "Oman"
+    ],
+    "source": "OpenTDB"
+  },
+  {
+    "difficulty": "hard",
+    "question": "What is Canada's largest island?",
+    "correct_answer": "Baffin Island",
+    "incorrect_answers": [
+      "Prince Edward Island",
+      "Vancouver Island",
+      "Newfoundland"
+    ],
+    "source": "OpenTDB"
+  },
+  {
+    "difficulty": "hard",
+    "question": "Which of these African countries displays a gun on their flag?",
+    "correct_answer": "Mozambique",
+    "incorrect_answers": [
+      "Uganda",
+      "Ethiopia",
+      "Nigeria"
+    ],
+    "source": "OpenTDB"
+  },
+  {
+    "difficulty": "hard",
+    "question": "The Hunua Ranges is located in...",
+    "correct_answer": "New Zealand",
+    "incorrect_answers": [
+      "Nepal",
+      "China",
+      "Mexico"
+    ],
+    "source": "OpenTDB"
+  },
+  {
+    "difficulty": "hard",
+    "question": "Which of these is NOT a real tectonic plate?",
+    "correct_answer": "Atlantic Plate",
+    "incorrect_answers": [
+      "North American Plate",
+      "Eurasian Plate",
+      "Nazca Plate"
+    ],
+    "source": "OpenTDB"
+  },
+  {
+    "difficulty": "hard",
+    "question": "Which of these cities is NOT in England?",
+    "correct_answer": "Edinburgh",
+    "incorrect_answers": [
+      "Oxford",
+      "Manchester",
+      "Southampton"
+    ],
+    "source": "OpenTDB"
+  },
+  {
+    "difficulty": "hard",
+    "question": "What is the land connecting North America and South America?",
+    "correct_answer": "Isthmus of Panama",
+    "incorrect_answers": [
+      "Isthmus of Suez",
+      "Urals",
+      "Australasia"
+    ],
+    "source": "OpenTDB"
+  },
+  {
+    "difficulty": "hard",
+    "question": "Which of these is NOT a province in China?",
+    "correct_answer": "Yangtze",
+    "incorrect_answers": [
+      "Fujian",
+      "Sichuan",
+      "Guangdong"
+    ],
+    "source": "OpenTDB"
+  },
+  {
+    "difficulty": "hard",
+    "question": "Where is Timbuktu located?",
+    "correct_answer": "Mali, Africa",
+    "incorrect_answers": [
+      "Azerbaijan, Asia",
+      "Bangladesh, Asia",
+      "Mauritania, Africa"
+    ],
+    "source": "OpenTDB"
+  },
+  {
+    "difficulty": "hard",
+    "question": "How many countries share a land border with Russia? (Not including disputed territories)",
+    "correct_answer": "14",
+    "incorrect_answers": [
+      "12",
+      "10",
+      "8"
+    ],
+    "source": "OpenTDB"
+  },
+  {
+    "difficulty": "hard",
+    "question": "How many countries border Kyrgyzstan?",
+    "correct_answer": "4",
+    "incorrect_answers": [
+      "3",
+      "1",
+      "6"
+    ],
+    "source": "OpenTDB"
+  }
+]
