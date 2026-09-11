@@ -20,7 +20,7 @@ function toRouteErrorMessage(error: unknown) {
 
 export async function GET() {
   try {
-    const db = getDb();
+    const db = await getDb();
     const rows = await db
       .select()
       .from(leaderboardEntries)
@@ -63,7 +63,7 @@ export async function POST(request: Request) {
       return Response.json({ error: "stageReached is required" }, { status: 400 });
     }
 
-    const db = getDb();
+    const db = await getDb();
     const currentTop = await db
       .select({ score: leaderboardEntries.score })
       .from(leaderboardEntries)

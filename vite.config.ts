@@ -1,13 +1,19 @@
+import { fileURLToPath } from "node:url";
 import vinext from "vinext";
-import { defineConfig } from "vite";
+import { defineConfig, type PluginOption } from "vite";
 import hostingConfig from "./.openai/hosting.json";
 import { readExecutionProfile } from "./scripts/execution-profile.mjs";
 import { sites } from "./build/sites-vite-plugin";
+
+const projectRoot = fileURLToPath(new URL(".", import.meta.url));
 
 const SITE_CREATOR_PLACEHOLDER_DATABASE_ID =
   "00000000-0000-4000-8000-000000000000";
 
 const { d1, r2 } = hostingConfig;
+
+const isNetlifyBuild =
+  process.env.NETLIFY === "true" || process.env.NITRO_PRESET === "netlify";
 
 // macOS Seatbelt blocks FSEvents, so Codex previews need polling for HMR.
 const isCodexSeatbeltSandbox = process.env.CODEX_SANDBOX === "seatbelt";
@@ -36,36 +42,46 @@ const localBindingConfig = {
 };
 
 export default defineConfig(async () => {
-  // Use Miniflare's local Request.cf placeholder unless fetching is requested.
-  process.env.CLOUDFLARE_CF_FETCH_ENABLED ??= "false";
-  process.env.WRANGLER_SEND_METRICS ??= "false";
+  const plugins: PluginOption[] = [vinext()];
 
-  // Keep Wrangler and Miniflare state project-local. These are non-secret tool
-  // settings; application environment belongs in ignored `.env*` files.
-  process.env.WRANGLER_WRITE_LOGS ??= "false";
-  process.env.WRANGLER_LOG_PATH ??= ".wrangler/logs";
-  process.env.WRANGLER_REGISTRY_PATH ??= ".wrangler/dev-registry";
-  process.env.MINIFLARE_REGISTRY_PATH ??= ".wrangler/registry";
+  if (isNetlifyBuild) {
+    const { default: tailwindcss } = await import("@tailwindcss/vite");
+    const { nitro } = await import("nitro/vite");
+    plugins.push(tailwindcss(), nitro());
+  } else {
+    process.env.CLOUDFLARE_CF_FETCH_ENABLED ??= "false";
+    process.env.WRANGLER_SEND_METRICS ??= "false";
+    process.env.WRANGLER_WRITE_LOGS ??= "false";
+    process.env.WRANGLER_LOG_PATH ??= ".wrangler/logs";
+    process.env.WRANGLER_REGISTRY_PATH ??= ".wrangler/dev-registry";
+    process.env.MINIFLARE_REGISTRY_PATH ??= ".wrangler/registry";
 
-  // Wrangler snapshots its log path while the Cloudflare plugin is imported.
-  const { cloudflare } = await import("@cloudflare/vite-plugin");
-
-  return {
-    server: {
-      // 分享 trycloudflare 連結時需允許外部 host，並關閉 HMR 避免 overlay 擋住操作。
-      allowedHosts: true,
-      host: true,
-      hmr: false,
-      ...(isCodexSeatbeltSandbox ? { watch: { useFsEvents: false, usePolling: true } } : {}),
-    },
-    plugins: [
-      vinext(),
+    const { cloudflare } = await import("@cloudflare/vite-plugin");
+    plugins.push(
       sites({ mockAuth: !managedLinux }),
       cloudflare({
         viteEnvironment: { name: "rsc", childEnvironments: ["ssr"] },
         inspectorPort: false,
         config: localBindingConfig,
       }),
-    ],
+    );
+  }
+
+  return {
+    server: {
+      allowedHosts: true,
+      host: true,
+      hmr: false,
+      ...(isCodexSeatbeltSandbox ? { watch: { useFsEvents: false, usePolling: true } } : {}),
+    },
+    resolve: isNetlifyBuild
+      ? undefined
+      : {
+          alias: {
+            [fileURLToPath(new URL("./db/netlify-db-stub.ts", import.meta.url))]:
+              fileURLToPath(new URL("./db/cloudflare-db.ts", import.meta.url)),
+          },
+        },
+    plugins,
   };
 });
