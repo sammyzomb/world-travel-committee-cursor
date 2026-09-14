@@ -31,11 +31,12 @@ function runMigration(filePath) {
     remote ? "--remote" : "--local",
     "--config",
     wranglerConfig,
-    "--persist-to",
-    resolve(root, ".wrangler/state"),
     "--file",
     filePath,
   ];
+  if (!remote) {
+    args.push("--persist-to", resolve(root, ".wrangler/state"));
+  }
   console.log(`Applying ${filePath} (${remote ? "remote" : "local"})...`);
   const result = spawnSync(process.execPath, args, { stdio: "pipe", cwd: root, encoding: "utf8" });
   const output = `${result.stdout ?? ""}${result.stderr ?? ""}`;

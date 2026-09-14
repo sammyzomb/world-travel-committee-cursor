@@ -39,7 +39,9 @@ if (result.status !== 0) {
   process.exit(result.status ?? 1);
 }
 
-const idMatch = output.match(/database_id\s*=\s*([a-f0-9-]+)/i);
+const idMatch =
+  output.match(/"database_id"\s*:\s*"([a-f0-9-]+)"/i) ??
+  output.match(/database_id\s*=\s*([a-f0-9-]+)/i);
 if (!idMatch) {
   console.error("Could not parse database_id from wrangler output.");
   process.exit(1);

@@ -17,12 +17,29 @@ Netlify 站點可保留為備援試玩入口（名人榜不可用）。
 
 ## 步驟一：登入 Wrangler
 
+**建議在本機 PowerShell 視窗執行**（不要用過期的授權連結；授權時終端機必須保持開啟）：
+
 ```powershell
 cd "d:\GITHUB_2\國民教育委員會\world-travel-committee-cursor"
-npx wrangler login
+npx wrangler login --browser=false --callback-port 8977
 ```
 
-瀏覽器會開啟授權頁，登入後回到終端機。
+終端機會印出 `Visit this link to authenticate:` — 複製該連結到瀏覽器，登入後點 **Authorize**。成功時會看到 localhost 成功頁面。
+
+若出現 `EADDRINUSE`（埠被佔用），改用其他埠，例如 `--callback-port 8980`。
+
+### 替代方案：API Token（不需 localhost 回調）
+
+1. 開啟 [Cloudflare API Tokens](https://dash.cloudflare.com/profile/api-tokens)
+2. 建立 Token，權限選 **Workers 編輯** + **D1 編輯**
+3. 在專案根目錄建立 `.env`（已 gitignore）：
+
+```env
+CLOUDFLARE_API_TOKEN=你的_token
+CLOUDFLARE_ACCOUNT_ID=你的_account_id
+```
+
+Account ID 在 Cloudflare Dashboard 右側欄可見。之後可直接執行 `npm run db:create` 等指令，不需 `wrangler login`。
 
 驗證：
 
