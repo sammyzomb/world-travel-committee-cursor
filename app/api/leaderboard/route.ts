@@ -1,9 +1,19 @@
-import { desc, notInArray } from "drizzle-orm";
+import { and, desc, eq, gte } from "drizzle-orm";
 import { getDb } from "../../../db";
 import { leaderboardEntries } from "../../../db/schema";
+import {
+  computeRunScore,
+  highestPassedStageIndex,
+  isFullCompletion,
+  stageReachedName,
+  validateRunSubmission,
+  type RunSubmission,
+} from "../../../lib/leaderboard-scoring";
 
 const TOP_LIMIT = 10;
 const MAX_NAME_LENGTH = 20;
+const RATE_LIMIT_WINDOW_MS = 60_000;
+const RATE_LIMIT_MAX = 5;
 
 function toRouteErrorMessage(error: unknown) {
   const message = error instanceof Error ? error.message : "Unexpected error";
@@ -12,7 +22,11 @@ function toRouteErrorMessage(error: unknown) {
   const combined = `${message}\n${detail}`;
 
   if (combined.includes("no such table") || combined.includes('from "leaderboard_entries"')) {
-    return "The leaderboard table is unavailable. Generate the migration with `npm run db:generate`, then apply it to the local D1 database.";
+    return "名人榜資料表尚未建立。請在 Cloudflare D1 執行 drizzle 遷移後再試。";
+  }
+
+  if (combined.includes("Netlify 部署尚未設定資料庫")) {
+    return "名人榜需要 Cloudflare D1 或另行設定資料庫，目前部署環境尚未連線。";
   }
 
   return message;
@@ -38,32 +52,50 @@ export async function GET() {
 
 export async function POST(request: Request) {
   try {
-    const payload = (await request.json()) as {
-      playerName?: string;
-      score?: number;
-      stageReached?: string;
-      completed?: boolean;
-    };
+    const payload = (await request.json()) as RunSubmission;
+    const validationError = validateRunSubmission(payload);
+    if (validationError) {
+      return Response.json({ error: validationError }, { status: 400 });
+    }
 
-    const playerName = payload.playerName?.trim() ?? "";
-    const score = payload.score ?? 0;
-    const stageReached = payload.stageReached?.trim() ?? "";
-    const completed = payload.completed === true;
-
-    if (!playerName || playerName.length > MAX_NAME_LENGTH) {
+    const playerName = payload.playerName.trim();
+    if (playerName.length > MAX_NAME_LENGTH) {
       return Response.json(
-        { error: `playerName is required and must be at most ${MAX_NAME_LENGTH} characters` },
+        { error: `playerName must be at most ${MAX_NAME_LENGTH} characters` },
         { status: 400 },
       );
     }
-    if (!Number.isInteger(score) || score < 0) {
-      return Response.json({ error: "score must be a non-negative integer" }, { status: 400 });
-    }
-    if (!stageReached) {
-      return Response.json({ error: "stageReached is required" }, { status: 400 });
-    }
 
     const db = await getDb();
+
+    const existingSession = await db
+      .select({ id: leaderboardEntries.id })
+      .from(leaderboardEntries)
+      .where(eq(leaderboardEntries.sessionToken, payload.sessionToken))
+      .limit(1);
+    if (existingSession.length > 0) {
+      return Response.json({ error: "此場次成績已提交過" }, { status: 409 });
+    }
+
+    const since = new Date(Date.now() - RATE_LIMIT_WINDOW_MS).toISOString();
+    const recent = await db
+      .select({ id: leaderboardEntries.id })
+      .from(leaderboardEntries)
+      .where(
+        and(
+          eq(leaderboardEntries.playerName, playerName),
+          gte(leaderboardEntries.createdAt, since),
+        ),
+      );
+    if (recent.length >= RATE_LIMIT_MAX) {
+      return Response.json({ error: "提交過於頻繁，請稍後再試" }, { status: 429 });
+    }
+
+    const { score, correctCount } = computeRunScore(payload.answers);
+    const stageIndex = highestPassedStageIndex(payload.answers, payload.endedEarly);
+    const stageReached = stageReachedName(stageIndex);
+    const completed = isFullCompletion(payload.answers, payload.endedEarly);
+
     const currentTop = await db
       .select({ score: leaderboardEntries.score })
       .from(leaderboardEntries)
@@ -79,19 +111,15 @@ export async function POST(request: Request) {
 
     const [entry] = await db
       .insert(leaderboardEntries)
-      .values({ playerName, score, stageReached, completed })
+      .values({
+        sessionToken: payload.sessionToken,
+        playerName,
+        score,
+        correctCount,
+        stageReached,
+        completed,
+      })
       .returning();
-
-    const topRows = await db
-      .select({ id: leaderboardEntries.id })
-      .from(leaderboardEntries)
-      .orderBy(desc(leaderboardEntries.score), desc(leaderboardEntries.id))
-      .limit(TOP_LIMIT);
-
-    const keepIds = topRows.map((row) => row.id);
-    if (keepIds.length > 0) {
-      await db.delete(leaderboardEntries).where(notInArray(leaderboardEntries.id, keepIds));
-    }
 
     return Response.json({ qualified: true, entry }, { status: 201 });
   } catch (error) {

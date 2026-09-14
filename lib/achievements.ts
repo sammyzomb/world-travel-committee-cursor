@@ -14,7 +14,7 @@ export const ACHIEVEMENTS: AchievementDef[] = [
   { id: "score_50", title: "半百達人", description: "主線單局得分 50+", emoji: "🎯" },
   { id: "score_100", title: "百分高手", description: "主線單局得分 100+", emoji: "💯" },
   { id: "graduate", title: "國小畢業", description: "通過小六畢業慶祝", emoji: "🎓" },
-  { id: "map_perfect", title: "洲別神眼", description: "地圖模式 10 題全對", emoji: "🗺️" },
+  { id: "map_perfect", title: "洲別神眼", description: "洲別挑戰 10 題全對", emoji: "🗺️" },
   { id: "training_clear", title: "特訓通關", description: "完成任一洲別特訓", emoji: "🏋️" },
   { id: "review_clear", title: "復仇成功", description: "錯題再戰全部答對", emoji: "😤" },
   { id: "bank_clear", title: "題庫全破", description: "主線打通全部題庫", emoji: "👑" },

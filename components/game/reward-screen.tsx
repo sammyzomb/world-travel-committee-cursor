@@ -1,7 +1,7 @@
 import { Gift, GraduationCap, Sparkles } from "lucide-react";
 import { CheerAnimation } from "../cheer-animation";
 import { ORGANIZATION_NAME } from "../../lib/brand";
-import { POINTS_PER_CORRECT } from "../../lib/game-config";
+import { PASS_CORRECT_REQUIRED, POINTS_PER_CORRECT, QUESTIONS_PER_STAGE } from "../../lib/game-config";
 import { getStageCompletionLabel } from "../../lib/game-round";
 
 type RewardScreenProps = {
@@ -52,7 +52,9 @@ export function RewardScreen({
         <div className="reward-bonus">
           <span>升級準備</span>
           <strong>整局剩餘 {lives} 次機會延續</strong>
-          <small>每級 10 題 · 答對一題得 {POINTS_PER_CORRECT} 分</small>
+          <small>
+            每級 {QUESTIONS_PER_STAGE} 題 · 答對 {PASS_CORRECT_REQUIRED} 題通過 · 每題 {POINTS_PER_CORRECT} 分
+          </small>
         </div>
         <button className="primary-button mx-auto" onClick={onContinue}>
           {isGraduationStage ? "畢業完成，進入" : "休息好了，升上"} {nextStage.name}{" "}

@@ -225,7 +225,7 @@ export function useEntertainmentModes(onGoHome: () => void) {
           ? `${trainingContinent ?? ""}特訓`
           : screen === "review-play"
             ? "錯題再戰"
-            : "地圖點選";
+            : "洲別挑戰";
 
     if (screen === "daily") {
       const won = correctCount === 1;

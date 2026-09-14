@@ -15,7 +15,8 @@
     "db:generate": "drizzle-kit generate",
     "import:questions": "node scripts/import-questions.mjs merge",
     "import:opentdb": "node scripts/import-questions.mjs fetch-opentdb",
-    "import:countries": "node scripts/import-questions.mjs fetch-countries"
+    "import:countries": "node scripts/import-questions.mjs fetch-countries",
+    "verify:phase1": "npx --yes tsx scripts/verify-phase1.mjs"
   },
   "dependencies": {
     "@base-ui/react": "^1.7.0",

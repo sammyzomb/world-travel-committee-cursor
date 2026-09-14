@@ -1,7 +1,7 @@
 "use client";
 
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
-import { graduationStageIndexes, POINTS_PER_CORRECT, STARTING_LIVES } from "../lib/game-config";
+import { FINAL_STAGE_INDEX, POINTS_PER_CORRECT, STARTING_LIVES } from "../lib/game-config";
 import {
   appendNextStage,
   canDrawNextStage,
@@ -9,10 +9,12 @@ import {
   getStageAt,
   getStageIndex,
   getStageLength,
+  isGraduationStage as checkGraduationStage,
   passRequiredForStage,
   type RoundPlan,
 } from "../lib/game-round";
 import { evaluateAchievements } from "../lib/achievements";
+import type { RunAnswerRecord } from "../lib/leaderboard-scoring";
 import type { LeaderboardEntry, SubmitState } from "../lib/leaderboard-types";
 import {
   loadPlayerProfile,
@@ -25,16 +27,26 @@ import type { Question } from "../lib/questions";
 
 export type GameScreen = "start" | "enroll" | "play" | "reward" | "result";
 
+function createSessionToken() {
+  if (typeof crypto !== "undefined" && "randomUUID" in crypto) {
+    return crypto.randomUUID();
+  }
+  return `run-${Date.now()}-${Math.random().toString(36).slice(2)}`;
+}
+
 export function useGameState() {
   const [screen, setScreen] = useState<GameScreen>("start");
   const [roundPlan, setRoundPlan] = useState<RoundPlan>(() => createRound([]));
-  const previousRound = useRef<string[]>([]);
+  const previousRoundQuestionIds = useRef<string[]>([]);
+  const sessionToken = useRef(createSessionToken());
+  const answerLog = useRef<RunAnswerRecord[]>([]);
   const [index, setIndex] = useState(0);
   const [score, setScore] = useState(0);
   const [selected, setSelected] = useState<number | null>(null);
   const [stageCorrect, setStageCorrect] = useState(0);
   const [lives, setLives] = useState(STARTING_LIVES);
   const [endedEarly, setEndedEarly] = useState(false);
+  const [fullCompletion, setFullCompletion] = useState(false);
   const [leaderboard, setLeaderboard] = useState<LeaderboardEntry[]>([]);
   const [leaderboardLoading, setLeaderboardLoading] = useState(true);
   const [leaderboardError, setLeaderboardError] = useState<string | null>(null);
@@ -76,7 +88,7 @@ export function useGameState() {
   const stage = getStageAt(stageIndex);
   const stageLength = getStageLength(stageStarts, round.length, stageIndex);
   const stageQuestion = index - stageStarts[stageIndex] + 1;
-  const isGraduationStage = graduationStageIndexes.has(stageIndex);
+  const isGraduationStage = checkGraduationStage(stageIndex);
   const passRequired = passRequiredForStage(stageLength);
   const nextStage = getStageAt(stageIndex + 1);
   const progress = useMemo(
@@ -84,14 +96,17 @@ export function useGameState() {
     [stageQuestion, stageLength],
   );
 
-  const resetGameState = useCallback((nextPlan: RoundPlan, avoid: string[]) => {
-    previousRound.current = avoid;
+  const resetGameState = useCallback((nextPlan: RoundPlan, avoidQuestionIds: string[]) => {
+    previousRoundQuestionIds.current = avoidQuestionIds;
+    sessionToken.current = createSessionToken();
+    answerLog.current = [];
     setRoundPlan(nextPlan);
     setIndex(0);
     setScore(0);
     setStageCorrect(0);
     setLives(STARTING_LIVES);
     setEndedEarly(false);
+    setFullCompletion(false);
     setSelected(null);
     setPlayerName("");
     setSubmitState("idle");
@@ -105,8 +120,16 @@ export function useGameState() {
   const choose = useCallback(
     (option: number) => {
       if (selected !== null || !current) return;
+      const isCorrect = option === current.answer;
+      answerLog.current.push({
+        questionId: current.id,
+        conceptId: current.conceptId,
+        stageIndex,
+        selected: option,
+        correct: isCorrect,
+      });
       setSelected(option);
-      if (option === current.answer) {
+      if (isCorrect) {
         setScore((value) => value + POINTS_PER_CORRECT);
         setStageCorrect((value) => value + 1);
         setRunStreak((value) => {
@@ -124,7 +147,7 @@ export function useGameState() {
         return next;
       });
     },
-    [current, selected],
+    [current, selected, stageIndex],
   );
 
   const next = useCallback(() => {
@@ -138,7 +161,13 @@ export function useGameState() {
         setScreen("result");
         return;
       }
+      if (stageIndex >= FINAL_STAGE_INDEX) {
+        setFullCompletion(true);
+        setScreen("result");
+        return;
+      }
       if (index === round.length - 1 && !canDrawNextStage(roundPlan, stageIndex + 1)) {
+        setEndedEarly(true);
         setScreen("result");
         return;
       }
@@ -161,9 +190,15 @@ export function useGameState() {
 
   const continueAfterReward = useCallback(() => {
     const nextStageIndex = stageIndex + 1;
+    if (nextStageIndex > FINAL_STAGE_INDEX) {
+      setFullCompletion(true);
+      setScreen("result");
+      return;
+    }
     if (nextStageIndex >= roundPlan.stageStarts.length) {
       const extended = appendNextStage(roundPlan, nextStageIndex);
-      if (!extended) {
+      if (!extended || extended.exhausted) {
+        setEndedEarly(true);
         setScreen("result");
         return;
       }
@@ -177,7 +212,7 @@ export function useGameState() {
 
   const beginFromFirstGrade = useCallback(() => {
     try {
-      resetGameState(createRound(previousRound.current), []);
+      resetGameState(createRound(previousRoundQuestionIds.current), []);
       setScreen("enroll");
     } catch (error) {
       console.error("無法開始遊戲", error);
@@ -186,7 +221,7 @@ export function useGameState() {
   }, [resetGameState]);
 
   const restart = useCallback(() => {
-    const avoid = roundPlan.questions.map((item) => item.q);
+    const avoid = roundPlan.questions.map((item) => item.id);
     resetGameState(createRound(avoid), avoid);
     setScreen("play");
   }, [resetGameState, roundPlan.questions]);
@@ -223,7 +258,7 @@ export function useGameState() {
       score,
       runStreak: maxRunStreak,
       stageName: stage.name,
-      completed: !endedEarly,
+      completed: fullCompletion,
     });
     const unlocked = evaluateAchievements({
       dailyStreak: profile.dailyStreak,
@@ -232,7 +267,7 @@ export function useGameState() {
       score,
       stageIndex,
       isGraduationStage,
-      completed: !endedEarly,
+      completed: fullCompletion,
       mapPerfect: false,
       trainingContinent: null,
       reviewCleared: false,
@@ -240,7 +275,7 @@ export function useGameState() {
     });
     for (const id of unlocked) unlockAchievement(id);
     if (unlocked.length > 0) setNewAchievements(unlocked);
-  }, [endedEarly, isGraduationStage, maxRunStreak, score, screen, stage.name, stageIndex]);
+  }, [fullCompletion, isGraduationStage, maxRunStreak, score, screen, stage.name, stageIndex]);
 
   const submitScore = useCallback(async () => {
     const trimmed = playerName.trim();
@@ -255,10 +290,10 @@ export function useGameState() {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
+          sessionToken: sessionToken.current,
           playerName: trimmed,
-          score,
-          stageReached: stage.name,
-          completed: !endedEarly,
+          answers: answerLog.current,
+          endedEarly,
         }),
       });
       const payload = (await response.json()) as { qualified?: boolean; error?: string };
@@ -279,7 +314,7 @@ export function useGameState() {
       setSubmitState("error");
       setSubmitMessage("成績送出失敗，請稍後再試。");
     }
-  }, [endedEarly, loadLeaderboard, playerName, score, stage.name]);
+  }, [endedEarly, loadLeaderboard, playerName]);
 
   return {
     screen,
@@ -301,6 +336,7 @@ export function useGameState() {
     stageCorrect,
     lives,
     endedEarly,
+    fullCompletion,
     leaderboard,
     leaderboardLoading,
     leaderboardError,

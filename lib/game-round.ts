@@ -1,20 +1,22 @@
 import {
   educationStages,
+  FINAL_STAGE_INDEX,
   formalStageNames,
-  INSTITUTE_POOL,
+  graduationStageIndexes,
   optionCountForStage,
-  PASS_CORRECT_REQUIRED,
+  passRequiredForStage,
   QUESTIONS_PER_STAGE,
   WARMUP_QUESTIONS_FIRST_STAGE,
 } from "./game-config";
-import { allQuestions, type Question, warmupQuestions } from "./questions";
+import { approvedQuestions, type Question, warmupQuestions } from "./questions";
 
 export type RoundPlan = {
   questions: Question[];
   stageStarts: number[];
-  usedQuestions: Set<string>;
-  previousRound: string[];
-  /** 研究所延續階段已無題可抽 */
+  usedQuestionIds: Set<string>;
+  usedConceptIds: Set<string>;
+  previousRoundQuestionIds: string[];
+  /** 下一學級無足夠已審核題目可抽 */
   exhausted: boolean;
 };
 
@@ -35,12 +37,10 @@ function withOptionCount(item: Question, count: number): Question {
   return { ...item, options, answer: options.indexOf(correct) };
 }
 
-const instituteNumerals = ["一", "二", "三", "四", "五", "六", "七", "八", "九", "十"] as const;
-
 export function getStageAt(stageIndex: number) {
-  if (stageIndex < educationStages.length) return educationStages[stageIndex];
-  const label = instituteNumerals[stageIndex - 16] ?? `${stageIndex - 15}`;
-  return { name: `研${label}`, group: "研究所", pool: INSTITUTE_POOL };
+  if (stageIndex < 0) return educationStages[0];
+  if (stageIndex >= educationStages.length) return educationStages[FINAL_STAGE_INDEX];
+  return educationStages[stageIndex];
 }
 
 export function getStageCompletionLabel(stage: { name: string; group: string }, isGraduation: boolean) {
@@ -60,25 +60,38 @@ export function getStageLength(stageStarts: number[], totalQuestions: number, st
   return nextStart - stageStarts[stageIndex];
 }
 
-export function passRequiredForStage(stageLength: number) {
-  return Math.max(1, Math.min(PASS_CORRECT_REQUIRED, Math.ceil(stageLength * 0.6)));
+export { passRequiredForStage };
+
+function isAvailable(
+  item: Question,
+  previousQuestionIds: string[],
+  usedQuestionIds: Set<string>,
+  usedConceptIds: Set<string>,
+  allowReuse: boolean,
+) {
+  if (usedQuestionIds.has(item.id)) return false;
+  if (usedConceptIds.has(item.conceptId)) return false;
+  if (!allowReuse && previousQuestionIds.includes(item.id)) return false;
+  return true;
 }
 
 function pickFreshQuestions(
   pool: Question[],
   count: number,
   optionCount: number,
-  previous: string[],
-  used: Set<string>,
+  previousQuestionIds: string[],
+  usedQuestionIds: Set<string>,
+  usedConceptIds: Set<string>,
   allowReuse = false,
 ) {
-  const available = pool.filter((item) => {
-    if (used.has(item.q)) return false;
-    if (!allowReuse && previous.includes(item.q)) return false;
-    return true;
-  });
+  const available = pool.filter((item) =>
+    isAvailable(item, previousQuestionIds, usedQuestionIds, usedConceptIds, allowReuse),
+  );
   const selected = shuffled(available).slice(0, count).map((item) => withOptionCount(item, optionCount));
-  selected.forEach((item) => used.add(item.q));
+  selected.forEach((item) => {
+    usedQuestionIds.add(item.id);
+    usedConceptIds.add(item.conceptId);
+  });
   return selected;
 }
 
@@ -86,63 +99,111 @@ function fillStagePool(
   pool: Question[],
   count: number,
   optionCount: number,
-  previous: string[],
-  used: Set<string>,
+  previousQuestionIds: string[],
+  usedQuestionIds: Set<string>,
+  usedConceptIds: Set<string>,
 ) {
-  let selected = pickFreshQuestions(pool, count, optionCount, previous, used);
+  let selected = pickFreshQuestions(
+    pool,
+    count,
+    optionCount,
+    previousQuestionIds,
+    usedQuestionIds,
+    usedConceptIds,
+  );
   if (selected.length < count) {
     selected = [
       ...selected,
-      ...pickFreshQuestions(pool, count - selected.length, optionCount, previous, used, true),
+      ...pickFreshQuestions(
+        pool,
+        count - selected.length,
+        optionCount,
+        previousQuestionIds,
+        usedQuestionIds,
+        usedConceptIds,
+        true,
+      ),
     ];
   }
-  return shuffled(selected);
+  return selected;
 }
 
-function drawStageQuestions(stageIndex: number, previous: string[], used: Set<string>): Question[] {
+function drawStageQuestions(
+  stageIndex: number,
+  previousQuestionIds: string[],
+  usedQuestionIds: Set<string>,
+  usedConceptIds: Set<string>,
+): Question[] {
+  if (stageIndex > FINAL_STAGE_INDEX) return [];
+
   if (stageIndex === 0) {
-    const freshWarmups = warmupQuestions.filter((item) => !previous.includes(item.q));
-    const warmupChoices = shuffled(freshWarmups.length >= WARMUP_QUESTIONS_FIRST_STAGE ? freshWarmups : warmupQuestions)
+    const approvedWarmups = warmupQuestions.filter((item) => item.auditStatus === "approved");
+    const freshWarmups = approvedWarmups.filter((item) => !previousQuestionIds.includes(item.id));
+    const warmupPool =
+      freshWarmups.length >= WARMUP_QUESTIONS_FIRST_STAGE ? freshWarmups : approvedWarmups;
+    const warmupChoices = warmupPool
       .slice(0, WARMUP_QUESTIONS_FIRST_STAGE)
       .map((item) => withOptionCount(item, 2));
-    warmupChoices.forEach((item) => used.add(item.q));
+    warmupChoices.forEach((item) => {
+      usedQuestionIds.add(item.id);
+      usedConceptIds.add(item.conceptId);
+    });
 
     const formalCount = QUESTIONS_PER_STAGE - WARMUP_QUESTIONS_FIRST_STAGE;
-    const elementaryPool = allQuestions.filter((item) => item.level === "旅行新手");
-    const formalChoices = fillStagePool(elementaryPool, formalCount, 2, previous, used);
-    return shuffled([...warmupChoices, ...formalChoices]);
+    const elementaryPool = approvedQuestions.filter((item) => item.level === "旅行新手");
+    const formalChoices = shuffled(
+      fillStagePool(
+        elementaryPool,
+        formalCount,
+        2,
+        previousQuestionIds,
+        usedQuestionIds,
+        usedConceptIds,
+      ),
+    );
+    return [...warmupChoices, ...formalChoices];
   }
 
-  if (stageIndex < educationStages.length) {
-    const stage = educationStages[stageIndex];
-    const optionCount = optionCountForStage(stageIndex);
-    const stagePool = allQuestions.filter((item) => (stage.pool as readonly string[]).includes(item.level));
-    return fillStagePool(stagePool, QUESTIONS_PER_STAGE, optionCount, previous, used);
-  }
-
-  const remainingPool = allQuestions.filter((item) => !previous.includes(item.q) && !used.has(item.q));
-  return pickFreshQuestions(remainingPool, QUESTIONS_PER_STAGE, 4, previous, used);
+  const stage = educationStages[stageIndex];
+  const optionCount = optionCountForStage(stageIndex);
+  const stagePool = approvedQuestions.filter((item) => (stage.pool as readonly string[]).includes(item.level));
+  return fillStagePool(
+    stagePool,
+    QUESTIONS_PER_STAGE,
+    optionCount,
+    previousQuestionIds,
+    usedQuestionIds,
+    usedConceptIds,
+  );
 }
 
-export function createRound(previous: string[]): RoundPlan {
-  const usedQuestions = new Set<string>();
-  const stageQuestions = drawStageQuestions(0, previous, usedQuestions);
+export function createRound(previousQuestionIds: string[]): RoundPlan {
+  const usedQuestionIds = new Set<string>();
+  const usedConceptIds = new Set<string>();
+  const stageQuestions = drawStageQuestions(0, previousQuestionIds, usedQuestionIds, usedConceptIds);
   return {
     questions: stageQuestions,
     stageStarts: [0],
-    usedQuestions,
-    previousRound: previous,
-    exhausted: false,
+    usedQuestionIds,
+    usedConceptIds,
+    previousRoundQuestionIds: previousQuestionIds,
+    exhausted: stageQuestions.length < QUESTIONS_PER_STAGE,
   };
 }
 
 /** 進入下一學級時才抽該級題目；若無題可抽則回傳 null。 */
 export function appendNextStage(plan: RoundPlan, stageIndex: number): RoundPlan | null {
-  const stageQuestions = drawStageQuestions(stageIndex, plan.previousRound, plan.usedQuestions);
+  if (stageIndex > FINAL_STAGE_INDEX) return null;
+
+  const stageQuestions = drawStageQuestions(
+    stageIndex,
+    plan.previousRoundQuestionIds,
+    plan.usedQuestionIds,
+    plan.usedConceptIds,
+  );
   if (stageQuestions.length === 0) return null;
 
-  const isInstituteExtension = stageIndex >= educationStages.length;
-  const exhausted = isInstituteExtension && stageQuestions.length < QUESTIONS_PER_STAGE;
+  const exhausted = stageQuestions.length < QUESTIONS_PER_STAGE;
 
   return {
     ...plan,
@@ -154,8 +215,19 @@ export function appendNextStage(plan: RoundPlan, stageIndex: number): RoundPlan 
 
 export function canDrawNextStage(plan: RoundPlan, nextStageIndex: number) {
   if (plan.exhausted) return false;
+  if (nextStageIndex > FINAL_STAGE_INDEX) return false;
   if (nextStageIndex < plan.stageStarts.length) return true;
-  const probeUsed = new Set(plan.usedQuestions);
-  const probe = drawStageQuestions(nextStageIndex, plan.previousRound, probeUsed);
-  return probe.length > 0;
+  const probeQuestionIds = new Set(plan.usedQuestionIds);
+  const probeConceptIds = new Set(plan.usedConceptIds);
+  const probe = drawStageQuestions(
+    nextStageIndex,
+    plan.previousRoundQuestionIds,
+    probeQuestionIds,
+    probeConceptIds,
+  );
+  return probe.length >= QUESTIONS_PER_STAGE;
+}
+
+export function isGraduationStage(stageIndex: number) {
+  return graduationStageIndexes.has(stageIndex);
 }

@@ -8,6 +8,7 @@ import type { PlayerProfile } from "../../lib/player-storage";
 
 type ResultScreenProps = {
   endedEarly: boolean;
+  fullCompletion: boolean;
   stageName: string;
   score: number;
   maxRunStreak: number;
@@ -24,6 +25,7 @@ type ResultScreenProps = {
 
 export function ResultScreen({
   endedEarly,
+  fullCompletion,
   stageName,
   score,
   maxRunStreak,
@@ -39,13 +41,13 @@ export function ResultScreen({
 }: ResultScreenProps) {
   return (
     <section className="result-section mx-auto w-full max-w-5xl px-4 py-10 text-center sm:px-8">
-      {!endedEarly && (
+      {fullCompletion && (
         <div className="celebration-animation-wrap">
           <CheerAnimation variant="graduation" />
         </div>
       )}
-      <div className={`result-card ${!endedEarly ? "graduation-card final-graduation" : ""}`}>
-        {!endedEarly && (
+      <div className={`result-card ${fullCompletion ? "graduation-card final-graduation" : ""}`}>
+        {fullCompletion && (
           <div className="graduation-confetti" aria-hidden="true">
             {Array.from({ length: 16 }, (_, index) => <i key={index} />)}
           </div>
@@ -61,15 +63,21 @@ export function ResultScreen({
             <Sparkles />
           </div>
         )}
-        <p className="mini-label mt-4">{endedEarly ? "本局 GG" : "QUEST BANK CLEAR・題庫全破"}</p>
-        {!endedEarly && <h2 className="final-graduation-title">題庫挑戰完成！</h2>}
-        <span className="degree-badge">{!endedEarly ? "世界旅遊博士" : `${stageName}止步`}</span>
+        <p className="mini-label mt-4">
+          {fullCompletion ? "FULL CLEAR・研二通關" : endedEarly ? "本局 GG" : "RUN END"}
+        </p>
+        {fullCompletion && <h2 className="final-graduation-title">完整破關！研二學業完成</h2>}
+        <span className="degree-badge">
+          {fullCompletion ? "研二畢業" : endedEarly ? `${stageName}止步` : `${stageName}結束`}
+        </span>
         <h1>{score.toLocaleString()} 分</h1>
         <p className="run-streak-copy">本局最高連勝 {maxRunStreak} 題 · 歷史最佳 {playerProfile.bestRunStreak} 題</p>
         <p>
-          {endedEarly
-            ? `在【${stageName}】被題目終結，換一組再來复仇！`
-            : `在【${stageName}】打通題庫，地理功力已達博士級！`}
+          {fullCompletion
+            ? "從小一一路升到研二，十八級學制全部通關！"
+            : endedEarly
+              ? `在【${stageName}】被題目終結，換一組再來復仇！`
+              : `本局在【${stageName}】結束，繼續挑戰衝更高分！`}
         </p>
 
         {newAchievements.length > 0 && (
@@ -90,7 +98,7 @@ export function ResultScreen({
           score={score}
           runStreak={maxRunStreak}
           bestRunStreak={playerProfile.bestRunStreak}
-          endedEarly={endedEarly}
+          endedEarly={endedEarly || !fullCompletion}
         />
 
         {score > 0 && (

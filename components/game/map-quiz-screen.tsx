@@ -30,7 +30,7 @@ export function MapQuizScreen({
     <section className="mx-auto w-full max-w-4xl px-4 pb-10 pt-3 sm:px-8">
       <div className="mb-5 flex items-center justify-between gap-3">
         <div>
-          <p className="mini-label">地圖點選　第 {questionNumber} 題 / {totalQuestions}</p>
+          <p className="mini-label">洲別挑戰　第 {questionNumber} 題 / {totalQuestions}</p>
           <h2 className="text-xl font-black sm:text-2xl">洲別神眼挑戰</h2>
         </div>
         <div className="flex gap-2">

@@ -38,18 +38,23 @@ export const formalStageNames: Record<string, string> = {
   研一: "研究所一年級", 研二: "研究所二年級",
 };
 
-export const graduationStageIndexes = new Set([5, 8, 11, 15]);
-export const INSTITUTE_POOL = ["環球旅行家"] as const;
-/** 每個學級固定出 10 題（含小一 3 題送分題 + 7 題正式題）。 */
-export const QUESTIONS_PER_STAGE = 10;
+/** 小六、國三、高三、大四、研二為學制畢業節點。 */
+export const graduationStageIndexes = new Set([5, 8, 11, 15, 17]);
+export const FINAL_STAGE_INDEX = educationStages.length - 1;
+/** 每個學級固定出 5 題（小一含 3 題送分是非題 + 2 題正式題）。 */
+export const QUESTIONS_PER_STAGE = 5;
 export const STARTING_LIVES = 3;
 export const WARMUP_QUESTIONS_FIRST_STAGE = 3;
-export const PASS_CORRECT_REQUIRED = 6;
+export const PASS_CORRECT_REQUIRED = 3;
 export const POINTS_PER_CORRECT = 5;
 
-/** 國小 2 選項 → 國中 3 選項 → 高中以上 4 選項。 */
+export function passRequiredForStage(stageLength: number = QUESTIONS_PER_STAGE) {
+  return Math.min(PASS_CORRECT_REQUIRED, stageLength);
+}
+
+/** 小一～小三 2 選項 → 小四～小六 3 選項 → 國中以上 4 選項。 */
 export function optionCountForStage(stageIndex: number) {
-  if (stageIndex <= 1) return 2;
-  if (stageIndex <= 8) return 3;
+  if (stageIndex <= 2) return 2;
+  if (stageIndex <= 5) return 3;
   return 4;
 }

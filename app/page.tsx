@@ -177,6 +177,7 @@ export default function Home() {
       {game.screen === "result" && entertainment.screen === "idle" && (
         <ResultScreen
           endedEarly={game.endedEarly}
+          fullCompletion={game.fullCompletion}
           stageName={game.stage.name}
           score={game.score}
           maxRunStreak={game.maxRunStreak}

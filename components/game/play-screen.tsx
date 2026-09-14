@@ -67,7 +67,6 @@ export function PlayScreen({
             {item.name}
           </span>
         ))}
-        {stageIndex >= educationStages.length && <span className="current">{stage.name}</span>}
       </div>
 
       <div className="mb-5 flex items-center justify-between gap-3">

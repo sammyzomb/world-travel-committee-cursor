@@ -65,7 +65,7 @@ export function StartScreen({
               <RotateCcw size={16} /> 錯題再戰 ({profile.wrongQuestionKeys.length})
             </button>
             <button type="button" className="mode-chip" onClick={onMapQuiz}>
-              <Map size={16} /> 地圖點選
+              <Map size={16} /> 洲別挑戰
             </button>
           </div>
         </div>

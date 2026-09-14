@@ -1,6 +1,12 @@
 import questionBankJson from "../data/questions.json";
 import type { QuestionVisualData } from "../components/question-visual";
 import { getLandmarkImage, getLandmarkImageSrc } from "./landmark-images";
+import {
+  makeConceptId,
+  makeQuestionId,
+  QUESTION_SOURCES,
+  type AuditStatus,
+} from "./question-metadata";
 
 const questionBank = questionBankJson as {
   warmupQuestions: RawQuestion[];
@@ -13,6 +19,11 @@ const questionBank = questionBankJson as {
 export type QuestionCategory = "世界地理" | "旅行知識";
 
 export type Question = {
+  id: string;
+  conceptId: string;
+  source: string;
+  auditStatus: AuditStatus;
+  grades: string[];
   level: string;
   region: string;
   q: string;
@@ -68,12 +79,35 @@ function factVisual(landmark: string, label: string, detail: string): QuestionVi
   return { type: "photo", label, detail, image: imageSrc, credit: image.credit };
 }
 
-function attachVisual(raw: RawQuestion): Question {
+function attachMetadata(
+  question: Omit<Question, "id" | "conceptId" | "source" | "auditStatus" | "grades">,
+  meta: {
+    id: string;
+    conceptId: string;
+    source: string;
+    auditStatus: AuditStatus;
+    grades: string[];
+  },
+): Question {
+  return { ...question, ...meta };
+}
+
+function attachVisual(
+  raw: RawQuestion,
+  meta: {
+    id: string;
+    conceptId: string;
+    source: string;
+    auditStatus: AuditStatus;
+    grades: string[];
+  },
+): Question {
   const { landmark, landmarkDetail, ...rest } = raw;
   const visual = landmark && landmarkDetail
     ? landmarkVisual(landmark, landmarkDetail)
     : undefined;
-  return visual ? { ...rest, visual } : rest;
+  const base = visual ? { ...rest, visual } : rest;
+  return attachMetadata(base, meta);
 }
 
 function levelsForFact(factIndex: number, totalFacts: number): ExpandedQuestionLevels {
@@ -109,47 +143,83 @@ function buildExpandedQuestions(facts: ExpandedFact[]): Question[] {
   return facts.flatMap((fact, factIndex) => {
     const [city, country, continent, capital, landmark] = fact;
     const levels = levelsForFact(factIndex, facts.length);
+    const approved = QUESTION_SOURCES.restCountries;
+    const pending = QUESTION_SOURCES.expandedPending;
+    const base = { region: continent, category: "世界地理" as const };
     return [
-      {
-        level: levels.capital,
-        region: continent,
-        category: "世界地理" as const,
-        q: `${country}的首都是哪一座城市？`,
-        options: [capital, ...distractor(capitals, capital)],
-        answer: 0,
-        fact: `${capital}是${country}的首都。`,
-        visual: factVisual(landmark, landmark, `${country}・${continent}`),
-      },
-      {
-        level: levels.landmark,
-        region: continent,
-        category: "世界地理" as const,
-        q: `${landmark}位於哪一座城市？`,
-        options: [city, ...distractor(cities, city)],
-        answer: 0,
-        fact: `${landmark}位於${city}。`,
-        visual: factVisual(landmark, landmark, `${country}・${continent}`),
-      },
-      {
-        level: levels.cityCountry,
-        region: continent,
-        category: "世界地理" as const,
-        q: `${city}位於哪一個國家？`,
-        options: [country, ...distractor(countries, country)],
-        answer: 0,
-        fact: `${city}是${country}的重要城市。`,
-        visual: factVisual(landmark, city, continent),
-      },
-      {
-        level: levels.continent,
-        region: "洲別測驗",
-        category: "世界地理" as const,
-        q: `${country}位於哪一洲？`,
-        options: [continent, ...distractor(continents, continent)],
-        answer: 0,
-        fact: `${country}位於${continent}。`,
-        visual: factVisual(landmark, landmark, "旅遊地標"),
-      },
+      attachMetadata(
+        {
+          ...base,
+          level: levels.capital,
+          q: `${country}的首都是哪一座城市？`,
+          options: [capital, ...distractor(capitals, capital)],
+          answer: 0,
+          fact: `${capital}是${country}的首都。`,
+          visual: factVisual(landmark, landmark, `${country}・${continent}`),
+        },
+        {
+          id: makeQuestionId("expanded-capital", `${country}:${capital}`),
+          conceptId: makeConceptId("capital", country),
+          source: approved.label,
+          auditStatus: approved.auditStatus,
+          grades: [],
+        },
+      ),
+      attachMetadata(
+        {
+          ...base,
+          level: levels.landmark,
+          q: `${landmark}位於哪一座城市？`,
+          options: [city, ...distractor(cities, city)],
+          answer: 0,
+          fact: `${landmark}位於${city}。`,
+          visual: factVisual(landmark, landmark, `${country}・${continent}`),
+        },
+        {
+          id: makeQuestionId("expanded-landmark", `${landmark}:${city}`),
+          conceptId: makeConceptId("landmark-city", landmark),
+          source: pending.label,
+          auditStatus: pending.auditStatus,
+          grades: [],
+        },
+      ),
+      attachMetadata(
+        {
+          ...base,
+          level: levels.cityCountry,
+          q: `${city}位於哪一個國家？`,
+          options: [country, ...distractor(countries, country)],
+          answer: 0,
+          fact: `${city}是${country}的重要城市。`,
+          visual: factVisual(landmark, city, continent),
+        },
+        {
+          id: makeQuestionId("expanded-city", `${city}:${country}`),
+          conceptId: makeConceptId("city-country", city),
+          source: pending.label,
+          auditStatus: pending.auditStatus,
+          grades: [],
+        },
+      ),
+      attachMetadata(
+        {
+          level: levels.continent,
+          region: "洲別測驗",
+          category: "世界地理" as const,
+          q: `${country}位於哪一洲？`,
+          options: [continent, ...distractor(continents, continent)],
+          answer: 0,
+          fact: `${country}位於${continent}。`,
+          visual: factVisual(landmark, landmark, "旅遊地標"),
+        },
+        {
+          id: makeQuestionId("expanded-continent", `${country}:${continent}`),
+          conceptId: makeConceptId("continent", country),
+          source: approved.label,
+          auditStatus: approved.auditStatus,
+          grades: [],
+        },
+      ),
     ];
   });
 }
@@ -158,17 +228,50 @@ function withDefaultCategory(questions: Question[], category: QuestionCategory):
   return questions.map((item) => ({ ...item, category: item.category ?? category }));
 }
 
-export const warmupQuestions: Question[] = questionBank.warmupQuestions.map(attachVisual);
+const curatedSource = QUESTION_SOURCES.handCurated;
+const warmupSource = QUESTION_SOURCES.warmup;
+
+export const warmupQuestions: Question[] = questionBank.warmupQuestions.map((raw, index) =>
+  attachVisual(raw, {
+    id: makeQuestionId("warmup", raw.q),
+    conceptId: makeConceptId("warmup", String(index)),
+    source: warmupSource.label,
+    auditStatus: warmupSource.auditStatus,
+    grades: ["小一"],
+  }),
+);
 export const handPickedQuestions: Question[] = withDefaultCategory(
-  questionBank.questions.map(attachVisual),
+  questionBank.questions.map((raw, index) =>
+    attachVisual(raw, {
+      id: makeQuestionId("hand", raw.q),
+      conceptId: makeConceptId("hand", String(index)),
+      source: curatedSource.label,
+      auditStatus: curatedSource.auditStatus,
+      grades: [],
+    }),
+  ),
   "世界地理",
 );
 export const travelKnowledgeQuestions: Question[] = withDefaultCategory(
-  questionBank.travelKnowledgeQuestions.map(attachVisual),
+  questionBank.travelKnowledgeQuestions.map((raw, index) =>
+    attachVisual(raw, {
+      id: makeQuestionId("travel", raw.q),
+      conceptId: makeConceptId("travel", String(index)),
+      source: curatedSource.label,
+      auditStatus: curatedSource.auditStatus,
+      grades: [],
+    }),
+  ),
   "旅行知識",
 );
-export const tourQuestions: Question[] = (questionBank.tourQuestions ?? []).map((raw) => {
-  const question = attachVisual(raw);
+export const tourQuestions: Question[] = (questionBank.tourQuestions ?? []).map((raw, index) => {
+  const question = attachVisual(raw, {
+    id: makeQuestionId("tour", raw.q),
+    conceptId: makeConceptId("tour", String(index)),
+    source: curatedSource.label,
+    auditStatus: curatedSource.auditStatus,
+    grades: [],
+  });
   return { ...question, category: raw.category ?? "世界地理" };
 });
 export const expandedQuestions: Question[] = buildExpandedQuestions(questionBank.expandedFacts);
@@ -178,6 +281,9 @@ export const allQuestions: Question[] = [
   ...tourQuestions,
   ...expandedQuestions,
 ];
+export const approvedQuestions: Question[] = allQuestions.filter(
+  (item) => item.auditStatus === "approved",
+);
 
 export const questionBankStats = {
   warmup: warmupQuestions.length,
@@ -186,5 +292,7 @@ export const questionBankStats = {
   tour: tourQuestions.length,
   expandedFacts: questionBank.expandedFacts.length,
   expandedGenerated: expandedQuestions.length,
+  approved: approvedQuestions.length,
+  pending: allQuestions.filter((item) => item.auditStatus === "pending").length,
   total: warmupQuestions.length + allQuestions.length,
 } as const;
