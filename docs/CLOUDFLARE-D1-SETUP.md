@@ -93,6 +93,12 @@ npm run deploy:cloudflare
 
 `https://world-travel-committee.<your-subdomain>.workers.dev`
 
+若 onboarding 連結出現 404，可改到 [Workers & Pages](https://dash.cloudflare.com/?to=/:account/workers-and-pages) 設定子網域，或執行：
+
+```powershell
+npm run workers:subdomain tcawg
+```
+
 ## 步驟五：驗證名人榜
 
 1. 開啟部署 URL

@@ -8,7 +8,7 @@
 | **Netlify** | 備援試玩入口 | ❌ stub | `npm run deploy:netlify` |
 
 - Netlify 試玩：https://world-travel-committee-cursor.netlify.app
-- Cloudflare 正式站：部署後見 `*.workers.dev`（見 [CLOUDFLARE-D1-SETUP.md](./CLOUDFLARE-D1-SETUP.md)）
+- Cloudflare 正式站：https://world-travel-committee.tcawg.workers.dev（見 [CLOUDFLARE-D1-SETUP.md](./CLOUDFLARE-D1-SETUP.md)）
 
 ## Cloudflare + D1（建議）
 
