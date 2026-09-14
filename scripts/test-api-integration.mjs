@@ -84,6 +84,11 @@ const answered = await answerCurrent(state, sessionToken, correctOption);
 assert.equal(answered.status, 200);
 state = answered.payload.state;
 assert.ok(state.feedback);
+assert.equal(state.screen, "play");
+assert.equal(state.question?.id, firstQuestion.id, "feedback must retain the answered question for PlayScreen");
+assert.deepEqual(state.question.options, firstQuestion.options);
+assert.equal("answer" in state.question, false);
+assert.equal("fact" in state.question, false);
 assert.equal(state.progressRevision, 1);
 
 const duplicateAnswer = await answerCurrent(
@@ -247,9 +252,15 @@ const exhaustedSubmit = await callPost(postLeaderboard, {
   questionBankVersion: QUESTION_BANK_VERSION,
 });
 assert.ok([200, 201].includes(exhaustedSubmit.status));
-if (exhaustedSubmit.payload.entry) {
-  assert.equal(exhaustedSubmit.payload.entry.completed, false);
-}
+assert.equal(exhaustedSubmit.status, 201);
+assert.equal(exhaustedSubmit.payload.entry.completed, false);
+assert.equal("sessionToken" in exhaustedSubmit.payload.entry, false);
+const repeatedSubmit = await callPost(postLeaderboard, {
+  sessionToken: exhaustedToken,
+  playerName: "耗盡測試",
+  questionBankVersion: QUESTION_BANK_VERSION,
+});
+assert.equal(repeatedSubmit.status, 409);
 
 // --- 升級獎勵後繼續 ---
 const rewardStart = await callPost(startRun, { avoidQuestionIds: [], avoidConceptIds: [] });
@@ -315,13 +326,18 @@ const boardSubmit = await callPost(postLeaderboard, {
   playerName: "榜單測試",
   questionBankVersion: QUESTION_BANK_VERSION,
 });
-assert.ok([200, 201].includes(boardSubmit.status));
+assert.equal(boardSubmit.status, 409, "an active run must not publish a partial score");
 
 const boardRead = await getLeaderboard();
 assert.equal(boardRead.status, 200);
 const boardPayload = await boardRead.json();
 assert.ok(Array.isArray(boardPayload.entries));
-assert.ok(boardPayload.entries.some((entry) => entry.sessionToken === boardToken));
+assert.ok(boardPayload.entries.some((entry) => entry.id === exhaustedSubmit.payload.entry.id));
+assert.ok(!boardPayload.entries.some((entry) => entry.playerName === "榜單測試"));
+for (const entry of boardPayload.entries) {
+  assert.deepEqual(Object.keys(entry).sort(), ["completed", "id", "playerName", "score", "stageReached"]);
+}
+assert.ok(!JSON.stringify(boardPayload).includes(exhaustedToken), "public board must not leak run credentials");
 
 console.log(
   "PASS: API+DB integration covered start, answer, advance, continue, death, pool exhaustion, duplicate, parallel, and leaderboard.",
