@@ -16,7 +16,11 @@
     "import:questions": "node scripts/import-questions.mjs merge",
     "import:opentdb": "node scripts/import-questions.mjs fetch-opentdb",
     "import:countries": "node scripts/import-questions.mjs fetch-countries",
-    "verify:phase1": "npx --yes tsx scripts/verify-phase1.mjs"
+    "verify:phase1": "npx --yes tsx scripts/verify-phase1.mjs",
+    "audit:questions": "node scripts/audit-questions.mjs --write",
+    "db:migrate:local": "node scripts/migrate-d1.mjs --local",
+    "db:migrate:remote": "node scripts/migrate-d1.mjs --remote",
+    "deploy:netlify": "npm run build:netlify && npx netlify-cli deploy --prod --dir=dist --functions=.netlify/functions-internal"
   },
   "dependencies": {
     "@base-ui/react": "^1.7.0",

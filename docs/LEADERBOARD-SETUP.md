@@ -13,9 +13,12 @@
 ## 需要使用者提供的項目
 
 1. **Cloudflare 部署**並設定 D1 binding `DB`（見 `.openai/hosting.json`）。
-2. 執行遷移：
-   - `drizzle/0000_tired_gravity.sql`
-   - `drizzle/0001_leaderboard_sessions.sql`
+2. 建置後執行遷移：
+   ```bash
+   npm run build
+   npm run db:migrate:local    # 本機 preview
+   npm run db:migrate:remote   # 正式 D1（需 wrangler 登入）
+   ```
 3. **Netlify 部署**目前使用 `db/netlify-db-stub.ts`，名人榜 API 會回傳「尚未設定資料庫」。若要 Netlify 上線名人榜，需另接 Turso／Neon 等並實作對應 adapter。
 
 ## 驗證

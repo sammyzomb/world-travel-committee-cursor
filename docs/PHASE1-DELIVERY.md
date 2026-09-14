@@ -27,9 +27,16 @@
 
 另執行 `npm run build` 與 `npm run lint`（見 commit 時 CI／本地輸出）。
 
+## 2026-09-14 追加
+
+- Netlify 正式部署：https://world-travel-committee-cursor.netlify.app
+- 題庫審核工作流：`data/question-audit.json` + `npm run audit:questions`（434 approved）
+- D1 遷移腳本：`npm run db:migrate:local` / `db:migrate:remote`
+- 部署文件： [DEPLOYMENT.md](./DEPLOYMENT.md)、QA： [MANUAL-QA-REPORT.md](./MANUAL-QA-REPORT.md)
+
 ## 未完成
 
-- 逐題人工審核全部 400+ 題（expanded 地標／城市題仍為 `pending`）。
+- 手動精選題逐題人工覆核（目前依來源預設 approved）。
 - 一萬題擴充與各年級精細題量平衡。
 - Netlify 名人榜持久資料庫 adapter。
 - 自動化 E2E（Playwright）與真機瀏覽器測試。

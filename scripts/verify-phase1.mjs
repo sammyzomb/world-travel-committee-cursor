@@ -1,6 +1,7 @@
 import assert from "node:assert/strict";
 import {
   FINAL_STAGE_INDEX,
+  graduationStageIndexes,
   optionCountForStage,
   passRequiredForStage,
   QUESTIONS_PER_STAGE,
@@ -11,6 +12,7 @@ import {
   canDrawNextStage,
   createRound,
   getStageLength,
+  isGraduationStage,
 } from "../lib/game-round.ts";
 import {
   computeRunScore,
@@ -72,6 +74,37 @@ function run() {
     endedEarly: false,
   });
   assert.equal(validationError, null);
+
+  for (const idx of [5, 8, 11, 15, 17]) {
+    assert.ok(graduationStageIndexes.has(idx), `graduation index ${idx}`);
+    assert.ok(isGraduationStage(idx), `isGraduationStage(${idx})`);
+  }
+
+  const tampered = validateRunSubmission({
+    sessionToken: "tamper-test",
+    playerName: "Hacker",
+    answers: [
+      {
+        questionId: sampleAnswers[0].questionId,
+        conceptId: sampleAnswers[0].conceptId,
+        stageIndex: 0,
+        selected: 0,
+        correct: true,
+      },
+      {
+        questionId: sampleAnswers[0].questionId,
+        conceptId: "duplicate-concept",
+        stageIndex: 0,
+        selected: 0,
+        correct: true,
+      },
+    ],
+    endedEarly: true,
+  });
+  assert.ok(tampered?.includes("duplicate"), "should reject duplicate questionId");
+
+  const restartRound = createRound(plan.questions.map((item) => item.id));
+  assert.ok(restartRound.questions.length > 0, "restart with avoid list");
 
   console.log("Phase 1 verification passed.");
   console.log(

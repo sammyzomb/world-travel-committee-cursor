@@ -1,0 +1,1015 @@
+{
+  "version": 1,
+  "updatedAt": "2026-09-14T02:16:31.906Z",
+  "description": "Per-question audit overrides. Do not blanket-approve hand-curated items here.",
+  "overrides": {
+    "expanded-landmark:13juzzf": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:fact-consistency",
+      "note": "來源 expandedFacts 一致（艾菲爾鐵塔 → 巴黎）"
+    },
+    "expanded-city:w8u12u": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:fact-consistency",
+      "note": "來源 expandedFacts 一致（巴黎 → 法國）"
+    },
+    "expanded-landmark:ceo71a": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:fact-consistency",
+      "note": "來源 expandedFacts 一致（大笨鐘 → 倫敦）"
+    },
+    "expanded-city:1650589": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:fact-consistency",
+      "note": "來源 expandedFacts 一致（倫敦 → 英國）"
+    },
+    "expanded-landmark:fp0qe6": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:fact-consistency",
+      "note": "來源 expandedFacts 一致（羅馬競技場 → 羅馬）"
+    },
+    "expanded-city:4zbuvs": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:fact-consistency",
+      "note": "來源 expandedFacts 一致（羅馬 → 義大利）"
+    },
+    "expanded-landmark:15tyu5d": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:fact-consistency",
+      "note": "來源 expandedFacts 一致（普拉多博物館 → 馬德里）"
+    },
+    "expanded-city:zxctpu": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:fact-consistency",
+      "note": "來源 expandedFacts 一致（馬德里 → 西班牙）"
+    },
+    "expanded-landmark:chcdu": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:fact-consistency",
+      "note": "來源 expandedFacts 一致（布蘭登堡門 → 柏林）"
+    },
+    "expanded-city:1rtb686": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:fact-consistency",
+      "note": "來源 expandedFacts 一致（柏林 → 德國）"
+    },
+    "expanded-landmark:hla0b8": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:fact-consistency",
+      "note": "來源 expandedFacts 一致（美泉宮 → 維也納）"
+    },
+    "expanded-city:1k4imch": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:fact-consistency",
+      "note": "來源 expandedFacts 一致（維也納 → 奧地利）"
+    },
+    "expanded-landmark:xa26e0": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:fact-consistency",
+      "note": "來源 expandedFacts 一致（國會大廈 → 布達佩斯）"
+    },
+    "expanded-city:1pyfiz9": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:fact-consistency",
+      "note": "來源 expandedFacts 一致（布達佩斯 → 匈牙利）"
+    },
+    "expanded-landmark:1j3jtem": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:fact-consistency",
+      "note": "來源 expandedFacts 一致（吉薩金字塔群 → 開羅）"
+    },
+    "expanded-city:wk4fpj": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:fact-consistency",
+      "note": "來源 expandedFacts 一致（開羅 → 埃及）"
+    },
+    "expanded-landmark:1xq0dfg": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:fact-consistency",
+      "note": "來源 expandedFacts 一致（奈洛比國家公園 → 內羅畢）"
+    },
+    "expanded-city:9moyxx": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:fact-consistency",
+      "note": "來源 expandedFacts 一致（內羅畢 → 肯亞）"
+    },
+    "expanded-landmark:56tru6": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:fact-consistency",
+      "note": "來源 expandedFacts 一致（桌山 → 開普敦）"
+    },
+    "expanded-city:8b8zi": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:fact-consistency",
+      "note": "來源 expandedFacts 一致（開普敦 → 南非）"
+    },
+    "expanded-landmark:1dfxi98": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:fact-consistency",
+      "note": "來源 expandedFacts 一致（庫圖比亞清真寺 → 馬拉喀什）"
+    },
+    "expanded-city:k1tvcm": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:fact-consistency",
+      "note": "來源 expandedFacts 一致（馬拉喀什 → 摩洛哥）"
+    },
+    "expanded-landmark:gfh5e9": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:fact-consistency",
+      "note": "來源 expandedFacts 一致（自由女神像 → 紐約）"
+    },
+    "expanded-city:7k7csj": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:fact-consistency",
+      "note": "來源 expandedFacts 一致（紐約 → 美國）"
+    },
+    "expanded-landmark:gikha9": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:fact-consistency",
+      "note": "來源 expandedFacts 一致（國會山莊 → 渥太華）"
+    },
+    "expanded-city:1yjr5zs": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:fact-consistency",
+      "note": "來源 expandedFacts 一致（渥太華 → 加拿大）"
+    },
+    "expanded-landmark:cex8zj": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:fact-consistency",
+      "note": "來源 expandedFacts 一致（太陽金字塔 → 墨西哥城）"
+    },
+    "expanded-city:1g3kzdg": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:fact-consistency",
+      "note": "來源 expandedFacts 一致（墨西哥城 → 墨西哥）"
+    },
+    "expanded-landmark:i3hwpx": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:fact-consistency",
+      "note": "來源 expandedFacts 一致（基督像 → 里約熱內盧）"
+    },
+    "expanded-city:inom4s": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:fact-consistency",
+      "note": "來源 expandedFacts 一致（里約熱內盧 → 巴西）"
+    },
+    "expanded-landmark:xvk8tp": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:fact-consistency",
+      "note": "來源 expandedFacts 一致（馬丘比丘 → 利馬）"
+    },
+    "expanded-city:1kiqs3y": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:fact-consistency",
+      "note": "來源 expandedFacts 一致（利馬 → 秘魯）"
+    },
+    "expanded-landmark:7kqeh3": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:fact-consistency",
+      "note": "來源 expandedFacts 一致（聖克里斯托瓦爾山 → 聖地牙哥）"
+    },
+    "expanded-city:7wqkgz": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:fact-consistency",
+      "note": "來源 expandedFacts 一致（聖地牙哥 → 智利）"
+    },
+    "expanded-landmark:muujxh": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:fact-consistency",
+      "note": "來源 expandedFacts 一致（五月廣場 → 布宜諾斯艾利斯）"
+    },
+    "expanded-city:kzu9el": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:fact-consistency",
+      "note": "來源 expandedFacts 一致（布宜諾斯艾利斯 → 阿根廷）"
+    },
+    "expanded-landmark:j9k93v": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:fact-consistency",
+      "note": "來源 expandedFacts 一致（月亮谷 → 拉巴斯）"
+    },
+    "expanded-city:13pca8l": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:fact-consistency",
+      "note": "來源 expandedFacts 一致（拉巴斯 → 玻利維亞）"
+    },
+    "expanded-landmark:30wp1r": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:fact-consistency",
+      "note": "來源 expandedFacts 一致（雪梨歌劇院 → 雪梨）"
+    },
+    "expanded-city:z1f5cr": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:fact-consistency",
+      "note": "來源 expandedFacts 一致（雪梨 → 澳洲）"
+    },
+    "expanded-landmark:1v6o4cp": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:fact-consistency",
+      "note": "來源 expandedFacts 一致（紐西蘭國會大廈 → 威靈頓）"
+    },
+    "expanded-city:1c3reeo": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:fact-consistency",
+      "note": "來源 expandedFacts 一致（威靈頓 → 紐西蘭）"
+    },
+    "expanded-landmark:1m86kp3": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:fact-consistency",
+      "note": "來源 expandedFacts 一致（大皇宮 → 曼谷）"
+    },
+    "expanded-city:1t7nn0a": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:fact-consistency",
+      "note": "來源 expandedFacts 一致（曼谷 → 泰國）"
+    },
+    "expanded-landmark:1a6p510": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:fact-consistency",
+      "note": "來源 expandedFacts 一致（景福宮 → 首爾）"
+    },
+    "expanded-city:1ap82cq": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:fact-consistency",
+      "note": "來源 expandedFacts 一致（首爾 → 韓國）"
+    },
+    "expanded-landmark:t0tyn0": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:fact-consistency",
+      "note": "來源 expandedFacts 一致（濱海灣金沙 → 新加坡）"
+    },
+    "expanded-city:ucnvs": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:fact-consistency",
+      "note": "來源 expandedFacts 一致（新加坡 → 新加坡）"
+    },
+    "expanded-landmark:1p3xwo0": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:fact-consistency",
+      "note": "來源 expandedFacts 一致（清水寺 → 京都）"
+    },
+    "expanded-city:15s7dww": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:fact-consistency",
+      "note": "來源 expandedFacts 一致（京都 → 日本）"
+    },
+    "expanded-landmark:15nw4n1": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:fact-consistency",
+      "note": "來源 expandedFacts 一致（東大寺 → 奈良）"
+    },
+    "expanded-city:aedee2": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:fact-consistency",
+      "note": "來源 expandedFacts 一致（奈良 → 日本）"
+    },
+    "expanded-landmark:7uig8d": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:fact-consistency",
+      "note": "來源 expandedFacts 一致（泰姬瑪哈陵 → 阿格拉）"
+    },
+    "expanded-city:l5gnac": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:fact-consistency",
+      "note": "來源 expandedFacts 一致（阿格拉 → 印度）"
+    },
+    "expanded-landmark:rtb34y": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:fact-consistency",
+      "note": "來源 expandedFacts 一致（聖索菲亞大教堂 → 伊斯坦堡）"
+    },
+    "expanded-city:124m8iw": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:fact-consistency",
+      "note": "來源 expandedFacts 一致（伊斯坦堡 → 土耳其）"
+    },
+    "expanded-landmark:1lpapx3": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:fact-consistency",
+      "note": "來源 expandedFacts 一致（哈里法塔 → 杜拜）"
+    },
+    "expanded-city:1mpuxfl": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:fact-consistency",
+      "note": "來源 expandedFacts 一致（杜拜 → 阿聯酋）"
+    },
+    "expanded-landmark:e8puwy": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:fact-consistency",
+      "note": "來源 expandedFacts 一致（紅場 → 莫斯科）"
+    },
+    "expanded-city:qodmkh": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:fact-consistency",
+      "note": "來源 expandedFacts 一致（莫斯科 → 俄羅斯）"
+    },
+    "expanded-landmark:v0akdh": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:fact-consistency",
+      "note": "來源 expandedFacts 一致（帕德嫩神廟 → 雅典）"
+    },
+    "expanded-city:vjpl8z": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:fact-consistency",
+      "note": "來源 expandedFacts 一致（雅典 → 希臘）"
+    },
+    "expanded-landmark:59jr6p": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:fact-consistency",
+      "note": "來源 expandedFacts 一致（查理大橋 → 布拉格）"
+    },
+    "expanded-city:3df36g": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:fact-consistency",
+      "note": "來源 expandedFacts 一致（布拉格 → 捷克）"
+    },
+    "expanded-landmark:1f1wrjy": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:fact-consistency",
+      "note": "來源 expandedFacts 一致（藍湖 → 雷克雅維克）"
+    },
+    "expanded-city:1ofxpqp": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:fact-consistency",
+      "note": "來源 expandedFacts 一致（雷克雅維克 → 冰島）"
+    },
+    "expanded-landmark:1q5idip": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:fact-consistency",
+      "note": "來源 expandedFacts 一致（庫肯霍夫花園 → 阿姆斯特丹）"
+    },
+    "expanded-city:tgz4nc": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:fact-consistency",
+      "note": "來源 expandedFacts 一致（阿姆斯特丹 → 荷蘭）"
+    },
+    "expanded-landmark:1k89aar": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:fact-consistency",
+      "note": "來源 expandedFacts 一致（金門大橋 → 舊金山）"
+    },
+    "expanded-city:6nfv59": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:fact-consistency",
+      "note": "來源 expandedFacts 一致（舊金山 → 美國）"
+    },
+    "expanded-landmark:10w27v4": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:fact-consistency",
+      "note": "來源 expandedFacts 一致（奇琴伊察 → 坎昆）"
+    },
+    "expanded-city:16p3izw": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:fact-consistency",
+      "note": "來源 expandedFacts 一致（坎昆 → 墨西哥）"
+    },
+    "expanded-landmark:bgkd2l": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:fact-consistency",
+      "note": "來源 expandedFacts 一致（伊瓜蘇瀑布 → 伊瓜蘇港）"
+    },
+    "expanded-city:7yws59": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:fact-consistency",
+      "note": "來源 expandedFacts 一致（伊瓜蘇港 → 阿根廷）"
+    },
+    "expanded-landmark:td0zzc": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:fact-consistency",
+      "note": "來源 expandedFacts 一致（迦太基古城 → 突尼斯市）"
+    },
+    "expanded-city:haals6": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:fact-consistency",
+      "note": "來源 expandedFacts 一致（突尼斯市 → 突尼西亞）"
+    },
+    "expanded-landmark:z3ibpy": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:fact-consistency",
+      "note": "來源 expandedFacts 一致（雙子星塔 → 吉隆坡）"
+    },
+    "expanded-city:119ekhb": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:fact-consistency",
+      "note": "來源 expandedFacts 一致（吉隆坡 → 馬來西亞）"
+    },
+    "expanded-landmark:kdiqf7": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:fact-consistency",
+      "note": "來源 expandedFacts 一致（維多利亞港 → 香港）"
+    },
+    "expanded-city:1a83hs2": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:fact-consistency",
+      "note": "來源 expandedFacts 一致（香港 → 中國）"
+    },
+    "expanded-landmark:eq0xtw": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:fact-consistency",
+      "note": "來源 expandedFacts 一致（聖馬可廣場 → 威尼斯）"
+    },
+    "expanded-city:a8h66d": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:fact-consistency",
+      "note": "來源 expandedFacts 一致（威尼斯 → 義大利）"
+    },
+    "expanded-landmark:hww2ua": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:fact-consistency",
+      "note": "來源 expandedFacts 一致（聖母百花大教堂 → 佛羅倫斯）"
+    },
+    "expanded-city:10vff7j": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:fact-consistency",
+      "note": "來源 expandedFacts 一致（佛羅倫斯 → 義大利）"
+    },
+    "expanded-landmark:14kje12": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:fact-consistency",
+      "note": "來源 expandedFacts 一致（吳哥窟 → 暹粒）"
+    },
+    "expanded-city:augtxb": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:fact-consistency",
+      "note": "來源 expandedFacts 一致（暹粒 → 柬埔寨）"
+    },
+    "expanded-landmark:1wkkg9u": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:fact-consistency",
+      "note": "來源 expandedFacts 一致（佩特拉古城 → 佩特拉）"
+    },
+    "expanded-city:1xycnhf": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:fact-consistency",
+      "note": "來源 expandedFacts 一致（佩特拉 → 約旦）"
+    },
+    "expanded-landmark:173d38p": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:fact-consistency",
+      "note": "來源 expandedFacts 一致（獅子岩 → 可倫坡）"
+    },
+    "expanded-city:92t73a": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:fact-consistency",
+      "note": "來源 expandedFacts 一致（可倫坡 → 斯里蘭卡）"
+    },
+    "expanded-landmark:1ln7r2w": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:fact-consistency",
+      "note": "來源 expandedFacts 一致（珠穆朗瑪峰 → 加德滿都）"
+    },
+    "expanded-city:1djhve3": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:fact-consistency",
+      "note": "來源 expandedFacts 一致（加德滿都 → 尼泊爾）"
+    },
+    "expanded-landmark:1mq8ann": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:fact-consistency",
+      "note": "來源 expandedFacts 一致（孫德爾邦 → 達卡）"
+    },
+    "expanded-city:1qls76j": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:fact-consistency",
+      "note": "來源 expandedFacts 一致（達卡 → 孟加拉）"
+    },
+    "expanded-landmark:1kapqxt": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:fact-consistency",
+      "note": "來源 expandedFacts 一致（拉合爾城堡 → 伊斯蘭堡）"
+    },
+    "expanded-city:a07txa": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:fact-consistency",
+      "note": "來源 expandedFacts 一致（伊斯蘭堡 → 巴基斯坦）"
+    },
+    "expanded-landmark:jm3be3": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:fact-consistency",
+      "note": "來源 expandedFacts 一致（伊瑪目清真寺 → 德黑蘭）"
+    },
+    "expanded-city:m473qs": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:fact-consistency",
+      "note": "來源 expandedFacts 一致（德黑蘭 → 伊朗）"
+    },
+    "expanded-landmark:1ieu73z": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:fact-consistency",
+      "note": "來源 expandedFacts 一致（哭牆 → 耶路撒冷）"
+    },
+    "expanded-city:1lqo2b2": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:fact-consistency",
+      "note": "來源 expandedFacts 一致（耶路撒冷 → 以色列）"
+    },
+    "expanded-landmark:1w66qrj": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:fact-consistency",
+      "note": "來源 expandedFacts 一致（王國中心塔 → 利雅德）"
+    },
+    "expanded-city:nq51qi": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:fact-consistency",
+      "note": "來源 expandedFacts 一致（利雅德 → 沙烏地阿拉伯）"
+    },
+    "expanded-landmark:c3ncgd": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:fact-consistency",
+      "note": "來源 expandedFacts 一致（伊斯蘭藝術博物館 → 多哈）"
+    },
+    "expanded-city:3xpi5b": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:fact-consistency",
+      "note": "來源 expandedFacts 一致（多哈 → 卡達）"
+    },
+    "expanded-landmark:b6b3al": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:fact-consistency",
+      "note": "來源 expandedFacts 一致（下龍灣 → 河內）"
+    },
+    "expanded-city:942hir": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:fact-consistency",
+      "note": "來源 expandedFacts 一致（河內 → 越南）"
+    },
+    "expanded-landmark:1134uj3": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:fact-consistency",
+      "note": "來源 expandedFacts 一致（普西山 → 永珍）"
+    },
+    "expanded-city:bke7z6": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:fact-consistency",
+      "note": "來源 expandedFacts 一致（永珍 → 寮國）"
+    },
+    "expanded-landmark:mfswcp": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:fact-consistency",
+      "note": "來源 expandedFacts 一致（大金塔 → 仰光）"
+    },
+    "expanded-city:ysgi31": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:fact-consistency",
+      "note": "來源 expandedFacts 一致（仰光 → 緬甸）"
+    },
+    "expanded-landmark:ldue70": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:fact-consistency",
+      "note": "來源 expandedFacts 一致（碧瑤 → 馬尼拉）"
+    },
+    "expanded-city:1xhzjrt": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:fact-consistency",
+      "note": "來源 expandedFacts 一致（馬尼拉 → 菲律賓）"
+    },
+    "expanded-landmark:6rjak0": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:fact-consistency",
+      "note": "來源 expandedFacts 一致（婆羅浮屠 → 雅加達）"
+    },
+    "expanded-city:5ukp7x": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:fact-consistency",
+      "note": "來源 expandedFacts 一致（雅加達 → 印尼）"
+    },
+    "expanded-landmark:1gsc6fb": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:fact-consistency",
+      "note": "來源 expandedFacts 一致（奧馬爾清真寺 → 斯里巴加灣）"
+    },
+    "expanded-city:y6n390": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:fact-consistency",
+      "note": "來源 expandedFacts 一致（斯里巴加灣 → 汶萊）"
+    },
+    "expanded-landmark:xt3nbs": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:fact-consistency",
+      "note": "來源 expandedFacts 一致（成吉思汗廣場 → 烏蘭巴托）"
+    },
+    "expanded-city:1lfq3b7": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:fact-consistency",
+      "note": "來源 expandedFacts 一致（烏蘭巴托 → 蒙古）"
+    },
+    "expanded-landmark:r4n5xa": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:fact-consistency",
+      "note": "來源 expandedFacts 一致（巴伊傑列克塔 → 阿斯塔納）"
+    },
+    "expanded-city:80f509": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:fact-consistency",
+      "note": "來源 expandedFacts 一致（阿斯塔納 → 哈薩克）"
+    },
+    "expanded-landmark:omiex2": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:fact-consistency",
+      "note": "來源 expandedFacts 一致（雷吉斯坦廣場 → 塔什干）"
+    },
+    "expanded-city:1djgojh": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:fact-consistency",
+      "note": "來源 expandedFacts 一致（塔什干 → 烏茲別克）"
+    },
+    "expanded-landmark:14rgbz4": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:fact-consistency",
+      "note": "來源 expandedFacts 一致（和平橋 → 提比利斯）"
+    },
+    "expanded-city:mv3bxb": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:fact-consistency",
+      "note": "來源 expandedFacts 一致（提比利斯 → 喬治亞）"
+    },
+    "expanded-landmark:htzegm": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:fact-consistency",
+      "note": "來源 expandedFacts 一致（維格蘭雕塑公園 → 奧斯陸）"
+    },
+    "expanded-city:u32em9": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:fact-consistency",
+      "note": "來源 expandedFacts 一致（奧斯陸 → 挪威）"
+    },
+    "expanded-landmark:1flfpm6": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:fact-consistency",
+      "note": "來源 expandedFacts 一致（赫爾辛基大教堂 → 赫爾辛基）"
+    },
+    "expanded-city:1tptc95": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:fact-consistency",
+      "note": "來源 expandedFacts 一致（赫爾辛基 → 芬蘭）"
+    },
+    "expanded-landmark:16k8thg": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:fact-consistency",
+      "note": "來源 expandedFacts 一致（市政廳 → 斯德哥爾摩）"
+    },
+    "expanded-city:uz2xgs": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:fact-consistency",
+      "note": "來源 expandedFacts 一致（斯德哥爾摩 → 瑞典）"
+    },
+    "expanded-landmark:orpqdm": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:fact-consistency",
+      "note": "來源 expandedFacts 一致（美人魚雕像 → 哥本哈根）"
+    },
+    "expanded-city:1ivhodq": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:fact-consistency",
+      "note": "來源 expandedFacts 一致（哥本哈根 → 丹麥）"
+    },
+    "expanded-landmark:1200opy": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:fact-consistency",
+      "note": "來源 expandedFacts 一致（老城廣場 → 華沙）"
+    },
+    "expanded-city:wcqtmj": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:fact-consistency",
+      "note": "來源 expandedFacts 一致（華沙 → 波蘭）"
+    },
+    "expanded-landmark:1xsytzw": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:fact-consistency",
+      "note": "來源 expandedFacts 一致（聖索菲亞大教堂 → 基輔）"
+    },
+    "expanded-city:mi1ip": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:fact-consistency",
+      "note": "來源 expandedFacts 一致（基輔 → 烏克蘭）"
+    },
+    "expanded-landmark:1l97awy": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:fact-consistency",
+      "note": "來源 expandedFacts 一致（聖三一學院 → 都柏林）"
+    },
+    "expanded-city:1946wz9": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:fact-consistency",
+      "note": "來源 expandedFacts 一致（都柏林 → 愛爾蘭）"
+    },
+    "expanded-landmark:1klbx1": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:fact-consistency",
+      "note": "來源 expandedFacts 一致（貝倫塔 → 里斯本）"
+    },
+    "expanded-city:1i4u2w5": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:fact-consistency",
+      "note": "來源 expandedFacts 一致（里斯本 → 葡萄牙）"
+    },
+    "expanded-landmark:drx9ba": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:fact-consistency",
+      "note": "來源 expandedFacts 一致（少女峰 → 伯恩）"
+    },
+    "expanded-city:11nq4kt": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:fact-consistency",
+      "note": "來源 expandedFacts 一致（伯恩 → 瑞士）"
+    },
+    "expanded-landmark:19ca7l0": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:fact-consistency",
+      "note": "來源 expandedFacts 一致（原子球塔 → 布魯塞爾）"
+    },
+    "expanded-city:mtz1mn": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:fact-consistency",
+      "note": "來源 expandedFacts 一致（布魯塞爾 → 比利時）"
+    },
+    "expanded-landmark:1a04rjm": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:fact-consistency",
+      "note": "來源 expandedFacts 一致（卡列梅格丹城堡 → 貝爾格勒）"
+    },
+    "expanded-city:fjy27o": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:fact-consistency",
+      "note": "來源 expandedFacts 一致（貝爾格勒 → 塞爾維亞）"
+    },
+    "expanded-landmark:1aebb5r": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:fact-consistency",
+      "note": "來源 expandedFacts 一致（拉利貝拉岩刻教堂 → 亞的斯亞貝巴）"
+    },
+    "expanded-city:sgq8c7": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:fact-consistency",
+      "note": "來源 expandedFacts 一致（亞的斯亞貝巴 → 衣索比亞）"
+    },
+    "expanded-landmark:1duxwsm": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:fact-consistency",
+      "note": "來源 expandedFacts 一致（塞倫蓋蒂國家公園 → 三蘭港）"
+    },
+    "expanded-city:iryqrp": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:fact-consistency",
+      "note": "來源 expandedFacts 一致（三蘭港 → 坦尚尼亞）"
+    },
+    "expanded-landmark:65q8m0": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:fact-consistency",
+      "note": "來源 expandedFacts 一致（索蘇斯佛雷沙漠 → 溫得和克）"
+    },
+    "expanded-city:1eoljdr": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:fact-consistency",
+      "note": "來源 expandedFacts 一致（溫得和克 → 納米比亞）"
+    },
+    "expanded-landmark:1infbf4": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:fact-consistency",
+      "note": "來源 expandedFacts 一致（維多利亞瀑布 → 哈拉雷）"
+    },
+    "expanded-city:1i2bgg4": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:fact-consistency",
+      "note": "來源 expandedFacts 一致（哈拉雷 → 辛巴威）"
+    },
+    "expanded-landmark:19b7lcu": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:fact-consistency",
+      "note": "來源 expandedFacts 一致（良知之父紀念碑 → 阿克拉）"
+    },
+    "expanded-city:2hngo4": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:fact-consistency",
+      "note": "來源 expandedFacts 一致（阿克拉 → 迦納）"
+    },
+    "expanded-landmark:uzfd91": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:fact-consistency",
+      "note": "來源 expandedFacts 一致（黃金博物館 → 波哥大）"
+    },
+    "expanded-city:1plb4fa": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:fact-consistency",
+      "note": "來源 expandedFacts 一致（波哥大 → 哥倫比亞）"
+    },
+    "expanded-landmark:10f6jat": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:fact-consistency",
+      "note": "來源 expandedFacts 一致（加拉帕戈斯群島 → 基多）"
+    },
+    "expanded-city:2k0gmg": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:fact-consistency",
+      "note": "來源 expandedFacts 一致（基多 → 厄瓜多）"
+    },
+    "expanded-landmark:rj2rl6": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:fact-consistency",
+      "note": "來源 expandedFacts 一致（天使瀑布 → 加拉加斯）"
+    },
+    "expanded-city:1ocyrpc": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:fact-consistency",
+      "note": "來源 expandedFacts 一致（加拉加斯 → 委內瑞拉）"
+    },
+    "expanded-landmark:1puotbn": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:fact-consistency",
+      "note": "來源 expandedFacts 一致（獨立廣場 → 蒙特維多）"
+    },
+    "expanded-city:66vnom": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:fact-consistency",
+      "note": "來源 expandedFacts 一致（蒙特維多 → 烏拉圭）"
+    },
+    "expanded-landmark:154seok": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:fact-consistency",
+      "note": "來源 expandedFacts 一致（哈瓦那舊城 → 哈瓦那）"
+    },
+    "expanded-city:pxmmzp": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:fact-consistency",
+      "note": "來源 expandedFacts 一致（哈瓦那 → 古巴）"
+    },
+    "expanded-landmark:1turvfw": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:fact-consistency",
+      "note": "來源 expandedFacts 一致（鄧恩河瀑布 → 京斯敦）"
+    },
+    "expanded-city:1khcs2z": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:fact-consistency",
+      "note": "來源 expandedFacts 一致（京斯敦 → 牙買加）"
+    }
+  }
+}

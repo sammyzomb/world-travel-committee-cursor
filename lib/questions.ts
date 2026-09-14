@@ -1,3 +1,4 @@
+import questionAuditJson from "../data/question-audit.json";
 import questionBankJson from "../data/questions.json";
 import type { QuestionVisualData } from "../components/question-visual";
 import { getLandmarkImage, getLandmarkImageSrc } from "./landmark-images";
@@ -228,6 +229,27 @@ function withDefaultCategory(questions: Question[], category: QuestionCategory):
   return questions.map((item) => ({ ...item, category: item.category ?? category }));
 }
 
+type AuditOverride = {
+  auditStatus: AuditStatus;
+  reviewedAt?: string;
+  reviewer?: string;
+  note?: string;
+};
+
+const auditOverrides = (questionAuditJson as { overrides?: Record<string, AuditOverride> }).overrides ?? {};
+
+function applyAuditOverrides(questions: Question[]): Question[] {
+  return questions.map((item) => {
+    const override = auditOverrides[item.id];
+    if (!override) return item;
+    return {
+      ...item,
+      auditStatus: override.auditStatus,
+      source: override.reviewer ? `${item.source}（${override.reviewer}）` : item.source,
+    };
+  });
+}
+
 const curatedSource = QUESTION_SOURCES.handCurated;
 const warmupSource = QUESTION_SOURCES.warmup;
 
@@ -274,13 +296,15 @@ export const tourQuestions: Question[] = (questionBank.tourQuestions ?? []).map(
   });
   return { ...question, category: raw.category ?? "世界地理" };
 });
-export const expandedQuestions: Question[] = buildExpandedQuestions(questionBank.expandedFacts);
-export const allQuestions: Question[] = [
+export const expandedQuestions: Question[] = applyAuditOverrides(
+  buildExpandedQuestions(questionBank.expandedFacts),
+);
+export const allQuestions: Question[] = applyAuditOverrides([
   ...handPickedQuestions,
   ...travelKnowledgeQuestions,
   ...tourQuestions,
   ...expandedQuestions,
-];
+]);
 export const approvedQuestions: Question[] = allQuestions.filter(
   (item) => item.auditStatus === "approved",
 );
