@@ -13,6 +13,21 @@ function stableHash(input: string) {
   return hash.toString(36);
 }
 
+/** 依 seed 固定順序挑選干擾選項，避免 client bundle 與 Worker 題庫選項不一致。 */
+export function deterministicDistractors(
+  values: readonly string[],
+  answer: string,
+  seed: string,
+  count = 3,
+) {
+  return values
+    .filter((value) => value !== answer)
+    .sort((left, right) =>
+      stableHash(`${seed}\0${left}`).localeCompare(stableHash(`${seed}\0${right}`)),
+    )
+    .slice(0, count);
+}
+
 export function makeQuestionId(prefix: string, seed: string) {
   return `${prefix}:${stableHash(seed)}`;
 }

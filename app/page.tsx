@@ -33,6 +33,7 @@ export default function Home() {
           leaderboard={game.leaderboard}
           leaderboardLoading={game.leaderboardLoading}
           leaderboardError={game.leaderboardError}
+          personalBest={game.personalBest}
           onBegin={game.beginFromFirstGrade}
         />
       )}
@@ -53,6 +54,10 @@ export default function Home() {
           stage={game.stage}
           stageQuestion={game.stageQuestion}
           stageLength={game.stageLength}
+          stageCorrect={game.stageCorrect}
+          passRequired={game.passRequired}
+          progress={game.progress}
+          runStreak={game.runStreak}
           lives={game.lives}
           score={game.score}
           current={game.current}
@@ -71,6 +76,7 @@ export default function Home() {
           isGraduationStage={game.isGraduationStage}
           stage={game.stage}
           nextStage={game.nextStage}
+          stageIndex={game.stageIndex}
           stageCorrect={game.stageCorrect}
           lives={game.lives}
           onContinue={game.continueAfterReward}
@@ -85,6 +91,9 @@ export default function Home() {
           stageName={game.stage.name}
           score={game.score}
           maxRunStreak={game.maxRunStreak}
+          runRecap={game.runRecap}
+          personalBest={game.personalBest}
+          isNewPersonalBest={game.isNewPersonalBest}
           playerName={game.playerName}
           submitState={game.submitState}
           submitMessage={game.submitMessage}

@@ -15,7 +15,9 @@ import {
 } from "../lib/game-round";
 import type { RunAnswerRecord } from "../lib/leaderboard-scoring";
 import type { LeaderboardEntry, SubmitState } from "../lib/leaderboard-types";
+import { loadPersonalBest, updatePersonalBest, type PersonalBest } from "../lib/player-progress";
 import type { Question } from "../lib/questions";
+import { buildRunRecap, type RunRecap } from "../lib/run-recap";
 
 export type GameScreen = "start" | "enroll" | "play" | "reward" | "result";
 
@@ -48,6 +50,10 @@ export function useGameState() {
   const [submitMessage, setSubmitMessage] = useState<string | null>(null);
   const [runStreak, setRunStreak] = useState(0);
   const [maxRunStreak, setMaxRunStreak] = useState(0);
+  const [personalBest, setPersonalBest] = useState<PersonalBest | null>(null);
+  const [isNewPersonalBest, setIsNewPersonalBest] = useState(false);
+  const [runRecap, setRunRecap] = useState<RunRecap | null>(null);
+  const resultRecorded = useRef(false);
 
   const loadLeaderboard = useCallback(async () => {
     setLeaderboardLoading(true);
@@ -70,6 +76,10 @@ export function useGameState() {
     }
   }, [screen, loadLeaderboard]);
 
+  useEffect(() => {
+    setPersonalBest(loadPersonalBest());
+  }, []);
+
   const round = roundPlan.questions;
   const stageStarts = roundPlan.stageStarts;
   const current: Question | undefined = round[index];
@@ -84,6 +94,22 @@ export function useGameState() {
     () => (stageLength > 0 ? (stageQuestion / stageLength) * 100 : 0),
     [stageQuestion, stageLength],
   );
+
+  useEffect(() => {
+    if (screen !== "result" || resultRecorded.current) return;
+    resultRecorded.current = true;
+    const recap = buildRunRecap(answerLog.current);
+    setRunRecap(recap);
+    const { record, isNewBest } = updatePersonalBest({
+      stageIndex,
+      stageName: stage.name,
+      score,
+      maxStreak: maxRunStreak,
+      conceptsLearned: recap.uniqueConcepts,
+    });
+    setPersonalBest(record);
+    setIsNewPersonalBest(isNewBest);
+  }, [screen, stageIndex, stage.name, score, maxRunStreak]);
 
   const mergeAvoidance = useCallback((questionIds: string[], conceptIds: string[]) => {
     return {
@@ -119,6 +145,9 @@ export function useGameState() {
     setSubmitMessage(null);
     setRunStreak(0);
     setMaxRunStreak(0);
+    setRunRecap(null);
+    setIsNewPersonalBest(false);
+    resultRecorded.current = false;
   },
   []);
 
@@ -331,5 +360,8 @@ export function useGameState() {
     submitScore,
     runStreak,
     maxRunStreak,
+    personalBest,
+    isNewPersonalBest,
+    runRecap,
   };
 }

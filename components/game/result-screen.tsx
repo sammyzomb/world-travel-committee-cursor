@@ -1,7 +1,18 @@
-import { ArrowUpRight, CalendarDays, Crown, GraduationCap, MapPinned, Sparkles } from "lucide-react";
+import {
+  ArrowUpRight,
+  BookOpen,
+  CalendarDays,
+  Crown,
+  GraduationCap,
+  MapPinned,
+  Sparkles,
+  Trophy,
+} from "lucide-react";
 import { CheerAnimation } from "../cheer-animation";
 import { ShareScoreCard } from "./share-score-card";
 import type { SubmitState } from "../../lib/leaderboard-types";
+import type { PersonalBest } from "../../lib/player-progress";
+import type { RunRecap } from "../../lib/run-recap";
 
 type ResultScreenProps = {
   endedEarly: boolean;
@@ -9,6 +20,9 @@ type ResultScreenProps = {
   stageName: string;
   score: number;
   maxRunStreak: number;
+  runRecap: RunRecap | null;
+  personalBest: PersonalBest | null;
+  isNewPersonalBest: boolean;
   playerName: string;
   submitState: SubmitState;
   submitMessage: string | null;
@@ -23,6 +37,9 @@ export function ResultScreen({
   stageName,
   score,
   maxRunStreak,
+  runRecap,
+  personalBest,
+  isNewPersonalBest,
   playerName,
   submitState,
   submitMessage,
@@ -63,6 +80,32 @@ export function ResultScreen({
         </span>
         <h1>{score.toLocaleString()} 分</h1>
         <p className="run-streak-copy">本局最高連勝 {maxRunStreak} 題</p>
+        {isNewPersonalBest && personalBest && (
+          <p className="personal-best-badge">
+            <Trophy size={16} /> 刷新個人最佳！最高到達 {personalBest.bestStageName}
+          </p>
+        )}
+        {runRecap && runRecap.totalAnswered > 0 && (
+          <div className="knowledge-recap-card">
+            <p className="mini-label">
+              <BookOpen size={14} /> KNOWLEDGE RECAP
+            </p>
+            <p className="knowledge-recap-summary">
+              本局答了 {runRecap.totalAnswered} 題，認識 {runRecap.uniqueConcepts} 個旅遊知識點
+              {runRecap.wrongCount > 0 ? `（錯 ${runRecap.wrongCount} 題，記下來下次更強）` : ""}
+            </p>
+            {runRecap.highlights.length > 0 && (
+              <ul className="knowledge-recap-list">
+                {runRecap.highlights.map((item) => (
+                  <li className={item.correct ? "learned" : "review"} key={`${item.label}-${item.fact.slice(0, 24)}`}>
+                    <b>{item.label}</b>
+                    <span>{item.fact}</span>
+                  </li>
+                ))}
+              </ul>
+            )}
+          </div>
+        )}
         <p>
           {fullCompletion
             ? "從小一一路升到研二，十八級學制全部通關！"

@@ -101,7 +101,21 @@ export function allowedTypesForStage(stageIndex: number): QuestionType[] {
 }
 
 export function minTypeRankForStage(stageIndex: number) {
-  return Math.min(Math.floor(stageIndex / 2), 5);
+  if (stageIndex <= 1) return 0;
+  if (stageIndex <= 4) return 1;
+  if (stageIndex <= 8) return 2;
+  if (stageIndex <= 12) return 3;
+  if (stageIndex <= 15) return 4;
+  return 5;
+}
+
+/** 年級越高，越不抽入門難度標籤的題目。 */
+export function minQuestionLevelRankForStage(stageIndex: number) {
+  if (stageIndex <= 2) return 0;
+  if (stageIndex <= 5) return 1;
+  if (stageIndex <= 8) return 2;
+  if (stageIndex <= 11) return 3;
+  return 4;
 }
 
 export function includesTravelKnowledge(stageIndex: number) {

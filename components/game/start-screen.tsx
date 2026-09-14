@@ -1,12 +1,14 @@
-import { Crown, MapPin, Plane, Sparkles } from "lucide-react";
+import { Crown, MapPin, Plane, Sparkles, Trophy } from "lucide-react";
 import { GAME_HERO_HEADLINE } from "../../lib/brand";
 import type { LeaderboardEntry } from "../../lib/leaderboard-types";
+import type { PersonalBest } from "../../lib/player-progress";
 import { questionBankStats } from "../../lib/questions";
 
 type StartScreenProps = {
   leaderboard: LeaderboardEntry[];
   leaderboardLoading: boolean;
   leaderboardError: string | null;
+  personalBest: PersonalBest | null;
   onBegin: () => void;
 };
 
@@ -14,6 +16,7 @@ export function StartScreen({
   leaderboard,
   leaderboardLoading,
   leaderboardError,
+  personalBest,
   onBegin,
 }: StartScreenProps) {
   return (
@@ -40,6 +43,14 @@ export function StartScreen({
                 <span><Crown size={16} /> 世界遺產</span>
                 <span><Plane size={16} /> 旅遊知識</span>
               </div>
+
+              {personalBest && (
+                <p className="start-personal-best">
+                  <Trophy size={15} />
+                  個人最佳 {personalBest.bestScore.toLocaleString()} 分 · 最高 {personalBest.bestStageName}
+                  {personalBest.maxStreak >= 3 ? ` · ${personalBest.maxStreak} 連勝` : ""}
+                </p>
+              )}
 
               <button type="button" className="primary-button start-play-button" onClick={onBegin}>
                 主線闖關 <span>→</span>
@@ -70,7 +81,10 @@ export function StartScreen({
               leaderboard.map((row, index) => (
                 <div className="leader-row" key={row.id}>
                   <span className={index < 3 ? "podium" : ""}>{index + 1}</span>
-                  <b>{row.playerName}</b>
+                  <div className="leader-row-copy">
+                    <b>{row.playerName}</b>
+                    <small>{row.stageReached}</small>
+                  </div>
                   <strong>{row.score.toLocaleString()}</strong>
                 </div>
               ))}

@@ -5,13 +5,14 @@ import {
   graduationStageIndexes,
   optionCountForStage,
   passRequiredForStage,
-  QUESTIONS_PER_STAGE,
+  questionsPerStage,
   WARMUP_QUESTIONS_FIRST_STAGE,
 } from "./game-config";
 import {
   allowedTypesForStage,
   difficultyRankForLevel,
   includesTravelKnowledge,
+  minQuestionLevelRankForStage,
   minTypeRankForStage,
   QUESTION_TYPE_RANK,
   type QuestionType,
@@ -99,20 +100,22 @@ function sortByStageDifficulty(items: Question[], stageIndex: number) {
 
 function filterPoolForStage(pool: Question[], stageIndex: number) {
   const allowedTypes = new Set<QuestionType>(allowedTypesForStage(stageIndex));
-  const minRank = minTypeRankForStage(stageIndex);
+  const minTypeRank = minTypeRankForStage(stageIndex);
+  const minLevelRank = minQuestionLevelRankForStage(stageIndex);
   return pool.filter((item) => {
     if (!allowedTypes.has(item.questionType)) return false;
     const typeRank = QUESTION_TYPE_RANK[item.questionType];
     const levelRank = difficultyRankForLevel(item.level);
-    if (typeRank + levelRank * 0.3 < minRank - 0.5) return false;
+    if (levelRank < minLevelRank) return false;
+    if (typeRank + levelRank * 0.3 < minTypeRank - 0.5) return false;
     return true;
   });
 }
 
 function maxQuestionsPerType(count: number, availableTypeCount: number, allowedTypeCount: number) {
   if (availableTypeCount <= 0) return count;
-  if (allowedTypeCount >= 3 && count >= 5) return 2;
-  const hardCap = 2;
+  const hardCap = count >= 8 ? 3 : 2;
+  if (allowedTypeCount >= 3 && count >= 5) return hardCap;
   if (availableTypeCount * hardCap >= count) return hardCap;
   return Math.ceil(count / availableTypeCount);
 }
@@ -309,6 +312,8 @@ function drawStageQuestions(
 ): Question[] {
   if (stageIndex > FINAL_STAGE_INDEX) return [];
 
+  const stageQuestionCount = questionsPerStage(stageIndex);
+
   if (stageIndex === 0) {
     const warmupPool = shuffled(
       warmupQuestions.filter((item) => item.auditStatus === "approved" && item.kind === "tf"),
@@ -327,7 +332,7 @@ function drawStageQuestions(
       usedConceptIds.add(item.conceptId);
     });
 
-    const formalCount = QUESTIONS_PER_STAGE - WARMUP_QUESTIONS_FIRST_STAGE;
+    const formalCount = stageQuestionCount - WARMUP_QUESTIONS_FIRST_STAGE;
     const elementaryPool = approvedQuestions.filter(
       (item) => item.level === "旅行新手" && item.kind !== "tf",
     );
@@ -357,7 +362,7 @@ function drawStageQuestions(
 
   let questions = fillStagePool(
     stagePool,
-    QUESTIONS_PER_STAGE,
+    stageQuestionCount,
     optionCount,
     previousQuestionIds,
     previousConceptIds,
@@ -427,7 +432,7 @@ export function createRound(
     usedConceptIds,
     previousRoundQuestionIds: previousQuestionIds,
     previousRoundConceptIds: previousConceptIds,
-    exhausted: stageQuestions.length < QUESTIONS_PER_STAGE,
+    exhausted: stageQuestions.length < questionsPerStage(0),
   };
 }
 
@@ -444,7 +449,7 @@ export function appendNextStage(plan: RoundPlan, stageIndex: number): RoundPlan 
   );
   if (stageQuestions.length === 0) return null;
 
-  const exhausted = stageQuestions.length < QUESTIONS_PER_STAGE;
+  const exhausted = stageQuestions.length < questionsPerStage(stageIndex);
 
   return {
     ...plan,
@@ -467,7 +472,7 @@ export function canDrawNextStage(plan: RoundPlan, nextStageIndex: number) {
     probeQuestionIds,
     probeConceptIds,
   );
-  return probe.length >= QUESTIONS_PER_STAGE;
+  return probe.length >= questionsPerStage(nextStageIndex);
 }
 
 export function isGraduationStage(stageIndex: number) {

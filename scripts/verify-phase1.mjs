@@ -3,9 +3,12 @@ import {
   educationStages,
   FINAL_STAGE_INDEX,
   graduationStageIndexes,
+  MAX_RUN_QUESTIONS,
   optionCountForStage,
   passRequiredForStage,
   QUESTIONS_PER_STAGE,
+  questionsPerStage,
+  STAGE_QUESTION_COUNTS,
   WARMUP_QUESTIONS_FIRST_STAGE,
 } from "../lib/game-config.ts";
 import {
@@ -29,8 +32,8 @@ import { regionLeaksAnswer, visualLeaksAnswer } from "../lib/visual-safety.ts";
 function maxQuestionsPerType(count, activeTypeCount, stageIndex) {
   const allowedTypeCount = allowedTypesForStage(stageIndex).length;
   if (activeTypeCount <= 0) return count;
-  if (allowedTypeCount >= 3 && count >= 5) return 2;
-  const hardCap = 2;
+  const hardCap = count >= 8 ? 3 : 2;
+  if (allowedTypeCount >= 3 && count >= 5) return hardCap;
   if (activeTypeCount * hardCap >= count) return hardCap;
   return Math.ceil(count / activeTypeCount);
 }
@@ -51,9 +54,14 @@ function assertStageTypeDiversity(questions, stageIndex) {
 
 function run() {
   assert.equal(QUESTIONS_PER_STAGE, 5);
+  assert.equal(STAGE_QUESTION_COUNTS.length, educationStages.length);
+  assert.equal(questionsPerStage(0), 5);
+  assert.equal(questionsPerStage(FINAL_STAGE_INDEX), 10);
+  assert.equal(MAX_RUN_QUESTIONS, STAGE_QUESTION_COUNTS.reduce((sum, count) => sum + count, 0));
   assert.equal(WARMUP_QUESTIONS_FIRST_STAGE, 2);
   assert.equal(STARTING_LIVES, 3);
-  assert.equal(passRequiredForStage(), 3);
+  assert.equal(passRequiredForStage(5), 3);
+  assert.equal(passRequiredForStage(10), 6);
   assert.equal(FINAL_STAGE_INDEX, 17);
   assert.equal(educationStages.length, 18);
   assert.equal(optionCountForStage(0), 2);
@@ -62,9 +70,9 @@ function run() {
   assert.equal(optionCountForStage(6), 4);
 
   const round = createRound([]);
-  assert.equal(getStageLength(round.stageStarts, round.questions.length, 0), 5);
+  assert.equal(getStageLength(round.stageStarts, round.questions.length, 0), questionsPerStage(0));
 
-  const stageZero = round.questions.slice(0, 5);
+  const stageZero = round.questions.slice(0, questionsPerStage(0));
   const warmupSlice = stageZero.slice(0, WARMUP_QUESTIONS_FIRST_STAGE);
   assert.equal(
     warmupSlice.length,
@@ -98,6 +106,7 @@ function run() {
     const stageStart = plan.stageStarts[stageIndex];
     const stageEnd = plan.stageStarts[stageIndex + 1] ?? plan.questions.length;
     const stageQuestions = plan.questions.slice(stageStart, stageEnd);
+    assert.equal(stageQuestions.length, questionsPerStage(stageIndex));
     if (stageIndex <= 10) assertStageTypeDiversity(stageQuestions, stageIndex);
     for (const item of stageQuestions) {
       if (item.kind !== "tf") {
@@ -114,7 +123,10 @@ function run() {
   const allConceptIds = new Set(plan.questions.map((item) => item.conceptId));
   assert.equal(allConceptIds.size, plan.questions.length);
 
-  assert.ok(approvedQuestions.length >= 90, "need enough approved questions for full 18-stage run");
+  assert.ok(
+    approvedQuestions.length >= MAX_RUN_QUESTIONS,
+    "need enough approved questions for full 18-stage run",
+  );
 
   for (const item of approvedQuestions) {
     const correct = item.options[item.answer] ?? "";

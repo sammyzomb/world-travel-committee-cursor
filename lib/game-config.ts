@@ -42,16 +42,38 @@ export const formalStageNames: Record<string, string> = {
 /** 小六、國三、高三、大四、研二為學制畢業節點。 */
 export const graduationStageIndexes = new Set([5, 8, 11, 15, 17]);
 export const FINAL_STAGE_INDEX = educationStages.length - 1;
-/** 每個學級固定出 5 題（小一含 3 題送分是非題 + 2 題正式題）。 */
-export const QUESTIONS_PER_STAGE = 5;
+
+/**
+ * 各學級題數：年級越高題越多（小一 5 題 → 研二 10 題）。
+ * 小一含 2 題送分是非題，其餘為正式題。
+ */
+export const STAGE_QUESTION_COUNTS: readonly number[] = [
+  5, 5, 6, 6, 7, 7,
+  7, 8, 8,
+  8, 9, 9,
+  9, 9, 9, 10,
+  10, 10,
+];
+
+/** 小一題數；供舊測試與文案 fallback。 */
+export const QUESTIONS_PER_STAGE = STAGE_QUESTION_COUNTS[0];
+
+export const MAX_RUN_QUESTIONS = STAGE_QUESTION_COUNTS.reduce((sum, count) => sum + count, 0);
+
+export function questionsPerStage(stageIndex: number) {
+  const index = Math.max(0, Math.min(stageIndex, STAGE_QUESTION_COUNTS.length - 1));
+  return STAGE_QUESTION_COUNTS[index];
+}
+
 export const STARTING_LIVES = 3;
 /** 小一開局送分是非題數；其餘題位由多題型分散抽題補滿。 */
 export const WARMUP_QUESTIONS_FIRST_STAGE = 2;
 export const PASS_CORRECT_REQUIRED = 3;
 export const POINTS_PER_CORRECT = 5;
 
+/** 通關所需答對題數：隨題數增加，約需答對六成（至少 3 題）。 */
 export function passRequiredForStage(stageLength: number = QUESTIONS_PER_STAGE) {
-  return Math.min(PASS_CORRECT_REQUIRED, stageLength);
+  return Math.max(PASS_CORRECT_REQUIRED, Math.ceil(stageLength * 0.6));
 }
 
 /** 小一～小三 2 選項 → 小四～小六 3 選項 → 國中以上 4 選項。 */

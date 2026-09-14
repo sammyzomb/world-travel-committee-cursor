@@ -1,8 +1,9 @@
 import {
   educationStages,
+  MAX_RUN_QUESTIONS,
   passRequiredForStage,
   POINTS_PER_CORRECT,
-  QUESTIONS_PER_STAGE,
+  questionsPerStage,
   STARTING_LIVES,
 } from "./game-config";
 import { approvedQuestions, warmupQuestions } from "./questions";
@@ -75,7 +76,7 @@ export function highestPassedStageIndex(answers: RunAnswerRecord[], endedEarly: 
   for (let stageIndex = 0; stageIndex < educationStages.length; stageIndex += 1) {
     const answeredInStage = answers.filter((item) => item.stageIndex === stageIndex).length;
     if (answeredInStage === 0) break;
-    const required = passRequiredForStage(QUESTIONS_PER_STAGE);
+    const required = passRequiredForStage(answeredInStage);
     if ((counts.get(stageIndex) ?? 0) >= required) {
       highestPassed = stageIndex;
       continue;
@@ -89,7 +90,10 @@ export function highestPassedStageIndex(answers: RunAnswerRecord[], endedEarly: 
 export function isFullCompletion(answers: RunAnswerRecord[], endedEarly: boolean) {
   if (endedEarly) return false;
   const counts = stageCorrectCounts(answers);
-  const required = passRequiredForStage(QUESTIONS_PER_STAGE);
+  const finalStageAnswers = answers.filter((item) => item.stageIndex === FINAL_STAGE_INDEX).length;
+  const required = passRequiredForStage(
+    finalStageAnswers > 0 ? finalStageAnswers : questionsPerStage(FINAL_STAGE_INDEX),
+  );
   return (counts.get(FINAL_STAGE_INDEX) ?? 0) >= required;
 }
 
@@ -107,7 +111,7 @@ export function validateRunSubmission(payload: RunSubmission) {
   if (!Array.isArray(payload.answers) || payload.answers.length === 0) {
     return "answers are required";
   }
-  if (payload.answers.length > educationStages.length * QUESTIONS_PER_STAGE) {
+  if (payload.answers.length > MAX_RUN_QUESTIONS) {
     return "too many answers";
   }
 

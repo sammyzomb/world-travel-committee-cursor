@@ -4,6 +4,7 @@ import type { QuestionVisualData } from "../components/question-visual";
 import { getLandmarkImage, getLandmarkImageSrc } from "./landmark-images";
 import {
   conceptIdForRawQuestion,
+  deterministicDistractors,
   makeConceptId,
   makeFactConceptId,
   makeQuestionId,
@@ -183,16 +184,8 @@ function buildExpandedQuestions(
   const countries = facts.map((item) => item[1]);
   const capitals = facts.map((item) => item[3]);
   const continents = ["亞洲", "歐洲", "非洲", "北美洲", "南美洲", "大洋洲"] as const;
-  const shuffleStrings = <T,>(items: T[]) => {
-    const result = [...items];
-    for (let index = result.length - 1; index > 0; index -= 1) {
-      const swapIndex = Math.floor(Math.random() * (index + 1));
-      [result[index], result[swapIndex]] = [result[swapIndex], result[index]];
-    }
-    return result;
-  };
-  const distractor = (values: readonly string[], answer: string) =>
-    shuffleStrings(values.filter((value) => value !== answer)).slice(0, 3);
+  const distractor = (values: readonly string[], answer: string, seed: string) =>
+    deterministicDistractors(values, answer, seed, 3);
 
   return facts.flatMap((fact, factIndex) => {
     const [city, country, continent, capital, landmark] = fact;
@@ -204,31 +197,37 @@ function buildExpandedQuestions(
     const base = { region: continent, category };
     const capitalRaw = {
       q: `${country}的首都是哪一座城市？`,
-      options: [capital, ...distractor(capitals, capital)],
+      options: [capital, ...distractor(capitals, capital, `${idPrefix}-capital:${country}:${capital}`)],
       answer: 0,
       region: continent,
     };
     const landmarkRaw = {
       q: `${landmark}位於哪一座城市？`,
-      options: [city, ...distractor(cities, city)],
+      options: [city, ...distractor(cities, city, `${idPrefix}-landmark:${landmark}:${city}`)],
       answer: 0,
       region: continent,
     };
     const cityCountryRaw = {
       q: `${city}位於哪一個國家？`,
-      options: [country, ...distractor(countries, country)],
+      options: [country, ...distractor(countries, country, `${idPrefix}-city:${city}:${country}`)],
       answer: 0,
       region: continent,
     };
     const continentRaw = {
       q: `${country}位於哪一洲？`,
-      options: [continent, ...distractor(continents, continent)],
+      options: [
+        continent,
+        ...distractor(continents, continent, `${idPrefix}-continent:${country}:${continent}`),
+      ],
       answer: 0,
       region: "洲別測驗",
     };
     const reverseCapitalRaw = {
       q: `哪一個國家的首都是${capital}？`,
-      options: [country, ...distractor(countries, country)],
+      options: [
+        country,
+        ...distractor(countries, country, `${idPrefix}-reverse-capital:${capital}:${country}`),
+      ],
       answer: 0,
       region: continent,
     };

@@ -1,13 +1,18 @@
-import { Check, X } from "lucide-react";
+import { Check, Flame, X } from "lucide-react";
 import { QuestionVisual } from "../question-visual";
 import { STARTING_LIVES } from "../../lib/game-config";
 import type { Question } from "../../lib/questions";
+import { streakCheerMessage } from "../../lib/run-recap";
 import { shouldShowRegionChip } from "../../lib/visual-safety";
 
 type PlayScreenProps = {
   stage: { name: string; group: string };
   stageQuestion: number;
   stageLength: number;
+  stageCorrect: number;
+  passRequired: number;
+  progress: number;
+  runStreak: number;
   lives: number;
   score: number;
   current: Question;
@@ -20,8 +25,17 @@ type PlayScreenProps = {
   onReplay: () => void;
 };
 
-function feedbackMessage(selected: number, current: Question, endedEarly: boolean, lives: number) {
-  if (selected === current.answer) return "答對了！";
+function feedbackMessage(
+  selected: number,
+  current: Question,
+  endedEarly: boolean,
+  lives: number,
+  runStreak: number,
+) {
+  if (selected === current.answer) {
+    const cheer = streakCheerMessage(runStreak);
+    return cheer ? `答對了！${cheer}` : "答對了！";
+  }
   if (endedEarly) return "整局機會已用完，挑戰結束";
   return `答錯了，整局剩餘 ${lives} 次機會`;
 }
@@ -42,6 +56,10 @@ export function PlayScreen({
   stage,
   stageQuestion,
   stageLength,
+  stageCorrect,
+  passRequired,
+  progress,
+  runStreak,
   lives,
   score,
   current,
@@ -54,6 +72,7 @@ export function PlayScreen({
   onReplay,
 }: PlayScreenProps) {
   const correctAnswer = current.options[current.answer] ?? "";
+  const isWrong = selected !== null && selected !== current.answer;
   const showRegion = shouldShowRegionChip({
     kind: current.kind,
     questionText: current.q,
@@ -64,11 +83,26 @@ export function PlayScreen({
 
   return (
     <section
-      className={`play-screen mx-auto w-full max-w-4xl px-4 pb-6 pt-2 sm:px-8${selected !== null ? " play-screen-answered" : ""}`}
+      className={`play-screen mx-auto w-full max-w-4xl px-4 pb-6 pt-2 sm:px-8${selected !== null ? " play-screen-answered" : ""}${isWrong ? " play-screen-wrong" : ""}`}
     >
+      <div className="play-progress-wrap">
+        <div className="play-progress-meta">
+          <span>本級第 {stageQuestion}/{stageLength} 題</span>
+          <span>通關 {stageCorrect}/{passRequired} 題</span>
+        </div>
+        <div className="play-progress-bar" aria-hidden="true">
+          <span style={{ width: `${progress}%` }} />
+        </div>
+      </div>
+
       <div className="play-status mb-3 flex items-center justify-between gap-3 sm:mb-4">
         <span className="score-pill">{stage.group}・{stage.name}</span>
         <div className="flex gap-2">
+          {runStreak >= 2 && (
+            <span className="streak-pill" aria-label={`連勝 ${runStreak} 題`}>
+              <Flame size={14} /> {runStreak} 連勝
+            </span>
+          )}
           <span className="life-pill" aria-label={`整局剩餘 ${lives} 次機會`}>
             {Array.from({ length: STARTING_LIVES }, (_, index) => (
               <span className={index < lives ? "" : "lost"} key={index}>
@@ -148,7 +182,8 @@ export function PlayScreen({
         {selected !== null && (
           <div className="fact-box play-fact-box">
             <div className="play-fact-copy">
-              <b>{feedbackMessage(selected, current, endedEarly, lives)}</b>
+              <b>{feedbackMessage(selected, current, endedEarly, lives, runStreak)}</b>
+              {isWrong && <p className="play-correct-answer">正確答案：{correctAnswer}</p>}
               <p>{current.fact}</p>
             </div>
             <button type="button" className="primary-button play-next-button" onClick={onNext}>
