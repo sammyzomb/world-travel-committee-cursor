@@ -136,6 +136,8 @@ npm run db:migrate:local    # 本機 D1 遷移
 npm run db:migrate:remote   # 正式 D1 遷移
 npm run start               # 本機預覽（含 D1 local）
 npm run deploy:cloudflare   # 建置 + 部署 Workers
+npm run workers:subdomain   # 註冊 workers.dev 子網域
+npm run workers:check       # 查詢子網域狀態
 npm run verify:phase1       # 第一階段規則驗證
 ```
 
@@ -151,11 +153,27 @@ npm run verify:phase1       # 第一階段規則驗證
 
 ## 疑難排解
 
+**`ERR_SSL_VERSION_OR_CIPHER_MISMATCH`（新子網域）**  
+新註冊的 `workers.dev` 子網域 SSL 憑證啟用約需 **10～30 分鐘**。請確認 Cloudflare 信箱已驗證，稍後再試。勿點左側 **Domains**（會 404），請用 [Workers & Pages](https://dash.cloudflare.com/?to=/:account/workers-and-pages)。
+
+**onboarding 連結 404**  
+改用 `npm run workers:subdomain <名稱>` 或 Dashboard → Workers & Pages → Your subdomain → Change。
+
 **Windows 上 `db:migrate:local` 失敗**  
 確認已先 `npm run build`，且 Node 版本 ≥ 22。
+
+**遠端遷移 `can't use --persist-to without --local`**  
+已修正於 `scripts/migrate-d1.mjs`；請 pull 最新版後重試。
 
 **重新建立 D1**  
 刪除本機 `cloudflare.json`，在 Cloudflare Dashboard 刪除舊資料庫後，再執行 `npm run db:create`。
 
 **不刪除既有成績**  
 遷移腳本只新增表／欄位，不會清空 `leaderboard_entries` 資料。
+
+## 目前已部署（備註）
+
+- 正式 URL：https://world-travel-committee.tcawg.workers.dev
+- Worker：`world-travel-committee`
+- D1：`world-travel-committee-d1`（binding `DB`）
+- 子網域：`tcawg`

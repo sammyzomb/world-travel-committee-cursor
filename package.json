@@ -20,6 +20,7 @@
     "audit:questions": "node scripts/audit-questions.mjs --write",
     "db:create": "node scripts/create-d1.mjs",
     "workers:subdomain": "node scripts/register-workers-subdomain.mjs",
+    "workers:check": "node scripts/check-workers-subdomain.mjs",
     "db:migrate:local": "node scripts/migrate-d1.mjs --local",
     "db:migrate:remote": "node scripts/migrate-d1.mjs --remote",
     "deploy:cloudflare": "npm run build && node --import ./scripts/sites-env.mjs ./node_modules/wrangler/bin/wrangler.js deploy --config dist/server/wrangler.json",

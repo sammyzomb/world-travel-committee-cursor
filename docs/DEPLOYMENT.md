@@ -34,7 +34,11 @@ npm run deploy:netlify
 
 環境變數見 [`netlify.toml`](../netlify.toml)。名人榜 API 會誠實回報「尚未設定資料庫」。
 
+## 部署狀態（2026-09-14）
+
+Cloudflare 正式站已上線，D1 名人榜可用。本機需有 `cloudflare.json`（不 commit）才能在本機重新部署。
+
 ## 限制說明
 
-- Netlify：主線、副模式、地標圖片可正常運作；名人榜需 Cloudflare D1。
-- Cloudflare：需完成 D1 建立與遠端遷移後，名人榜才可用。
+- Netlify：主線、副模式、地標圖片可正常運作；名人榜為 stub。
+- Cloudflare：遊戲與名人榜完整功能；新 `workers.dev` 子網域 SSL 可能需等待數十分鐘。
