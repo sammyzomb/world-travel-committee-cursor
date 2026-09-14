@@ -7,7 +7,6 @@ import { QUESTION_BANK_VERSION } from "../lib/question-bank-version.ts";
 import { buildPlayableRunPlan } from "../lib/run-plan.ts";
 import {
   advanceAfterFeedback,
-  buildClientRunState,
   createInitialProgress,
   getServerRunScore,
   submitAnswer,
@@ -49,13 +48,18 @@ assert.equal(loaded.sessionToken, sessionToken);
 const stageOneEnd = session.stageStarts[1] ?? Math.min(3, session.issuedQuestions.length);
 while (session.progress.currentIndex < stageOneEnd) {
   const issued = session.issuedQuestions[session.progress.currentIndex];
-  const result = submitAnswer(session, issued.correctAnswer);
+  const result = submitAnswer(session, {
+    questionId: issued.questionId,
+    selectedOption: issued.correctAnswer,
+    progressRevision: session.progress.revision,
+  });
   session = result.session;
-  await updateRunSession(session);
-  const advanced = advanceAfterFeedback(session);
-  session = { ...session, progress: { ...session.progress, lastFeedback: null } };
-  await updateRunSession(session);
-  assert.equal(advanced.sessionToken, sessionToken);
+  let updated = await updateRunSession(session, session.progress.revision - 1);
+  assert.equal(updated.ok, true);
+  const advanced = advanceAfterFeedback(session, session.progress.revision);
+  session = advanced.session;
+  updated = await updateRunSession(session, session.progress.revision - 1);
+  assert.equal(updated.ok, true);
 }
 
 const reloaded = await loadRunSession(sessionToken);
@@ -66,7 +70,11 @@ assert.equal(reloaded.questionBankVersion, QUESTION_BANK_VERSION);
 const serverRun = getServerRunScore(reloaded);
 assert.equal(serverRun.answers.length, stageOneEnd);
 assert.equal(
-  validateIssuedRunPlayback(reloaded.issuedQuestions, serverRun.answers, true),
+  validateIssuedRunPlayback(reloaded.issuedQuestions, serverRun.answers, {
+    endedEarly: true,
+    endReason: null,
+    exhausted: playable.plan.exhausted,
+  }),
   null,
 );
 

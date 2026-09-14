@@ -29,6 +29,13 @@
       "when": 1789400000000,
       "tag": "0003_run_session_progress",
       "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "6",
+      "when": 1789500000000,
+      "tag": "0004_run_session_revision",
+      "breakpoints": true
     }
   ]
 }

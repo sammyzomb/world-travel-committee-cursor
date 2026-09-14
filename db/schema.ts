@@ -18,6 +18,7 @@ export const runSessions = sqliteTable("run_sessions", {
   issuedPlanJson: text("issued_plan_json").notNull(),
   stageStartsJson: text("stage_starts_json").notNull(),
   progressJson: text("progress_json").notNull().default("{}"),
+  progressRevision: integer("progress_revision").notNull().default(0),
   exhausted: integer("exhausted", { mode: "boolean" }).notNull().default(false),
   createdAt: text("created_at").notNull().default(sql`CURRENT_TIMESTAMP`),
   expiresAt: text("expires_at").notNull(),

@@ -22,6 +22,7 @@
     "test:submission": "npx --yes tsx scripts/test-submission-validation.mjs",
     "test:run-session": "npx --yes tsx scripts/test-run-session-validation.mjs",
     "test:integration": "npx --yes tsx scripts/test-run-integration.mjs",
+    "test:api-integration": "npx --yes tsx --experimental-sqlite scripts/test-api-integration.mjs",
     "test:question-bank-version": "npx --yes tsx scripts/test-question-bank-version.mjs",
     "check:stage-coverage": "npx --yes tsx scripts/check-stage-coverage.mjs",
     "audit:inventory": "npx --yes tsx scripts/generate-audit-inventory.mjs",

@@ -81,11 +81,11 @@ export async function POST(request: Request) {
       return Response.json({ error: "尚未完成任何作答" }, { status: 400 });
     }
 
-    const playbackError = validateIssuedRunPlayback(
-      runSession.issuedQuestions,
-      serverRun.answers,
-      serverRun.endedEarly,
-    );
+    const playbackError = validateIssuedRunPlayback(runSession.issuedQuestions, serverRun.answers, {
+      endedEarly: serverRun.endedEarly,
+      endReason: serverRun.endReason,
+      exhausted: runSession.exhausted,
+    });
     if (playbackError) {
       return Response.json({ error: playbackError }, { status: 400 });
     }
@@ -117,7 +117,9 @@ export async function POST(request: Request) {
 
     const stageIndex = highestPassedStageIndex(serverRun.answers, serverRun.endedEarly);
     const stageReached = stageReachedName(stageIndex);
-    const completed = isFullCompletion(serverRun.answers, serverRun.endedEarly);
+    const completed =
+      serverRun.endReason === "full_completion" &&
+      isFullCompletion(serverRun.answers, serverRun.endedEarly);
 
     const currentTop = await db
       .select({ score: leaderboardEntries.score })

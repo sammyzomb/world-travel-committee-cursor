@@ -31,9 +31,17 @@ export type RunRecap = {
   highlights: Array<{ label: string; fact: string; correct: boolean }>;
 };
 
+export type RunEndReason =
+  | null
+  | "lives_exhausted"
+  | "stage_failed"
+  | "question_pool_exhausted"
+  | "full_completion";
+
 export type ClientRunState = {
   sessionToken: string;
   questionBankVersion: string;
+  progressRevision: number;
   screen: "enroll" | "play" | "reward" | "result";
   question: PublicQuestion | null;
   stage: { name: string; group: string };
@@ -50,6 +58,7 @@ export type ClientRunState = {
   maxRunStreak: number;
   endedEarly: boolean;
   fullCompletion: boolean;
+  endReason: RunEndReason;
   isGraduationStage: boolean;
   questionIndex: number;
   totalQuestions: number;

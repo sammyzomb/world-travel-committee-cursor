@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 import assert from "node:assert/strict";
 import { buildPlayableRunPlan } from "../lib/run-plan.ts";
-import { createInitialProgress, submitAnswer } from "../lib/run-session-engine.ts";
+import { advanceAfterFeedback, createInitialProgress, submitAnswer } from "../lib/run-session-engine.ts";
 import { issuedQuestionsFromPlan, validateIssuedRunPlayback } from "../lib/run-session.ts";
 import { STARTING_LIVES } from "../lib/leaderboard-scoring.ts";
 
@@ -23,17 +23,35 @@ let session = {
 const stageZeroEnd = session.stageStarts[1] ?? 3;
 for (let index = 0; index < stageZeroEnd; index += 1) {
   const current = session.issuedQuestions[session.progress.currentIndex];
-  const result = submitAnswer(session, current.correctAnswer);
+  const result = submitAnswer(session, {
+    questionId: current.questionId,
+    selectedOption: current.correctAnswer,
+    progressRevision: session.progress.revision,
+  });
   session = result.session;
-  session = { ...session, progress: { ...session.progress, lastFeedback: null } };
+  session = advanceAfterFeedback(session, session.progress.revision).session;
 }
 
 const stageAnswers = session.progress.answers;
-assert.equal(validateIssuedRunPlayback(issued.slice(0, stageAnswers.length), stageAnswers, true), null);
+assert.equal(
+  validateIssuedRunPlayback(issued.slice(0, stageAnswers.length), stageAnswers, {
+    endedEarly: true,
+    endReason: null,
+    exhausted: false,
+  }),
+  null,
+);
 
 const forgedOrder = [...stageAnswers];
 forgedOrder[1] = { ...forgedOrder[1], questionId: forgedOrder[0].questionId };
-assert.match(validateIssuedRunPlayback(issued, forgedOrder, true), /order mismatch/);
+assert.match(
+  validateIssuedRunPlayback(issued, forgedOrder, {
+    endedEarly: true,
+    endReason: null,
+    exhausted: false,
+  }),
+  /order mismatch/,
+);
 
 let deathSession = {
   sessionToken: "death-session",
@@ -54,7 +72,11 @@ for (let index = 0; index < STARTING_LIVES; index += 1) {
   const current = deathSession.issuedQuestions[deathSession.progress.currentIndex];
   const wrong = current.options.find((option) => option !== current.correctAnswer);
   assert.ok(wrong, `expected a wrong option for ${current.questionId}`);
-  const result = submitAnswer(deathSession, wrong);
+  const result = submitAnswer(deathSession, {
+    questionId: current.questionId,
+    selectedOption: wrong,
+    progressRevision: deathSession.progress.revision,
+  });
   deathSession = result.session;
   deathAnswers.push(deathSession.progress.answers[deathSession.progress.answers.length - 1]);
   if (deathSession.progress.endedEarly) break;
@@ -71,7 +93,11 @@ const postDeathAnswer = {
   correct: false,
 };
 assert.match(
-  validateIssuedRunPlayback(issued, [...deathAnswers, postDeathAnswer], true),
+  validateIssuedRunPlayback(issued, [...deathAnswers, postDeathAnswer], {
+    endedEarly: true,
+    endReason: "lives_exhausted",
+    exhausted: false,
+  }),
   /after lives exhausted/,
 );
 

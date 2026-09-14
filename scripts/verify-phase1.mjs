@@ -190,11 +190,16 @@ function run() {
   const issued = issuedQuestionsFromPlan(plan.questions, plan.stageStarts);
   const issuedVerify = verifyAnswersAgainstIssued(issued, sampleAnswers);
   assert.equal(issuedVerify.ok, true);
-  const runEndedEarly = plan.exhausted || drawnStageCount < educationStages.length;
-  assert.equal(validateIssuedRunPlayback(issued, sampleAnswers, runEndedEarly), null);
+  const runEndedEarly = !plan.exhausted && drawnStageCount < educationStages.length;
+  const runPlayback = plan.exhausted
+    ? { endedEarly: false, endReason: "question_pool_exhausted", exhausted: true }
+    : playable.completeThroughFinal
+      ? { endedEarly: false, endReason: "full_completion", exhausted: false }
+      : { endedEarly: true, endReason: null, exhausted: false };
+  assert.equal(validateIssuedRunPlayback(issued, sampleAnswers, runPlayback), null);
   const score = computeRunScore(verified.verified);
   assert.equal(score.correctCount, sampleAnswers.length);
-  if (!runEndedEarly) {
+  if (playable.completeThroughFinal) {
     assert.ok(isFullCompletion(verified.verified, false));
   }
   assert.ok(!isFullCompletion(verified.verified, true), "endedEarly must not count as full completion");
@@ -209,7 +214,14 @@ function run() {
       selectedOption: item.options[item.answer] ?? "",
       correct: true,
     }));
-    assert.equal(validateIssuedRunPlayback(fullIssued, fullAnswers, false), null);
+    assert.equal(
+      validateIssuedRunPlayback(fullIssued, fullAnswers, {
+        endedEarly: false,
+        endReason: "full_completion",
+        exhausted: false,
+      }),
+      null,
+    );
   }
 
   const firstQuestion = plan.questions[0];
@@ -234,7 +246,7 @@ function run() {
   };
 
   assert.equal(validateRunSubmission(submissionBase), null);
-  assert.equal(validateRunProgress(verified.verified, runEndedEarly), null);
+  assert.equal(validateRunProgress(verified.verified, !playable.completeThroughFinal), null);
 
   const staleVersion = validateRunSubmission({
     ...submissionBase,
@@ -254,7 +266,11 @@ function run() {
     { ...sampleAnswers[0], conceptId: "duplicate-concept" },
   ];
   assert.match(
-    validateIssuedRunPlayback(issued, duplicateAnswers, true),
+    validateIssuedRunPlayback(issued, duplicateAnswers, {
+      endedEarly: true,
+      endReason: null,
+      exhausted: plan.exhausted,
+    }),
     /order mismatch|conceptId mismatch/,
   );
 

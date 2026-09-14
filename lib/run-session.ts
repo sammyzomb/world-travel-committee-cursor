@@ -25,7 +25,15 @@ export type IssuedQuestion = {
   visual?: QuestionVisualData;
 };
 
+export type RunEndReason =
+  | null
+  | "lives_exhausted"
+  | "stage_failed"
+  | "question_pool_exhausted"
+  | "full_completion";
+
 export type RunSessionProgress = {
+  revision: number;
   currentIndex: number;
   score: number;
   lives: number;
@@ -34,9 +42,16 @@ export type RunSessionProgress = {
   maxRunStreak: number;
   endedEarly: boolean;
   fullCompletion: boolean;
+  endReason: RunEndReason;
   pendingReward: boolean;
   answers: RunAnswerRecord[];
   lastFeedback: AnswerFeedback | null;
+};
+
+export type RunPlaybackOptions = {
+  endedEarly: boolean;
+  endReason: RunEndReason;
+  exhausted: boolean;
 };
 
 export type StoredRunSession = {
@@ -125,8 +140,9 @@ export function verifyAnswersAgainstIssued(
 export function validateIssuedRunPlayback(
   issued: IssuedQuestion[],
   answers: RunAnswerRecord[],
-  endedEarly: boolean,
+  playback: RunPlaybackOptions,
 ) {
+  const { endedEarly, endReason, exhausted } = playback;
   if (answers.length === 0) return "answers are required";
   if (answers.length > issued.length) return "answers exceed issued question count";
 
@@ -162,7 +178,7 @@ export function validateIssuedRunPlayback(
     }
   }
 
-  if (!endedEarly) {
+  if (!endedEarly && endReason === "full_completion") {
     const finalStageIndex = educationStages.length - 1;
     const finalIssued = issued.filter((item) => item.stageIndex === finalStageIndex);
     const finalAnswers = verified.verified.filter((item) => item.stageIndex === finalStageIndex);
@@ -174,6 +190,11 @@ export function validateIssuedRunPlayback(
     if (finalCorrect < passRequired) {
       return "final stage pass requirement not met";
     }
+  }
+
+  if (endReason === "question_pool_exhausted") {
+    if (!exhausted) return "question_pool_exhausted requires exhausted session";
+    if (endedEarly) return "question_pool_exhausted cannot be endedEarly";
   }
 
   const stageBlocks = new Map<number, RunAnswerRecord[]>();
@@ -205,9 +226,18 @@ export function validateIssuedRunPlayback(
       if (correctCount < passRequired) {
         return `stage ${stageIndex} pass requirement not met`;
       }
-    } else if (!endedEarly && stageIndex === educationStages.length - 1) {
+    } else if (!endedEarly && endReason === "full_completion" && stageIndex === educationStages.length - 1) {
       if (stageAnswers.length !== issuedInStage.length) {
         return "final stage must be complete";
+      }
+    } else if (endReason === "question_pool_exhausted" && isLastStage) {
+      const passRequired = passRequiredForStage(questionsPerStage(stageIndex));
+      const correctCount = stageAnswers.filter((item) => item.correct).length;
+      if (stageAnswers.length !== issuedInStage.length) {
+        return `stage ${stageIndex} must be complete at pool exhaustion`;
+      }
+      if (correctCount < passRequired) {
+        return `stage ${stageIndex} pass requirement not met at pool exhaustion`;
       }
     }
   }

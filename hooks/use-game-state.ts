@@ -10,6 +10,7 @@ export type GameScreen = ClientRunState["screen"] | "start";
 const EMPTY_STATE: ClientRunState = {
   sessionToken: "",
   questionBankVersion: "",
+  progressRevision: 0,
   screen: "play",
   question: null,
   stage: { name: "小一", group: "國小" },
@@ -26,6 +27,7 @@ const EMPTY_STATE: ClientRunState = {
   maxRunStreak: 0,
   endedEarly: false,
   fullCompletion: false,
+  endReason: null,
   isGraduationStage: false,
   questionIndex: 0,
   totalQuestions: 0,
@@ -191,14 +193,16 @@ export function useGameState() {
       try {
         const payload = await postJson<{ state: ClientRunState }>("/api/run/answer", {
           sessionToken: sessionToken.current,
+          questionId: runState.question.id,
           selectedOption,
+          progressRevision: runState.progressRevision,
         });
         applyRunState(payload.state);
       } catch (error) {
         console.error("作答失敗", error);
       }
     },
-    [applyRunState, runState],
+    [applyRunState, runState.feedback, runState.progressRevision, runState.question],
   );
 
   const next = useCallback(async () => {
@@ -206,23 +210,25 @@ export function useGameState() {
     try {
       const payload = await postJson<{ state: ClientRunState }>("/api/run/advance", {
         sessionToken: sessionToken.current,
+        progressRevision: runState.progressRevision,
       });
       applyRunState(payload.state);
     } catch (error) {
       console.error("無法前往下一題", error);
     }
-  }, [applyRunState, runState.feedback]);
+  }, [applyRunState, runState.feedback, runState.progressRevision]);
 
   const continueAfterReward = useCallback(async () => {
     try {
       const payload = await postJson<{ state: ClientRunState }>("/api/run/continue", {
         sessionToken: sessionToken.current,
+        progressRevision: runState.progressRevision,
       });
       applyRunState(payload.state);
     } catch (error) {
       console.error("無法繼續遊戲", error);
     }
-  }, [applyRunState]);
+  }, [applyRunState, runState.progressRevision]);
 
   const goToStart = useCallback(() => {
     persistAvoidanceFromSession();

@@ -10,7 +10,7 @@ import {
 import type { AnswerFeedback, ClientRunState, PublicQuestion } from "./game-client-types";
 import { getStageAt, getStageIndex, getStageLength, isGraduationStage } from "./game-round";
 import type { RunAnswerRecord } from "./leaderboard-scoring";
-import type { IssuedQuestion, StoredRunSession } from "./run-session";
+import type { IssuedQuestion, RunEndReason, StoredRunSession } from "./run-session";
 
 type IssuedQuestionSource = {
   id: string;
@@ -26,6 +26,27 @@ type IssuedQuestionSource = {
   questionType?: string;
   visual?: QuestionVisualData;
 };
+
+export type SubmitAnswerInput = {
+  questionId: string;
+  selectedOption: string;
+  progressRevision: number;
+};
+
+export type EngineMutationResult = {
+  session: StoredRunSession;
+  state: ClientRunState;
+  idempotent?: boolean;
+};
+
+export class RunSessionEngineError extends Error {
+  status: number;
+
+  constructor(message: string, status = 400) {
+    super(message);
+    this.status = status;
+  }
+}
 
 export function toIssuedQuestion(
   question: IssuedQuestionSource,
@@ -110,6 +131,14 @@ function issuedById(issuedQuestions: IssuedQuestion[]) {
   return new Map(issuedQuestions.map((item) => [item.questionId, item]));
 }
 
+function lastPlayableStageIndex(session: StoredRunSession) {
+  return Math.max(0, session.stageStarts.length - 1);
+}
+
+function isRunFinished(progress: StoredRunSession["progress"]) {
+  return Boolean(progress.endReason || progress.endedEarly || progress.fullCompletion);
+}
+
 function displayQuestionIndex(session: StoredRunSession) {
   if (session.progress.lastFeedback) {
     return Math.max(0, session.progress.currentIndex - 1);
@@ -122,10 +151,24 @@ function currentIssued(session: StoredRunSession) {
   return session.issuedQuestions[index] ?? null;
 }
 
+function expectedQuestion(session: StoredRunSession) {
+  if (session.progress.lastFeedback) return null;
+  return session.issuedQuestions[session.progress.currentIndex] ?? null;
+}
+
+function matchesLastAnswer(session: StoredRunSession, questionId: string, selectedOption: string) {
+  const lastAnswer = session.progress.answers[session.progress.answers.length - 1];
+  return (
+    lastAnswer?.questionId === questionId &&
+    lastAnswer?.selectedOption === selectedOption &&
+    session.progress.lastFeedback?.selectedOption === selectedOption
+  );
+}
+
 function resolveScreen(session: StoredRunSession): ClientRunState["screen"] {
   if (session.progress.lastFeedback) return "play";
   if (session.progress.pendingReward) return "reward";
-  if (session.progress.endedEarly || session.progress.fullCompletion) return "result";
+  if (isRunFinished(session.progress)) return "result";
   return session.progress.currentIndex >= session.issuedQuestions.length ? "result" : "play";
 }
 
@@ -150,8 +193,11 @@ export function buildClientRunState(session: StoredRunSession): ClientRunState {
   return {
     sessionToken: session.sessionToken,
     questionBankVersion: session.questionBankVersion,
+    progressRevision: session.progress.revision,
     screen,
-    question: screen === "play" && issued ? toPublicQuestion(issued) : null,
+    question: screen === "play" && issued && !session.progress.lastFeedback
+      ? toPublicQuestion(issued)
+      : null,
     stage,
     nextStage,
     stageIndex,
@@ -166,6 +212,7 @@ export function buildClientRunState(session: StoredRunSession): ClientRunState {
     maxRunStreak: session.progress.maxRunStreak,
     endedEarly: session.progress.endedEarly,
     fullCompletion: session.progress.fullCompletion,
+    endReason: session.progress.endReason,
     isGraduationStage: isGraduationStage(stageIndex),
     questionIndex: displayIndex,
     totalQuestions: session.issuedQuestions.length,
@@ -179,6 +226,7 @@ export function buildClientRunState(session: StoredRunSession): ClientRunState {
 
 export function createInitialProgress() {
   return {
+    revision: 0,
     currentIndex: 0,
     score: 0,
     lives: STARTING_LIVES,
@@ -187,33 +235,84 @@ export function createInitialProgress() {
     maxRunStreak: 0,
     endedEarly: false,
     fullCompletion: false,
+    endReason: null as RunEndReason,
     pendingReward: false,
     answers: [] as RunAnswerRecord[],
     lastFeedback: null as AnswerFeedback | null,
   };
 }
 
+function finishRun(
+  session: StoredRunSession,
+  endReason: RunEndReason,
+  options: { endedEarly?: boolean; fullCompletion?: boolean; pendingReward?: boolean } = {},
+): EngineMutationResult {
+  const progress = {
+    ...session.progress,
+    endReason,
+    endedEarly: options.endedEarly ?? false,
+    fullCompletion: options.fullCompletion ?? false,
+    pendingReward: options.pendingReward ?? false,
+  };
+  const nextSession = { ...session, progress };
+  return {
+    session: nextSession,
+    state: buildClientRunState(nextSession),
+  };
+}
+
 export function submitAnswer(
   session: StoredRunSession,
-  selectedOption: string,
-): { session: StoredRunSession; state: ClientRunState } {
-  if (session.progress.pendingReward || session.progress.endedEarly || session.progress.fullCompletion) {
-    throw new Error("場次已結束，無法繼續作答");
-  }
-
-  const issued = currentIssued(session);
-  if (!issued) {
-    throw new Error("沒有可作答的題目");
-  }
-
-  const trimmed = selectedOption.trim();
+  input: SubmitAnswerInput,
+): EngineMutationResult {
+  const trimmed = input.selectedOption.trim();
   if (!trimmed) {
-    throw new Error("selectedOption is required");
+    throw new RunSessionEngineError("selectedOption is required");
+  }
+  if (!input.questionId) {
+    throw new RunSessionEngineError("questionId is required");
+  }
+  if (!Number.isInteger(input.progressRevision) || input.progressRevision < 0) {
+    throw new RunSessionEngineError("progressRevision is required");
+  }
+
+  if (session.progress.lastFeedback) {
+    if (matchesLastAnswer(session, input.questionId, trimmed)) {
+      return { session, state: buildClientRunState(session), idempotent: true };
+    }
+    throw new RunSessionEngineError("請先確認上一題結果後再作答");
+  }
+
+  if (isRunFinished(session.progress) || session.progress.pendingReward) {
+    throw new RunSessionEngineError("場次已結束，無法繼續作答");
+  }
+
+  if (input.progressRevision !== session.progress.revision) {
+    const pendingIssued = session.issuedQuestions[session.progress.currentIndex];
+    const previousIssued = session.issuedQuestions[session.progress.currentIndex - 1];
+    const matchesPending =
+      pendingIssued?.questionId === input.questionId &&
+      matchesLastAnswer(session, input.questionId, trimmed);
+    const matchesPrevious =
+      previousIssued?.questionId === input.questionId &&
+      matchesLastAnswer(session, input.questionId, trimmed);
+    if (matchesPending || matchesPrevious) {
+      return { session, state: buildClientRunState(session), idempotent: true };
+    }
+    throw new RunSessionEngineError("進度已更新，請重新載入後再作答", 409);
+  }
+
+  const issued = expectedQuestion(session);
+  if (!issued) {
+    throw new RunSessionEngineError("沒有可作答的題目");
+  }
+  if (issued.questionId !== input.questionId) {
+    throw new RunSessionEngineError("題目已變更，請重新載入後再作答", 409);
   }
 
   const selectedIndex = issued.options.indexOf(trimmed);
   if (selectedIndex < 0) {
-    throw new Error(`invalid selectedOption for ${issued.questionId}`);
+    throw new RunSessionEngineError(`invalid selectedOption for ${issued.questionId}`);
   }
 
   const isCorrect = trimmed === issued.correctAnswer;
@@ -246,18 +345,14 @@ export function submitAnswer(
   } else {
     progress.runStreak = 0;
     progress.lives -= 1;
-    if (progress.lives <= 0) {
-      progress.endedEarly = true;
-    }
   }
 
   progress.currentIndex += 1;
+  progress.revision = session.progress.revision + 1;
+  const nextSession = { ...session, progress };
 
-  if (progress.endedEarly) {
-    return {
-      session: { ...session, progress },
-      state: buildClientRunState({ ...session, progress }),
-    };
+  if (progress.lives <= 0) {
+    return finishRun(nextSession, "lives_exhausted", { endedEarly: true });
   }
 
   const stageLength = getStageLength(
@@ -268,45 +363,75 @@ export function submitAnswer(
   const stageStart = session.stageStarts[stageIndex] ?? 0;
   const finishedStage = progress.currentIndex - stageStart >= stageLength;
 
-  if (finishedStage) {
-    const passRequired = passRequiredForStage(stageLength);
-    if (progress.stageCorrect < passRequired) {
-      progress.endedEarly = true;
-      return {
-        session: { ...session, progress },
-        state: buildClientRunState({ ...session, progress }),
-      };
-    }
-
-    if (stageIndex >= FINAL_STAGE_INDEX) {
-      progress.fullCompletion = true;
-      return {
-        session: { ...session, progress },
-        state: buildClientRunState({ ...session, progress }),
-      };
-    }
-
-    progress.pendingReward = true;
+  if (!finishedStage) {
     return {
-      session: { ...session, progress },
-      state: buildClientRunState({ ...session, progress }),
+      session: nextSession,
+      state: buildClientRunState(nextSession),
     };
   }
 
+  const passRequired = passRequiredForStage(stageLength);
+  if (progress.stageCorrect < passRequired) {
+    return finishRun(nextSession, "stage_failed", { endedEarly: true });
+  }
+
+  if (stageIndex >= FINAL_STAGE_INDEX) {
+    return finishRun(nextSession, "full_completion", { fullCompletion: true });
+  }
+
+  const lastPlayable = lastPlayableStageIndex(session);
+  if (stageIndex >= lastPlayable && session.exhausted) {
+    return finishRun(nextSession, "question_pool_exhausted");
+  }
+
+  progress.pendingReward = true;
   return {
-    session: { ...session, progress },
-    state: buildClientRunState({ ...session, progress }),
+    session: nextSession,
+    state: buildClientRunState(nextSession),
   };
 }
 
-export function advanceAfterFeedback(session: StoredRunSession): ClientRunState {
-  const progress = { ...session.progress, lastFeedback: null };
-  return buildClientRunState({ ...session, progress });
+export function advanceAfterFeedback(
+  session: StoredRunSession,
+  progressRevision: number,
+): EngineMutationResult {
+  if (!session.progress.lastFeedback) {
+    if (session.progress.revision === progressRevision) {
+      return { session, state: buildClientRunState(session), idempotent: true };
+    }
+    throw new RunSessionEngineError("目前沒有待確認的作答結果");
+  }
+  if (progressRevision !== session.progress.revision) {
+    if (session.progress.revision > progressRevision && !session.progress.lastFeedback) {
+      return { session, state: buildClientRunState(session), idempotent: true };
+    }
+    throw new RunSessionEngineError("進度已更新，請重新載入", 409);
+  }
+
+  const progress = {
+    ...session.progress,
+    lastFeedback: null,
+    revision: session.progress.revision + 1,
+  };
+  const nextSession = { ...session, progress };
+  return {
+    session: nextSession,
+    state: buildClientRunState(nextSession),
+  };
 }
 
-export function continueAfterReward(session: StoredRunSession): ClientRunState {
+export function continueAfterReward(
+  session: StoredRunSession,
+  progressRevision: number,
+): EngineMutationResult {
   if (!session.progress.pendingReward) {
-    throw new Error("目前不在升級獎勵階段");
+    if (session.progress.revision === progressRevision) {
+      return { session, state: buildClientRunState(session), idempotent: true };
+    }
+    throw new RunSessionEngineError("目前不在升級獎勵階段");
+  }
+  if (progressRevision !== session.progress.revision) {
+    throw new RunSessionEngineError("進度已更新，請重新載入", 409);
   }
 
   const progress = {
@@ -314,9 +439,13 @@ export function continueAfterReward(session: StoredRunSession): ClientRunState {
     pendingReward: false,
     stageCorrect: 0,
     lastFeedback: null,
+    revision: session.progress.revision + 1,
   };
-
-  return buildClientRunState({ ...session, progress });
+  const nextSession = { ...session, progress };
+  return {
+    session: nextSession,
+    state: buildClientRunState(nextSession),
+  };
 }
 
 export function getServerRunScore(session: StoredRunSession) {
@@ -328,5 +457,6 @@ export function getServerRunScore(session: StoredRunSession) {
     answers,
     endedEarly: session.progress.endedEarly,
     fullCompletion: session.progress.fullCompletion,
+    endReason: session.progress.endReason,
   };
 }
