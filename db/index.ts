@@ -1,5 +1,9 @@
-/** Netlify 建置只解析 stub；Cloudflare 建置由 vite alias 替換為 cloudflare-db。 */
+/** Netlify 建置走 stub；Cloudflare 建置走 D1。 */
 export async function getDb() {
-  const { getCloudflareDb } = await import("./netlify-db-stub");
+  if (process.env.NETLIFY === "true") {
+    const { getCloudflareDb } = await import("./netlify-db-stub");
+    return getCloudflareDb();
+  }
+  const { getCloudflareDb } = await import("./cloudflare-db");
   return getCloudflareDb();
 }
