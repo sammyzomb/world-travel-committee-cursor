@@ -335,10 +335,8 @@ const baseLandmarkImages: Record<string, LandmarkImage> = {
     url: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Kwame_Nkrumah_Mausoleum_and_Memorial_Park.jpg/960px-Kwame_Nkrumah_Mausoleum_and_Memorial_Park.jpg",
     credit: "Wikimedia Commons / Stig Nygaard",
   },
-  "黃金博物館": {
-    url: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/2019_The_Lighting_Show_of_Gold_Museum%2C_New_Taipei.jpg/960px-2019_The_Lighting_Show_of_Gold_Museum%2C_New_Taipei.jpg",
-    credit: "Wikimedia Commons / 2019 The Lighting Show of Gold Museum, New Taipei.jpg",
-  },
+  // Bogotá's Museo del Oro: the previous URL showed New Taipei's Gold Museum.
+  // Leave unmapped until a verified, licensed photograph is selected.
   "加拉帕戈斯群島": {
     url: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Gal%C3%A1pagos_Islands_ESA23188644.jpeg/960px-Gal%C3%A1pagos_Islands_ESA23188644.jpeg",
     credit: "Wikimedia Commons / Galápagos Islands ESA23188644.jpeg",
