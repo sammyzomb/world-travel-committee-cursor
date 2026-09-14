@@ -12,6 +12,14 @@ import { getServerRunScore } from "../../../lib/run-session-engine";
 import { validateIssuedRunPlayback } from "../../../lib/run-session";
 import { loadRunSession } from "../../../lib/run-session-store";
 
+// sessionToken authorizes run mutations and must never appear on the public board.
+const publicEntryFields = {
+  id: leaderboardEntries.id,
+  playerName: leaderboardEntries.playerName,
+  score: leaderboardEntries.score,
+  stageReached: leaderboardEntries.stageReached,
+  completed: leaderboardEntries.completed,
+};
 const TOP_LIMIT = 10;
 const MAX_NAME_LENGTH = 20;
 const RATE_LIMIT_WINDOW_MS = 60_000;
@@ -38,7 +46,7 @@ export async function GET() {
   try {
     const db = await getDb();
     const rows = await db
-      .select()
+      .select(publicEntryFields)
       .from(leaderboardEntries)
       .orderBy(desc(leaderboardEntries.score), desc(leaderboardEntries.id))
       .limit(TOP_LIMIT);
@@ -77,6 +85,9 @@ export async function POST(request: Request) {
     }
 
     const serverRun = getServerRunScore(runSession);
+    if (!serverRun.endReason) {
+      return Response.json({ error: "遊戲尚未結束，請完成挑戰後再提交成績" }, { status: 409 });
+    }
     if (serverRun.answers.length === 0) {
       return Response.json({ error: "尚未完成任何作答" }, { status: 400 });
     }
@@ -144,7 +155,7 @@ export async function POST(request: Request) {
         stageReached,
         completed,
       })
-      .returning();
+      .returning(publicEntryFields);
 
     return Response.json({ qualified: true, entry }, { status: 201 });
   } catch (error) {
