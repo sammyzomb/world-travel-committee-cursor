@@ -24,6 +24,7 @@ export type RoundPlan = {
   usedQuestionIds: Set<string>;
   usedConceptIds: Set<string>;
   previousRoundQuestionIds: string[];
+  previousRoundConceptIds: string[];
   /** 下一學級無足夠已審核題目可抽 */
   exhausted: boolean;
 };
@@ -73,6 +74,7 @@ export { passRequiredForStage };
 function isAvailable(
   item: Question,
   previousQuestionIds: string[],
+  previousConceptIds: string[],
   usedQuestionIds: Set<string>,
   usedConceptIds: Set<string>,
   allowReuse: boolean,
@@ -80,6 +82,7 @@ function isAvailable(
   if (usedQuestionIds.has(item.id)) return false;
   if (usedConceptIds.has(item.conceptId)) return false;
   if (!allowReuse && previousQuestionIds.includes(item.id)) return false;
+  if (!allowReuse && previousConceptIds.includes(item.conceptId)) return false;
   return true;
 }
 
@@ -131,6 +134,9 @@ function pickDiverseQuestions(
     list.push(item);
     byType.set(item.questionType, list);
   }
+  for (const [type, list] of byType) {
+    byType.set(type, shuffled(list));
+  }
 
   const typeOrder = shuffled(
     allowedTypes.filter((type) => (byType.get(type)?.length ?? 0) > 0),
@@ -143,10 +149,18 @@ function pickDiverseQuestions(
     ? Math.ceil(count / Math.max(projectedTypeCount, 1))
     : maxQuestionsPerType(count, projectedTypeCount, allowedTypes.length);
   const selected: Question[] = [...seed];
+  const selectedConceptIds = new Set(seed.map((item) => item.conceptId));
   const typeCursor = new Map<QuestionType, number>();
   for (const item of seed) {
     typeCursor.set(item.questionType, (typeCursor.get(item.questionType) ?? 0) + 1);
   }
+
+  const tryAdd = (item: Question) => {
+    if (selectedConceptIds.has(item.conceptId)) return false;
+    selected.push(item);
+    selectedConceptIds.add(item.conceptId);
+    return true;
+  };
 
   let guard = 0;
   while (selected.length < count && guard < count * typeOrder.length * 4) {
@@ -157,10 +171,15 @@ function pickDiverseQuestions(
       const cursor = typeCursor.get(type) ?? 0;
       if (cursor >= maxPerType) continue;
       const pool = byType.get(type);
-      if (!pool || cursor >= pool.length) continue;
-      selected.push(pool[cursor]);
-      typeCursor.set(type, cursor + 1);
-      progressed = true;
+      if (!pool) continue;
+      for (let index = cursor; index < pool.length; index += 1) {
+        if (selected.length >= count) break;
+        if (tryAdd(pool[index])) {
+          typeCursor.set(type, index + 1);
+          progressed = true;
+          break;
+        }
+      }
     }
     if (!progressed) break;
   }
@@ -172,7 +191,7 @@ function pickDiverseQuestions(
       if (selectedIds.has(item.id)) continue;
       const usedForType = selected.filter((entry) => entry.questionType === item.questionType).length;
       if (usedForType >= maxPerType) continue;
-      selected.push(item);
+      if (!tryAdd(item)) continue;
       selectedIds.add(item.id);
     }
   }
@@ -185,6 +204,7 @@ function pickFreshQuestions(
   count: number,
   optionCount: number,
   previousQuestionIds: string[],
+  previousConceptIds: string[],
   usedQuestionIds: Set<string>,
   usedConceptIds: Set<string>,
   stageIndex: number,
@@ -193,7 +213,14 @@ function pickFreshQuestions(
   relaxTypeCap = false,
 ) {
   const available = pool.filter((item) =>
-    isAvailable(item, previousQuestionIds, usedQuestionIds, usedConceptIds, allowReuse),
+    isAvailable(
+      item,
+      previousQuestionIds,
+      previousConceptIds,
+      usedQuestionIds,
+      usedConceptIds,
+      allowReuse,
+    ),
   );
   const ranked = sortByStageDifficulty(available, stageIndex);
   const picked = pickDiverseQuestions(ranked, count, stageIndex, seed, relaxTypeCap).map((item) =>
@@ -211,6 +238,7 @@ function fillStagePool(
   count: number,
   optionCount: number,
   previousQuestionIds: string[],
+  previousConceptIds: string[],
   usedQuestionIds: Set<string>,
   usedConceptIds: Set<string>,
   stageIndex: number,
@@ -225,6 +253,7 @@ function fillStagePool(
       count,
       optionCount,
       previousQuestionIds,
+      previousConceptIds,
       usedQuestionIds,
       usedConceptIds,
       stageIndex,
@@ -239,6 +268,34 @@ function fillStagePool(
   if (selected.length < count) tryPick(pool, false);
   if (selected.length < count) tryPick(pool, true);
   if (selected.length < count) tryPick(pool, true, true);
+  if (selected.length < count) tryPick(approvedQuestions, true, true);
+
+  if (selected.length < count) {
+    const selectedIds = new Set(selected.map((item) => item.id));
+    const selectedConceptIds = new Set(selected.map((item) => item.conceptId));
+    for (const item of shuffled(approvedQuestions)) {
+      if (selected.length >= count) break;
+      if (selectedIds.has(item.id) || selectedConceptIds.has(item.conceptId)) continue;
+      if (
+        !isAvailable(
+          item,
+          previousQuestionIds,
+          previousConceptIds,
+          usedQuestionIds,
+          usedConceptIds,
+          true,
+        )
+      ) {
+        continue;
+      }
+      const picked = withOptionCount(item, optionCount);
+      selected.push(picked);
+      selectedIds.add(picked.id);
+      selectedConceptIds.add(picked.conceptId);
+      usedQuestionIds.add(picked.id);
+      usedConceptIds.add(picked.conceptId);
+    }
+  }
 
   return selected.slice(0, count);
 }
@@ -246,14 +303,23 @@ function fillStagePool(
 function drawStageQuestions(
   stageIndex: number,
   previousQuestionIds: string[],
+  previousConceptIds: string[],
   usedQuestionIds: Set<string>,
   usedConceptIds: Set<string>,
 ): Question[] {
   if (stageIndex > FINAL_STAGE_INDEX) return [];
 
   if (stageIndex === 0) {
-    const warmupChoices = warmupQuestions
-      .filter((item) => item.auditStatus === "approved" && item.kind === "tf")
+    const warmupPool = shuffled(
+      warmupQuestions.filter((item) => item.auditStatus === "approved" && item.kind === "tf"),
+    );
+    const avoidWarmup = warmupPool.filter(
+      (item) =>
+        !previousQuestionIds.includes(item.id) && !previousConceptIds.includes(item.conceptId),
+    );
+    const warmupSource =
+      avoidWarmup.length >= WARMUP_QUESTIONS_FIRST_STAGE ? avoidWarmup : warmupPool;
+    const warmupChoices = warmupSource
       .slice(0, WARMUP_QUESTIONS_FIRST_STAGE)
       .map((item) => withOptionCount(item, 2));
     warmupChoices.forEach((item) => {
@@ -270,11 +336,12 @@ function drawStageQuestions(
       formalCount,
       2,
       previousQuestionIds,
+      previousConceptIds,
       usedQuestionIds,
       usedConceptIds,
       stageIndex,
     );
-    return [...warmupChoices, ...formalChoices];
+    return [...shuffled(warmupChoices), ...shuffled(formalChoices)];
   }
 
   const stage = educationStages[stageIndex];
@@ -293,6 +360,7 @@ function drawStageQuestions(
     QUESTIONS_PER_STAGE,
     optionCount,
     previousQuestionIds,
+    previousConceptIds,
     usedQuestionIds,
     usedConceptIds,
     stageIndex,
@@ -301,11 +369,18 @@ function drawStageQuestions(
   if (includesTravelKnowledge(stageIndex) && travelPool.length > 0 && questions.length >= 3) {
     const travelPick = sortByStageDifficulty(
       travelPool.filter((item) =>
-        isAvailable(item, previousQuestionIds, usedQuestionIds, usedConceptIds, false),
+        isAvailable(
+          item,
+          previousQuestionIds,
+          previousConceptIds,
+          usedQuestionIds,
+          usedConceptIds,
+          false,
+        ),
       ),
       stageIndex,
     )[0];
-    if (travelPick) {
+    if (travelPick && !usedConceptIds.has(travelPick.conceptId)) {
       const typeCounts = new Map<QuestionType, number>();
       for (const item of questions) {
         typeCounts.set(item.questionType, (typeCounts.get(item.questionType) ?? 0) + 1);
@@ -329,19 +404,29 @@ function drawStageQuestions(
     }
   }
 
-  return questions;
+  return shuffled(questions);
 }
 
-export function createRound(previousQuestionIds: string[]): RoundPlan {
+export function createRound(
+  previousQuestionIds: string[] = [],
+  previousConceptIds: string[] = [],
+): RoundPlan {
   const usedQuestionIds = new Set<string>();
   const usedConceptIds = new Set<string>();
-  const stageQuestions = drawStageQuestions(0, previousQuestionIds, usedQuestionIds, usedConceptIds);
+  const stageQuestions = drawStageQuestions(
+    0,
+    previousQuestionIds,
+    previousConceptIds,
+    usedQuestionIds,
+    usedConceptIds,
+  );
   return {
     questions: stageQuestions,
     stageStarts: [0],
     usedQuestionIds,
     usedConceptIds,
     previousRoundQuestionIds: previousQuestionIds,
+    previousRoundConceptIds: previousConceptIds,
     exhausted: stageQuestions.length < QUESTIONS_PER_STAGE,
   };
 }
@@ -353,6 +438,7 @@ export function appendNextStage(plan: RoundPlan, stageIndex: number): RoundPlan 
   const stageQuestions = drawStageQuestions(
     stageIndex,
     plan.previousRoundQuestionIds,
+    plan.previousRoundConceptIds,
     plan.usedQuestionIds,
     plan.usedConceptIds,
   );
@@ -377,6 +463,7 @@ export function canDrawNextStage(plan: RoundPlan, nextStageIndex: number) {
   const probe = drawStageQuestions(
     nextStageIndex,
     plan.previousRoundQuestionIds,
+    plan.previousRoundConceptIds,
     probeQuestionIds,
     probeConceptIds,
   );

@@ -1,6 +1,5 @@
-import { Crown } from "lucide-react";
-import { GameAnimation } from "../game-animation";
-import { GAME_NAME, ORGANIZATION_NAME } from "../../lib/brand";
+import { Crown, MapPin, Plane, Sparkles } from "lucide-react";
+import { GAME_HERO_HEADLINE } from "../../lib/brand";
 import type { LeaderboardEntry } from "../../lib/leaderboard-types";
 import { questionBankStats } from "../../lib/questions";
 
@@ -18,52 +17,70 @@ export function StartScreen({
   onBegin,
 }: StartScreenProps) {
   return (
-    <section className="mx-auto grid w-full max-w-6xl gap-6 px-4 pb-8 pt-4 lg:grid-cols-[1.35fr_.65fr] sm:px-8">
-      <div className="hero-card arcade-hero">
-        <GameAnimation kind="opening" className="arcade-opening-video" />
-        <img
-          className="original-title-art"
-          src="/quiz-channel-question-title.png"
-          alt="Quiz Channel Question 原始街機開場畫面"
-        />
-        <div className="arcade-screen-copy">
-          <p className="arcade-org-title">{ORGANIZATION_NAME}</p>
-          <h1 className="arcade-game-title">{GAME_NAME}</h1>
-          <p className="arcade-game-subtitle">從小一一路衝到博士，地理梗遊戲開打！</p>
-          <button type="button" className="primary-button" onClick={onBegin}>
-            主線闖關 <span>→</span>
-          </button>
-        </div>
-      </div>
+    <section className="start-screen mx-auto w-full max-w-7xl px-4 pb-12 pt-2 sm:px-10">
+      <div className="start-hero-grid">
+        <div className="start-hero-panel">
+          <div className="start-hero-main">
+            <div className="start-hero-art-wrap">
+              <img
+                className="start-title-art"
+                src="/quiz-channel-question-title.png"
+                alt="Quiz Channel Question 原始街機開場畫面"
+              />
+            </div>
 
-      <aside className="leader-card">
-        <div className="flex items-center justify-between">
-          <div>
-            <p className="mini-label">HALL OF FAME</p>
-            <h2>永久名人榜</h2>
-          </div>
-          <Crown className="text-amber-300" size={30} />
-        </div>
-        <div className="mt-6 space-y-2">
-          {leaderboardLoading && <p className="leaderboard-empty">名人榜載入中…</p>}
-          {!leaderboardLoading && leaderboard.length === 0 && (
-            <p className="leaderboard-empty">
-              {leaderboardError ?? "尚無紀錄，成為第一位留名的旅人吧！"}
-            </p>
-          )}
-          {!leaderboardLoading &&
-            leaderboard.map((row, index) => (
-              <div className="leader-row" key={row.id}>
-                <span className={index < 3 ? "podium" : ""}>{index + 1}</span>
-                <b>{row.playerName}</b>
-                <strong>{row.score.toLocaleString()}</strong>
+            <div className="start-hero-copy">
+              <p className="mini-label">GEO QUIZ ARCADE</p>
+              <h1 className="start-hero-title">{GAME_HERO_HEADLINE}</h1>
+              <p className="start-hero-subtitle">從小一一路衝到博士，地理梗遊戲開打！</p>
+
+              <div className="start-topic-chips" aria-label="題庫主題">
+                <span><MapPin size={16} /> 地理知識</span>
+                <span><Sparkles size={16} /> 國家知識</span>
+                <span><Crown size={16} /> 世界遺產</span>
+                <span><Plane size={16} /> 旅遊知識</span>
               </div>
-            ))}
+
+              <button type="button" className="primary-button start-play-button" onClick={onBegin}>
+                主線闖關 <span>→</span>
+              </button>
+            </div>
+          </div>
         </div>
-        <p className="mt-5 text-center text-xs text-slate-400">
-          題庫 {questionBankStats.total} 題 · 前 10 名留名
-        </p>
-      </aside>
+
+        <aside className="leader-card start-leader-card">
+          <div className="start-leader-header">
+            <div>
+              <p className="mini-label">HALL OF FAME</p>
+              <h2>永久名人榜</h2>
+            </div>
+            <Crown className="text-amber-300" size={34} />
+          </div>
+
+          <div className="start-leader-body">
+            {leaderboardLoading && <p className="leaderboard-empty">名人榜載入中…</p>}
+            {!leaderboardLoading && leaderboard.length === 0 && (
+              <div className="start-leader-empty">
+                <Crown size={44} className="text-amber-300/40" />
+                <p>{leaderboardError ?? "尚無紀錄"}</p>
+                <small>完成主線並送出成績，成為第一位留名的旅人！</small>
+              </div>
+            )}
+            {!leaderboardLoading &&
+              leaderboard.map((row, index) => (
+                <div className="leader-row" key={row.id}>
+                  <span className={index < 3 ? "podium" : ""}>{index + 1}</span>
+                  <b>{row.playerName}</b>
+                  <strong>{row.score.toLocaleString()}</strong>
+                </div>
+              ))}
+          </div>
+
+          <p className="start-leader-footer">
+            題庫 {questionBankStats.total} 題 · 前 10 名留名
+          </p>
+        </aside>
+      </div>
     </section>
   );
 }

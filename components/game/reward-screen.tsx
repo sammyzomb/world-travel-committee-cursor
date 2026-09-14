@@ -11,6 +11,7 @@ type RewardScreenProps = {
   stageCorrect: number;
   lives: number;
   onContinue: () => void;
+  onReplay: () => void;
 };
 
 export function RewardScreen({
@@ -20,6 +21,7 @@ export function RewardScreen({
   stageCorrect,
   lives,
   onContinue,
+  onReplay,
 }: RewardScreenProps) {
   return (
     <section className="reward-section mx-auto w-full max-w-2xl px-4 py-10 text-center sm:px-8">
@@ -59,6 +61,9 @@ export function RewardScreen({
         <button className="primary-button mx-auto" onClick={onContinue}>
           {isGraduationStage ? "畢業完成，進入" : "休息好了，升上"} {nextStage.name}{" "}
           <span>→</span>
+        </button>
+        <button type="button" className="rank-button mx-auto mt-3" onClick={onReplay}>
+          重玩
         </button>
         <p className="reward-tip">沒有倒數計時，準備好再繼續。</p>
       </div>

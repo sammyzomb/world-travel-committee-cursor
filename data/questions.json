@@ -10,7 +10,9 @@
       ],
       "answer": 0,
       "fact": "富士山海拔 3,776 公尺，是日本最高峰。",
-      "kind": "tf"
+      "kind": "tf",
+      "landmark": "富士山",
+      "landmarkDetail": "日本"
     },
     {
       "level": "送分題",

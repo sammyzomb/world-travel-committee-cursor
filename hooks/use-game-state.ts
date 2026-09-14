@@ -30,6 +30,7 @@ export function useGameState() {
   const [screen, setScreen] = useState<GameScreen>("start");
   const [roundPlan, setRoundPlan] = useState<RoundPlan>(() => createRound([]));
   const previousRoundQuestionIds = useRef<string[]>([]);
+  const previousRoundConceptIds = useRef<string[]>([]);
   const sessionToken = useRef(createSessionToken());
   const answerLog = useRef<RunAnswerRecord[]>([]);
   const [index, setIndex] = useState(0);
@@ -84,8 +85,25 @@ export function useGameState() {
     [stageQuestion, stageLength],
   );
 
-  const resetGameState = useCallback((nextPlan: RoundPlan, avoidQuestionIds: string[]) => {
+  const mergeAvoidance = useCallback((questionIds: string[], conceptIds: string[]) => {
+    return {
+      questionIds: [...new Set([...previousRoundQuestionIds.current, ...questionIds])],
+      conceptIds: [...new Set([...previousRoundConceptIds.current, ...conceptIds])],
+    };
+  }, []);
+
+  const persistAvoidanceFromSession = useCallback(() => {
+    const playedIds = answerLog.current.map((entry) => entry.questionId);
+    const playedConcepts = answerLog.current.map((entry) => entry.conceptId);
+    const avoided = mergeAvoidance(playedIds, playedConcepts);
+    previousRoundQuestionIds.current = avoided.questionIds;
+    previousRoundConceptIds.current = avoided.conceptIds;
+  }, [mergeAvoidance]);
+
+  const resetGameState = useCallback(
+    (nextPlan: RoundPlan, avoidQuestionIds: string[], avoidConceptIds: string[]) => {
     previousRoundQuestionIds.current = avoidQuestionIds;
+    previousRoundConceptIds.current = avoidConceptIds;
     sessionToken.current = createSessionToken();
     answerLog.current = [];
     setRoundPlan(nextPlan);
@@ -101,7 +119,8 @@ export function useGameState() {
     setSubmitMessage(null);
     setRunStreak(0);
     setMaxRunStreak(0);
-  }, []);
+  },
+  []);
 
   const choose = useCallback(
     (option: number) => {
@@ -138,22 +157,26 @@ export function useGameState() {
 
   const next = useCallback(() => {
     if (endedEarly) {
+      persistAvoidanceFromSession();
       setScreen("result");
       return;
     }
     if (stageQuestion === stageLength) {
       if (stageCorrect < passRequired) {
         setEndedEarly(true);
+        persistAvoidanceFromSession();
         setScreen("result");
         return;
       }
       if (stageIndex >= FINAL_STAGE_INDEX) {
         setFullCompletion(true);
+        persistAvoidanceFromSession();
         setScreen("result");
         return;
       }
       if (index === round.length - 1 && !canDrawNextStage(roundPlan, stageIndex + 1)) {
         setEndedEarly(true);
+        persistAvoidanceFromSession();
         setScreen("result");
         return;
       }
@@ -166,6 +189,7 @@ export function useGameState() {
     endedEarly,
     index,
     passRequired,
+    persistAvoidanceFromSession,
     round.length,
     roundPlan,
     stageCorrect,
@@ -198,23 +222,37 @@ export function useGameState() {
 
   const beginFromFirstGrade = useCallback(() => {
     try {
-      resetGameState(createRound(previousRoundQuestionIds.current), []);
+      const avoided = mergeAvoidance([], []);
+      resetGameState(
+        createRound(avoided.questionIds, avoided.conceptIds),
+        avoided.questionIds,
+        avoided.conceptIds,
+      );
       setScreen("enroll");
     } catch (error) {
       console.error("無法開始遊戲", error);
       setScreen("play");
     }
-  }, [resetGameState]);
+  }, [mergeAvoidance, resetGameState]);
 
   const restart = useCallback(() => {
-    const avoid = roundPlan.questions.map((item) => item.id);
-    resetGameState(createRound(avoid), avoid);
+    const playedIds = roundPlan.questions.map((item) => item.id);
+    const playedConcepts = roundPlan.questions.map((item) => item.conceptId);
+    const avoided = mergeAvoidance(playedIds, playedConcepts);
+    resetGameState(
+      createRound(avoided.questionIds, avoided.conceptIds),
+      avoided.questionIds,
+      avoided.conceptIds,
+    );
     setScreen("play");
-  }, [resetGameState, roundPlan.questions]);
+  }, [mergeAvoidance, resetGameState, roundPlan.questions]);
 
   const finishEnrollment = useCallback(() => setScreen("play"), []);
 
-  const goToStart = useCallback(() => setScreen("start"), []);
+  const goToStart = useCallback(() => {
+    persistAvoidanceFromSession();
+    setScreen("start");
+  }, [persistAvoidanceFromSession]);
 
   const submitScore = useCallback(async () => {
     const trimmed = playerName.trim();

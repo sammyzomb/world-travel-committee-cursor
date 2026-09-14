@@ -1,6 +1,7 @@
 "use client";
 
-import { Crown, Globe2 } from "lucide-react";
+import { Crown } from "lucide-react";
+import { CompanyLogo } from "../components/company-logo";
 import { EnrollmentAnimation } from "../components/enrollment-animation";
 import { PlayScreen } from "../components/game/play-screen";
 import { ResultScreen } from "../components/game/result-screen";
@@ -14,14 +15,12 @@ export default function Home() {
 
   return (
     <main className="game-shell min-h-dvh text-white">
-      <header className="mx-auto flex w-full max-w-6xl items-center justify-between px-4 py-4 sm:px-8">
-        <div className="flex items-center gap-3">
-          <span className="brand-mark">
-            <Globe2 size={24} />
-          </span>
-          <div>
-            <p className="text-xs font-bold tracking-[.18em] text-amber-300">{ORGANIZATION_NAME}</p>
-            <p className="text-lg font-black tracking-wide">{GAME_NAME}</p>
+      <header className="site-header mx-auto flex w-full max-w-7xl items-center justify-between gap-3 px-4 py-3 sm:px-10 sm:py-5">
+        <div className="site-brand">
+          <CompanyLogo className="site-header-logo" />
+          <div className="site-brand-copy">
+            <p className="site-brand-org">{ORGANIZATION_NAME}</p>
+            <p className="site-brand-game">{GAME_NAME}</p>
           </div>
         </div>
         <button className="rank-button" onClick={game.goToStart}>
@@ -45,7 +44,7 @@ export default function Home() {
       {game.screen === "play" && !game.current && (
         <section className="mx-auto w-full max-w-4xl px-4 py-20 text-center sm:px-8">
           <p className="mb-6 text-slate-300">題目載入異常，請重新開始挑戰。</p>
-          <button className="primary-button mx-auto" onClick={game.restart}>再開一局</button>
+          <button className="primary-button mx-auto" onClick={game.restart}>重玩</button>
         </section>
       )}
 
@@ -63,6 +62,7 @@ export default function Home() {
           questionIndex={game.index}
           onChoose={game.choose}
           onNext={game.next}
+          onReplay={game.restart}
         />
       )}
 
@@ -74,6 +74,7 @@ export default function Home() {
           stageCorrect={game.stageCorrect}
           lives={game.lives}
           onContinue={game.continueAfterReward}
+          onReplay={game.restart}
         />
       )}
 

@@ -3,7 +3,9 @@ import questionBankJson from "../data/questions.json";
 import type { QuestionVisualData } from "../components/question-visual";
 import { getLandmarkImage, getLandmarkImageSrc } from "./landmark-images";
 import {
+  conceptIdForRawQuestion,
   makeConceptId,
+  makeFactConceptId,
   makeQuestionId,
   QUESTION_SOURCES,
   type AuditStatus,
@@ -194,6 +196,8 @@ function buildExpandedQuestions(
 
   return facts.flatMap((fact, factIndex) => {
     const [city, country, continent, capital, landmark] = fact;
+    const countryConceptId = makeFactConceptId(`country:${country}`);
+    const landmarkConceptId = makeFactConceptId(landmark);
     const levels = levelsForFact(factIndex, facts.length);
     const approved = source.auditStatus === "approved" ? source : QUESTION_SOURCES.restCountries;
     const pending = QUESTION_SOURCES.expandedPending;
@@ -240,7 +244,7 @@ function buildExpandedQuestions(
         },
         {
           id: makeQuestionId(`${idPrefix}-capital`, `${country}:${capital}`),
-          conceptId: makeConceptId("capital", country),
+          conceptId: countryConceptId,
           source: approved.label,
           auditStatus: approved.auditStatus,
           grades: [],
@@ -257,7 +261,7 @@ function buildExpandedQuestions(
         },
         {
           id: makeQuestionId(`${idPrefix}-landmark`, `${landmark}:${city}`),
-          conceptId: makeConceptId("landmark-city", landmark),
+          conceptId: landmarkConceptId,
           source: pending.label,
           auditStatus: pending.auditStatus,
           grades: [],
@@ -274,7 +278,7 @@ function buildExpandedQuestions(
         },
         {
           id: makeQuestionId(`${idPrefix}-city`, `${city}:${country}`),
-          conceptId: makeConceptId("city-country", city),
+          conceptId: countryConceptId,
           source: pending.label,
           auditStatus: pending.auditStatus,
           grades: [],
@@ -291,7 +295,7 @@ function buildExpandedQuestions(
         },
         {
           id: makeQuestionId(`${idPrefix}-continent`, `${country}:${continent}`),
-          conceptId: makeConceptId("continent", country),
+          conceptId: countryConceptId,
           source: approved.label,
           auditStatus: approved.auditStatus,
           grades: [],
@@ -308,7 +312,7 @@ function buildExpandedQuestions(
         },
         {
           id: makeQuestionId(`${idPrefix}-reverse-capital`, `${capital}:${country}`),
-          conceptId: makeConceptId("reverse-capital", capital),
+          conceptId: countryConceptId,
           source: approved.label,
           auditStatus: approved.auditStatus,
           grades: [],
@@ -351,7 +355,7 @@ const warmupSource = QUESTION_SOURCES.warmup;
 export const warmupQuestions: Question[] = questionBank.warmupQuestions.map((raw, index) =>
   attachVisual(raw, {
     id: makeQuestionId("warmup", raw.q),
-    conceptId: makeConceptId("warmup", String(index)),
+    conceptId: conceptIdForRawQuestion(raw, "warmup", index),
     source: warmupSource.label,
     auditStatus: warmupSource.auditStatus,
     grades: ["小一"],
@@ -362,7 +366,7 @@ export const handPickedQuestions: Question[] = applyAuditOverrides(
     questionBank.questions.map((raw, index) =>
       attachVisual(raw, {
         id: makeQuestionId("hand", raw.q),
-        conceptId: makeConceptId("hand", String(index)),
+        conceptId: conceptIdForRawQuestion(raw, "hand", index),
         source: handSource.label,
         auditStatus: handSource.auditStatus,
         grades: [],
@@ -376,7 +380,7 @@ export const travelKnowledgeQuestions: Question[] = applyAuditOverrides(
     questionBank.travelKnowledgeQuestions.map((raw, index) =>
       attachVisual(raw, {
         id: makeQuestionId("travel", raw.q),
-        conceptId: makeConceptId("travel", String(index)),
+        conceptId: conceptIdForRawQuestion(raw, "travel", index),
         source: travelSource.label,
         auditStatus: travelSource.auditStatus,
         grades: [],
@@ -389,7 +393,7 @@ export const tourQuestions: Question[] = applyAuditOverrides(
   (questionBank.tourQuestions ?? []).map((raw, index) => {
     const question = attachVisual(raw, {
       id: makeQuestionId("tour", raw.q),
-      conceptId: makeConceptId("tour", String(index)),
+      conceptId: conceptIdForRawQuestion(raw, "tour", index),
       source: tourSource.label,
       auditStatus: tourSource.auditStatus,
       grades: [],
@@ -417,7 +421,7 @@ export const heritageQuestions: Question[] = applyAuditOverrides(
   (questionBank.heritageQuestions ?? []).map((raw, index) =>
     attachVisual(raw, {
       id: makeQuestionId("heritage", raw.q),
-      conceptId: makeConceptId("heritage", String(index)),
+      conceptId: conceptIdForRawQuestion(raw, "heritage", index),
       source: heritageSource.label,
       auditStatus: heritageSource.auditStatus,
       grades: [],

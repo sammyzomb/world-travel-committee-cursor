@@ -255,7 +255,10 @@ function run() {
   }
   assert.ok(!exhaustedPlan.exhausted, "full bank must not mark exhausted before final stage");
 
-  const restartRound = createRound(plan.questions.map((item) => item.id));
+  const restartRound = createRound(
+    plan.questions.map((item) => item.id),
+    plan.questions.map((item) => item.conceptId),
+  );
   assert.ok(restartRound.questions.length > 0, "restart with avoid list");
   assert.equal(new Set(restartRound.questions.map((item) => item.id)).size, restartRound.questions.length);
 

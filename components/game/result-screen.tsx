@@ -114,7 +114,7 @@ export function ResultScreen({
           </div>
         )}
         <button className="primary-button mx-auto" onClick={onRestart}>
-          再開一局
+          重玩
         </button>
       </div>
 
