@@ -8,6 +8,7 @@ import {
   QUESTION_SOURCES,
   type AuditStatus,
 } from "./question-metadata";
+import { inferQuestionType, type QuestionType } from "./question-types";
 
 const questionBank = questionBankJson as {
   warmupQuestions: RawQuestion[];
@@ -33,6 +34,7 @@ export type Question = {
   fact: string;
   kind?: "tf" | "choice";
   category?: QuestionCategory;
+  questionType: QuestionType;
   visual?: QuestionVisualData;
 };
 
@@ -81,7 +83,9 @@ function factVisual(landmark: string, label: string, detail: string): QuestionVi
 }
 
 function attachMetadata(
-  question: Omit<Question, "id" | "conceptId" | "source" | "auditStatus" | "grades">,
+  question: Omit<Question, "id" | "conceptId" | "source" | "auditStatus" | "grades" | "questionType"> & {
+    questionType?: QuestionType;
+  },
   meta: {
     id: string;
     conceptId: string;
@@ -90,7 +94,16 @@ function attachMetadata(
     grades: string[];
   },
 ): Question {
-  return { ...question, ...meta };
+  const { questionType: explicitType, ...rest } = question;
+  const questionType =
+    explicitType ??
+    inferQuestionType({
+      q: rest.q,
+      kind: rest.kind,
+      category: rest.category,
+      level: rest.level,
+    });
+  return { ...rest, questionType, ...meta };
 }
 
 function attachVisual(
@@ -151,6 +164,7 @@ function buildExpandedQuestions(facts: ExpandedFact[]): Question[] {
       attachMetadata(
         {
           ...base,
+          questionType: "capital" as const,
           level: levels.capital,
           q: `${country}的首都是哪一座城市？`,
           options: [capital, ...distractor(capitals, capital)],
@@ -169,6 +183,7 @@ function buildExpandedQuestions(facts: ExpandedFact[]): Question[] {
       attachMetadata(
         {
           ...base,
+          questionType: "landmark-city" as const,
           level: levels.landmark,
           q: `${landmark}位於哪一座城市？`,
           options: [city, ...distractor(cities, city)],
@@ -187,6 +202,7 @@ function buildExpandedQuestions(facts: ExpandedFact[]): Question[] {
       attachMetadata(
         {
           ...base,
+          questionType: "country-pick" as const,
           level: levels.cityCountry,
           q: `${city}位於哪一個國家？`,
           options: [country, ...distractor(countries, country)],
@@ -204,6 +220,7 @@ function buildExpandedQuestions(facts: ExpandedFact[]): Question[] {
       ),
       attachMetadata(
         {
+          questionType: "continent" as const,
           level: levels.continent,
           region: "洲別測驗",
           category: "世界地理" as const,
@@ -216,6 +233,25 @@ function buildExpandedQuestions(facts: ExpandedFact[]): Question[] {
         {
           id: makeQuestionId("expanded-continent", `${country}:${continent}`),
           conceptId: makeConceptId("continent", country),
+          source: approved.label,
+          auditStatus: approved.auditStatus,
+          grades: [],
+        },
+      ),
+      attachMetadata(
+        {
+          ...base,
+          questionType: "reverse-capital" as const,
+          level: levels.capital,
+          q: `哪一個國家的首都是${capital}？`,
+          options: [country, ...distractor(countries, country)],
+          answer: 0,
+          fact: `${capital}是${country}的首都。`,
+          visual: factVisual(landmark, capital, `${country}・${continent}`),
+        },
+        {
+          id: makeQuestionId("expanded-reverse-capital", `${capital}:${country}`),
+          conceptId: makeConceptId("reverse-capital", capital),
           source: approved.label,
           auditStatus: approved.auditStatus,
           grades: [],

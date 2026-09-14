@@ -16,11 +16,11 @@ export function QuestionVisual({ visual }: { visual: QuestionVisualData }) {
 
   if (showPhoto) {
     return (
-      <figure className="question-photo">
+      <figure className="question-photo question-photo-compact">
         <img
           src={visual.image}
           alt={visual.label}
-          loading="eager"
+          loading="lazy"
           referrerPolicy="no-referrer"
           onError={() => setImageFailed(true)}
         />

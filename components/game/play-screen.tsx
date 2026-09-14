@@ -2,6 +2,7 @@ import { Check, X } from "lucide-react";
 import { QuestionVisual } from "../question-visual";
 import { educationStages, STARTING_LIVES } from "../../lib/game-config";
 import type { Question } from "../../lib/questions";
+import { QUESTION_TYPE_LABELS } from "../../lib/question-types";
 
 type PlayScreenProps = {
   stageIndex: number;
@@ -73,7 +74,9 @@ export function PlayScreen({
         <div>
           <p className="mini-label">
             {stage.group}・{stage.name}　第 {stageQuestion} 題 / {stageLength}
-            {current.level === "送分題" ? "・送分題" : ""}
+            {current.level === "送分題"
+              ? "・送分題"
+              : `・${QUESTION_TYPE_LABELS[current.questionType]}`}
           </p>
           <h2 className="text-xl font-black sm:text-2xl">{stage.name}闖關中</h2>
         </div>
@@ -105,7 +108,8 @@ export function PlayScreen({
               : current.region}
           </span>
           <span className="text-sm text-slate-400">
-            {current.kind === "tf" ? "請選擇是或否" : "選出正確答案"}
+            {current.level !== "送分題" && current.level}
+            {current.kind === "tf" ? " · 請選是或否" : " · 選出正確答案"}
           </span>
         </div>
         <h1>{current.q}</h1>

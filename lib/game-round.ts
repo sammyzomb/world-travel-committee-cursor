@@ -8,7 +8,15 @@ import {
   QUESTIONS_PER_STAGE,
   WARMUP_QUESTIONS_FIRST_STAGE,
 } from "./game-config";
-import { approvedQuestions, type Question, warmupQuestions } from "./questions";
+import {
+  allowedTypesForStage,
+  difficultyRankForLevel,
+  includesTravelKnowledge,
+  minTypeRankForStage,
+  QUESTION_TYPE_RANK,
+  type QuestionType,
+} from "./question-types";
+import { approvedQuestions, travelKnowledgeQuestions, type Question, warmupQuestions } from "./questions";
 
 export type RoundPlan = {
   questions: Question[];
@@ -75,6 +83,29 @@ function isAvailable(
   return true;
 }
 
+function sortByStageDifficulty(items: Question[], stageIndex: number) {
+  const minRank = minTypeRankForStage(stageIndex);
+  return [...items].sort((a, b) => {
+    const rankA = QUESTION_TYPE_RANK[a.questionType] + difficultyRankForLevel(a.level) * 0.5;
+    const rankB = QUESTION_TYPE_RANK[b.questionType] + difficultyRankForLevel(b.level) * 0.5;
+    const biasA = rankA >= minRank ? rankA + 2 : rankA;
+    const biasB = rankB >= minRank ? rankB + 2 : rankB;
+    return biasB - biasA;
+  });
+}
+
+function filterPoolForStage(pool: Question[], stageIndex: number) {
+  const allowedTypes = new Set<QuestionType>(allowedTypesForStage(stageIndex));
+  const minRank = minTypeRankForStage(stageIndex);
+  return pool.filter((item) => {
+    if (!allowedTypes.has(item.questionType)) return false;
+    const typeRank = QUESTION_TYPE_RANK[item.questionType];
+    const levelRank = difficultyRankForLevel(item.level);
+    if (typeRank + levelRank * 0.3 < minRank - 0.5) return false;
+    return true;
+  });
+}
+
 function pickFreshQuestions(
   pool: Question[],
   count: number,
@@ -82,12 +113,14 @@ function pickFreshQuestions(
   previousQuestionIds: string[],
   usedQuestionIds: Set<string>,
   usedConceptIds: Set<string>,
+  stageIndex: number,
   allowReuse = false,
 ) {
   const available = pool.filter((item) =>
     isAvailable(item, previousQuestionIds, usedQuestionIds, usedConceptIds, allowReuse),
   );
-  const selected = shuffled(available).slice(0, count).map((item) => withOptionCount(item, optionCount));
+  const ranked = sortByStageDifficulty(available, stageIndex);
+  const selected = ranked.slice(0, count).map((item) => withOptionCount(item, optionCount));
   selected.forEach((item) => {
     usedQuestionIds.add(item.id);
     usedConceptIds.add(item.conceptId);
@@ -102,14 +135,17 @@ function fillStagePool(
   previousQuestionIds: string[],
   usedQuestionIds: Set<string>,
   usedConceptIds: Set<string>,
+  stageIndex: number,
 ) {
+  const stagePool = filterPoolForStage(pool, stageIndex);
   let selected = pickFreshQuestions(
-    pool,
+    stagePool.length > 0 ? stagePool : pool,
     count,
     optionCount,
     previousQuestionIds,
     usedQuestionIds,
     usedConceptIds,
+    stageIndex,
   );
   if (selected.length < count) {
     selected = [
@@ -121,6 +157,7 @@ function fillStagePool(
         previousQuestionIds,
         usedQuestionIds,
         usedConceptIds,
+        stageIndex,
         true,
       ),
     ];
@@ -159,6 +196,7 @@ function drawStageQuestions(
         previousQuestionIds,
         usedQuestionIds,
         usedConceptIds,
+        stageIndex,
       ),
     );
     return [...warmupChoices, ...formalChoices];
@@ -166,15 +204,43 @@ function drawStageQuestions(
 
   const stage = educationStages[stageIndex];
   const optionCount = optionCountForStage(stageIndex);
-  const stagePool = approvedQuestions.filter((item) => (stage.pool as readonly string[]).includes(item.level));
-  return fillStagePool(
+  const levelPool = approvedQuestions.filter((item) =>
+    (stage.pool as readonly string[]).includes(item.level),
+  );
+  const travelPool =
+    includesTravelKnowledge(stageIndex)
+      ? travelKnowledgeQuestions.filter((item) => item.auditStatus === "approved")
+      : [];
+  const stagePool = travelPool.length > 0 ? [...levelPool, ...travelPool] : levelPool;
+
+  let questions = fillStagePool(
     stagePool,
     QUESTIONS_PER_STAGE,
     optionCount,
     previousQuestionIds,
     usedQuestionIds,
     usedConceptIds,
+    stageIndex,
   );
+
+  if (includesTravelKnowledge(stageIndex) && travelPool.length > 0 && questions.length >= 3) {
+    const travelPick = sortByStageDifficulty(
+      travelPool.filter((item) =>
+        isAvailable(item, previousQuestionIds, usedQuestionIds, usedConceptIds, false),
+      ),
+      stageIndex,
+    )[0];
+    if (travelPick) {
+      const travelSlot = Math.min(questions.length - 1, 2 + (stageIndex % 2));
+      const withTravel = [...questions];
+      withTravel[travelSlot] = withOptionCount(travelPick, optionCount);
+      usedQuestionIds.add(travelPick.id);
+      usedConceptIds.add(travelPick.conceptId);
+      questions = withTravel;
+    }
+  }
+
+  return questions;
 }
 
 export function createRound(previousQuestionIds: string[]): RoundPlan {

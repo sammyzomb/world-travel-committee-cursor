@@ -9,20 +9,21 @@ export const QUESTION_LEVELS = [
 
 export type QuestionLevel = (typeof QUESTION_LEVELS)[number];
 
+/** 各年級 primary pool 遞升，避免高年級仍大量抽到入門題。 */
 export const educationStages = [
   { name: "小一", group: "國小", pool: ["旅行新手"] },
   { name: "小二", group: "國小", pool: ["旅行新手"] },
   { name: "小三", group: "國小", pool: ["旅行新手", "城市旅人"] },
-  { name: "小四", group: "國小", pool: ["旅行新手", "城市旅人"] },
-  { name: "小五", group: "國小", pool: ["城市旅人"] },
-  { name: "小六", group: "國小", pool: ["城市旅人", "國家達人"] },
-  { name: "國一", group: "國中", pool: ["城市旅人", "國家達人"] },
-  { name: "國二", group: "國中", pool: ["國家達人"] },
-  { name: "國三", group: "國中", pool: ["國家達人", "洲際領隊"] },
-  { name: "高一", group: "高中", pool: ["洲際領隊"] },
-  { name: "高二", group: "高中", pool: ["洲際領隊", "環球旅行家"] },
+  { name: "小四", group: "國小", pool: ["城市旅人"] },
+  { name: "小五", group: "國小", pool: ["城市旅人", "國家達人"] },
+  { name: "小六", group: "國小", pool: ["國家達人"] },
+  { name: "國一", group: "國中", pool: ["國家達人", "洲際領隊"] },
+  { name: "國二", group: "國中", pool: ["洲際領隊"] },
+  { name: "國三", group: "國中", pool: ["洲際領隊", "環球旅行家"] },
+  { name: "高一", group: "高中", pool: ["環球旅行家"] },
+  { name: "高二", group: "高中", pool: ["環球旅行家"] },
   { name: "高三", group: "高中", pool: ["環球旅行家"] },
-  { name: "大一", group: "大學", pool: ["洲際領隊", "環球旅行家"] },
+  { name: "大一", group: "大學", pool: ["環球旅行家"] },
   { name: "大二", group: "大學", pool: ["環球旅行家"] },
   { name: "大三", group: "大學", pool: ["環球旅行家"] },
   { name: "大四", group: "大學", pool: ["環球旅行家"] },
