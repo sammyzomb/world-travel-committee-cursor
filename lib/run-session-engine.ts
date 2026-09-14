@@ -195,9 +195,9 @@ export function buildClientRunState(session: StoredRunSession): ClientRunState {
     questionBankVersion: session.questionBankVersion,
     progressRevision: session.progress.revision,
     screen,
-    question: screen === "play" && issued && !session.progress.lastFeedback
-      ? toPublicQuestion(issued)
-      : null,
+    // Keep the answered public question visible beside feedback and the next button.
+    // expectedQuestion()/submitAnswer() still enforce one answer per question.
+    question: screen === "play" && issued ? toPublicQuestion(issued) : null,
     stage,
     nextStage,
     stageIndex,
