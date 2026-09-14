@@ -20,11 +20,14 @@ export function deterministicDistractors(
   seed: string,
   count = 3,
 ) {
-  return values
+  return [...new Set(values)]
     .filter((value) => value !== answer)
-    .sort((left, right) =>
-      stableHash(`${seed}\0${left}`).localeCompare(stableHash(`${seed}\0${right}`)),
-    )
+    .sort((left, right) => {
+      const leftHash = stableHash(`${seed}\0${left}`);
+      const rightHash = stableHash(`${seed}\0${right}`);
+      if (leftHash !== rightHash) return leftHash < rightHash ? -1 : 1;
+      return left < right ? -1 : left > right ? 1 : 0;
+    })
     .slice(0, count);
 }
 
@@ -83,7 +86,7 @@ export function conceptIdForRawQuestion(
 
 export const QUESTION_SOURCES = {
   warmup: { label: "內建送分題庫", auditStatus: "approved" as const },
-  /** 精選題需通過 validate 腳本後才在 question-audit.json 標為 approved。 */
+  /** 精選題需人工事實覆核；結構檢查不等於 approved。 */
   handCurated: { label: "內建精選題庫", auditStatus: "pending" as const },
   travelKnowledge: { label: "內建旅行知識", auditStatus: "pending" as const },
   tour: { label: "內建行程題庫", auditStatus: "pending" as const },
