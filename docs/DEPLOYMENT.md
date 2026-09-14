@@ -1,35 +1,40 @@
 # 部署策略
 
-## 決策（2026-09-14）
+## 決策（2026-09-14 更新）
 
 | 平台 | 角色 | 名人榜 | 建置指令 |
 |------|------|--------|----------|
-| **Netlify** | 公開遊玩入口（主要 URL） | 暫不可用（stub） | `npm run build:netlify` |
-| **Cloudflare Workers** | 完整功能（含 D1 名人榜） | 可用（需 D1 設定） | `npm run build` |
+| **Cloudflare Workers** | **正式環境**（遊戲 + D1 名人榜） | ✅ | `npm run deploy:cloudflare` |
+| **Netlify** | 備援試玩入口 | ❌ stub | `npm run deploy:netlify` |
 
-- 公開網址：https://world-travel-committee-cursor.netlify.app
-- 管理後台：https://app.netlify.com/projects/world-travel-committee-cursor
-- GitHub 連動：於 [Netlify 專案設定](https://app.netlify.com/projects/world-travel-committee-cursor/link) 連接 `sammyzomb/world-travel-committee-cursor`，之後 push `main` 自動部署
+- Netlify 試玩：https://world-travel-committee-cursor.netlify.app
+- Cloudflare 正式站：部署後見 `*.workers.dev`（見 [CLOUDFLARE-D1-SETUP.md](./CLOUDFLARE-D1-SETUP.md)）
 
-## Netlify 部署
+## Cloudflare + D1（建議）
 
-本機手動部署：
+完整步驟見 **[CLOUDFLARE-D1-SETUP.md](./CLOUDFLARE-D1-SETUP.md)**。
+
+快速流程：
 
 ```powershell
-npm run build:netlify
-npx netlify-cli deploy --prod --dir=dist --functions=.netlify/functions-internal
+npx wrangler login
+npm run db:create
+npm run build
+npm run db:migrate:remote
+npm run deploy:cloudflare
 ```
 
-環境變數已在 [`netlify.toml`](../netlify.toml) 設定：
-- `NETLIFY=true`、`NITRO_PRESET=netlify`
-- `NETLIFY_NEXT_PLUGIN_SKIP=true`（避免與 vinext/Nitro 衝突）
+本機 `cloudflare.json` 存放 D1 `database_id`（已加入 `.gitignore`，不會 push 到 GitHub）。
 
-## Cloudflare 部署
+## Netlify 部署（備援）
 
-1. `npm run build`
-2. 設定 D1 binding `DB`（見 [LEADERBOARD-SETUP.md](./LEADERBOARD-SETUP.md)）
-3. 執行 `npm run db:migrate:local`（本機）或 `npm run db:migrate:remote`（正式）
+```powershell
+npm run deploy:netlify
+```
+
+環境變數見 [`netlify.toml`](../netlify.toml)。名人榜 API 會誠實回報「尚未設定資料庫」。
 
 ## 限制說明
 
-Netlify 上主線、副模式、地標圖片 API 可正常運作；名人榜需 Cloudflare D1 或另接 Turso adapter。
+- Netlify：主線、副模式、地標圖片可正常運作；名人榜需 Cloudflare D1。
+- Cloudflare：需完成 D1 建立與遠端遷移後，名人榜才可用。

@@ -46,10 +46,15 @@
 
 ## 仍需使用者設定
 
-見 [LEADERBOARD-SETUP.md](./LEADERBOARD-SETUP.md)：
+見 **[CLOUDFLARE-D1-SETUP.md](./CLOUDFLARE-D1-SETUP.md)**（約 15～30 分鐘，$0）：
 
-- Cloudflare D1 綁定與 `npm run db:migrate:remote`
-- Netlify 若需名人榜，須另行設定可持久化 adapter（目前未實作）
+```powershell
+npx wrangler login
+npm run db:create
+npm run build
+npm run db:migrate:remote
+npm run deploy:cloudflare
+```
 
 ## 未完成（留待後續階段）
 

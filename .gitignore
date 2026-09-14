@@ -31,6 +31,9 @@ yarn-error.log*
 # env files (can opt-in for committing if needed)
 .env*
 
+# Cloudflare local deploy config (contains your D1 database_id)
+/cloudflare.json
+
 # vercel
 .vercel
 

@@ -20,6 +20,7 @@ const remote = process.argv.includes("--remote");
 const binding = "DB";
 
 function runMigration(filePath) {
+  let skipped = false;
   const args = [
     "--import",
     pathToFileURL(sitesEnv).href,
@@ -41,12 +42,15 @@ function runMigration(filePath) {
   if (result.status !== 0) {
     if (output.includes("already exists")) {
       console.warn(`Skipped ${filePath} (already applied).`);
-      continue;
+      skipped = true;
+    } else {
+      console.error(output);
+      process.exit(result.status ?? 1);
     }
-    console.error(output);
-    process.exit(result.status ?? 1);
+  } else {
+    console.log(output.trim());
   }
-  console.log(output.trim());
+  return skipped;
 }
 
 if (!existsSync(wranglerConfig)) {
