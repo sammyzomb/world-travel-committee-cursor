@@ -20,6 +20,8 @@
     "audit:questions": "node scripts/audit-questions.mjs --write",
     "test:question-integrity": "node scripts/test-question-integrity.mjs",
     "test:submission": "npx --yes tsx scripts/test-submission-validation.mjs",
+    "test:run-session": "npx --yes tsx scripts/test-run-session-validation.mjs",
+    "test:question-bank-version": "npx --yes tsx scripts/test-question-bank-version.mjs",
     "check:stage-coverage": "npx --yes tsx scripts/check-stage-coverage.mjs",
     "audit:inventory": "npx --yes tsx scripts/generate-audit-inventory.mjs",
     "db:create": "node scripts/create-d1.mjs",

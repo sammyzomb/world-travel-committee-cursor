@@ -17,6 +17,7 @@ import {
   QUESTION_TYPE_RANK,
   type QuestionType,
 } from "./question-types";
+import { questionMatchesStageRules } from "./stage-eligibility";
 import { approvedQuestions, travelKnowledgeQuestions, type Question, warmupQuestions } from "./questions";
 
 export type RoundPlan = {
@@ -267,38 +268,9 @@ function fillStagePool(
     selected = [...selected, ...batch];
   };
 
-  tryPick(stagePool.length > 0 ? stagePool : pool, false);
-  if (selected.length < count) tryPick(pool, false);
-  if (selected.length < count) tryPick(pool, true);
-  if (selected.length < count) tryPick(pool, true, true);
-  if (selected.length < count) tryPick(approvedQuestions, true, true);
-
-  if (selected.length < count) {
-    const selectedIds = new Set(selected.map((item) => item.id));
-    const selectedConceptIds = new Set(selected.map((item) => item.conceptId));
-    for (const item of shuffled(approvedQuestions)) {
-      if (selected.length >= count) break;
-      if (selectedIds.has(item.id) || selectedConceptIds.has(item.conceptId)) continue;
-      if (
-        !isAvailable(
-          item,
-          previousQuestionIds,
-          previousConceptIds,
-          usedQuestionIds,
-          usedConceptIds,
-          true,
-        )
-      ) {
-        continue;
-      }
-      const picked = withOptionCount(item, optionCount);
-      selected.push(picked);
-      selectedIds.add(picked.id);
-      selectedConceptIds.add(picked.conceptId);
-      usedQuestionIds.add(picked.id);
-      usedConceptIds.add(picked.conceptId);
-    }
-  }
+  tryPick(stagePool, false);
+  if (selected.length < count) tryPick(stagePool, true);
+  if (selected.length < count) tryPick(stagePool, true, true);
 
   return selected.slice(0, count);
 }
@@ -373,15 +345,17 @@ function drawStageQuestions(
 
   if (includesTravelKnowledge(stageIndex) && travelPool.length > 0 && questions.length >= 3) {
     const travelPick = sortByStageDifficulty(
-      travelPool.filter((item) =>
-        isAvailable(
-          item,
-          previousQuestionIds,
-          previousConceptIds,
-          usedQuestionIds,
-          usedConceptIds,
-          false,
-        ),
+      travelPool.filter(
+        (item) =>
+          questionMatchesStageRules(item, stageIndex) &&
+          isAvailable(
+            item,
+            previousQuestionIds,
+            previousConceptIds,
+            usedQuestionIds,
+            usedConceptIds,
+            false,
+          ),
       ),
       stageIndex,
     )[0];

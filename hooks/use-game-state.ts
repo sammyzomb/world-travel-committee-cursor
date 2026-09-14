@@ -13,10 +13,10 @@ import {
   passRequiredForStage,
   type RoundPlan,
 } from "../lib/game-round";
+import type { Question } from "../lib/questions";
 import { QUESTION_BANK_VERSION, type RunAnswerRecord } from "../lib/leaderboard-scoring";
 import type { LeaderboardEntry, SubmitState } from "../lib/leaderboard-types";
 import { loadPersonalBest, updatePersonalBest, type PersonalBest } from "../lib/player-progress";
-import type { Question } from "../lib/questions";
 import { buildRunRecap, type RunRecap } from "../lib/run-recap";
 
 export type GameScreen = "start" | "enroll" | "play" | "reward" | "result";
@@ -26,6 +26,39 @@ function createSessionToken() {
     return crypto.randomUUID();
   }
   return `run-${Date.now()}-${Math.random().toString(36).slice(2)}`;
+}
+
+function toRoundPlan(round: {
+  questions: Question[];
+  stageStarts: number[];
+  exhausted: boolean;
+}): RoundPlan {
+  return {
+    questions: round.questions,
+    stageStarts: round.stageStarts,
+    usedQuestionIds: new Set(round.questions.map((item) => item.id)),
+    usedConceptIds: new Set(round.questions.map((item) => item.conceptId)),
+    previousRoundQuestionIds: [],
+    previousRoundConceptIds: [],
+    exhausted: round.exhausted,
+  };
+}
+
+async function fetchRunPlan(avoidQuestionIds: string[], avoidConceptIds: string[]) {
+  const response = await fetch("/api/run/start", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ avoidQuestionIds, avoidConceptIds }),
+  });
+  const payload = (await response.json()) as {
+    sessionToken?: string;
+    round?: { questions: Question[]; stageStarts: number[]; exhausted: boolean };
+    error?: string;
+  };
+  if (!response.ok || payload.error || !payload.sessionToken || !payload.round) {
+    throw new Error(payload.error ?? "無法建立遊戲場次");
+  }
+  return payload;
 }
 
 export function useGameState() {
@@ -249,31 +282,38 @@ export function useGameState() {
     setScreen("play");
   }, [roundPlan, stageIndex]);
 
-  const beginFromFirstGrade = useCallback(() => {
+  const beginFromFirstGrade = useCallback(async () => {
     try {
       const avoided = mergeAvoidance([], []);
+      const payload = await fetchRunPlan(avoided.questionIds, avoided.conceptIds);
+      sessionToken.current = payload.sessionToken;
       resetGameState(
-        createRound(avoided.questionIds, avoided.conceptIds),
+        toRoundPlan(payload.round!),
         avoided.questionIds,
         avoided.conceptIds,
       );
       setScreen("enroll");
     } catch (error) {
       console.error("無法開始遊戲", error);
-      setScreen("play");
     }
   }, [mergeAvoidance, resetGameState]);
 
-  const restart = useCallback(() => {
-    const playedIds = roundPlan.questions.map((item) => item.id);
-    const playedConcepts = roundPlan.questions.map((item) => item.conceptId);
-    const avoided = mergeAvoidance(playedIds, playedConcepts);
-    resetGameState(
-      createRound(avoided.questionIds, avoided.conceptIds),
-      avoided.questionIds,
-      avoided.conceptIds,
-    );
-    setScreen("play");
+  const restart = useCallback(async () => {
+    try {
+      const playedIds = roundPlan.questions.map((item) => item.id);
+      const playedConcepts = roundPlan.questions.map((item) => item.conceptId);
+      const avoided = mergeAvoidance(playedIds, playedConcepts);
+      const payload = await fetchRunPlan(avoided.questionIds, avoided.conceptIds);
+      sessionToken.current = payload.sessionToken;
+      resetGameState(
+        toRoundPlan(payload.round!),
+        avoided.questionIds,
+        avoided.conceptIds,
+      );
+      setScreen("play");
+    } catch (error) {
+      console.error("無法重新開始遊戲", error);
+    }
   }, [mergeAvoidance, resetGameState, roundPlan.questions]);
 
   const finishEnrollment = useCallback(() => setScreen("play"), []);

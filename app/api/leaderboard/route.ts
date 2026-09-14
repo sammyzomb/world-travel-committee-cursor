@@ -6,11 +6,11 @@ import {
   highestPassedStageIndex,
   isFullCompletion,
   stageReachedName,
-  validateRunProgress,
   validateRunSubmission,
-  verifyRunAnswers,
   type RunSubmission,
 } from "../../../lib/leaderboard-scoring";
+import { validateIssuedRunPlayback, verifyAnswersAgainstIssued } from "../../../lib/run-session";
+import { loadRunSession } from "../../../lib/run-session-store";
 
 const TOP_LIMIT = 10;
 const MAX_NAME_LENGTH = 20;
@@ -93,14 +93,26 @@ export async function POST(request: Request) {
       return Response.json({ error: "提交過於頻繁，請稍後再試" }, { status: 429 });
     }
 
-    const verifiedAnswers = verifyRunAnswers(payload.answers);
-    if (!verifiedAnswers.ok) {
-      return Response.json({ error: verifiedAnswers.error }, { status: 400 });
+    const runSession = await loadRunSession(payload.sessionToken);
+    if (!runSession) {
+      return Response.json({ error: "找不到遊戲場次，請重新開始遊戲" }, { status: 400 });
+    }
+    if (runSession.questionBankVersion !== payload.questionBankVersion) {
+      return Response.json({ error: "題庫已更新，請重新開始遊戲後再送出成績" }, { status: 400 });
     }
 
-    const progressError = validateRunProgress(verifiedAnswers.verified, payload.endedEarly);
-    if (progressError) {
-      return Response.json({ error: progressError }, { status: 400 });
+    const playbackError = validateIssuedRunPlayback(
+      runSession.issuedQuestions,
+      payload.answers,
+      payload.endedEarly,
+    );
+    if (playbackError) {
+      return Response.json({ error: playbackError }, { status: 400 });
+    }
+
+    const verifiedAnswers = verifyAnswersAgainstIssued(runSession.issuedQuestions, payload.answers);
+    if (!verifiedAnswers.ok) {
+      return Response.json({ error: verifiedAnswers.error }, { status: 400 });
     }
 
     const { score, correctCount } = computeRunScore(verifiedAnswers.verified);

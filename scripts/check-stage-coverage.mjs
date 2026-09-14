@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * 檢查各年級可抽取的不重複知識點是否足夠，並模擬整局抽題能否破關。
+ * 檢查各年級可抽取的不重複知識點、嚴格抽題缺口，以及實際場次中每題是否符合當級規則。
  */
 import assert from "node:assert/strict";
 import { writeFileSync } from "node:fs";
@@ -24,12 +24,12 @@ import {
   travelKnowledgeQuestions,
   warmupQuestions,
 } from "../lib/questions.ts";
+import { buildFullRunPlan } from "../lib/run-plan.ts";
+import { getStageIndex, isGraduationStage } from "../lib/game-round.ts";
 import {
-  appendNextStage,
-  canDrawNextStage,
-  createRound,
-  isGraduationStage,
-} from "../lib/game-round.ts";
+  auditQuestionForStage,
+  questionMatchesStageRules,
+} from "../lib/stage-eligibility.ts";
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 
@@ -58,7 +58,7 @@ function eligibleConceptsForStage(stageIndex) {
       (item) => item.level === "旅行新手" && item.kind !== "tf",
     );
     const poolConcepts = new Set(elementary.map((item) => item.conceptId));
-    return { warmupConcepts, poolConcepts, combined: new Set([...warmupConcepts, ...poolConcepts]) };
+    return new Set([...warmupConcepts, ...poolConcepts]);
   }
 
   const stage = educationStages[stageIndex];
@@ -68,8 +68,7 @@ function eligibleConceptsForStage(stageIndex) {
     : [];
   const stagePool = travelPool.length > 0 ? [...levelPool, ...travelPool] : levelPool;
   const filtered = filterPoolForStage(stagePool, stageIndex);
-  const concepts = new Set(filtered.map((item) => item.conceptId));
-  return { warmupConcepts: new Set(), poolConcepts: concepts, combined: concepts };
+  return new Set(filtered.map((item) => item.conceptId));
 }
 
 function stageQuestionCount(plan, stageIndex) {
@@ -79,109 +78,123 @@ function stageQuestionCount(plan, stageIndex) {
   return end - start;
 }
 
-function simulateFullRun() {
-  let plan = createRound([], []);
-  const stages = [];
+function analyzeRunPlan(plan) {
+  const stageAudits = [];
+  const ruleViolations = [];
+  let fallbackCount = 0;
+
   for (let stageIndex = 0; stageIndex <= FINAL_STAGE_INDEX; stageIndex += 1) {
     const expected = questionsPerStage(stageIndex);
     const actual = stageQuestionCount(plan, stageIndex);
-    if (stageIndex > 0 && actual === 0) {
-      stages.push({
-        stageIndex,
-        name: educationStages[stageIndex].name,
-        expected,
-        actual: 0,
-        ok: false,
-        graduation: isGraduationStage(stageIndex),
-      });
-      break;
-    }
-    stages.push({
+    const stageQuestions = plan.questions.filter(
+      (_, index) => getStageIndex(plan.stageStarts, index) === stageIndex,
+    );
+    const violations = stageQuestions
+      .map((question) => auditQuestionForStage(question, stageIndex))
+      .filter(Boolean);
+    ruleViolations.push(...violations);
+    fallbackCount += violations.length;
+
+    stageAudits.push({
       stageIndex,
-      name: educationStages[stageIndex].name,
-      expected,
-      actual,
-      ok: (stageIndex === 0 ? plan.questions.length : actual) >= expected,
+      grade: educationStages[stageIndex].name,
+      group: educationStages[stageIndex].group,
+      questionsRequired: expected,
+      questionsDrawn: actual,
+      sufficient: actual >= expected,
+      shortfall: actual < expected ? expected - actual : 0,
+      distinctConceptsEligible: eligibleConceptsForStage(stageIndex).size,
       graduation: isGraduationStage(stageIndex),
-      canContinue:
-        stageIndex < FINAL_STAGE_INDEX
-          ? canDrawNextStage(plan, stageIndex + 1)
-          : false,
+      ruleViolations: violations,
+      nonCompliantQuestionIds: violations.map((item) => item.questionId),
     });
-    if (stageIndex >= FINAL_STAGE_INDEX) break;
-    const next = appendNextStage(plan, stageIndex + 1);
-    if (!next || next.exhausted) break;
-    plan = next;
   }
-  return { plan, stages };
+
+  return { stageAudits, ruleViolations, fallbackCount };
 }
 
 const inventory = [];
-const gaps = [];
+const conceptGaps = [];
 
 for (let stageIndex = 0; stageIndex <= FINAL_STAGE_INDEX; stageIndex += 1) {
   const expected = questionsPerStage(stageIndex);
-  const { combined } = eligibleConceptsForStage(stageIndex);
-  const available = combined.size;
-  const warmupNeeded = stageIndex === 0 ? 2 : 0;
-  const formalNeeded = expected - warmupNeeded;
-  const ok = available >= expected;
+  const available = eligibleConceptsForStage(stageIndex).size;
+  const sufficient = available >= expected;
   const row = {
     stageIndex,
     grade: educationStages[stageIndex].name,
-    group: educationStages[stageIndex].group,
     questionsRequired: expected,
     distinctConcepts: available,
-    sufficient: ok,
+    sufficient,
     graduation: isGraduationStage(stageIndex),
   };
   inventory.push(row);
-  if (!ok) {
-    gaps.push({
+  if (!sufficient) {
+    conceptGaps.push({
       ...row,
       shortfall: expected - available,
-      note: stageIndex === 0
-        ? "暖身＋正式題知識點不足"
-        : "該年級 pool 內不重複知識點不足",
+      note: "嚴格 pool 內不重複知識點不足（未使用備援放寬）",
     });
   }
 }
 
-const simulation = simulateFullRun();
-const runGaps = simulation.stages.filter((item) => !item.ok);
+const plan = buildFullRunPlan([], []);
+const { stageAudits, ruleViolations, fallbackCount } = analyzeRunPlan(plan);
+const drawGaps = stageAudits.filter((item) => !item.sufficient);
+const compliantQuestions = plan.questions.filter((question, index) =>
+  questionMatchesStageRules(question, getStageIndex(plan.stageStarts, index)),
+);
 
 const report = {
-  version: 1,
+  version: 2,
   generatedAt: new Date().toISOString(),
   summary: {
     stages: educationStages.length,
-    maxRunQuestions: simulation.plan.questions.length,
-    inventoryGaps: gaps.length,
-    simulationGaps: runGaps.length,
-    canCompleteFullRun: runGaps.length === 0 && simulation.stages.length === educationStages.length,
+    maxRunQuestions: plan.questions.length,
+    conceptInventoryGaps: conceptGaps.length,
+    strictDrawGaps: drawGaps.length,
+    ruleViolations: ruleViolations.length,
+    fallbackBypassCount: fallbackCount,
+    canCompleteFullRun:
+      drawGaps.length === 0 &&
+      ruleViolations.length === 0 &&
+      plan.questions.length >= plan.stageStarts.length,
+    compliantQuestionRatio: `${compliantQuestions.length}/${plan.questions.length}`,
   },
   inventory,
-  gaps,
-  simulation: simulation.stages,
+  conceptGaps,
+  drawGaps,
+  stageAudits,
+  ruleViolations,
 };
 
 writeFileSync(resolve(root, "data/stage-coverage-report.json"), JSON.stringify(report, null, 2) + "\n");
 
 console.log(JSON.stringify(report.summary, null, 2));
-if (gaps.length > 0) {
-  console.log("\n知識點缺口：");
-  for (const gap of gaps) {
+if (conceptGaps.length > 0) {
+  console.log("\n知識點缺口（嚴格 pool）：");
+  for (const gap of conceptGaps) {
     console.log(`  ${gap.grade}: 需要 ${gap.questionsRequired}，可用 ${gap.distinctConcepts}（缺 ${gap.shortfall}）`);
   }
 }
-if (runGaps.length > 0) {
-  console.log("\n抽題模擬缺口：");
-  for (const gap of runGaps) {
-    console.log(`  ${gap.name}: 需要 ${gap.expected}，實際 ${gap.actual}`);
+if (drawGaps.length > 0) {
+  console.log("\n抽題缺口（未放寬難度）：");
+  for (const gap of drawGaps) {
+    console.log(`  ${gap.grade}: 需要 ${gap.questionsRequired}，實際 ${gap.questionsDrawn}（缺 ${gap.shortfall}）`);
+  }
+}
+if (ruleViolations.length > 0) {
+  console.log("\n不符合當級規則的題目：");
+  for (const violation of ruleViolations.slice(0, 10)) {
+    console.log(`  ${violation.grade} / ${violation.questionId}: ${violation.reason}`);
   }
 }
 
-assert.equal(gaps.length, 0, "each stage must have enough distinct concepts");
-assert.equal(runGaps.length, 0, "full run simulation must draw every stage");
-assert.equal(simulation.stages.length, educationStages.length, "simulation must reach all grades");
-console.log("\nStage coverage check passed.");
+const expectedTotal = educationStages.reduce((sum, _, index) => sum + questionsPerStage(index), 0);
+if (conceptGaps.length > 0 || drawGaps.length > 0 || ruleViolations.length > 0) {
+  console.error("\nStage coverage check failed. See data/stage-coverage-report.json for details.");
+  process.exitCode = 1;
+} else {
+  assert.equal(plan.questions.length, expectedTotal);
+  console.log("\nStage coverage check passed.");
+}
