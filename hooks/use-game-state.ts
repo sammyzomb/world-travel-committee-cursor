@@ -66,6 +66,14 @@ export function useGameState() {
   const resultRecorded = useRef(false);
 
   const applyRunState = useCallback((state: ClientRunState) => {
+    if (state.feedback && state.question) {
+      previousRoundQuestionIds.current = [
+        ...new Set([...previousRoundQuestionIds.current, state.question.id]),
+      ];
+      previousRoundConceptIds.current = [
+        ...new Set([...previousRoundConceptIds.current, state.question.conceptId]),
+      ];
+    }
     setRunState(state);
     sessionToken.current = state.sessionToken;
     questionBankVersion.current = state.questionBankVersion;
@@ -118,19 +126,6 @@ export function useGameState() {
       conceptIds: [...new Set([...previousRoundConceptIds.current, ...conceptIds])],
     };
   }, []);
-
-  const persistAvoidanceFromSession = useCallback(() => {
-    const playedIds = runState.feedback
-      ? []
-      : [];
-    const playedConcepts: string[] = [];
-    for (let index = 0; index <= runState.questionIndex; index += 1) {
-      // 伺服器保存完整紀錄；本地僅累積已玩過的題目供重玩避重。
-    }
-    const avoided = mergeAvoidance(playedIds, playedConcepts);
-    previousRoundQuestionIds.current = avoided.questionIds;
-    previousRoundConceptIds.current = avoided.conceptIds;
-  }, [mergeAvoidance, runState]);
 
   const resetLocalUi = useCallback(() => {
     setPlayerName("");
@@ -231,9 +226,8 @@ export function useGameState() {
   }, [applyRunState, runState.progressRevision]);
 
   const goToStart = useCallback(() => {
-    persistAvoidanceFromSession();
     setScreen("start");
-  }, [persistAvoidanceFromSession]);
+  }, []);
 
   const submitScore = useCallback(async () => {
     const trimmed = playerName.trim();
