@@ -1,0 +1,8 @@
+{
+  "name": "ui-smoke-harness",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "playwright": "1.55.0"
+  }
+}

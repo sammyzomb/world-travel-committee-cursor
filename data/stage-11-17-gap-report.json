@@ -1,0 +1,480 @@
+{
+  "generatedAt": "2026-09-14T09:50:49.423Z",
+  "stageRange": {
+    "from": 11,
+    "to": 17,
+    "grades": "高三～研二"
+  },
+  "inventory": [
+    {
+      "stageIndex": 11,
+      "grade": "高三",
+      "questionsRequired": 9,
+      "eligibleUniqueConcepts": 38,
+      "headroom": 29
+    },
+    {
+      "stageIndex": 12,
+      "grade": "大一",
+      "questionsRequired": 9,
+      "eligibleUniqueConcepts": 38,
+      "headroom": 29
+    },
+    {
+      "stageIndex": 13,
+      "grade": "大二",
+      "questionsRequired": 9,
+      "eligibleUniqueConcepts": 38,
+      "headroom": 29
+    },
+    {
+      "stageIndex": 14,
+      "grade": "大三",
+      "questionsRequired": 9,
+      "eligibleUniqueConcepts": 38,
+      "headroom": 29
+    },
+    {
+      "stageIndex": 15,
+      "grade": "大四",
+      "questionsRequired": 10,
+      "eligibleUniqueConcepts": 38,
+      "headroom": 28
+    },
+    {
+      "stageIndex": 16,
+      "grade": "研一",
+      "questionsRequired": 10,
+      "eligibleUniqueConcepts": 38,
+      "headroom": 28
+    },
+    {
+      "stageIndex": 17,
+      "grade": "研二",
+      "questionsRequired": 10,
+      "eligibleUniqueConcepts": 38,
+      "headroom": 28
+    }
+  ],
+  "seedRuns": [
+    {
+      "seed": 1,
+      "consumedUniqueConceptsThroughRange": 42,
+      "stages": [
+        {
+          "stageIndex": 11,
+          "grade": "高三",
+          "required": 9,
+          "drawn": 9,
+          "shortfall": 0,
+          "kind": "ok",
+          "eligibleUniqueConcepts": 38,
+          "consumedUniqueConceptsBefore": 14
+        },
+        {
+          "stageIndex": 12,
+          "grade": "大一",
+          "required": 9,
+          "drawn": 9,
+          "shortfall": 0,
+          "kind": "ok",
+          "eligibleUniqueConcepts": 38,
+          "consumedUniqueConceptsBefore": 23
+        },
+        {
+          "stageIndex": 13,
+          "grade": "大二",
+          "required": 9,
+          "drawn": 9,
+          "shortfall": 0,
+          "kind": "ok",
+          "eligibleUniqueConcepts": 38,
+          "consumedUniqueConceptsBefore": 32
+        },
+        {
+          "stageIndex": 14,
+          "grade": "大三",
+          "required": 9,
+          "drawn": 9,
+          "shortfall": 0,
+          "kind": "ok",
+          "eligibleUniqueConcepts": 38,
+          "consumedUniqueConceptsBefore": 41
+        },
+        {
+          "stageIndex": 15,
+          "grade": "大四",
+          "required": 10,
+          "drawn": 1,
+          "shortfall": 9,
+          "kind": "confirmed_gap",
+          "eligibleUniqueConcepts": 38,
+          "consumedUniqueConceptsBefore": 42
+        },
+        {
+          "stageIndex": 16,
+          "grade": "研一",
+          "required": 10,
+          "drawn": 0,
+          "shortfall": 10,
+          "kind": "not_simulated",
+          "note": "stage 15 題量不足，後續未模擬"
+        },
+        {
+          "stageIndex": 17,
+          "grade": "研二",
+          "required": 10,
+          "drawn": 0,
+          "shortfall": 10,
+          "kind": "not_simulated",
+          "note": "stage 15 題量不足，後續未模擬"
+        }
+      ]
+    },
+    {
+      "seed": 7,
+      "consumedUniqueConceptsThroughRange": 42,
+      "stages": [
+        {
+          "stageIndex": 11,
+          "grade": "高三",
+          "required": 9,
+          "drawn": 9,
+          "shortfall": 0,
+          "kind": "ok",
+          "eligibleUniqueConcepts": 38,
+          "consumedUniqueConceptsBefore": 14
+        },
+        {
+          "stageIndex": 12,
+          "grade": "大一",
+          "required": 9,
+          "drawn": 9,
+          "shortfall": 0,
+          "kind": "ok",
+          "eligibleUniqueConcepts": 38,
+          "consumedUniqueConceptsBefore": 23
+        },
+        {
+          "stageIndex": 13,
+          "grade": "大二",
+          "required": 9,
+          "drawn": 9,
+          "shortfall": 0,
+          "kind": "ok",
+          "eligibleUniqueConcepts": 38,
+          "consumedUniqueConceptsBefore": 32
+        },
+        {
+          "stageIndex": 14,
+          "grade": "大三",
+          "required": 9,
+          "drawn": 9,
+          "shortfall": 0,
+          "kind": "ok",
+          "eligibleUniqueConcepts": 38,
+          "consumedUniqueConceptsBefore": 41
+        },
+        {
+          "stageIndex": 15,
+          "grade": "大四",
+          "required": 10,
+          "drawn": 1,
+          "shortfall": 9,
+          "kind": "confirmed_gap",
+          "eligibleUniqueConcepts": 38,
+          "consumedUniqueConceptsBefore": 42
+        },
+        {
+          "stageIndex": 16,
+          "grade": "研一",
+          "required": 10,
+          "drawn": 0,
+          "shortfall": 10,
+          "kind": "not_simulated",
+          "note": "stage 15 題量不足，後續未模擬"
+        },
+        {
+          "stageIndex": 17,
+          "grade": "研二",
+          "required": 10,
+          "drawn": 0,
+          "shortfall": 10,
+          "kind": "not_simulated",
+          "note": "stage 15 題量不足，後續未模擬"
+        }
+      ]
+    },
+    {
+      "seed": 42,
+      "consumedUniqueConceptsThroughRange": 40,
+      "stages": [
+        {
+          "stageIndex": 11,
+          "grade": "高三",
+          "required": 9,
+          "drawn": 9,
+          "shortfall": 0,
+          "kind": "ok",
+          "eligibleUniqueConcepts": 38,
+          "consumedUniqueConceptsBefore": 14
+        },
+        {
+          "stageIndex": 12,
+          "grade": "大一",
+          "required": 9,
+          "drawn": 9,
+          "shortfall": 0,
+          "kind": "ok",
+          "eligibleUniqueConcepts": 38,
+          "consumedUniqueConceptsBefore": 23
+        },
+        {
+          "stageIndex": 13,
+          "grade": "大二",
+          "required": 9,
+          "drawn": 9,
+          "shortfall": 0,
+          "kind": "ok",
+          "eligibleUniqueConcepts": 38,
+          "consumedUniqueConceptsBefore": 32
+        },
+        {
+          "stageIndex": 14,
+          "grade": "大三",
+          "required": 9,
+          "drawn": 8,
+          "shortfall": 1,
+          "kind": "confirmed_gap",
+          "eligibleUniqueConcepts": 38,
+          "consumedUniqueConceptsBefore": 40
+        },
+        {
+          "stageIndex": 15,
+          "grade": "大四",
+          "required": 10,
+          "drawn": 0,
+          "shortfall": 10,
+          "kind": "not_simulated",
+          "note": "stage 14 題量不足，後續未模擬"
+        },
+        {
+          "stageIndex": 16,
+          "grade": "研一",
+          "required": 10,
+          "drawn": 0,
+          "shortfall": 10,
+          "kind": "not_simulated",
+          "note": "stage 14 題量不足，後續未模擬"
+        },
+        {
+          "stageIndex": 17,
+          "grade": "研二",
+          "required": 10,
+          "drawn": 0,
+          "shortfall": 10,
+          "kind": "not_simulated",
+          "note": "stage 14 題量不足，後續未模擬"
+        }
+      ]
+    },
+    {
+      "seed": 99,
+      "consumedUniqueConceptsThroughRange": 43,
+      "stages": [
+        {
+          "stageIndex": 11,
+          "grade": "高三",
+          "required": 9,
+          "drawn": 9,
+          "shortfall": 0,
+          "kind": "ok",
+          "eligibleUniqueConcepts": 38,
+          "consumedUniqueConceptsBefore": 14
+        },
+        {
+          "stageIndex": 12,
+          "grade": "大一",
+          "required": 9,
+          "drawn": 9,
+          "shortfall": 0,
+          "kind": "ok",
+          "eligibleUniqueConcepts": 38,
+          "consumedUniqueConceptsBefore": 23
+        },
+        {
+          "stageIndex": 13,
+          "grade": "大二",
+          "required": 9,
+          "drawn": 9,
+          "shortfall": 0,
+          "kind": "ok",
+          "eligibleUniqueConcepts": 38,
+          "consumedUniqueConceptsBefore": 32
+        },
+        {
+          "stageIndex": 14,
+          "grade": "大三",
+          "required": 9,
+          "drawn": 9,
+          "shortfall": 0,
+          "kind": "ok",
+          "eligibleUniqueConcepts": 38,
+          "consumedUniqueConceptsBefore": 41
+        },
+        {
+          "stageIndex": 15,
+          "grade": "大四",
+          "required": 10,
+          "drawn": 2,
+          "shortfall": 8,
+          "kind": "confirmed_gap",
+          "eligibleUniqueConcepts": 38,
+          "consumedUniqueConceptsBefore": 43
+        },
+        {
+          "stageIndex": 16,
+          "grade": "研一",
+          "required": 10,
+          "drawn": 0,
+          "shortfall": 10,
+          "kind": "not_simulated",
+          "note": "stage 15 題量不足，後續未模擬"
+        },
+        {
+          "stageIndex": 17,
+          "grade": "研二",
+          "required": 10,
+          "drawn": 0,
+          "shortfall": 10,
+          "kind": "not_simulated",
+          "note": "stage 15 題量不足，後續未模擬"
+        }
+      ]
+    },
+    {
+      "seed": 2026,
+      "consumedUniqueConceptsThroughRange": 43,
+      "stages": [
+        {
+          "stageIndex": 11,
+          "grade": "高三",
+          "required": 9,
+          "drawn": 9,
+          "shortfall": 0,
+          "kind": "ok",
+          "eligibleUniqueConcepts": 38,
+          "consumedUniqueConceptsBefore": 14
+        },
+        {
+          "stageIndex": 12,
+          "grade": "大一",
+          "required": 9,
+          "drawn": 9,
+          "shortfall": 0,
+          "kind": "ok",
+          "eligibleUniqueConcepts": 38,
+          "consumedUniqueConceptsBefore": 23
+        },
+        {
+          "stageIndex": 13,
+          "grade": "大二",
+          "required": 9,
+          "drawn": 9,
+          "shortfall": 0,
+          "kind": "ok",
+          "eligibleUniqueConcepts": 38,
+          "consumedUniqueConceptsBefore": 32
+        },
+        {
+          "stageIndex": 14,
+          "grade": "大三",
+          "required": 9,
+          "drawn": 9,
+          "shortfall": 0,
+          "kind": "ok",
+          "eligibleUniqueConcepts": 38,
+          "consumedUniqueConceptsBefore": 41
+        },
+        {
+          "stageIndex": 15,
+          "grade": "大四",
+          "required": 10,
+          "drawn": 2,
+          "shortfall": 8,
+          "kind": "confirmed_gap",
+          "eligibleUniqueConcepts": 38,
+          "consumedUniqueConceptsBefore": 43
+        },
+        {
+          "stageIndex": 16,
+          "grade": "研一",
+          "required": 10,
+          "drawn": 0,
+          "shortfall": 10,
+          "kind": "not_simulated",
+          "note": "stage 15 題量不足，後續未模擬"
+        },
+        {
+          "stageIndex": 17,
+          "grade": "研二",
+          "required": 10,
+          "drawn": 0,
+          "shortfall": 10,
+          "kind": "not_simulated",
+          "note": "stage 15 題量不足，後續未模擬"
+        }
+      ]
+    }
+  ],
+  "playableRunSummary": {
+    "playableStageCount": 11,
+    "totalQuestions": 76,
+    "gaps": [
+      {
+        "kind": "confirmed_gap",
+        "stageIndex": 11,
+        "grade": "高三",
+        "required": 9,
+        "drawn": 8,
+        "shortfall": 1
+      },
+      {
+        "kind": "not_simulated",
+        "stageIndex": 12,
+        "grade": "stage-12",
+        "note": "stage 11 題量不足，後續學級未模擬"
+      },
+      {
+        "kind": "not_simulated",
+        "stageIndex": 13,
+        "grade": "stage-13",
+        "note": "stage 11 題量不足，後續學級未模擬"
+      },
+      {
+        "kind": "not_simulated",
+        "stageIndex": 14,
+        "grade": "stage-14",
+        "note": "stage 11 題量不足，後續學級未模擬"
+      },
+      {
+        "kind": "not_simulated",
+        "stageIndex": 15,
+        "grade": "stage-15",
+        "note": "stage 11 題量不足，後續學級未模擬"
+      },
+      {
+        "kind": "not_simulated",
+        "stageIndex": 16,
+        "grade": "stage-16",
+        "note": "stage 11 題量不足，後續學級未模擬"
+      },
+      {
+        "kind": "not_simulated",
+        "stageIndex": 17,
+        "grade": "stage-17",
+        "note": "stage 11 題量不足，後續學級未模擬"
+      }
+    ]
+  }
+}

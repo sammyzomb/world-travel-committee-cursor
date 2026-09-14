@@ -50,3 +50,7 @@ tsconfig.tsbuildinfo
 /.codex/
 /outputs/
 /work/
+
+# local UI smoke artifacts
+.ui-smoke/
+scripts/.playwright-harness/node_modules/
