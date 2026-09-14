@@ -1,8 +1,13 @@
-import { buildFullRunPlan } from "../../../../lib/run-plan";
-import { issuedQuestionsFromPlan } from "../../../../lib/run-session";
-import { saveRunSession } from "../../../../lib/run-session-store";
+import type { ClientRunState } from "../../../../lib/game-client-types";
+import { buildPlayableRunPlan } from "../../../../lib/run-plan";
 import { QUESTION_BANK_VERSION } from "../../../../lib/question-bank-version";
-import type { Question } from "../../../../lib/questions";
+import { buildClientRunState, createInitialProgress } from "../../../../lib/run-session-engine";
+import { issuedQuestionsFromPlan } from "../../../../lib/run-session";
+import {
+  cleanupExpiredSessions,
+  createSessionExpiry,
+  saveRunSession,
+} from "../../../../lib/run-session-store";
 
 type StartRunBody = {
   avoidQuestionIds?: string[];
@@ -16,54 +21,60 @@ function createSessionToken() {
   return `run-${Date.now()}-${Math.random().toString(36).slice(2)}`;
 }
 
-function serializeQuestion(question: Question) {
-  return {
-    id: question.id,
-    conceptId: question.conceptId,
-    source: question.source,
-    auditStatus: question.auditStatus,
-    grades: question.grades,
-    level: question.level,
-    region: question.region,
-    q: question.q,
-    options: question.options,
-    answer: question.answer,
-    fact: question.fact,
-    kind: question.kind,
-    category: question.category,
-    questionType: question.questionType,
-    visual: question.visual,
-  };
-}
-
 export async function POST(request: Request) {
   try {
+    await cleanupExpiredSessions();
+
     const body = (await request.json()) as StartRunBody;
     const avoidQuestionIds = Array.isArray(body.avoidQuestionIds) ? body.avoidQuestionIds : [];
     const avoidConceptIds = Array.isArray(body.avoidConceptIds) ? body.avoidConceptIds : [];
 
-    const plan = buildFullRunPlan(avoidQuestionIds, avoidConceptIds);
-    const sessionToken = createSessionToken();
-    const issuedQuestions = issuedQuestionsFromPlan(plan.questions, plan.stageStarts);
-    const createdAt = new Date().toISOString();
+    const playable = buildPlayableRunPlan(avoidQuestionIds, avoidConceptIds);
+    if (!playable.plan || playable.totalQuestions === 0) {
+      const gap = playable.gaps.find((item) => item.kind === "confirmed_gap");
+      return Response.json(
+        {
+          error: gap
+            ? `${gap.grade} 題量不足（需要 ${gap.required}，僅 ${gap.drawn}）`
+            : "目前無法建立可玩場次",
+          gaps: playable.gaps,
+        },
+        { status: 409 },
+      );
+    }
 
-    await saveRunSession({
+    const sessionToken = createSessionToken();
+    const createdAt = new Date().toISOString();
+    const expiresAt = createSessionExpiry(new Date(createdAt));
+    const issuedQuestions = issuedQuestionsFromPlan(
+      playable.plan.questions,
+      playable.plan.stageStarts,
+    );
+
+    const session = {
       sessionToken,
       questionBankVersion: QUESTION_BANK_VERSION,
       issuedQuestions,
-      stageStarts: plan.stageStarts,
-      exhausted: plan.exhausted,
+      stageStarts: playable.plan.stageStarts,
+      exhausted: playable.plan.exhausted,
       createdAt,
-    });
+      expiresAt,
+      progress: createInitialProgress(),
+    };
+
+    await saveRunSession(session);
+
+    const state: ClientRunState = {
+      ...buildClientRunState(session),
+      screen: "enroll",
+    };
 
     return Response.json({
       sessionToken,
       questionBankVersion: QUESTION_BANK_VERSION,
-      round: {
-        questions: plan.questions.map(serializeQuestion),
-        stageStarts: plan.stageStarts,
-        exhausted: plan.exhausted,
-      },
+      state,
+      playableStageCount: playable.playableStageCount,
+      gaps: playable.gaps,
     });
   } catch (error) {
     const message = error instanceof Error ? error.message : "無法建立遊戲場次";

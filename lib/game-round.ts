@@ -17,6 +17,7 @@ import {
   QUESTION_TYPE_RANK,
   type QuestionType,
 } from "./question-types";
+import { gameRandom } from "./game-random";
 import { questionMatchesStageRules } from "./stage-eligibility";
 import { approvedQuestions, travelKnowledgeQuestions, type Question, warmupQuestions } from "./questions";
 
@@ -34,7 +35,7 @@ export type RoundPlan = {
 function shuffled<T>(items: T[]) {
   const result = [...items];
   for (let index = result.length - 1; index > 0; index -= 1) {
-    const swapIndex = Math.floor(Math.random() * (index + 1));
+    const swapIndex = Math.floor(gameRandom() * (index + 1));
     [result[index], result[swapIndex]] = [result[swapIndex], result[index]];
   }
   return result;

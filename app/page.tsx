@@ -61,9 +61,9 @@ export default function Home() {
           lives={game.lives}
           score={game.score}
           current={game.current}
-          selected={game.selected}
+          feedback={game.feedback}
           endedEarly={game.endedEarly}
-          roundLength={game.round.length}
+          roundLength={game.roundLength}
           questionIndex={game.index}
           onChoose={game.choose}
           onNext={game.next}

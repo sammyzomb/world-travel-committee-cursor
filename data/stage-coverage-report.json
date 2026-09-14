@@ -1,478 +1,452 @@
 {
-  "version": 2,
-  "generatedAt": "2026-09-14T06:41:12.145Z",
+  "version": 3,
+  "generatedAt": "2026-09-14T06:58:01.381Z",
+  "seeds": [
+    1,
+    7,
+    42,
+    99,
+    2026
+  ],
   "summary": {
-    "stages": 18,
-    "maxRunQuestions": 91,
-    "conceptInventoryGaps": 0,
-    "strictDrawGaps": 6,
-    "ruleViolations": 0,
-    "fallbackBypassCount": 0,
-    "canCompleteFullRun": false,
-    "compliantQuestionRatio": "91/91"
+    "seedRuns": 5,
+    "gapRange": {
+      "minPlayableStages": 11,
+      "maxPlayableStages": 12,
+      "minQuestions": 76,
+      "maxQuestions": 85,
+      "firstGapStages": [
+        12,
+        11
+      ]
+    },
+    "replayPlayableStages": 11,
+    "ruleViolations": true,
+    "allComplete": false,
+    "fallbackBypassCount": 0
+  },
+  "seedResults": [
+    {
+      "seed": 1,
+      "playableStageCount": 12,
+      "totalQuestions": 85,
+      "completeThroughFinal": false,
+      "confirmedGaps": [
+        {
+          "kind": "confirmed_gap",
+          "stageIndex": 12,
+          "grade": "大一",
+          "required": 9,
+          "drawn": 5,
+          "shortfall": 4
+        }
+      ],
+      "notSimulated": [
+        {
+          "kind": "not_simulated",
+          "stageIndex": 13,
+          "grade": "stage-13",
+          "note": "stage 12 題量不足，後續學級未模擬"
+        },
+        {
+          "kind": "not_simulated",
+          "stageIndex": 14,
+          "grade": "stage-14",
+          "note": "stage 12 題量不足，後續學級未模擬"
+        },
+        {
+          "kind": "not_simulated",
+          "stageIndex": 15,
+          "grade": "stage-15",
+          "note": "stage 12 題量不足，後續學級未模擬"
+        },
+        {
+          "kind": "not_simulated",
+          "stageIndex": 16,
+          "grade": "stage-16",
+          "note": "stage 12 題量不足，後續學級未模擬"
+        },
+        {
+          "kind": "not_simulated",
+          "stageIndex": 17,
+          "grade": "stage-17",
+          "note": "stage 12 題量不足，後續學級未模擬"
+        }
+      ],
+      "ruleViolations": [],
+      "firstConfirmedGapStage": 12
+    },
+    {
+      "seed": 7,
+      "playableStageCount": 11,
+      "totalQuestions": 76,
+      "completeThroughFinal": false,
+      "confirmedGaps": [
+        {
+          "kind": "confirmed_gap",
+          "stageIndex": 11,
+          "grade": "高三",
+          "required": 9,
+          "drawn": 8,
+          "shortfall": 1
+        }
+      ],
+      "notSimulated": [
+        {
+          "kind": "not_simulated",
+          "stageIndex": 12,
+          "grade": "stage-12",
+          "note": "stage 11 題量不足，後續學級未模擬"
+        },
+        {
+          "kind": "not_simulated",
+          "stageIndex": 13,
+          "grade": "stage-13",
+          "note": "stage 11 題量不足，後續學級未模擬"
+        },
+        {
+          "kind": "not_simulated",
+          "stageIndex": 14,
+          "grade": "stage-14",
+          "note": "stage 11 題量不足，後續學級未模擬"
+        },
+        {
+          "kind": "not_simulated",
+          "stageIndex": 15,
+          "grade": "stage-15",
+          "note": "stage 11 題量不足，後續學級未模擬"
+        },
+        {
+          "kind": "not_simulated",
+          "stageIndex": 16,
+          "grade": "stage-16",
+          "note": "stage 11 題量不足，後續學級未模擬"
+        },
+        {
+          "kind": "not_simulated",
+          "stageIndex": 17,
+          "grade": "stage-17",
+          "note": "stage 11 題量不足，後續學級未模擬"
+        }
+      ],
+      "ruleViolations": [],
+      "firstConfirmedGapStage": 11
+    },
+    {
+      "seed": 42,
+      "playableStageCount": 12,
+      "totalQuestions": 85,
+      "completeThroughFinal": false,
+      "confirmedGaps": [
+        {
+          "kind": "confirmed_gap",
+          "stageIndex": 12,
+          "grade": "大一",
+          "required": 9,
+          "drawn": 5,
+          "shortfall": 4
+        }
+      ],
+      "notSimulated": [
+        {
+          "kind": "not_simulated",
+          "stageIndex": 13,
+          "grade": "stage-13",
+          "note": "stage 12 題量不足，後續學級未模擬"
+        },
+        {
+          "kind": "not_simulated",
+          "stageIndex": 14,
+          "grade": "stage-14",
+          "note": "stage 12 題量不足，後續學級未模擬"
+        },
+        {
+          "kind": "not_simulated",
+          "stageIndex": 15,
+          "grade": "stage-15",
+          "note": "stage 12 題量不足，後續學級未模擬"
+        },
+        {
+          "kind": "not_simulated",
+          "stageIndex": 16,
+          "grade": "stage-16",
+          "note": "stage 12 題量不足，後續學級未模擬"
+        },
+        {
+          "kind": "not_simulated",
+          "stageIndex": 17,
+          "grade": "stage-17",
+          "note": "stage 12 題量不足，後續學級未模擬"
+        }
+      ],
+      "ruleViolations": [],
+      "firstConfirmedGapStage": 12
+    },
+    {
+      "seed": 99,
+      "playableStageCount": 12,
+      "totalQuestions": 85,
+      "completeThroughFinal": false,
+      "confirmedGaps": [
+        {
+          "kind": "confirmed_gap",
+          "stageIndex": 12,
+          "grade": "大一",
+          "required": 9,
+          "drawn": 5,
+          "shortfall": 4
+        }
+      ],
+      "notSimulated": [
+        {
+          "kind": "not_simulated",
+          "stageIndex": 13,
+          "grade": "stage-13",
+          "note": "stage 12 題量不足，後續學級未模擬"
+        },
+        {
+          "kind": "not_simulated",
+          "stageIndex": 14,
+          "grade": "stage-14",
+          "note": "stage 12 題量不足，後續學級未模擬"
+        },
+        {
+          "kind": "not_simulated",
+          "stageIndex": 15,
+          "grade": "stage-15",
+          "note": "stage 12 題量不足，後續學級未模擬"
+        },
+        {
+          "kind": "not_simulated",
+          "stageIndex": 16,
+          "grade": "stage-16",
+          "note": "stage 12 題量不足，後續學級未模擬"
+        },
+        {
+          "kind": "not_simulated",
+          "stageIndex": 17,
+          "grade": "stage-17",
+          "note": "stage 12 題量不足，後續學級未模擬"
+        }
+      ],
+      "ruleViolations": [],
+      "firstConfirmedGapStage": 12
+    },
+    {
+      "seed": 2026,
+      "playableStageCount": 12,
+      "totalQuestions": 85,
+      "completeThroughFinal": false,
+      "confirmedGaps": [
+        {
+          "kind": "confirmed_gap",
+          "stageIndex": 12,
+          "grade": "大一",
+          "required": 9,
+          "drawn": 6,
+          "shortfall": 3
+        }
+      ],
+      "notSimulated": [
+        {
+          "kind": "not_simulated",
+          "stageIndex": 13,
+          "grade": "stage-13",
+          "note": "stage 12 題量不足，後續學級未模擬"
+        },
+        {
+          "kind": "not_simulated",
+          "stageIndex": 14,
+          "grade": "stage-14",
+          "note": "stage 12 題量不足，後續學級未模擬"
+        },
+        {
+          "kind": "not_simulated",
+          "stageIndex": 15,
+          "grade": "stage-15",
+          "note": "stage 12 題量不足，後續學級未模擬"
+        },
+        {
+          "kind": "not_simulated",
+          "stageIndex": 16,
+          "grade": "stage-16",
+          "note": "stage 12 題量不足，後續學級未模擬"
+        },
+        {
+          "kind": "not_simulated",
+          "stageIndex": 17,
+          "grade": "stage-17",
+          "note": "stage 12 題量不足，後續學級未模擬"
+        }
+      ],
+      "ruleViolations": [],
+      "firstConfirmedGapStage": 12
+    }
+  ],
+  "replayAvoidance": {
+    "seed": 42,
+    "playableStageCount": 11,
+    "totalQuestions": 76,
+    "completeThroughFinal": false,
+    "confirmedGaps": [
+      {
+        "kind": "confirmed_gap",
+        "stageIndex": 11,
+        "grade": "高三",
+        "required": 9,
+        "drawn": 8,
+        "shortfall": 1
+      }
+    ],
+    "notSimulated": [
+      {
+        "kind": "not_simulated",
+        "stageIndex": 12,
+        "grade": "stage-12",
+        "note": "stage 11 題量不足，後續學級未模擬"
+      },
+      {
+        "kind": "not_simulated",
+        "stageIndex": 13,
+        "grade": "stage-13",
+        "note": "stage 11 題量不足，後續學級未模擬"
+      },
+      {
+        "kind": "not_simulated",
+        "stageIndex": 14,
+        "grade": "stage-14",
+        "note": "stage 11 題量不足，後續學級未模擬"
+      },
+      {
+        "kind": "not_simulated",
+        "stageIndex": 15,
+        "grade": "stage-15",
+        "note": "stage 11 題量不足，後續學級未模擬"
+      },
+      {
+        "kind": "not_simulated",
+        "stageIndex": 16,
+        "grade": "stage-16",
+        "note": "stage 11 題量不足，後續學級未模擬"
+      },
+      {
+        "kind": "not_simulated",
+        "stageIndex": 17,
+        "grade": "stage-17",
+        "note": "stage 11 題量不足，後續學級未模擬"
+      }
+    ],
+    "ruleViolations": [],
+    "firstConfirmedGapStage": 11
   },
   "inventory": [
     {
       "stageIndex": 0,
       "grade": "小一",
       "questionsRequired": 5,
-      "distinctConcepts": 55,
-      "sufficient": true,
       "graduation": false
     },
     {
       "stageIndex": 1,
       "grade": "小二",
       "questionsRequired": 5,
-      "distinctConcepts": 49,
-      "sufficient": true,
       "graduation": false
     },
     {
       "stageIndex": 2,
       "grade": "小三",
       "questionsRequired": 6,
-      "distinctConcepts": 94,
-      "sufficient": true,
       "graduation": false
     },
     {
       "stageIndex": 3,
       "grade": "小四",
       "questionsRequired": 6,
-      "distinctConcepts": 54,
-      "sufficient": true,
       "graduation": false
     },
     {
       "stageIndex": 4,
       "grade": "小五",
       "questionsRequired": 7,
-      "distinctConcepts": 144,
-      "sufficient": true,
       "graduation": false
     },
     {
       "stageIndex": 5,
       "grade": "小六",
       "questionsRequired": 7,
-      "distinctConcepts": 73,
-      "sufficient": true,
       "graduation": true
     },
     {
       "stageIndex": 6,
       "grade": "國一",
       "questionsRequired": 7,
-      "distinctConcepts": 156,
-      "sufficient": true,
       "graduation": false
     },
     {
       "stageIndex": 7,
       "grade": "國二",
       "questionsRequired": 8,
-      "distinctConcepts": 58,
-      "sufficient": true,
       "graduation": false
     },
     {
       "stageIndex": 8,
       "grade": "國三",
       "questionsRequired": 8,
-      "distinctConcepts": 95,
-      "sufficient": true,
       "graduation": true
     },
     {
       "stageIndex": 9,
       "grade": "高一",
       "questionsRequired": 8,
-      "distinctConcepts": 21,
-      "sufficient": true,
       "graduation": false
     },
     {
       "stageIndex": 10,
       "grade": "高二",
       "questionsRequired": 9,
-      "distinctConcepts": 38,
-      "sufficient": true,
       "graduation": false
     },
     {
       "stageIndex": 11,
       "grade": "高三",
       "questionsRequired": 9,
-      "distinctConcepts": 38,
-      "sufficient": true,
       "graduation": true
     },
     {
       "stageIndex": 12,
       "grade": "大一",
       "questionsRequired": 9,
-      "distinctConcepts": 38,
-      "sufficient": true,
       "graduation": false
     },
     {
       "stageIndex": 13,
       "grade": "大二",
       "questionsRequired": 9,
-      "distinctConcepts": 38,
-      "sufficient": true,
       "graduation": false
     },
     {
       "stageIndex": 14,
       "grade": "大三",
       "questionsRequired": 9,
-      "distinctConcepts": 38,
-      "sufficient": true,
       "graduation": false
     },
     {
       "stageIndex": 15,
       "grade": "大四",
       "questionsRequired": 10,
-      "distinctConcepts": 38,
-      "sufficient": true,
       "graduation": true
     },
     {
       "stageIndex": 16,
       "grade": "研一",
       "questionsRequired": 10,
-      "distinctConcepts": 38,
-      "sufficient": true,
       "graduation": false
     },
     {
       "stageIndex": 17,
       "grade": "研二",
       "questionsRequired": 10,
-      "distinctConcepts": 38,
-      "sufficient": true,
       "graduation": true
     }
-  ],
-  "conceptGaps": [],
-  "drawGaps": [
-    {
-      "stageIndex": 12,
-      "grade": "大一",
-      "group": "大學",
-      "questionsRequired": 9,
-      "questionsDrawn": 6,
-      "sufficient": false,
-      "shortfall": 3,
-      "distinctConceptsEligible": 38,
-      "graduation": false,
-      "ruleViolations": [],
-      "nonCompliantQuestionIds": []
-    },
-    {
-      "stageIndex": 13,
-      "grade": "大二",
-      "group": "大學",
-      "questionsRequired": 9,
-      "questionsDrawn": 0,
-      "sufficient": false,
-      "shortfall": 9,
-      "distinctConceptsEligible": 38,
-      "graduation": false,
-      "ruleViolations": [],
-      "nonCompliantQuestionIds": []
-    },
-    {
-      "stageIndex": 14,
-      "grade": "大三",
-      "group": "大學",
-      "questionsRequired": 9,
-      "questionsDrawn": 0,
-      "sufficient": false,
-      "shortfall": 9,
-      "distinctConceptsEligible": 38,
-      "graduation": false,
-      "ruleViolations": [],
-      "nonCompliantQuestionIds": []
-    },
-    {
-      "stageIndex": 15,
-      "grade": "大四",
-      "group": "大學",
-      "questionsRequired": 10,
-      "questionsDrawn": 0,
-      "sufficient": false,
-      "shortfall": 10,
-      "distinctConceptsEligible": 38,
-      "graduation": true,
-      "ruleViolations": [],
-      "nonCompliantQuestionIds": []
-    },
-    {
-      "stageIndex": 16,
-      "grade": "研一",
-      "group": "研究所",
-      "questionsRequired": 10,
-      "questionsDrawn": 0,
-      "sufficient": false,
-      "shortfall": 10,
-      "distinctConceptsEligible": 38,
-      "graduation": false,
-      "ruleViolations": [],
-      "nonCompliantQuestionIds": []
-    },
-    {
-      "stageIndex": 17,
-      "grade": "研二",
-      "group": "研究所",
-      "questionsRequired": 10,
-      "questionsDrawn": 0,
-      "sufficient": false,
-      "shortfall": 10,
-      "distinctConceptsEligible": 38,
-      "graduation": true,
-      "ruleViolations": [],
-      "nonCompliantQuestionIds": []
-    }
-  ],
-  "stageAudits": [
-    {
-      "stageIndex": 0,
-      "grade": "小一",
-      "group": "國小",
-      "questionsRequired": 5,
-      "questionsDrawn": 5,
-      "sufficient": true,
-      "shortfall": 0,
-      "distinctConceptsEligible": 55,
-      "graduation": false,
-      "ruleViolations": [],
-      "nonCompliantQuestionIds": []
-    },
-    {
-      "stageIndex": 1,
-      "grade": "小二",
-      "group": "國小",
-      "questionsRequired": 5,
-      "questionsDrawn": 5,
-      "sufficient": true,
-      "shortfall": 0,
-      "distinctConceptsEligible": 49,
-      "graduation": false,
-      "ruleViolations": [],
-      "nonCompliantQuestionIds": []
-    },
-    {
-      "stageIndex": 2,
-      "grade": "小三",
-      "group": "國小",
-      "questionsRequired": 6,
-      "questionsDrawn": 6,
-      "sufficient": true,
-      "shortfall": 0,
-      "distinctConceptsEligible": 94,
-      "graduation": false,
-      "ruleViolations": [],
-      "nonCompliantQuestionIds": []
-    },
-    {
-      "stageIndex": 3,
-      "grade": "小四",
-      "group": "國小",
-      "questionsRequired": 6,
-      "questionsDrawn": 6,
-      "sufficient": true,
-      "shortfall": 0,
-      "distinctConceptsEligible": 54,
-      "graduation": false,
-      "ruleViolations": [],
-      "nonCompliantQuestionIds": []
-    },
-    {
-      "stageIndex": 4,
-      "grade": "小五",
-      "group": "國小",
-      "questionsRequired": 7,
-      "questionsDrawn": 7,
-      "sufficient": true,
-      "shortfall": 0,
-      "distinctConceptsEligible": 144,
-      "graduation": false,
-      "ruleViolations": [],
-      "nonCompliantQuestionIds": []
-    },
-    {
-      "stageIndex": 5,
-      "grade": "小六",
-      "group": "國小",
-      "questionsRequired": 7,
-      "questionsDrawn": 7,
-      "sufficient": true,
-      "shortfall": 0,
-      "distinctConceptsEligible": 73,
-      "graduation": true,
-      "ruleViolations": [],
-      "nonCompliantQuestionIds": []
-    },
-    {
-      "stageIndex": 6,
-      "grade": "國一",
-      "group": "國中",
-      "questionsRequired": 7,
-      "questionsDrawn": 7,
-      "sufficient": true,
-      "shortfall": 0,
-      "distinctConceptsEligible": 156,
-      "graduation": false,
-      "ruleViolations": [],
-      "nonCompliantQuestionIds": []
-    },
-    {
-      "stageIndex": 7,
-      "grade": "國二",
-      "group": "國中",
-      "questionsRequired": 8,
-      "questionsDrawn": 8,
-      "sufficient": true,
-      "shortfall": 0,
-      "distinctConceptsEligible": 58,
-      "graduation": false,
-      "ruleViolations": [],
-      "nonCompliantQuestionIds": []
-    },
-    {
-      "stageIndex": 8,
-      "grade": "國三",
-      "group": "國中",
-      "questionsRequired": 8,
-      "questionsDrawn": 8,
-      "sufficient": true,
-      "shortfall": 0,
-      "distinctConceptsEligible": 95,
-      "graduation": true,
-      "ruleViolations": [],
-      "nonCompliantQuestionIds": []
-    },
-    {
-      "stageIndex": 9,
-      "grade": "高一",
-      "group": "高中",
-      "questionsRequired": 8,
-      "questionsDrawn": 8,
-      "sufficient": true,
-      "shortfall": 0,
-      "distinctConceptsEligible": 21,
-      "graduation": false,
-      "ruleViolations": [],
-      "nonCompliantQuestionIds": []
-    },
-    {
-      "stageIndex": 10,
-      "grade": "高二",
-      "group": "高中",
-      "questionsRequired": 9,
-      "questionsDrawn": 9,
-      "sufficient": true,
-      "shortfall": 0,
-      "distinctConceptsEligible": 38,
-      "graduation": false,
-      "ruleViolations": [],
-      "nonCompliantQuestionIds": []
-    },
-    {
-      "stageIndex": 11,
-      "grade": "高三",
-      "group": "高中",
-      "questionsRequired": 9,
-      "questionsDrawn": 9,
-      "sufficient": true,
-      "shortfall": 0,
-      "distinctConceptsEligible": 38,
-      "graduation": true,
-      "ruleViolations": [],
-      "nonCompliantQuestionIds": []
-    },
-    {
-      "stageIndex": 12,
-      "grade": "大一",
-      "group": "大學",
-      "questionsRequired": 9,
-      "questionsDrawn": 6,
-      "sufficient": false,
-      "shortfall": 3,
-      "distinctConceptsEligible": 38,
-      "graduation": false,
-      "ruleViolations": [],
-      "nonCompliantQuestionIds": []
-    },
-    {
-      "stageIndex": 13,
-      "grade": "大二",
-      "group": "大學",
-      "questionsRequired": 9,
-      "questionsDrawn": 0,
-      "sufficient": false,
-      "shortfall": 9,
-      "distinctConceptsEligible": 38,
-      "graduation": false,
-      "ruleViolations": [],
-      "nonCompliantQuestionIds": []
-    },
-    {
-      "stageIndex": 14,
-      "grade": "大三",
-      "group": "大學",
-      "questionsRequired": 9,
-      "questionsDrawn": 0,
-      "sufficient": false,
-      "shortfall": 9,
-      "distinctConceptsEligible": 38,
-      "graduation": false,
-      "ruleViolations": [],
-      "nonCompliantQuestionIds": []
-    },
-    {
-      "stageIndex": 15,
-      "grade": "大四",
-      "group": "大學",
-      "questionsRequired": 10,
-      "questionsDrawn": 0,
-      "sufficient": false,
-      "shortfall": 10,
-      "distinctConceptsEligible": 38,
-      "graduation": true,
-      "ruleViolations": [],
-      "nonCompliantQuestionIds": []
-    },
-    {
-      "stageIndex": 16,
-      "grade": "研一",
-      "group": "研究所",
-      "questionsRequired": 10,
-      "questionsDrawn": 0,
-      "sufficient": false,
-      "shortfall": 10,
-      "distinctConceptsEligible": 38,
-      "graduation": false,
-      "ruleViolations": [],
-      "nonCompliantQuestionIds": []
-    },
-    {
-      "stageIndex": 17,
-      "grade": "研二",
-      "group": "研究所",
-      "questionsRequired": 10,
-      "questionsDrawn": 0,
-      "sufficient": false,
-      "shortfall": 10,
-      "distinctConceptsEligible": 38,
-      "graduation": true,
-      "ruleViolations": [],
-      "nonCompliantQuestionIds": []
-    }
-  ],
-  "ruleViolations": []
+  ]
 }

@@ -52,8 +52,6 @@ export type RunSubmission = {
   sessionToken: string;
   playerName: string;
   questionBankVersion: string;
-  answers: RunAnswerRecord[];
-  endedEarly: boolean;
 };
 
 export { QUESTION_BANK_VERSION };
@@ -186,34 +184,5 @@ export function validateRunSubmission(payload: RunSubmission) {
   if (payload.questionBankVersion !== QUESTION_BANK_VERSION) {
     return "題庫已更新，請重新開始遊戲後再送出成績";
   }
-  if (!Array.isArray(payload.answers) || payload.answers.length === 0) {
-    return "answers are required";
-  }
-  if (payload.answers.length > MAX_RUN_QUESTIONS) {
-    return "too many answers";
-  }
-
-  const seenQuestionIds = new Set<string>();
-  const seenConceptIds = new Set<string>();
-  for (const answer of payload.answers) {
-    if (!answer.questionId || !answer.conceptId) {
-      return "each answer must include questionId and conceptId";
-    }
-    if (!answer.selectedOption?.trim()) {
-      return "each answer must include selectedOption";
-    }
-    if (seenQuestionIds.has(answer.questionId)) {
-      return "duplicate questionId in run";
-    }
-    if (seenConceptIds.has(answer.conceptId)) {
-      return "duplicate conceptId in run";
-    }
-    seenQuestionIds.add(answer.questionId);
-    seenConceptIds.add(answer.conceptId);
-    if (answer.stageIndex < 0 || answer.stageIndex >= educationStages.length) {
-      return "invalid stageIndex";
-    }
-  }
-
   return null;
 }

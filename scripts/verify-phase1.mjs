@@ -19,7 +19,8 @@ import {
   getStageLength,
   isGraduationStage,
 } from "../lib/game-round.ts";
-import { buildFullRunPlan } from "../lib/run-plan.ts";
+import { buildPlayableRunPlan } from "../lib/run-plan.ts";
+import { submitAnswer } from "../lib/run-session-engine.ts";
 import {
   issuedQuestionsFromPlan,
   validateIssuedRunPlayback,
@@ -105,7 +106,9 @@ function run() {
   const conceptIds = new Set(round.questions.map((item) => item.conceptId));
   assert.equal(conceptIds.size, round.questions.length);
 
-  const plan = buildFullRunPlan([], []);
+  const playable = buildPlayableRunPlan([], []);
+  const plan = playable.plan;
+  assert.ok(plan, "playable plan required");
   const drawnStageCount = plan.stageStarts.length;
   for (let stageIndex = 0; stageIndex < drawnStageCount; stageIndex += 1) {
     const optionCount = optionCountForStage(stageIndex);
@@ -230,91 +233,39 @@ function run() {
     questionBankVersion: QUESTION_BANK_VERSION,
   };
 
-  const validationError = validateRunSubmission({
-    ...submissionBase,
-    answers: sampleAnswers,
-    endedEarly: runEndedEarly,
-  });
-  assert.equal(validationError, null);
+  assert.equal(validateRunSubmission(submissionBase), null);
   assert.equal(validateRunProgress(verified.verified, runEndedEarly), null);
-
-  const incompleteRun = validateRunSubmission({
-    ...submissionBase,
-    sessionToken: "incomplete-run",
-    answers: sampleAnswers.slice(0, 10),
-    endedEarly: true,
-  });
-  assert.equal(incompleteRun, null);
 
   const staleVersion = validateRunSubmission({
     ...submissionBase,
     questionBankVersion: "stale-version",
-    answers: sampleAnswers.slice(0, 3),
-    endedEarly: true,
   });
   assert.match(staleVersion, /題庫已更新/);
 
-  const emptyAnswers = validateRunSubmission({
-    ...submissionBase,
-    sessionToken: "empty-run",
-    answers: [],
-    endedEarly: true,
-  });
-  assert.ok(emptyAnswers, "empty answers should fail validation");
+  assert.equal(validateRunSubmission({ ...submissionBase, playerName: " " }), "playerName is required");
 
   for (const idx of [5, 8, 11, 15, 17]) {
     assert.ok(graduationStageIndexes.has(idx), `graduation index ${idx}`);
     assert.ok(isGraduationStage(idx), `isGraduationStage(${idx})`);
   }
 
-  const tampered = validateRunSubmission({
-    ...submissionBase,
-    sessionToken: "tamper-test",
-    playerName: "Hacker",
-    answers: [
-      {
-        questionId: sampleAnswers[0].questionId,
-        conceptId: sampleAnswers[0].conceptId,
-        stageIndex: 0,
-        selected: 0,
-        selectedOption: sampleAnswers[0].selectedOption,
-        correct: true,
-      },
-      {
-        questionId: sampleAnswers[0].questionId,
-        conceptId: "duplicate-concept",
-        stageIndex: 0,
-        selected: 0,
-        selectedOption: sampleAnswers[0].selectedOption,
-        correct: true,
-      },
-    ],
-    endedEarly: true,
-  });
-  assert.ok(tampered?.includes("duplicate"), "should reject duplicate questionId");
+  const duplicateAnswers = [
+    sampleAnswers[0],
+    { ...sampleAnswers[0], conceptId: "duplicate-concept" },
+  ];
+  assert.match(
+    validateIssuedRunPlayback(issued, duplicateAnswers, true),
+    /order mismatch|conceptId mismatch/,
+  );
 
-  const missingSelectedOption = validateRunSubmission({
-    ...submissionBase,
-    sessionToken: "missing-option-test",
-    answers: [{ ...sampleAnswers[0], selectedOption: "" }],
-    endedEarly: true,
-  });
-  assert.ok(missingSelectedOption?.includes("selectedOption"), "should require selectedOption");
-
-  const fakeQuestion = validateRunSubmission({
-    ...submissionBase,
-    sessionToken: "fake-question-test",
-    answers: [{ ...sampleAnswers[0], questionId: "fake:question", selectedOption: "x" }],
-    endedEarly: true,
-  });
-  assert.equal(fakeQuestion, null, "validateRunSubmission allows unknown id; verifyRunAnswers catches it");
-  const fakeVerify = verifyRunAnswers([
+  const fakeVerify = verifyAnswersAgainstIssued(issued, [
     { ...sampleAnswers[0], questionId: "fake:question", selectedOption: "x" },
   ]);
   assert.equal(fakeVerify.ok, false, "unknown questionId must fail verification");
 
-  const exhaustedProbe = buildFullRunPlan([]);
-  assert.ok(exhaustedProbe.questions.length > questionsPerStage(0), "strict draw must progress past stage 0");
+  const exhaustedProbe = buildPlayableRunPlan([]);
+  assert.ok(exhaustedProbe.plan, "strict draw must produce playable session");
+  assert.ok(exhaustedProbe.plan.questions.length > questionsPerStage(0), "strict draw must progress past stage 0");
 
   const restartRound = createRound(
     plan.questions.map((item) => item.id),

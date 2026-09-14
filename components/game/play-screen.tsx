@@ -1,8 +1,8 @@
 import { Check, Flame, X } from "lucide-react";
 import { QuestionVisual } from "../question-visual";
 import { STARTING_LIVES } from "../../lib/game-config";
-import type { Question } from "../../lib/questions";
-import { streakCheerMessage } from "../../lib/run-recap";
+import type { AnswerFeedback, PublicQuestion } from "../../lib/game-client-types";
+import { streakCheerMessage } from "../../lib/streak-messages";
 import { shouldShowRegionChip } from "../../lib/visual-safety";
 
 type PlayScreenProps = {
@@ -15,8 +15,8 @@ type PlayScreenProps = {
   runStreak: number;
   lives: number;
   score: number;
-  current: Question;
-  selected: number | null;
+  current: PublicQuestion;
+  feedback: AnswerFeedback | null;
   endedEarly: boolean;
   roundLength: number;
   questionIndex: number;
@@ -26,13 +26,12 @@ type PlayScreenProps = {
 };
 
 function feedbackMessage(
-  selected: number,
-  current: Question,
+  feedback: AnswerFeedback,
   endedEarly: boolean,
   lives: number,
   runStreak: number,
 ) {
-  if (selected === current.answer) {
+  if (feedback.isCorrect) {
     const cheer = streakCheerMessage(runStreak);
     return cheer ? `答對了！${cheer}` : "答對了！";
   }
@@ -63,7 +62,7 @@ export function PlayScreen({
   lives,
   score,
   current,
-  selected,
+  feedback,
   endedEarly,
   roundLength,
   questionIndex,
@@ -71,19 +70,20 @@ export function PlayScreen({
   onNext,
   onReplay,
 }: PlayScreenProps) {
-  const correctAnswer = current.options[current.answer] ?? "";
-  const isWrong = selected !== null && selected !== current.answer;
+  const selected = feedback?.selectedIndex ?? null;
+  const correctIndex = feedback?.correctIndex ?? null;
+  const isWrong = feedback ? !feedback.isCorrect : false;
   const showRegion = shouldShowRegionChip({
     kind: current.kind,
     questionText: current.q,
     region: current.region,
     category: current.category,
-    correctAnswer,
+    correctAnswer: feedback?.correctAnswer ?? "",
   });
 
   return (
     <section
-      className={`play-screen mx-auto w-full max-w-4xl px-4 pb-6 pt-2 sm:px-8${selected !== null ? " play-screen-answered" : ""}${isWrong ? " play-screen-wrong" : ""}`}
+      className={`play-screen mx-auto w-full max-w-4xl px-4 pb-6 pt-2 sm:px-8${feedback ? " play-screen-answered" : ""}${isWrong ? " play-screen-wrong" : ""}`}
     >
       <div className="play-progress-wrap">
         <div className="play-progress-meta">
@@ -154,12 +154,17 @@ export function PlayScreen({
             <div className={`answer-grid ${current.kind === "tf" ? "true-false-grid" : ""}`}>
               {current.options.map((option, optionIndex) => {
                 let className = "answer-button";
-                if (selected !== null) {
-                  if (optionIndex === current.answer) className += " correct";
+                if (feedback) {
+                  if (optionIndex === correctIndex) className += " correct";
                   else if (optionIndex === selected) className += " wrong";
                 }
                 return (
-                  <button className={className} key={option} onClick={() => onChoose(optionIndex)}>
+                  <button
+                    className={className}
+                    key={option}
+                    onClick={() => onChoose(optionIndex)}
+                    disabled={feedback !== null}
+                  >
                     <span>
                       {current.kind === "tf"
                         ? optionIndex === 0
@@ -168,9 +173,9 @@ export function PlayScreen({
                         : String.fromCharCode(65 + optionIndex)}
                     </span>
                     {option}
-                    {selected !== null && optionIndex === current.answer ? (
+                    {feedback && optionIndex === correctIndex ? (
                       <Check className="ml-auto" />
-                    ) : selected === optionIndex ? (
+                    ) : feedback && optionIndex === selected ? (
                       <X className="ml-auto" />
                     ) : null}
                   </button>
@@ -179,12 +184,12 @@ export function PlayScreen({
             </div>
           </div>
         </div>
-        {selected !== null && (
+        {feedback && (
           <div className="fact-box play-fact-box">
             <div className="play-fact-copy">
-              <b>{feedbackMessage(selected, current, endedEarly, lives, runStreak)}</b>
-              {isWrong && <p className="play-correct-answer">正確答案：{correctAnswer}</p>}
-              <p>{current.fact}</p>
+              <b>{feedbackMessage(feedback, endedEarly, lives, runStreak)}</b>
+              {isWrong && <p className="play-correct-answer">正確答案：{feedback.correctAnswer}</p>}
+              <p>{feedback.fact}</p>
             </div>
             <button type="button" className="primary-button play-next-button" onClick={onNext}>
               {nextButtonLabel(endedEarly, questionIndex, roundLength, stageQuestion, stageLength)} →

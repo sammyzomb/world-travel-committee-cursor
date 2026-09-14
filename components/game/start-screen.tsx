@@ -2,8 +2,6 @@ import { Crown, MapPin, Plane, Sparkles, Trophy } from "lucide-react";
 import { GAME_HERO_HEADLINE } from "../../lib/brand";
 import type { LeaderboardEntry } from "../../lib/leaderboard-types";
 import type { PersonalBest } from "../../lib/player-progress";
-import { questionBankStats } from "../../lib/questions";
-
 type StartScreenProps = {
   leaderboard: LeaderboardEntry[];
   leaderboardLoading: boolean;
@@ -91,7 +89,7 @@ export function StartScreen({
           </div>
 
           <p className="start-leader-footer">
-            題庫 {questionBankStats.total} 題 · 前 10 名留名
+            多主題題庫 · 前 10 名留名
           </p>
         </aside>
       </div>

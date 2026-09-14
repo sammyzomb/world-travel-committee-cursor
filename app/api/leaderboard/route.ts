@@ -2,14 +2,14 @@ import { and, desc, eq, gte } from "drizzle-orm";
 import { getDb } from "../../../db";
 import { leaderboardEntries } from "../../../db/schema";
 import {
-  computeRunScore,
   highestPassedStageIndex,
   isFullCompletion,
   stageReachedName,
   validateRunSubmission,
   type RunSubmission,
 } from "../../../lib/leaderboard-scoring";
-import { validateIssuedRunPlayback, verifyAnswersAgainstIssued } from "../../../lib/run-session";
+import { getServerRunScore } from "../../../lib/run-session-engine";
+import { validateIssuedRunPlayback } from "../../../lib/run-session";
 import { loadRunSession } from "../../../lib/run-session-store";
 
 const TOP_LIMIT = 10;
@@ -68,6 +68,28 @@ export async function POST(request: Request) {
       );
     }
 
+    const runSession = await loadRunSession(payload.sessionToken);
+    if (!runSession) {
+      return Response.json({ error: "找不到遊戲場次，請重新開始遊戲" }, { status: 400 });
+    }
+    if (runSession.questionBankVersion !== payload.questionBankVersion) {
+      return Response.json({ error: "題庫已更新，請重新開始遊戲後再送出成績" }, { status: 400 });
+    }
+
+    const serverRun = getServerRunScore(runSession);
+    if (serverRun.answers.length === 0) {
+      return Response.json({ error: "尚未完成任何作答" }, { status: 400 });
+    }
+
+    const playbackError = validateIssuedRunPlayback(
+      runSession.issuedQuestions,
+      serverRun.answers,
+      serverRun.endedEarly,
+    );
+    if (playbackError) {
+      return Response.json({ error: playbackError }, { status: 400 });
+    }
+
     const db = await getDb();
 
     const existingSession = await db
@@ -93,32 +115,9 @@ export async function POST(request: Request) {
       return Response.json({ error: "提交過於頻繁，請稍後再試" }, { status: 429 });
     }
 
-    const runSession = await loadRunSession(payload.sessionToken);
-    if (!runSession) {
-      return Response.json({ error: "找不到遊戲場次，請重新開始遊戲" }, { status: 400 });
-    }
-    if (runSession.questionBankVersion !== payload.questionBankVersion) {
-      return Response.json({ error: "題庫已更新，請重新開始遊戲後再送出成績" }, { status: 400 });
-    }
-
-    const playbackError = validateIssuedRunPlayback(
-      runSession.issuedQuestions,
-      payload.answers,
-      payload.endedEarly,
-    );
-    if (playbackError) {
-      return Response.json({ error: playbackError }, { status: 400 });
-    }
-
-    const verifiedAnswers = verifyAnswersAgainstIssued(runSession.issuedQuestions, payload.answers);
-    if (!verifiedAnswers.ok) {
-      return Response.json({ error: verifiedAnswers.error }, { status: 400 });
-    }
-
-    const { score, correctCount } = computeRunScore(verifiedAnswers.verified);
-    const stageIndex = highestPassedStageIndex(verifiedAnswers.verified, payload.endedEarly);
+    const stageIndex = highestPassedStageIndex(serverRun.answers, serverRun.endedEarly);
     const stageReached = stageReachedName(stageIndex);
-    const completed = isFullCompletion(verifiedAnswers.verified, payload.endedEarly);
+    const completed = isFullCompletion(serverRun.answers, serverRun.endedEarly);
 
     const currentTop = await db
       .select({ score: leaderboardEntries.score })
@@ -127,7 +126,7 @@ export async function POST(request: Request) {
       .limit(TOP_LIMIT);
 
     const qualifies =
-      currentTop.length < TOP_LIMIT || score > (currentTop[TOP_LIMIT - 1]?.score ?? 0);
+      currentTop.length < TOP_LIMIT || serverRun.score > (currentTop[TOP_LIMIT - 1]?.score ?? 0);
 
     if (!qualifies) {
       return Response.json({ qualified: false, entry: null }, { status: 200 });
@@ -138,8 +137,8 @@ export async function POST(request: Request) {
       .values({
         sessionToken: payload.sessionToken,
         playerName,
-        score,
-        correctCount,
+        score: serverRun.score,
+        correctCount: serverRun.correctCount,
         stageReached,
         completed,
       })

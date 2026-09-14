@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * 檢查各年級可抽取的不重複知識點、嚴格抽題缺口，以及實際場次中每題是否符合當級規則。
+ * 嚴格抽題覆蓋率：多種子、重玩情境、規則符合性與缺口範圍。
  */
 import assert from "node:assert/strict";
 import { writeFileSync } from "node:fs";
@@ -11,20 +11,8 @@ import {
   FINAL_STAGE_INDEX,
   questionsPerStage,
 } from "../lib/game-config.ts";
-import {
-  allowedTypesForStage,
-  includesTravelKnowledge,
-  minQuestionLevelRankForStage,
-  minTypeRankForStage,
-  QUESTION_TYPE_RANK,
-  difficultyRankForLevel,
-} from "../lib/question-types.ts";
-import {
-  approvedQuestions,
-  travelKnowledgeQuestions,
-  warmupQuestions,
-} from "../lib/questions.ts";
-import { buildFullRunPlan } from "../lib/run-plan.ts";
+import { resetGameRandom, setGameRandomSeed } from "../lib/game-random.ts";
+import { buildPlayableRunPlan } from "../lib/run-plan.ts";
 import { getStageIndex, isGraduationStage } from "../lib/game-round.ts";
 import {
   auditQuestionForStage,
@@ -32,169 +20,97 @@ import {
 } from "../lib/stage-eligibility.ts";
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
+const SEEDS = [1, 7, 42, 99, 2026];
 
-function filterPoolForStage(pool, stageIndex) {
-  const allowedTypes = new Set(allowedTypesForStage(stageIndex));
-  const minTypeRank = minTypeRankForStage(stageIndex);
-  const minLevelRank = minQuestionLevelRankForStage(stageIndex);
-  return pool.filter((item) => {
-    if (!allowedTypes.has(item.questionType)) return false;
-    const typeRank = QUESTION_TYPE_RANK[item.questionType];
-    const levelRank = difficultyRankForLevel(item.level);
-    if (levelRank < minLevelRank) return false;
-    if (typeRank + levelRank * 0.3 < minTypeRank - 0.5) return false;
-    return true;
-  });
-}
-
-function eligibleConceptsForStage(stageIndex) {
-  if (stageIndex === 0) {
-    const warmupConcepts = new Set(
-      warmupQuestions
-        .filter((item) => item.auditStatus === "approved" && item.kind === "tf")
-        .map((item) => item.conceptId),
-    );
-    const elementary = approvedQuestions.filter(
-      (item) => item.level === "旅行新手" && item.kind !== "tf",
-    );
-    const poolConcepts = new Set(elementary.map((item) => item.conceptId));
-    return new Set([...warmupConcepts, ...poolConcepts]);
-  }
-
-  const stage = educationStages[stageIndex];
-  const levelPool = approvedQuestions.filter((item) => stage.pool.includes(item.level));
-  const travelPool = includesTravelKnowledge(stageIndex)
-    ? travelKnowledgeQuestions.filter((item) => item.auditStatus === "approved")
-    : [];
-  const stagePool = travelPool.length > 0 ? [...levelPool, ...travelPool] : levelPool;
-  const filtered = filterPoolForStage(stagePool, stageIndex);
-  return new Set(filtered.map((item) => item.conceptId));
-}
-
-function stageQuestionCount(plan, stageIndex) {
-  const start = plan.stageStarts[stageIndex];
-  if (start === undefined) return 0;
-  const end = plan.stageStarts[stageIndex + 1] ?? plan.questions.length;
-  return end - start;
-}
-
-function analyzeRunPlan(plan) {
-  const stageAudits = [];
+function analyzePlan(plan) {
   const ruleViolations = [];
-  let fallbackCount = 0;
-
-  for (let stageIndex = 0; stageIndex <= FINAL_STAGE_INDEX; stageIndex += 1) {
-    const expected = questionsPerStage(stageIndex);
-    const actual = stageQuestionCount(plan, stageIndex);
-    const stageQuestions = plan.questions.filter(
-      (_, index) => getStageIndex(plan.stageStarts, index) === stageIndex,
-    );
-    const violations = stageQuestions
-      .map((question) => auditQuestionForStage(question, stageIndex))
-      .filter(Boolean);
-    ruleViolations.push(...violations);
-    fallbackCount += violations.length;
-
-    stageAudits.push({
-      stageIndex,
-      grade: educationStages[stageIndex].name,
-      group: educationStages[stageIndex].group,
-      questionsRequired: expected,
-      questionsDrawn: actual,
-      sufficient: actual >= expected,
-      shortfall: actual < expected ? expected - actual : 0,
-      distinctConceptsEligible: eligibleConceptsForStage(stageIndex).size,
-      graduation: isGraduationStage(stageIndex),
-      ruleViolations: violations,
-      nonCompliantQuestionIds: violations.map((item) => item.questionId),
-    });
+  for (let index = 0; index < plan.questions.length; index += 1) {
+    const stageIndex = getStageIndex(plan.stageStarts, index);
+    const violation = auditQuestionForStage(plan.questions[index], stageIndex);
+    if (violation) ruleViolations.push(violation);
   }
-
-  return { stageAudits, ruleViolations, fallbackCount };
+  return ruleViolations;
 }
 
-const inventory = [];
-const conceptGaps = [];
-
-for (let stageIndex = 0; stageIndex <= FINAL_STAGE_INDEX; stageIndex += 1) {
-  const expected = questionsPerStage(stageIndex);
-  const available = eligibleConceptsForStage(stageIndex).size;
-  const sufficient = available >= expected;
-  const row = {
-    stageIndex,
-    grade: educationStages[stageIndex].name,
-    questionsRequired: expected,
-    distinctConcepts: available,
-    sufficient,
-    graduation: isGraduationStage(stageIndex),
+function simulateSeed(seed, avoidQuestionIds = [], avoidConceptIds = []) {
+  setGameRandomSeed(seed);
+  const playable = buildPlayableRunPlan(avoidQuestionIds, avoidConceptIds);
+  resetGameRandom();
+  const confirmedGaps = playable.gaps.filter((gap) => gap.kind === "confirmed_gap");
+  const notSimulated = playable.gaps.filter((gap) => gap.kind === "not_simulated");
+  const ruleViolations = playable.plan ? analyzePlan(playable.plan) : [];
+  return {
+    seed,
+    playableStageCount: playable.playableStageCount,
+    totalQuestions: playable.totalQuestions,
+    completeThroughFinal: playable.completeThroughFinal,
+    confirmedGaps,
+    notSimulated,
+    ruleViolations,
+    firstConfirmedGapStage: confirmedGaps[0]?.stageIndex ?? null,
   };
-  inventory.push(row);
-  if (!sufficient) {
-    conceptGaps.push({
-      ...row,
-      shortfall: expected - available,
-      note: "嚴格 pool 內不重複知識點不足（未使用備援放寬）",
-    });
-  }
 }
 
-const plan = buildFullRunPlan([], []);
-const { stageAudits, ruleViolations, fallbackCount } = analyzeRunPlan(plan);
-const drawGaps = stageAudits.filter((item) => !item.sufficient);
-const compliantQuestions = plan.questions.filter((question, index) =>
-  questionMatchesStageRules(question, getStageIndex(plan.stageStarts, index)),
-);
+const seedResults = SEEDS.map((seed) => simulateSeed(seed));
+const replay = simulateSeed(42, ["hand:ybriou"], ["fact:富士山"]);
 
+const gapRange = {
+  minPlayableStages: Math.min(...seedResults.map((item) => item.playableStageCount)),
+  maxPlayableStages: Math.max(...seedResults.map((item) => item.playableStageCount)),
+  minQuestions: Math.min(...seedResults.map((item) => item.totalQuestions)),
+  maxQuestions: Math.max(...seedResults.map((item) => item.totalQuestions)),
+  firstGapStages: [...new Set(seedResults.map((item) => item.firstConfirmedGapStage).filter((item) => item !== null))],
+};
+
+const representative = seedResults[0];
 const report = {
-  version: 2,
+  version: 3,
   generatedAt: new Date().toISOString(),
+  seeds: SEEDS,
   summary: {
-    stages: educationStages.length,
-    maxRunQuestions: plan.questions.length,
-    conceptInventoryGaps: conceptGaps.length,
-    strictDrawGaps: drawGaps.length,
-    ruleViolations: ruleViolations.length,
-    fallbackBypassCount: fallbackCount,
-    canCompleteFullRun:
-      drawGaps.length === 0 &&
-      ruleViolations.length === 0 &&
-      plan.questions.length >= plan.stageStarts.length,
-    compliantQuestionRatio: `${compliantQuestions.length}/${plan.questions.length}`,
+    seedRuns: seedResults.length,
+    gapRange,
+    replayPlayableStages: replay.playableStageCount,
+    ruleViolations: seedResults.every((item) => item.ruleViolations.length === 0),
+    allComplete: seedResults.every((item) => item.completeThroughFinal),
+    fallbackBypassCount: 0,
   },
-  inventory,
-  conceptGaps,
-  drawGaps,
-  stageAudits,
-  ruleViolations,
+  seedResults,
+  replayAvoidance: replay,
+  inventory: educationStages.map((stage, stageIndex) => ({
+    stageIndex,
+    grade: stage.name,
+    questionsRequired: questionsPerStage(stageIndex),
+    graduation: isGraduationStage(stageIndex),
+  })),
 };
 
 writeFileSync(resolve(root, "data/stage-coverage-report.json"), JSON.stringify(report, null, 2) + "\n");
 
 console.log(JSON.stringify(report.summary, null, 2));
-if (conceptGaps.length > 0) {
-  console.log("\n知識點缺口（嚴格 pool）：");
-  for (const gap of conceptGaps) {
-    console.log(`  ${gap.grade}: 需要 ${gap.questionsRequired}，可用 ${gap.distinctConcepts}（缺 ${gap.shortfall}）`);
-  }
-}
-if (drawGaps.length > 0) {
-  console.log("\n抽題缺口（未放寬難度）：");
-  for (const gap of drawGaps) {
-    console.log(`  ${gap.grade}: 需要 ${gap.questionsRequired}，實際 ${gap.questionsDrawn}（缺 ${gap.shortfall}）`);
-  }
-}
-if (ruleViolations.length > 0) {
-  console.log("\n不符合當級規則的題目：");
-  for (const violation of ruleViolations.slice(0, 10)) {
-    console.log(`  ${violation.grade} / ${violation.questionId}: ${violation.reason}`);
+if (!report.summary.allComplete) {
+  console.log("\n缺口範圍（多種子）：");
+  console.log(
+    `  可玩學級 ${gapRange.minPlayableStages}～${gapRange.maxPlayableStages}；首個確認缺口出現在 stage ${gapRange.firstGapStages.join(", ") || "無"}`,
+  );
+  for (const result of seedResults) {
+    if (result.confirmedGaps.length === 0) continue;
+    const gap = result.confirmedGaps[0];
+    console.log(
+      `  seed ${result.seed}: ${gap.grade} 缺 ${gap.shortfall} 題（${gap.drawn}/${gap.required}）`,
+    );
   }
 }
 
-const expectedTotal = educationStages.reduce((sum, _, index) => sum + questionsPerStage(index), 0);
-if (conceptGaps.length > 0 || drawGaps.length > 0 || ruleViolations.length > 0) {
-  console.error("\nStage coverage check failed. See data/stage-coverage-report.json for details.");
+assert.equal(
+  seedResults.every((item) => item.ruleViolations.length === 0),
+  true,
+  "drawn questions must match stage rules",
+);
+
+if (!report.summary.allComplete) {
+  console.error("\nStage coverage reports confirmed gaps (not masked).");
   process.exitCode = 1;
 } else {
-  assert.equal(plan.questions.length, expectedTotal);
   console.log("\nStage coverage check passed.");
 }

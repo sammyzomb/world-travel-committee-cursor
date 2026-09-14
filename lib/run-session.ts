@@ -1,3 +1,4 @@
+import type { QuestionVisualData } from "../components/question-visual";
 import {
   educationStages,
   passRequiredForStage,
@@ -5,6 +6,7 @@ import {
   STARTING_LIVES,
 } from "./game-config";
 import { getStageIndex } from "./game-round";
+import type { AnswerFeedback } from "./game-client-types";
 import type { RunAnswerRecord } from "./leaderboard-scoring";
 
 export type IssuedQuestion = {
@@ -13,6 +15,28 @@ export type IssuedQuestion = {
   stageIndex: number;
   options: string[];
   correctAnswer: string;
+  fact: string;
+  q: string;
+  level: string;
+  region: string;
+  kind?: "tf" | "choice";
+  category?: "世界地理" | "旅行知識" | "世界遺產";
+  questionType?: string;
+  visual?: QuestionVisualData;
+};
+
+export type RunSessionProgress = {
+  currentIndex: number;
+  score: number;
+  lives: number;
+  stageCorrect: number;
+  runStreak: number;
+  maxRunStreak: number;
+  endedEarly: boolean;
+  fullCompletion: boolean;
+  pendingReward: boolean;
+  answers: RunAnswerRecord[];
+  lastFeedback: AnswerFeedback | null;
 };
 
 export type StoredRunSession = {
@@ -22,10 +46,27 @@ export type StoredRunSession = {
   stageStarts: number[];
   exhausted: boolean;
   createdAt: string;
+  expiresAt: string;
+  progress: RunSessionProgress;
 };
 
+export const RUN_SESSION_TTL_MS = 24 * 60 * 60 * 1000;
+
 export function issuedQuestionsFromPlan(
-  questions: Array<{ id: string; conceptId: string; options: string[]; answer: number }>,
+  questions: Array<{
+    id: string;
+    conceptId: string;
+    options: string[];
+    answer: number;
+    fact: string;
+    q: string;
+    level: string;
+    region: string;
+    kind?: "tf" | "choice";
+    category?: "世界地理" | "旅行知識" | "世界遺產";
+    questionType?: string;
+    visual?: QuestionVisualData;
+  }>,
   stageStarts: number[],
 ): IssuedQuestion[] {
   return questions.map((question, index) => ({
@@ -34,6 +75,14 @@ export function issuedQuestionsFromPlan(
     stageIndex: getStageIndex(stageStarts, index),
     options: [...question.options],
     correctAnswer: question.options[question.answer] ?? "",
+    fact: question.fact,
+    q: question.q,
+    level: question.level,
+    region: question.region,
+    kind: question.kind,
+    category: question.category,
+    questionType: question.questionType,
+    visual: question.visual,
   }));
 }
 
@@ -115,10 +164,6 @@ export function validateIssuedRunPlayback(
 
   if (!endedEarly) {
     const finalStageIndex = educationStages.length - 1;
-    const finalStart = issued.findIndex((item) => item.stageIndex === finalStageIndex);
-    if (finalStart < 0) {
-      return "incomplete run marked as not ended early";
-    }
     const finalIssued = issued.filter((item) => item.stageIndex === finalStageIndex);
     const finalAnswers = verified.verified.filter((item) => item.stageIndex === finalStageIndex);
     if (finalAnswers.length !== finalIssued.length) {
