@@ -7,6 +7,7 @@ import {
   isFullCompletion,
   stageReachedName,
   validateRunSubmission,
+  verifyRunAnswers,
   type RunSubmission,
 } from "../../../lib/leaderboard-scoring";
 
@@ -91,10 +92,15 @@ export async function POST(request: Request) {
       return Response.json({ error: "提交過於頻繁，請稍後再試" }, { status: 429 });
     }
 
-    const { score, correctCount } = computeRunScore(payload.answers);
-    const stageIndex = highestPassedStageIndex(payload.answers, payload.endedEarly);
+    const verifiedAnswers = verifyRunAnswers(payload.answers);
+    if (!verifiedAnswers.ok) {
+      return Response.json({ error: verifiedAnswers.error }, { status: 400 });
+    }
+
+    const { score, correctCount } = computeRunScore(verifiedAnswers.verified);
+    const stageIndex = highestPassedStageIndex(verifiedAnswers.verified, payload.endedEarly);
     const stageReached = stageReachedName(stageIndex);
-    const completed = isFullCompletion(payload.answers, payload.endedEarly);
+    const completed = isFullCompletion(verifiedAnswers.verified, payload.endedEarly);
 
     const currentTop = await db
       .select({ score: leaderboardEntries.score })

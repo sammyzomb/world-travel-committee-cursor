@@ -409,5 +409,6 @@ export const questionBankStats = {
   expandedGenerated: expandedQuestions.length,
   approved: approvedQuestions.length,
   pending: allQuestions.filter((item) => item.auditStatus === "pending").length,
+  disabled: allQuestions.filter((item) => item.auditStatus === "disabled").length,
   total: warmupQuestions.length + allQuestions.length,
 } as const;

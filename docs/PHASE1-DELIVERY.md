@@ -21,7 +21,8 @@
 - 畢業節點：小六、國三、高三、大四、研二。
 
 ### 排行榜
-- 伺服器依 `answers` 重算分數；`sessionToken` 防重複提交；60 秒 5 次限流。
+- 伺服器依 `selectedOption` 對照題庫重算正確與分數，**不信任** client 的 `correct` 欄位。
+- `sessionToken` 防重複提交；60 秒 5 次限流。
 - Cloudflare D1 為正式持久化方案；Netlify 建置使用 stub（誠實回報未連線）。
 - 不刪除既有正式成績；不執行破壞性資料遷移。
 
@@ -38,7 +39,8 @@
 - 同局 concept / id 去重
 - 完整 18 級抽題（90 題）
 - 已審核題 visual 不洩漏答案
-- 分數重算、重複提交、空答案驗證
+- 分數重算（含竄改 `correct` 旗標）、重複提交、空答案、`selectedOption` 驗證
+- 整局 3 次機會常數、題庫不足不標 exhausted（完整 18 級）
 
 另執行 `npm run build` 與 `npm run lint`（見 commit 輸出）。
 

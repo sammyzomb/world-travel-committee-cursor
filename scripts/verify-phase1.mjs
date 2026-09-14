@@ -18,7 +18,9 @@ import {
 import {
   computeRunScore,
   isFullCompletion,
+  STARTING_LIVES,
   validateRunSubmission,
+  verifyRunAnswers,
 } from "../lib/leaderboard-scoring.ts";
 import { approvedQuestions, questionBankStats } from "../lib/questions.ts";
 import { visualLeaksAnswer } from "../lib/visual-safety.ts";
@@ -26,6 +28,7 @@ import { visualLeaksAnswer } from "../lib/visual-safety.ts";
 function run() {
   assert.equal(QUESTIONS_PER_STAGE, 5);
   assert.equal(WARMUP_QUESTIONS_FIRST_STAGE, 3);
+  assert.equal(STARTING_LIVES, 3);
   assert.equal(passRequiredForStage(), 3);
   assert.equal(FINAL_STAGE_INDEX, 17);
   assert.equal(educationStages.length, 18);
@@ -104,11 +107,30 @@ function run() {
       return index >= start && index < end;
     }),
     selected: item.answer,
+    selectedOption: item.options[item.answer] ?? "",
     correct: true,
   }));
-  const score = computeRunScore(sampleAnswers);
+  const verified = verifyRunAnswers(sampleAnswers);
+  assert.equal(verified.ok, true);
+  const score = computeRunScore(verified.verified);
   assert.equal(score.correctCount, sampleAnswers.length);
-  assert.ok(isFullCompletion(sampleAnswers, false));
+  assert.ok(isFullCompletion(verified.verified, false));
+  assert.ok(!isFullCompletion(verified.verified, true), "endedEarly must not count as full completion");
+
+  const firstQuestion = plan.questions[0];
+  const wrongOption =
+    firstQuestion.options.find((option) => option !== firstQuestion.options[firstQuestion.answer]) ??
+    "wrong";
+  const tamperedCorrectFlag = sampleAnswers.map((item, index) =>
+    index === 0 ? { ...item, correct: true, selectedOption: wrongOption } : item,
+  );
+  const tamperedVerify = verifyRunAnswers(tamperedCorrectFlag);
+  assert.equal(tamperedVerify.ok, true);
+  assert.equal(tamperedVerify.verified[0].correct, false, "server must not trust client correct flag");
+  assert.ok(
+    computeRunScore(tamperedVerify.verified).correctCount < sampleAnswers.length,
+    "tampered answer must reduce score",
+  );
 
   const validationError = validateRunSubmission({
     sessionToken: "test-session-token",
@@ -148,6 +170,7 @@ function run() {
         conceptId: sampleAnswers[0].conceptId,
         stageIndex: 0,
         selected: 0,
+        selectedOption: sampleAnswers[0].selectedOption,
         correct: true,
       },
       {
@@ -155,6 +178,7 @@ function run() {
         conceptId: "duplicate-concept",
         stageIndex: 0,
         selected: 0,
+        selectedOption: sampleAnswers[0].selectedOption,
         correct: true,
       },
     ],
@@ -162,8 +186,38 @@ function run() {
   });
   assert.ok(tampered?.includes("duplicate"), "should reject duplicate questionId");
 
+  const missingSelectedOption = validateRunSubmission({
+    sessionToken: "missing-option-test",
+    playerName: "Tester",
+    answers: [{ ...sampleAnswers[0], selectedOption: "" }],
+    endedEarly: true,
+  });
+  assert.ok(missingSelectedOption?.includes("selectedOption"), "should require selectedOption");
+
+  const fakeQuestion = validateRunSubmission({
+    sessionToken: "fake-question-test",
+    playerName: "Tester",
+    answers: [{ ...sampleAnswers[0], questionId: "fake:question", selectedOption: "x" }],
+    endedEarly: true,
+  });
+  assert.equal(fakeQuestion, null, "validateRunSubmission allows unknown id; verifyRunAnswers catches it");
+  const fakeVerify = verifyRunAnswers([
+    { ...sampleAnswers[0], questionId: "fake:question", selectedOption: "x" },
+  ]);
+  assert.equal(fakeVerify.ok, false, "unknown questionId must fail verification");
+
+  const exhaustedProbe = createRound([]);
+  let exhaustedPlan = exhaustedProbe;
+  for (let stageIndex = 1; stageIndex <= FINAL_STAGE_INDEX; stageIndex += 1) {
+    const next = appendNextStage(exhaustedPlan, stageIndex);
+    if (!next) break;
+    exhaustedPlan = next;
+  }
+  assert.ok(!exhaustedPlan.exhausted, "full bank must not mark exhausted before final stage");
+
   const restartRound = createRound(plan.questions.map((item) => item.id));
   assert.ok(restartRound.questions.length > 0, "restart with avoid list");
+  assert.equal(new Set(restartRound.questions.map((item) => item.id)).size, restartRound.questions.length);
 
   console.log("Phase 1 verification passed.");
   console.log(

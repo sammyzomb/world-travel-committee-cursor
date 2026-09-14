@@ -19,7 +19,7 @@ export function QuestionVisual({ visual }: { visual: QuestionVisualData }) {
       <figure className="question-photo question-photo-compact">
         <img
           src={visual.image}
-          alt={visual.label}
+          alt="旅遊景色參考圖"
           loading="lazy"
           referrerPolicy="no-referrer"
           onError={() => setImageFailed(true)}

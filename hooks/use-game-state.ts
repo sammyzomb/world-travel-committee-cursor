@@ -126,6 +126,7 @@ export function useGameState() {
         conceptId: current.conceptId,
         stageIndex,
         selected: option,
+        selectedOption: current.options[option] ?? "",
         correct: isCorrect,
       });
       setSelected(option);
