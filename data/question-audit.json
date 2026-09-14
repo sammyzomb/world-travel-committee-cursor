@@ -1,8 +1,596 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-14T02:16:31.906Z",
-  "description": "Per-question audit overrides. Do not blanket-approve hand-curated items here.",
+  "updatedAt": "2026-09-14T03:18:37.454Z",
+  "description": "Per-question audit overrides. Hand/travel/tour default pending until validated here.",
   "overrides": {
+    "hand:ybriou": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:hand-curated",
+      "note": "結構與解析一致（audit-script:curated）"
+    },
+    "hand:oa9lm7": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:hand-curated",
+      "note": "結構與解析一致（audit-script:curated）"
+    },
+    "hand:q21a7v": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:hand-curated",
+      "note": "結構與解析一致（audit-script:curated）"
+    },
+    "hand:hrc6ba": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:hand-curated",
+      "note": "結構與解析一致（audit-script:curated）"
+    },
+    "hand:15g9gtt": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:hand-curated",
+      "note": "結構與解析一致（audit-script:curated）"
+    },
+    "hand:19uaejo": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:hand-curated",
+      "note": "結構與解析一致（audit-script:curated）"
+    },
+    "hand:1mrtrai": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:hand-curated",
+      "note": "結構與解析一致（audit-script:curated）"
+    },
+    "hand:1yvzo9e": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:hand-curated",
+      "note": "結構與解析一致（audit-script:curated）"
+    },
+    "hand:13xdlfq": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:hand-curated",
+      "note": "結構與解析一致（audit-script:curated）"
+    },
+    "hand:1ho4ws7": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:hand-curated",
+      "note": "結構與解析一致（audit-script:curated）"
+    },
+    "hand:95au04": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:hand-curated",
+      "note": "結構與解析一致（audit-script:curated）"
+    },
+    "hand:1ikoxzi": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:hand-curated",
+      "note": "結構與解析一致（audit-script:curated）"
+    },
+    "hand:ju04ca": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:hand-curated",
+      "note": "結構與解析一致（audit-script:curated）"
+    },
+    "hand:1jewk1n": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:hand-curated",
+      "note": "結構與解析一致（audit-script:curated）"
+    },
+    "hand:1g61qon": {
+      "auditStatus": "disabled",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:hand-curated",
+      "note": "解析未支持正確答案"
+    },
+    "hand:1f7fu7j": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:hand-curated",
+      "note": "結構與解析一致（audit-script:curated）"
+    },
+    "hand:1z02se1": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:hand-curated",
+      "note": "結構與解析一致（audit-script:curated）"
+    },
+    "hand:1h67rhl": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:hand-curated",
+      "note": "結構與解析一致（audit-script:curated）"
+    },
+    "hand:1k9oesf": {
+      "auditStatus": "disabled",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:hand-curated",
+      "note": "解析未支持正確答案"
+    },
+    "hand:s1clrq": {
+      "auditStatus": "disabled",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:hand-curated",
+      "note": "解析未支持正確答案"
+    },
+    "hand:186i5xi": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:hand-curated",
+      "note": "結構與解析一致（audit-script:curated）"
+    },
+    "hand:1aide8w": {
+      "auditStatus": "disabled",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:hand-curated",
+      "note": "世界之最類題目缺少定義或限定條件"
+    },
+    "hand:zn5jv": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:hand-curated",
+      "note": "結構與解析一致（audit-script:curated）"
+    },
+    "hand:qjw56x": {
+      "auditStatus": "disabled",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:hand-curated",
+      "note": "解析未支持正確答案"
+    },
+    "hand:1igpy0b": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:hand-curated",
+      "note": "結構與解析一致（audit-script:curated）"
+    },
+    "hand:1iuhygg": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:hand-curated",
+      "note": "結構與解析一致（audit-script:curated）"
+    },
+    "hand:kycsmb": {
+      "auditStatus": "disabled",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:hand-curated",
+      "note": "世界之最類題目缺少定義或限定條件"
+    },
+    "hand:akbl4l": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:hand-curated",
+      "note": "結構與解析一致（audit-script:curated）"
+    },
+    "hand:h010d6": {
+      "auditStatus": "disabled",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:hand-curated",
+      "note": "解析未支持正確答案"
+    },
+    "hand:1i4qff3": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:hand-curated",
+      "note": "結構與解析一致（audit-script:curated）"
+    },
+    "hand:17zyb5i": {
+      "auditStatus": "disabled",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:hand-curated",
+      "note": "解析未支持正確答案"
+    },
+    "hand:193zuba": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:hand-curated",
+      "note": "結構與解析一致（audit-script:curated）"
+    },
+    "hand:1tdegwb": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:hand-curated",
+      "note": "結構與解析一致（audit-script:curated）"
+    },
+    "hand:zohacc": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:hand-curated",
+      "note": "結構與解析一致（audit-script:curated）"
+    },
+    "hand:y68non": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:hand-curated",
+      "note": "結構與解析一致（audit-script:curated）"
+    },
+    "hand:16auv5w": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:hand-curated",
+      "note": "結構與解析一致（audit-script:curated）"
+    },
+    "hand:1ur7j3": {
+      "auditStatus": "disabled",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:hand-curated",
+      "note": "解析未支持正確答案"
+    },
+    "hand:5d7tls": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:hand-curated",
+      "note": "結構與解析一致（audit-script:curated）"
+    },
+    "hand:13pof09": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:hand-curated",
+      "note": "結構與解析一致（audit-script:curated）"
+    },
+    "hand:10k850": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:hand-curated",
+      "note": "結構與解析一致（audit-script:curated）"
+    },
+    "hand:rr66vk": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:hand-curated",
+      "note": "結構與解析一致（audit-script:curated）"
+    },
+    "hand:q22v9s": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:hand-curated",
+      "note": "結構與解析一致（audit-script:curated）"
+    },
+    "hand:15wsykn": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:hand-curated",
+      "note": "結構與解析一致（audit-script:curated）"
+    },
+    "hand:19offr8": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:hand-curated",
+      "note": "結構與解析一致（audit-script:curated）"
+    },
+    "hand:kzgye3": {
+      "auditStatus": "disabled",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:hand-curated",
+      "note": "解析未支持正確答案"
+    },
+    "hand:1rfhbj9": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:hand-curated",
+      "note": "結構與解析一致（audit-script:curated）"
+    },
+    "hand:10se5x8": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:hand-curated",
+      "note": "結構與解析一致（audit-script:curated）"
+    },
+    "hand:1pgerm4": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:hand-curated",
+      "note": "結構與解析一致（audit-script:curated）"
+    },
+    "hand:dz7exn": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:hand-curated",
+      "note": "結構與解析一致（audit-script:curated）"
+    },
+    "hand:yns548": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:hand-curated",
+      "note": "結構與解析一致（audit-script:curated）"
+    },
+    "hand:lo69s2": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:hand-curated",
+      "note": "結構與解析一致（audit-script:curated）"
+    },
+    "hand:1ojakg8": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:hand-curated",
+      "note": "結構與解析一致（audit-script:curated）"
+    },
+    "hand:1pltcdk": {
+      "auditStatus": "disabled",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:hand-curated",
+      "note": "解析未支持正確答案"
+    },
+    "travel:qsafxt": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:travel",
+      "note": "結構與解析一致（audit-script:curated）"
+    },
+    "travel:1wn1yzn": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:travel",
+      "note": "結構與解析一致（audit-script:curated）"
+    },
+    "travel:14gcru0": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:travel",
+      "note": "結構與解析一致（audit-script:curated）"
+    },
+    "travel:aoxjkj": {
+      "auditStatus": "disabled",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:travel",
+      "note": "解析未支持正確答案"
+    },
+    "travel:wviuv9": {
+      "auditStatus": "disabled",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:travel",
+      "note": "解析未支持正確答案"
+    },
+    "travel:13nztpi": {
+      "auditStatus": "disabled",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:travel",
+      "note": "解析未支持正確答案"
+    },
+    "travel:rbblo4": {
+      "auditStatus": "disabled",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:travel",
+      "note": "解析未支持正確答案"
+    },
+    "travel:qmn232": {
+      "auditStatus": "disabled",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:travel",
+      "note": "解析未支持正確答案"
+    },
+    "travel:pqp3qi": {
+      "auditStatus": "disabled",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:travel",
+      "note": "解析未支持正確答案"
+    },
+    "travel:1xr3gmw": {
+      "auditStatus": "disabled",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:travel",
+      "note": "解析未支持正確答案"
+    },
+    "travel:nt576s": {
+      "auditStatus": "disabled",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:travel",
+      "note": "解析未支持正確答案"
+    },
+    "travel:1ybh15d": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:travel",
+      "note": "結構與解析一致（audit-script:curated）"
+    },
+    "travel:17b3y8j": {
+      "auditStatus": "disabled",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:travel",
+      "note": "解析未支持正確答案"
+    },
+    "travel:wwwv4x": {
+      "auditStatus": "disabled",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:travel",
+      "note": "解析未支持正確答案"
+    },
+    "travel:5wzqpp": {
+      "auditStatus": "disabled",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:travel",
+      "note": "解析未支持正確答案"
+    },
+    "travel:1uty0aq": {
+      "auditStatus": "disabled",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:travel",
+      "note": "解析未支持正確答案"
+    },
+    "travel:b6pbfp": {
+      "auditStatus": "disabled",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:travel",
+      "note": "解析未支持正確答案"
+    },
+    "travel:8aa6t": {
+      "auditStatus": "disabled",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:travel",
+      "note": "解析未支持正確答案"
+    },
+    "travel:z7zlix": {
+      "auditStatus": "disabled",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:travel",
+      "note": "解析未支持正確答案"
+    },
+    "travel:1defwsy": {
+      "auditStatus": "disabled",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:travel",
+      "note": "解析未支持正確答案"
+    },
+    "travel:cypjzi": {
+      "auditStatus": "disabled",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:travel",
+      "note": "解析未支持正確答案"
+    },
+    "travel:rarqhe": {
+      "auditStatus": "disabled",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:travel",
+      "note": "解析未支持正確答案"
+    },
+    "travel:6r328b": {
+      "auditStatus": "disabled",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:travel",
+      "note": "解析未支持正確答案"
+    },
+    "travel:rzhhug": {
+      "auditStatus": "disabled",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:travel",
+      "note": "解析未支持正確答案"
+    },
+    "travel:1fz0974": {
+      "auditStatus": "disabled",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:travel",
+      "note": "解析未支持正確答案"
+    },
+    "tour:1xac2qy": {
+      "auditStatus": "pending",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:tour",
+      "note": "答題前視覺可能洩漏答案，待人工覆核"
+    },
+    "tour:1dn621v": {
+      "auditStatus": "pending",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:tour",
+      "note": "答題前視覺可能洩漏答案，待人工覆核"
+    },
+    "tour:g6fx2k": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:tour",
+      "note": "結構與解析一致（audit-script:curated）"
+    },
+    "tour:7ckkx7": {
+      "auditStatus": "disabled",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:tour",
+      "note": "解析未支持正確答案"
+    },
+    "tour:egzy7k": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:tour",
+      "note": "結構與解析一致（audit-script:curated）"
+    },
+    "tour:1n0xi8l": {
+      "auditStatus": "disabled",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:tour",
+      "note": "解析未支持正確答案"
+    },
+    "tour:epm9o2": {
+      "auditStatus": "pending",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:tour",
+      "note": "答題前視覺可能洩漏答案，待人工覆核"
+    },
+    "tour:1pozbwt": {
+      "auditStatus": "disabled",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:tour",
+      "note": "解析未支持正確答案"
+    },
+    "tour:hc7bd8": {
+      "auditStatus": "pending",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:tour",
+      "note": "答題前視覺可能洩漏答案，待人工覆核"
+    },
+    "tour:1x3gboq": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:tour",
+      "note": "結構與解析一致（audit-script:curated）"
+    },
+    "tour:60rldr": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:tour",
+      "note": "結構與解析一致（audit-script:curated）"
+    },
+    "tour:6ov6mk": {
+      "auditStatus": "pending",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:tour",
+      "note": "答題前視覺可能洩漏答案，待人工覆核"
+    },
+    "tour:cxo163": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:tour",
+      "note": "結構與解析一致（audit-script:curated）"
+    },
+    "tour:114dfww": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:tour",
+      "note": "結構與解析一致（audit-script:curated）"
+    },
+    "tour:1v95aio": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:tour",
+      "note": "結構與解析一致（audit-script:curated）"
+    },
+    "tour:1up0har": {
+      "auditStatus": "disabled",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:tour",
+      "note": "解析未支持正確答案"
+    },
+    "tour:kcogyl": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:tour",
+      "note": "結構與解析一致（audit-script:curated）"
+    },
+    "tour:1vh7s2x": {
+      "auditStatus": "disabled",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:tour",
+      "note": "解析未支持正確答案"
+    },
+    "tour:1tn74wy": {
+      "auditStatus": "disabled",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:tour",
+      "note": "解析未支持正確答案"
+    },
+    "tour:1mx240j": {
+      "auditStatus": "disabled",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:tour",
+      "note": "解析未支持正確答案"
+    },
     "expanded-landmark:13juzzf": {
       "auditStatus": "approved",
       "reviewedAt": "2026-09-14",

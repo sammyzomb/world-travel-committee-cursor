@@ -1,5 +1,6 @@
 import assert from "node:assert/strict";
 import {
+  educationStages,
   FINAL_STAGE_INDEX,
   graduationStageIndexes,
   optionCountForStage,
@@ -20,12 +21,14 @@ import {
   validateRunSubmission,
 } from "../lib/leaderboard-scoring.ts";
 import { approvedQuestions, questionBankStats } from "../lib/questions.ts";
+import { visualLeaksAnswer } from "../lib/visual-safety.ts";
 
 function run() {
   assert.equal(QUESTIONS_PER_STAGE, 5);
   assert.equal(WARMUP_QUESTIONS_FIRST_STAGE, 3);
   assert.equal(passRequiredForStage(), 3);
   assert.equal(FINAL_STAGE_INDEX, 17);
+  assert.equal(educationStages.length, 18);
   assert.equal(optionCountForStage(0), 2);
   assert.equal(optionCountForStage(2), 2);
   assert.equal(optionCountForStage(3), 3);
@@ -33,7 +36,20 @@ function run() {
 
   const round = createRound([]);
   assert.equal(getStageLength(round.stageStarts, round.questions.length, 0), 5);
-  const warmupIds = round.questions.slice(0, 3).map((item) => item.id);
+
+  const stageZero = round.questions.slice(0, 5);
+  const warmupSlice = stageZero.slice(0, 3);
+  assert.equal(warmupSlice.length, 3, "stage 0 must start with 3 warmup questions");
+  assert.ok(
+    warmupSlice.every((item) => item.kind === "tf"),
+    "first 3 questions in stage 0 must be true/false",
+  );
+  assert.ok(
+    stageZero.slice(3).every((item) => item.kind !== "tf"),
+    "warmup tf must not appear after position 3",
+  );
+
+  const warmupIds = warmupSlice.map((item) => item.id);
   assert.equal(new Set(warmupIds).size, 3);
   assert.ok(round.questions.every((item) => item.auditStatus === "approved"));
 
@@ -46,12 +62,39 @@ function run() {
     const nextPlan = appendNextStage(plan, stageIndex);
     assert.ok(nextPlan, `stage ${stageIndex} should append`);
     plan = nextPlan;
+    const optionCount = optionCountForStage(stageIndex);
+    const stageStart = plan.stageStarts[stageIndex];
+    const stageEnd = plan.stageStarts[stageIndex + 1] ?? plan.questions.length;
+    for (const item of plan.questions.slice(stageStart, stageEnd)) {
+      if (item.kind !== "tf") {
+        assert.ok(
+          item.options.length >= optionCount,
+          `stage ${stageIndex} question must have at least ${optionCount} options`,
+        );
+      }
+    }
   }
   assert.equal(plan.stageStarts.length, 18);
   assert.ok(!canDrawNextStage(plan, FINAL_STAGE_INDEX + 1));
 
   const allConceptIds = new Set(plan.questions.map((item) => item.conceptId));
   assert.equal(allConceptIds.size, plan.questions.length);
+
+  assert.ok(approvedQuestions.length >= 90, "need enough approved questions for full 18-stage run");
+
+  for (const item of approvedQuestions) {
+    if (!item.visual) continue;
+    const correct = item.options[item.answer] ?? "";
+    assert.ok(
+      !visualLeaksAnswer({
+        questionText: item.q,
+        correctAnswer: correct,
+        visualLabel: item.visual.label,
+        visualDetail: item.visual.detail,
+      }),
+      `visual leaks answer for ${item.id}`,
+    );
+  }
 
   const sampleAnswers = plan.questions.map((item, index) => ({
     questionId: item.id,
@@ -74,6 +117,22 @@ function run() {
     endedEarly: false,
   });
   assert.equal(validationError, null);
+
+  const incompleteRun = validateRunSubmission({
+    sessionToken: "incomplete-run",
+    playerName: "Tester",
+    answers: sampleAnswers.slice(0, 10),
+    endedEarly: true,
+  });
+  assert.equal(incompleteRun, null);
+
+  const emptyAnswers = validateRunSubmission({
+    sessionToken: "empty-run",
+    playerName: "Tester",
+    answers: [],
+    endedEarly: true,
+  });
+  assert.ok(emptyAnswers, "empty answers should fail validation");
 
   for (const idx of [5, 8, 11, 15, 17]) {
     assert.ok(graduationStageIndexes.has(idx), `graduation index ${idx}`);

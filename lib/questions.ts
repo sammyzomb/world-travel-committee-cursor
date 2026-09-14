@@ -9,6 +9,7 @@ import {
   type AuditStatus,
 } from "./question-metadata";
 import { inferQuestionType, type QuestionType } from "./question-types";
+import { safeVisualCaption } from "./visual-safety";
 
 const questionBank = questionBankJson as {
   warmupQuestions: RawQuestion[];
@@ -60,26 +61,56 @@ type ExpandedQuestionLevels = {
   capital: string;
 };
 
-function landmarkHintDetail(detail: string) {
-  const [region] = detail.split("・");
-  return region;
-}
-
-function landmarkVisual(landmark: string, detail: string): QuestionVisualData | undefined {
-  const image = getLandmarkImage(landmark);
-  const imageSrc = getLandmarkImageSrc(landmark);
-  const hintDetail = landmarkHintDetail(detail);
+function buildVisual(
+  raw: Pick<RawQuestion, "q" | "options" | "answer" | "region" | "landmark" | "landmarkDetail">,
+): QuestionVisualData | undefined {
+  if (!raw.landmark) return undefined;
+  const correctAnswer = raw.options[raw.answer] ?? "";
+  const caption = safeVisualCaption({
+    questionText: raw.q,
+    correctAnswer,
+    region: raw.region,
+    landmark: raw.landmark,
+    landmarkDetail: raw.landmarkDetail,
+  });
+  const image = getLandmarkImage(raw.landmark);
+  const imageSrc = getLandmarkImageSrc(raw.landmark);
   if (!image || !imageSrc) {
-    return { type: "map", label: landmark, detail: hintDetail };
+    return { type: "map", label: caption.label, detail: caption.detail };
   }
-  return { type: "photo", label: landmark, detail: hintDetail, image: imageSrc, credit: image.credit };
+  return {
+    type: "photo",
+    label: caption.label,
+    detail: caption.detail,
+    image: imageSrc,
+    credit: image.credit,
+  };
 }
 
-function factVisual(landmark: string, label: string, detail: string): QuestionVisualData {
+function factVisual(
+  landmark: string,
+  raw: Pick<RawQuestion, "q" | "options" | "answer" | "region">,
+  detail: string,
+): QuestionVisualData {
+  const caption = safeVisualCaption({
+    questionText: raw.q,
+    correctAnswer: raw.options[raw.answer] ?? "",
+    region: raw.region,
+    landmark,
+    landmarkDetail: detail,
+  });
   const image = getLandmarkImage(landmark);
   const imageSrc = getLandmarkImageSrc(landmark);
-  if (!image || !imageSrc) return { type: "map", label, detail };
-  return { type: "photo", label, detail, image: imageSrc, credit: image.credit };
+  if (!image || !imageSrc) {
+    return { type: "map", label: caption.label, detail: caption.detail };
+  }
+  return {
+    type: "photo",
+    label: caption.label,
+    detail: caption.detail,
+    image: imageSrc,
+    credit: image.credit,
+  };
 }
 
 function attachMetadata(
@@ -116,11 +147,8 @@ function attachVisual(
     grades: string[];
   },
 ): Question {
-  const { landmark, landmarkDetail, ...rest } = raw;
-  const visual = landmark && landmarkDetail
-    ? landmarkVisual(landmark, landmarkDetail)
-    : undefined;
-  const base = visual ? { ...rest, visual } : rest;
+  const visual = buildVisual(raw);
+  const base = visual ? { ...raw, visual } : raw;
   return attachMetadata(base, meta);
 }
 
@@ -160,17 +188,45 @@ function buildExpandedQuestions(facts: ExpandedFact[]): Question[] {
     const approved = QUESTION_SOURCES.restCountries;
     const pending = QUESTION_SOURCES.expandedPending;
     const base = { region: continent, category: "世界地理" as const };
+    const capitalRaw = {
+      q: `${country}的首都是哪一座城市？`,
+      options: [capital, ...distractor(capitals, capital)],
+      answer: 0,
+      region: continent,
+    };
+    const landmarkRaw = {
+      q: `${landmark}位於哪一座城市？`,
+      options: [city, ...distractor(cities, city)],
+      answer: 0,
+      region: continent,
+    };
+    const cityCountryRaw = {
+      q: `${city}位於哪一個國家？`,
+      options: [country, ...distractor(countries, country)],
+      answer: 0,
+      region: continent,
+    };
+    const continentRaw = {
+      q: `${country}位於哪一洲？`,
+      options: [continent, ...distractor(continents, continent)],
+      answer: 0,
+      region: "洲別測驗",
+    };
+    const reverseCapitalRaw = {
+      q: `哪一個國家的首都是${capital}？`,
+      options: [country, ...distractor(countries, country)],
+      answer: 0,
+      region: continent,
+    };
     return [
       attachMetadata(
         {
           ...base,
           questionType: "capital" as const,
           level: levels.capital,
-          q: `${country}的首都是哪一座城市？`,
-          options: [capital, ...distractor(capitals, capital)],
-          answer: 0,
+          ...capitalRaw,
           fact: `${capital}是${country}的首都。`,
-          visual: factVisual(landmark, landmark, `${country}・${continent}`),
+          visual: factVisual(landmark, capitalRaw, `${country}・${continent}`),
         },
         {
           id: makeQuestionId("expanded-capital", `${country}:${capital}`),
@@ -185,11 +241,9 @@ function buildExpandedQuestions(facts: ExpandedFact[]): Question[] {
           ...base,
           questionType: "landmark-city" as const,
           level: levels.landmark,
-          q: `${landmark}位於哪一座城市？`,
-          options: [city, ...distractor(cities, city)],
-          answer: 0,
+          ...landmarkRaw,
           fact: `${landmark}位於${city}。`,
-          visual: factVisual(landmark, landmark, `${country}・${continent}`),
+          visual: factVisual(landmark, landmarkRaw, `${country}・${continent}`),
         },
         {
           id: makeQuestionId("expanded-landmark", `${landmark}:${city}`),
@@ -204,11 +258,9 @@ function buildExpandedQuestions(facts: ExpandedFact[]): Question[] {
           ...base,
           questionType: "country-pick" as const,
           level: levels.cityCountry,
-          q: `${city}位於哪一個國家？`,
-          options: [country, ...distractor(countries, country)],
-          answer: 0,
+          ...cityCountryRaw,
           fact: `${city}是${country}的重要城市。`,
-          visual: factVisual(landmark, city, continent),
+          visual: factVisual(landmark, cityCountryRaw, continent),
         },
         {
           id: makeQuestionId("expanded-city", `${city}:${country}`),
@@ -222,13 +274,10 @@ function buildExpandedQuestions(facts: ExpandedFact[]): Question[] {
         {
           questionType: "continent" as const,
           level: levels.continent,
-          region: "洲別測驗",
           category: "世界地理" as const,
-          q: `${country}位於哪一洲？`,
-          options: [continent, ...distractor(continents, continent)],
-          answer: 0,
+          ...continentRaw,
           fact: `${country}位於${continent}。`,
-          visual: factVisual(landmark, landmark, "旅遊地標"),
+          visual: factVisual(landmark, continentRaw, "旅遊地標"),
         },
         {
           id: makeQuestionId("expanded-continent", `${country}:${continent}`),
@@ -243,11 +292,9 @@ function buildExpandedQuestions(facts: ExpandedFact[]): Question[] {
           ...base,
           questionType: "reverse-capital" as const,
           level: levels.capital,
-          q: `哪一個國家的首都是${capital}？`,
-          options: [country, ...distractor(countries, country)],
-          answer: 0,
+          ...reverseCapitalRaw,
           fact: `${capital}是${country}的首都。`,
-          visual: factVisual(landmark, capital, `${country}・${continent}`),
+          visual: factVisual(landmark, reverseCapitalRaw, `${country}・${continent}`),
         },
         {
           id: makeQuestionId("expanded-reverse-capital", `${capital}:${country}`),
@@ -286,7 +333,9 @@ function applyAuditOverrides(questions: Question[]): Question[] {
   });
 }
 
-const curatedSource = QUESTION_SOURCES.handCurated;
+const handSource = QUESTION_SOURCES.handCurated;
+const travelSource = QUESTION_SOURCES.travelKnowledge;
+const tourSource = QUESTION_SOURCES.tour;
 const warmupSource = QUESTION_SOURCES.warmup;
 
 export const warmupQuestions: Question[] = questionBank.warmupQuestions.map((raw, index) =>
@@ -298,49 +347,55 @@ export const warmupQuestions: Question[] = questionBank.warmupQuestions.map((raw
     grades: ["小一"],
   }),
 );
-export const handPickedQuestions: Question[] = withDefaultCategory(
-  questionBank.questions.map((raw, index) =>
-    attachVisual(raw, {
-      id: makeQuestionId("hand", raw.q),
-      conceptId: makeConceptId("hand", String(index)),
-      source: curatedSource.label,
-      auditStatus: curatedSource.auditStatus,
-      grades: [],
-    }),
+export const handPickedQuestions: Question[] = applyAuditOverrides(
+  withDefaultCategory(
+    questionBank.questions.map((raw, index) =>
+      attachVisual(raw, {
+        id: makeQuestionId("hand", raw.q),
+        conceptId: makeConceptId("hand", String(index)),
+        source: handSource.label,
+        auditStatus: handSource.auditStatus,
+        grades: [],
+      }),
+    ),
+    "世界地理",
   ),
-  "世界地理",
 );
-export const travelKnowledgeQuestions: Question[] = withDefaultCategory(
-  questionBank.travelKnowledgeQuestions.map((raw, index) =>
-    attachVisual(raw, {
-      id: makeQuestionId("travel", raw.q),
-      conceptId: makeConceptId("travel", String(index)),
-      source: curatedSource.label,
-      auditStatus: curatedSource.auditStatus,
-      grades: [],
-    }),
+export const travelKnowledgeQuestions: Question[] = applyAuditOverrides(
+  withDefaultCategory(
+    questionBank.travelKnowledgeQuestions.map((raw, index) =>
+      attachVisual(raw, {
+        id: makeQuestionId("travel", raw.q),
+        conceptId: makeConceptId("travel", String(index)),
+        source: travelSource.label,
+        auditStatus: travelSource.auditStatus,
+        grades: [],
+      }),
+    ),
+    "旅行知識",
   ),
-  "旅行知識",
 );
-export const tourQuestions: Question[] = (questionBank.tourQuestions ?? []).map((raw, index) => {
-  const question = attachVisual(raw, {
-    id: makeQuestionId("tour", raw.q),
-    conceptId: makeConceptId("tour", String(index)),
-    source: curatedSource.label,
-    auditStatus: curatedSource.auditStatus,
-    grades: [],
-  });
-  return { ...question, category: raw.category ?? "世界地理" };
-});
+export const tourQuestions: Question[] = applyAuditOverrides(
+  (questionBank.tourQuestions ?? []).map((raw, index) => {
+    const question = attachVisual(raw, {
+      id: makeQuestionId("tour", raw.q),
+      conceptId: makeConceptId("tour", String(index)),
+      source: tourSource.label,
+      auditStatus: tourSource.auditStatus,
+      grades: [],
+    });
+    return { ...question, category: raw.category ?? "世界地理" };
+  }),
+);
 export const expandedQuestions: Question[] = applyAuditOverrides(
   buildExpandedQuestions(questionBank.expandedFacts),
 );
-export const allQuestions: Question[] = applyAuditOverrides([
+export const allQuestions: Question[] = [
   ...handPickedQuestions,
   ...travelKnowledgeQuestions,
   ...tourQuestions,
   ...expandedQuestions,
-]);
+];
 export const approvedQuestions: Question[] = allQuestions.filter(
   (item) => item.auditStatus === "approved",
 );

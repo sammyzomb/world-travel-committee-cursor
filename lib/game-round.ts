@@ -174,11 +174,8 @@ function drawStageQuestions(
   if (stageIndex > FINAL_STAGE_INDEX) return [];
 
   if (stageIndex === 0) {
-    const approvedWarmups = warmupQuestions.filter((item) => item.auditStatus === "approved");
-    const freshWarmups = approvedWarmups.filter((item) => !previousQuestionIds.includes(item.id));
-    const warmupPool =
-      freshWarmups.length >= WARMUP_QUESTIONS_FIRST_STAGE ? freshWarmups : approvedWarmups;
-    const warmupChoices = warmupPool
+    const warmupChoices = warmupQuestions
+      .filter((item) => item.auditStatus === "approved" && item.kind === "tf")
       .slice(0, WARMUP_QUESTIONS_FIRST_STAGE)
       .map((item) => withOptionCount(item, 2));
     warmupChoices.forEach((item) => {

@@ -23,7 +23,10 @@ export function makeConceptId(kind: string, subject: string) {
 
 export const QUESTION_SOURCES = {
   warmup: { label: "內建送分題庫", auditStatus: "approved" as const },
-  handCurated: { label: "內建精選題庫", auditStatus: "approved" as const },
+  /** 精選題需通過 validate 腳本後才在 question-audit.json 標為 approved。 */
+  handCurated: { label: "內建精選題庫", auditStatus: "pending" as const },
+  travelKnowledge: { label: "內建旅行知識", auditStatus: "pending" as const },
+  tour: { label: "內建行程題庫", auditStatus: "pending" as const },
   restCountries: { label: "REST Countries", auditStatus: "approved" as const },
   expandedPending: { label: "REST Countries（待人工覆核）", auditStatus: "pending" as const },
 } satisfies Record<string, QuestionSource>;
