@@ -6,6 +6,7 @@ import {
   highestPassedStageIndex,
   isFullCompletion,
   stageReachedName,
+  validateRunProgress,
   validateRunSubmission,
   verifyRunAnswers,
   type RunSubmission,
@@ -95,6 +96,11 @@ export async function POST(request: Request) {
     const verifiedAnswers = verifyRunAnswers(payload.answers);
     if (!verifiedAnswers.ok) {
       return Response.json({ error: verifiedAnswers.error }, { status: 400 });
+    }
+
+    const progressError = validateRunProgress(verifiedAnswers.verified, payload.endedEarly);
+    if (progressError) {
+      return Response.json({ error: progressError }, { status: 400 });
     }
 
     const { score, correctCount } = computeRunScore(verifiedAnswers.verified);

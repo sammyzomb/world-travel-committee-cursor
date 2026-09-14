@@ -21,7 +21,9 @@ import {
 import {
   computeRunScore,
   isFullCompletion,
+  QUESTION_BANK_VERSION,
   STARTING_LIVES,
+  validateRunProgress,
   validateRunSubmission,
   verifyRunAnswers,
 } from "../lib/leaderboard-scoring.ts";
@@ -184,25 +186,39 @@ function run() {
     "tampered answer must reduce score",
   );
 
-  const validationError = validateRunSubmission({
+  const submissionBase = {
     sessionToken: "test-session-token",
     playerName: "Tester",
+    questionBankVersion: QUESTION_BANK_VERSION,
+  };
+
+  const validationError = validateRunSubmission({
+    ...submissionBase,
     answers: sampleAnswers,
     endedEarly: false,
   });
   assert.equal(validationError, null);
+  assert.equal(validateRunProgress(verified.verified, false), null);
 
   const incompleteRun = validateRunSubmission({
+    ...submissionBase,
     sessionToken: "incomplete-run",
-    playerName: "Tester",
     answers: sampleAnswers.slice(0, 10),
     endedEarly: true,
   });
   assert.equal(incompleteRun, null);
 
+  const staleVersion = validateRunSubmission({
+    ...submissionBase,
+    questionBankVersion: "stale-version",
+    answers: sampleAnswers.slice(0, 3),
+    endedEarly: true,
+  });
+  assert.match(staleVersion, /題庫已更新/);
+
   const emptyAnswers = validateRunSubmission({
+    ...submissionBase,
     sessionToken: "empty-run",
-    playerName: "Tester",
     answers: [],
     endedEarly: true,
   });
@@ -214,6 +230,7 @@ function run() {
   }
 
   const tampered = validateRunSubmission({
+    ...submissionBase,
     sessionToken: "tamper-test",
     playerName: "Hacker",
     answers: [
@@ -239,16 +256,16 @@ function run() {
   assert.ok(tampered?.includes("duplicate"), "should reject duplicate questionId");
 
   const missingSelectedOption = validateRunSubmission({
+    ...submissionBase,
     sessionToken: "missing-option-test",
-    playerName: "Tester",
     answers: [{ ...sampleAnswers[0], selectedOption: "" }],
     endedEarly: true,
   });
   assert.ok(missingSelectedOption?.includes("selectedOption"), "should require selectedOption");
 
   const fakeQuestion = validateRunSubmission({
+    ...submissionBase,
     sessionToken: "fake-question-test",
-    playerName: "Tester",
     answers: [{ ...sampleAnswers[0], questionId: "fake:question", selectedOption: "x" }],
     endedEarly: true,
   });

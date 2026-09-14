@@ -13,7 +13,7 @@ import {
   passRequiredForStage,
   type RoundPlan,
 } from "../lib/game-round";
-import type { RunAnswerRecord } from "../lib/leaderboard-scoring";
+import { QUESTION_BANK_VERSION, type RunAnswerRecord } from "../lib/leaderboard-scoring";
 import type { LeaderboardEntry, SubmitState } from "../lib/leaderboard-types";
 import { loadPersonalBest, updatePersonalBest, type PersonalBest } from "../lib/player-progress";
 import type { Question } from "../lib/questions";
@@ -298,6 +298,7 @@ export function useGameState() {
         body: JSON.stringify({
           sessionToken: sessionToken.current,
           playerName: trimmed,
+          questionBankVersion: QUESTION_BANK_VERSION,
           answers: answerLog.current,
           endedEarly,
         }),

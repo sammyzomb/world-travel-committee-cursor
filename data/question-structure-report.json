@@ -1,0 +1,209 @@
+{
+  "version": 1,
+  "scope": "Source structure only; no factual, generated-option, image, or gameplay approval",
+  "checked": 268,
+  "errors": 0,
+  "warnings": 40,
+  "findings": [
+    {
+      "path": "questions[14]",
+      "severity": "warning",
+      "message": "Explanation needs human review; text matching cannot verify facts"
+    },
+    {
+      "path": "questions[18]",
+      "severity": "warning",
+      "message": "Explanation needs human review; text matching cannot verify facts"
+    },
+    {
+      "path": "questions[19]",
+      "severity": "warning",
+      "message": "Explanation needs human review; text matching cannot verify facts"
+    },
+    {
+      "path": "questions[23]",
+      "severity": "warning",
+      "message": "Explanation needs human review; text matching cannot verify facts"
+    },
+    {
+      "path": "questions[28]",
+      "severity": "warning",
+      "message": "Explanation needs human review; text matching cannot verify facts"
+    },
+    {
+      "path": "questions[30]",
+      "severity": "warning",
+      "message": "Explanation needs human review; text matching cannot verify facts"
+    },
+    {
+      "path": "questions[36]",
+      "severity": "warning",
+      "message": "Explanation needs human review; text matching cannot verify facts"
+    },
+    {
+      "path": "questions[44]",
+      "severity": "warning",
+      "message": "Explanation needs human review; text matching cannot verify facts"
+    },
+    {
+      "path": "questions[52]",
+      "severity": "warning",
+      "message": "Explanation needs human review; text matching cannot verify facts"
+    },
+    {
+      "path": "questions[61]",
+      "severity": "warning",
+      "message": "Explanation needs human review; text matching cannot verify facts"
+    },
+    {
+      "path": "questions[62]",
+      "severity": "warning",
+      "message": "Explanation needs human review; text matching cannot verify facts"
+    },
+    {
+      "path": "travelKnowledgeQuestions[3]",
+      "severity": "warning",
+      "message": "Explanation needs human review; text matching cannot verify facts"
+    },
+    {
+      "path": "travelKnowledgeQuestions[4]",
+      "severity": "warning",
+      "message": "Explanation needs human review; text matching cannot verify facts"
+    },
+    {
+      "path": "travelKnowledgeQuestions[5]",
+      "severity": "warning",
+      "message": "Explanation needs human review; text matching cannot verify facts"
+    },
+    {
+      "path": "travelKnowledgeQuestions[6]",
+      "severity": "warning",
+      "message": "Explanation needs human review; text matching cannot verify facts"
+    },
+    {
+      "path": "travelKnowledgeQuestions[7]",
+      "severity": "warning",
+      "message": "Explanation needs human review; text matching cannot verify facts"
+    },
+    {
+      "path": "travelKnowledgeQuestions[8]",
+      "severity": "warning",
+      "message": "Explanation needs human review; text matching cannot verify facts"
+    },
+    {
+      "path": "travelKnowledgeQuestions[9]",
+      "severity": "warning",
+      "message": "Explanation needs human review; text matching cannot verify facts"
+    },
+    {
+      "path": "travelKnowledgeQuestions[10]",
+      "severity": "warning",
+      "message": "Explanation needs human review; text matching cannot verify facts"
+    },
+    {
+      "path": "travelKnowledgeQuestions[12]",
+      "severity": "warning",
+      "message": "Explanation needs human review; text matching cannot verify facts"
+    },
+    {
+      "path": "travelKnowledgeQuestions[13]",
+      "severity": "warning",
+      "message": "Explanation needs human review; text matching cannot verify facts"
+    },
+    {
+      "path": "travelKnowledgeQuestions[14]",
+      "severity": "warning",
+      "message": "Explanation needs human review; text matching cannot verify facts"
+    },
+    {
+      "path": "travelKnowledgeQuestions[15]",
+      "severity": "warning",
+      "message": "Explanation needs human review; text matching cannot verify facts"
+    },
+    {
+      "path": "travelKnowledgeQuestions[16]",
+      "severity": "warning",
+      "message": "Explanation needs human review; text matching cannot verify facts"
+    },
+    {
+      "path": "travelKnowledgeQuestions[17]",
+      "severity": "warning",
+      "message": "Explanation needs human review; text matching cannot verify facts"
+    },
+    {
+      "path": "travelKnowledgeQuestions[18]",
+      "severity": "warning",
+      "message": "Explanation needs human review; text matching cannot verify facts"
+    },
+    {
+      "path": "travelKnowledgeQuestions[19]",
+      "severity": "warning",
+      "message": "Explanation needs human review; text matching cannot verify facts"
+    },
+    {
+      "path": "travelKnowledgeQuestions[20]",
+      "severity": "warning",
+      "message": "Explanation needs human review; text matching cannot verify facts"
+    },
+    {
+      "path": "travelKnowledgeQuestions[21]",
+      "severity": "warning",
+      "message": "Explanation needs human review; text matching cannot verify facts"
+    },
+    {
+      "path": "travelKnowledgeQuestions[22]",
+      "severity": "warning",
+      "message": "Explanation needs human review; text matching cannot verify facts"
+    },
+    {
+      "path": "travelKnowledgeQuestions[23]",
+      "severity": "warning",
+      "message": "Explanation needs human review; text matching cannot verify facts"
+    },
+    {
+      "path": "travelKnowledgeQuestions[24]",
+      "severity": "warning",
+      "message": "Explanation needs human review; text matching cannot verify facts"
+    },
+    {
+      "path": "tourQuestions[3]",
+      "severity": "warning",
+      "message": "Explanation needs human review; text matching cannot verify facts"
+    },
+    {
+      "path": "tourQuestions[5]",
+      "severity": "warning",
+      "message": "Explanation needs human review; text matching cannot verify facts"
+    },
+    {
+      "path": "tourQuestions[7]",
+      "severity": "warning",
+      "message": "Explanation needs human review; text matching cannot verify facts"
+    },
+    {
+      "path": "tourQuestions[15]",
+      "severity": "warning",
+      "message": "Explanation needs human review; text matching cannot verify facts"
+    },
+    {
+      "path": "tourQuestions[17]",
+      "severity": "warning",
+      "message": "Explanation needs human review; text matching cannot verify facts"
+    },
+    {
+      "path": "tourQuestions[18]",
+      "severity": "warning",
+      "message": "Explanation needs human review; text matching cannot verify facts"
+    },
+    {
+      "path": "tourQuestions[19]",
+      "severity": "warning",
+      "message": "Explanation needs human review; text matching cannot verify facts"
+    },
+    {
+      "path": "heritageQuestions[7]",
+      "severity": "warning",
+      "message": "Explanation needs human review; text matching cannot verify facts"
+    }
+  ]
+}

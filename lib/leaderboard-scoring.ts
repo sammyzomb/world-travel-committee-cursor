@@ -6,6 +6,7 @@ import {
   questionsPerStage,
   STARTING_LIVES,
 } from "./game-config";
+import { QUESTION_BANK_VERSION } from "./question-bank-version";
 import { approvedQuestions, warmupQuestions } from "./questions";
 
 export type RunAnswerRecord = {
@@ -36,6 +37,9 @@ export function verifyRunAnswers(answers: RunAnswerRecord[]) {
     if (!question.options.includes(selectedOption)) {
       return { ok: false as const, error: `invalid selectedOption for ${answer.questionId}` };
     }
+    if (question.conceptId !== answer.conceptId) {
+      return { ok: false as const, error: `conceptId mismatch for ${answer.questionId}` };
+    }
     const correctText = question.options[question.answer];
     verified.push({ ...answer, correct: selectedOption === correctText });
   }
@@ -47,9 +51,12 @@ export { STARTING_LIVES };
 export type RunSubmission = {
   sessionToken: string;
   playerName: string;
+  questionBankVersion: string;
   answers: RunAnswerRecord[];
   endedEarly: boolean;
 };
+
+export { QUESTION_BANK_VERSION };
 
 const FINAL_STAGE_INDEX = educationStages.length - 1;
 
@@ -101,12 +108,83 @@ export function stageReachedName(stageIndex: number) {
   return educationStages[Math.max(0, Math.min(stageIndex, FINAL_STAGE_INDEX))]?.name ?? "小一";
 }
 
+/** 驗證學級進度：必須從小一連續作答，已完成學級須達通關題數與答對門檻。 */
+export function validateRunProgress(answers: RunAnswerRecord[], endedEarly: boolean) {
+  if (answers.length === 0) return "answers are required";
+  if (answers[0].stageIndex !== 0) return "run must start at stage 0";
+
+  const stageBlocks: RunAnswerRecord[][] = [];
+  let currentStage = 0;
+  let block: RunAnswerRecord[] = [];
+
+  for (const answer of answers) {
+    if (answer.stageIndex < currentStage) {
+      return "answers must be grouped by ascending stageIndex";
+    }
+    if (answer.stageIndex > currentStage) {
+      if (answer.stageIndex !== currentStage + 1) {
+        return "non-contiguous stage progression";
+      }
+      stageBlocks.push(block);
+      block = [];
+      currentStage = answer.stageIndex;
+    }
+    if (answer.stageIndex !== currentStage) {
+      return "invalid stageIndex ordering";
+    }
+    block.push(answer);
+  }
+  if (block.length > 0) stageBlocks.push(block);
+
+  for (let stageIndex = 0; stageIndex < stageBlocks.length; stageIndex += 1) {
+    const stageAnswers = stageBlocks[stageIndex];
+    const expectedCount = questionsPerStage(stageIndex);
+    const isLastBlock = stageIndex === stageBlocks.length - 1;
+    const correctCount = stageAnswers.filter((item) => item.correct).length;
+    const passRequired = passRequiredForStage(expectedCount);
+
+    if (stageAnswers.length > expectedCount) {
+      return `too many answers in stage ${stageIndex}`;
+    }
+
+    if (!isLastBlock) {
+      if (stageAnswers.length !== expectedCount) {
+        return `stage ${stageIndex} must be complete before advancing`;
+      }
+      if (correctCount < passRequired) {
+        return `stage ${stageIndex} pass requirement not met`;
+      }
+      continue;
+    }
+
+    if (!endedEarly) {
+      if (stageIndex !== FINAL_STAGE_INDEX) {
+        return "incomplete run marked as not ended early";
+      }
+      if (stageAnswers.length !== expectedCount) {
+        return "final stage must be complete";
+      }
+      if (correctCount < passRequired) {
+        return "final stage pass requirement not met";
+      }
+    }
+  }
+
+  return null;
+}
+
 export function validateRunSubmission(payload: RunSubmission) {
   if (!payload.sessionToken || payload.sessionToken.length < 8) {
     return "sessionToken is required";
   }
   if (!payload.playerName.trim()) {
     return "playerName is required";
+  }
+  if (!payload.questionBankVersion) {
+    return "questionBankVersion is required";
+  }
+  if (payload.questionBankVersion !== QUESTION_BANK_VERSION) {
+    return "題庫已更新，請重新開始遊戲後再送出成績";
   }
   if (!Array.isArray(payload.answers) || payload.answers.length === 0) {
     return "answers are required";
