@@ -192,7 +192,7 @@ function buildExpandedQuestions(
     const countryConceptId = makeFactConceptId(`country:${country}`);
     const landmarkConceptId = makeFactConceptId(landmark);
     const levels = levelsForFact(factIndex, facts.length);
-    const approved = source.auditStatus === "approved" ? source : QUESTION_SOURCES.restCountries;
+    const approved = source;
     const pending = QUESTION_SOURCES.expandedPending;
     const base = { region: continent, category };
     const capitalRaw = {
@@ -336,6 +336,14 @@ const auditOverrides = (questionAuditJson as { overrides?: Record<string, AuditO
 
 function applyAuditOverrides(questions: Question[]): Question[] {
   return questions.map((item) => {
+    // Heritage tuples contain regional capitals. Old audit overrides must not
+    // reactivate national-capital questions until independently reviewed data exists.
+    if (
+      item.id.startsWith("heritage-capital:") ||
+      item.id.startsWith("heritage-reverse-capital:")
+    ) {
+      return { ...item, auditStatus: "disabled" };
+    }
     const override = auditOverrides[item.id];
     if (!override) return item;
     return {
