@@ -45,7 +45,8 @@ export const FINAL_STAGE_INDEX = educationStages.length - 1;
 /** 每個學級固定出 5 題（小一含 3 題送分是非題 + 2 題正式題）。 */
 export const QUESTIONS_PER_STAGE = 5;
 export const STARTING_LIVES = 3;
-export const WARMUP_QUESTIONS_FIRST_STAGE = 3;
+/** 小一開局送分是非題數；其餘題位由多題型分散抽題補滿。 */
+export const WARMUP_QUESTIONS_FIRST_STAGE = 2;
 export const PASS_CORRECT_REQUIRED = 3;
 export const POINTS_PER_CORRECT = 5;
 

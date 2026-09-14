@@ -1,15 +1,13 @@
 import { Check, X } from "lucide-react";
 import { QuestionVisual } from "../question-visual";
-import { educationStages, STARTING_LIVES } from "../../lib/game-config";
+import { STARTING_LIVES } from "../../lib/game-config";
 import type { Question } from "../../lib/questions";
-import { QUESTION_TYPE_LABELS } from "../../lib/question-types";
+import { shouldShowRegionChip } from "../../lib/visual-safety";
 
 type PlayScreenProps = {
-  stageIndex: number;
   stage: { name: string; group: string };
   stageQuestion: number;
   stageLength: number;
-  progress: number;
   lives: number;
   score: number;
   current: Question;
@@ -17,7 +15,6 @@ type PlayScreenProps = {
   endedEarly: boolean;
   roundLength: number;
   questionIndex: number;
-  runStreak?: number;
   onChoose: (option: number) => void;
   onNext: () => void;
 };
@@ -41,11 +38,9 @@ function nextButtonLabel(
 }
 
 export function PlayScreen({
-  stageIndex,
   stage,
   stageQuestion,
   stageLength,
-  progress,
   lives,
   score,
   current,
@@ -53,33 +48,22 @@ export function PlayScreen({
   endedEarly,
   roundLength,
   questionIndex,
-  runStreak = 0,
   onChoose,
   onNext,
 }: PlayScreenProps) {
+  const correctAnswer = current.options[current.answer] ?? "";
+  const showRegion = shouldShowRegionChip({
+    kind: current.kind,
+    questionText: current.q,
+    region: current.region,
+    category: current.category,
+    correctAnswer,
+  });
+
   return (
     <section className="mx-auto w-full max-w-4xl px-4 pb-10 pt-3 sm:px-8">
-      <div className="education-path">
-        {educationStages.map((item, index) => (
-          <span
-            className={index < stageIndex ? "done" : index === stageIndex ? "current" : ""}
-            key={item.name}
-          >
-            {item.name}
-          </span>
-        ))}
-      </div>
-
       <div className="mb-5 flex items-center justify-between gap-3">
-        <div>
-          <p className="mini-label">
-            {stage.group}・{stage.name}　第 {stageQuestion} 題 / {stageLength}
-            {current.level === "送分題"
-              ? "・送分題"
-              : `・${QUESTION_TYPE_LABELS[current.questionType]}`}
-          </p>
-          <h2 className="text-xl font-black sm:text-2xl">{stage.name}闖關中</h2>
-        </div>
+        <span className="score-pill">{stage.group}・{stage.name}</span>
         <div className="flex gap-2">
           <span className="life-pill" aria-label={`整局剩餘 ${lives} 次機會`}>
             {Array.from({ length: STARTING_LIVES }, (_, index) => (
@@ -89,24 +73,31 @@ export function PlayScreen({
             ))}
           </span>
           <span className="score-pill">{score.toLocaleString()} 分</span>
-          {runStreak >= 2 && <span className="score-pill streak-pill">連勝 {runStreak}</span>}
         </div>
-      </div>
-
-      <div className="progress-track">
-        <span style={{ width: `${progress}%` }} />
       </div>
 
       <div className="question-card">
         {current.visual && <QuestionVisual key={current.q} visual={current.visual} />}
         <div className="flex items-center justify-between">
-          <span
-            className={`region-chip ${current.category === "旅行知識" ? "travel-knowledge" : ""}`}
+          {showRegion ? (
+            <span
+            className={`region-chip ${
+              current.category === "旅行知識"
+                ? "travel-knowledge"
+                : current.category === "世界遺產"
+                  ? "heritage-knowledge"
+                  : ""
+            }`}
           >
             {current.category === "旅行知識"
               ? `旅行知識・${current.region}`
-              : current.region}
-          </span>
+              : current.category === "世界遺產"
+                ? `世界遺產・${current.region}`
+                : current.region}
+            </span>
+          ) : (
+            <span />
+          )}
           <span className="text-sm text-slate-400">
             {current.level !== "送分題" && current.level}
             {current.kind === "tf" ? " · 請選是或否" : " · 選出正確答案"}

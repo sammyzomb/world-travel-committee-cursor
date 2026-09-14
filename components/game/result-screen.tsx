@@ -1,10 +1,7 @@
 import { ArrowUpRight, CalendarDays, Crown, GraduationCap, MapPinned, Sparkles } from "lucide-react";
 import { CheerAnimation } from "../cheer-animation";
-import { AchievementsPanel } from "./achievements-panel";
 import { ShareScoreCard } from "./share-score-card";
-import type { AchievementDef } from "../../lib/achievements";
 import type { SubmitState } from "../../lib/leaderboard-types";
-import type { PlayerProfile } from "../../lib/player-storage";
 
 type ResultScreenProps = {
   endedEarly: boolean;
@@ -12,9 +9,6 @@ type ResultScreenProps = {
   stageName: string;
   score: number;
   maxRunStreak: number;
-  playerProfile: PlayerProfile;
-  achievements: AchievementDef[];
-  newAchievements: string[];
   playerName: string;
   submitState: SubmitState;
   submitMessage: string | null;
@@ -29,9 +23,6 @@ export function ResultScreen({
   stageName,
   score,
   maxRunStreak,
-  playerProfile,
-  achievements,
-  newAchievements,
   playerName,
   submitState,
   submitMessage,
@@ -71,7 +62,7 @@ export function ResultScreen({
           {fullCompletion ? "研二畢業" : endedEarly ? `${stageName}止步` : `${stageName}結束`}
         </span>
         <h1>{score.toLocaleString()} 分</h1>
-        <p className="run-streak-copy">本局最高連勝 {maxRunStreak} 題 · 歷史最佳 {playerProfile.bestRunStreak} 題</p>
+        <p className="run-streak-copy">本局最高連勝 {maxRunStreak} 題</p>
         <p>
           {fullCompletion
             ? "從小一一路升到研二，十八級學制全部通關！"
@@ -80,24 +71,10 @@ export function ResultScreen({
               : `本局在【${stageName}】結束，繼續挑戰衝更高分！`}
         </p>
 
-        {newAchievements.length > 0 && (
-          <div className="new-achievements">
-            <p className="mini-label">NEW BADGE</p>
-            <p>
-              新成就：
-              {newAchievements
-                .map((id) => achievements.find((item) => item.id === id)?.title)
-                .filter(Boolean)
-                .join("、")}
-            </p>
-          </div>
-        )}
-
         <ShareScoreCard
           stageName={stageName}
           score={score}
           runStreak={maxRunStreak}
-          bestRunStreak={playerProfile.bestRunStreak}
           endedEarly={endedEarly || !fullCompletion}
         />
 
@@ -140,8 +117,6 @@ export function ResultScreen({
           再開一局
         </button>
       </div>
-
-      <AchievementsPanel achievements={achievements} unlocked={playerProfile.unlockedAchievements} compact />
 
       <div className="travel-invitation">
         <p className="mini-label">把答對的世界，變成親眼看見的風景</p>

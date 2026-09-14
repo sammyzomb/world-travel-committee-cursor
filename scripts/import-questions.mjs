@@ -46,14 +46,27 @@ function sleep(ms) {
   return new Promise((resolve) => setTimeout(resolve, ms));
 }
 
+function readOptionalJson(path) {
+  if (!existsSync(path)) return [];
+  return readJson(path);
+}
+
 function mergeImported() {
   const bank = readJson(bankPath);
   const expansion = readJson(join(importedDir, "restcountries-expansion.json"));
+  const heritageExpansion = readOptionalJson(join(importedDir, "world-heritage-expansion.json"));
   const opentdb = readJson(join(importedDir, "opentdb-geography-zh.json"));
   const tour = readJson(join(importedDir, "tcawg-tour-questions.json"));
+  const heritageQuestions = readOptionalJson(join(importedDir, "world-heritage-questions.json"));
+  const countryQuestions = readOptionalJson(join(importedDir, "country-knowledge-questions.json"));
+
+  if (!bank.heritageFacts) bank.heritageFacts = [];
+  if (!bank.heritageQuestions) bank.heritageQuestions = [];
 
   const existingFacts = new Set(bank.expandedFacts.map(factKey));
+  const existingHeritageFacts = new Set(bank.heritageFacts.map(factKey));
   let addedFacts = 0;
+  let addedHeritageFacts = 0;
   for (const fact of expansion) {
     if (!existingFacts.has(factKey(fact))) {
       bank.expandedFacts.push(fact);
@@ -61,15 +74,33 @@ function mergeImported() {
       addedFacts += 1;
     }
   }
+  for (const fact of heritageExpansion) {
+    const key = factKey(fact);
+    if (!existingHeritageFacts.has(key) && !existingFacts.has(key)) {
+      bank.heritageFacts.push(fact);
+      existingHeritageFacts.add(key);
+      addedHeritageFacts += 1;
+    }
+  }
 
   const existingQuestions = new Set(bank.questions.map(questionKey));
   let addedQuestions = 0;
-  for (const question of opentdb) {
+  for (const question of [...opentdb, ...countryQuestions]) {
     const { source, ...rest } = question;
     if (!existingQuestions.has(rest.q)) {
       bank.questions.push(rest);
       existingQuestions.add(rest.q);
       addedQuestions += 1;
+    }
+  }
+
+  const existingHeritageQuestions = new Set(bank.heritageQuestions.map(questionKey));
+  let addedHeritageQuestions = 0;
+  for (const question of heritageQuestions) {
+    if (!existingHeritageQuestions.has(question.q)) {
+      bank.heritageQuestions.push(question);
+      existingHeritageQuestions.add(question.q);
+      addedHeritageQuestions += 1;
     }
   }
 
@@ -89,7 +120,9 @@ function mergeImported() {
   writeJson(bankPath, bank);
   console.log(`✓ 已合併至 data/questions.json`);
   console.log(`  - expandedFacts +${addedFacts}（共 ${bank.expandedFacts.length} 組）`);
+  console.log(`  - heritageFacts +${addedHeritageFacts}（共 ${bank.heritageFacts.length} 組）`);
   console.log(`  - questions +${addedQuestions}（共 ${bank.questions.length} 題）`);
+  console.log(`  - heritageQuestions +${addedHeritageQuestions}（共 ${bank.heritageQuestions.length} 題）`);
   console.log(`  - tourQuestions +${addedTour}（共 ${bank.tourQuestions.length} 題）`);
 }
 

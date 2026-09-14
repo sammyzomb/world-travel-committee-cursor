@@ -16,10 +16,12 @@ const questionBank = questionBankJson as {
   questions: RawQuestion[];
   travelKnowledgeQuestions: RawQuestion[];
   tourQuestions?: RawQuestion[];
+  heritageQuestions?: RawQuestion[];
   expandedFacts: ExpandedFact[];
+  heritageFacts?: ExpandedFact[];
 };
 
-export type QuestionCategory = "世界地理" | "旅行知識";
+export type QuestionCategory = "世界地理" | "旅行知識" | "世界遺產";
 
 export type Question = {
   id: string;
@@ -166,7 +168,15 @@ function levelsForFact(factIndex: number, totalFacts: number): ExpandedQuestionL
   return { continent: "城市旅人", cityCountry: "國家達人", landmark: "洲際領隊", capital: "環球旅行家" };
 }
 
-function buildExpandedQuestions(facts: ExpandedFact[]): Question[] {
+function buildExpandedQuestions(
+  facts: ExpandedFact[],
+  options: {
+    category: QuestionCategory;
+    source: (typeof QUESTION_SOURCES)[keyof typeof QUESTION_SOURCES];
+    idPrefix: string;
+  },
+): Question[] {
+  const { category, source, idPrefix } = options;
   const cities = facts.map((item) => item[0]);
   const countries = facts.map((item) => item[1]);
   const capitals = facts.map((item) => item[3]);
@@ -185,9 +195,9 @@ function buildExpandedQuestions(facts: ExpandedFact[]): Question[] {
   return facts.flatMap((fact, factIndex) => {
     const [city, country, continent, capital, landmark] = fact;
     const levels = levelsForFact(factIndex, facts.length);
-    const approved = QUESTION_SOURCES.restCountries;
+    const approved = source.auditStatus === "approved" ? source : QUESTION_SOURCES.restCountries;
     const pending = QUESTION_SOURCES.expandedPending;
-    const base = { region: continent, category: "世界地理" as const };
+    const base = { region: continent, category };
     const capitalRaw = {
       q: `${country}的首都是哪一座城市？`,
       options: [capital, ...distractor(capitals, capital)],
@@ -229,7 +239,7 @@ function buildExpandedQuestions(facts: ExpandedFact[]): Question[] {
           visual: factVisual(landmark, capitalRaw, `${country}・${continent}`),
         },
         {
-          id: makeQuestionId("expanded-capital", `${country}:${capital}`),
+          id: makeQuestionId(`${idPrefix}-capital`, `${country}:${capital}`),
           conceptId: makeConceptId("capital", country),
           source: approved.label,
           auditStatus: approved.auditStatus,
@@ -246,7 +256,7 @@ function buildExpandedQuestions(facts: ExpandedFact[]): Question[] {
           visual: factVisual(landmark, landmarkRaw, `${country}・${continent}`),
         },
         {
-          id: makeQuestionId("expanded-landmark", `${landmark}:${city}`),
+          id: makeQuestionId(`${idPrefix}-landmark`, `${landmark}:${city}`),
           conceptId: makeConceptId("landmark-city", landmark),
           source: pending.label,
           auditStatus: pending.auditStatus,
@@ -263,7 +273,7 @@ function buildExpandedQuestions(facts: ExpandedFact[]): Question[] {
           visual: factVisual(landmark, cityCountryRaw, continent),
         },
         {
-          id: makeQuestionId("expanded-city", `${city}:${country}`),
+          id: makeQuestionId(`${idPrefix}-city`, `${city}:${country}`),
           conceptId: makeConceptId("city-country", city),
           source: pending.label,
           auditStatus: pending.auditStatus,
@@ -274,13 +284,13 @@ function buildExpandedQuestions(facts: ExpandedFact[]): Question[] {
         {
           questionType: "continent" as const,
           level: levels.continent,
-          category: "世界地理" as const,
+          category,
           ...continentRaw,
           fact: `${country}位於${continent}。`,
           visual: factVisual(landmark, continentRaw, "旅遊地標"),
         },
         {
-          id: makeQuestionId("expanded-continent", `${country}:${continent}`),
+          id: makeQuestionId(`${idPrefix}-continent`, `${country}:${continent}`),
           conceptId: makeConceptId("continent", country),
           source: approved.label,
           auditStatus: approved.auditStatus,
@@ -297,7 +307,7 @@ function buildExpandedQuestions(facts: ExpandedFact[]): Question[] {
           visual: factVisual(landmark, reverseCapitalRaw, `${country}・${continent}`),
         },
         {
-          id: makeQuestionId("expanded-reverse-capital", `${capital}:${country}`),
+          id: makeQuestionId(`${idPrefix}-reverse-capital`, `${capital}:${country}`),
           conceptId: makeConceptId("reverse-capital", capital),
           source: approved.label,
           auditStatus: approved.auditStatus,
@@ -387,14 +397,40 @@ export const tourQuestions: Question[] = applyAuditOverrides(
     return { ...question, category: raw.category ?? "世界地理" };
   }),
 );
+const heritageSource = QUESTION_SOURCES.worldHeritage;
+
 export const expandedQuestions: Question[] = applyAuditOverrides(
-  buildExpandedQuestions(questionBank.expandedFacts),
+  buildExpandedQuestions(questionBank.expandedFacts, {
+    category: "世界地理",
+    source: QUESTION_SOURCES.restCountries,
+    idPrefix: "expanded",
+  }),
+);
+export const heritageExpandedQuestions: Question[] = applyAuditOverrides(
+  buildExpandedQuestions(questionBank.heritageFacts ?? [], {
+    category: "世界遺產",
+    source: heritageSource,
+    idPrefix: "heritage",
+  }),
+);
+export const heritageQuestions: Question[] = applyAuditOverrides(
+  (questionBank.heritageQuestions ?? []).map((raw, index) =>
+    attachVisual(raw, {
+      id: makeQuestionId("heritage", raw.q),
+      conceptId: makeConceptId("heritage", String(index)),
+      source: heritageSource.label,
+      auditStatus: heritageSource.auditStatus,
+      grades: [],
+    }),
+  ),
 );
 export const allQuestions: Question[] = [
   ...handPickedQuestions,
   ...travelKnowledgeQuestions,
   ...tourQuestions,
+  ...heritageQuestions,
   ...expandedQuestions,
+  ...heritageExpandedQuestions,
 ];
 export const approvedQuestions: Question[] = allQuestions.filter(
   (item) => item.auditStatus === "approved",
@@ -405,8 +441,11 @@ export const questionBankStats = {
   handPicked: handPickedQuestions.length,
   travelKnowledge: travelKnowledgeQuestions.length,
   tour: tourQuestions.length,
+  heritageCurated: heritageQuestions.length,
   expandedFacts: questionBank.expandedFacts.length,
+  heritageFacts: (questionBank.heritageFacts ?? []).length,
   expandedGenerated: expandedQuestions.length,
+  heritageGenerated: heritageExpandedQuestions.length,
   approved: approvedQuestions.length,
   pending: allQuestions.filter((item) => item.auditStatus === "pending").length,
   disabled: allQuestions.filter((item) => item.auditStatus === "disabled").length,

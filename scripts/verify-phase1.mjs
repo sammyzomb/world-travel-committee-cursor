@@ -23,11 +23,35 @@ import {
   verifyRunAnswers,
 } from "../lib/leaderboard-scoring.ts";
 import { approvedQuestions, questionBankStats } from "../lib/questions.ts";
-import { visualLeaksAnswer } from "../lib/visual-safety.ts";
+import { allowedTypesForStage } from "../lib/question-types.ts";
+import { regionLeaksAnswer, visualLeaksAnswer } from "../lib/visual-safety.ts";
+
+function maxQuestionsPerType(count, activeTypeCount, stageIndex) {
+  const allowedTypeCount = allowedTypesForStage(stageIndex).length;
+  if (activeTypeCount <= 0) return count;
+  if (allowedTypeCount >= 3 && count >= 5) return 2;
+  const hardCap = 2;
+  if (activeTypeCount * hardCap >= count) return hardCap;
+  return Math.ceil(count / activeTypeCount);
+}
+
+function assertStageTypeDiversity(questions, stageIndex) {
+  const counts = new Map();
+  for (const item of questions) {
+    counts.set(item.questionType, (counts.get(item.questionType) ?? 0) + 1);
+  }
+  const maxAllowed = maxQuestionsPerType(questions.length, counts.size, stageIndex);
+  for (const [type, total] of counts) {
+    assert.ok(
+      total <= maxAllowed,
+      `stage ${stageIndex} has too many ${type} questions (${total}/${questions.length})`,
+    );
+  }
+}
 
 function run() {
   assert.equal(QUESTIONS_PER_STAGE, 5);
-  assert.equal(WARMUP_QUESTIONS_FIRST_STAGE, 3);
+  assert.equal(WARMUP_QUESTIONS_FIRST_STAGE, 2);
   assert.equal(STARTING_LIVES, 3);
   assert.equal(passRequiredForStage(), 3);
   assert.equal(FINAL_STAGE_INDEX, 17);
@@ -41,19 +65,24 @@ function run() {
   assert.equal(getStageLength(round.stageStarts, round.questions.length, 0), 5);
 
   const stageZero = round.questions.slice(0, 5);
-  const warmupSlice = stageZero.slice(0, 3);
-  assert.equal(warmupSlice.length, 3, "stage 0 must start with 3 warmup questions");
-  assert.ok(
-    warmupSlice.every((item) => item.kind === "tf"),
-    "first 3 questions in stage 0 must be true/false",
+  const warmupSlice = stageZero.slice(0, WARMUP_QUESTIONS_FIRST_STAGE);
+  assert.equal(
+    warmupSlice.length,
+    WARMUP_QUESTIONS_FIRST_STAGE,
+    "stage 0 must start with warmup questions",
   );
   assert.ok(
-    stageZero.slice(3).every((item) => item.kind !== "tf"),
-    "warmup tf must not appear after position 3",
+    warmupSlice.every((item) => item.kind === "tf"),
+    "warmup questions in stage 0 must be true/false",
+  );
+  assert.ok(
+    stageZero.slice(WARMUP_QUESTIONS_FIRST_STAGE).every((item) => item.kind !== "tf"),
+    "warmup tf must not appear after warmup block",
   );
 
   const warmupIds = warmupSlice.map((item) => item.id);
-  assert.equal(new Set(warmupIds).size, 3);
+  assert.equal(new Set(warmupIds).size, WARMUP_QUESTIONS_FIRST_STAGE);
+  assertStageTypeDiversity(stageZero, 0);
   assert.ok(round.questions.every((item) => item.auditStatus === "approved"));
 
   const conceptIds = new Set(round.questions.map((item) => item.conceptId));
@@ -68,7 +97,9 @@ function run() {
     const optionCount = optionCountForStage(stageIndex);
     const stageStart = plan.stageStarts[stageIndex];
     const stageEnd = plan.stageStarts[stageIndex + 1] ?? plan.questions.length;
-    for (const item of plan.questions.slice(stageStart, stageEnd)) {
+    const stageQuestions = plan.questions.slice(stageStart, stageEnd);
+    if (stageIndex <= 10) assertStageTypeDiversity(stageQuestions, stageIndex);
+    for (const item of stageQuestions) {
       if (item.kind !== "tf") {
         assert.ok(
           item.options.length >= optionCount,
@@ -86,8 +117,17 @@ function run() {
   assert.ok(approvedQuestions.length >= 90, "need enough approved questions for full 18-stage run");
 
   for (const item of approvedQuestions) {
-    if (!item.visual) continue;
     const correct = item.options[item.answer] ?? "";
+    assert.ok(
+      !regionLeaksAnswer({
+        kind: item.kind,
+        questionText: item.q,
+        region: item.region,
+        correctAnswer: correct,
+      }),
+      `region chip leaks answer for ${item.id}`,
+    );
+    if (!item.visual) continue;
     assert.ok(
       !visualLeaksAnswer({
         questionText: item.q,

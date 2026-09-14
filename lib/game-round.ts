@@ -106,6 +106,80 @@ function filterPoolForStage(pool: Question[], stageIndex: number) {
   });
 }
 
+function maxQuestionsPerType(count: number, availableTypeCount: number, allowedTypeCount: number) {
+  if (availableTypeCount <= 0) return count;
+  if (allowedTypeCount >= 3 && count >= 5) return 2;
+  const hardCap = 2;
+  if (availableTypeCount * hardCap >= count) return hardCap;
+  return Math.ceil(count / availableTypeCount);
+}
+
+/** 同一學級內優先分散題型，避免連續抽到大量同類型題目。 */
+function pickDiverseQuestions(
+  ranked: Question[],
+  count: number,
+  stageIndex: number,
+  seed: Question[] = [],
+  relaxTypeCap = false,
+): Question[] {
+  const allowedTypes = allowedTypesForStage(stageIndex);
+  const seedIds = new Set(seed.map((item) => item.id));
+  const byType = new Map<QuestionType, Question[]>();
+  for (const item of ranked) {
+    if (seedIds.has(item.id)) continue;
+    const list = byType.get(item.questionType) ?? [];
+    list.push(item);
+    byType.set(item.questionType, list);
+  }
+
+  const typeOrder = shuffled(
+    allowedTypes.filter((type) => (byType.get(type)?.length ?? 0) > 0),
+  );
+  const projectedTypeCount = new Set([
+    ...seed.map((item) => item.questionType),
+    ...typeOrder,
+  ]).size;
+  const maxPerType = relaxTypeCap
+    ? Math.ceil(count / Math.max(projectedTypeCount, 1))
+    : maxQuestionsPerType(count, projectedTypeCount, allowedTypes.length);
+  const selected: Question[] = [...seed];
+  const typeCursor = new Map<QuestionType, number>();
+  for (const item of seed) {
+    typeCursor.set(item.questionType, (typeCursor.get(item.questionType) ?? 0) + 1);
+  }
+
+  let guard = 0;
+  while (selected.length < count && guard < count * typeOrder.length * 4) {
+    guard += 1;
+    let progressed = false;
+    for (const type of typeOrder) {
+      if (selected.length >= count) break;
+      const cursor = typeCursor.get(type) ?? 0;
+      if (cursor >= maxPerType) continue;
+      const pool = byType.get(type);
+      if (!pool || cursor >= pool.length) continue;
+      selected.push(pool[cursor]);
+      typeCursor.set(type, cursor + 1);
+      progressed = true;
+    }
+    if (!progressed) break;
+  }
+
+  if (selected.length < count) {
+    const selectedIds = new Set(selected.map((entry) => entry.id));
+    for (const item of ranked) {
+      if (selected.length >= count) break;
+      if (selectedIds.has(item.id)) continue;
+      const usedForType = selected.filter((entry) => entry.questionType === item.questionType).length;
+      if (usedForType >= maxPerType) continue;
+      selected.push(item);
+      selectedIds.add(item.id);
+    }
+  }
+
+  return selected.slice(0, count).slice(seed.length);
+}
+
 function pickFreshQuestions(
   pool: Question[],
   count: number,
@@ -115,17 +189,21 @@ function pickFreshQuestions(
   usedConceptIds: Set<string>,
   stageIndex: number,
   allowReuse = false,
+  seed: Question[] = [],
+  relaxTypeCap = false,
 ) {
   const available = pool.filter((item) =>
     isAvailable(item, previousQuestionIds, usedQuestionIds, usedConceptIds, allowReuse),
   );
   const ranked = sortByStageDifficulty(available, stageIndex);
-  const selected = ranked.slice(0, count).map((item) => withOptionCount(item, optionCount));
-  selected.forEach((item) => {
+  const picked = pickDiverseQuestions(ranked, count, stageIndex, seed, relaxTypeCap).map((item) =>
+    withOptionCount(item, optionCount),
+  );
+  picked.forEach((item) => {
     usedQuestionIds.add(item.id);
     usedConceptIds.add(item.conceptId);
   });
-  return selected;
+  return picked;
 }
 
 function fillStagePool(
@@ -138,31 +216,31 @@ function fillStagePool(
   stageIndex: number,
 ) {
   const stagePool = filterPoolForStage(pool, stageIndex);
-  let selected = pickFreshQuestions(
-    stagePool.length > 0 ? stagePool : pool,
-    count,
-    optionCount,
-    previousQuestionIds,
-    usedQuestionIds,
-    usedConceptIds,
-    stageIndex,
-  );
-  if (selected.length < count) {
-    selected = [
-      ...selected,
-      ...pickFreshQuestions(
-        pool,
-        count - selected.length,
-        optionCount,
-        previousQuestionIds,
-        usedQuestionIds,
-        usedConceptIds,
-        stageIndex,
-        true,
-      ),
-    ];
-  }
-  return selected;
+  let selected: Question[] = [];
+
+  const tryPick = (source: Question[], allowReuse: boolean, relaxTypeCap = false) => {
+    if (selected.length >= count) return;
+    const batch = pickFreshQuestions(
+      source,
+      count,
+      optionCount,
+      previousQuestionIds,
+      usedQuestionIds,
+      usedConceptIds,
+      stageIndex,
+      allowReuse,
+      selected,
+      relaxTypeCap,
+    );
+    selected = [...selected, ...batch];
+  };
+
+  tryPick(stagePool.length > 0 ? stagePool : pool, false);
+  if (selected.length < count) tryPick(pool, false);
+  if (selected.length < count) tryPick(pool, true);
+  if (selected.length < count) tryPick(pool, true, true);
+
+  return selected.slice(0, count);
 }
 
 function drawStageQuestions(
@@ -184,17 +262,17 @@ function drawStageQuestions(
     });
 
     const formalCount = QUESTIONS_PER_STAGE - WARMUP_QUESTIONS_FIRST_STAGE;
-    const elementaryPool = approvedQuestions.filter((item) => item.level === "旅行新手");
-    const formalChoices = shuffled(
-      fillStagePool(
-        elementaryPool,
-        formalCount,
-        2,
-        previousQuestionIds,
-        usedQuestionIds,
-        usedConceptIds,
-        stageIndex,
-      ),
+    const elementaryPool = approvedQuestions.filter(
+      (item) => item.level === "旅行新手" && item.kind !== "tf",
+    );
+    const formalChoices = fillStagePool(
+      elementaryPool,
+      formalCount,
+      2,
+      previousQuestionIds,
+      usedQuestionIds,
+      usedConceptIds,
+      stageIndex,
     );
     return [...warmupChoices, ...formalChoices];
   }
@@ -228,9 +306,23 @@ function drawStageQuestions(
       stageIndex,
     )[0];
     if (travelPick) {
-      const travelSlot = Math.min(questions.length - 1, 2 + (stageIndex % 2));
+      const typeCounts = new Map<QuestionType, number>();
+      for (const item of questions) {
+        typeCounts.set(item.questionType, (typeCounts.get(item.questionType) ?? 0) + 1);
+      }
+      const dominantType = [...typeCounts.entries()].sort((a, b) => b[1] - a[1])[0]?.[0];
+      const replaceIndex =
+        dominantType !== undefined
+          ? questions.findIndex((item) => item.questionType === dominantType)
+          : -1;
+      const travelSlot = replaceIndex >= 0 ? replaceIndex : Math.min(questions.length - 1, 2);
+      const replaced = questions[travelSlot];
       const withTravel = [...questions];
       withTravel[travelSlot] = withOptionCount(travelPick, optionCount);
+      if (replaced) {
+        usedQuestionIds.delete(replaced.id);
+        usedConceptIds.delete(replaced.conceptId);
+      }
       usedQuestionIds.add(travelPick.id);
       usedConceptIds.add(travelPick.conceptId);
       questions = withTravel;

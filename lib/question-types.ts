@@ -77,10 +77,10 @@ export function inferQuestionType(input: {
 /** 各年級允許的題型（越後面越多、越難）。 */
 export const STAGE_ALLOWED_TYPES: QuestionType[][] = [
   ["tf", "continent"],
-  ["tf", "continent", "country-pick"],
+  ["tf", "continent", "country-pick", "city-pick"],
   ["continent", "country-pick", "city-pick"],
-  ["country-pick", "city-pick"],
-  ["city-pick", "capital"],
+  ["country-pick", "city-pick", "capital"],
+  ["city-pick", "capital", "landmark-city"],
   ["city-pick", "capital", "landmark-city"],
   ["capital", "landmark-city", "country-pick"],
   ["capital", "landmark-city", "world-fact"],

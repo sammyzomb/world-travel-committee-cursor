@@ -7,17 +7,10 @@ type ShareScoreCardProps = {
   stageName: string;
   score: number;
   runStreak: number;
-  bestRunStreak: number;
   endedEarly: boolean;
 };
 
-export function ShareScoreCard({
-  stageName,
-  score,
-  runStreak,
-  bestRunStreak,
-  endedEarly,
-}: ShareScoreCardProps) {
+export function ShareScoreCard({ stageName, score, runStreak, endedEarly }: ShareScoreCardProps) {
   const [message, setMessage] = useState<string | null>(null);
 
   const shareText = [
@@ -25,7 +18,7 @@ export function ShareScoreCard({
     endedEarly
       ? `我在【${stageName}】本局 GG，拿了 ${score} 分。`
       : `我打通了題庫，在【${stageName}】拿下 ${score} 分！`,
-    `本局最高連勝：${runStreak} 題｜歷史最佳：${bestRunStreak} 題`,
+    `本局最高連勝：${runStreak} 題`,
     "你行你來 👉",
     typeof window !== "undefined" ? window.location.href : "",
   ].join("\n");

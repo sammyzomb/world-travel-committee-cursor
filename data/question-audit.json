@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-14T03:18:37.454Z",
+  "updatedAt": "2026-09-14T04:19:49.780Z",
   "description": "Per-question audit overrides. Hand/travel/tour default pending until validated here.",
   "overrides": {
     "hand:ybriou": {
@@ -321,6 +321,78 @@
       "reviewer": "audit-script:hand-curated",
       "note": "解析未支持正確答案"
     },
+    "hand:l72txh": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:hand-curated",
+      "note": "結構與解析一致（audit-script:curated）"
+    },
+    "hand:1wopc3a": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:hand-curated",
+      "note": "結構與解析一致（audit-script:curated）"
+    },
+    "hand:ww0crv": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:hand-curated",
+      "note": "結構與解析一致（audit-script:curated）"
+    },
+    "hand:oa4jtp": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:hand-curated",
+      "note": "結構與解析一致（audit-script:curated）"
+    },
+    "hand:v445dm": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:hand-curated",
+      "note": "結構與解析一致（audit-script:curated）"
+    },
+    "hand:o0mcq3": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:hand-curated",
+      "note": "結構與解析一致（audit-script:curated）"
+    },
+    "hand:63k2d0": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:hand-curated",
+      "note": "結構與解析一致（audit-script:curated）"
+    },
+    "hand:173qnjk": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:hand-curated",
+      "note": "結構與解析一致（audit-script:curated）"
+    },
+    "hand:1ebgvc9": {
+      "auditStatus": "disabled",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:hand-curated",
+      "note": "解析未支持正確答案"
+    },
+    "hand:icwh38": {
+      "auditStatus": "disabled",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:hand-curated",
+      "note": "解析未支持正確答案"
+    },
+    "hand:1gh1zex": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:hand-curated",
+      "note": "結構與解析一致（audit-script:curated）"
+    },
+    "hand:1szqyny": {
+      "auditStatus": "disabled",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:hand-curated",
+      "note": "世界之最類題目缺少定義或限定條件"
+    },
     "travel:qsafxt": {
       "auditStatus": "approved",
       "reviewedAt": "2026-09-14",
@@ -590,6 +662,78 @@
       "reviewedAt": "2026-09-14",
       "reviewer": "audit-script:tour",
       "note": "解析未支持正確答案"
+    },
+    "heritage:1fzd1bf": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage",
+      "note": "結構與解析一致（audit-script:curated）"
+    },
+    "heritage:16t2pk4": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage",
+      "note": "結構與解析一致（audit-script:curated）"
+    },
+    "heritage:1jewk1n": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage",
+      "note": "結構與解析一致（audit-script:curated）"
+    },
+    "heritage:b8mjxt": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage",
+      "note": "結構與解析一致（audit-script:curated）"
+    },
+    "heritage:mik1to": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage",
+      "note": "結構與解析一致（audit-script:curated）"
+    },
+    "heritage:o1ewpg": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage",
+      "note": "結構與解析一致（audit-script:curated）"
+    },
+    "heritage:rq0smz": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage",
+      "note": "結構與解析一致（audit-script:curated）"
+    },
+    "heritage:1mcy9pr": {
+      "auditStatus": "disabled",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage",
+      "note": "解析未支持正確答案"
+    },
+    "heritage:16zgl7d": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage",
+      "note": "結構與解析一致（audit-script:curated）"
+    },
+    "heritage:ybriou": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage",
+      "note": "結構與解析一致（audit-script:curated）"
+    },
+    "heritage:17wx54v": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage",
+      "note": "結構與解析一致（audit-script:curated）"
+    },
+    "heritage:bdnex0": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage",
+      "note": "結構與解析一致（audit-script:curated）"
     },
     "expanded-landmark:13juzzf": {
       "auditStatus": "approved",
@@ -1598,6 +1742,1374 @@
       "reviewedAt": "2026-09-14",
       "reviewer": "audit-script:fact-consistency",
       "note": "來源 expandedFacts 一致（京斯敦 → 牙買加）"
+    },
+    "heritage-landmark:1xocz20": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（萬里長城 → 北京）"
+    },
+    "heritage-city:1eouc9v": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（北京 → 中國）"
+    },
+    "heritage-capital:wj6b5d": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（中國 首都 北京）"
+    },
+    "heritage-continent:wj5psg": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（中國 → 亞洲）"
+    },
+    "heritage-reverse-capital:1eouc9v": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（北京 → 中國）"
+    },
+    "heritage-landmark:uvworb": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（紫禁城 → 北京）"
+    },
+    "heritage-landmark:16qv2q2": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（兵馬俑 → 西安）"
+    },
+    "heritage-city:1fy3aj2": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（西安 → 中國）"
+    },
+    "heritage-landmark:u3hkku": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（莫高窟 → 敦煌）"
+    },
+    "heritage-city:1jm1v4i": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（敦煌 → 中國）"
+    },
+    "heritage-capital:wjf2z1": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（中國 首都 蘭州）"
+    },
+    "heritage-reverse-capital:139bdc7": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（蘭州 → 中國）"
+    },
+    "heritage-landmark:124zq86": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（樂山大佛 → 樂山）"
+    },
+    "heritage-city:1z060bt": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（樂山 → 中國）"
+    },
+    "heritage-capital:wj97xl": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（中國 首都 成都）"
+    },
+    "heritage-reverse-capital:1akdwyz": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（成都 → 中國）"
+    },
+    "heritage-landmark:bifj92": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（張家界國家森林公園 → 張家界）"
+    },
+    "heritage-city:1f7jm6l": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（張家界 → 中國）"
+    },
+    "heritage-capital:wjhri6": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（中國 首都 長沙）"
+    },
+    "heritage-reverse-capital:tv5xbq": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（長沙 → 中國）"
+    },
+    "heritage-landmark:1s6t2be": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（黃山 → 黃山）"
+    },
+    "heritage-city:1s6fbsa": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（黃山 → 中國）"
+    },
+    "heritage-capital:wj6qs9": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（中國 首都 合肥）"
+    },
+    "heritage-reverse-capital:1oo9egr": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（合肥 → 中國）"
+    },
+    "heritage-landmark:c7ps": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（麗江古城 → 麗江）"
+    },
+    "heritage-city:1tika6o": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（麗江 → 中國）"
+    },
+    "heritage-capital:wj9npg": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（中國 首都 昆明）"
+    },
+    "heritage-reverse-capital:1kmz9tc": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（昆明 → 中國）"
+    },
+    "heritage-landmark:367m2s": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（布達拉宮 → 拉薩）"
+    },
+    "heritage-city:1byo4s8": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（拉薩 → 中國）"
+    },
+    "heritage-capital:wj9a4c": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（中國 首都 拉薩）"
+    },
+    "heritage-reverse-capital:1byo4s8": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（拉薩 → 中國）"
+    },
+    "heritage-landmark:1mb98tm": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（富士山 → 富士山）"
+    },
+    "heritage-city:1e006gf": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（富士山 → 日本）"
+    },
+    "heritage-capital:1ka0xji": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（日本 首都 東京）"
+    },
+    "heritage-continent:1k9wvk7": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（日本 → 亞洲）"
+    },
+    "heritage-reverse-capital:1n8ii5i": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（東京 → 日本）"
+    },
+    "heritage-landmark:4og7bf": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（嚴島神社 → 廣島）"
+    },
+    "heritage-city:rl8spa": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（廣島 → 日本）"
+    },
+    "heritage-landmark:tfpj8y": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（姬路城 → 姬路）"
+    },
+    "heritage-city:ecrh32": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（姬路 → 日本）"
+    },
+    "heritage-landmark:q8t0vs": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（佛國寺 → 慶州）"
+    },
+    "heritage-city:11rxr8q": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（慶州 → 韓國）"
+    },
+    "heritage-capital:10dr98q": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（韓國 首都 首爾）"
+    },
+    "heritage-continent:10deh6e": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（韓國 → 亞洲）"
+    },
+    "heritage-reverse-capital:1ap82cq": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（首爾 → 韓國）"
+    },
+    "heritage-landmark:fxy4ls": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（會安古城 → 會安）"
+    },
+    "heritage-city:1n6mfj5": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（會安 → 越南）"
+    },
+    "heritage-capital:1uq3vz5": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（越南 首都 河內）"
+    },
+    "heritage-continent:1upyx9d": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（越南 → 亞洲）"
+    },
+    "heritage-reverse-capital:942hir": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（河內 → 越南）"
+    },
+    "heritage-landmark:1tq33eb": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（金邊皇宮 → 金邊）"
+    },
+    "heritage-city:1jzzmu7": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（金邊 → 柬埔寨）"
+    },
+    "heritage-capital:novj83": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（柬埔寨 首都 金邊）"
+    },
+    "heritage-continent:nojwr2": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（柬埔寨 → 亞洲）"
+    },
+    "heritage-reverse-capital:1jzzmu7": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（金邊 → 柬埔寨）"
+    },
+    "heritage-landmark:1msrlup": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（加德滿都谷地 → 加德滿都）"
+    },
+    "heritage-city:1djhve3": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（加德滿都 → 尼泊爾）"
+    },
+    "heritage-capital:hrnx4v": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（尼泊爾 首都 加德滿都）"
+    },
+    "heritage-continent:15eqtjy": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（尼泊爾 → 亞洲）"
+    },
+    "heritage-reverse-capital:1djhve3": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（加德滿都 → 尼泊爾）"
+    },
+    "heritage-landmark:otknan": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（琥珀堡 → 齋浦爾）"
+    },
+    "heritage-city:3d34dp": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（齋浦爾 → 印度）"
+    },
+    "heritage-capital:16dwg2p": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（印度 首都 新德里）"
+    },
+    "heritage-continent:1i2bsig": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（印度 → 亞洲）"
+    },
+    "heritage-reverse-capital:3kyotn": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（新德里 → 印度）"
+    },
+    "heritage-landmark:1q3e1pb": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（藍色清真寺 → 伊斯坦堡）"
+    },
+    "heritage-city:124m8iw": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（伊斯坦堡 → 土耳其）"
+    },
+    "heritage-capital:1s14s49": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（土耳其 首都 安卡拉）"
+    },
+    "heritage-continent:1pmz5qk": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（土耳其 → 亞洲）"
+    },
+    "heritage-reverse-capital:1q0t8m1": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（安卡拉 → 土耳其）"
+    },
+    "heritage-landmark:wqb4g0": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（卡帕多奇亞 → 卡帕多奇亞）"
+    },
+    "heritage-city:1b29ait": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（卡帕多奇亞 → 土耳其）"
+    },
+    "heritage-landmark:1sdus7k": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（耶路撒冷古城 → 耶路撒冷）"
+    },
+    "heritage-city:1lqo2b2": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（耶路撒冷 → 以色列）"
+    },
+    "heritage-capital:nkjzpq": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（以色列 首都 耶路撒冷）"
+    },
+    "heritage-continent:1vsod38": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（以色列 → 亞洲）"
+    },
+    "heritage-reverse-capital:1lqo2b2": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（耶路撒冷 → 以色列）"
+    },
+    "heritage-landmark:1ptd664": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（杰拉什古城 → 安曼）"
+    },
+    "heritage-city:fr3p9l": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（安曼 → 約旦）"
+    },
+    "heritage-capital:4ggzvv": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（約旦 首都 安曼）"
+    },
+    "heritage-continent:4geu0c": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（約旦 → 亞洲）"
+    },
+    "heritage-reverse-capital:fr3p9l": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（安曼 → 約旦）"
+    },
+    "heritage-landmark:b3l77x": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（新天鵝堡 → 慕尼黑）"
+    },
+    "heritage-city:vxw39g": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（慕尼黑 → 德國）"
+    },
+    "heritage-capital:u2y566": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（德國 首都 柏林）"
+    },
+    "heritage-continent:u2yrqg": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（德國 → 歐洲）"
+    },
+    "heritage-reverse-capital:1rtb686": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（柏林 → 德國）"
+    },
+    "heritage-landmark:113ugj8": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（凡爾賽宮 → 凡爾賽）"
+    },
+    "heritage-city:igdg1c": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（凡爾賽 → 法國）"
+    },
+    "heritage-capital:ac5u9q": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（法國 首都 巴黎）"
+    },
+    "heritage-continent:ac7u9y": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（法國 → 歐洲）"
+    },
+    "heritage-reverse-capital:w8u12u": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（巴黎 → 法國）"
+    },
+    "heritage-landmark:16uv51c": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（聖米歇爾山 → 聖米歇爾山）"
+    },
+    "heritage-city:jxsik3": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（聖米歇爾山 → 法國）"
+    },
+    "heritage-landmark:1sisy64": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（阿爾罕布拉宮 → 格拉納達）"
+    },
+    "heritage-city:1nhw7wl": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（格拉納達 → 西班牙）"
+    },
+    "heritage-capital:14wn1wy": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（西班牙 首都 馬德里）"
+    },
+    "heritage-continent:f27mk1": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（西班牙 → 歐洲）"
+    },
+    "heritage-reverse-capital:zxctpu": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（馬德里 → 西班牙）"
+    },
+    "heritage-landmark:dzpqo": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（塞哥維亞古城 → 塞哥維亞）"
+    },
+    "heritage-city:ekkpyh": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（塞哥維亞 → 西班牙）"
+    },
+    "heritage-landmark:kq0usn": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（雅典衛城 → 雅典）"
+    },
+    "heritage-city:vjpl8z": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（雅典 → 希臘）"
+    },
+    "heritage-capital:syq69t": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（希臘 首都 雅典）"
+    },
+    "heritage-continent:syixn4": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（希臘 → 歐洲）"
+    },
+    "heritage-reverse-capital:vjpl8z": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（雅典 → 希臘）"
+    },
+    "heritage-landmark:18086a2": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（龐貝古城 → 那不勒斯）"
+    },
+    "heritage-city:14ijwl4": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（那不勒斯 → 義大利）"
+    },
+    "heritage-capital:1rp8oye": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（義大利 首都 羅馬）"
+    },
+    "heritage-continent:1rp50fl": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（義大利 → 歐洲）"
+    },
+    "heritage-reverse-capital:4zbuvs": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（羅馬 → 義大利）"
+    },
+    "heritage-landmark:1rjwqxk": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（威尼斯古城 → 威尼斯）"
+    },
+    "heritage-city:a8h66d": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（威尼斯 → 義大利）"
+    },
+    "heritage-landmark:gv8nro": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（烏菲茲美術館 → 佛羅倫斯）"
+    },
+    "heritage-city:10vff7j": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（佛羅倫斯 → 義大利）"
+    },
+    "heritage-landmark:18h0y6q": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（威斯敏斯特宮 → 倫敦）"
+    },
+    "heritage-city:1650589": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（倫敦 → 英國）"
+    },
+    "heritage-capital:pr2mzf": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（英國 首都 倫敦）"
+    },
+    "heritage-continent:pr7aqq": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（英國 → 歐洲）"
+    },
+    "heritage-reverse-capital:1650589": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（倫敦 → 英國）"
+    },
+    "heritage-landmark:oo4bgx": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（巨石陣 → 索爾茲伯里）"
+    },
+    "heritage-city:14vhfb5": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（索爾茲伯里 → 英國）"
+    },
+    "heritage-landmark:hinhad": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（布拉格城堡 → 布拉格）"
+    },
+    "heritage-city:3df36g": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（布拉格 → 捷克）"
+    },
+    "heritage-capital:eypjbk": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（捷克 首都 布拉格）"
+    },
+    "heritage-continent:180pco8": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（捷克 → 歐洲）"
+    },
+    "heritage-reverse-capital:3df36g": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（布拉格 → 捷克）"
+    },
+    "heritage-landmark:2jbb83": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（維利奇卡鹽礦 → 克拉科夫）"
+    },
+    "heritage-city:1jaymb1": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（克拉科夫 → 波蘭）"
+    },
+    "heritage-capital:ghhsd5": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（波蘭 首都 華沙）"
+    },
+    "heritage-continent:ghdlpt": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（波蘭 → 歐洲）"
+    },
+    "heritage-reverse-capital:wcqtmj": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（華沙 → 波蘭）"
+    },
+    "heritage-landmark:t4183s": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（辛格韋德利爾國家公園 → 雷克雅維克）"
+    },
+    "heritage-city:1ofxpqp": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（雷克雅維克 → 冰島）"
+    },
+    "heritage-capital:64sl3v": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（冰島 首都 雷克雅維克）"
+    },
+    "heritage-continent:1b0h02e": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（冰島 → 歐洲）"
+    },
+    "heritage-reverse-capital:1ofxpqp": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（雷克雅維克 → 冰島）"
+    },
+    "heritage-landmark:dgtesv": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（克里姆林宮 → 莫斯科）"
+    },
+    "heritage-city:qodmkh": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（莫斯科 → 俄羅斯）"
+    },
+    "heritage-capital:1htgwsh": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（俄羅斯 首都 莫斯科）"
+    },
+    "heritage-continent:mcrsjy": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（俄羅斯 → 歐洲）"
+    },
+    "heritage-reverse-capital:qodmkh": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（莫斯科 → 俄羅斯）"
+    },
+    "heritage-landmark:1lt0h2r": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（冬宮博物館 → 聖彼得堡）"
+    },
+    "heritage-city:10v9azo": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（聖彼得堡 → 俄羅斯）"
+    },
+    "heritage-landmark:196dj80": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（杜布羅夫尼克古城 → 杜布羅夫尼克）"
+    },
+    "heritage-city:1ei2h4a": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（杜布羅夫尼克 → 克羅埃西亞）"
+    },
+    "heritage-capital:larvjq": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（克羅埃西亞 首都 薩格勒布）"
+    },
+    "heritage-continent:1o6mw6s": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（克羅埃西亞 → 歐洲）"
+    },
+    "heritage-reverse-capital:1468yoi": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（薩格勒布 → 克羅埃西亞）"
+    },
+    "heritage-landmark:wwb94p": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（大峽谷國家公園 → 大峽谷）"
+    },
+    "heritage-city:zixb86": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（大峽谷 → 美國）"
+    },
+    "heritage-capital:wvby8a": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（美國 首都 華盛頓）"
+    },
+    "heritage-continent:wo7n5q": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（美國 → 北美洲）"
+    },
+    "heritage-reverse-capital:1vcy8r4": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（華盛頓 → 美國）"
+    },
+    "heritage-landmark:q20c21": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（優勝美地國家公園 → 優勝美地）"
+    },
+    "heritage-city:79qhc2": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（優勝美地 → 美國）"
+    },
+    "heritage-landmark:76icvd": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（黃石國家公園 → 黃石）"
+    },
+    "heritage-city:1vnk7s7": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（黃石 → 美國）"
+    },
+    "heritage-landmark:64027o": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（尼加拉瀑布 → 尼加拉瀑布）"
+    },
+    "heritage-city:1xua7og": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（尼加拉瀑布 → 美國）"
+    },
+    "heritage-landmark:vzd4np": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（瓦哈卡歷史中心 → 瓦哈卡）"
+    },
+    "heritage-city:8gks1f": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（瓦哈卡 → 墨西哥）"
+    },
+    "heritage-capital:551ep8": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（墨西哥 首都 墨西哥城）"
+    },
+    "heritage-continent:bljpkf": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（墨西哥 → 北美洲）"
+    },
+    "heritage-reverse-capital:1g3kzdg": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（墨西哥城 → 墨西哥）"
+    },
+    "heritage-landmark:61d4bt": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（薩爾瓦多歷史中心 → 薩爾瓦多）"
+    },
+    "heritage-city:58s8fw": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（薩爾瓦多 → 巴西）"
+    },
+    "heritage-capital:1q14ulr": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（巴西 首都 巴西利亞）"
+    },
+    "heritage-continent:1rtlngs": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（巴西 → 南美洲）"
+    },
+    "heritage-reverse-capital:oqsued": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（巴西利亞 → 巴西）"
+    },
+    "heritage-landmark:1wnyrmq": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（莫雷諾冰川 → 烏斯懷亞）"
+    },
+    "heritage-city:wh9yi": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（烏斯懷亞 → 阿根廷）"
+    },
+    "heritage-capital:1stk9p9": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（阿根廷 首都 布宜諾斯艾利斯）"
+    },
+    "heritage-continent:2ll5q": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（阿根廷 → 南美洲）"
+    },
+    "heritage-reverse-capital:kzu9el": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（布宜諾斯艾利斯 → 阿根廷）"
+    },
+    "heritage-landmark:16c3ka": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（庫斯科古城 → 庫斯科）"
+    },
+    "heritage-city:pft3d0": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（庫斯科 → 秘魯）"
+    },
+    "heritage-capital:1xu5rvq": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（秘魯 首都 利馬）"
+    },
+    "heritage-continent:y1nqmw": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（秘魯 → 南美洲）"
+    },
+    "heritage-reverse-capital:1kiqs3y": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（利馬 → 秘魯）"
+    },
+    "heritage-landmark:nyy13l": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（摩艾石像 → 復活節島）"
+    },
+    "heritage-city:1fwikht": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（復活節島 → 智利）"
+    },
+    "heritage-capital:mf2nvn": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（智利 首都 圣地亚哥）"
+    },
+    "heritage-continent:s7iui8": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（智利 → 南美洲）"
+    },
+    "heritage-reverse-capital:1g03ysx": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（圣地亚哥 → 智利）"
+    },
+    "heritage-landmark:at7ybo": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（大堡礁 → 凱恩斯）"
+    },
+    "heritage-city:mdqfj6": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（凱恩斯 → 澳洲）"
+    },
+    "heritage-capital:189tspv": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（澳洲 首都 坎培拉）"
+    },
+    "heritage-continent:18a76j7": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（澳洲 → 大洋洲）"
+    },
+    "heritage-reverse-capital:1yuvp5n": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（坎培拉 → 澳洲）"
+    },
+    "heritage-landmark:nn7e2t": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（烏魯魯 → 艾爾斯岩）"
+    },
+    "heritage-city:1atn4e7": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（艾爾斯岩 → 澳洲）"
+    },
+    "heritage-landmark:qmkhrr": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（乞力馬扎羅山 → 乞力馬扎羅）"
+    },
+    "heritage-city:byicay": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（乞力馬扎羅 → 坦尚尼亞）"
+    },
+    "heritage-capital:1hbqv60": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（坦尚尼亞 首都 多多馬）"
+    },
+    "heritage-continent:1duglyw": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（坦尚尼亞 → 非洲）"
+    },
+    "heritage-reverse-capital:1a9iqas": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（多多馬 → 坦尚尼亞）"
+    },
+    "heritage-landmark:wjl1al": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（馬拉喀什老城 → 馬拉喀什）"
+    },
+    "heritage-city:k1tvcm": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（馬拉喀什 → 摩洛哥）"
+    },
+    "heritage-capital:ywknon": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（摩洛哥 首都 拉巴特）"
+    },
+    "heritage-continent:zi3i8r": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（摩洛哥 → 非洲）"
+    },
+    "heritage-reverse-capital:lftp47": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（拉巴特 → 摩洛哥）"
+    },
+    "heritage-landmark:1qi1hk4": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（羅本島 → 羅本島）"
+    },
+    "heritage-city:vspu42": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（羅本島 → 南非）"
+    },
+    "heritage-capital:13f5mk0": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（南非 首都 開普敦）"
+    },
+    "heritage-continent:1ougop3": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（南非 → 非洲）"
+    },
+    "heritage-reverse-capital:8b8zi": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（開普敦 → 南非）"
+    },
+    "heritage-landmark:1gqd789": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（阿布辛貝神廟 → 阿布辛貝）"
+    },
+    "heritage-city:zf78ez": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（阿布辛貝 → 埃及）"
+    },
+    "heritage-capital:1xm13rh": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（埃及 首都 開羅）"
+    },
+    "heritage-continent:1xm1bbb": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（埃及 → 非洲）"
+    },
+    "heritage-reverse-capital:wk4fpj": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（開羅 → 埃及）"
+    },
+    "heritage-landmark:1hzw4ey": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（魁北克古城 → 魁北克）"
+    },
+    "heritage-city:6v548z": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（魁北克 → 加拿大）"
+    },
+    "heritage-capital:1acbbiw": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（加拿大 首都 渥太華）"
+    },
+    "heritage-continent:1a8j2eh": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（加拿大 → 北美洲）"
+    },
+    "heritage-reverse-capital:1yjr5zs": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（渥太華 → 加拿大）"
+    },
+    "heritage-landmark:1tuk2ov": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（小孩堤防風車群 → 鹿特丹）"
+    },
+    "heritage-city:1s51mj5": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（鹿特丹 → 荷蘭）"
+    },
+    "heritage-capital:agfvhg": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（荷蘭 首都 阿姆斯特丹）"
+    },
+    "heritage-continent:xqw5za": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（荷蘭 → 歐洲）"
+    },
+    "heritage-reverse-capital:tgz4nc": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（阿姆斯特丹 → 荷蘭）"
+    },
+    "heritage-landmark:t2rsvy": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（波斯波利斯古城 → 德黑蘭）"
+    },
+    "heritage-city:m473qs": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（德黑蘭 → 伊朗）"
+    },
+    "heritage-capital:13gkyiu": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（伊朗 首都 德黑蘭）"
+    },
+    "heritage-continent:11xjb1d": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（伊朗 → 亞洲）"
+    },
+    "heritage-reverse-capital:m473qs": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-14",
+      "reviewer": "audit-script:heritage-fact",
+      "note": "來源 heritageFacts 一致（德黑蘭 → 伊朗）"
     }
   }
 }

@@ -29,4 +29,5 @@ export const QUESTION_SOURCES = {
   tour: { label: "內建行程題庫", auditStatus: "pending" as const },
   restCountries: { label: "REST Countries", auditStatus: "approved" as const },
   expandedPending: { label: "REST Countries（待人工覆核）", auditStatus: "pending" as const },
+  worldHeritage: { label: "世界遺產題庫", auditStatus: "approved" as const },
 } satisfies Record<string, QuestionSource>;

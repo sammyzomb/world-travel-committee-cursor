@@ -161,6 +161,11 @@ for (const raw of bank.tourQuestions ?? []) {
   writeOverride(id, validateCuratedQuestion(raw), "audit-script:tour");
 }
 
+for (const raw of bank.heritageQuestions ?? []) {
+  const id = makeQuestionId("heritage", raw.q);
+  writeOverride(id, validateCuratedQuestion(raw), "audit-script:heritage");
+}
+
 for (const fact of facts) {
   const [city, country, , , landmark] = fact;
 
@@ -191,6 +196,55 @@ for (const fact of facts) {
       cityId,
       { auditStatus: "disabled", note: "來源資料不完整，已停用" },
       "audit-script:fact-consistency",
+    );
+  }
+}
+
+for (const fact of bank.heritageFacts ?? []) {
+  const [city, country, , capital, landmark] = fact;
+
+  const landmarkId = makeQuestionId("heritage-landmark", `${landmark}:${city}`);
+  if (landmark && city) {
+    writeOverride(
+      landmarkId,
+      { auditStatus: "approved", note: `來源 heritageFacts 一致（${landmark} → ${city}）` },
+      "audit-script:heritage-fact",
+    );
+  }
+
+  const cityId = makeQuestionId("heritage-city", `${city}:${country}`);
+  if (city && country) {
+    writeOverride(
+      cityId,
+      { auditStatus: "approved", note: `來源 heritageFacts 一致（${city} → ${country}）` },
+      "audit-script:heritage-fact",
+    );
+  }
+
+  const capitalId = makeQuestionId("heritage-capital", `${country}:${capital}`);
+  if (country && capital) {
+    writeOverride(
+      capitalId,
+      { auditStatus: "approved", note: `來源 heritageFacts 一致（${country} 首都 ${capital}）` },
+      "audit-script:heritage-fact",
+    );
+  }
+
+  const continentId = makeQuestionId("heritage-continent", `${country}:${fact[2]}`);
+  if (country && fact[2]) {
+    writeOverride(
+      continentId,
+      { auditStatus: "approved", note: `來源 heritageFacts 一致（${country} → ${fact[2]}）` },
+      "audit-script:heritage-fact",
+    );
+  }
+
+  const reverseCapitalId = makeQuestionId("heritage-reverse-capital", `${capital}:${country}`);
+  if (capital && country) {
+    writeOverride(
+      reverseCapitalId,
+      { auditStatus: "approved", note: `來源 heritageFacts 一致（${capital} → ${country}）` },
+      "audit-script:heritage-fact",
     );
   }
 }

@@ -148,35 +148,8 @@
 
 @media(max-width:700px){.arcade-hero{min-height:620px;padding:1.2rem 1rem 2.5rem;background-position:center}.original-title-art{width:100%;border-width:6px}.arcade-screen-copy{width:92%;margin-top:1.1rem}.arcade-screen-copy .eyebrow{font-size:.72rem;padding:.38rem .6rem}.arcade-screen-copy .primary-button{min-height:48px;margin-top:.75rem}.true-false-grid{grid-template-columns:1fr 1fr}.true-false-grid .answer-button{min-height:72px}.invitation-grid{grid-template-columns:1fr}.invitation-card{min-height:116px}.travel-invitation{padding-top:1.5rem}.score-submit-row{flex-direction:column}.score-submit-button{width:100%}}
 
-.start-side-column{display:flex;flex-direction:column;gap:1rem}
-.arcade-mode-grid{margin-top:1rem}
-.mode-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.65rem}
-.mode-chip{display:flex;align-items:center;justify-content:center;gap:.45rem;border:1px solid #ffffff24;background:#07142699;border-radius:999px;padding:.7rem .85rem;font-size:.82rem;font-weight:800;color:#fff;transition:background .2s,border-color .2s,transform .2s}
-.mode-chip:hover{background:#ffffff14;border-color:#f7c65b66;transform:translateY(-1px)}
-.entertainment-card{padding:1.5rem}
-.player-stats-row{display:grid;gap:.45rem;margin-top:1rem;padding-top:1rem;border-top:1px solid #ffffff14;font-size:.78rem;color:#cbd5e1}
-.player-stats-row span{display:flex;align-items:center;gap:.35rem}
-.achievements-panel{border:1px solid #ffffff1f;border-radius:1.2rem;padding:1rem 1.1rem;background:#071426b8;box-shadow:0 16px 48px #0004}
-.achievements-panel h3{font-size:1rem;font-weight:900}
-.achievement-count{font-size:.82rem;font-weight:800;color:#f7c65b}
-.achievement-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.55rem;margin-top:.85rem}
-.achievements-panel.compact .achievement-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
-.achievement-badge{display:grid;gap:.2rem;padding:.65rem;border-radius:.9rem;border:1px solid #ffffff14;background:#ffffff08;text-align:left}
-.achievement-badge.owned{border-color:#f7c65b55;background:#f7c65b12}
-.achievement-emoji{font-size:1.2rem}
-.achievement-badge b{font-size:.78rem}
-.achievement-badge small{font-size:.68rem;color:#94a3b8;line-height:1.35}
 .share-score-card{margin:1.25rem 0;padding:1rem 1.1rem;border-radius:1rem;border:1px solid #ffffff1a;background:#ffffff08}
 .share-score-preview{margin:.75rem 0;color:#cbd5e1;font-size:.9rem;line-height:1.5}
 .share-score-button{width:100%}
-.new-achievements{margin-top:1rem;padding:.85rem 1rem;border-radius:.9rem;border:1px solid #f7c65b44;background:#f7c65b12;color:#fde68a}
 .run-streak-copy{margin-top:.35rem;color:#f7c65b;font-weight:700}
 .streak-pill{color:#fde68a;border-color:#f7c65b55;background:#f7c65b18}
-.map-quiz-card h1{margin:1rem 0 .5rem}
-.map-quiz-hint{color:#94a3b8;margin-bottom:1rem}
-.map-continent-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.65rem}
-.map-continent-button{border:1px solid #ffffff24;background:#ffffff0d;border-radius:1rem;padding:1rem;font-size:1rem;font-weight:800}
-.map-continent-button.correct{border-color:#4ade80;background:#14532d99}
-.map-continent-button.wrong{border-color:#f87171;background:#7f1d1d99}
-.map-continent-button:disabled{cursor:default}
-@media(max-width:700px){.mode-grid,.map-continent-grid{grid-template-columns:1fr}.achievements-panel.compact .achievement-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
