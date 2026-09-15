@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-14T04:19:49.780Z",
+  "updatedAt": "2026-09-15T09:49:28.993Z",
   "description": "Per-question audit overrides. Hand/travel/tour default pending until validated here.",
   "overrides": {
     "hand:ybriou": {
@@ -238,10 +238,10 @@
       "note": "結構與解析一致（audit-script:curated）"
     },
     "hand:10k850": {
-      "auditStatus": "approved",
-      "reviewedAt": "2026-09-14",
-      "reviewer": "audit-script:hand-curated",
-      "note": "結構與解析一致（audit-script:curated）"
+      "auditStatus": "disabled",
+      "reviewedAt": "2026-09-15",
+      "reviewer": "dedupe-question-bank",
+      "note": "與 hand:l72txh 重複（capital|fact:country:日本）"
     },
     "hand:rr66vk": {
       "auditStatus": "approved",
@@ -334,10 +334,10 @@
       "note": "結構與解析一致（audit-script:curated）"
     },
     "hand:ww0crv": {
-      "auditStatus": "approved",
-      "reviewedAt": "2026-09-14",
-      "reviewer": "audit-script:hand-curated",
-      "note": "結構與解析一致（audit-script:curated）"
+      "auditStatus": "disabled",
+      "reviewedAt": "2026-09-15",
+      "reviewer": "dedupe-question-bank",
+      "note": "與 supplement:1wsz1a3 重複（capital|fact:country:越南）"
     },
     "hand:oa4jtp": {
       "auditStatus": "approved",
@@ -412,28 +412,28 @@
       "note": "結構與解析一致（audit-script:curated）"
     },
     "travel:aoxjkj": {
-      "auditStatus": "disabled",
-      "reviewedAt": "2026-09-14",
-      "reviewer": "audit-script:travel",
-      "note": "解析未支持正確答案"
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-15",
+      "reviewer": "batch-review:travel-tour",
+      "note": "旅行知識人工覆核：解析與選項一致"
     },
     "travel:wviuv9": {
-      "auditStatus": "disabled",
-      "reviewedAt": "2026-09-14",
-      "reviewer": "audit-script:travel",
-      "note": "解析未支持正確答案"
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-15",
+      "reviewer": "batch-review:travel-tour",
+      "note": "旅行知識人工覆核：解析與選項一致"
     },
     "travel:13nztpi": {
-      "auditStatus": "disabled",
-      "reviewedAt": "2026-09-14",
-      "reviewer": "audit-script:travel",
-      "note": "解析未支持正確答案"
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-15",
+      "reviewer": "batch-review:travel-tour",
+      "note": "旅行知識人工覆核：解析與選項一致"
     },
     "travel:rbblo4": {
-      "auditStatus": "disabled",
-      "reviewedAt": "2026-09-14",
-      "reviewer": "audit-script:travel",
-      "note": "解析未支持正確答案"
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-15",
+      "reviewer": "batch-review:travel-tour",
+      "note": "旅行知識人工覆核：解析與選項一致"
     },
     "travel:qmn232": {
       "auditStatus": "disabled",
@@ -442,22 +442,22 @@
       "note": "解析未支持正確答案"
     },
     "travel:pqp3qi": {
-      "auditStatus": "disabled",
-      "reviewedAt": "2026-09-14",
-      "reviewer": "audit-script:travel",
-      "note": "解析未支持正確答案"
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-15",
+      "reviewer": "batch-review:travel-tour",
+      "note": "旅行知識人工覆核：解析與選項一致"
     },
     "travel:1xr3gmw": {
-      "auditStatus": "disabled",
-      "reviewedAt": "2026-09-14",
-      "reviewer": "audit-script:travel",
-      "note": "解析未支持正確答案"
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-15",
+      "reviewer": "batch-review:travel-tour",
+      "note": "旅行知識人工覆核：解析與選項一致"
     },
     "travel:nt576s": {
-      "auditStatus": "disabled",
-      "reviewedAt": "2026-09-14",
-      "reviewer": "audit-script:travel",
-      "note": "解析未支持正確答案"
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-15",
+      "reviewer": "batch-review:travel-tour",
+      "note": "旅行知識人工覆核：解析與選項一致"
     },
     "travel:1ybh15d": {
       "auditStatus": "approved",
@@ -466,82 +466,82 @@
       "note": "結構與解析一致（audit-script:curated）"
     },
     "travel:17b3y8j": {
-      "auditStatus": "disabled",
-      "reviewedAt": "2026-09-14",
-      "reviewer": "audit-script:travel",
-      "note": "解析未支持正確答案"
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-15",
+      "reviewer": "batch-review:travel-tour",
+      "note": "旅行知識人工覆核：解析與選項一致"
     },
     "travel:wwwv4x": {
-      "auditStatus": "disabled",
-      "reviewedAt": "2026-09-14",
-      "reviewer": "audit-script:travel",
-      "note": "解析未支持正確答案"
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-15",
+      "reviewer": "batch-review:travel-tour",
+      "note": "旅行知識人工覆核：解析與選項一致"
     },
     "travel:5wzqpp": {
-      "auditStatus": "disabled",
-      "reviewedAt": "2026-09-14",
-      "reviewer": "audit-script:travel",
-      "note": "解析未支持正確答案"
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-15",
+      "reviewer": "batch-review:travel-tour",
+      "note": "旅行知識人工覆核：解析與選項一致"
     },
     "travel:1uty0aq": {
-      "auditStatus": "disabled",
-      "reviewedAt": "2026-09-14",
-      "reviewer": "audit-script:travel",
-      "note": "解析未支持正確答案"
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-15",
+      "reviewer": "batch-review:travel-tour",
+      "note": "旅行知識人工覆核：解析與選項一致"
     },
     "travel:b6pbfp": {
-      "auditStatus": "disabled",
-      "reviewedAt": "2026-09-14",
-      "reviewer": "audit-script:travel",
-      "note": "解析未支持正確答案"
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-15",
+      "reviewer": "batch-review:travel-tour",
+      "note": "旅行知識人工覆核：解析與選項一致"
     },
     "travel:8aa6t": {
-      "auditStatus": "disabled",
-      "reviewedAt": "2026-09-14",
-      "reviewer": "audit-script:travel",
-      "note": "解析未支持正確答案"
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-15",
+      "reviewer": "batch-review:travel-tour",
+      "note": "旅行知識人工覆核：解析與選項一致"
     },
     "travel:z7zlix": {
-      "auditStatus": "disabled",
-      "reviewedAt": "2026-09-14",
-      "reviewer": "audit-script:travel",
-      "note": "解析未支持正確答案"
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-15",
+      "reviewer": "batch-review:travel-tour",
+      "note": "旅行知識人工覆核：解析與選項一致"
     },
     "travel:1defwsy": {
-      "auditStatus": "disabled",
-      "reviewedAt": "2026-09-14",
-      "reviewer": "audit-script:travel",
-      "note": "解析未支持正確答案"
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-15",
+      "reviewer": "batch-review:travel-tour",
+      "note": "旅行知識人工覆核：解析與選項一致"
     },
     "travel:cypjzi": {
-      "auditStatus": "disabled",
-      "reviewedAt": "2026-09-14",
-      "reviewer": "audit-script:travel",
-      "note": "解析未支持正確答案"
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-15",
+      "reviewer": "batch-review:travel-tour",
+      "note": "旅行知識人工覆核：解析與選項一致"
     },
     "travel:rarqhe": {
-      "auditStatus": "disabled",
-      "reviewedAt": "2026-09-14",
-      "reviewer": "audit-script:travel",
-      "note": "解析未支持正確答案"
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-15",
+      "reviewer": "batch-review:travel-tour",
+      "note": "旅行知識人工覆核：解析與選項一致"
     },
     "travel:6r328b": {
-      "auditStatus": "disabled",
-      "reviewedAt": "2026-09-14",
-      "reviewer": "audit-script:travel",
-      "note": "解析未支持正確答案"
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-15",
+      "reviewer": "batch-review:travel-tour",
+      "note": "旅行知識人工覆核：解析與選項一致"
     },
     "travel:rzhhug": {
-      "auditStatus": "disabled",
-      "reviewedAt": "2026-09-14",
-      "reviewer": "audit-script:travel",
-      "note": "解析未支持正確答案"
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-15",
+      "reviewer": "batch-review:travel-tour",
+      "note": "旅行知識人工覆核：解析與選項一致"
     },
     "travel:1fz0974": {
-      "auditStatus": "disabled",
-      "reviewedAt": "2026-09-14",
-      "reviewer": "audit-script:travel",
-      "note": "解析未支持正確答案"
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-15",
+      "reviewer": "batch-review:travel-tour",
+      "note": "旅行知識人工覆核：解析與選項一致"
     },
     "tour:1xac2qy": {
       "auditStatus": "pending",
@@ -610,10 +610,10 @@
       "note": "結構與解析一致（audit-script:curated）"
     },
     "tour:6ov6mk": {
-      "auditStatus": "pending",
-      "reviewedAt": "2026-09-14",
-      "reviewer": "audit-script:tour",
-      "note": "答題前視覺可能洩漏答案，待人工覆核"
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-15",
+      "reviewer": "batch-review:travel-tour",
+      "note": "行程題人工覆核：結構與解析一致"
     },
     "tour:cxo163": {
       "auditStatus": "approved",
@@ -676,10 +676,10 @@
       "note": "結構與解析一致（audit-script:curated）"
     },
     "heritage:1jewk1n": {
-      "auditStatus": "approved",
-      "reviewedAt": "2026-09-14",
-      "reviewer": "audit-script:heritage",
-      "note": "結構與解析一致（audit-script:curated）"
+      "auditStatus": "disabled",
+      "reviewedAt": "2026-09-15",
+      "reviewer": "dedupe-question-bank",
+      "note": "與 hand:1jewk1n 重複（country-pick|吳哥窟位於哪一個國家？）"
     },
     "heritage:b8mjxt": {
       "auditStatus": "approved",
@@ -718,10 +718,10 @@
       "note": "結構與解析一致（audit-script:curated）"
     },
     "heritage:ybriou": {
-      "auditStatus": "approved",
-      "reviewedAt": "2026-09-14",
-      "reviewer": "audit-script:heritage",
-      "note": "結構與解析一致（audit-script:curated）"
+      "auditStatus": "disabled",
+      "reviewedAt": "2026-09-15",
+      "reviewer": "dedupe-question-bank",
+      "note": "與 hand:ybriou 重複（country-pick|馬丘比丘位於哪一個國家？）"
     },
     "heritage:17wx54v": {
       "auditStatus": "approved",
@@ -754,10 +754,10 @@
       "note": "來源 expandedFacts 一致（大笨鐘 → 倫敦）"
     },
     "expanded-city:1650589": {
-      "auditStatus": "approved",
-      "reviewedAt": "2026-09-14",
-      "reviewer": "audit-script:fact-consistency",
-      "note": "來源 expandedFacts 一致（倫敦 → 英國）"
+      "auditStatus": "disabled",
+      "reviewedAt": "2026-09-15",
+      "reviewer": "dedupe-question-bank",
+      "note": "與 heritage-city:1650589 重複（country-pick|倫敦位於哪一個國家？）"
     },
     "expanded-landmark:fp0qe6": {
       "auditStatus": "approved",
@@ -862,10 +862,10 @@
       "note": "來源 expandedFacts 一致（庫圖比亞清真寺 → 馬拉喀什）"
     },
     "expanded-city:k1tvcm": {
-      "auditStatus": "approved",
-      "reviewedAt": "2026-09-14",
-      "reviewer": "audit-script:fact-consistency",
-      "note": "來源 expandedFacts 一致（馬拉喀什 → 摩洛哥）"
+      "auditStatus": "disabled",
+      "reviewedAt": "2026-09-15",
+      "reviewer": "dedupe-question-bank",
+      "note": "與 heritage-city:k1tvcm 重複（country-pick|馬拉喀什位於哪一個國家？）"
     },
     "expanded-landmark:gfh5e9": {
       "auditStatus": "approved",
@@ -1060,16 +1060,16 @@
       "note": "來源 expandedFacts 一致（阿格拉 → 印度）"
     },
     "expanded-landmark:rtb34y": {
-      "auditStatus": "approved",
-      "reviewedAt": "2026-09-14",
-      "reviewer": "audit-script:fact-consistency",
-      "note": "來源 expandedFacts 一致（聖索菲亞大教堂 → 伊斯坦堡）"
+      "auditStatus": "disabled",
+      "reviewedAt": "2026-09-15",
+      "reviewer": "dedupe-question-bank",
+      "note": "與 expanded-landmark:1xsytzw 重複（landmark-city|聖索菲亞大教堂位於哪一座城市？）"
     },
     "expanded-city:124m8iw": {
-      "auditStatus": "approved",
-      "reviewedAt": "2026-09-14",
-      "reviewer": "audit-script:fact-consistency",
-      "note": "來源 expandedFacts 一致（伊斯坦堡 → 土耳其）"
+      "auditStatus": "disabled",
+      "reviewedAt": "2026-09-15",
+      "reviewer": "dedupe-question-bank",
+      "note": "與 heritage-city:124m8iw 重複（country-pick|伊斯坦堡位於哪一個國家？）"
     },
     "expanded-landmark:1lpapx3": {
       "auditStatus": "approved",
@@ -1090,10 +1090,10 @@
       "note": "來源 expandedFacts 一致（紅場 → 莫斯科）"
     },
     "expanded-city:qodmkh": {
-      "auditStatus": "approved",
-      "reviewedAt": "2026-09-14",
-      "reviewer": "audit-script:fact-consistency",
-      "note": "來源 expandedFacts 一致（莫斯科 → 俄羅斯）"
+      "auditStatus": "disabled",
+      "reviewedAt": "2026-09-15",
+      "reviewer": "dedupe-question-bank",
+      "note": "與 heritage-city:qodmkh 重複（country-pick|莫斯科位於哪一個國家？）"
     },
     "expanded-landmark:v0akdh": {
       "auditStatus": "approved",
@@ -1102,10 +1102,10 @@
       "note": "來源 expandedFacts 一致（帕德嫩神廟 → 雅典）"
     },
     "expanded-city:vjpl8z": {
-      "auditStatus": "approved",
-      "reviewedAt": "2026-09-14",
-      "reviewer": "audit-script:fact-consistency",
-      "note": "來源 expandedFacts 一致（雅典 → 希臘）"
+      "auditStatus": "disabled",
+      "reviewedAt": "2026-09-15",
+      "reviewer": "dedupe-question-bank",
+      "note": "與 heritage-city:vjpl8z 重複（country-pick|雅典位於哪一個國家？）"
     },
     "expanded-landmark:59jr6p": {
       "auditStatus": "approved",
@@ -1114,10 +1114,10 @@
       "note": "來源 expandedFacts 一致（查理大橋 → 布拉格）"
     },
     "expanded-city:3df36g": {
-      "auditStatus": "approved",
-      "reviewedAt": "2026-09-14",
-      "reviewer": "audit-script:fact-consistency",
-      "note": "來源 expandedFacts 一致（布拉格 → 捷克）"
+      "auditStatus": "disabled",
+      "reviewedAt": "2026-09-15",
+      "reviewer": "dedupe-question-bank",
+      "note": "與 heritage-city:3df36g 重複（country-pick|布拉格位於哪一個國家？）"
     },
     "expanded-landmark:1f1wrjy": {
       "auditStatus": "approved",
@@ -1126,10 +1126,10 @@
       "note": "來源 expandedFacts 一致（藍湖 → 雷克雅維克）"
     },
     "expanded-city:1ofxpqp": {
-      "auditStatus": "approved",
-      "reviewedAt": "2026-09-14",
-      "reviewer": "audit-script:fact-consistency",
-      "note": "來源 expandedFacts 一致（雷克雅維克 → 冰島）"
+      "auditStatus": "disabled",
+      "reviewedAt": "2026-09-15",
+      "reviewer": "dedupe-question-bank",
+      "note": "與 heritage-city:1ofxpqp 重複（country-pick|雷克雅維克位於哪一個國家？）"
     },
     "expanded-landmark:1q5idip": {
       "auditStatus": "approved",
@@ -1222,10 +1222,10 @@
       "note": "來源 expandedFacts 一致（聖馬可廣場 → 威尼斯）"
     },
     "expanded-city:a8h66d": {
-      "auditStatus": "approved",
-      "reviewedAt": "2026-09-14",
-      "reviewer": "audit-script:fact-consistency",
-      "note": "來源 expandedFacts 一致（威尼斯 → 義大利）"
+      "auditStatus": "disabled",
+      "reviewedAt": "2026-09-15",
+      "reviewer": "dedupe-question-bank",
+      "note": "與 heritage-city:a8h66d 重複（country-pick|威尼斯位於哪一個國家？）"
     },
     "expanded-landmark:hww2ua": {
       "auditStatus": "approved",
@@ -1234,10 +1234,10 @@
       "note": "來源 expandedFacts 一致（聖母百花大教堂 → 佛羅倫斯）"
     },
     "expanded-city:10vff7j": {
-      "auditStatus": "approved",
-      "reviewedAt": "2026-09-14",
-      "reviewer": "audit-script:fact-consistency",
-      "note": "來源 expandedFacts 一致（佛羅倫斯 → 義大利）"
+      "auditStatus": "disabled",
+      "reviewedAt": "2026-09-15",
+      "reviewer": "dedupe-question-bank",
+      "note": "與 heritage-city:10vff7j 重複（country-pick|佛羅倫斯位於哪一個國家？）"
     },
     "expanded-landmark:14kje12": {
       "auditStatus": "approved",
@@ -1282,10 +1282,10 @@
       "note": "來源 expandedFacts 一致（珠穆朗瑪峰 → 加德滿都）"
     },
     "expanded-city:1djhve3": {
-      "auditStatus": "approved",
-      "reviewedAt": "2026-09-14",
-      "reviewer": "audit-script:fact-consistency",
-      "note": "來源 expandedFacts 一致（加德滿都 → 尼泊爾）"
+      "auditStatus": "disabled",
+      "reviewedAt": "2026-09-15",
+      "reviewer": "dedupe-question-bank",
+      "note": "與 heritage-city:1djhve3 重複（country-pick|加德滿都位於哪一個國家？）"
     },
     "expanded-landmark:1mq8ann": {
       "auditStatus": "approved",
@@ -1318,10 +1318,10 @@
       "note": "來源 expandedFacts 一致（伊瑪目清真寺 → 德黑蘭）"
     },
     "expanded-city:m473qs": {
-      "auditStatus": "approved",
-      "reviewedAt": "2026-09-14",
-      "reviewer": "audit-script:fact-consistency",
-      "note": "來源 expandedFacts 一致（德黑蘭 → 伊朗）"
+      "auditStatus": "disabled",
+      "reviewedAt": "2026-09-15",
+      "reviewer": "dedupe-question-bank",
+      "note": "與 heritage-city:m473qs 重複（country-pick|德黑蘭位於哪一個國家？）"
     },
     "expanded-landmark:1ieu73z": {
       "auditStatus": "approved",
@@ -1330,10 +1330,10 @@
       "note": "來源 expandedFacts 一致（哭牆 → 耶路撒冷）"
     },
     "expanded-city:1lqo2b2": {
-      "auditStatus": "approved",
-      "reviewedAt": "2026-09-14",
-      "reviewer": "audit-script:fact-consistency",
-      "note": "來源 expandedFacts 一致（耶路撒冷 → 以色列）"
+      "auditStatus": "disabled",
+      "reviewedAt": "2026-09-15",
+      "reviewer": "dedupe-question-bank",
+      "note": "與 heritage-city:1lqo2b2 重複（country-pick|耶路撒冷位於哪一個國家？）"
     },
     "expanded-landmark:1w66qrj": {
       "auditStatus": "approved",
@@ -2758,10 +2758,10 @@
       "note": "來源 heritageFacts 一致（巴西 首都 巴西利亞）"
     },
     "heritage-continent:1rtlngs": {
-      "auditStatus": "approved",
-      "reviewedAt": "2026-09-14",
-      "reviewer": "audit-script:heritage-fact",
-      "note": "來源 heritageFacts 一致（巴西 → 南美洲）"
+      "auditStatus": "disabled",
+      "reviewedAt": "2026-09-15",
+      "reviewer": "dedupe-question-bank",
+      "note": "與 hand:oa4jtp 重複（continent|fact:country:巴西）"
     },
     "heritage-reverse-capital:oqsued": {
       "auditStatus": "approved",
@@ -3040,10 +3040,10 @@
       "note": "來源 heritageFacts 一致（加拿大 首都 渥太華）"
     },
     "heritage-continent:1a8j2eh": {
-      "auditStatus": "approved",
-      "reviewedAt": "2026-09-14",
-      "reviewer": "audit-script:heritage-fact",
-      "note": "來源 heritageFacts 一致（加拿大 → 北美洲）"
+      "auditStatus": "disabled",
+      "reviewedAt": "2026-09-15",
+      "reviewer": "dedupe-question-bank",
+      "note": "與 hand:v445dm 重複（continent|fact:country:加拿大）"
     },
     "heritage-reverse-capital:1yjr5zs": {
       "auditStatus": "approved",
@@ -3110,6 +3110,516 @@
       "reviewedAt": "2026-09-14",
       "reviewer": "audit-script:heritage-fact",
       "note": "來源 heritageFacts 一致（德黑蘭 → 伊朗）"
+    },
+    "tour:hmdxuk": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-15",
+      "reviewer": "batch-review:travel-tour",
+      "note": "行程題人工覆核：結構與解析一致"
+    },
+    "tour:1ii6u1w": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-15",
+      "reviewer": "batch-review:travel-tour",
+      "note": "行程題人工覆核：結構與解析一致"
+    },
+    "tour:30nb8g": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-15",
+      "reviewer": "batch-review:travel-tour",
+      "note": "行程題人工覆核：結構與解析一致"
+    },
+    "tour:oco9ko": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-15",
+      "reviewer": "batch-review:travel-tour",
+      "note": "行程題人工覆核：結構與解析一致"
+    },
+    "tour:q2kp2d": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-15",
+      "reviewer": "batch-review:travel-tour",
+      "note": "行程題人工覆核：結構與解析一致"
+    },
+    "tour:1h43gkh": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-15",
+      "reviewer": "batch-review:travel-tour",
+      "note": "行程題人工覆核：結構與解析一致"
+    },
+    "tour:1tf025g": {
+      "auditStatus": "disabled",
+      "reviewedAt": "2026-09-15",
+      "reviewer": "dedupe-question-bank",
+      "note": "與 tour:1h43gkh 重複（world-fact|fact:馬丘比丘）"
+    },
+    "tour:193wphb": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-15",
+      "reviewer": "batch-review:travel-tour",
+      "note": "行程題人工覆核：結構與解析一致"
+    },
+    "tour:1oakciv": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-15",
+      "reviewer": "batch-review:travel-tour",
+      "note": "行程題人工覆核：結構與解析一致"
+    },
+    "tour:mlh1x7": {
+      "auditStatus": "approved",
+      "reviewedAt": "2026-09-15",
+      "reviewer": "batch-review:travel-tour",
+      "note": "行程題人工覆核：結構與解析一致"
+    },
+    "expanded-capital:ar1px6": {
+      "auditStatus": "disabled",
+      "reviewedAt": "2026-09-15",
+      "reviewer": "dedupe-question-bank",
+      "note": "與 hand:1z02se1 重複（capital|fact:country:泰國）"
+    },
+    "expanded-capital:1acbbiw": {
+      "auditStatus": "disabled",
+      "reviewedAt": "2026-09-15",
+      "reviewer": "dedupe-question-bank",
+      "note": "與 hand:186i5xi 重複（capital|fact:country:加拿大）"
+    },
+    "expanded-capital:1ka0xji": {
+      "auditStatus": "disabled",
+      "reviewedAt": "2026-09-15",
+      "reviewer": "dedupe-question-bank",
+      "note": "與 hand:l72txh 重複（capital|fact:country:日本）"
+    },
+    "expanded-capital:1rp8oye": {
+      "auditStatus": "disabled",
+      "reviewedAt": "2026-09-15",
+      "reviewer": "dedupe-question-bank",
+      "note": "與 hand:rr66vk 重複（capital|fact:country:義大利）"
+    },
+    "expanded-capital:14wn1wy": {
+      "auditStatus": "disabled",
+      "reviewedAt": "2026-09-15",
+      "reviewer": "dedupe-question-bank",
+      "note": "與 hand:q22v9s 重複（capital|fact:country:西班牙）"
+    },
+    "expanded-capital:u2y566": {
+      "auditStatus": "disabled",
+      "reviewedAt": "2026-09-15",
+      "reviewer": "dedupe-question-bank",
+      "note": "與 hand:15wsykn 重複（capital|fact:country:德國）"
+    },
+    "expanded-capital:10dr98q": {
+      "auditStatus": "disabled",
+      "reviewedAt": "2026-09-15",
+      "reviewer": "dedupe-question-bank",
+      "note": "與 hand:1wopc3a 重複（capital|fact:country:韓國）"
+    },
+    "expanded-capital:1uq3vz5": {
+      "auditStatus": "disabled",
+      "reviewedAt": "2026-09-15",
+      "reviewer": "dedupe-question-bank",
+      "note": "與 supplement:1wsz1a3 重複（capital|fact:country:越南）"
+    },
+    "expanded-continent:1rtlngs": {
+      "auditStatus": "disabled",
+      "reviewedAt": "2026-09-15",
+      "reviewer": "dedupe-question-bank",
+      "note": "與 hand:oa4jtp 重複（continent|fact:country:巴西）"
+    },
+    "expanded-continent:1a8j2eh": {
+      "auditStatus": "disabled",
+      "reviewedAt": "2026-09-15",
+      "reviewer": "dedupe-question-bank",
+      "note": "與 hand:v445dm 重複（continent|fact:country:加拿大）"
+    },
+    "expanded-capital:1418lt3": {
+      "auditStatus": "disabled",
+      "reviewedAt": "2026-09-15",
+      "reviewer": "dedupe-question-bank",
+      "note": "與 hand:o0mcq3 重複（capital|fact:country:瑞士）"
+    },
+    "expanded-capital:agfvhg": {
+      "auditStatus": "disabled",
+      "reviewedAt": "2026-09-15",
+      "reviewer": "dedupe-question-bank",
+      "note": "與 hand:63k2d0 重複（capital|fact:country:荷蘭）"
+    },
+    "expanded-continent:1grxqtu": {
+      "auditStatus": "disabled",
+      "reviewedAt": "2026-09-15",
+      "reviewer": "dedupe-question-bank",
+      "note": "與 hand:173qnjk 重複（continent|fact:country:紐西蘭）"
+    },
+    "expanded-capital:cjqa25": {
+      "auditStatus": "disabled",
+      "reviewedAt": "2026-09-15",
+      "reviewer": "dedupe-question-bank",
+      "note": "與 supplement:1wsf8om 重複（capital|fact:country:挪威）"
+    },
+    "expanded-capital:1cvrqx7": {
+      "auditStatus": "disabled",
+      "reviewedAt": "2026-09-15",
+      "reviewer": "dedupe-question-bank",
+      "note": "與 supplement:1wsf8on 重複（capital|fact:country:芬蘭）"
+    },
+    "expanded-capital:64sl3v": {
+      "auditStatus": "disabled",
+      "reviewedAt": "2026-09-15",
+      "reviewer": "dedupe-question-bank",
+      "note": "與 supplement:1wsf8oo 重複（capital|fact:country:冰島）"
+    },
+    "expanded-capital:ywknon": {
+      "auditStatus": "disabled",
+      "reviewedAt": "2026-09-15",
+      "reviewer": "dedupe-question-bank",
+      "note": "與 supplement:1wsf8op 重複（capital|fact:country:摩洛哥）"
+    },
+    "expanded-capital:1tivabd": {
+      "auditStatus": "disabled",
+      "reviewedAt": "2026-09-15",
+      "reviewer": "dedupe-question-bank",
+      "note": "與 supplement:1wsf8oq 重複（capital|fact:country:肯亞）"
+    },
+    "expanded-capital:1hbqv60": {
+      "auditStatus": "disabled",
+      "reviewedAt": "2026-09-15",
+      "reviewer": "dedupe-question-bank",
+      "note": "與 supplement:1wsf8or 重複（capital|fact:country:坦尚尼亞）"
+    },
+    "expanded-capital:vmx1sa": {
+      "auditStatus": "disabled",
+      "reviewedAt": "2026-09-15",
+      "reviewer": "dedupe-question-bank",
+      "note": "與 supplement:1wsf8os 重複（capital|fact:country:迦納）"
+    },
+    "expanded-capital:nzcae5": {
+      "auditStatus": "disabled",
+      "reviewedAt": "2026-09-15",
+      "reviewer": "dedupe-question-bank",
+      "note": "與 supplement:1wsf8ot 重複（capital|fact:country:衣索比亞）"
+    },
+    "expanded-reverse-capital:1i4u2w5": {
+      "auditStatus": "disabled",
+      "reviewedAt": "2026-09-15",
+      "reviewer": "dedupe-question-bank",
+      "note": "與 supplement:1wsf8ou 重複（reverse-capital|fact:country:葡萄牙）"
+    },
+    "expanded-reverse-capital:1946wz9": {
+      "auditStatus": "disabled",
+      "reviewedAt": "2026-09-15",
+      "reviewer": "dedupe-question-bank",
+      "note": "與 supplement:1wsf8pg 重複（reverse-capital|fact:country:愛爾蘭）"
+    },
+    "expanded-capital:novj83": {
+      "auditStatus": "disabled",
+      "reviewedAt": "2026-09-15",
+      "reviewer": "dedupe-question-bank",
+      "note": "與 supplement:1wsz19z 重複（capital|fact:country:柬埔寨）"
+    },
+    "expanded-capital:fa6bma": {
+      "auditStatus": "disabled",
+      "reviewedAt": "2026-09-15",
+      "reviewer": "dedupe-question-bank",
+      "note": "與 supplement:1wsz1a0 重複（capital|fact:country:寮國）"
+    },
+    "expanded-capital:hrnx4v": {
+      "auditStatus": "disabled",
+      "reviewedAt": "2026-09-15",
+      "reviewer": "dedupe-question-bank",
+      "note": "與 supplement:1wsz1a1 重複（capital|fact:country:尼泊爾）"
+    },
+    "expanded-capital:1dxc7kh": {
+      "auditStatus": "disabled",
+      "reviewedAt": "2026-09-15",
+      "reviewer": "dedupe-question-bank",
+      "note": "與 supplement:1wsz1a2 重複（capital|fact:country:蒙古）"
+    },
+    "expanded-capital:1xu5rvq": {
+      "auditStatus": "disabled",
+      "reviewedAt": "2026-09-15",
+      "reviewer": "dedupe-question-bank",
+      "note": "與 supplement:1wsz1a4 重複（capital|fact:country:秘魯）"
+    },
+    "expanded-capital:rmb9f5": {
+      "auditStatus": "disabled",
+      "reviewedAt": "2026-09-15",
+      "reviewer": "dedupe-question-bank",
+      "note": "與 supplement:1wsz1a5 重複（capital|fact:country:智利）"
+    },
+    "expanded-capital:1stk9p9": {
+      "auditStatus": "disabled",
+      "reviewedAt": "2026-09-15",
+      "reviewer": "dedupe-question-bank",
+      "note": "與 supplement:1wsz1a6 重複（capital|fact:country:阿根廷）"
+    },
+    "expanded-reverse-capital:1c3reeo": {
+      "auditStatus": "disabled",
+      "reviewedAt": "2026-09-15",
+      "reviewer": "dedupe-question-bank",
+      "note": "與 supplement:1wsz1a7 重複（reverse-capital|fact:country:紐西蘭）"
+    },
+    "expanded-reverse-capital:1yuvp5n": {
+      "auditStatus": "disabled",
+      "reviewedAt": "2026-09-15",
+      "reviewer": "dedupe-question-bank",
+      "note": "與 supplement:1wsz1at 重複（reverse-capital|fact:country:澳洲）"
+    },
+    "expanded-capital:1xflj0a": {
+      "auditStatus": "disabled",
+      "reviewedAt": "2026-09-15",
+      "reviewer": "dedupe-question-bank",
+      "note": "與 supplement:1xb4zzd 重複（capital|fact:country:哥倫比亞）"
+    },
+    "expanded-capital:7fm0t4": {
+      "auditStatus": "disabled",
+      "reviewedAt": "2026-09-15",
+      "reviewer": "dedupe-question-bank",
+      "note": "與 supplement:1xb4zze 重複（capital|fact:country:厄瓜多）"
+    },
+    "expanded-capital:dt5jf8": {
+      "auditStatus": "disabled",
+      "reviewedAt": "2026-09-15",
+      "reviewer": "dedupe-question-bank",
+      "note": "與 supplement:1xb4zzf 重複（capital|fact:country:烏拉圭）"
+    },
+    "expanded-capital:nhrmfv": {
+      "auditStatus": "disabled",
+      "reviewedAt": "2026-09-15",
+      "reviewer": "dedupe-question-bank",
+      "note": "與 supplement:1xb4zzg 重複（capital|fact:country:古巴）"
+    },
+    "expanded-capital:nstilc": {
+      "auditStatus": "disabled",
+      "reviewedAt": "2026-09-15",
+      "reviewer": "dedupe-question-bank",
+      "note": "與 supplement:1xb4zzh 重複（capital|fact:country:緬甸）"
+    },
+    "expanded-capital:1sbsn3o": {
+      "auditStatus": "disabled",
+      "reviewedAt": "2026-09-15",
+      "reviewer": "dedupe-question-bank",
+      "note": "與 supplement:1xb4zzi 重複（capital|fact:country:汶萊）"
+    },
+    "expanded-reverse-capital:80f509": {
+      "auditStatus": "disabled",
+      "reviewedAt": "2026-09-15",
+      "reviewer": "dedupe-question-bank",
+      "note": "與 supplement:1xb4zzj 重複（reverse-capital|fact:country:哈薩克）"
+    },
+    "expanded-reverse-capital:1djgojh": {
+      "auditStatus": "disabled",
+      "reviewedAt": "2026-09-15",
+      "reviewer": "dedupe-question-bank",
+      "note": "與 supplement:1xb4zzk 重複（reverse-capital|fact:country:烏茲別克）"
+    },
+    "expanded-capital:4ggzvv": {
+      "auditStatus": "disabled",
+      "reviewedAt": "2026-09-15",
+      "reviewer": "dedupe-question-bank",
+      "note": "與 supplement:1xboskq 重複（capital|fact:country:約旦）"
+    },
+    "expanded-capital:1o3pa5x": {
+      "auditStatus": "disabled",
+      "reviewedAt": "2026-09-15",
+      "reviewer": "dedupe-question-bank",
+      "note": "與 supplement:1xboskr 重複（capital|fact:country:卡達）"
+    },
+    "expanded-capital:1cbpfmd": {
+      "auditStatus": "disabled",
+      "reviewedAt": "2026-09-15",
+      "reviewer": "dedupe-question-bank",
+      "note": "與 supplement:1xboskt 重複（capital|fact:country:喬治亞）"
+    },
+    "expanded-continent:ac7u9y": {
+      "auditStatus": "disabled",
+      "reviewedAt": "2026-09-15",
+      "reviewer": "dedupe-question-bank",
+      "note": "與 heritage-continent:ac7u9y 重複（continent|fact:country:法國）"
+    },
+    "expanded-continent:pr7aqq": {
+      "auditStatus": "disabled",
+      "reviewedAt": "2026-09-15",
+      "reviewer": "dedupe-question-bank",
+      "note": "與 heritage-continent:pr7aqq 重複（continent|fact:country:英國）"
+    },
+    "expanded-continent:1rp50fl": {
+      "auditStatus": "disabled",
+      "reviewedAt": "2026-09-15",
+      "reviewer": "dedupe-question-bank",
+      "note": "與 heritage-continent:1rp50fl 重複（continent|fact:country:義大利）"
+    },
+    "expanded-continent:f27mk1": {
+      "auditStatus": "disabled",
+      "reviewedAt": "2026-09-15",
+      "reviewer": "dedupe-question-bank",
+      "note": "與 heritage-continent:f27mk1 重複（continent|fact:country:西班牙）"
+    },
+    "expanded-continent:u2yrqg": {
+      "auditStatus": "disabled",
+      "reviewedAt": "2026-09-15",
+      "reviewer": "dedupe-question-bank",
+      "note": "與 heritage-continent:u2yrqg 重複（continent|fact:country:德國）"
+    },
+    "expanded-continent:1xm1bbb": {
+      "auditStatus": "disabled",
+      "reviewedAt": "2026-09-15",
+      "reviewer": "dedupe-question-bank",
+      "note": "與 heritage-continent:1xm1bbb 重複（continent|fact:country:埃及）"
+    },
+    "expanded-continent:1ougop3": {
+      "auditStatus": "disabled",
+      "reviewedAt": "2026-09-15",
+      "reviewer": "dedupe-question-bank",
+      "note": "與 heritage-continent:1ougop3 重複（continent|fact:country:南非）"
+    },
+    "expanded-continent:zi3i8r": {
+      "auditStatus": "disabled",
+      "reviewedAt": "2026-09-15",
+      "reviewer": "dedupe-question-bank",
+      "note": "與 heritage-continent:zi3i8r 重複（continent|fact:country:摩洛哥）"
+    },
+    "expanded-continent:wo7n5q": {
+      "auditStatus": "disabled",
+      "reviewedAt": "2026-09-15",
+      "reviewer": "dedupe-question-bank",
+      "note": "與 heritage-continent:wo7n5q 重複（continent|fact:country:美國）"
+    },
+    "expanded-continent:bljpkf": {
+      "auditStatus": "disabled",
+      "reviewedAt": "2026-09-15",
+      "reviewer": "dedupe-question-bank",
+      "note": "與 heritage-continent:bljpkf 重複（continent|fact:country:墨西哥）"
+    },
+    "expanded-continent:y1nqmw": {
+      "auditStatus": "disabled",
+      "reviewedAt": "2026-09-15",
+      "reviewer": "dedupe-question-bank",
+      "note": "與 heritage-continent:y1nqmw 重複（continent|fact:country:秘魯）"
+    },
+    "expanded-continent:s7iui8": {
+      "auditStatus": "disabled",
+      "reviewedAt": "2026-09-15",
+      "reviewer": "dedupe-question-bank",
+      "note": "與 heritage-continent:s7iui8 重複（continent|fact:country:智利）"
+    },
+    "expanded-continent:2ll5q": {
+      "auditStatus": "disabled",
+      "reviewedAt": "2026-09-15",
+      "reviewer": "dedupe-question-bank",
+      "note": "與 heritage-continent:2ll5q 重複（continent|fact:country:阿根廷）"
+    },
+    "expanded-continent:18a76j7": {
+      "auditStatus": "disabled",
+      "reviewedAt": "2026-09-15",
+      "reviewer": "dedupe-question-bank",
+      "note": "與 heritage-continent:18a76j7 重複（continent|fact:country:澳洲）"
+    },
+    "expanded-continent:10deh6e": {
+      "auditStatus": "disabled",
+      "reviewedAt": "2026-09-15",
+      "reviewer": "dedupe-question-bank",
+      "note": "與 heritage-continent:10deh6e 重複（continent|fact:country:韓國）"
+    },
+    "expanded-continent:1k9wvk7": {
+      "auditStatus": "disabled",
+      "reviewedAt": "2026-09-15",
+      "reviewer": "dedupe-question-bank",
+      "note": "與 heritage-continent:1k9wvk7 重複（continent|fact:country:日本）"
+    },
+    "expanded-continent:1i2bsig": {
+      "auditStatus": "disabled",
+      "reviewedAt": "2026-09-15",
+      "reviewer": "dedupe-question-bank",
+      "note": "與 heritage-continent:1i2bsig 重複（continent|fact:country:印度）"
+    },
+    "expanded-continent:1pmz5qk": {
+      "auditStatus": "disabled",
+      "reviewedAt": "2026-09-15",
+      "reviewer": "dedupe-question-bank",
+      "note": "與 heritage-continent:1pmz5qk 重複（continent|fact:country:土耳其）"
+    },
+    "expanded-continent:mcrsjy": {
+      "auditStatus": "disabled",
+      "reviewedAt": "2026-09-15",
+      "reviewer": "dedupe-question-bank",
+      "note": "與 heritage-continent:mcrsjy 重複（continent|fact:country:俄羅斯）"
+    },
+    "expanded-continent:syixn4": {
+      "auditStatus": "disabled",
+      "reviewedAt": "2026-09-15",
+      "reviewer": "dedupe-question-bank",
+      "note": "與 heritage-continent:syixn4 重複（continent|fact:country:希臘）"
+    },
+    "expanded-continent:180pco8": {
+      "auditStatus": "disabled",
+      "reviewedAt": "2026-09-15",
+      "reviewer": "dedupe-question-bank",
+      "note": "與 heritage-continent:180pco8 重複（continent|fact:country:捷克）"
+    },
+    "expanded-continent:1b0h02e": {
+      "auditStatus": "disabled",
+      "reviewedAt": "2026-09-15",
+      "reviewer": "dedupe-question-bank",
+      "note": "與 heritage-continent:1b0h02e 重複（continent|fact:country:冰島）"
+    },
+    "expanded-continent:xqw5za": {
+      "auditStatus": "disabled",
+      "reviewedAt": "2026-09-15",
+      "reviewer": "dedupe-question-bank",
+      "note": "與 heritage-continent:xqw5za 重複（continent|fact:country:荷蘭）"
+    },
+    "expanded-continent:wj5psg": {
+      "auditStatus": "disabled",
+      "reviewedAt": "2026-09-15",
+      "reviewer": "dedupe-question-bank",
+      "note": "與 heritage-continent:wj5psg 重複（continent|fact:country:中國）"
+    },
+    "expanded-continent:nojwr2": {
+      "auditStatus": "disabled",
+      "reviewedAt": "2026-09-15",
+      "reviewer": "dedupe-question-bank",
+      "note": "與 heritage-continent:nojwr2 重複（continent|fact:country:柬埔寨）"
+    },
+    "expanded-continent:4geu0c": {
+      "auditStatus": "disabled",
+      "reviewedAt": "2026-09-15",
+      "reviewer": "dedupe-question-bank",
+      "note": "與 heritage-continent:4geu0c 重複（continent|fact:country:約旦）"
+    },
+    "expanded-continent:15eqtjy": {
+      "auditStatus": "disabled",
+      "reviewedAt": "2026-09-15",
+      "reviewer": "dedupe-question-bank",
+      "note": "與 heritage-continent:15eqtjy 重複（continent|fact:country:尼泊爾）"
+    },
+    "expanded-continent:11xjb1d": {
+      "auditStatus": "disabled",
+      "reviewedAt": "2026-09-15",
+      "reviewer": "dedupe-question-bank",
+      "note": "與 heritage-continent:11xjb1d 重複（continent|fact:country:伊朗）"
+    },
+    "expanded-continent:1vsod38": {
+      "auditStatus": "disabled",
+      "reviewedAt": "2026-09-15",
+      "reviewer": "dedupe-question-bank",
+      "note": "與 heritage-continent:1vsod38 重複（continent|fact:country:以色列）"
+    },
+    "expanded-continent:1upyx9d": {
+      "auditStatus": "disabled",
+      "reviewedAt": "2026-09-15",
+      "reviewer": "dedupe-question-bank",
+      "note": "與 heritage-continent:1upyx9d 重複（continent|fact:country:越南）"
+    },
+    "expanded-continent:ghdlpt": {
+      "auditStatus": "disabled",
+      "reviewedAt": "2026-09-15",
+      "reviewer": "dedupe-question-bank",
+      "note": "與 heritage-continent:ghdlpt 重複（continent|fact:country:波蘭）"
+    },
+    "expanded-continent:1duglyw": {
+      "auditStatus": "disabled",
+      "reviewedAt": "2026-09-15",
+      "reviewer": "dedupe-question-bank",
+      "note": "與 heritage-continent:1duglyw 重複（continent|fact:country:坦尚尼亞）"
     }
   }
 }

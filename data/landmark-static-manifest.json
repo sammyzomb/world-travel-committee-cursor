@@ -1,0 +1,933 @@
+{
+  "version": 1,
+  "generatedAt": "2026-09-15T06:45:19.682Z",
+  "entries": {
+    "艾菲爾鐵塔": {
+      "path": "/landmarks/61836c847109.jpg",
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Tour_Eiffel_Wikimedia_Commons_%28cropped%29.jpg/960px-Tour_Eiffel_Wikimedia_Commons_%28cropped%29.jpg",
+      "credit": "Wikimedia Commons / Benh",
+      "bytes": 278029
+    },
+    "大笨鐘": {
+      "path": "/landmarks/923015c06971.jpg",
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Clock_Tower_-_Palace_of_Westminster%2C_London_-_May_2007.jpg/960px-Clock_Tower_-_Palace_of_Westminster%2C_London_-_May_2007.jpg",
+      "credit": "Wikimedia Commons / Diliff",
+      "bytes": 380507
+    },
+    "羅馬競技場": {
+      "path": "/landmarks/36744379858b.jpg",
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Colosseo_2020.jpg/960px-Colosseo_2020.jpg",
+      "credit": "Wikimedia Commons / Livioandronico2013",
+      "bytes": 192547
+    },
+    "布蘭登堡門": {
+      "path": "/landmarks/e15e0d71ad9f.jpg",
+      "source": "nas",
+      "sourcePath": "\\\\192.168.3.3\\【行程總彙】\\4-1.歐洲\\●中西南歐\\德國\\柏林Berlin\\布蘭登堡門_巴黎廣場\\布蘭登堡門shutterstock_490048132.jpg",
+      "sourceUrl": "\\\\192.168.3.3\\【行程總彙】\\4-1.歐洲\\●中西南歐\\德國\\柏林Berlin\\布蘭登堡門_巴黎廣場\\布蘭登堡門shutterstock_490048132.jpg",
+      "credit": "行程總彙圖庫",
+      "bytes": 11474665,
+      "failed": false
+    },
+    "基督像": {
+      "path": "/landmarks/3433d5ffa31b.jpg",
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Christ_the_Redeemer_-_Cristo_Redentor.jpg/960px-Christ_the_Redeemer_-_Cristo_Redentor.jpg",
+      "credit": "Wikimedia Commons / Chensiyuan",
+      "bytes": 556296
+    },
+    "馬丘比丘": {
+      "path": "/landmarks/f79d5717a6e0.jpg",
+      "source": "nas",
+      "sourcePath": "\\\\192.168.3.3\\【行程總彙】\\0-0-EDM+影片\\2024\\2024-6月-年度重點\\2祕魯12日 ✔️\\LIM12B_祕魯 馬丘比丘 印加帝國傳奇12日_反面.jpg",
+      "sourceUrl": "\\\\192.168.3.3\\【行程總彙】\\0-0-EDM+影片\\2024\\2024-6月-年度重點\\2祕魯12日 ✔️\\LIM12B_祕魯 馬丘比丘 印加帝國傳奇12日_反面.jpg",
+      "credit": "行程總彙圖庫",
+      "bytes": 13273863,
+      "failed": false
+    },
+    "富士山": {
+      "path": "/landmarks/e294ab9d429f.jpg",
+      "source": "nas",
+      "sourcePath": "public\\landmarks\\e294ab9d429f.jpg",
+      "sourceUrl": "public\\landmarks\\e294ab9d429f.jpg",
+      "credit": "行程總彙圖庫",
+      "bytes": 132756,
+      "failed": false
+    },
+    "太平洋": {
+      "path": "/landmarks/a8f7601a1dce.jpg",
+      "source": "nas",
+      "sourcePath": "\\\\192.168.3.3\\【行程總彙】\\0-0-EDM+影片\\2024\\2024-旅展\\11月ITF旅展\\1.A4DM_EDM區\\南太平洋26日-NAN24A-DM-20241018_背面.jpg",
+      "sourceUrl": "\\\\192.168.3.3\\【行程總彙】\\0-0-EDM+影片\\2024\\2024-旅展\\11月ITF旅展\\1.A4DM_EDM區\\南太平洋26日-NAN24A-DM-20241018_背面.jpg",
+      "credit": "行程總彙圖庫",
+      "bytes": 2499040,
+      "failed": false
+    },
+    "雪梨歌劇院": {
+      "path": "/landmarks/666f95eaaec0.jpg",
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Sydney_Opera_House_Sails.jpg/960px-Sydney_Opera_House_Sails.jpg",
+      "credit": "Wikimedia Commons / Bjørn Christian Tørrissen",
+      "bytes": 141482
+    },
+    "景福宮": {
+      "path": "/landmarks/aabad3520dcd.jpg",
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Gyeonghoeru_%28Royal_Banquet_Hall%29_at_Gyeongbokgung_Palace%2C_Seoul.jpg/960px-Gyeonghoeru_%28Royal_Banquet_Hall%29_at_Gyeongbokgung_Palace%2C_Seoul.jpg",
+      "credit": "Wikimedia Commons / Gyeonghoeru (Royal Banquet Hall) at Gyeongbokgung Palace, Seoul.jpg",
+      "bytes": 155689
+    },
+    "帕德嫩神廟": {
+      "path": "/landmarks/06e1501bbb37.jpg",
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/The_Parthenon_in_Athens.jpg/960px-The_Parthenon_in_Athens.jpg",
+      "credit": "Wikimedia Commons / Steve Swayne",
+      "bytes": 205240
+    },
+    "金門大橋": {
+      "path": "/landmarks/e681321c1003.jpg",
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/GoldenGateBridge-001.jpg/960px-GoldenGateBridge-001.jpg",
+      "credit": "Wikimedia Commons / Rich Niewiroski",
+      "bytes": 161334
+    },
+    "獅子岩": {
+      "path": "/landmarks/a94c23a5638e.jpg",
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Shishiiwa_Onigajo_Shichirimihama.jpg/960px-Shishiiwa_Onigajo_Shichirimihama.jpg",
+      "credit": "Wikimedia Commons / Shishiiwa Onigajo Shichirimihama.jpg",
+      "bytes": 184703
+    },
+    "珠穆朗瑪峰": {
+      "path": "/landmarks/267ad48f6a0a.jpg",
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Everest_North_Face_toward_Base_Camp_Tibet_Luca_Galuzzi_2006.jpg/960px-Everest_North_Face_toward_Base_Camp_Tibet_Luca_Galuzzi_2006.jpg",
+      "credit": "Wikimedia Commons / Luca Galuzzi",
+      "bytes": 206568
+    },
+    "加拉帕戈斯群島": {
+      "path": "/landmarks/443a79bb8bdf.jpeg",
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Gal%C3%A1pagos_Islands_ESA23188644.jpeg/960px-Gal%C3%A1pagos_Islands_ESA23188644.jpeg",
+      "credit": "Wikimedia Commons / Galápagos Islands ESA23188644.jpeg",
+      "bytes": 266889
+    },
+    "兵馬俑": {
+      "path": "/landmarks/0deb628a72fa.jpg",
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Xian_China_Terracotta-Army-Museum-01.jpg/960px-Xian_China_Terracotta-Army-Museum-01.jpg",
+      "credit": "Wikimedia Commons / Xian China Terracotta-Army-Museum-01.jpg",
+      "bytes": 126094
+    },
+    "樂山大佛": {
+      "path": "/landmarks/11e44347fd6b.jpg",
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Leshan_Giant_Buddha%2C_20161102.jpg/960px-Leshan_Giant_Buddha%2C_20161102.jpg",
+      "credit": "Wikimedia Commons / Leshan Giant Buddha, 20161102.jpg",
+      "bytes": 282919
+    },
+    "張家界國家森林公園": {
+      "path": "/landmarks/ef7d38d3db25.jpg",
+      "source": "nas",
+      "sourcePath": "\\\\192.168.3.3\\【行程總彙】\\7-1.攝影\\1-6攝影\\地圖\\DYG08P_張家界攝影8日_ALL_MAP.jpg",
+      "sourceUrl": "\\\\192.168.3.3\\【行程總彙】\\7-1.攝影\\1-6攝影\\地圖\\DYG08P_張家界攝影8日_ALL_MAP.jpg",
+      "credit": "行程總彙圖庫",
+      "bytes": 6998751,
+      "failed": false
+    },
+    "威尼斯古城": {
+      "path": "/landmarks/8b0ba686efb3.jpg",
+      "source": "nas",
+      "sourcePath": "\\\\192.168.3.3\\【行程總彙】\\保留系列資料\\1-5.自由行\\歐洲\\地圖\\NAP08L-義大利-米蘭-威尼斯-比薩斜塔-五魚村-自由行-6日-01 - 複製.jpg",
+      "sourceUrl": "\\\\192.168.3.3\\【行程總彙】\\保留系列資料\\1-5.自由行\\歐洲\\地圖\\NAP08L-義大利-米蘭-威尼斯-比薩斜塔-五魚村-自由行-6日-01 - 複製.jpg",
+      "credit": "行程總彙圖庫",
+      "bytes": 1712243,
+      "failed": false
+    },
+    "旅遊地標": {
+      "path": "/landmarks/7514409ca0b3.jpg",
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/The_Earth_seen_from_Apollo_17.jpg/960px-The_Earth_seen_from_Apollo_17.jpg",
+      "credit": "Wikimedia Commons / NASA",
+      "bytes": 267290
+    },
+    "吉薩金字塔群": {
+      "path": "/landmarks/2ef058b170c8.jpg",
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/All_Gizah_Pyramids.jpg/960px-All_Gizah_Pyramids.jpg",
+      "credit": "Wikimedia Commons / Ricardo Liberato",
+      "bytes": 149460
+    },
+    "自由女神像": {
+      "path": "/landmarks/2c92b18e193b.jpg",
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Statue_of_Liberty_7.jpg/960px-Statue_of_Liberty_7.jpg",
+      "credit": "Wikimedia Commons / Sue Waters",
+      "bytes": 204770
+    },
+    "泰姬瑪哈陵": {
+      "path": "/landmarks/c44b2f1a5693.jpg",
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Taj_Mahal_in_India_-_Kristian_Bertel.jpg/960px-Taj_Mahal_in_India_-_Kristian_Bertel.jpg",
+      "credit": "Wikimedia Commons / Kristian Bertel",
+      "bytes": 112425
+    },
+    "萬里長城": {
+      "path": "/landmarks/96b0579d0171.jpg",
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Badaling_China_Great-Wall-of-China-01.jpg/960px-Badaling_China_Great-Wall-of-China-01.jpg",
+      "credit": "Wikimedia Commons / Badaling China Great-Wall-of-China-01.jpg",
+      "bytes": 278594
+    },
+    "莫高窟": {
+      "path": "/landmarks/4227e4ce4ad0.jpg",
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Mogao_Caves%2C_cave_159_musicians.jpg/960px-Mogao_Caves%2C_cave_159_musicians.jpg",
+      "credit": "Wikimedia Commons / Mogao Caves, cave 159 musicians.jpg",
+      "bytes": 618104
+    },
+    "麗江古城": {
+      "path": "/landmarks/0dd0ceb4e24d.jpg",
+      "source": "nas",
+      "sourcePath": "\\\\192.168.3.3\\【行程總彙】\\0-0-EDM+影片\\2024\\2024-6月-年度重點\\4稻城亞丁南線15日 ✔️\\CTU15A_稻城亞丁 四姑娘山 麗江古城 香格里拉（川滇南環線）15日_背面.jpg",
+      "sourceUrl": "\\\\192.168.3.3\\【行程總彙】\\0-0-EDM+影片\\2024\\2024-6月-年度重點\\4稻城亞丁南線15日 ✔️\\CTU15A_稻城亞丁 四姑娘山 麗江古城 香格里拉（川滇南環線）15日_背面.jpg",
+      "credit": "行程總彙圖庫",
+      "bytes": 1814427,
+      "failed": false
+    },
+    "嚴島神社": {
+      "path": "/landmarks/48c70bdbe879.jpg",
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Itsukushima-jinja_torii_at_sunset%2C_Miyajima%2C_Japan%2C_20240816_1812_4144.jpg/960px-Itsukushima-jinja_torii_at_sunset%2C_Miyajima%2C_Japan%2C_20240816_1812_4144.jpg",
+      "credit": "Wikimedia Commons / Itsukushima-jinja torii at sunset, Miyajima, Japan, 20240816 1812 4144.jpg",
+      "bytes": 195312
+    },
+    "阿爾罕布拉宮": {
+      "path": "/landmarks/05aac3409929.jpg",
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Pavillon_Cour_des_Lions_Alhambra_Granada_Spain.jpg/960px-Pavillon_Cour_des_Lions_Alhambra_Granada_Spain.jpg",
+      "credit": "Wikimedia Commons / Pavillon Cour des Lions Alhambra Granada Spain.jpg",
+      "bytes": 377274
+    },
+    "雅典衛城": {
+      "path": "/landmarks/c5792e47dccd.jpg",
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Attica_06-13_Athens_50_View_from_Philopappos_-_Acropolis_Hill.jpg/960px-Attica_06-13_Athens_50_View_from_Philopappos_-_Acropolis_Hill.jpg",
+      "credit": "Wikimedia Commons / Attica 06-13 Athens 50 View from Philopappos - Acropolis Hill.jpg",
+      "bytes": 200927
+    },
+    "烏菲茲美術館": {
+      "path": "/landmarks/e157694b6f8c.jpg",
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Uffizi_Gallery_-_Daughter_of_Niobe_bent_by_terror.jpg/960px-Uffizi_Gallery_-_Daughter_of_Niobe_bent_by_terror.jpg",
+      "credit": "Wikimedia Commons / Uffizi Gallery - Daughter of Niobe bent by terror.jpg",
+      "bytes": 160157
+    },
+    "巨石陣": {
+      "path": "/landmarks/e0a15899c420.jpg",
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Stonehenge_Heel_Stone.jpg/960px-Stonehenge_Heel_Stone.jpg",
+      "credit": "Wikimedia Commons / Stonehenge Heel Stone.jpg",
+      "bytes": 576439
+    },
+    "維利奇卡鹽礦": {
+      "path": "/landmarks/d1b7f6dfacd4.jpg",
+      "source": "nas",
+      "sourcePath": "\\\\192.168.3.3\\【行程總彙】\\4-1.歐洲\\●中西南歐\\波蘭\\20180905-18波波14日領隊照片-李小萍\\0907維利奇卡鹽礦.克拉克夫\\IMG_0145.JPG",
+      "sourceUrl": "\\\\192.168.3.3\\【行程總彙】\\4-1.歐洲\\●中西南歐\\波蘭\\20180905-18波波14日領隊照片-李小萍\\0907維利奇卡鹽礦.克拉克夫\\IMG_0145.JPG",
+      "credit": "行程總彙圖庫",
+      "bytes": 4829636,
+      "failed": false
+    },
+    "尼加拉瀑布": {
+      "path": "/landmarks/0afeed05ce03.jpg",
+      "source": "nas",
+      "sourcePath": "\\\\192.168.3.3\\【行程總彙】\\0-0-EDM+影片\\2025\\2025-9月\\YVR14K_加拿大-黃刀北極光-洛磯山脈-八百里楓紅-尼加拉瀑布-魁北克-14日_250902.jpg",
+      "sourceUrl": "\\\\192.168.3.3\\【行程總彙】\\0-0-EDM+影片\\2025\\2025-9月\\YVR14K_加拿大-黃刀北極光-洛磯山脈-八百里楓紅-尼加拉瀑布-魁北克-14日_250902.jpg",
+      "credit": "行程總彙圖庫",
+      "bytes": 3661606,
+      "failed": false
+    },
+    "普拉多博物館": {
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Museo_del_Prado_-_Madrid.jpg/960px-Museo_del_Prado_-_Madrid.jpg",
+      "credit": "Wikimedia Commons / Alonso de Mendoza",
+      "failed": true,
+      "lastError": "HTTP 404"
+    },
+    "美泉宮": {
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Schoenbrunn_Wien_2012.jpg/960px-Schoenbrunn_Wien_2012.jpg",
+      "credit": "Wikimedia Commons / Thomas Wolf",
+      "failed": true,
+      "lastError": "HTTP 404"
+    },
+    "國會大廈": {
+      "path": "/landmarks/3295f2c5f83c.jpg",
+      "source": "nas",
+      "sourcePath": "\\\\192.168.3.3\\【行程總彙】\\3.大洋洲-紐 澳 帛琉 南太\\1-紐西蘭行程\\@照片圖庫\\20260108紐西蘭20天 ASHLEY許家樸\\0120第13天夏洛特女王峽灣（搭渡輪）－威靈頓（舊聖保羅教堂、纜車）\\國會大廈.JPG",
+      "sourceUrl": "\\\\192.168.3.3\\【行程總彙】\\3.大洋洲-紐 澳 帛琉 南太\\1-紐西蘭行程\\@照片圖庫\\20260108紐西蘭20天 ASHLEY許家樸\\0120第13天夏洛特女王峽灣（搭渡輪）－威靈頓（舊聖保羅教堂、纜車）\\國會大廈.JPG",
+      "credit": "行程總彙圖庫",
+      "bytes": 3526154,
+      "failed": false
+    },
+    "奈洛比國家公園": {
+      "path": "/landmarks/d1914a3a5319.jpg",
+      "source": "nas",
+      "sourcePath": "\\\\192.168.3.3\\【行程總彙】\\5-非洲\\@照片圖庫\\@領隊\\2013-0716肯亞維多利亞16日-阿貴\\肯亞\\730奈洛比市區\\IMG_6523.JPG",
+      "sourceUrl": "\\\\192.168.3.3\\【行程總彙】\\5-非洲\\@照片圖庫\\@領隊\\2013-0716肯亞維多利亞16日-阿貴\\肯亞\\730奈洛比市區\\IMG_6523.JPG",
+      "credit": "行程總彙圖庫",
+      "bytes": 6528325,
+      "failed": false
+    },
+    "桌山": {
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Table_Mountain_from_robben_island.jpg/960px-Table_Mountain_from_robben_island.jpg",
+      "credit": "Wikimedia Commons / Abu Shawka",
+      "failed": true,
+      "lastError": "HTTP 404"
+    },
+    "庫圖比亞清真寺": {
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Koutoubia_Mosque.jpg/960px-Koutoubia_Mosque.jpg",
+      "credit": "Wikimedia Commons / Donarreiskoffer",
+      "failed": true,
+      "lastError": "HTTP 404"
+    },
+    "國會山莊": {
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Parliament_Hill%2C_Ottawa%2C_Canada.jpg/960px-Parliament_Hill%2C_Ottawa%2C_Canada.jpg",
+      "credit": "Wikimedia Commons / Wladyslaw",
+      "failed": true,
+      "lastError": "HTTP 404"
+    },
+    "太陽金字塔": {
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Teotihuacan_Pyramid_of_the_Sun.jpg/960px-Teotihuacan_Pyramid_of_the_Sun.jpg",
+      "credit": "Wikimedia Commons / Hajor",
+      "failed": true,
+      "lastError": "HTTP 404"
+    },
+    "聖克里斯托瓦爾山": {
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Virgin_Mary_statue%2C_San_Cristobal_Hill%2C_Santiago%2C_Chile.jpg/960px-Virgin_Mary_statue%2C_San_Cristobal_Hill%2C_Santiago%2C_Chile.jpg",
+      "credit": "Wikimedia Commons / Diego Delso",
+      "failed": true,
+      "lastError": "HTTP 404"
+    },
+    "五月廣場": {
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Plaza_de_Mayo%2C_Buenos_Aires%2C_Argentina.jpg/960px-Plaza_de_Mayo%2C_Buenos_Aires%2C_Argentina.jpg",
+      "credit": "Wikimedia Commons / Luis Argerich",
+      "failed": true,
+      "lastError": "HTTP 404"
+    },
+    "月亮谷": {
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Valle_de_la_Luna%2C_La_Paz%2C_Bolivia.jpg/960px-Valle_de_la_Luna%2C_La_Paz%2C_Bolivia.jpg",
+      "credit": "Wikimedia Commons / Anouchka Unel",
+      "failed": true,
+      "lastError": "HTTP 429"
+    },
+    "紐西蘭國會大廈": {
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/New_Zealand_Parliament_House_and_the_Beehive.jpg/960px-New_Zealand_Parliament_House_and_the_Beehive.jpg",
+      "credit": "Wikimedia Commons / Phillip Capper",
+      "failed": true,
+      "lastError": "HTTP 404"
+    },
+    "大皇宮": {
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/The_Grand_Palace%2C_Bangkok.jpg/960px-The_Grand_Palace%2C_Bangkok.jpg",
+      "credit": "Wikimedia Commons / Vyacheslav Argenberg",
+      "failed": true,
+      "lastError": "HTTP 429"
+    },
+    "濱海灣金沙": {
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Marina_Bay_Sands_in_the_evening_-_20101120.jpg/960px-Marina_Bay_Sands_in_the_evening_-_20101120.jpg",
+      "credit": "Wikimedia Commons / Someformofhuman",
+      "failed": true,
+      "lastError": "HTTP 404"
+    },
+    "清水寺": {
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Osaka_Kiyomizu-dera_2009-04-19.jpg/960px-Osaka_Kiyomizu-dera_2009-04-19.jpg",
+      "credit": "Wikimedia Commons / 663highland",
+      "failed": true,
+      "lastError": "HTTP 429"
+    },
+    "東大寺": {
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Todai-ji_Daibutsuden2005G.jpg/960px-Todai-ji_Daibutsuden2005G.jpg",
+      "credit": "Wikimedia Commons / 663highland",
+      "failed": true,
+      "lastError": "HTTP 404"
+    },
+    "聖索菲亞大教堂": {
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Hagia_Sophia_Mars_2013.jpg/960px-Hagia_Sophia_Mars_2013.jpg",
+      "credit": "Wikimedia Commons / Arild Vågen",
+      "failed": true,
+      "lastError": "HTTP 429"
+    },
+    "哈里法塔": {
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Burj_Khalifa.jpg/960px-Burj_Khalifa.jpg",
+      "credit": "Wikimedia Commons / Donaldytong",
+      "failed": true,
+      "lastError": "HTTP 404"
+    },
+    "紅場": {
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Moscow_Red_Square.jpg/960px-Moscow_Red_Square.jpg",
+      "credit": "Wikimedia Commons / Alvesgaspar",
+      "failed": true,
+      "lastError": "HTTP 429"
+    },
+    "查理大橋": {
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Prague_07-2016_view_from_Lesser_Town_Tower_of_Charles_Bridge_03.jpg/960px-Prague_07-2016_view_from_Lesser_Town_Tower_of_Charles_Bridge_03.jpg",
+      "credit": "Wikimedia Commons / Diliff",
+      "failed": true,
+      "lastError": "HTTP 404"
+    },
+    "藍湖": {
+      "path": "/landmarks/2fa75fa19ec8.jpg",
+      "source": "nas",
+      "sourcePath": "\\\\192.168.3.3\\【行程總彙】\\0-0-EDM+影片\\2025\\2025-10月\\1013冰島極光\\正方形-1200x1200\\藍湖.jpg",
+      "sourceUrl": "\\\\192.168.3.3\\【行程總彙】\\0-0-EDM+影片\\2025\\2025-10月\\1013冰島極光\\正方形-1200x1200\\藍湖.jpg",
+      "credit": "行程總彙圖庫",
+      "bytes": 505967,
+      "failed": false
+    },
+    "庫肯霍夫花園": {
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Keukenhof%2C_tulip_fields.jpg/960px-Keukenhof%2C_tulip_fields.jpg",
+      "credit": "Wikimedia Commons / Rene Cortin",
+      "failed": true,
+      "lastError": "HTTP 404"
+    },
+    "奇琴伊察": {
+      "path": "/landmarks/177591b0cbb0.jpg",
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Chichen_Itza_3.jpg/960px-Chichen_Itza_3.jpg",
+      "credit": "Wikimedia Commons / Bjørn Christian Tørrissen",
+      "bytes": 133184
+    },
+    "伊瓜蘇瀑布": {
+      "path": "/landmarks/76451a90f553.jpg",
+      "source": "nas",
+      "sourcePath": "\\\\192.168.3.3\\【行程總彙】\\保留系列資料\\1-5.自由行\\美洲\\南美洲\\地圖\\IGR3G-阿根廷-伊瓜蘇瀑布-自由行-3日-01.jpg",
+      "sourceUrl": "\\\\192.168.3.3\\【行程總彙】\\保留系列資料\\1-5.自由行\\美洲\\南美洲\\地圖\\IGR3G-阿根廷-伊瓜蘇瀑布-自由行-3日-01.jpg",
+      "credit": "行程總彙圖庫",
+      "bytes": 1727277,
+      "failed": false
+    },
+    "迦太基古城": {
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Carthage_Roman_Villas.jpg/960px-Carthage_Roman_Villas.jpg",
+      "credit": "Wikimedia Commons / Dennis Jarvis",
+      "failed": true,
+      "lastError": "HTTP 404"
+    },
+    "雙子星塔": {
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Petronas_Panorama_I.jpg/960px-Petronas_Panorama_I.jpg",
+      "credit": "Wikimedia Commons / Someformofhuman",
+      "failed": true,
+      "lastError": "HTTP 429"
+    },
+    "維多利亞港": {
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Victoria_Harbour_Aerial_View.jpg/960px-Victoria_Harbour_Aerial_View.jpg",
+      "credit": "Wikimedia Commons / Base64",
+      "failed": true,
+      "lastError": "HTTP 404"
+    },
+    "聖馬可廣場": {
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Venice_Piazza_San_Marco.jpg/960px-Venice_Piazza_San_Marco.jpg",
+      "credit": "Wikimedia Commons / Wolfgang Moroder",
+      "failed": true,
+      "lastError": "HTTP 429"
+    },
+    "聖母百花大教堂": {
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Florence_Duomo_seen_from_Michelangelo_hill.jpg/960px-Florence_Duomo_seen_from_Michelangelo_hill.jpg",
+      "credit": "Wikimedia Commons / Jebulon",
+      "failed": true,
+      "lastError": "HTTP 404"
+    },
+    "吳哥窟": {
+      "path": "/landmarks/7751598b74d8.png",
+      "source": "nas",
+      "sourcePath": "\\\\192.168.3.3\\【行程總彙】\\7-1.攝影\\1-6攝影\\地圖\\6.吳哥窟＿景區地圖.png",
+      "sourceUrl": "\\\\192.168.3.3\\【行程總彙】\\7-1.攝影\\1-6攝影\\地圖\\6.吳哥窟＿景區地圖.png",
+      "credit": "行程總彙圖庫",
+      "bytes": 584920,
+      "failed": false
+    },
+    "佩特拉古城": {
+      "path": "/landmarks/c65db2f3cc9f.jpeg",
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Treasury_petra_crop.jpeg/960px-Treasury_petra_crop.jpeg",
+      "credit": "Wikimedia Commons / Berthold Werner",
+      "bytes": 275931
+    },
+    "聖家堂": {
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Sagrada_Familia_01.jpg/960px-Sagrada_Familia_01.jpg",
+      "credit": "Wikimedia Commons / Bernard Gagnon",
+      "failed": true,
+      "lastError": "HTTP 429"
+    },
+    "婆羅浮屠": {
+      "path": "/landmarks/2758cc295cba.jpg",
+      "source": "nas",
+      "sourcePath": "\\\\192.168.3.3\\【行程總彙】\\0-0-EDM+影片\\2024\\2024-旅展\\4月台北春季旅展\\A4DM\\BWN08A-爪哇婆羅浮屠佛塔火山汶萊王國東方杜拜8日-A4DM-20240308_正面.jpg",
+      "sourceUrl": "\\\\192.168.3.3\\【行程總彙】\\0-0-EDM+影片\\2024\\2024-旅展\\4月台北春季旅展\\A4DM\\BWN08A-爪哇婆羅浮屠佛塔火山汶萊王國東方杜拜8日-A4DM-20240308_正面.jpg",
+      "credit": "行程總彙圖庫",
+      "bytes": 13457558,
+      "failed": false
+    },
+    "雷吉斯坦廣場": {
+      "path": "/landmarks/92d62400e92e.jpg",
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Registan_01.jpg/960px-Registan_01.jpg",
+      "credit": "Wikimedia Commons / Registan 01.jpg",
+      "bytes": 113036
+    },
+    "哈瓦那舊城": {
+      "path": "/landmarks/43e713c71670.jpg",
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Museum_of_Revolution_Cuba.jpg/960px-Museum_of_Revolution_Cuba.jpg",
+      "credit": "Wikimedia Commons / Museum of Revolution Cuba.jpg",
+      "bytes": 167618
+    },
+    "下龍灣": {
+      "path": "/landmarks/3d9f732626d7.jpg",
+      "source": "nas",
+      "sourcePath": "\\\\192.168.3.3\\【行程總彙】\\0-0-EDM+影片\\2025\\2025-5月\\20250513 北越下龍灣 海上VILLA 5日.jpg",
+      "sourceUrl": "\\\\192.168.3.3\\【行程總彙】\\0-0-EDM+影片\\2025\\2025-5月\\20250513 北越下龍灣 海上VILLA 5日.jpg",
+      "credit": "行程總彙圖庫",
+      "bytes": 1718491,
+      "failed": false
+    },
+    "大金塔": {
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Shwedagon_Pagoda_2017.jpg/960px-Shwedagon_Pagoda_2017.jpg",
+      "credit": "Wikimedia Commons / Wagaung",
+      "failed": true,
+      "lastError": "HTTP 429"
+    },
+    "少女峰": {
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Jungfraujoch%2C_Switzerland.jpg/960px-Jungfraujoch%2C_Switzerland.jpg",
+      "credit": "Wikimedia Commons / Michael Gäbler",
+      "failed": true,
+      "lastError": "HTTP 404"
+    },
+    "塞倫蓋蒂國家公園": {
+      "path": "/landmarks/992377165fc8.jpg",
+      "source": "nas",
+      "sourcePath": "\\\\192.168.3.3\\【行程總彙】\\5-非洲\\@照片圖庫\\@領隊\\2013-0716肯亞維多利亞16日-阿貴\\肯亞\\723塞倫蓋蒂國家公園\\IMG_5421.JPG",
+      "sourceUrl": "\\\\192.168.3.3\\【行程總彙】\\5-非洲\\@照片圖庫\\@領隊\\2013-0716肯亞維多利亞16日-阿貴\\肯亞\\723塞倫蓋蒂國家公園\\IMG_5421.JPG",
+      "credit": "行程總彙圖庫",
+      "bytes": 9251018,
+      "failed": false
+    },
+    "天使瀑布": {
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Salto_Angel%2C_Venezuela.jpg/960px-Salto_Angel%2C_Venezuela.jpg",
+      "credit": "Wikimedia Commons / Paolo Costa Baldi",
+      "failed": true,
+      "lastError": "HTTP 404"
+    },
+    "孫德爾邦": {
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Sundarban_Tiger.jpg/960px-Sundarban_Tiger.jpg",
+      "credit": "Wikimedia Commons / Brian Gratwicke",
+      "failed": true,
+      "lastError": "HTTP 429"
+    },
+    "拉合爾城堡": {
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Lahore_Fort_front_level.jpg/960px-Lahore_Fort_front_level.jpg",
+      "credit": "Wikimedia Commons / Waqas Usman",
+      "failed": true,
+      "lastError": "HTTP 404"
+    },
+    "伊瑪目清真寺": {
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Imam_Mosque_Isfahan_April_2018.jpg/960px-Imam_Mosque_Isfahan_April_2018.jpg",
+      "credit": "Wikimedia Commons / Diego Delso",
+      "failed": true,
+      "lastError": "HTTP 404"
+    },
+    "哭牆": {
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Western_Wall_Jerusalem_01.jpg/960px-Western_Wall_Jerusalem_01.jpg",
+      "credit": "Wikimedia Commons / Wilson44691",
+      "failed": true,
+      "lastError": "HTTP 404"
+    },
+    "王國中心塔": {
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Kingdom_Centre_Tower.jpg/960px-Kingdom_Centre_Tower.jpg",
+      "credit": "Wikimedia Commons / Ammar Shaker",
+      "failed": true,
+      "lastError": "HTTP 404"
+    },
+    "伊斯蘭藝術博物館": {
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Museum_of_Islamic_Art_Doha_%28cropped%29.jpg/960px-Museum_of_Islamic_Art_Doha_%28cropped%29.jpg",
+      "credit": "Wikimedia Commons / Diego Delso",
+      "failed": true,
+      "lastError": "HTTP 404"
+    },
+    "普西山": {
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Phousi_hill_Luang_Prabang.jpg/960px-Phousi_hill_Luang_Prabang.jpg",
+      "credit": "Wikimedia Commons / Basile Morin",
+      "failed": true,
+      "lastError": "HTTP 404"
+    },
+    "碧瑤": {
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Baguio_City_Hall.jpg/960px-Baguio_City_Hall.jpg",
+      "credit": "Wikimedia Commons / Ramon FVelasquez",
+      "failed": true,
+      "lastError": "HTTP 429"
+    },
+    "奧馬爾清真寺": {
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Umayyad_Mosque_Damascus_2009.jpg/960px-Umayyad_Mosque_Damascus_2009.jpg",
+      "credit": "Wikimedia Commons / Bernard Gagnon",
+      "failed": true,
+      "lastError": "HTTP 404"
+    },
+    "成吉思汗廣場": {
+      "path": "/landmarks/a284583c04f5.jpg",
+      "source": "nas",
+      "sourcePath": "\\\\192.168.3.3\\【行程總彙】\\1-3西伯利亞鐵路+俄羅斯\\@照片圖庫\\20240712蒙貝13日領隊照片-李小萍\\成吉思汗廣場 歷史博物館\\LINE_ALBUM_714成吉思汗廣場 歷史博物館_240727_11.jpg",
+      "sourceUrl": "\\\\192.168.3.3\\【行程總彙】\\1-3西伯利亞鐵路+俄羅斯\\@照片圖庫\\20240712蒙貝13日領隊照片-李小萍\\成吉思汗廣場 歷史博物館\\LINE_ALBUM_714成吉思汗廣場 歷史博物館_240727_11.jpg",
+      "credit": "行程總彙圖庫",
+      "bytes": 1062573,
+      "failed": false
+    },
+    "巴伊傑列克塔": {
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Baiterek_Tower_Astana.jpg/960px-Baiterek_Tower_Astana.jpg",
+      "credit": "Wikimedia Commons / Ken and Nyetta",
+      "failed": true,
+      "lastError": "HTTP 404"
+    },
+    "和平橋": {
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Bridge_of_Peace%2C_Tbilisi%2C_Georgia.jpg/960px-Bridge_of_Peace%2C_Tbilisi%2C_Georgia.jpg",
+      "credit": "Wikimedia Commons / Diego Delso",
+      "failed": true,
+      "lastError": "HTTP 429"
+    },
+    "維格蘭雕塑公園": {
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/The_Monolith_Vigeland_Park.jpg/960px-The_Monolith_Vigeland_Park.jpg",
+      "credit": "Wikimedia Commons / Bjørn Erik Pedersen",
+      "failed": true,
+      "lastError": "HTTP 404"
+    },
+    "赫爾辛基大教堂": {
+      "path": "/landmarks/25e53cc2474b.jpg",
+      "source": "nas",
+      "sourcePath": "\\\\192.168.3.3\\【行程總彙】\\1-4北極光\\@照片圖庫\\@領隊\\20250125芬蘭挪威10日-陳妍方\\0126抵達赫爾辛基 市區觀光\\赫爾辛基機場\\赫爾辛基機場 (5).jpg",
+      "sourceUrl": "\\\\192.168.3.3\\【行程總彙】\\1-4北極光\\@照片圖庫\\@領隊\\20250125芬蘭挪威10日-陳妍方\\0126抵達赫爾辛基 市區觀光\\赫爾辛基機場\\赫爾辛基機場 (5).jpg",
+      "credit": "行程總彙圖庫",
+      "bytes": 5092739,
+      "failed": false
+    },
+    "市政廳": {
+      "path": "/landmarks/7fad706ee011.jpg",
+      "source": "nas",
+      "sourcePath": "\\\\192.168.3.3\\【行程總彙】\\4-1.歐洲\\●中西南歐\\德國\\漢諾威 市政廳shutterstock_627773894.jpg",
+      "sourceUrl": "\\\\192.168.3.3\\【行程總彙】\\4-1.歐洲\\●中西南歐\\德國\\漢諾威 市政廳shutterstock_627773894.jpg",
+      "credit": "行程總彙圖庫",
+      "bytes": 19429663,
+      "failed": false
+    },
+    "美人魚雕像": {
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Edvard_Eriksen%27s_mermaid_%28cropped%29.jpg/960px-Edvard_Eriksen%27s_mermaid_%28cropped%29.jpg",
+      "credit": "Wikimedia Commons / Avda",
+      "failed": true,
+      "lastError": "HTTP 404"
+    },
+    "老城廣場": {
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Warsaw_Old_Town_Market_Square_2019.jpg/960px-Warsaw_Old_Town_Market_Square_2019.jpg",
+      "credit": "Wikimedia Commons / Diego Delso",
+      "failed": true,
+      "lastError": "HTTP 404"
+    },
+    "聖三一學院": {
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Trinity_College_Dublin_The_Campanile.jpg/960px-Trinity_College_Dublin_The_Campanile.jpg",
+      "credit": "Wikimedia Commons / William Murphy",
+      "failed": true,
+      "lastError": "HTTP 404"
+    },
+    "貝倫塔": {
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Torre_Belem_Lisbon.jpg/960px-Torre_Belem_Lisbon.jpg",
+      "credit": "Wikimedia Commons / Alvesgaspar",
+      "failed": true,
+      "lastError": "HTTP 404"
+    },
+    "原子球塔": {
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Atomium_Brussels_2017.jpg/960px-Atomium_Brussels_2017.jpg",
+      "credit": "Wikimedia Commons / Diego Delso",
+      "failed": true,
+      "lastError": "HTTP 404"
+    },
+    "卡列梅格丹城堡": {
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Kalemegdan_Fortress_Belgrade.jpg/960px-Kalemegdan_Fortress_Belgrade.jpg",
+      "credit": "Wikimedia Commons / Petar Milošević",
+      "failed": true,
+      "lastError": "HTTP 404"
+    },
+    "拉利貝拉岩刻教堂": {
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Church_of_St_George%2C_Lalibela.jpg/960px-Church_of_St_George%2C_Lalibela.jpg",
+      "credit": "Wikimedia Commons / Bernard Gagnon",
+      "failed": true,
+      "lastError": "HTTP 404"
+    },
+    "索蘇斯佛雷沙漠": {
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Dune_45_Sossusvlei.jpg/960px-Dune_45_Sossusvlei.jpg",
+      "credit": "Wikimedia Commons / Ikiwaner",
+      "failed": true,
+      "lastError": "HTTP 404"
+    },
+    "維多利亞瀑布": {
+      "path": "/landmarks/ebb0e7d74525.jpg",
+      "source": "nas",
+      "sourcePath": "\\\\192.168.3.3\\【行程總彙】\\5-非洲\\@影片\\20230712-東非-陳妍方\\影片\\維多利亞瀑布 直升機\\20230722_171922+0200-uid-5847BE90-B1D3-4830-A4B9-E7C822ED623B-5029384.jpg",
+      "sourceUrl": "\\\\192.168.3.3\\【行程總彙】\\5-非洲\\@影片\\20230712-東非-陳妍方\\影片\\維多利亞瀑布 直升機\\20230722_171922+0200-uid-5847BE90-B1D3-4830-A4B9-E7C822ED623B-5029384.jpg",
+      "credit": "行程總彙圖庫",
+      "bytes": 6469458,
+      "failed": false
+    },
+    "良知之父紀念碑": {
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Kwame_Nkrumah_Mausoleum_and_Memorial_Park.jpg/960px-Kwame_Nkrumah_Mausoleum_and_Memorial_Park.jpg",
+      "credit": "Wikimedia Commons / Stig Nygaard",
+      "failed": true,
+      "lastError": "HTTP 404"
+    },
+    "獨立廣場": {
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Plaza_Independencia_Montevideo.jpg/960px-Plaza_Independencia_Montevideo.jpg",
+      "credit": "Wikimedia Commons / Jimmy Baikovicius",
+      "failed": true,
+      "lastError": "HTTP 429"
+    },
+    "鄧恩河瀑布": {
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Dunn%27s_River_Falls%2C_Jamaica.jpg/960px-Dunn%27s_River_Falls%2C_Jamaica.jpg",
+      "credit": "Wikimedia Commons / Paul Mannix",
+      "failed": true,
+      "lastError": "HTTP 404"
+    },
+    "紫禁城": {
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Sunset_of_the_Forbidden_City_2006.JPG/960px-Sunset_of_the_Forbidden_City_2006.JPG",
+      "credit": "Wikimedia Commons / Sunset of the Forbidden City 2006.JPG",
+      "failed": true,
+      "lastError": "HTTP 429"
+    },
+    "黃山": {
+      "path": "/landmarks/9255f1bc1789.jpg",
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Mount-huangshan_53319729912.jpg/960px-Mount-huangshan_53319729912.jpg",
+      "credit": "Wikimedia Commons / Mount-huangshan 53319729912.jpg",
+      "bytes": 226196
+    },
+    "布達拉宮": {
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Potala_Palace.JPG/960px-Potala_Palace.JPG",
+      "credit": "Wikimedia Commons / Potala Palace.JPG",
+      "failed": true,
+      "lastError": "HTTP 404"
+    },
+    "姬路城": {
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Himeji_castle_in_may_2015.jpg/960px-Himeji_castle_in_may_2015.jpg",
+      "credit": "Wikimedia Commons / Reggaeman",
+      "failed": true,
+      "lastError": "HTTP 404"
+    },
+    "佛國寺": {
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Bulguksa_03.jpg/960px-Bulguksa_03.jpg",
+      "credit": "Wikimedia Commons / Steve46814",
+      "failed": true,
+      "lastError": "HTTP 404"
+    },
+    "會安古城": {
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Hoi_An_ancient_town_Vietnam.jpg/960px-Hoi_An_ancient_town_Vietnam.jpg",
+      "credit": "Wikimedia Commons / Diego Delso",
+      "failed": true,
+      "lastError": "HTTP 429"
+    },
+    "金邊皇宮": {
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Royal_Palace_Phnom_Penh.jpg/960px-Royal_Palace_Phnom_Penh.jpg",
+      "credit": "Wikimedia Commons / Diego Delso",
+      "failed": true,
+      "lastError": "HTTP 404"
+    },
+    "加德滿都谷地": {
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Kathmandu_Durbar_Square.jpg/960px-Kathmandu_Durbar_Square.jpg",
+      "credit": "Wikimedia Commons / chensiyuan",
+      "failed": true,
+      "lastError": "HTTP 429"
+    },
+    "琥珀堡": {
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Amber_Palace_Jaipur_2019.jpg/960px-Amber_Palace_Jaipur_2019.jpg",
+      "credit": "Wikimedia Commons / Diego Delso",
+      "failed": true,
+      "lastError": "HTTP 404"
+    },
+    "藍色清真寺": {
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Blue_Mosque%2C_Istanbul%2C_Turkey.jpg/960px-Blue_Mosque%2C_Istanbul%2C_Turkey.jpg",
+      "credit": "Wikimedia Commons / Arild Vågen",
+      "failed": true,
+      "lastError": "HTTP 429"
+    },
+    "卡帕多奇亞": {
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Cappadocia_balloons.jpg/960px-Cappadocia_balloons.jpg",
+      "credit": "Wikimedia Commons / Diego Delso",
+      "failed": true,
+      "lastError": "HTTP 404"
+    },
+    "耶路撒冷古城": {
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Jerusalem_Western_Wall_and_Dome_of_the_Rock.jpg/960px-Jerusalem_Western_Wall_and_Dome_of_the_Rock.jpg",
+      "credit": "Wikimedia Commons / Andrew Shiva",
+      "failed": true,
+      "lastError": "HTTP 429"
+    },
+    "杰拉什古城": {
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Jerash_South_Theatre.jpg/960px-Jerash_South_Theatre.jpg",
+      "credit": "Wikimedia Commons / Bernard Gagnon",
+      "failed": true,
+      "lastError": "HTTP 404"
+    },
+    "新天鵝堡": {
+      "path": "/landmarks/0c0d781b9db7.jpg",
+      "source": "nas",
+      "sourcePath": "\\\\192.168.3.3\\【行程總彙】\\4-1.歐洲\\●中西南歐\\德國\\新天鵝堡Schloss Neuschwanstein\\新天鵝堡shutterstock_1344676493.jpg",
+      "sourceUrl": "\\\\192.168.3.3\\【行程總彙】\\4-1.歐洲\\●中西南歐\\德國\\新天鵝堡Schloss Neuschwanstein\\新天鵝堡shutterstock_1344676493.jpg",
+      "credit": "行程總彙圖庫",
+      "bytes": 23965828,
+      "failed": false
+    },
+    "凡爾賽宮": {
+      "path": "/landmarks/88f8e2b4c433.jpg",
+      "source": "nas",
+      "sourcePath": "\\\\192.168.3.3\\【行程總彙】\\保留系列資料\\1-5.自由行\\歐洲\\地圖\\CDG05G-法國-巴黎-凡爾賽宮-自由行-5日-01.jpg",
+      "sourceUrl": "\\\\192.168.3.3\\【行程總彙】\\保留系列資料\\1-5.自由行\\歐洲\\地圖\\CDG05G-法國-巴黎-凡爾賽宮-自由行-5日-01.jpg",
+      "credit": "行程總彙圖庫",
+      "bytes": 736898,
+      "failed": false
+    },
+    "聖米歇爾山": {
+      "path": "/landmarks/4daf161221dd.jpg",
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/MSM_sunset_02.JPG/960px-MSM_sunset_02.JPG",
+      "credit": "Wikimedia Commons / MSM sunset 02.JPG",
+      "bytes": 94350
+    },
+    "塞哥維亞古城": {
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Acueducto_de_Segovia_01.jpg/960px-Acueducto_de_Segovia_01.jpg",
+      "credit": "Wikimedia Commons / Acueducto de Segovia 01.jpg",
+      "failed": true,
+      "lastError": "HTTP 429"
+    },
+    "龐貝古城": {
+      "path": "/landmarks/4e7703412636.jpg",
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Building_of_Eumachia%2C_Pompeii_Forum%2C_Entrance.jpg/960px-Building_of_Eumachia%2C_Pompeii_Forum%2C_Entrance.jpg",
+      "credit": "Wikimedia Commons / Building of Eumachia, Pompeii Forum, Entrance.jpg",
+      "bytes": 207757
+    },
+    "威斯敏斯特宮": {
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Westminster_palace.jpg/960px-Westminster_palace.jpg",
+      "credit": "Wikimedia Commons / Westminster palace.jpg",
+      "failed": true,
+      "lastError": "HTTP 429"
+    },
+    "布拉格城堡": {
+      "path": "/landmarks/c90fad205329.jpg",
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Guard_at_the_Prague_castle%2C_Prague_-_7620_%28cropped%29.jpg/960px-Guard_at_the_Prague_castle%2C_Prague_-_7620_%28cropped%29.jpg",
+      "credit": "Wikimedia Commons / Guard at the Prague castle, Prague - 7620 (cropped).jpg",
+      "bytes": 297567
+    },
+    "辛格韋德利爾國家公園": {
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Thingvellir_National_Park.jpg/960px-Thingvellir_National_Park.jpg",
+      "credit": "Wikimedia Commons / Diego Delso",
+      "failed": true,
+      "lastError": "HTTP 429"
+    },
+    "克里姆林宮": {
+      "path": "/landmarks/ef89f993ff1c.jpg",
+      "source": "nas",
+      "sourcePath": "\\\\192.168.3.3\\【行程總彙】\\1-4北極光\\@照片圖庫\\@領隊\\20260308 摩爾曼斯克 11+1日 - 游博勝(Matt)\\Day3 莫斯科 (克里姆林宮、莫斯科地鐵、伊茲麥洛夫市集)\\克里姆林宮\\LINE_ALBUM_俄羅斯摩爾曼D3_260320_122.jpg",
+      "sourceUrl": "\\\\192.168.3.3\\【行程總彙】\\1-4北極光\\@照片圖庫\\@領隊\\20260308 摩爾曼斯克 11+1日 - 游博勝(Matt)\\Day3 莫斯科 (克里姆林宮、莫斯科地鐵、伊茲麥洛夫市集)\\克里姆林宮\\LINE_ALBUM_俄羅斯摩爾曼D3_260320_122.jpg",
+      "credit": "行程總彙圖庫",
+      "bytes": 804368,
+      "failed": false
+    },
+    "冬宮博物館": {
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Hermitage_Museum_winter_palace.jpg/960px-Hermitage_Museum_winter_palace.jpg",
+      "credit": "Wikimedia Commons / Diego Delso",
+      "failed": true,
+      "lastError": "HTTP 404"
+    },
+    "杜布羅夫尼克古城": {
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Dubrovnik_-_Walls.jpg/960px-Dubrovnik_-_Walls.jpg",
+      "credit": "Wikimedia Commons / Diego Delso",
+      "failed": true,
+      "lastError": "HTTP 404"
+    },
+    "大峽谷國家公園": {
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Grand_Canyon_view_from_Pima_Point_2010.jpg/960px-Grand_Canyon_view_from_Pima_Point_2010.jpg",
+      "credit": "Wikimedia Commons / Chensiyuan",
+      "failed": true,
+      "lastError": "HTTP 404"
+    },
+    "優勝美地國家公園": {
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Yosemite_Valley_from_Wawona_Tunnel_view%2C_early_spring_2013.jpg/960px-Yosemite_Valley_from_Wawona_Tunnel_view%2C_early_spring_2013.jpg",
+      "credit": "Wikimedia Commons / Diliff",
+      "failed": true,
+      "lastError": "HTTP 404"
+    },
+    "黃石國家公園": {
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Grand_Prismatic_Spring_and_Midway_Geyser_Basin_from_above.jpg/960px-Grand_Prismatic_Spring_and_Midway_Geyser_Basin_from_above.jpg",
+      "credit": "Wikimedia Commons / Brocken Inaglory",
+      "failed": true,
+      "lastError": "HTTP 404"
+    },
+    "瓦哈卡歷史中心": {
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Oaxaca_city_panorama.jpg/960px-Oaxaca_city_panorama.jpg",
+      "credit": "Wikimedia Commons / Diego Delso",
+      "failed": true,
+      "lastError": "HTTP 429"
+    },
+    "薩爾瓦多歷史中心": {
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Salvador_Bahia_Pelourinho.jpg/960px-Salvador_Bahia_Pelourinho.jpg",
+      "credit": "Wikimedia Commons / Diego Delso",
+      "failed": true,
+      "lastError": "HTTP 404"
+    },
+    "莫雷諾冰川": {
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Perito_Moreno_Glacier_Patagonia_Argentina_Luca_Galuzzi_2007.jpg/960px-Perito_Moreno_Glacier_Patagonia_Argentina_Luca_Galuzzi_2007.jpg",
+      "credit": "Wikimedia Commons / Luca Galuzzi",
+      "failed": true,
+      "lastError": "HTTP 404"
+    },
+    "庫斯科古城": {
+      "path": "/landmarks/0f534e93da37.jpg",
+      "source": "nas",
+      "sourcePath": "\\\\192.168.3.3\\【行程總彙】\\保留系列資料\\1-5.自由行\\美洲\\中美洲\\地圖\\LIM7G-秘魯-利馬-庫斯科-聖谷-馬丘比丘-深度-自由行-7日-01.jpg",
+      "sourceUrl": "\\\\192.168.3.3\\【行程總彙】\\保留系列資料\\1-5.自由行\\美洲\\中美洲\\地圖\\LIM7G-秘魯-利馬-庫斯科-聖谷-馬丘比丘-深度-自由行-7日-01.jpg",
+      "credit": "行程總彙圖庫",
+      "bytes": 288226,
+      "failed": false
+    },
+    "摩艾石像": {
+      "path": "/landmarks/e12441f762a2.jpg",
+      "source": "nas",
+      "sourcePath": "\\\\192.168.3.3\\【行程總彙】\\0-0-EDM+影片\\2024\\2024-旅展\\11月ITF旅展\\3.A4DM_無須修改\\南美六國復活節島31日-LIM31A-DM-20240311_背面.jpg",
+      "sourceUrl": "\\\\192.168.3.3\\【行程總彙】\\0-0-EDM+影片\\2024\\2024-旅展\\11月ITF旅展\\3.A4DM_無須修改\\南美六國復活節島31日-LIM31A-DM-20240311_背面.jpg",
+      "credit": "行程總彙圖庫",
+      "bytes": 6996261,
+      "failed": false
+    },
+    "大堡礁": {
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Great_Barrier_Reef.jpg/960px-Great_Barrier_Reef.jpg",
+      "credit": "Wikimedia Commons / NASA",
+      "failed": true,
+      "lastError": "HTTP 429"
+    },
+    "烏魯魯": {
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Uluru%2C_Northern_Territory.jpg/960px-Uluru%2C_Northern_Territory.jpg",
+      "credit": "Wikimedia Commons / Weyf",
+      "failed": true,
+      "lastError": "HTTP 404"
+    },
+    "乞力馬扎羅山": {
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Mount_Kilimanjaro_from_Amboseli.jpg/960px-Mount_Kilimanjaro_from_Amboseli.jpg",
+      "credit": "Wikimedia Commons / Mila Zinkova",
+      "failed": true,
+      "lastError": "HTTP 404"
+    },
+    "馬拉喀什老城": {
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Marrakesh_Medina.jpg/960px-Marrakesh_Medina.jpg",
+      "credit": "Wikimedia Commons / Diego Delso",
+      "failed": true,
+      "lastError": "HTTP 429"
+    },
+    "羅本島": {
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Robben_Island.jpg/960px-Robben_Island.jpg",
+      "credit": "Wikimedia Commons / Diego Delso",
+      "failed": true,
+      "lastError": "HTTP 404"
+    },
+    "阿布辛貝神廟": {
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/RamsesII_at_Abu_Simbel.jpg/960px-RamsesII_at_Abu_Simbel.jpg",
+      "credit": "Wikimedia Commons / Hajor",
+      "failed": true,
+      "lastError": "HTTP 429"
+    },
+    "魁北克古城": {
+      "path": "/landmarks/3a0cd1465533.jpg",
+      "source": "nas",
+      "sourcePath": "\\\\192.168.3.3\\【行程總彙】\\1-1台灣旅遊\\@照片圖庫\\●情境圖\\煙火\\魁北克_shutterstock_1179431848.jpg",
+      "sourceUrl": "\\\\192.168.3.3\\【行程總彙】\\1-1台灣旅遊\\@照片圖庫\\●情境圖\\煙火\\魁北克_shutterstock_1179431848.jpg",
+      "credit": "行程總彙圖庫",
+      "bytes": 9649946,
+      "failed": false
+    },
+    "小孩堤防風車群": {
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Kinderdijk_windmills.jpg/960px-Kinderdijk_windmills.jpg",
+      "credit": "Wikimedia Commons / Diego Delso",
+      "failed": true,
+      "lastError": "HTTP 429"
+    },
+    "波斯波利斯古城": {
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Persepolis_24.jpg/960px-Persepolis_24.jpg",
+      "credit": "Wikimedia Commons / Diego Delso",
+      "failed": true,
+      "lastError": "HTTP 404"
+    }
+  }
+}

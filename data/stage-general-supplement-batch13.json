@@ -1,0 +1,631 @@
+{
+  "batchId": "stage-general-supplement-batch13",
+  "generatedAt": "2026-09-15T10:50:00.000Z",
+  "purpose": "氣候帶、洋流、火山帶與湖泊河流自然地理補題。",
+  "gapContext": {
+    "target": "氣候洋流與地貌深化",
+    "newUniqueConcepts": 20
+  },
+  "questions": [
+    {
+      "id": "supplement-batch13-001",
+      "conceptId": "fact:geo:熱帶雨林氣候",
+      "level": "洲際領隊",
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ],
+      "questionType": "自然地理",
+      "category": "世界地理",
+      "region": "世界地理",
+      "q": "赤道附近終年高溫多雨，植被茂密，這屬於哪一種氣候類型？",
+      "options": [
+        "熱帶雨林氣候",
+        "地中海氣候",
+        "寒帶氣候",
+        "溫帶沙漠氣候"
+      ],
+      "correctAnswer": "熱帶雨林氣候",
+      "answerIndex": 0,
+      "fact": "熱帶雨林氣候常見於亞馬遜、剛果盆地與東南亞部分地區。",
+      "auditStatus": "pending"
+    },
+    {
+      "id": "supplement-batch13-002",
+      "conceptId": "fact:geo:溫帶海洋性氣候",
+      "level": "洲際領隊",
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ],
+      "questionType": "自然地理",
+      "category": "世界地理",
+      "region": "世界地理",
+      "q": "受海洋影響，冬季較溫和、降水較均勻，西歐常見的氣候類型是？",
+      "options": [
+        "溫帶海洋性氣候",
+        "熱帶沙漠氣候",
+        "副極地氣候",
+        "高原氣候"
+      ],
+      "correctAnswer": "溫帶海洋性氣候",
+      "answerIndex": 0,
+      "fact": "英國、法國西北部等地多屬溫帶海洋性氣候，適合全年旅遊但需防雨。",
+      "auditStatus": "pending"
+    },
+    {
+      "id": "supplement-batch13-003",
+      "conceptId": "fact:geo:溫帶大陸性氣候",
+      "level": "洲際領隊",
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ],
+      "questionType": "自然地理",
+      "category": "世界地理",
+      "region": "世界地理",
+      "q": "冬夏溫差大、降水較集中，內陸大陸常見的氣候類型是？",
+      "options": [
+        "溫帶大陸性氣候",
+        "熱帶雨林氣候",
+        "地中海氣候",
+        "赤道氣候"
+      ],
+      "correctAnswer": "溫帶大陸性氣候",
+      "answerIndex": 0,
+      "fact": "溫帶大陸性氣候常見於北美與亞洲內陸，旅行需準備四季衣物。",
+      "auditStatus": "pending"
+    },
+    {
+      "id": "supplement-batch13-004",
+      "conceptId": "fact:geo:寒帶氣候",
+      "level": "洲際領隊",
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ],
+      "questionType": "自然地理",
+      "category": "世界地理",
+      "region": "世界地理",
+      "q": "北極圈附近冬季嚴寒、夏季短暫，主要屬於哪一種氣候帶？",
+      "options": [
+        "寒帶氣候",
+        "熱帶氣候",
+        "地中海氣候",
+        "季風氣候"
+      ],
+      "correctAnswer": "寒帶氣候",
+      "answerIndex": 0,
+      "fact": "寒帶地區如北歐北部、西伯利亞與加拿大北部，極光與冰雪活動興盛。",
+      "auditStatus": "pending"
+    },
+    {
+      "id": "supplement-batch13-005",
+      "conceptId": "fact:geo:副熱帶高壓",
+      "level": "環球旅行家",
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ],
+      "questionType": "自然地理",
+      "category": "世界地理",
+      "region": "世界地理",
+      "q": "副熱帶高壓帶控制下，空氣下沉、降水少，較容易形成哪種環境？",
+      "options": [
+        "沙漠或乾燥區",
+        "終年暴雨雨林",
+        "永久冰原",
+        "深海海溝"
+      ],
+      "correctAnswer": "沙漠或乾燥區",
+      "answerIndex": 0,
+      "fact": "撒哈拉沙漠與澳洲內陸部分乾燥氣候與副熱帶高壓有關。",
+      "auditStatus": "pending"
+    },
+    {
+      "id": "supplement-batch13-006",
+      "conceptId": "fact:geo:高原氣候",
+      "level": "洲際領隊",
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ],
+      "questionType": "自然地理",
+      "category": "世界地理",
+      "region": "世界地理",
+      "q": "海拔升高導致氣溫下降，青藏高原屬於哪一種氣候特徵？",
+      "options": [
+        "高原氣候",
+        "熱帶海洋氣候",
+        "副極地氣候",
+        "沙漠氣候"
+      ],
+      "correctAnswer": "高原氣候",
+      "answerIndex": 0,
+      "fact": "高原氣候日夜溫差大，前往高海拔地區需注意保暖與高原反應。",
+      "auditStatus": "pending"
+    },
+    {
+      "id": "supplement-batch13-007",
+      "conceptId": "fact:geo:墨西哥灣流",
+      "level": "環球旅行家",
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ],
+      "questionType": "自然地理",
+      "category": "世界地理",
+      "region": "世界地理",
+      "q": "墨西哥灣流屬於哪一類洋流？",
+      "options": [
+        "北大西洋暖流",
+        "南極寒流",
+        "赤道逆流",
+        "地中海鹽度流"
+      ],
+      "correctAnswer": "北大西洋暖流",
+      "answerIndex": 0,
+      "fact": "墨西哥灣流將熱帶暖水向北輸送，影響西歐沿海氣候較為溫和。",
+      "auditStatus": "pending"
+    },
+    {
+      "id": "supplement-batch13-008",
+      "conceptId": "fact:geo:黑潮",
+      "level": "洲際領隊",
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ],
+      "questionType": "自然地理",
+      "category": "世界地理",
+      "region": "世界地理",
+      "q": "黑潮（日本暖流）主要影響哪一個地區的海岸氣候？",
+      "options": [
+        "日本東岸",
+        "巴西西岸",
+        "挪威西岸",
+        "非洲西岸"
+      ],
+      "correctAnswer": "日本東岸",
+      "answerIndex": 0,
+      "fact": "黑潮源自熱帶太平洋，使日本東岸冬季較同緯度地區溫暖。",
+      "auditStatus": "pending"
+    },
+    {
+      "id": "supplement-batch13-009",
+      "conceptId": "fact:geo:秘魯寒流",
+      "level": "環球旅行家",
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ],
+      "questionType": "自然地理",
+      "category": "世界地理",
+      "region": "世界地理",
+      "q": "秘魯寒流（洪堡洋流）主要影響哪一側海岸？",
+      "options": [
+        "南美洲西岸",
+        "歐洲西岸",
+        "非洲東岸",
+        "澳洲東岸"
+      ],
+      "correctAnswer": "南美洲西岸",
+      "answerIndex": 0,
+      "fact": "秘魯寒流帶來豐富營養鹽，支持秘魯沿海漁業，也使沿岸氣候較涼燥。",
+      "auditStatus": "pending"
+    },
+    {
+      "id": "supplement-batch13-010",
+      "conceptId": "fact:geo:本格拉寒流",
+      "level": "環球旅行家",
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ],
+      "questionType": "自然地理",
+      "category": "世界地理",
+      "region": "世界地理",
+      "q": "本格拉寒流主要流經哪一個大洲的西岸？",
+      "options": [
+        "非洲",
+        "南美洲",
+        "北美洲",
+        "歐洲"
+      ],
+      "correctAnswer": "非洲",
+      "answerIndex": 0,
+      "fact": "本格拉寒流沿非洲西南海岸向北，影響納米比亞與安哥拉沿海氣候。",
+      "auditStatus": "pending"
+    },
+    {
+      "id": "supplement-batch13-011",
+      "conceptId": "fact:geo:環太平洋火山帶",
+      "level": "洲際領隊",
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ],
+      "questionType": "自然地理",
+      "category": "世界地理",
+      "region": "世界地理",
+      "q": "全球約多數活火山與強震分布在哪一條地質帶？",
+      "options": [
+        "環太平洋火山帶",
+        "赤道雨林帶",
+        "北極苔原帶",
+        "撒哈拉沙漠帶"
+      ],
+      "correctAnswer": "環太平洋火山帶",
+      "answerIndex": 0,
+      "fact": "日本、印尼、智利、美國西岸等地皆位於環太平洋火山帶，旅行需留意地質風險。",
+      "auditStatus": "pending"
+    },
+    {
+      "id": "supplement-batch13-012",
+      "conceptId": "fact:geo:埃特納火山",
+      "level": "環球旅行家",
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ],
+      "questionType": "自然地理",
+      "category": "世界地理",
+      "region": "世界地理",
+      "q": "歐洲最高活火山埃特納位於哪一個國家？",
+      "options": [
+        "義大利",
+        "冰島",
+        "希臘",
+        "土耳其"
+      ],
+      "correctAnswer": "義大利",
+      "answerIndex": 0,
+      "fact": "埃特納火山位於西西里島，是地中海地區著名的活火山景觀。",
+      "auditStatus": "pending"
+    },
+    {
+      "id": "supplement-batch13-013",
+      "conceptId": "fact:geo:維蘇威火山",
+      "level": "洲際領隊",
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ],
+      "questionType": "自然地理",
+      "category": "世界地理",
+      "region": "世界地理",
+      "q": "公元 79 年掩埋龐貝古城的維蘇威火山位於哪一個國家？",
+      "options": [
+        "義大利",
+        "西班牙",
+        "土耳其",
+        "希臘"
+      ],
+      "correctAnswer": "義大利",
+      "answerIndex": 0,
+      "fact": "維蘇威火山位於那不勒斯灣附近，龐貝遺址是重要考古旅遊景點。",
+      "auditStatus": "pending"
+    },
+    {
+      "id": "supplement-batch13-014",
+      "conceptId": "fact:geo:黃石火山",
+      "level": "環球旅行家",
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ],
+      "questionType": "自然地理",
+      "category": "世界地理",
+      "region": "世界地理",
+      "q": "美國黃石國家公園的地熱景觀（如老忠實間歇泉）與哪種地質活動有關？",
+      "options": [
+        "火山與地熱活動",
+        "珊瑚礁生長",
+        "冰川刨蝕",
+        "風成沙丘"
+      ],
+      "correctAnswer": "火山與地熱活動",
+      "answerIndex": 0,
+      "fact": "黃石座落於超級火山地質區，間歇泉與溫泉是地熱活動的表現。",
+      "auditStatus": "pending"
+    },
+    {
+      "id": "supplement-batch13-015",
+      "conceptId": "fact:geo:萊茵河",
+      "level": "洲際領隊",
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ],
+      "questionType": "自然地理",
+      "category": "世界地理",
+      "region": "世界地理",
+      "q": "萊茵河最終注入哪一片海域？",
+      "options": [
+        "北海",
+        "地中海",
+        "黑海",
+        "波羅的海"
+      ],
+      "correctAnswer": "北海",
+      "answerIndex": 0,
+      "fact": "萊茵河流經瑞士、德國、荷蘭等地，是歐洲重要航運與觀光河流。",
+      "auditStatus": "pending"
+    },
+    {
+      "id": "supplement-batch13-016",
+      "conceptId": "fact:geo:育空河",
+      "level": "環球旅行家",
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ],
+      "questionType": "自然地理",
+      "category": "世界地理",
+      "region": "世界地理",
+      "q": "育空河主要流經哪一個地理區域？",
+      "options": [
+        "阿拉斯加與加拿大西北部",
+        "撒哈拉沙漠",
+        "南極洲",
+        "加勒比海島"
+      ],
+      "correctAnswer": "阿拉斯加與加拿大西北部",
+      "answerIndex": 0,
+      "fact": "育空河是北美重要河流，河谷風光與極地探險旅遊知名。",
+      "auditStatus": "pending"
+    },
+    {
+      "id": "supplement-batch13-017",
+      "conceptId": "fact:geo:琵琶湖",
+      "level": "洲際領隊",
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ],
+      "questionType": "自然地理",
+      "category": "世界地理",
+      "region": "世界地理",
+      "q": "日本最大的淡水湖是？",
+      "options": [
+        "琵琶湖",
+        "富士五湖",
+        "洞爺湖",
+        "支笏湖"
+      ],
+      "correctAnswer": "琵琶湖",
+      "answerIndex": 0,
+      "fact": "琵琶湖位於滋賀縣，為近畿地區重要水源，周邊有許多歷史古城。",
+      "auditStatus": "pending"
+    },
+    {
+      "id": "supplement-batch13-018",
+      "conceptId": "fact:geo:科羅拉多大峽谷",
+      "level": "洲際領隊",
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ],
+      "questionType": "自然地理",
+      "category": "世界地理",
+      "region": "世界地理",
+      "q": "科羅拉多大峽谷主要由哪條河流長期侵蝕形成？",
+      "options": [
+        "科羅拉多河",
+        "密西西比河",
+        "育空河",
+        "哥倫比亞河"
+      ],
+      "correctAnswer": "科羅拉多河",
+      "answerIndex": 0,
+      "fact": "科羅拉多大峽谷位於美國亞利桑那州，是世界著名的河谷地貌景觀。",
+      "auditStatus": "pending"
+    },
+    {
+      "id": "supplement-batch13-019",
+      "conceptId": "fact:geo:喀斯特地貌",
+      "level": "洲際領隊",
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ],
+      "questionType": "自然地理",
+      "category": "世界地理",
+      "region": "世界地理",
+      "q": "石灰岩地區受水流溶蝕形成溶洞、石林等地貌，稱為？",
+      "options": [
+        "喀斯特地貌",
+        "冰蚀地貌",
+        "火山熔岩地貌",
+        "海岸沙丘地貌"
+      ],
+      "correctAnswer": "喀斯特地貌",
+      "answerIndex": 0,
+      "fact": "中國桂林、越南下龍灣與巴爾干部分地區可見典型喀斯特景觀。",
+      "auditStatus": "pending"
+    },
+    {
+      "id": "supplement-batch13-020",
+      "conceptId": "fact:geo:南極冰蓋",
+      "level": "環球旅行家",
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ],
+      "questionType": "自然地理",
+      "category": "世界地理",
+      "region": "世界地理",
+      "q": "地球上最大的淡水儲存庫之一位於哪一個地區？",
+      "options": [
+        "南極冰蓋",
+        "撒哈拉沙漠",
+        "里海",
+        "死海"
+      ],
+      "correctAnswer": "南極冰蓋",
+      "answerIndex": 0,
+      "fact": "南極冰蓋覆蓋南極大陸大部分區域，對全球海平面與氣候有重要影響。",
+      "auditStatus": "pending"
+    }
+  ]
+}

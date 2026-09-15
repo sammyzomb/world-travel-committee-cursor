@@ -1,0 +1,631 @@
+{
+  "batchId": "stage-general-supplement-batch6",
+  "generatedAt": "2026-09-15T09:00:00.000Z",
+  "purpose": "地理與旅遊安全補題第二批：grades 為空表示各學級皆可抽。",
+  "gapContext": {
+    "target": "深化旅遊安全常識與世界自然地理",
+    "newUniqueConcepts": 20
+  },
+  "questions": [
+    {
+      "id": "supplement-batch6-001",
+      "conceptId": "fact:safety:颱風",
+      "level": "洲際領隊",
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ],
+      "questionType": "旅遊安全",
+      "category": "旅行知識",
+      "region": "旅行知識",
+      "q": "颱風季節外出旅行，收到強風暴雨警報時較穩健的做法是？",
+      "options": [
+        "調整行程並前往安全地點避難",
+        "照常前往海邊活動",
+        "刻意搭船出海",
+        "忽略官方警報"
+      ],
+      "correctAnswer": "調整行程並前往安全地點避難",
+      "answerIndex": 0,
+      "fact": "颱風可能帶來強風豪雨與淹水，應留意氣象與當地疏散指示。",
+      "auditStatus": "pending"
+    },
+    {
+      "id": "supplement-batch6-002",
+      "conceptId": "fact:safety:盜搶防範",
+      "level": "洲際領隊",
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ],
+      "questionType": "旅遊安全",
+      "category": "旅行知識",
+      "region": "旅行知識",
+      "q": "在人潮密集的觀光區，降低遭竊風險較有效的習慣是？",
+      "options": [
+        "財物不外露並留意周遭動態",
+        "將背包敞開放在身後",
+        "把所有現金放在同一個口袋",
+        "邊走邊長時間看手機"
+      ],
+      "correctAnswer": "財物不外露並留意周遭動態",
+      "answerIndex": 0,
+      "fact": "扒竊常發生在捷運、市集與景點入口，分散保管證件與現金較安全。",
+      "auditStatus": "pending"
+    },
+    {
+      "id": "supplement-batch6-003",
+      "conceptId": "fact:safety:火山旅遊",
+      "level": "洲際領隊",
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ],
+      "questionType": "旅遊安全",
+      "category": "旅行知識",
+      "region": "旅行知識",
+      "q": "前往活火山或火山景區旅行時，應避免的做法是？",
+      "options": [
+        "擅自進入封閉或警戒區域",
+        "留意官方火山活動公告",
+        "遵守導覽路線",
+        "留意火山灰與氣體警示"
+      ],
+      "correctAnswer": "擅自進入封閉或警戒區域",
+      "answerIndex": 0,
+      "fact": "火山活動可能突然改變，封閉區與警戒級別應嚴格遵守。",
+      "auditStatus": "pending"
+    },
+    {
+      "id": "supplement-batch6-004",
+      "conceptId": "fact:safety:失溫",
+      "level": "洲際領隊",
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ],
+      "questionType": "旅遊安全",
+      "category": "旅行知識",
+      "region": "旅行知識",
+      "q": "寒冷潮濕的山區健行，預防失溫較重要的做法是？",
+      "options": [
+        "保持身體乾燥並適時增減衣物",
+        "穿著濕衣服繼續趕路",
+        "故意減少熱量攝取",
+        "獨自偏離路線夜行"
+      ],
+      "correctAnswer": "保持身體乾燥並適時增減衣物",
+      "answerIndex": 0,
+      "fact": "失溫與風寒、濕冷有關，應準備防風防水衣物並及時補充熱量。",
+      "auditStatus": "pending"
+    },
+    {
+      "id": "supplement-batch6-005",
+      "conceptId": "fact:safety:雷雨",
+      "level": "洲際領隊",
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ],
+      "questionType": "旅遊安全",
+      "category": "旅行知識",
+      "region": "旅行知識",
+      "q": "戶外旅行突然遇到雷雨時，較應避免的做法是？",
+      "options": [
+        "站在孤立高樹或開放空曠處",
+        "尋找室內或低窪處暫避",
+        "離開水面與金屬物品",
+        "留意天氣變化提前撤離"
+      ],
+      "correctAnswer": "站在孤立高樹或開放空曠處",
+      "answerIndex": 0,
+      "fact": "雷擊常發生在高處與開闊地，雷雨時應遠離山頂、樹木與水邊。",
+      "auditStatus": "pending"
+    },
+    {
+      "id": "supplement-batch6-006",
+      "conceptId": "fact:safety:野生動物",
+      "level": "洲際領隊",
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ],
+      "questionType": "旅遊安全",
+      "category": "旅行知識",
+      "region": "旅行知識",
+      "q": "在國家公園或野生動物棲地旅行，較安全的做法是？",
+      "options": [
+        "保持距離且不餵食野生動物",
+        "靠近幼崽拍照",
+        "餵食野生猴子或鹿",
+        "追逐動物以取得更好角度"
+      ],
+      "correctAnswer": "保持距離且不餵食野生動物",
+      "answerIndex": 0,
+      "fact": "餵食可能改變動物行為並增加攻擊風險，也會影響生態平衡。",
+      "auditStatus": "pending"
+    },
+    {
+      "id": "supplement-batch6-007",
+      "conceptId": "fact:safety:暈船",
+      "level": "洲際領隊",
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ],
+      "questionType": "旅遊安全",
+      "category": "旅行知識",
+      "region": "旅行知識",
+      "q": "容易暈船的人搭乘渡輪時，較有助緩解的做法是？",
+      "options": [
+        "選擇船身中央較平穩位置並望向遠方",
+        "一直盯著手機小螢幕",
+        "空腹大量飲酒",
+        "待在船尾最高處迎風"
+      ],
+      "correctAnswer": "選擇船身中央較平穩位置並望向遠方",
+      "answerIndex": 0,
+      "fact": "暈動症與內耳平衡感受刺激有關，固定視線與通風有助減輕不適。",
+      "auditStatus": "pending"
+    },
+    {
+      "id": "supplement-batch6-008",
+      "conceptId": "fact:safety:緊急求助",
+      "level": "洲際領隊",
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ],
+      "questionType": "旅遊安全",
+      "category": "旅行知識",
+      "region": "旅行知識",
+      "q": "在海外發生緊急事故需要求救時，出發前較應先準備的是？",
+      "options": [
+        "查詢當地緊急電話與醫療資源",
+        "完全不記任何聯絡方式",
+        "只依賴社群媒體留言",
+        "假設各國號碼都相同"
+      ],
+      "correctAnswer": "查詢當地緊急電話與醫療資源",
+      "answerIndex": 0,
+      "fact": "各國緊急號碼不同，歐盟部分地區可使用 112，出發前查詢較穩妥。",
+      "auditStatus": "pending"
+    },
+    {
+      "id": "supplement-batch6-009",
+      "conceptId": "fact:safety:疫苗防疫",
+      "level": "洲際領隊",
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ],
+      "questionType": "旅遊安全",
+      "category": "旅行知識",
+      "region": "旅行知識",
+      "q": "前往部分熱帶或疫區國家旅行前，較建議的做法是？",
+      "options": [
+        "諮詢旅遊醫學門診並確認疫苗建議",
+        "完全不做任何準備",
+        "僅靠網路偏方",
+        "抵達後才臨時決定"
+      ],
+      "correctAnswer": "諮詢旅遊醫學門診並確認疫苗建議",
+      "answerIndex": 0,
+      "fact": "黃熱病、A 型肝炎等疫苗可能需要提前數週施打才有效。",
+      "auditStatus": "pending"
+    },
+    {
+      "id": "supplement-batch6-010",
+      "conceptId": "fact:safety:迷路",
+      "level": "洲際領隊",
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ],
+      "questionType": "旅遊安全",
+      "category": "旅行知識",
+      "region": "旅行知識",
+      "q": "在山區或森林步道迷路時，較安全的初期應對是？",
+      "options": [
+        "停在原地並設法聯絡救援",
+        "盲目狂奔尋路",
+        "刻意分隊各自探索",
+        "繼續往未知深處前進"
+      ],
+      "correctAnswer": "停在原地並設法聯絡救援",
+      "answerIndex": 0,
+      "fact": "迷路後貿然移動可能加深偏離，保留體力並讓他人知道位置較重要。",
+      "auditStatus": "pending"
+    },
+    {
+      "id": "supplement-batch6-011",
+      "conceptId": "fact:safety:救生衣",
+      "level": "洲際領隊",
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ],
+      "questionType": "旅遊安全",
+      "category": "旅行知識",
+      "region": "旅行知識",
+      "q": "參加乘船、泛舟或水上活動時，較基本的安全措施是？",
+      "options": [
+        "正確穿著救生衣並聽從船員指示",
+        "拒絕任何安全裝備",
+        "站立在船舷邊嬉鬧",
+        "酒後參與高風險水上活動"
+      ],
+      "correctAnswer": "正確穿著救生衣並聽從船員指示",
+      "answerIndex": 0,
+      "fact": "救生衣可大幅提升落水後的漂浮時間，應確認尺寸與扣帶是否牢固。",
+      "auditStatus": "pending"
+    },
+    {
+      "id": "supplement-batch6-012",
+      "conceptId": "fact:geo:撒哈拉沙漠",
+      "level": "洲際領隊",
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ],
+      "questionType": "自然地理",
+      "category": "世界地理",
+      "region": "世界地理",
+      "q": "撒哈拉沙漠主要位於哪一個大洲？",
+      "options": [
+        "非洲",
+        "南美洲",
+        "歐洲",
+        "大洋洲"
+      ],
+      "correctAnswer": "非洲",
+      "answerIndex": 0,
+      "fact": "撒哈拉沙漠橫跨北非多國，是世界最大的熱帶沙漠之一。",
+      "auditStatus": "pending"
+    },
+    {
+      "id": "supplement-batch6-013",
+      "conceptId": "fact:geo:波羅的海",
+      "level": "洲際領隊",
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ],
+      "questionType": "自然地理",
+      "category": "世界地理",
+      "region": "世界地理",
+      "q": "波羅的海主要位於歐洲哪一個區域？",
+      "options": [
+        "北歐與東歐沿岸",
+        "伊比利半島",
+        "巴爾幹內陸",
+        "北極冰洋中心"
+      ],
+      "correctAnswer": "北歐與東歐沿岸",
+      "answerIndex": 0,
+      "fact": "波羅的海被瑞典、芬蘭、波羅的海三國、波蘭、德國等國環繞。",
+      "auditStatus": "pending"
+    },
+    {
+      "id": "supplement-batch6-014",
+      "conceptId": "fact:geo:地中海氣候",
+      "level": "洲際領隊",
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ],
+      "questionType": "自然地理",
+      "category": "世界地理",
+      "region": "世界地理",
+      "q": "地中海型氣候較典型的降雨特徵是？",
+      "options": [
+        "夏季乾燥、冬季多雨",
+        "全年均勻降雨",
+        "只有夏季降雨",
+        "完全沒有降雨"
+      ],
+      "correctAnswer": "夏季乾燥、冬季多雨",
+      "answerIndex": 0,
+      "fact": "地中海沿岸與部分加州、智利等地可見此氣候，夏季適合觀光但也需注意乾熱與野火風險。",
+      "auditStatus": "pending"
+    },
+    {
+      "id": "supplement-batch6-015",
+      "conceptId": "fact:geo:季風氣候",
+      "level": "洲際領隊",
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ],
+      "questionType": "自然地理",
+      "category": "世界地理",
+      "region": "世界地理",
+      "q": "南亞與東南亞夏季常出現豪雨，主要與哪一種氣候現象有關？",
+      "options": [
+        "季風",
+        "極地渦旋",
+        "焚風",
+        "海霧"
+      ],
+      "correctAnswer": "季風",
+      "answerIndex": 0,
+      "fact": "季風帶來季節性風向轉換，影響印度、泰國、越南等地的農業與旅遊旺季。",
+      "auditStatus": "pending"
+    },
+    {
+      "id": "supplement-batch6-016",
+      "conceptId": "fact:geo:赤道",
+      "level": "洲際領隊",
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ],
+      "questionType": "自然地理",
+      "category": "世界地理",
+      "region": "世界地理",
+      "q": "將地球分為北半球與南半球的 0 度緯線稱為？",
+      "options": [
+        "赤道",
+        "本初子午線",
+        "回歸線",
+        "極圈"
+      ],
+      "correctAnswer": "赤道",
+      "answerIndex": 0,
+      "fact": "赤道附近終年高溫，厄瓜多爾、肯亞、印尼等國境內有赤道標示景點。",
+      "auditStatus": "pending"
+    },
+    {
+      "id": "supplement-batch6-017",
+      "conceptId": "fact:geo:日本海",
+      "level": "洲際領隊",
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ],
+      "questionType": "自然地理",
+      "category": "世界地理",
+      "region": "世界地理",
+      "q": "日本海位於日本本島與哪一側大陸之間？",
+      "options": [
+        "亞洲大陸東岸",
+        "澳洲大陸",
+        "非洲東岸",
+        "南美洲西岸"
+      ],
+      "correctAnswer": "亞洲大陸東岸",
+      "answerIndex": 0,
+      "fact": "日本海介於日本、韓國與俄羅斯遠東之間，是東北亞重要海域。",
+      "auditStatus": "pending"
+    },
+    {
+      "id": "supplement-batch6-018",
+      "conceptId": "fact:geo:巴拉那河",
+      "level": "洲際領隊",
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ],
+      "questionType": "自然地理",
+      "category": "世界地理",
+      "region": "世界地理",
+      "q": "巴拉那河主要流經哪一個地理區域？",
+      "options": [
+        "南美洲",
+        "北歐",
+        "中東",
+        "南極洲"
+      ],
+      "correctAnswer": "南美洲",
+      "answerIndex": 0,
+      "fact": "巴拉那河與巴拉圭河、烏拉圭河等匯入大西洋，伊瓜蘇瀑布位於其支流上。",
+      "auditStatus": "pending"
+    },
+    {
+      "id": "supplement-batch6-019",
+      "conceptId": "fact:geo:挪威峽灣",
+      "level": "環球旅行家",
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ],
+      "questionType": "自然地理",
+      "category": "世界地理",
+      "region": "世界地理",
+      "q": "挪威西部深邃的峽灣地貌，主要與哪種自然作用有關？",
+      "options": [
+        "冰川刨蚀",
+        "珊瑚礁堆積",
+        "火山熔岩流",
+        "風成沙丘"
+      ],
+      "correctAnswer": "冰川刨蚀",
+      "answerIndex": 0,
+      "fact": "挪威峽灣是冰河時期冰川侵蝕河谷後海水倒灌形成的典型地貌。",
+      "auditStatus": "pending"
+    },
+    {
+      "id": "supplement-batch6-020",
+      "conceptId": "fact:geo:北極光",
+      "level": "洲際領隊",
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ],
+      "questionType": "自然地理",
+      "category": "世界地理",
+      "region": "世界地理",
+      "q": "觀賞北極光較有機會的地區通常位於？",
+      "options": [
+        "高緯度極地附近",
+        "赤道雨林",
+        "撒哈拉沙漠中心",
+        "南極內陸冰蓋深處"
+      ],
+      "correctAnswer": "高緯度極地附近",
+      "answerIndex": 0,
+      "fact": "北極光出現於高緯度夜空，挪威、冰島、加拿大北部等地是熱門觀測點。",
+      "auditStatus": "pending"
+    }
+  ]
+}

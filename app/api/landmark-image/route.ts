@@ -1,9 +1,35 @@
+import { readFileSync, existsSync } from "node:fs";
+import { resolve } from "node:path";
+import landmarkStaticManifest from "../../../data/landmark-static-manifest.json";
 import { getLandmarkImage } from "../../../lib/landmark-images";
+
+const publicRoot = resolve(process.cwd(), "public");
+
+function contentTypeForPath(filePath: string) {
+  if (filePath.endsWith(".png")) return "image/png";
+  if (filePath.endsWith(".webp")) return "image/webp";
+  if (filePath.endsWith(".gif")) return "image/gif";
+  return "image/jpeg";
+}
 
 export async function GET(request: Request) {
   const name = new URL(request.url).searchParams.get("name");
   if (!name) {
     return new Response("Missing name", { status: 400 });
+  }
+
+  const localEntry = landmarkStaticManifest.entries[name];
+  if (localEntry?.path && !localEntry.failed) {
+    const filePath = resolve(publicRoot, localEntry.path.replace(/^\//, ""));
+    if (existsSync(filePath)) {
+      const body = readFileSync(filePath);
+      return new Response(body, {
+        headers: {
+          "Content-Type": contentTypeForPath(filePath),
+          "Cache-Control": "public, max-age=31536000, immutable",
+        },
+      });
+    }
   }
 
   const image = getLandmarkImage(name);

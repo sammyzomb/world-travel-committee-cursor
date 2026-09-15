@@ -1,0 +1,480 @@
+{
+  "batchId": "stage-general-supplement-batch10",
+  "generatedAt": "2026-09-15T10:00:00.000Z",
+  "purpose": "補強首都、亞太地標與旅行實務知識。",
+  "gapContext": {
+    "target": "剩餘首都缺口、亞太地標與旅行實務",
+    "newUniqueConcepts": 20
+  },
+  "questions": [
+    {
+      "id": "supplement-batch10-001",
+      "conceptId": "fact:country:哥倫比亞",
+      "level": "洲際領隊",
+      "grades": [],
+      "questionType": "首都記憶",
+      "category": "世界地理",
+      "region": "南美洲",
+      "q": "哥倫比亞的首都是哪一座城市？",
+      "options": [
+        "波哥大",
+        "麥德林",
+        "卡塔赫納",
+        "基多"
+      ],
+      "correctAnswer": "波哥大",
+      "answerIndex": 0,
+      "fact": "波哥大位於安第斯山高原，是哥倫比亞首都與最大城市。",
+      "auditStatus": "pending"
+    },
+    {
+      "id": "supplement-batch10-002",
+      "conceptId": "fact:country:厄瓜多",
+      "level": "洲際領隊",
+      "grades": [],
+      "questionType": "首都記憶",
+      "category": "世界地理",
+      "region": "南美洲",
+      "q": "厄瓜多的首都是哪一座城市？",
+      "options": [
+        "基多",
+        "瓜亞基爾",
+        "利馬",
+        "波哥大"
+      ],
+      "correctAnswer": "基多",
+      "answerIndex": 0,
+      "fact": "基多位於赤道附近高地，是厄瓜多首都，以殖民老城聞名。",
+      "auditStatus": "pending"
+    },
+    {
+      "id": "supplement-batch10-003",
+      "conceptId": "fact:country:烏拉圭",
+      "level": "洲際領隊",
+      "grades": [],
+      "questionType": "首都記憶",
+      "category": "世界地理",
+      "region": "南美洲",
+      "q": "烏拉圭的首都是哪一座城市？",
+      "options": [
+        "蒙得維的亞",
+        "布宜諾斯艾利斯",
+        "聖保羅",
+        "亞松森"
+      ],
+      "correctAnswer": "蒙得維的亞",
+      "answerIndex": 0,
+      "fact": "蒙得維的亞位於拉普拉塔河口北岸，是烏拉圭首都與最大港口。",
+      "auditStatus": "pending"
+    },
+    {
+      "id": "supplement-batch10-004",
+      "conceptId": "fact:country:古巴",
+      "level": "洲際領隊",
+      "grades": [],
+      "questionType": "首都記憶",
+      "category": "世界地理",
+      "region": "北美洲",
+      "q": "古巴的首都是哪一座城市？",
+      "options": [
+        "哈瓦那",
+        "聖地亞哥",
+        "坎昆",
+        "京斯敦"
+      ],
+      "correctAnswer": "哈瓦那",
+      "answerIndex": 0,
+      "fact": "哈瓦那是古巴首都與最大城市，舊城區為世界遺產。",
+      "auditStatus": "pending"
+    },
+    {
+      "id": "supplement-batch10-005",
+      "conceptId": "fact:country:緬甸",
+      "level": "洲際領隊",
+      "grades": [],
+      "questionType": "首都記憶",
+      "category": "世界地理",
+      "region": "亞洲",
+      "q": "緬甸的首都是哪一座城市？",
+      "options": [
+        "奈比多",
+        "仰光",
+        "曼谷",
+        "河內"
+      ],
+      "correctAnswer": "奈比多",
+      "answerIndex": 0,
+      "fact": "奈比多是緬甸首都，仰光仍為最大商業城市與主要港口。",
+      "auditStatus": "pending"
+    },
+    {
+      "id": "supplement-batch10-006",
+      "conceptId": "fact:country:汶萊",
+      "level": "洲際領隊",
+      "grades": [],
+      "questionType": "首都記憶",
+      "category": "世界地理",
+      "region": "亞洲",
+      "q": "汶萊的首都是哪一座城市？",
+      "options": [
+        "斯里巴加灣市",
+        "吉隆坡",
+        "雅加達",
+        "馬尼拉"
+      ],
+      "correctAnswer": "斯里巴加灣市",
+      "answerIndex": 0,
+      "fact": "斯里巴加灣市是汶萊首都，位於婆羅洲北岸。",
+      "auditStatus": "pending"
+    },
+    {
+      "id": "supplement-batch10-007",
+      "conceptId": "fact:country:哈薩克",
+      "level": "環球旅行家",
+      "grades": [],
+      "questionType": "首都定位",
+      "category": "世界地理",
+      "region": "亞洲",
+      "q": "哈薩克的首都為何？",
+      "options": [
+        "阿斯塔納",
+        "阿拉木圖",
+        "塔什干",
+        "比什凱克"
+      ],
+      "correctAnswer": "阿斯塔納",
+      "answerIndex": 0,
+      "fact": "阿斯塔納是哈薩克首都，阿拉木圖則是前首都與最大城市。",
+      "auditStatus": "pending"
+    },
+    {
+      "id": "supplement-batch10-008",
+      "conceptId": "fact:country:烏茲別克",
+      "level": "環球旅行家",
+      "grades": [],
+      "questionType": "首都定位",
+      "category": "世界地理",
+      "region": "亞洲",
+      "q": "烏茲別克的首都為何？",
+      "options": [
+        "塔什干",
+        "撒馬爾罕",
+        "布哈拉",
+        "杜尚別"
+      ],
+      "correctAnswer": "塔什干",
+      "answerIndex": 0,
+      "fact": "塔什干是烏茲別克首都，撒馬爾罕與布哈拉則是絲路古城重鎮。",
+      "auditStatus": "pending"
+    },
+    {
+      "id": "supplement-batch10-009",
+      "conceptId": "fact:city:張家界國家森林公園",
+      "level": "洲際領隊",
+      "grades": [],
+      "questionType": "地標定位",
+      "category": "世界遺產",
+      "region": "亞洲",
+      "q": "以石英砂岩峰林聞名的武陵源景區位於中國哪一座城市？",
+      "options": [
+        "張家界",
+        "長沙",
+        "桂林",
+        "黃山"
+      ],
+      "correctAnswer": "張家界",
+      "answerIndex": 0,
+      "fact": "張家界以石英砂岩峰林地貌聞名，是武陵源世界自然遺產核心區。",
+      "landmark": "張家界國家森林公園",
+      "landmarkDetail": "中國・張家界",
+      "auditStatus": "pending"
+    },
+    {
+      "id": "supplement-batch10-010",
+      "conceptId": "fact:city:麗江古城",
+      "level": "洲際領隊",
+      "grades": [],
+      "questionType": "地標定位",
+      "category": "世界遺產",
+      "region": "亞洲",
+      "q": "雲南納西族文化古城位於中國哪一座城市？",
+      "options": [
+        "麗江",
+        "大理",
+        "昆明",
+        "香格里拉"
+      ],
+      "correctAnswer": "麗江",
+      "answerIndex": 0,
+      "fact": "麗江古城位於雲南省，以納西族文化與四方街聞名。",
+      "landmark": "麗江古城",
+      "landmarkDetail": "中國・麗江",
+      "auditStatus": "pending"
+    },
+    {
+      "id": "supplement-batch10-011",
+      "conceptId": "fact:city:嚴島神社",
+      "level": "洲際領隊",
+      "grades": [],
+      "questionType": "地標定位",
+      "category": "世界遺產",
+      "region": "亞洲",
+      "q": "海上鳥居的嚴島神社位於日本哪一座城市？",
+      "options": [
+        "廣島",
+        "京都",
+        "奈良",
+        "札幌"
+      ],
+      "correctAnswer": "廣島",
+      "answerIndex": 0,
+      "fact": "嚴島神社位於廣島縣的宮島，以海中大鳥居聞名。",
+      "landmark": "嚴島神社",
+      "landmarkDetail": "日本・廣島",
+      "auditStatus": "pending"
+    },
+    {
+      "id": "supplement-batch10-012",
+      "conceptId": "fact:city:景福宮",
+      "level": "國家達人",
+      "grades": [],
+      "questionType": "地標定位",
+      "category": "世界遺產",
+      "region": "亞洲",
+      "q": "韓國景福宮位於哪一座城市？",
+      "options": [
+        "首爾",
+        "釜山",
+        "大邱",
+        "仁川"
+      ],
+      "correctAnswer": "首爾",
+      "answerIndex": 0,
+      "fact": "景福宮是朝鮮王朝正宮，位於首爾市中心。",
+      "landmark": "景福宮",
+      "landmarkDetail": "韓國・首爾",
+      "auditStatus": "pending"
+    },
+    {
+      "id": "supplement-batch10-013",
+      "conceptId": "fact:city:濱海灣金沙",
+      "level": "洲際領隊",
+      "grades": [],
+      "questionType": "地標定位",
+      "category": "世界遺產",
+      "region": "亞洲",
+      "q": "濱海灣金沙酒店位於哪一座城市？",
+      "options": [
+        "新加坡",
+        "吉隆坡",
+        "曼谷",
+        "雅加達"
+      ],
+      "correctAnswer": "新加坡",
+      "answerIndex": 0,
+      "fact": "濱海灣金沙位於新加坡市中心濱海灣，以空中花園與無邊際泳池聞名。",
+      "landmark": "濱海灣金沙",
+      "landmarkDetail": "新加坡",
+      "auditStatus": "pending"
+    },
+    {
+      "id": "supplement-batch10-014",
+      "conceptId": "fact:city:佩特拉古城",
+      "level": "環球旅行家",
+      "grades": [],
+      "questionType": "地標定位",
+      "category": "世界遺產",
+      "region": "亞洲",
+      "q": "玫瑰色岩雕古城佩特拉位於約旦哪一座城市附近？",
+      "options": [
+        "瓦迪穆薩",
+        "安曼",
+        "耶路撒冷",
+        "開羅"
+      ],
+      "correctAnswer": "瓦迪穆薩",
+      "answerIndex": 0,
+      "fact": "佩特拉古城入口鄰近瓦迪穆薩鎮，是約旦最重要的考古旅遊景點。",
+      "landmark": "佩特拉古城",
+      "landmarkDetail": "約旦・瓦迪穆薩",
+      "auditStatus": "pending"
+    },
+    {
+      "id": "supplement-batch10-015",
+      "conceptId": "fact:city:尼加拉瀑布",
+      "level": "洲際領隊",
+      "grades": [],
+      "questionType": "地標定位",
+      "category": "世界遺產",
+      "region": "北美洲",
+      "q": "加拿大側觀賞尼加拉瀑布的主要觀光城市是哪一座城市？",
+      "options": [
+        "尼加拉瀑布城",
+        "多倫多",
+        "渥太華",
+        "蒙特婁"
+      ],
+      "correctAnswer": "尼加拉瀑布城",
+      "answerIndex": 0,
+      "fact": "尼加拉瀑布城位於安大略省，與美國側瀑布景區隔河相望。",
+      "landmark": "尼加拉瀑布",
+      "landmarkDetail": "加拿大・尼加拉瀑布城",
+      "auditStatus": "pending"
+    },
+    {
+      "id": "supplement-batch10-016",
+      "conceptId": "fact:travel:外幣兌換",
+      "level": "洲際領隊",
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ],
+      "questionType": "旅行知識",
+      "category": "旅行知識",
+      "region": "旅行知識",
+      "q": "出國旅行需要當地貨幣時，較穩健的做法是？",
+      "options": [
+        "比較銀行與合法換匯點的匯率與手續費",
+        "向陌生人街邊換匯",
+        "只帶大量外幣現金不申報",
+        "拒絕任何收據"
+      ],
+      "correctAnswer": "比較銀行與合法換匯點的匯率與手續費",
+      "answerIndex": 0,
+      "fact": "合法管道換匯較有保障，街邊黑市可能涉及假鈔或詐騙風險。",
+      "auditStatus": "pending"
+    },
+    {
+      "id": "supplement-batch10-017",
+      "conceptId": "fact:travel:國際駕照",
+      "level": "洲際領隊",
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ],
+      "questionType": "旅行知識",
+      "category": "旅行知識",
+      "region": "旅行知識",
+      "q": "計畫在海外自行租車旅行時，通常需要準備？",
+      "options": [
+        "本國駕照與符合規定的國際駕照或翻譯件",
+        "不需任何證件",
+        "僅護照影本",
+        "他人駕照"
+      ],
+      "correctAnswer": "本國駕照與符合規定的國際駕照或翻譯件",
+      "answerIndex": 0,
+      "fact": "各國對租車證件要求不同，出發前應確認目的地與租車公司規定。",
+      "auditStatus": "pending"
+    },
+    {
+      "id": "supplement-batch10-018",
+      "conceptId": "fact:travel:廉航手提行李",
+      "level": "洲際領隊",
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ],
+      "questionType": "交通航運",
+      "category": "旅行知識",
+      "region": "旅行知識",
+      "q": "搭乘廉價航空時，較容易產生額外費用的是？",
+      "options": [
+        "超過規定的手提或托運行李",
+        "準時登機",
+        "線上劃位",
+        "列印登機證"
+      ],
+      "correctAnswer": "超過規定的手提或托運行李",
+      "answerIndex": 0,
+      "fact": "廉航票價常不含行李，超重或加購座位都可能增加成本。",
+      "auditStatus": "pending"
+    },
+    {
+      "id": "supplement-batch10-019",
+      "conceptId": "fact:travel:旅館登記",
+      "level": "洲際領隊",
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ],
+      "questionType": "旅行知識",
+      "category": "旅行知識",
+      "region": "旅行知識",
+      "q": "入住海外旅館或民宿時，較常需要配合的事項是？",
+      "options": [
+        "出示護照並完成入住登記",
+        "不需任何身分證明",
+        "拒絕填寫任何資料",
+        "由他人代為冒名入住"
+      ],
+      "correctAnswer": "出示護照並完成入住登記",
+      "answerIndex": 0,
+      "fact": "許多國家要求旅宿登記旅客身分，以便治安與稅務管理。",
+      "auditStatus": "pending"
+    },
+    {
+      "id": "supplement-batch10-020",
+      "conceptId": "fact:travel:團體集合",
+      "level": "洲際領隊",
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ],
+      "questionType": "旅行知識",
+      "category": "旅行知識",
+      "region": "旅行知識",
+      "q": "參加團體旅行時，準時到達集合地點的主要原因是？",
+      "options": [
+        "避免耽誤全團行程與交通班次",
+        "可以故意讓大家等待",
+        "與行程無關",
+        "領隊會無限延後出發"
+      ],
+      "correctAnswer": "避免耽誤全團行程與交通班次",
+      "answerIndex": 0,
+      "fact": "團體行程常預訂巴士、餐廳與景點時段，遲到可能影響後續安排。",
+      "auditStatus": "pending"
+    }
+  ]
+}

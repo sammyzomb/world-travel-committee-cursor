@@ -1884,7 +1884,7 @@
   "tourQuestions": [
     {
       "level": "城市旅人",
-      "region": "旅遊行程・印尼",
+      "region": "旅遊行程",
       "q": "婆羅浮屠這座著名的佛教建築遺跡位於哪一國？",
       "options": [
         "印尼",
@@ -1899,7 +1899,7 @@
     },
     {
       "level": "國家達人",
-      "region": "旅遊行程・斯里蘭卡",
+      "region": "旅遊行程",
       "q": "被稱為「印度洋上的珍珠」、擁有豐富佛教古蹟的國家是？",
       "options": [
         "斯里蘭卡",
@@ -1974,7 +1974,7 @@
     },
     {
       "level": "環球旅行家",
-      "region": "旅遊行程・秘魯",
+      "region": "旅遊行程",
       "q": "秘魯的「彩虹山」位於哪一國？",
       "options": [
         "秘魯",
@@ -1989,7 +1989,7 @@
     },
     {
       "level": "洲際領隊",
-      "region": "旅遊行程・挪威",
+      "region": "旅遊行程",
       "q": "挪威的「羅弗敦群島」位於哪一國？",
       "options": [
         "挪威",
@@ -2004,7 +2004,7 @@
     },
     {
       "level": "國家達人",
-      "region": "旅遊行程・紐西蘭",
+      "region": "旅遊行程",
       "q": "電影《魔戒》的「哈比村」取景地位於哪一國？",
       "options": [
         "紐西蘭",
@@ -2019,16 +2019,16 @@
     },
     {
       "level": "國家達人",
-      "region": "旅遊行程・澳洲",
+      "region": "旅遊行程",
       "q": "澳洲南方的「塔斯馬尼亞島」屬於哪一國？",
       "options": [
-        "塔斯馬尼亞島",
-        "紐西蘭北島",
-        "峇里島",
-        "蘭卡威"
+        "澳洲",
+        "紐西蘭",
+        "印尼",
+        "菲律賓"
       ],
       "answer": 0,
-      "fact": "塔斯馬尼亞島常被稱為澳洲後花園，有搖籃山國家公園等景點。",
+      "fact": "塔斯馬尼亞島是澳洲的州，常被稱為澳洲後花園，有搖籃山國家公園等景點。",
       "landmark": "雪梨歌劇院",
       "landmarkDetail": "澳洲"
     },
@@ -2049,7 +2049,7 @@
     },
     {
       "level": "洲際領隊",
-      "region": "鄉野行程・墨西哥",
+      "region": "旅遊行程",
       "q": "鄉野旅行社墨西哥亡靈節行程，主要體驗哪個國家的傳統節慶？",
       "options": [
         "墨西哥",
@@ -2767,6 +2767,7407 @@
       "fact": "烏魯魯是澳洲北領地的巨型砂岩地貌，為原住民與自然雙重遺產。",
       "landmark": "烏魯魯",
       "landmarkDetail": "澳洲・北領地"
+    }
+  ],
+  "supplementQuestions": [
+    {
+      "level": "環球旅行家",
+      "region": "歐洲",
+      "category": "世界遺產",
+      "q": "羅浮宮（Louvre）位於哪一座城市？",
+      "options": [
+        "巴黎",
+        "里昂",
+        "馬賽",
+        "尼斯"
+      ],
+      "answer": 0,
+      "fact": "羅浮宮位於法國首都巴黎塞納河北岸，前身為王宮，現為世界知名博物館。",
+      "conceptId": "fact:city:盧浮宮",
+      "questionType": "landmark-city",
+      "batchId": "supplement-batch1-001",
+      "sourceUrl": "https://www.louvre.fr/en",
+      "landmark": "盧浮宮",
+      "landmarkDetail": "歐洲・盧浮宮",
+      "grades": [
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ]
+    },
+    {
+      "level": "環球旅行家",
+      "region": "歐洲",
+      "category": "世界遺產",
+      "q": "科隆大教堂主要位於德國哪一座城市？",
+      "options": [
+        "科隆",
+        "柏林",
+        "慕尼黑",
+        "漢堡"
+      ],
+      "answer": 0,
+      "fact": "科隆大教堂坐落於萊茵河畔的科隆，是哥特式建築代表作，1996 年列入世界遺產。",
+      "conceptId": "fact:city:科隆大教堂",
+      "questionType": "landmark-city",
+      "batchId": "supplement-batch1-002",
+      "sourceUrl": "https://whc.unesco.org/en/list/292",
+      "landmark": "科隆大教堂",
+      "landmarkDetail": "德國・科隆大教堂",
+      "grades": [
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ]
+    },
+    {
+      "level": "環球旅行家",
+      "region": "歐洲",
+      "category": "世界遺產",
+      "q": "比薩斜塔位於義大利哪一個地區？",
+      "options": [
+        "托斯卡尼",
+        "西西里",
+        "倫巴第",
+        "拉齊奧"
+      ],
+      "answer": 0,
+      "fact": "比薩斜塔位於義大利托斯卡尼大區的比薩城，與大教堂、洗禮堂同列世界遺產。",
+      "conceptId": "fact:city:比薩斜塔",
+      "questionType": "world-fact",
+      "batchId": "supplement-batch1-003",
+      "sourceUrl": "https://whc.unesco.org/en/list/395",
+      "landmark": "比薩斜塔",
+      "landmarkDetail": "義大利・比薩斜塔",
+      "grades": [
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ]
+    },
+    {
+      "level": "環球旅行家",
+      "region": "歐洲",
+      "category": "世界遺產",
+      "q": "聖瓦西里大教堂位於俄羅斯哪一座城市？",
+      "options": [
+        "莫斯科",
+        "聖彼得堡",
+        "喀山",
+        "海參崴"
+      ],
+      "answer": 0,
+      "fact": "聖瓦西里大教堂位於莫斯科紅場南端，是俄羅斯最具辨識度的洋葱圓頂教堂之一。",
+      "conceptId": "fact:city:聖瓦西里大教堂",
+      "questionType": "landmark-city",
+      "batchId": "supplement-batch1-004",
+      "sourceUrl": "https://www.mos.ru/en/news/item/35472073/",
+      "landmark": "聖瓦西里大教堂",
+      "landmarkDetail": "俄羅斯・聖瓦西里大教堂",
+      "grades": [
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ]
+    },
+    {
+      "level": "環球旅行家",
+      "region": "歐洲",
+      "category": "世界遺產",
+      "q": "西斯汀教堂以米開朗基羅天頂畫聞名，它位於哪個城邦國家？",
+      "options": [
+        "梵蒂岡",
+        "聖馬利諾",
+        "摩納哥",
+        "列支敦斯登"
+      ],
+      "answer": 0,
+      "fact": "西斯汀教堂位於梵蒂岡城內，屬梵蒂岡博物館建築群的一部分。",
+      "conceptId": "fact:city:西斯汀教堂",
+      "questionType": "world-fact",
+      "batchId": "supplement-batch1-005",
+      "sourceUrl": "https://www.museivaticani.va/content/museivaticani/en/collezioni/musei/cappella-sistina/storia-cappella-sistina.html",
+      "landmark": "西斯汀教堂",
+      "landmarkDetail": "歐洲・西斯汀教堂",
+      "grades": [
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ]
+    },
+    {
+      "level": "環球旅行家",
+      "region": "歐洲",
+      "category": "世界遺產",
+      "q": "霍亨索倫城堡位於德國哪一個邦？",
+      "options": [
+        "巴登－符騰堡",
+        "巴伐利亞",
+        "薩克森",
+        "黑森"
+      ],
+      "answer": 0,
+      "fact": "霍亨索倫城堡位於巴登－符騰堡邦的施瓦本山丘上，是普魯士王室象徵性城堡。",
+      "conceptId": "fact:city:霍亨索倫城堡",
+      "questionType": "world-fact",
+      "batchId": "supplement-batch1-006",
+      "sourceUrl": "https://www.burg-hohenzollern.com/",
+      "landmark": "霍亨索倫城堡",
+      "landmarkDetail": "德國・霍亨索倫城堡",
+      "grades": [
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ]
+    },
+    {
+      "level": "環球旅行家",
+      "region": "歐洲",
+      "category": "世界遺產",
+      "q": "奧地利湖畔小鎮哈尔施塔特（Hallstatt）位於哪一個邦？",
+      "options": [
+        "上奧地利",
+        "下奧地利",
+        "提羅爾",
+        "施泰爾馬克"
+      ],
+      "answer": 0,
+      "fact": "哈尔施塔特位於上奧地利邦的哈爾斯塔特湖畔，周邊鹽礦文化景觀列為世界遺產。",
+      "conceptId": "fact:city:哈尔施塔特",
+      "questionType": "world-fact",
+      "batchId": "supplement-batch1-007",
+      "sourceUrl": "https://whc.unesco.org/en/list/806",
+      "landmark": "哈尔施塔特",
+      "landmarkDetail": "歐洲・哈尔施塔特",
+      "grades": [
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ]
+    },
+    {
+      "level": "環球旅行家",
+      "region": "歐洲",
+      "category": "世界地理",
+      "q": "挪威的蓋朗厄爾峽灣（Geirangerfjord）以何種地貌聞名？",
+      "options": [
+        "深邃峽灣",
+        "火山口湖",
+        "沙漠绿洲",
+        "珊瑚礁"
+      ],
+      "answer": 0,
+      "fact": "蓋朗厄爾峽灣是挪威西部典型的冰川切割峽灣，2005 年列入世界遺產。",
+      "conceptId": "fact:city:蓋朗厄爾峽灣",
+      "questionType": "world-fact",
+      "batchId": "supplement-batch1-008",
+      "sourceUrl": "https://whc.unesco.org/en/list/1147",
+      "grades": [
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ]
+    },
+    {
+      "level": "環球旅行家",
+      "region": "北美洲",
+      "category": "世界遺產",
+      "q": "班夫國家公園位於加拿大哪一個省？",
+      "options": [
+        "亞伯達",
+        "不列顛哥倫比亞",
+        "安大略",
+        "魁北克"
+      ],
+      "answer": 0,
+      "fact": "班夫國家公園位於亞伯達省洛磯山脈，是加拿大最古老的國家公園之一。",
+      "conceptId": "fact:city:班夫國家公園",
+      "questionType": "world-fact",
+      "batchId": "supplement-batch1-009",
+      "sourceUrl": "https://parks.canada.ca/pn-np/ab/banff",
+      "landmark": "班夫國家公園",
+      "landmarkDetail": "加拿大・班夫國家公園",
+      "grades": [
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ]
+    },
+    {
+      "level": "環球旅行家",
+      "region": "大洋洲",
+      "category": "世界遺產",
+      "q": "米爾福德峽灣（Milford Sound）位於紐西蘭哪一個大區？",
+      "options": [
+        "南地大區",
+        "奧塔哥",
+        "坎特伯雷",
+        "威靈頓"
+      ],
+      "answer": 0,
+      "fact": "米爾福德峽灣位於南島南地大區的峽灣國家公園內，以陡峭山壁與瀑布聞名。",
+      "conceptId": "fact:city:米爾福德峽灣",
+      "questionType": "world-fact",
+      "batchId": "supplement-batch1-010",
+      "sourceUrl": "https://www.doc.govt.nz/parks-and-recreation/places-to-go/fiordland/places/fiordland-national-park/things-to-do/milford-sound/",
+      "landmark": "米爾福德峽灣",
+      "landmarkDetail": "紐西蘭・米爾福德峽灣",
+      "grades": [
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ]
+    },
+    {
+      "level": "環球旅行家",
+      "region": "南美洲",
+      "category": "世界遺產",
+      "q": "納斯卡線（Nazca Lines）位於秘魯哪一個地區？",
+      "options": [
+        "伊卡",
+        "庫斯科",
+        "利馬",
+        "阿雷基帕"
+      ],
+      "answer": 0,
+      "fact": "納斯卡線分布於秘魯伊卡地區沙漠，是大型地畫世界遺產。",
+      "conceptId": "fact:city:納斯卡線",
+      "questionType": "world-fact",
+      "batchId": "supplement-batch1-011",
+      "sourceUrl": "https://whc.unesco.org/en/list/700",
+      "landmark": "納斯卡線",
+      "landmarkDetail": "秘魯・納斯卡線",
+      "grades": [
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ]
+    },
+    {
+      "level": "環球旅行家",
+      "region": "北美洲",
+      "category": "世界遺產",
+      "q": "瑪雅古城蒂卡爾（Tikal）位於哪一個中美洲國家？",
+      "options": [
+        "瓜地馬拉",
+        "墨西哥",
+        "貝里斯",
+        "宏都拉斯"
+      ],
+      "answer": 0,
+      "fact": "蒂卡爾是瓜地馬拉佩滕地區的瑪雅遺址，1979 年列入世界遺產。",
+      "conceptId": "fact:city:蒂卡爾遺跡",
+      "questionType": "world-fact",
+      "batchId": "supplement-batch1-012",
+      "sourceUrl": "https://whc.unesco.org/en/list/64",
+      "landmark": "蒂卡爾遺跡",
+      "landmarkDetail": "北美洲・蒂卡爾遺跡",
+      "grades": [
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ]
+    },
+    {
+      "level": "環球旅行家",
+      "region": "北美洲",
+      "category": "旅行知識",
+      "q": "巴拿馬運河連接哪兩個大洋？",
+      "options": [
+        "太平洋與大西洋",
+        "太平洋與印度洋",
+        "大西洋與印度洋",
+        "北冰洋與太平洋"
+      ],
+      "answer": 0,
+      "fact": "巴拿馬運河橫貫巴拿馬地峽，縮短太平洋與大西洋之間的航運距離。",
+      "conceptId": "fact:city:巴拿馬運河",
+      "questionType": "travel",
+      "batchId": "supplement-batch1-013",
+      "sourceUrl": "https://pancanal.com/",
+      "grades": [
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ]
+    },
+    {
+      "level": "環球旅行家",
+      "region": "南美洲",
+      "category": "世界遺產",
+      "q": "托雷斯德爾潘恩國家公園位於智利哪一個大區？",
+      "options": [
+        "麥哲倫",
+        "阿塔卡馬",
+        "瓦爾帕萊索",
+        "湖大區"
+      ],
+      "answer": 0,
+      "fact": "托雷斯德爾潘恩位於智利南部麥哲倫大區，以花崗岩尖塔與冰川景觀著稱。",
+      "conceptId": "fact:city:托雷斯德爾潘恩",
+      "questionType": "world-fact",
+      "batchId": "supplement-batch1-014",
+      "sourceUrl": "https://www.conaf.cl/parques/torres-del-paine/",
+      "landmark": "托雷斯德爾潘恩",
+      "landmarkDetail": "智利・托雷斯德爾潘恩",
+      "grades": [
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ]
+    },
+    {
+      "level": "環球旅行家",
+      "region": "大洋洲",
+      "category": "旅行知識",
+      "q": "澳洲聖靈群島（Whitsunday Islands）瀕臨哪一片海域？",
+      "options": [
+        "珊瑚海",
+        "塔斯曼海",
+        "帝汶海",
+        "南大洋"
+      ],
+      "answer": 0,
+      "fact": "聖靈群島位於昆士蘭東岸珊瑚海，鄰近大堡礁，是熱門航海與度假目的地。",
+      "conceptId": "fact:city:圣灵群岛",
+      "questionType": "world-fact",
+      "batchId": "supplement-batch1-015",
+      "sourceUrl": "https://www.queensland.com/au/en/places-to-see/destinations/whitsundays",
+      "grades": [
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ]
+    },
+    {
+      "level": "環球旅行家",
+      "region": "歐洲",
+      "category": "世界地理",
+      "q": "馬爾他的首都為何？",
+      "options": [
+        "瓦萊塔",
+        "那不勒斯",
+        "的里雅斯特",
+        "尼斯"
+      ],
+      "answer": 0,
+      "fact": "瓦萊塔是地中海島國馬爾他的首都，老城為世界遺產。",
+      "conceptId": "fact:country:馬爾他",
+      "questionType": "reverse-capital",
+      "batchId": "supplement-batch1-016",
+      "sourceUrl": "https://whc.unesco.org/en/list/131",
+      "grades": [
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ]
+    },
+    {
+      "level": "環球旅行家",
+      "region": "歐洲",
+      "category": "世界地理",
+      "q": "盧森堡大公國的首都為何？",
+      "options": [
+        "盧森堡市",
+        "布魯塞爾",
+        "斯特拉斯堡",
+        "巴塞爾"
+      ],
+      "answer": 0,
+      "fact": "盧森堡市同為大公國首都，位於該國南部。",
+      "conceptId": "fact:country:盧森堡",
+      "questionType": "reverse-capital",
+      "batchId": "supplement-batch1-017",
+      "sourceUrl": "https://luxembourg.public.lu/en.html",
+      "grades": [
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ]
+    },
+    {
+      "level": "環球旅行家",
+      "region": "歐洲",
+      "category": "世界地理",
+      "q": "羅馬尼亞的首都為何？",
+      "options": [
+        "布加勒斯特",
+        "布達佩斯",
+        "索菲亞",
+        "貝爾格勒"
+      ],
+      "answer": 0,
+      "fact": "布加勒斯特位於羅馬尼亞南部，是該國政治與經濟中心。",
+      "conceptId": "fact:country:羅馬尼亞",
+      "questionType": "reverse-capital",
+      "batchId": "supplement-batch1-018",
+      "sourceUrl": "https://www.romania.travel/en",
+      "grades": [
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ]
+    },
+    {
+      "level": "環球旅行家",
+      "region": "歐洲",
+      "category": "世界地理",
+      "q": "保加利亞的首都為何？",
+      "options": [
+        "索菲亞",
+        "布加勒斯特",
+        "雅典",
+        "斯科普里"
+      ],
+      "answer": 0,
+      "fact": "索菲亞位於保加利亞西部，是巴爾幹地區重要城市。",
+      "conceptId": "fact:country:保加利亞",
+      "questionType": "reverse-capital",
+      "batchId": "supplement-batch1-019",
+      "sourceUrl": "https://www.bulgariatravel.org/en",
+      "grades": [
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ]
+    },
+    {
+      "level": "環球旅行家",
+      "region": "亞洲",
+      "category": "世界地理",
+      "q": "科威特的首都為何？",
+      "options": [
+        "科威特城",
+        "麥納",
+        "多哈",
+        "麥地那"
+      ],
+      "answer": 0,
+      "fact": "科威特城位於波斯灣西岸，是科威特王國的首都。",
+      "conceptId": "fact:country:科威特",
+      "questionType": "reverse-capital",
+      "batchId": "supplement-batch1-020",
+      "sourceUrl": "https://e.gov.kw/sites/kgoenglish/Pages/Home.aspx",
+      "grades": [
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ]
+    },
+    {
+      "level": "環球旅行家",
+      "region": "亞洲",
+      "category": "世界地理",
+      "q": "阿曼的首都為何？",
+      "options": [
+        "馬斯喀特",
+        "阿布達比",
+        "利雅德",
+        "巴格達"
+      ],
+      "answer": 0,
+      "fact": "馬斯喀特位於阿曼東北部海岸，是該國首都與主要港口。",
+      "conceptId": "fact:country:阿曼",
+      "questionType": "reverse-capital",
+      "batchId": "supplement-batch1-021",
+      "sourceUrl": "https://www.oman.om/en/home",
+      "grades": [
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ]
+    },
+    {
+      "level": "環球旅行家",
+      "region": "北美洲",
+      "category": "世界地理",
+      "q": "巴拿馬的首都為何？",
+      "options": [
+        "巴拿馬城",
+        "聖荷西",
+        "馬那瓜",
+        "太子港"
+      ],
+      "answer": 0,
+      "fact": "巴拿馬城位於太平洋岸，毗鄰巴拿馬運河太平洋出入口。",
+      "conceptId": "fact:country:巴拿馬",
+      "questionType": "reverse-capital",
+      "batchId": "supplement-batch1-022",
+      "sourceUrl": "https://visitpanama.com/",
+      "grades": [
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ]
+    },
+    {
+      "level": "環球旅行家",
+      "region": "北美洲",
+      "category": "世界地理",
+      "q": "哥斯大黎加的首都為何？",
+      "options": [
+        "聖荷西",
+        "巴拿馬城",
+        "瓜地馬拉市",
+        "特古西加巴"
+      ],
+      "answer": 0,
+      "fact": "聖荷西位於哥斯大黎加中央高地，是該國首都與最大城市。",
+      "conceptId": "fact:country:哥斯大黎加",
+      "questionType": "reverse-capital",
+      "batchId": "supplement-batch1-023",
+      "sourceUrl": "https://www.visitcostarica.com/",
+      "grades": [
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ]
+    },
+    {
+      "level": "環球旅行家",
+      "region": "亞洲",
+      "category": "世界遺產",
+      "q": "不丹著名的虎穴寺（帕羅塔克桑）位於哪一個宗？",
+      "options": [
+        "帕羅",
+        "廷布",
+        "普那卡",
+        "旺杜波德朗"
+      ],
+      "answer": 0,
+      "fact": "虎穴寺懸建於帕羅山谷懸崖上，是不丹最具代表性的佛教聖地之一。",
+      "conceptId": "fact:city:虎穴寺",
+      "questionType": "world-fact",
+      "batchId": "supplement-batch1-024",
+      "sourceUrl": "https://www.tourism.gov.bt/destination/paro",
+      "landmark": "虎穴寺",
+      "landmarkDetail": "亞洲・虎穴寺",
+      "grades": [
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ]
+    },
+    {
+      "level": "環球旅行家",
+      "region": "亞洲",
+      "category": "世界遺產",
+      "q": "金閣寺（鹿苑寺）位於日本哪一座城市？",
+      "options": [
+        "京都",
+        "奈良",
+        "大阪",
+        "金澤"
+      ],
+      "answer": 0,
+      "fact": "金閣寺位於京都市北區，上層建築外表貼有金箔，是室町時代代表性寺院。",
+      "conceptId": "fact:city:金閣寺",
+      "questionType": "landmark-city",
+      "batchId": "supplement-batch1-025",
+      "sourceUrl": "https://www.shokoku-ji.jp/kinkakuji/",
+      "landmark": "金閣寺",
+      "landmarkDetail": "日本・金閣寺",
+      "grades": [
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ]
+    },
+    {
+      "level": "環球旅行家",
+      "region": "亞洲",
+      "category": "世界遺產",
+      "q": "廣島和平紀念公園（原爆圓頂館）位於日本哪一座城市？",
+      "options": [
+        "廣島",
+        "長崎",
+        "東京",
+        "神戶"
+      ],
+      "answer": 0,
+      "fact": "廣島和平紀念公園位於廣島市中心，原爆圓頂館為 1996 年世界遺產。",
+      "conceptId": "fact:city:廣島和平紀念公園",
+      "questionType": "landmark-city",
+      "batchId": "supplement-batch1-026",
+      "sourceUrl": "https://whc.unesco.org/en/list/776",
+      "landmark": "廣島和平紀念公園",
+      "landmarkDetail": "日本・廣島和平紀念公園",
+      "grades": [
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ]
+    },
+    {
+      "level": "環球旅行家",
+      "region": "亞洲",
+      "category": "世界遺產",
+      "q": "馬六甲與喬治市古城世界遺產位於哪一個國家？",
+      "options": [
+        "馬來西亞",
+        "新加坡",
+        "印尼",
+        "泰國"
+      ],
+      "answer": 0,
+      "fact": "馬六甲海峽歷史城與喬治市位於馬來西亞，2008 年列入世界遺產。",
+      "conceptId": "fact:city:馬六甲古城",
+      "questionType": "world-fact",
+      "batchId": "supplement-batch1-027",
+      "sourceUrl": "https://whc.unesco.org/en/list/1223",
+      "landmark": "馬六甲古城",
+      "landmarkDetail": "亞洲・馬六甲古城",
+      "grades": [
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ]
+    },
+    {
+      "level": "環球旅行家",
+      "region": "歐洲",
+      "category": "旅行知識",
+      "q": "柏林圍牆紀念遺址主要位於德國哪一座城市？",
+      "options": [
+        "柏林",
+        "漢堡",
+        "德勒斯登",
+        "萊比錫"
+      ],
+      "answer": 0,
+      "fact": "柏林圍牆遺址與紀念館分布於柏林市中心一帶，記錄冷戰分裂歷史。",
+      "conceptId": "fact:city:柏林圍牆紀念",
+      "questionType": "landmark-city",
+      "batchId": "supplement-batch1-028",
+      "sourceUrl": "https://www.berlin.de/mauer/en/",
+      "landmark": "柏林圍牆紀念",
+      "landmarkDetail": "德國・柏林圍牆紀念",
+      "grades": [
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ]
+    },
+    {
+      "level": "環球旅行家",
+      "region": "歐洲",
+      "category": "世界遺產",
+      "q": "維也納的貝爾維德宮（美景宮）位於哪一個國家？",
+      "options": [
+        "奧地利",
+        "捷克",
+        "匈牙利",
+        "斯洛伐克"
+      ],
+      "answer": 0,
+      "fact": "美景宮位於奧地利維也納，是巴洛克宮殿建築群，現為美術館。",
+      "conceptId": "fact:city:貝爾維德宮",
+      "questionType": "world-fact",
+      "batchId": "supplement-batch1-029",
+      "sourceUrl": "https://www.belvedere.at/en",
+      "landmark": "貝爾維德宮",
+      "landmarkDetail": "歐洲・貝爾維德宮",
+      "grades": [
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ]
+    },
+    {
+      "level": "環球旅行家",
+      "region": "亞洲",
+      "category": "世界遺產",
+      "q": "貝加爾湖主要位於俄羅斯哪一個聯邦管區？",
+      "options": [
+        "西伯利亞",
+        "遠東",
+        "西北部",
+        "南部"
+      ],
+      "answer": 0,
+      "fact": "貝加爾湖位於西伯利亞南部，是世界上最深、蓄水量最大的淡水湖之一，1996 年列入世界遺產。",
+      "conceptId": "fact:city:貝加爾湖",
+      "questionType": "world-fact",
+      "batchId": "supplement-batch1-030",
+      "sourceUrl": "https://whc.unesco.org/en/list/754",
+      "landmark": "貝加爾湖",
+      "landmarkDetail": "俄羅斯・貝加爾湖",
+      "grades": [
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ]
+    },
+    {
+      "level": "環球旅行家",
+      "region": "歐洲",
+      "category": "世界地理",
+      "q": "愛沙尼亞的首都是哪一座城市？",
+      "options": [
+        "塔林",
+        "里加",
+        "赫爾辛基",
+        "斯德哥爾摩"
+      ],
+      "answer": 0,
+      "fact": "塔林是愛沙尼亞首都，老城與海港區為波羅的海重要旅遊城市。",
+      "conceptId": "fact:country:愛沙尼亞",
+      "questionType": "capital",
+      "batchId": "supplement-batch2-001",
+      "sourceUrl": "https://www.visitestonia.com/en",
+      "grades": [
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ]
+    },
+    {
+      "level": "環球旅行家",
+      "region": "歐洲",
+      "category": "世界地理",
+      "q": "拉脫維亞的首都是哪一座城市？",
+      "options": [
+        "里加",
+        "塔林",
+        "維爾紐斯",
+        "明斯克"
+      ],
+      "answer": 0,
+      "fact": "里加是拉脫維亞首都，以木造建築與新藝術風格街區聞名。",
+      "conceptId": "fact:country:拉脫維亞",
+      "questionType": "capital",
+      "batchId": "supplement-batch2-002",
+      "sourceUrl": "https://www.latvia.travel/en",
+      "grades": [
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ]
+    },
+    {
+      "level": "環球旅行家",
+      "region": "歐洲",
+      "category": "世界地理",
+      "q": "立陶宛的首都是哪一座城市？",
+      "options": [
+        "維爾紐斯",
+        "里加",
+        "華沙",
+        "布拉格"
+      ],
+      "answer": 0,
+      "fact": "維爾紐斯是立陶宛首都，舊城區為世界遺產。",
+      "conceptId": "fact:country:立陶宛",
+      "questionType": "capital",
+      "batchId": "supplement-batch2-003",
+      "sourceUrl": "https://www.lithuania.travel/en",
+      "grades": [
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ]
+    },
+    {
+      "level": "環球旅行家",
+      "region": "歐洲",
+      "category": "世界地理",
+      "q": "斯洛維尼亞的首都是哪一座城市？",
+      "options": [
+        "盧布爾雅那",
+        "薩格勒布",
+        "貝爾格勒",
+        "斯科普里"
+      ],
+      "answer": 0,
+      "fact": "盧布爾雅那是斯洛維尼亞首都，位於薩瓦河畔。",
+      "conceptId": "fact:country:斯洛維尼亞",
+      "questionType": "capital",
+      "batchId": "supplement-batch2-004",
+      "sourceUrl": "https://www.slovenia.info/en",
+      "grades": [
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ]
+    },
+    {
+      "level": "環球旅行家",
+      "region": "非洲",
+      "category": "世界地理",
+      "q": "波札那的首都是哪一座城市？",
+      "options": [
+        "哈博羅內",
+        "開普敦",
+        "奈洛比",
+        "路沙卡"
+      ],
+      "answer": 0,
+      "fact": "哈博羅內是波札那首都，為前往奧卡萬戈三角洲等野生動物旅遊的門戶。",
+      "conceptId": "fact:country:波札那",
+      "questionType": "capital",
+      "batchId": "supplement-batch2-005",
+      "sourceUrl": "https://www.botswanatourism.co.bw",
+      "grades": [
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ]
+    },
+    {
+      "level": "環球旅行家",
+      "region": "非洲",
+      "category": "世界地理",
+      "q": "模里西斯的首都是哪一座城市？",
+      "options": [
+        "路易港",
+        "開普敦",
+        "奈洛比",
+        "塔那那利佛"
+      ],
+      "answer": 0,
+      "fact": "路易港是模里西斯首都與主要港口，位於印度洋島國西北岸。",
+      "conceptId": "fact:country:模里西斯",
+      "questionType": "capital",
+      "batchId": "supplement-batch2-006",
+      "sourceUrl": "https://www.tourism-mauritius.mu",
+      "grades": [
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ]
+    },
+    {
+      "level": "環球旅行家",
+      "region": "大洋洲",
+      "category": "世界地理",
+      "q": "斐濟的首都為何？",
+      "options": [
+        "蘇瓦",
+        "楠迪",
+        "奧克蘭",
+        "阿皮亞"
+      ],
+      "answer": 0,
+      "fact": "蘇瓦是斐濟共和國首都，位於維提島東南岸。",
+      "conceptId": "fact:country:斐濟",
+      "questionType": "reverse-capital",
+      "batchId": "supplement-batch2-007",
+      "sourceUrl": "https://www.fiji.travel",
+      "grades": [
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ]
+    },
+    {
+      "level": "環球旅行家",
+      "region": "南美洲",
+      "category": "世界地理",
+      "q": "巴拉圭的首都為何？",
+      "options": [
+        "亞松森",
+        "蒙得維的亞",
+        "利馬",
+        "拉巴斯"
+      ],
+      "answer": 0,
+      "fact": "亞松森是巴拉圭首都，位於巴拉圭河東岸。",
+      "conceptId": "fact:country:巴拉圭",
+      "questionType": "reverse-capital",
+      "batchId": "supplement-batch2-008",
+      "sourceUrl": "https://www.visitparaguay.travel",
+      "grades": [
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ]
+    },
+    {
+      "level": "環球旅行家",
+      "region": "大洋洲",
+      "category": "世界地理",
+      "q": "東加王國的首都為何？",
+      "options": [
+        "努庫阿洛法",
+        "蘇瓦",
+        "阿皮亞",
+        "莫爾茲比港"
+      ],
+      "answer": 0,
+      "fact": "努庫阿洛法是東加首都，位於主島湯加塔布島北岸。",
+      "conceptId": "fact:country:東加",
+      "questionType": "reverse-capital",
+      "batchId": "supplement-batch2-009",
+      "sourceUrl": "https://www.tongaholiday.com",
+      "grades": [
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ]
+    },
+    {
+      "level": "環球旅行家",
+      "region": "亞洲",
+      "category": "世界地理",
+      "q": "不丹的首都為何？",
+      "options": [
+        "廷布",
+        "加德滿都",
+        "達卡",
+        "廷布河谷"
+      ],
+      "answer": 0,
+      "fact": "廷布是不丹首都，位於西部山谷，以扎西曲宗城堡聞名。",
+      "conceptId": "fact:country:不丹",
+      "questionType": "reverse-capital",
+      "batchId": "supplement-batch2-010",
+      "sourceUrl": "https://www.tourism.gov.bt",
+      "grades": [
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ]
+    },
+    {
+      "level": "環球旅行家",
+      "region": "非洲",
+      "category": "旅行知識",
+      "q": "蘇伊士運河連接哪兩片海域？",
+      "options": [
+        "地中海與紅海",
+        "黑海與地中海",
+        "紅海與阿拉伯海",
+        "波斯灣與印度洋"
+      ],
+      "answer": 0,
+      "fact": "蘇伊士運河橫貫埃及，縮短歐亞之間經非洲南端的海運航程。",
+      "conceptId": "fact:travel:蘇伊士運河",
+      "questionType": "travel",
+      "batchId": "supplement-batch2-011",
+      "sourceUrl": "https://www.suezcanal.gov.eg",
+      "grades": [
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ]
+    },
+    {
+      "level": "環球旅行家",
+      "region": "歐洲",
+      "category": "旅行知識",
+      "q": "英吉利海峽分隔英國與哪一個國家？",
+      "options": [
+        "法國",
+        "比利時",
+        "荷蘭",
+        "愛爾蘭"
+      ],
+      "answer": 0,
+      "fact": "英吉利海峽最窄處約 34 公里，是多佛海峽渡輪與海底隧道的重要航道。",
+      "conceptId": "fact:travel:英吉利海峽",
+      "questionType": "travel",
+      "batchId": "supplement-batch2-012",
+      "sourceUrl": "https://www.britannica.com/place/English-Channel",
+      "grades": [
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ]
+    },
+    {
+      "level": "環球旅行家",
+      "region": "大洋洲",
+      "category": "旅行知識",
+      "q": "國際日期變更線大致沿哪一個經度延伸？",
+      "options": [
+        "180° 經線",
+        "0° 經線",
+        "90° 東經",
+        "本初子午線"
+      ],
+      "answer": 0,
+      "fact": "國際日期變更線約在 180° 經線附近，跨越時會改變日期。",
+      "conceptId": "fact:travel:國際日期變更線",
+      "questionType": "travel",
+      "batchId": "supplement-batch2-013",
+      "sourceUrl": "https://www.nist.gov/pml/time-and-frequency-division/popular-links/world-time",
+      "grades": [
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ]
+    },
+    {
+      "level": "環球旅行家",
+      "region": "歐洲",
+      "category": "旅行知識",
+      "q": "直布羅陀海峽連接大西洋與哪一片海？",
+      "options": [
+        "地中海",
+        "北海",
+        "愛琴海",
+        "波羅的海"
+      ],
+      "answer": 0,
+      "fact": "直布羅陀海峽是歐洲與非洲之間的重要水道，連接大西洋與地中海。",
+      "conceptId": "fact:travel:直布羅陀海峽",
+      "questionType": "travel",
+      "batchId": "supplement-batch2-014",
+      "sourceUrl": "https://www.britannica.com/place/Strait-of-Gibraltar",
+      "grades": [
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ]
+    },
+    {
+      "level": "環球旅行家",
+      "region": "非洲",
+      "category": "旅行知識",
+      "q": "好望角位於哪一個國家最南端的海岬附近？",
+      "options": [
+        "南非",
+        "莫桑比克",
+        "納米比亞",
+        "坦尚尼亞"
+      ],
+      "answer": 0,
+      "fact": "好望角位於南非開普敦以南，是大西洋與印度洋航線的歷史性地標。",
+      "conceptId": "fact:travel:好望角",
+      "questionType": "travel",
+      "batchId": "supplement-batch2-015",
+      "sourceUrl": "https://www.sanparks.org/parks/table_mountain",
+      "grades": [
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ]
+    },
+    {
+      "level": "環球旅行家",
+      "region": "歐洲",
+      "category": "旅行知識",
+      "q": "北極圈緯度約為北緯多少度？",
+      "options": [
+        "66.5°",
+        "23.5°",
+        "0°",
+        "90°"
+      ],
+      "answer": 0,
+      "fact": "北極圈約在北緯 66°34′，圈內可出現極夜與永晝現象。",
+      "conceptId": "fact:travel:北極圈",
+      "questionType": "travel",
+      "batchId": "supplement-batch2-016",
+      "sourceUrl": "https://www.nationalgeographic.org/encyclopedia/arctic-circle",
+      "grades": [
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ]
+    },
+    {
+      "level": "環球旅行家",
+      "region": "世界地理",
+      "category": "世界地理",
+      "q": "維多利亞湖是東非最大的淡水湖，其主要湖岸位於哪一個國家？",
+      "options": [
+        "坦尚尼亞",
+        "埃及",
+        "南非",
+        "摩洛哥"
+      ],
+      "answer": 0,
+      "fact": "維多利亞湖位於東非，坦尚尼亞、烏干達、肯亞三國交界，坦尚尼亞湖岸線最長。",
+      "conceptId": "fact:geo:維多利亞湖",
+      "questionType": "world-fact",
+      "batchId": "supplement-batch2-017",
+      "sourceUrl": "https://www.britannica.com/place/Lake-Victoria",
+      "grades": [
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ]
+    },
+    {
+      "level": "環球旅行家",
+      "region": "亞洲",
+      "category": "世界地理",
+      "q": "1883 年劇烈爆發的喀拉喀托火山位於印尼哪一帶海域？",
+      "options": [
+        "巽他海峽",
+        "南海",
+        "菲律賓海",
+        "紅海"
+      ],
+      "answer": 0,
+      "fact": "喀拉喀托火山位於印尼巽他海峽，1883 年爆發影響全球氣候與海嘯。",
+      "conceptId": "fact:geo:喀拉喀托火山",
+      "questionType": "world-fact",
+      "batchId": "supplement-batch2-018",
+      "sourceUrl": "https://www.britannica.com/place/Krakatoa",
+      "grades": [
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ]
+    },
+    {
+      "level": "環球旅行家",
+      "region": "亞洲",
+      "category": "世界地理",
+      "q": "馬里亞納海溝位於哪一個大洋？",
+      "options": [
+        "太平洋",
+        "大西洋",
+        "印度洋",
+        "北冰洋"
+      ],
+      "answer": 0,
+      "fact": "馬里亞納海溝位於西太平洋，挑戰者深淵為目前已知最深處。",
+      "conceptId": "fact:geo:馬里亞納海溝",
+      "questionType": "world-fact",
+      "batchId": "supplement-batch2-019",
+      "sourceUrl": "https://www.britannica.com/place/Mariana-Trench",
+      "grades": [
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ]
+    },
+    {
+      "level": "環球旅行家",
+      "region": "亞洲",
+      "category": "世界地理",
+      "q": "里海在地形上屬於哪一種水域類型？",
+      "options": [
+        "世界最大湖泊",
+        "海峡",
+        "珊瑚礁",
+        "冰川湖"
+      ],
+      "answer": 0,
+      "fact": "里海雖名為海，實為世界面積最大的湖泊，位於歐亞交界。",
+      "conceptId": "fact:geo:里海",
+      "questionType": "world-fact",
+      "batchId": "supplement-batch2-020",
+      "sourceUrl": "https://www.britannica.com/place/Caspian-Sea",
+      "grades": [
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ]
+    },
+    {
+      "level": "環球旅行家",
+      "region": "亞洲",
+      "category": "世界地理",
+      "q": "馬爾地夫的首都是哪一座城市？",
+      "options": [
+        "馬累",
+        "可倫坡",
+        "曼谷",
+        "吉隆坡"
+      ],
+      "answer": 0,
+      "fact": "馬累是馬爾地夫首都，位於北馬累環礁，為印度洋島國的政治與經濟中心。",
+      "conceptId": "fact:country:馬爾地夫",
+      "questionType": "capital",
+      "batchId": "supplement-batch3-001",
+      "sourceUrl": "https://www.visitmaldives.com",
+      "grades": [
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ]
+    },
+    {
+      "level": "環球旅行家",
+      "region": "非洲",
+      "category": "世界地理",
+      "q": "塞席爾的首都是哪一座城市？",
+      "options": [
+        "維多利亞",
+        "奈洛比",
+        "路易港",
+        "達累斯薩拉姆"
+      ],
+      "answer": 0,
+      "fact": "維多利亞是塞席爾首都，位於馬埃島東北岸，為印度洋島國主要港口。",
+      "conceptId": "fact:country:塞席爾",
+      "questionType": "capital",
+      "batchId": "supplement-batch3-002",
+      "sourceUrl": "https://www.seychelles.com",
+      "grades": [
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ]
+    },
+    {
+      "level": "環球旅行家",
+      "region": "亞洲",
+      "category": "世界地理",
+      "q": "土庫曼的首都是哪一座城市？",
+      "options": [
+        "阿什哈巴德",
+        "塔什干",
+        "杜尚別",
+        "比什凱克"
+      ],
+      "answer": 0,
+      "fact": "阿什哈巴德是土庫曼首都，位於卡拉庫姆沙漠南緣的綠洲帶。",
+      "conceptId": "fact:country:土庫曼",
+      "questionType": "capital",
+      "batchId": "supplement-batch3-003",
+      "sourceUrl": "https://www.turkmenistan.gov.tm",
+      "grades": [
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ]
+    },
+    {
+      "level": "環球旅行家",
+      "region": "亞洲",
+      "category": "世界地理",
+      "q": "塔吉克的首都是哪一座城市？",
+      "options": [
+        "杜尚別",
+        "阿什哈巴德",
+        "喀布爾",
+        "伊斯蘭堡"
+      ],
+      "answer": 0,
+      "fact": "杜尚別是塔吉克首都，坐落在瓦赫什河谷，為帕米爾山區門戶城市。",
+      "conceptId": "fact:country:塔吉克",
+      "questionType": "capital",
+      "batchId": "supplement-batch3-004",
+      "sourceUrl": "https://www.tajikistan.travel",
+      "grades": [
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ]
+    },
+    {
+      "level": "環球旅行家",
+      "region": "非洲",
+      "category": "世界地理",
+      "q": "吉布地的首都為何？",
+      "options": [
+        "吉布地市",
+        "亞的斯亞貝巴",
+        "摩加迪休",
+        "喀土穆"
+      ],
+      "answer": 0,
+      "fact": "吉布地市是吉布地共和國首都，位於紅海與亞丁灣入口的戰略位置。",
+      "conceptId": "fact:country:吉布地",
+      "questionType": "reverse-capital",
+      "batchId": "supplement-batch3-005",
+      "sourceUrl": "https://www.visitdjibouti.dj",
+      "grades": [
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ]
+    },
+    {
+      "level": "環球旅行家",
+      "region": "非洲",
+      "category": "世界地理",
+      "q": "厄利垂亞的首都為何？",
+      "options": [
+        "阿斯瑪拉",
+        "亞的斯亞貝巴",
+        "恩賈梅納",
+        "喀土穆"
+      ],
+      "answer": 0,
+      "fact": "阿斯瑪拉是厄利垂亞首都，以義式殖民時期建築聞名。",
+      "conceptId": "fact:country:厄利垂亞",
+      "questionType": "reverse-capital",
+      "batchId": "supplement-batch3-006",
+      "sourceUrl": "https://www.eritrea.be",
+      "grades": [
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ]
+    },
+    {
+      "level": "環球旅行家",
+      "region": "南美洲",
+      "category": "世界地理",
+      "q": "蘇利南的首都為何？",
+      "options": [
+        "帕拉馬里博",
+        "喬治敦",
+        "卡宴",
+        "庫亞巴"
+      ],
+      "answer": 0,
+      "fact": "帕拉馬里博是蘇利南首都，位於蘇利南河河口北岸。",
+      "conceptId": "fact:country:蘇利南",
+      "questionType": "reverse-capital",
+      "batchId": "supplement-batch3-007",
+      "sourceUrl": "https://www.surinamevacations.com",
+      "grades": [
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ]
+    },
+    {
+      "level": "環球旅行家",
+      "region": "北美洲",
+      "category": "世界地理",
+      "q": "薩爾瓦多的首都為何？",
+      "options": [
+        "聖薩爾瓦多",
+        "馬那瓜",
+        "特古西加巴",
+        "聖荷西"
+      ],
+      "answer": 0,
+      "fact": "聖薩爾瓦多是薩爾瓦多首都，位於該國中部高地。",
+      "conceptId": "fact:country:薩爾瓦多",
+      "questionType": "reverse-capital",
+      "batchId": "supplement-batch3-008",
+      "sourceUrl": "https://www.elsalvador.travel",
+      "grades": [
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ]
+    },
+    {
+      "level": "環球旅行家",
+      "region": "世界地理",
+      "category": "世界地理",
+      "q": "格陵蘭島在行政上屬於哪一個國家？",
+      "options": [
+        "丹麥",
+        "挪威",
+        "冰島",
+        "加拿大"
+      ],
+      "answer": 0,
+      "fact": "格陵蘭是世界最大島嶼，為丹麥王國自治領，位於北大西洋與北冰洋之間。",
+      "conceptId": "fact:geo:格陵蘭",
+      "questionType": "world-fact",
+      "batchId": "supplement-batch3-009",
+      "sourceUrl": "https://visitgreenland.com",
+      "grades": [
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ]
+    },
+    {
+      "level": "環球旅行家",
+      "region": "世界地理",
+      "category": "世界地理",
+      "q": "剛果河最終注入哪一大洋？",
+      "options": [
+        "大西洋",
+        "印度洋",
+        "太平洋",
+        "北冰洋"
+      ],
+      "answer": 0,
+      "fact": "剛果河是非洲流量最大的河流之一，在剛果民主共和國西部注入大西洋。",
+      "conceptId": "fact:geo:剛果河",
+      "questionType": "world-fact",
+      "batchId": "supplement-batch3-010",
+      "sourceUrl": "https://www.britannica.com/place/Congo-River",
+      "grades": [
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ]
+    },
+    {
+      "level": "環球旅行家",
+      "region": "世界地理",
+      "category": "世界地理",
+      "q": "歐洲最長的伏爾加河最終注入哪一個水域？",
+      "options": [
+        "里海",
+        "黑海",
+        "波羅的海",
+        "北海"
+      ],
+      "answer": 0,
+      "fact": "伏爾加河全長約 3,530 公里，在俄羅斯南部注入里海。",
+      "conceptId": "fact:geo:伏爾加河",
+      "questionType": "world-fact",
+      "batchId": "supplement-batch3-011",
+      "sourceUrl": "https://www.britannica.com/place/Volga-River",
+      "grades": [
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ]
+    },
+    {
+      "level": "環球旅行家",
+      "region": "世界地理",
+      "category": "世界地理",
+      "q": "東非大裂谷主要由哪一種地質作用形成？",
+      "options": [
+        "地殼張裂",
+        "火山噴發",
+        "冰川刨蚀",
+        "風化侵蝕"
+      ],
+      "answer": 0,
+      "fact": "東非大裂谷是地殼張裂作用的典型地貌，沿著紅海延伸至莫桑比克。",
+      "conceptId": "fact:geo:東非大裂谷",
+      "questionType": "world-fact",
+      "batchId": "supplement-batch3-012",
+      "sourceUrl": "https://www.britannica.com/place/East-African-Rift-System",
+      "grades": [
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ]
+    },
+    {
+      "level": "國家達人",
+      "region": "亞洲",
+      "category": "世界遺產",
+      "q": "清水寺位於日本哪一座城市？",
+      "options": [
+        "京都",
+        "奈良",
+        "大阪",
+        "東京"
+      ],
+      "answer": 0,
+      "fact": "清水寺位於京都市東山区，是京都最具代表性的木造寺院之一。",
+      "conceptId": "fact:city:清水寺",
+      "questionType": "landmark-city",
+      "batchId": "supplement-batch4-001",
+      "sourceUrl": null,
+      "grades": [],
+      "landmark": "清水寺",
+      "landmarkDetail": "日本・清水寺"
+    },
+    {
+      "level": "國家達人",
+      "region": "亞洲",
+      "category": "世界遺產",
+      "q": "東大寺大佛殿位於日本哪一座城市？",
+      "options": [
+        "奈良",
+        "京都",
+        "神戶",
+        "廣島"
+      ],
+      "answer": 0,
+      "fact": "東大寺位於奈良市，大佛殿是日本規模最大的木造建築之一。",
+      "conceptId": "fact:city:東大寺",
+      "questionType": "landmark-city",
+      "batchId": "supplement-batch4-002",
+      "sourceUrl": null,
+      "grades": [],
+      "landmark": "東大寺",
+      "landmarkDetail": "日本・東大寺"
+    },
+    {
+      "level": "洲際領隊",
+      "region": "亞洲",
+      "category": "世界遺產",
+      "q": "吳哥窟位於柬埔寨哪一座城市附近？",
+      "options": [
+        "暹粒",
+        "金邊",
+        "河內",
+        "曼谷"
+      ],
+      "answer": 0,
+      "fact": "吳哥窟古蹟群位於暹粒市北方，是高棉帝國時期的宗教建築代表。",
+      "conceptId": "fact:city:吳哥窟",
+      "questionType": "landmark-city",
+      "batchId": "supplement-batch4-003",
+      "sourceUrl": null,
+      "grades": [],
+      "landmark": "吳哥窟",
+      "landmarkDetail": "柬埔寨・吳哥窟"
+    },
+    {
+      "level": "洲際領隊",
+      "region": "北美洲",
+      "category": "世界遺產",
+      "q": "金門大橋連接舊金山與馬林郡，它位於美國哪一州？",
+      "options": [
+        "加利福尼亞州",
+        "紐約州",
+        "德州",
+        "佛州"
+      ],
+      "answer": 0,
+      "fact": "金門大橋橫跨舊金山灣入口，是加州舊金山的象徵性地標。",
+      "conceptId": "fact:city:金門大橋",
+      "questionType": "world-fact",
+      "batchId": "supplement-batch4-004",
+      "sourceUrl": null,
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ],
+      "landmark": "金門大橋",
+      "landmarkDetail": "美國・金門大橋"
+    },
+    {
+      "level": "洲際領隊",
+      "region": "北美洲",
+      "category": "世界遺產",
+      "q": "奇琴伊察瑪雅遺址位於墨西哥哪一個州？",
+      "options": [
+        "尤卡坦州",
+        "恰帕斯州",
+        "瓦哈卡州",
+        "南下加利福尼亞州"
+      ],
+      "answer": 0,
+      "fact": "奇琴伊察位於尤卡坦半島北部，以庫庫爾坎金字塔聞名。",
+      "conceptId": "fact:city:奇琴伊察",
+      "questionType": "world-fact",
+      "batchId": "supplement-batch4-005",
+      "sourceUrl": null,
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ],
+      "landmark": "奇琴伊察",
+      "landmarkDetail": "墨西哥・奇琴伊察"
+    },
+    {
+      "level": "洲際領隊",
+      "region": "亞洲",
+      "category": "世界遺產",
+      "q": "吉隆坡雙子星塔位於哪一個國家？",
+      "options": [
+        "馬來西亞",
+        "新加坡",
+        "泰國",
+        "印尼"
+      ],
+      "answer": 0,
+      "fact": "雙子星塔位於馬來西亞首都吉隆坡市中心。",
+      "conceptId": "fact:city:雙子星塔",
+      "questionType": "world-fact",
+      "batchId": "supplement-batch4-006",
+      "sourceUrl": null,
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ],
+      "landmark": "雙子星塔",
+      "landmarkDetail": "亞洲・雙子星塔"
+    },
+    {
+      "level": "洲際領隊",
+      "region": "旅行知識",
+      "category": "旅行知識",
+      "q": "托運行李外掛行李牌的主要用途是？",
+      "options": [
+        "辨識行李並標示聯絡方式",
+        "增加行李重量",
+        "代替護照",
+        "免稅申報"
+      ],
+      "answer": 0,
+      "fact": "行李牌有助於轉機或延誤時辨識行李，並方便航空公司聯絡旅客。",
+      "conceptId": "fact:travel:行李標籤",
+      "questionType": "travel",
+      "batchId": "supplement-batch4-007",
+      "sourceUrl": null,
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ]
+    },
+    {
+      "level": "洲際領隊",
+      "region": "旅行知識",
+      "category": "旅行知識",
+      "q": "出國使用手機漫遊前，較穩健的做法是？",
+      "options": [
+        "先確認資費方案與流量上限",
+        "直接關閉飛航模式即可",
+        "不必看合約",
+        "只使用公共 WiFi"
+      ],
+      "answer": 0,
+      "fact": "漫遊資費因電信商與目的地不同，出發前確認可避免高額帳單。",
+      "conceptId": "fact:travel:漫遊上網",
+      "questionType": "travel",
+      "batchId": "supplement-batch4-008",
+      "sourceUrl": null,
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ]
+    },
+    {
+      "level": "洲際領隊",
+      "region": "旅行知識",
+      "category": "旅行知識",
+      "q": "購買旅遊保險時，醫療保障主要用來？",
+      "options": [
+        "支付海外突發醫療與急診費用",
+        "補貼購物折扣",
+        "取代護照",
+        "支付機票升等"
+      ],
+      "answer": 0,
+      "fact": "海外醫療費用可能很高，醫療保障是旅遊保險的核心項目之一。",
+      "conceptId": "fact:travel:旅遊保險",
+      "questionType": "travel",
+      "batchId": "supplement-batch4-009",
+      "sourceUrl": null,
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ]
+    },
+    {
+      "level": "洲際領隊",
+      "region": "旅行知識",
+      "category": "旅行知識",
+      "q": "「紅眼航班」通常是指？",
+      "options": [
+        "深夜或凌晨起降的航班",
+        "只有紅色座椅",
+        "免費促銷航班",
+        "直升機班次"
+      ],
+      "answer": 0,
+      "fact": "紅眼航班多在夜間飛行，可節省住宿時間，但也較容易有時差疲勞。",
+      "conceptId": "fact:travel:紅眼航班",
+      "questionType": "travel",
+      "batchId": "supplement-batch4-010",
+      "sourceUrl": null,
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ]
+    },
+    {
+      "level": "國家達人",
+      "region": "亞洲",
+      "category": "世界地理",
+      "q": "巴林的首都是哪一座城市？",
+      "options": [
+        "麥納麥",
+        "多哈",
+        "科威特城",
+        "利雅德"
+      ],
+      "answer": 0,
+      "fact": "麥納麥是巴林首都，位於波斯灣島國北部。",
+      "conceptId": "fact:country:巴林",
+      "questionType": "capital",
+      "batchId": "supplement-batch4-011",
+      "sourceUrl": null,
+      "grades": []
+    },
+    {
+      "level": "國家達人",
+      "region": "歐洲",
+      "category": "世界地理",
+      "q": "賽普勒斯的首都是哪一座城市？",
+      "options": [
+        "尼科西亞",
+        "雅典",
+        "安卡拉",
+        "貝魯特"
+      ],
+      "answer": 0,
+      "fact": "尼科西亞是賽普勒斯首都，位於地中海東部島國中部。",
+      "conceptId": "fact:country:賽普勒斯",
+      "questionType": "capital",
+      "batchId": "supplement-batch4-012",
+      "sourceUrl": null,
+      "grades": []
+    },
+    {
+      "level": "洲際領隊",
+      "region": "世界地理",
+      "category": "世界地理",
+      "q": "安第斯山脈主要位於哪一個大陸？",
+      "options": [
+        "南美洲",
+        "北美洲",
+        "歐洲",
+        "非洲"
+      ],
+      "answer": 0,
+      "fact": "安第斯山脈縱貫南美洲西岸，是世界最長的陸上山脈之一。",
+      "conceptId": "fact:geo:安第斯山脈",
+      "questionType": "world-fact",
+      "batchId": "supplement-batch4-013",
+      "sourceUrl": null,
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ]
+    },
+    {
+      "level": "洲際領隊",
+      "region": "世界地理",
+      "category": "世界地理",
+      "q": "密西西比河主要流經北美哪一個國家？",
+      "options": [
+        "美國",
+        "加拿大",
+        "墨西哥",
+        "古巴"
+      ],
+      "answer": 0,
+      "fact": "密西西比河是美國中部重要的航運與農業灌溉水道。",
+      "conceptId": "fact:geo:密西西比河",
+      "questionType": "world-fact",
+      "batchId": "supplement-batch4-014",
+      "sourceUrl": null,
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ]
+    },
+    {
+      "level": "洲際領隊",
+      "region": "旅行知識",
+      "category": "旅行知識",
+      "q": "申根簽證的主要作用是？",
+      "options": [
+        "在申根區多國短期停留與通行",
+        "永久居留歐盟",
+        "取代護照",
+        "免費搭乘歐洲鐵路"
+      ],
+      "answer": 0,
+      "fact": "持有效申根簽證可在申根成員國境內依規定短期旅行。",
+      "conceptId": "fact:travel:申根簽證",
+      "questionType": "travel",
+      "batchId": "supplement-batch4-015",
+      "sourceUrl": null,
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ]
+    },
+    {
+      "level": "洲際領隊",
+      "region": "旅行知識",
+      "category": "旅行知識",
+      "q": "跨越多個時區旅行後，較常出現的生理現象是？",
+      "options": [
+        "時差所導致的睡眠與疲勞",
+        "立即學會當地語言",
+        "體重永久增加",
+        "免疫系統失效"
+      ],
+      "answer": 0,
+      "fact": "時差會影響生理時鐘，可透過調整睡眠與日照逐步適應。",
+      "conceptId": "fact:travel:時差調整",
+      "questionType": "travel",
+      "batchId": "supplement-batch4-016",
+      "sourceUrl": null,
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ]
+    },
+    {
+      "level": "洲際領隊",
+      "region": "歐洲",
+      "category": "世界地理",
+      "q": "安道爾的首都為何？",
+      "options": [
+        "安道爾城",
+        "巴塞隆納",
+        "米蘭",
+        "尼斯"
+      ],
+      "answer": 0,
+      "fact": "安道爾城是安道爾公國首都，位於庇里牛斯山區。",
+      "conceptId": "fact:country:安道爾",
+      "questionType": "reverse-capital",
+      "batchId": "supplement-batch4-017",
+      "sourceUrl": null,
+      "grades": []
+    },
+    {
+      "level": "洲際領隊",
+      "region": "歐洲",
+      "category": "世界地理",
+      "q": "聖馬利諾的首都為何？",
+      "options": [
+        "聖馬利諾城",
+        "羅馬",
+        "佛羅倫斯",
+        "威尼斯"
+      ],
+      "answer": 0,
+      "fact": "聖馬利諾城是聖馬利諾共和國首都，座落於提蒂諾山。",
+      "conceptId": "fact:country:聖馬利諾",
+      "questionType": "reverse-capital",
+      "batchId": "supplement-batch4-018",
+      "sourceUrl": null,
+      "grades": []
+    },
+    {
+      "level": "洲際領隊",
+      "region": "旅行知識",
+      "category": "旅行知識",
+      "q": "前往高海拔地區旅行，預防高原症較穩健的做法是？",
+      "options": [
+        "逐步上升並充分休息",
+        "抵達後立即劇烈運動",
+        "完全不吃東西",
+        "拒絕補充水分"
+      ],
+      "answer": 0,
+      "fact": "高原症與海拔上升速度有關，循序適應並留意頭痛、噁心等症狀很重要。",
+      "conceptId": "fact:safety:高原症",
+      "questionType": "travel",
+      "batchId": "supplement-batch5-001",
+      "sourceUrl": null,
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ]
+    },
+    {
+      "level": "洲際領隊",
+      "region": "旅行知識",
+      "category": "旅行知識",
+      "q": "炎熱天氣戶外旅行，預防中暑較有效的方式是？",
+      "options": [
+        "補充水分並避開正午烈日",
+        "長時間不喝水",
+        "只喝含酒精飲料",
+        "穿著厚重不透氣衣物"
+      ],
+      "answer": 0,
+      "fact": "中暑可因脫水與體溫過高引起，應適時休息並補充電解質。",
+      "conceptId": "fact:safety:中暑",
+      "questionType": "travel",
+      "batchId": "supplement-batch5-002",
+      "sourceUrl": null,
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ]
+    },
+    {
+      "level": "洲際領隊",
+      "region": "旅行知識",
+      "category": "旅行知識",
+      "q": "在海邊或泳池戲水時，較安全的做法是？",
+      "options": [
+        "在有人看守與標示允許的區域活動",
+        "獨自到無人海灘夜泳",
+        "忽略旗幟與警示",
+        "酒後游泳"
+      ],
+      "answer": 0,
+      "fact": "許多海灘以旗幟標示浪況與危險區，應遵守當地安全規定。",
+      "conceptId": "fact:safety:溺水",
+      "questionType": "travel",
+      "batchId": "supplement-batch5-003",
+      "sourceUrl": null,
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ]
+    },
+    {
+      "level": "洲際領隊",
+      "region": "旅行知識",
+      "category": "旅行知識",
+      "q": "旅行中若遇到地震，室內較建議的初期動作是？",
+      "options": [
+        "趴下、掩護、穩住",
+        "立刻搭電梯下樓",
+        "站在窗戶旁看外面",
+        "打開所有瓦斯"
+      ],
+      "answer": 0,
+      "fact": "地震時應保護頭頸並遠離可能掉落的物品，待搖晃停止再疏散。",
+      "conceptId": "fact:safety:地震",
+      "questionType": "travel",
+      "batchId": "supplement-batch5-004",
+      "sourceUrl": null,
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ]
+    },
+    {
+      "level": "洲際領隊",
+      "region": "旅行知識",
+      "category": "旅行知識",
+      "q": "海岸地區收到海嘯警報時，較正確的應對是？",
+      "options": [
+        "迅速往高地或指定避難點移動",
+        "留在海邊拍照",
+        "搭船出海避難",
+        "進入地下停車場"
+      ],
+      "answer": 0,
+      "fact": "海嘯波浪速度極快，應依當地指示撤離至安全高度。",
+      "conceptId": "fact:safety:海嘯",
+      "questionType": "travel",
+      "batchId": "supplement-batch5-005",
+      "sourceUrl": null,
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ]
+    },
+    {
+      "level": "洲際領隊",
+      "region": "旅行知識",
+      "category": "旅行知識",
+      "q": "在衛生條件不明的地區旅行，降低食物中毒風險的做法是？",
+      "options": [
+        "選擇煮熟且現做食物，注意手部清潔",
+        "只吃未洗的生鮮沙拉",
+        "忽略食材保存溫度",
+        "重複食用隔夜外帶"
+      ],
+      "answer": 0,
+      "fact": "旅行腹瀉常與飲食衛生有關，煮熟食物與瓶裝水較為安全。",
+      "conceptId": "fact:safety:食物中毒",
+      "questionType": "travel",
+      "batchId": "supplement-batch5-006",
+      "sourceUrl": null,
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ]
+    },
+    {
+      "level": "洲際領隊",
+      "region": "旅行知識",
+      "category": "旅行知識",
+      "q": "在不確定當地自來水是否可生飲時，較穩健的做法是？",
+      "options": [
+        "飲用密封瓶裝水或煮沸後的水",
+        "直接喝路邊溪水",
+        "用汽水代替所有水分",
+        "完全不補充水分"
+      ],
+      "answer": 0,
+      "fact": "部分地區自來水需煮沸或購買瓶裝水，冰塊來源也應留意。",
+      "conceptId": "fact:safety:飲用水",
+      "questionType": "travel",
+      "batchId": "supplement-batch5-007",
+      "sourceUrl": null,
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ]
+    },
+    {
+      "level": "洲際領隊",
+      "region": "旅行知識",
+      "category": "旅行知識",
+      "q": "在海外遺失護照時，應優先採取的行動是？",
+      "options": [
+        "向駐在國領事館或代表機構求助",
+        "自行偽造文件",
+        "忽略並繼續旅行",
+        "只在社群媒體求助"
+      ],
+      "answer": 0,
+      "fact": "遺失護照應先報案並聯絡領事館，申請旅行文件或補發護照。",
+      "conceptId": "fact:safety:護照遺失",
+      "questionType": "travel",
+      "batchId": "supplement-batch5-008",
+      "sourceUrl": null,
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ]
+    },
+    {
+      "level": "洲際領隊",
+      "region": "旅行知識",
+      "category": "旅行知識",
+      "q": "在紫外線強烈的熱帶或高山地區，較重要的防護是？",
+      "options": [
+        "使用防曬並穿戴遮蔽衣物",
+        "故意曬黑不防護",
+        "只擦嬰兒油",
+        "正午長時間曝曬"
+      ],
+      "answer": 0,
+      "fact": "紫外線在高原與海邊更強，防曬可降低曬傷與長期皮膚傷害風險。",
+      "conceptId": "fact:safety:防曬",
+      "questionType": "travel",
+      "batchId": "supplement-batch5-009",
+      "sourceUrl": null,
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ]
+    },
+    {
+      "level": "洲際領隊",
+      "region": "旅行知識",
+      "category": "旅行知識",
+      "q": "入境他國時，對於應申報物品較正確的態度是？",
+      "options": [
+        "依規定誠實申報，避免違法攜帶",
+        "全部隱瞞不申報",
+        "只要數量少就不必理會",
+        "替陌生人攜帶不明行李"
+      ],
+      "answer": 0,
+      "fact": "各國對肉類、植物、藥品與高額現金常有申報限制，違規可能遭罰沒或起訴。",
+      "conceptId": "fact:safety:海關申報",
+      "questionType": "travel",
+      "batchId": "supplement-batch5-010",
+      "sourceUrl": null,
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ]
+    },
+    {
+      "level": "洲際領隊",
+      "region": "世界地理",
+      "category": "世界地理",
+      "q": "阿爾卑斯山脈主要橫跨歐洲哪幾個國家所在區域？",
+      "options": [
+        "法國、瑞士、義大利、奧地利等",
+        "巴西、阿根廷",
+        "埃及、蘇丹",
+        "日本、韓國"
+      ],
+      "answer": 0,
+      "fact": "阿爾卑斯山是歐洲重要山系，滑雪與登山旅遊興盛。",
+      "conceptId": "fact:geo:阿爾卑斯山",
+      "questionType": "world-fact",
+      "batchId": "supplement-batch5-011",
+      "sourceUrl": null,
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ]
+    },
+    {
+      "level": "洲際領隊",
+      "region": "世界地理",
+      "category": "世界地理",
+      "q": "北美五大湖主要分布在哪兩個國家之間？",
+      "options": [
+        "美國與加拿大",
+        "墨西哥與古巴",
+        "英國與法國",
+        "中國與俄羅斯"
+      ],
+      "answer": 0,
+      "fact": "五大湖為世界最大淡水湖群之一，連接美加重要航運與工業區。",
+      "conceptId": "fact:geo:五大湖",
+      "questionType": "world-fact",
+      "batchId": "supplement-batch5-012",
+      "sourceUrl": null,
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ]
+    },
+    {
+      "level": "洲際領隊",
+      "region": "世界地理",
+      "category": "世界地理",
+      "q": "湄公河主要流經哪一個地理區域？",
+      "options": [
+        "中南半島",
+        "中亞草原",
+        "北歐峽灣",
+        "加勒比海島"
+      ],
+      "answer": 0,
+      "fact": "湄公河源自青藏高原東南，流經寮國、柬埔寨、越南等國，是重要的農業與航運水道。",
+      "conceptId": "fact:geo:湄公河",
+      "questionType": "world-fact",
+      "batchId": "supplement-batch5-013",
+      "sourceUrl": null,
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ]
+    },
+    {
+      "level": "洲際領隊",
+      "region": "世界地理",
+      "category": "世界地理",
+      "q": "恒河被視為印度文明重要河流，它最終注入哪一片海域？",
+      "options": [
+        "孟加拉灣",
+        "地中海",
+        "北海",
+        "波斯灣"
+      ],
+      "answer": 0,
+      "fact": "恒河流經印度北部平原，在孟加拉國與布拉馬普特拉河匯合後注入孟加拉灣。",
+      "conceptId": "fact:geo:恒河",
+      "questionType": "world-fact",
+      "batchId": "supplement-batch5-014",
+      "sourceUrl": null,
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ]
+    },
+    {
+      "level": "洲際領隊",
+      "region": "世界地理",
+      "category": "世界地理",
+      "q": "加勒比海位於哪兩個大洲之間的海域？",
+      "options": [
+        "北美洲與南美洲",
+        "歐洲與非洲",
+        "亞洲與大洋洲",
+        "南極洲與澳洲"
+      ],
+      "answer": 0,
+      "fact": "加勒比海島嶼眾多，是郵輪與度假旅遊熱門區域。",
+      "conceptId": "fact:geo:加勒比海",
+      "questionType": "world-fact",
+      "batchId": "supplement-batch5-015",
+      "sourceUrl": null,
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ]
+    },
+    {
+      "level": "洲際領隊",
+      "region": "世界地理",
+      "category": "世界地理",
+      "q": "死海以鹽度高、浮力大聞名，它位於哪一個地理區域？",
+      "options": [
+        "約旦河谷",
+        "喜馬拉雅山區",
+        "亞馬遜雨林",
+        "北極圈內"
+      ],
+      "answer": 0,
+      "fact": "死海位於以色列、約旦與巴勒斯坦地區，湖面為地球陸地最低點之一。",
+      "conceptId": "fact:geo:死海",
+      "questionType": "world-fact",
+      "batchId": "supplement-batch5-016",
+      "sourceUrl": null,
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ]
+    },
+    {
+      "level": "洲際領隊",
+      "region": "世界地理",
+      "category": "世界地理",
+      "q": "天山山脈主要位於哪一個地理區域？",
+      "options": [
+        "中亞",
+        "西歐",
+        "南極",
+        "加勒比"
+      ],
+      "answer": 0,
+      "fact": "天山橫貫中亞多國，是絲路沿線重要的山地景觀與水源區。",
+      "conceptId": "fact:geo:天山山脈",
+      "questionType": "world-fact",
+      "batchId": "supplement-batch5-017",
+      "sourceUrl": null,
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ]
+    },
+    {
+      "level": "洲際領隊",
+      "region": "世界地理",
+      "category": "世界地理",
+      "q": "西班牙與葡萄牙所在的歐洲半島稱為？",
+      "options": [
+        "伊比利半島",
+        "斯堪地那維亞半島",
+        "巴爾幹半島",
+        "亞平寧半島"
+      ],
+      "answer": 0,
+      "fact": "伊比利半島位於歐洲西南，以西班牙、葡萄牙為主體。",
+      "conceptId": "fact:geo:伊比利半島",
+      "questionType": "world-fact",
+      "batchId": "supplement-batch5-018",
+      "sourceUrl": null,
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ]
+    },
+    {
+      "level": "洲際領隊",
+      "region": "旅行知識",
+      "category": "旅行知識",
+      "q": "冬季在山區滑雪或健行時，遇到雪崩風險較高的做法應避免？",
+      "options": [
+        "偏離標示路線進入未開放雪坡",
+        "留意當地雪崩預報",
+        "跟隨專業導覽",
+        "攜帶通訊設備"
+      ],
+      "answer": 0,
+      "fact": "雪崩與降雪、風向與坡度有關，應遵守山區封閉與安全指示。",
+      "conceptId": "fact:safety:雪崩",
+      "questionType": "travel",
+      "batchId": "supplement-batch5-019",
+      "sourceUrl": null,
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ]
+    },
+    {
+      "level": "洲際領隊",
+      "region": "世界地理",
+      "category": "世界地理",
+      "q": "大堡礁位於澳洲哪一個州的外海？",
+      "options": [
+        "昆士蘭州",
+        "維多利亞州",
+        "西澳州",
+        "塔斯馬尼亞州"
+      ],
+      "answer": 0,
+      "fact": "大堡礁沿昆士蘭東岸延伸，是世界最大的珊瑚礁群之一。",
+      "conceptId": "fact:geo:大堡礁位置",
+      "questionType": "world-fact",
+      "batchId": "supplement-batch5-020",
+      "sourceUrl": null,
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ]
+    },
+    {
+      "level": "洲際領隊",
+      "region": "旅行知識",
+      "category": "旅行知識",
+      "q": "颱風季節外出旅行，收到強風暴雨警報時較穩健的做法是？",
+      "options": [
+        "調整行程並前往安全地點避難",
+        "照常前往海邊活動",
+        "刻意搭船出海",
+        "忽略官方警報"
+      ],
+      "answer": 0,
+      "fact": "颱風可能帶來強風豪雨與淹水，應留意氣象與當地疏散指示。",
+      "conceptId": "fact:safety:颱風",
+      "questionType": "travel",
+      "batchId": "supplement-batch6-001",
+      "sourceUrl": null,
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ]
+    },
+    {
+      "level": "洲際領隊",
+      "region": "旅行知識",
+      "category": "旅行知識",
+      "q": "在人潮密集的觀光區，降低遭竊風險較有效的習慣是？",
+      "options": [
+        "財物不外露並留意周遭動態",
+        "將背包敞開放在身後",
+        "把所有現金放在同一個口袋",
+        "邊走邊長時間看手機"
+      ],
+      "answer": 0,
+      "fact": "扒竊常發生在捷運、市集與景點入口，分散保管證件與現金較安全。",
+      "conceptId": "fact:safety:盜搶防範",
+      "questionType": "travel",
+      "batchId": "supplement-batch6-002",
+      "sourceUrl": null,
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ]
+    },
+    {
+      "level": "洲際領隊",
+      "region": "旅行知識",
+      "category": "旅行知識",
+      "q": "前往活火山或火山景區旅行時，應避免的做法是？",
+      "options": [
+        "擅自進入封閉或警戒區域",
+        "留意官方火山活動公告",
+        "遵守導覽路線",
+        "留意火山灰與氣體警示"
+      ],
+      "answer": 0,
+      "fact": "火山活動可能突然改變，封閉區與警戒級別應嚴格遵守。",
+      "conceptId": "fact:safety:火山旅遊",
+      "questionType": "travel",
+      "batchId": "supplement-batch6-003",
+      "sourceUrl": null,
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ]
+    },
+    {
+      "level": "洲際領隊",
+      "region": "旅行知識",
+      "category": "旅行知識",
+      "q": "寒冷潮濕的山區健行，預防失溫較重要的做法是？",
+      "options": [
+        "保持身體乾燥並適時增減衣物",
+        "穿著濕衣服繼續趕路",
+        "故意減少熱量攝取",
+        "獨自偏離路線夜行"
+      ],
+      "answer": 0,
+      "fact": "失溫與風寒、濕冷有關，應準備防風防水衣物並及時補充熱量。",
+      "conceptId": "fact:safety:失溫",
+      "questionType": "travel",
+      "batchId": "supplement-batch6-004",
+      "sourceUrl": null,
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ]
+    },
+    {
+      "level": "洲際領隊",
+      "region": "旅行知識",
+      "category": "旅行知識",
+      "q": "戶外旅行突然遇到雷雨時，較應避免的做法是？",
+      "options": [
+        "站在孤立高樹或開放空曠處",
+        "尋找室內或低窪處暫避",
+        "離開水面與金屬物品",
+        "留意天氣變化提前撤離"
+      ],
+      "answer": 0,
+      "fact": "雷擊常發生在高處與開闊地，雷雨時應遠離山頂、樹木與水邊。",
+      "conceptId": "fact:safety:雷雨",
+      "questionType": "travel",
+      "batchId": "supplement-batch6-005",
+      "sourceUrl": null,
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ]
+    },
+    {
+      "level": "洲際領隊",
+      "region": "旅行知識",
+      "category": "旅行知識",
+      "q": "在國家公園或野生動物棲地旅行，較安全的做法是？",
+      "options": [
+        "保持距離且不餵食野生動物",
+        "靠近幼崽拍照",
+        "餵食野生猴子或鹿",
+        "追逐動物以取得更好角度"
+      ],
+      "answer": 0,
+      "fact": "餵食可能改變動物行為並增加攻擊風險，也會影響生態平衡。",
+      "conceptId": "fact:safety:野生動物",
+      "questionType": "travel",
+      "batchId": "supplement-batch6-006",
+      "sourceUrl": null,
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ]
+    },
+    {
+      "level": "洲際領隊",
+      "region": "旅行知識",
+      "category": "旅行知識",
+      "q": "容易暈船的人搭乘渡輪時，較有助緩解的做法是？",
+      "options": [
+        "選擇船身中央較平穩位置並望向遠方",
+        "一直盯著手機小螢幕",
+        "空腹大量飲酒",
+        "待在船尾最高處迎風"
+      ],
+      "answer": 0,
+      "fact": "暈動症與內耳平衡感受刺激有關，固定視線與通風有助減輕不適。",
+      "conceptId": "fact:safety:暈船",
+      "questionType": "travel",
+      "batchId": "supplement-batch6-007",
+      "sourceUrl": null,
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ]
+    },
+    {
+      "level": "洲際領隊",
+      "region": "旅行知識",
+      "category": "旅行知識",
+      "q": "在海外發生緊急事故需要求救時，出發前較應先準備的是？",
+      "options": [
+        "查詢當地緊急電話與醫療資源",
+        "完全不記任何聯絡方式",
+        "只依賴社群媒體留言",
+        "假設各國號碼都相同"
+      ],
+      "answer": 0,
+      "fact": "各國緊急號碼不同，歐盟部分地區可使用 112，出發前查詢較穩妥。",
+      "conceptId": "fact:safety:緊急求助",
+      "questionType": "travel",
+      "batchId": "supplement-batch6-008",
+      "sourceUrl": null,
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ]
+    },
+    {
+      "level": "洲際領隊",
+      "region": "旅行知識",
+      "category": "旅行知識",
+      "q": "前往部分熱帶或疫區國家旅行前，較建議的做法是？",
+      "options": [
+        "諮詢旅遊醫學門診並確認疫苗建議",
+        "完全不做任何準備",
+        "僅靠網路偏方",
+        "抵達後才臨時決定"
+      ],
+      "answer": 0,
+      "fact": "黃熱病、A 型肝炎等疫苗可能需要提前數週施打才有效。",
+      "conceptId": "fact:safety:疫苗防疫",
+      "questionType": "travel",
+      "batchId": "supplement-batch6-009",
+      "sourceUrl": null,
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ]
+    },
+    {
+      "level": "洲際領隊",
+      "region": "旅行知識",
+      "category": "旅行知識",
+      "q": "在山區或森林步道迷路時，較安全的初期應對是？",
+      "options": [
+        "停在原地並設法聯絡救援",
+        "盲目狂奔尋路",
+        "刻意分隊各自探索",
+        "繼續往未知深處前進"
+      ],
+      "answer": 0,
+      "fact": "迷路後貿然移動可能加深偏離，保留體力並讓他人知道位置較重要。",
+      "conceptId": "fact:safety:迷路",
+      "questionType": "travel",
+      "batchId": "supplement-batch6-010",
+      "sourceUrl": null,
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ]
+    },
+    {
+      "level": "洲際領隊",
+      "region": "旅行知識",
+      "category": "旅行知識",
+      "q": "參加乘船、泛舟或水上活動時，較基本的安全措施是？",
+      "options": [
+        "正確穿著救生衣並聽從船員指示",
+        "拒絕任何安全裝備",
+        "站立在船舷邊嬉鬧",
+        "酒後參與高風險水上活動"
+      ],
+      "answer": 0,
+      "fact": "救生衣可大幅提升落水後的漂浮時間，應確認尺寸與扣帶是否牢固。",
+      "conceptId": "fact:safety:救生衣",
+      "questionType": "travel",
+      "batchId": "supplement-batch6-011",
+      "sourceUrl": null,
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ]
+    },
+    {
+      "level": "洲際領隊",
+      "region": "世界地理",
+      "category": "世界地理",
+      "q": "撒哈拉沙漠主要位於哪一個大洲？",
+      "options": [
+        "非洲",
+        "南美洲",
+        "歐洲",
+        "大洋洲"
+      ],
+      "answer": 0,
+      "fact": "撒哈拉沙漠橫跨北非多國，是世界最大的熱帶沙漠之一。",
+      "conceptId": "fact:geo:撒哈拉沙漠",
+      "questionType": "world-fact",
+      "batchId": "supplement-batch6-012",
+      "sourceUrl": null,
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ]
+    },
+    {
+      "level": "洲際領隊",
+      "region": "世界地理",
+      "category": "世界地理",
+      "q": "波羅的海主要位於歐洲哪一個區域？",
+      "options": [
+        "北歐與東歐沿岸",
+        "伊比利半島",
+        "巴爾幹內陸",
+        "北極冰洋中心"
+      ],
+      "answer": 0,
+      "fact": "波羅的海被瑞典、芬蘭、波羅的海三國、波蘭、德國等國環繞。",
+      "conceptId": "fact:geo:波羅的海",
+      "questionType": "world-fact",
+      "batchId": "supplement-batch6-013",
+      "sourceUrl": null,
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ]
+    },
+    {
+      "level": "洲際領隊",
+      "region": "世界地理",
+      "category": "世界地理",
+      "q": "地中海型氣候較典型的降雨特徵是？",
+      "options": [
+        "夏季乾燥、冬季多雨",
+        "全年均勻降雨",
+        "只有夏季降雨",
+        "完全沒有降雨"
+      ],
+      "answer": 0,
+      "fact": "地中海沿岸與部分加州、智利等地可見此氣候，夏季適合觀光但也需注意乾熱與野火風險。",
+      "conceptId": "fact:geo:地中海氣候",
+      "questionType": "world-fact",
+      "batchId": "supplement-batch6-014",
+      "sourceUrl": null,
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ]
+    },
+    {
+      "level": "洲際領隊",
+      "region": "世界地理",
+      "category": "世界地理",
+      "q": "南亞與東南亞夏季常出現豪雨，主要與哪一種氣候現象有關？",
+      "options": [
+        "季風",
+        "極地渦旋",
+        "焚風",
+        "海霧"
+      ],
+      "answer": 0,
+      "fact": "季風帶來季節性風向轉換，影響印度、泰國、越南等地的農業與旅遊旺季。",
+      "conceptId": "fact:geo:季風氣候",
+      "questionType": "world-fact",
+      "batchId": "supplement-batch6-015",
+      "sourceUrl": null,
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ]
+    },
+    {
+      "level": "洲際領隊",
+      "region": "世界地理",
+      "category": "世界地理",
+      "q": "將地球分為北半球與南半球的 0 度緯線稱為？",
+      "options": [
+        "赤道",
+        "本初子午線",
+        "回歸線",
+        "極圈"
+      ],
+      "answer": 0,
+      "fact": "赤道附近終年高溫，厄瓜多爾、肯亞、印尼等國境內有赤道標示景點。",
+      "conceptId": "fact:geo:赤道",
+      "questionType": "world-fact",
+      "batchId": "supplement-batch6-016",
+      "sourceUrl": null,
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ]
+    },
+    {
+      "level": "洲際領隊",
+      "region": "世界地理",
+      "category": "世界地理",
+      "q": "日本海位於日本本島與哪一側大陸之間？",
+      "options": [
+        "亞洲大陸東岸",
+        "澳洲大陸",
+        "非洲東岸",
+        "南美洲西岸"
+      ],
+      "answer": 0,
+      "fact": "日本海介於日本、韓國與俄羅斯遠東之間，是東北亞重要海域。",
+      "conceptId": "fact:geo:日本海",
+      "questionType": "world-fact",
+      "batchId": "supplement-batch6-017",
+      "sourceUrl": null,
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ]
+    },
+    {
+      "level": "洲際領隊",
+      "region": "世界地理",
+      "category": "世界地理",
+      "q": "巴拉那河主要流經哪一個地理區域？",
+      "options": [
+        "南美洲",
+        "北歐",
+        "中東",
+        "南極洲"
+      ],
+      "answer": 0,
+      "fact": "巴拉那河與巴拉圭河、烏拉圭河等匯入大西洋，伊瓜蘇瀑布位於其支流上。",
+      "conceptId": "fact:geo:巴拉那河",
+      "questionType": "world-fact",
+      "batchId": "supplement-batch6-018",
+      "sourceUrl": null,
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ]
+    },
+    {
+      "level": "環球旅行家",
+      "region": "世界地理",
+      "category": "世界地理",
+      "q": "挪威西部深邃的峽灣地貌，主要與哪種自然作用有關？",
+      "options": [
+        "冰川刨蚀",
+        "珊瑚礁堆積",
+        "火山熔岩流",
+        "風成沙丘"
+      ],
+      "answer": 0,
+      "fact": "挪威峽灣是冰河時期冰川侵蝕河谷後海水倒灌形成的典型地貌。",
+      "conceptId": "fact:geo:挪威峽灣",
+      "questionType": "world-fact",
+      "batchId": "supplement-batch6-019",
+      "sourceUrl": null,
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ]
+    },
+    {
+      "level": "洲際領隊",
+      "region": "世界地理",
+      "category": "世界地理",
+      "q": "觀賞北極光較有機會的地區通常位於？",
+      "options": [
+        "高緯度極地附近",
+        "赤道雨林",
+        "撒哈拉沙漠中心",
+        "南極內陸冰蓋深處"
+      ],
+      "answer": 0,
+      "fact": "北極光出現於高緯度夜空，挪威、冰島、加拿大北部等地是熱門觀測點。",
+      "conceptId": "fact:geo:北極光",
+      "questionType": "world-fact",
+      "batchId": "supplement-batch6-020",
+      "sourceUrl": null,
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ]
+    },
+    {
+      "level": "國家達人",
+      "region": "歐洲",
+      "category": "世界遺產",
+      "q": "布蘭登堡門位於德國哪一座城市？",
+      "options": [
+        "柏林",
+        "慕尼黑",
+        "漢堡",
+        "法蘭克福"
+      ],
+      "answer": 0,
+      "fact": "布蘭登堡門是柏林象徵性地標，位於巴黎廣場西側。",
+      "conceptId": "fact:city:布蘭登堡門",
+      "questionType": "landmark-city",
+      "batchId": "supplement-batch7-001",
+      "sourceUrl": null,
+      "grades": [],
+      "landmark": "布蘭登堡門",
+      "landmarkDetail": "德國・布蘭登堡門"
+    },
+    {
+      "level": "洲際領隊",
+      "region": "南美洲",
+      "category": "世界遺產",
+      "q": "矗立在科科瓦多山上的基督像位於巴西哪一座城市？",
+      "options": [
+        "里約熱內盧",
+        "聖保羅",
+        "巴西利亞",
+        "薩爾瓦多"
+      ],
+      "answer": 0,
+      "fact": "基督像矗立在里約的科科瓦多山頂，俯瞰瓜納巴拉灣。",
+      "conceptId": "fact:city:基督像",
+      "questionType": "landmark-city",
+      "batchId": "supplement-batch7-002",
+      "sourceUrl": null,
+      "grades": [],
+      "landmark": "基督像",
+      "landmarkDetail": "巴西・基督像"
+    },
+    {
+      "level": "國家達人",
+      "region": "亞洲",
+      "category": "世界遺產",
+      "q": "秦始皇兵馬俑博物館位於中國哪一座城市？",
+      "options": [
+        "西安",
+        "北京",
+        "洛陽",
+        "南京"
+      ],
+      "answer": 0,
+      "fact": "兵馬俑位於陝西省西安市臨潼區，是秦代陪葬坑遺址。",
+      "conceptId": "fact:city:兵馬俑",
+      "questionType": "landmark-city",
+      "batchId": "supplement-batch7-003",
+      "sourceUrl": null,
+      "grades": [],
+      "landmark": "兵馬俑",
+      "landmarkDetail": "中國・兵馬俑"
+    },
+    {
+      "level": "洲際領隊",
+      "region": "亞洲",
+      "category": "世界遺產",
+      "q": "莫高窟石窟群位於中國哪一座城市？",
+      "options": [
+        "敦煌",
+        "嘉峪關",
+        "烏魯木齊",
+        "蘭州"
+      ],
+      "answer": 0,
+      "fact": "莫高窟位於甘肅敦煌市鳴沙山東麓，是絲路藝術寶庫。",
+      "conceptId": "fact:city:莫高窟",
+      "questionType": "landmark-city",
+      "batchId": "supplement-batch7-004",
+      "sourceUrl": null,
+      "grades": [],
+      "landmark": "莫高窟",
+      "landmarkDetail": "中國・莫高窟"
+    },
+    {
+      "level": "洲際領隊",
+      "region": "歐洲",
+      "category": "世界遺產",
+      "q": "阿爾罕布拉宮位於西班牙哪一座城市？",
+      "options": [
+        "格拉納達",
+        "塞維亞",
+        "馬德里",
+        "巴塞隆納"
+      ],
+      "answer": 0,
+      "fact": "阿爾罕布拉宮位於安達盧西亞的格拉納達，展現伊斯蘭與基督教建築融合。",
+      "conceptId": "fact:city:阿爾罕布拉宮",
+      "questionType": "landmark-city",
+      "batchId": "supplement-batch7-005",
+      "sourceUrl": null,
+      "grades": [],
+      "landmark": "阿爾罕布拉宮",
+      "landmarkDetail": "西班牙・阿爾罕布拉宮"
+    },
+    {
+      "level": "洲際領隊",
+      "region": "歐洲",
+      "category": "世界遺產",
+      "q": "美泉宮位於奧地利哪一座城市？",
+      "options": [
+        "維也納",
+        "薩爾斯堡",
+        "因斯布魯克",
+        "格拉茨"
+      ],
+      "answer": 0,
+      "fact": "美泉宮是哈布斯堡王朝夏宮，位於維也納西南郊。",
+      "conceptId": "fact:city:美泉宮",
+      "questionType": "landmark-city",
+      "batchId": "supplement-batch7-006",
+      "sourceUrl": null,
+      "grades": [],
+      "landmark": "美泉宮",
+      "landmarkDetail": "奧地利・美泉宮"
+    },
+    {
+      "level": "國家達人",
+      "region": "歐洲",
+      "category": "世界遺產",
+      "q": "查理大橋橫跨伏爾塔瓦河，它位於捷克哪一座城市？",
+      "options": [
+        "布拉格",
+        "布爾諾",
+        "奧斯特拉瓦",
+        "卡羅維瓦里"
+      ],
+      "answer": 0,
+      "fact": "查理大橋連接布拉格舊城與小城，是捷克最受歡迎的觀光橋梁。",
+      "conceptId": "fact:city:查理大橋",
+      "questionType": "landmark-city",
+      "batchId": "supplement-batch7-007",
+      "sourceUrl": null,
+      "grades": [],
+      "landmark": "查理大橋",
+      "landmarkDetail": "捷克・查理大橋"
+    },
+    {
+      "level": "國家達人",
+      "region": "亞洲",
+      "category": "世界遺產",
+      "q": "泰國大皇宮與玉佛寺位於哪一座城市？",
+      "options": [
+        "曼谷",
+        "清邁",
+        "普吉",
+        "芭達雅"
+      ],
+      "answer": 0,
+      "fact": "大皇宮是泰國王室舉行典禮的重要場所，位於曼谷湄南河畔。",
+      "conceptId": "fact:city:大皇宮",
+      "questionType": "landmark-city",
+      "batchId": "supplement-batch7-008",
+      "sourceUrl": null,
+      "grades": [],
+      "landmark": "大皇宮",
+      "landmarkDetail": "亞洲・大皇宮"
+    },
+    {
+      "level": "洲際領隊",
+      "region": "亞洲",
+      "category": "世界遺產",
+      "q": "哈里法塔位於阿拉伯聯合大公國哪一座城市？",
+      "options": [
+        "杜拜",
+        "阿布達比",
+        "多哈",
+        "麥加"
+      ],
+      "answer": 0,
+      "fact": "哈里法塔高 828 公尺，位於杜拜市中心，是目前世界最高建築之一。",
+      "conceptId": "fact:city:哈里法塔",
+      "questionType": "landmark-city",
+      "batchId": "supplement-batch7-009",
+      "sourceUrl": null,
+      "grades": [],
+      "landmark": "哈里法塔",
+      "landmarkDetail": "阿拉伯聯合大公國・哈里法塔"
+    },
+    {
+      "level": "洲際領隊",
+      "region": "亞洲",
+      "category": "世界遺產",
+      "q": "下龍灣石灰岩海灣景觀位於越南哪一座城市？",
+      "options": [
+        "下龍市",
+        "河內",
+        "胡志明市",
+        "順化"
+      ],
+      "answer": 0,
+      "fact": "下龍灣位於越南北部廣寧省的下龍市，以喀斯特海灣地貌聞名。",
+      "conceptId": "fact:city:下龍灣",
+      "questionType": "landmark-city",
+      "batchId": "supplement-batch7-010",
+      "sourceUrl": null,
+      "grades": [],
+      "landmark": "下龍灣",
+      "landmarkDetail": "越南・下龍"
+    },
+    {
+      "level": "洲際領隊",
+      "region": "旅行知識",
+      "category": "旅行知識",
+      "q": "在歐洲多國以鐵路自由行時，較常使用的票種概念是？",
+      "options": [
+        "鐵路通票或點對點車票",
+        "只搭國內公車",
+        "不需任何車票",
+        "僅能搭乘郵輪"
+      ],
+      "answer": 0,
+      "fact": "歐洲鐵路網密集，通票適合跨國移動，熱門路線也可預訂座位。",
+      "conceptId": "fact:travel:歐洲鐵路通票",
+      "questionType": "travel",
+      "batchId": "supplement-batch7-011",
+      "sourceUrl": null,
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ]
+    },
+    {
+      "level": "洲際領隊",
+      "region": "旅行知識",
+      "category": "旅行知識",
+      "q": "搭乘郵輪旅行，登船當天較建議的做法是？",
+      "options": [
+        "依規定時間提前抵達港口辦理登船",
+        "起飛前才趕到碼頭",
+        "不攜帶任何證件",
+        "拒絕安全演練"
+      ],
+      "answer": 0,
+      "fact": "郵輪登船需辦理護照查驗與行李托運，錯過關艙時間可能無法上船。",
+      "conceptId": "fact:travel:郵輪登船",
+      "questionType": "travel",
+      "batchId": "supplement-batch7-012",
+      "sourceUrl": null,
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ]
+    },
+    {
+      "level": "洲際領隊",
+      "region": "旅行知識",
+      "category": "旅行知識",
+      "q": "搭乘航空公司航班時，托運行李通常需要留意？",
+      "options": [
+        "各航空公司的重量與件數限制",
+        "行李可無限超重",
+        "所有物品都可托運",
+        "不需標示姓名"
+      ],
+      "answer": 0,
+      "fact": "超重行李可能需付費，廉航與長程航班規定差異大，出發前應查詢。",
+      "conceptId": "fact:travel:托運限重",
+      "questionType": "travel",
+      "batchId": "supplement-batch7-013",
+      "sourceUrl": null,
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ]
+    },
+    {
+      "level": "洲際領隊",
+      "region": "旅行知識",
+      "category": "旅行知識",
+      "q": "抵達國外機場辦理入境時，較應配合的事項是？",
+      "options": [
+        "誠實填寫入境申報資料",
+        "隱瞞攜帶物品",
+        "拒絕出示護照",
+        "擅自闖入管制區"
+      ],
+      "answer": 0,
+      "fact": "入境卡或電子申報常詢問停留目的、地址與攜帶物品，應據實填寫。",
+      "conceptId": "fact:travel:入境申報",
+      "questionType": "travel",
+      "batchId": "supplement-batch7-014",
+      "sourceUrl": null,
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ]
+    },
+    {
+      "level": "洲際領隊",
+      "region": "旅行知識",
+      "category": "旅行知識",
+      "q": "在機場免稅店購物後入境本國，較應留意？",
+      "options": [
+        "當地對酒類、香菸等免稅品的限量規定",
+        "可無限攜帶任何商品",
+        "不需保留購買憑證",
+        "所有食品都可任意帶入"
+      ],
+      "answer": 0,
+      "fact": "各國對入境免稅品有數量與金額上限，超量可能需補稅或遭沒收。",
+      "conceptId": "fact:travel:免稅限量",
+      "questionType": "travel",
+      "batchId": "supplement-batch7-015",
+      "sourceUrl": null,
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ]
+    },
+    {
+      "level": "洲際領隊",
+      "region": "旅行知識",
+      "category": "旅行知識",
+      "q": "在日本以高速鐵路連接東京與大阪等城市，主要交通工具是？",
+      "options": [
+        "新幹線",
+        "渡輪",
+        "沙漠駱駝",
+        "雪地摩托"
+      ],
+      "answer": 0,
+      "fact": "新幹線是日本高速鐵路系統，東海道新幹線連接東京、名古屋與大阪。",
+      "conceptId": "fact:travel:新幹線",
+      "questionType": "travel",
+      "batchId": "supplement-batch7-016",
+      "sourceUrl": null,
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ]
+    },
+    {
+      "level": "洲際領隊",
+      "region": "旅行知識",
+      "category": "旅行知識",
+      "q": "規劃旅行時，「旺季」通常意味著？",
+      "options": [
+        "人潮與價格較高，需提早預訂",
+        "所有景點完全免費",
+        "航班一定取消",
+        "不需任何預約"
+      ],
+      "answer": 0,
+      "fact": "寒暑假、國定假日與賞櫻賞楓季常是旺季，機票與住宿應提早規劃。",
+      "conceptId": "fact:travel:旅遊旺季",
+      "questionType": "travel",
+      "batchId": "supplement-batch7-017",
+      "sourceUrl": null,
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ]
+    },
+    {
+      "level": "洲際領隊",
+      "region": "旅行知識",
+      "category": "旅行知識",
+      "q": "出國旅行攜帶電子設備時，較應事先確認？",
+      "options": [
+        "目的地插座型式與電壓",
+        "只需帶一條延長線",
+        "所有國家插座都相同",
+        "不必攜帶充電器"
+      ],
+      "answer": 0,
+      "fact": "歐洲、英國、美國等插座規格不同，轉接頭與變壓器可避免充電困擾。",
+      "conceptId": "fact:travel:電源轉接頭",
+      "questionType": "travel",
+      "batchId": "supplement-batch7-018",
+      "sourceUrl": null,
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ]
+    },
+    {
+      "level": "洲際領隊",
+      "region": "旅行知識",
+      "category": "旅行知識",
+      "q": "搭乘需在中途國家轉機的航班時，出發前較應確認？",
+      "options": [
+        "是否需要過境或轉機簽證",
+        "轉機一定免簽",
+        "不需護照",
+        "行李一定直掛"
+      ],
+      "answer": 0,
+      "fact": "部分國家即使不下機過境也可能需要簽證，應查詢航空公司與使館規定。",
+      "conceptId": "fact:travel:轉機簽證",
+      "questionType": "travel",
+      "batchId": "supplement-batch7-019",
+      "sourceUrl": null,
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ]
+    },
+    {
+      "level": "洲際領隊",
+      "region": "旅行知識",
+      "category": "旅行知識",
+      "q": "馬六甲海峽是連接哪兩片海域的重要航道？",
+      "options": [
+        "南海與印度洋",
+        "地中海與紅海",
+        "北海與波羅的海",
+        "北冰洋與太平洋"
+      ],
+      "answer": 0,
+      "fact": "馬六甲海峽介於馬來半島與蘇門答臘之間，是全球最繁忙的海運通道之一。",
+      "conceptId": "fact:travel:馬六甲海峽",
+      "questionType": "travel",
+      "batchId": "supplement-batch7-020",
+      "sourceUrl": null,
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ]
+    },
+    {
+      "level": "國家達人",
+      "region": "歐洲",
+      "category": "世界地理",
+      "q": "挪威的首都是哪一座城市？",
+      "options": [
+        "奧斯陸",
+        "斯德哥爾摩",
+        "哥本哈根",
+        "雷克雅維克"
+      ],
+      "answer": 0,
+      "fact": "奧斯陸是挪威首都，位於奧斯陸峽灣頂端，是前往峽灣與北極光行程的常見起點。",
+      "conceptId": "fact:country:挪威",
+      "questionType": "capital",
+      "batchId": "supplement-batch8-001",
+      "sourceUrl": null,
+      "grades": []
+    },
+    {
+      "level": "國家達人",
+      "region": "歐洲",
+      "category": "世界地理",
+      "q": "芬蘭的首都是哪一座城市？",
+      "options": [
+        "赫爾辛基",
+        "塔林",
+        "里加",
+        "斯德哥爾摩"
+      ],
+      "answer": 0,
+      "fact": "赫爾辛基位於芬蘭南部海岸，以港灣、設計與桑拿文化聞名。",
+      "conceptId": "fact:country:芬蘭",
+      "questionType": "capital",
+      "batchId": "supplement-batch8-002",
+      "sourceUrl": null,
+      "grades": []
+    },
+    {
+      "level": "洲際領隊",
+      "region": "歐洲",
+      "category": "世界地理",
+      "q": "冰島的首都是哪一座城市？",
+      "options": [
+        "雷克雅維克",
+        "奧斯陸",
+        "都柏林",
+        "赫爾辛基"
+      ],
+      "answer": 0,
+      "fact": "雷克雅維克是世界最北的首都之一，是冰島藍湖與黃金圈行程的基地。",
+      "conceptId": "fact:country:冰島",
+      "questionType": "capital",
+      "batchId": "supplement-batch8-003",
+      "sourceUrl": null,
+      "grades": []
+    },
+    {
+      "level": "國家達人",
+      "region": "非洲",
+      "category": "世界地理",
+      "q": "摩洛哥的首都是哪一座城市？",
+      "options": [
+        "拉巴特",
+        "卡薩布蘭卡",
+        "馬拉喀什",
+        "非斯"
+      ],
+      "answer": 0,
+      "fact": "拉巴特是摩洛哥政治首都，卡薩布蘭卡與馬拉喀什則是重要商業與旅遊城市。",
+      "conceptId": "fact:country:摩洛哥",
+      "questionType": "capital",
+      "batchId": "supplement-batch8-004",
+      "sourceUrl": null,
+      "grades": []
+    },
+    {
+      "level": "洲際領隊",
+      "region": "非洲",
+      "category": "世界地理",
+      "q": "肯亞的首都是哪一座城市？",
+      "options": [
+        "奈洛比",
+        "開普敦",
+        "阿迪斯阿貝巴",
+        "達累斯薩拉姆"
+      ],
+      "answer": 0,
+      "fact": "奈洛比是肯亞首都，也是前往馬賽馬拉等野生動物Safari 的重要門戶。",
+      "conceptId": "fact:country:肯亞",
+      "questionType": "capital",
+      "batchId": "supplement-batch8-005",
+      "sourceUrl": null,
+      "grades": []
+    },
+    {
+      "level": "洲際領隊",
+      "region": "非洲",
+      "category": "世界地理",
+      "q": "坦尚尼亞的首都是哪一座城市？",
+      "options": [
+        "多多馬",
+        "奈洛比",
+        "坎帕拉",
+        "哈拉雷"
+      ],
+      "answer": 0,
+      "fact": "多多馬是坦尚尼亞法定首都，達累斯薩拉姆仍為主要經濟與港口城市。",
+      "conceptId": "fact:country:坦尚尼亞",
+      "questionType": "capital",
+      "batchId": "supplement-batch8-006",
+      "sourceUrl": null,
+      "grades": []
+    },
+    {
+      "level": "洲際領隊",
+      "region": "非洲",
+      "category": "世界地理",
+      "q": "迦納的首都是哪一座城市？",
+      "options": [
+        "阿克拉",
+        "拉各斯",
+        "達喀爾",
+        "阿布賈"
+      ],
+      "answer": 0,
+      "fact": "阿克拉位於幾內亞灣沿岸，是迦納首都與西非重要港口城市。",
+      "conceptId": "fact:country:迦納",
+      "questionType": "capital",
+      "batchId": "supplement-batch8-007",
+      "sourceUrl": null,
+      "grades": []
+    },
+    {
+      "level": "洲際領隊",
+      "region": "非洲",
+      "category": "世界地理",
+      "q": "衣索比亞的首都是哪一座城市？",
+      "options": [
+        "阿迪斯阿貝巴",
+        "奈洛比",
+        "開羅",
+        "喀土穆"
+      ],
+      "answer": 0,
+      "fact": "阿迪斯阿貝巴是非洲聯盟總部所在地，也是衣索比亞首都。",
+      "conceptId": "fact:country:衣索比亞",
+      "questionType": "capital",
+      "batchId": "supplement-batch8-008",
+      "sourceUrl": null,
+      "grades": []
+    },
+    {
+      "level": "國家達人",
+      "region": "歐洲",
+      "category": "世界地理",
+      "q": "葡萄牙的首都為何？",
+      "options": [
+        "里斯本",
+        "波爾圖",
+        "馬德里",
+        "巴塞隆納"
+      ],
+      "answer": 0,
+      "fact": "里斯本位於特茹河河口，是葡萄牙首都與大西洋航運歷史名城。",
+      "conceptId": "fact:country:葡萄牙",
+      "questionType": "reverse-capital",
+      "batchId": "supplement-batch8-009",
+      "sourceUrl": null,
+      "grades": []
+    },
+    {
+      "level": "國家達人",
+      "region": "歐洲",
+      "category": "世界地理",
+      "q": "愛爾蘭的首都為何？",
+      "options": [
+        "都柏林",
+        "貝爾法斯特",
+        "愛丁堡",
+        "倫敦"
+      ],
+      "answer": 0,
+      "fact": "都柏林位於愛爾蘭東岸，以文學、啤酒文化與海岸景觀聞名。",
+      "conceptId": "fact:country:愛爾蘭",
+      "questionType": "reverse-capital",
+      "batchId": "supplement-batch8-010",
+      "sourceUrl": null,
+      "grades": []
+    },
+    {
+      "level": "洲際領隊",
+      "region": "歐洲",
+      "category": "世界遺產",
+      "q": "紅場與克里姆林宮位於哪一座城市？",
+      "options": [
+        "莫斯科",
+        "聖彼得堡",
+        "基輔",
+        "明斯克"
+      ],
+      "answer": 0,
+      "fact": "紅場是莫斯科市中心著名廣場，毗鄰克里姆林宮與聖瓦西里大教堂。",
+      "conceptId": "fact:city:紅場",
+      "questionType": "landmark-city",
+      "batchId": "supplement-batch8-011",
+      "sourceUrl": null,
+      "grades": [],
+      "landmark": "紅場",
+      "landmarkDetail": "歐洲・紅場"
+    },
+    {
+      "level": "洲際領隊",
+      "region": "亞洲",
+      "category": "世界遺產",
+      "q": "聖索菲亞大教堂位於土耳其哪一座城市？",
+      "options": [
+        "伊斯坦堡",
+        "安卡拉",
+        "伊茲密爾",
+        "安塔亞"
+      ],
+      "answer": 0,
+      "fact": "聖索菲亞大教堂位於伊斯坦堡老城，歷史上曾是拜占庭與鄂圖曼重要宗教建築。",
+      "conceptId": "fact:city:聖索菲亞大教堂",
+      "questionType": "landmark-city",
+      "batchId": "supplement-batch8-012",
+      "sourceUrl": null,
+      "grades": [],
+      "landmark": "聖索菲亞大教堂",
+      "landmarkDetail": "土耳其・聖索菲亞大教堂"
+    },
+    {
+      "level": "洲際領隊",
+      "region": "非洲",
+      "category": "世界遺產",
+      "q": "南非著名的桌山景觀位於哪一座城市？",
+      "options": [
+        "開普敦",
+        "約翰尼斯堡",
+        "奈洛比",
+        "開羅"
+      ],
+      "answer": 0,
+      "fact": "桌山俯瞰開普敦與桌灣，是南非最具代表性的自然與城市景觀之一。",
+      "conceptId": "fact:city:桌山",
+      "questionType": "landmark-city",
+      "batchId": "supplement-batch8-013",
+      "sourceUrl": null,
+      "grades": [],
+      "landmark": "桌山",
+      "landmarkDetail": "非洲・桌山"
+    },
+    {
+      "level": "國家達人",
+      "region": "非洲",
+      "category": "世界遺產",
+      "q": "埃及最具代表性的金字塔群位於哪一座城市？",
+      "options": [
+        "吉薩",
+        "亞歷山大",
+        "路克索",
+        "阿斯旺"
+      ],
+      "answer": 0,
+      "fact": "吉薩金字塔群位於開羅近郊的吉薩高原，包含胡夫金字塔等古埃及遺跡。",
+      "conceptId": "fact:city:吉薩金字塔群",
+      "questionType": "landmark-city",
+      "batchId": "supplement-batch8-014",
+      "sourceUrl": null,
+      "grades": [],
+      "landmark": "吉薩金字塔群",
+      "landmarkDetail": "非洲・吉薩金字塔群"
+    },
+    {
+      "level": "洲際領隊",
+      "region": "歐洲",
+      "category": "世界遺產",
+      "q": "英國巨石陣遺址位於哪一座城市附近？",
+      "options": [
+        "索爾茲伯里",
+        "倫敦",
+        "曼徹斯特",
+        "愛丁堡"
+      ],
+      "answer": 0,
+      "fact": "巨石陣位於英格蘭威爾特郡，距索爾茲伯里約十餘公里。",
+      "conceptId": "fact:city:巨石陣",
+      "questionType": "landmark-city",
+      "batchId": "supplement-batch8-015",
+      "sourceUrl": null,
+      "grades": [],
+      "landmark": "巨石陣",
+      "landmarkDetail": "歐洲・巨石陣"
+    },
+    {
+      "level": "洲際領隊",
+      "region": "歐洲",
+      "category": "世界遺產",
+      "q": "義大利著名的水上都會古城位於哪一座城市？",
+      "options": [
+        "威尼斯",
+        "米蘭",
+        "佛羅倫斯",
+        "那不勒斯"
+      ],
+      "answer": 0,
+      "fact": "威尼斯建於亞得里亞海潟湖島嶼上，以運河、剛朵拉與聖馬可廣場聞名。",
+      "conceptId": "fact:city:威尼斯古城",
+      "questionType": "landmark-city",
+      "batchId": "supplement-batch8-016",
+      "sourceUrl": null,
+      "grades": [],
+      "landmark": "威尼斯古城",
+      "landmarkDetail": "歐洲・威尼斯古城"
+    },
+    {
+      "level": "國家達人",
+      "region": "歐洲",
+      "category": "世界遺產",
+      "q": "芬蘭首都的標誌性白教堂位於哪一座城市？",
+      "options": [
+        "赫爾辛基",
+        "坦佩雷",
+        "圖爾庫",
+        "羅瓦涅米"
+      ],
+      "answer": 0,
+      "fact": "赫爾辛基大教堂矗立在議會廣場旁，是芬蘭首都最具辨識度的建築之一。",
+      "conceptId": "fact:city:赫爾辛基大教堂",
+      "questionType": "landmark-city",
+      "batchId": "supplement-batch8-017",
+      "sourceUrl": null,
+      "grades": [],
+      "landmark": "赫爾辛基大教堂",
+      "landmarkDetail": "歐洲・赫爾辛基大教堂"
+    },
+    {
+      "level": "洲際領隊",
+      "region": "非洲",
+      "category": "世界遺產",
+      "q": "摩洛哥庫圖比亞清真寺位於哪一座城市？",
+      "options": [
+        "馬拉喀什",
+        "拉巴特",
+        "卡薩布蘭卡",
+        "非斯"
+      ],
+      "answer": 0,
+      "fact": "庫圖比亞清真寺位於馬拉喀什老城，其宣禮塔是城市天際線標誌。",
+      "conceptId": "fact:city:庫圖比亞清真寺",
+      "questionType": "landmark-city",
+      "batchId": "supplement-batch8-018",
+      "sourceUrl": null,
+      "grades": [],
+      "landmark": "庫圖比亞清真寺",
+      "landmarkDetail": "非洲・庫圖比亞清真寺"
+    },
+    {
+      "level": "環球旅行家",
+      "region": "非洲",
+      "category": "世界遺產",
+      "q": "辛巴威境內的維多利亞瀑布景區位於哪一座城市？",
+      "options": [
+        "維多利亞瀑布城",
+        "哈拉雷",
+        "盧薩卡",
+        "利文斯頓"
+      ],
+      "answer": 0,
+      "fact": "維多利亞瀑布橫跨辛巴威與尚比亞，辛巴威側的主要觀光基地為維多利亞瀑布城。",
+      "conceptId": "fact:city:維多利亞瀑布",
+      "questionType": "landmark-city",
+      "batchId": "supplement-batch8-019",
+      "sourceUrl": null,
+      "grades": [],
+      "landmark": "維多利亞瀑布",
+      "landmarkDetail": "非洲・維多利亞瀑布"
+    },
+    {
+      "level": "環球旅行家",
+      "region": "非洲",
+      "category": "世界遺產",
+      "q": "前往坦尚尼亞塞倫蓋蒂國家公園 Safari，常用的門戶城市是哪一座？",
+      "options": [
+        "阿魯沙",
+        "多多馬",
+        "桑給巴爾",
+        "達累斯薩拉姆"
+      ],
+      "answer": 0,
+      "fact": "阿魯沙位於坦尚尼亞北部，是前往塞倫蓋蒂與恩戈羅恩戈羅火山口的重要起點。",
+      "conceptId": "fact:city:塞倫蓋蒂國家公園",
+      "questionType": "landmark-city",
+      "batchId": "supplement-batch8-020",
+      "sourceUrl": null,
+      "grades": [],
+      "landmark": "塞倫蓋蒂國家公園",
+      "landmarkDetail": "坦尚尼亞・阿魯沙"
+    },
+    {
+      "level": "國家達人",
+      "region": "亞洲",
+      "category": "世界地理",
+      "q": "柬埔寨的首都是哪一座城市？",
+      "options": [
+        "金邊",
+        "暹粒",
+        "河內",
+        "曼谷"
+      ],
+      "answer": 0,
+      "fact": "金邊是柬埔寨首都，暹粒則是前往吳哥窟的重要旅遊城市。",
+      "conceptId": "fact:country:柬埔寨",
+      "questionType": "capital",
+      "batchId": "supplement-batch9-001",
+      "sourceUrl": null,
+      "grades": []
+    },
+    {
+      "level": "國家達人",
+      "region": "亞洲",
+      "category": "世界地理",
+      "q": "寮國的首都是哪一座城市？",
+      "options": [
+        "永珍",
+        "琅勃拉邦",
+        "曼谷",
+        "金邊"
+      ],
+      "answer": 0,
+      "fact": "永珍位於湄公河畔，是寮國首都與政治中心。",
+      "conceptId": "fact:country:寮國",
+      "questionType": "capital",
+      "batchId": "supplement-batch9-002",
+      "sourceUrl": null,
+      "grades": []
+    },
+    {
+      "level": "洲際領隊",
+      "region": "亞洲",
+      "category": "世界地理",
+      "q": "尼泊爾的首都是哪一座城市？",
+      "options": [
+        "加德滿都",
+        "新德里",
+        "達卡",
+        "廷布"
+      ],
+      "answer": 0,
+      "fact": "加德滿都谷地是尼泊爾首都，也是喜馬拉雅登山與徒步旅行的重要基地。",
+      "conceptId": "fact:country:尼泊爾",
+      "questionType": "capital",
+      "batchId": "supplement-batch9-003",
+      "sourceUrl": null,
+      "grades": []
+    },
+    {
+      "level": "洲際領隊",
+      "region": "亞洲",
+      "category": "世界地理",
+      "q": "蒙古的首都是哪一座城市？",
+      "options": [
+        "烏蘭巴托",
+        "北京",
+        "阿斯塔納",
+        "平壤"
+      ],
+      "answer": 0,
+      "fact": "烏蘭巴托位於蒙古高原，是該國首都與最大城市。",
+      "conceptId": "fact:country:蒙古",
+      "questionType": "capital",
+      "batchId": "supplement-batch9-004",
+      "sourceUrl": null,
+      "grades": []
+    },
+    {
+      "level": "國家達人",
+      "region": "亞洲",
+      "category": "世界地理",
+      "q": "越南的首都是哪一座城市？",
+      "options": [
+        "河內",
+        "胡志明市",
+        "峴港",
+        "金邊"
+      ],
+      "answer": 0,
+      "fact": "河內是越南首都，胡志明市則是南部最大商業城市。",
+      "conceptId": "fact:country:越南",
+      "questionType": "capital",
+      "batchId": "supplement-batch9-005",
+      "sourceUrl": null,
+      "grades": []
+    },
+    {
+      "level": "洲際領隊",
+      "region": "南美洲",
+      "category": "世界地理",
+      "q": "秘魯的首都是哪一座城市？",
+      "options": [
+        "利馬",
+        "庫斯科",
+        "波哥大",
+        "基多"
+      ],
+      "answer": 0,
+      "fact": "利馬位於太平洋沿岸，是秘魯首都與最大城市。",
+      "conceptId": "fact:country:秘魯",
+      "questionType": "capital",
+      "batchId": "supplement-batch9-006",
+      "sourceUrl": null,
+      "grades": []
+    },
+    {
+      "level": "洲際領隊",
+      "region": "南美洲",
+      "category": "世界地理",
+      "q": "智利的首都是哪一座城市？",
+      "options": [
+        "聖地亞哥",
+        "利馬",
+        "布宜諾斯艾利斯",
+        "蒙得維的亞"
+      ],
+      "answer": 0,
+      "fact": "聖地亞哥位於智利中央山谷，是該國首都與經濟中心。",
+      "conceptId": "fact:country:智利",
+      "questionType": "capital",
+      "batchId": "supplement-batch9-007",
+      "sourceUrl": null,
+      "grades": []
+    },
+    {
+      "level": "國家達人",
+      "region": "南美洲",
+      "category": "世界地理",
+      "q": "阿根廷的首都是哪一座城市？",
+      "options": [
+        "布宜諾斯艾利斯",
+        "聖保羅",
+        "利馬",
+        "波哥大"
+      ],
+      "answer": 0,
+      "fact": "布宜諾斯艾利斯位於拉普拉塔河口，是阿根廷首都與最大城市。",
+      "conceptId": "fact:country:阿根廷",
+      "questionType": "capital",
+      "batchId": "supplement-batch9-008",
+      "sourceUrl": null,
+      "grades": []
+    },
+    {
+      "level": "國家達人",
+      "region": "大洋洲",
+      "category": "世界地理",
+      "q": "紐西蘭的首都為何？",
+      "options": [
+        "威靈頓",
+        "奧克蘭",
+        "基督城",
+        "雪梨"
+      ],
+      "answer": 0,
+      "fact": "威靈頓位於北島南端，是紐西蘭首都；奧克蘭則是最大城市。",
+      "conceptId": "fact:country:紐西蘭",
+      "questionType": "reverse-capital",
+      "batchId": "supplement-batch9-009",
+      "sourceUrl": null,
+      "grades": []
+    },
+    {
+      "level": "國家達人",
+      "region": "大洋洲",
+      "category": "世界地理",
+      "q": "澳洲的首都為何？",
+      "options": [
+        "坎培拉",
+        "雪梨",
+        "墨爾本",
+        "布里斯本"
+      ],
+      "answer": 0,
+      "fact": "坎培拉是澳洲首都，雪梨與墨爾本則是人口最多的兩大城市。",
+      "conceptId": "fact:country:澳洲",
+      "questionType": "reverse-capital",
+      "batchId": "supplement-batch9-010",
+      "sourceUrl": null,
+      "grades": []
+    },
+    {
+      "level": "環球旅行家",
+      "region": "南美洲",
+      "category": "世界遺產",
+      "q": "巴西側的伊瓜蘇瀑布國家公園位於哪一座城市？",
+      "options": [
+        "福斯-伊瓜蘇",
+        "里約熱內盧",
+        "聖保羅",
+        "薩爾瓦多"
+      ],
+      "answer": 0,
+      "fact": "福斯-伊瓜蘇位於巴西巴拉那州，是觀賞伊瓜蘇瀑布的主要基地。",
+      "conceptId": "fact:city:伊瓜蘇瀑布",
+      "questionType": "landmark-city",
+      "batchId": "supplement-batch9-011",
+      "sourceUrl": null,
+      "grades": [],
+      "landmark": "伊瓜蘇瀑布",
+      "landmarkDetail": "南美洲・伊瓜蘇瀑布"
+    },
+    {
+      "level": "洲際領隊",
+      "region": "亞洲",
+      "category": "世界遺產",
+      "q": "印尼婆羅浮屠佛塔位於哪一座城市附近？",
+      "options": [
+        "日惹",
+        "雅加達",
+        "泗水",
+        "峇里島"
+      ],
+      "answer": 0,
+      "fact": "婆羅浮屠位於爪哇島中部，距日惹約四十公里。",
+      "conceptId": "fact:city:婆羅浮屠",
+      "questionType": "landmark-city",
+      "batchId": "supplement-batch9-012",
+      "sourceUrl": null,
+      "grades": [],
+      "landmark": "婆羅浮屠",
+      "landmarkDetail": "亞洲・婆羅浮屠"
+    },
+    {
+      "level": "洲際領隊",
+      "region": "歐洲",
+      "category": "世界遺產",
+      "q": "高第建造的聖家堂位於西班牙哪一座城市？",
+      "options": [
+        "巴塞隆納",
+        "馬德里",
+        "塞維亞",
+        "瓦倫西亞"
+      ],
+      "answer": 0,
+      "fact": "聖家堂位於巴塞隆納市區，是加泰隆尼亞最具代表性的建築之一。",
+      "conceptId": "fact:city:聖家堂",
+      "questionType": "landmark-city",
+      "batchId": "supplement-batch9-013",
+      "sourceUrl": null,
+      "grades": [],
+      "landmark": "聖家堂",
+      "landmarkDetail": "西班牙・聖家堂"
+    },
+    {
+      "level": "洲際領隊",
+      "region": "北美洲",
+      "category": "世界遺產",
+      "q": "墨西哥中部的太陽金字塔遺址位於哪一座城市附近？",
+      "options": [
+        "特奧蒂瓦坎",
+        "坎昆",
+        "瓜達拉哈拉",
+        "蒙特雷"
+      ],
+      "answer": 0,
+      "fact": "特奧蒂瓦坎遺址位於墨西哥城東北方，以太陽金字塔與月亮金字塔聞名。",
+      "conceptId": "fact:city:太陽金字塔",
+      "questionType": "landmark-city",
+      "batchId": "supplement-batch9-014",
+      "sourceUrl": null,
+      "grades": [],
+      "landmark": "太陽金字塔",
+      "landmarkDetail": "北美洲・太陽金字塔"
+    },
+    {
+      "level": "環球旅行家",
+      "region": "南美洲",
+      "category": "世界遺產",
+      "q": "印加古城馬丘比丘的常用登山門戶是哪一座城市？",
+      "options": [
+        "庫斯科",
+        "利馬",
+        "阿雷基帕",
+        "普諾"
+      ],
+      "answer": 0,
+      "fact": "庫斯科曾是印加帝國首都，現為前往馬丘比丘鐵路與徒步路線的起點。",
+      "conceptId": "fact:city:馬丘比丘",
+      "questionType": "landmark-city",
+      "batchId": "supplement-batch9-015",
+      "sourceUrl": null,
+      "grades": [],
+      "landmark": "馬丘比丘",
+      "landmarkDetail": "南美洲・馬丘比丘"
+    },
+    {
+      "level": "洲際領隊",
+      "region": "亞洲",
+      "category": "世界遺產",
+      "q": "泰姬瑪哈陵位於印度哪一座城市？",
+      "options": [
+        "阿格拉",
+        "新德里",
+        "孟買",
+        "加爾各答"
+      ],
+      "answer": 0,
+      "fact": "泰姬瑪哈陵位於北方邦阿格拉，是蒙兀兒王朝最著名的陵墓建築。",
+      "conceptId": "fact:city:泰姬瑪哈陵",
+      "questionType": "landmark-city",
+      "batchId": "supplement-batch9-016",
+      "sourceUrl": null,
+      "grades": [],
+      "landmark": "泰姬瑪哈陵",
+      "landmarkDetail": "印度・泰姬瑪哈陵"
+    },
+    {
+      "level": "國家達人",
+      "region": "亞洲",
+      "category": "世界遺產",
+      "q": "樂山大佛位於中國哪一座城市？",
+      "options": [
+        "樂山",
+        "成都",
+        "重慶",
+        "昆明"
+      ],
+      "answer": 0,
+      "fact": "樂山大佛位於四川省樂山市岷江、青衣江與大渡河交匯處。",
+      "conceptId": "fact:city:樂山大佛",
+      "questionType": "landmark-city",
+      "batchId": "supplement-batch9-017",
+      "sourceUrl": null,
+      "grades": [],
+      "landmark": "樂山大佛",
+      "landmarkDetail": "中國・樂山大佛"
+    },
+    {
+      "level": "洲際領隊",
+      "region": "北美洲",
+      "category": "世界遺產",
+      "q": "古巴被列入世界遺產的殖民時期老城區位於哪一座城市？",
+      "options": [
+        "哈瓦那",
+        "聖地亞哥",
+        "坎昆",
+        "聖荷西"
+      ],
+      "answer": 0,
+      "fact": "哈瓦那舊城保留殖民時期建築與要塞，是加勒比海重要歷史港城。",
+      "conceptId": "fact:city:哈瓦那舊城",
+      "questionType": "landmark-city",
+      "batchId": "supplement-batch9-018",
+      "sourceUrl": null,
+      "grades": [],
+      "landmark": "哈瓦那舊城",
+      "landmarkDetail": "北美洲・哈瓦那舊城"
+    },
+    {
+      "level": "洲際領隊",
+      "region": "南美洲",
+      "category": "世界遺產",
+      "q": "阿根廷五月廣場與玫瑰宮位於哪一座城市？",
+      "options": [
+        "布宜諾斯艾利斯",
+        "利馬",
+        "聖地亞哥",
+        "波哥大"
+      ],
+      "answer": 0,
+      "fact": "五月廣場是布宜諾斯艾利斯市中心歷史核心，玫瑰宮為總統府所在地。",
+      "conceptId": "fact:city:五月廣場",
+      "questionType": "landmark-city",
+      "batchId": "supplement-batch9-019",
+      "sourceUrl": null,
+      "grades": [],
+      "landmark": "五月廣場",
+      "landmarkDetail": "南美洲・五月廣場"
+    },
+    {
+      "level": "環球旅行家",
+      "region": "南美洲",
+      "category": "世界遺產",
+      "q": "厄瓜多加拉帕戈斯群島的主要門戶城市是哪一座城市？",
+      "options": [
+        "基多",
+        "瓜亞基爾",
+        "利馬",
+        "波哥大"
+      ],
+      "answer": 0,
+      "fact": "旅客通常經厄瓜多海岸城市瓜亞基爾轉機，再飛往加拉帕戈斯群島。",
+      "conceptId": "fact:city:加拉帕戈斯群島",
+      "questionType": "landmark-city",
+      "batchId": "supplement-batch9-020",
+      "sourceUrl": null,
+      "grades": [],
+      "landmark": "加拉帕戈斯群島",
+      "landmarkDetail": "南美洲・加拉帕戈斯群島"
+    },
+    {
+      "level": "洲際領隊",
+      "region": "南美洲",
+      "category": "世界地理",
+      "q": "哥倫比亞的首都是哪一座城市？",
+      "options": [
+        "波哥大",
+        "麥德林",
+        "卡塔赫納",
+        "基多"
+      ],
+      "answer": 0,
+      "fact": "波哥大位於安第斯山高原，是哥倫比亞首都與最大城市。",
+      "conceptId": "fact:country:哥倫比亞",
+      "questionType": "capital",
+      "batchId": "supplement-batch10-001",
+      "sourceUrl": null,
+      "grades": []
+    },
+    {
+      "level": "洲際領隊",
+      "region": "南美洲",
+      "category": "世界地理",
+      "q": "厄瓜多的首都是哪一座城市？",
+      "options": [
+        "基多",
+        "瓜亞基爾",
+        "利馬",
+        "波哥大"
+      ],
+      "answer": 0,
+      "fact": "基多位於赤道附近高地，是厄瓜多首都，以殖民老城聞名。",
+      "conceptId": "fact:country:厄瓜多",
+      "questionType": "capital",
+      "batchId": "supplement-batch10-002",
+      "sourceUrl": null,
+      "grades": []
+    },
+    {
+      "level": "洲際領隊",
+      "region": "南美洲",
+      "category": "世界地理",
+      "q": "烏拉圭的首都是哪一座城市？",
+      "options": [
+        "蒙得維的亞",
+        "布宜諾斯艾利斯",
+        "聖保羅",
+        "亞松森"
+      ],
+      "answer": 0,
+      "fact": "蒙得維的亞位於拉普拉塔河口北岸，是烏拉圭首都與最大港口。",
+      "conceptId": "fact:country:烏拉圭",
+      "questionType": "capital",
+      "batchId": "supplement-batch10-003",
+      "sourceUrl": null,
+      "grades": []
+    },
+    {
+      "level": "洲際領隊",
+      "region": "北美洲",
+      "category": "世界地理",
+      "q": "古巴的首都是哪一座城市？",
+      "options": [
+        "哈瓦那",
+        "聖地亞哥",
+        "坎昆",
+        "京斯敦"
+      ],
+      "answer": 0,
+      "fact": "哈瓦那是古巴首都與最大城市，舊城區為世界遺產。",
+      "conceptId": "fact:country:古巴",
+      "questionType": "capital",
+      "batchId": "supplement-batch10-004",
+      "sourceUrl": null,
+      "grades": []
+    },
+    {
+      "level": "洲際領隊",
+      "region": "亞洲",
+      "category": "世界地理",
+      "q": "緬甸的首都是哪一座城市？",
+      "options": [
+        "奈比多",
+        "仰光",
+        "曼谷",
+        "河內"
+      ],
+      "answer": 0,
+      "fact": "奈比多是緬甸首都，仰光仍為最大商業城市與主要港口。",
+      "conceptId": "fact:country:緬甸",
+      "questionType": "capital",
+      "batchId": "supplement-batch10-005",
+      "sourceUrl": null,
+      "grades": []
+    },
+    {
+      "level": "洲際領隊",
+      "region": "亞洲",
+      "category": "世界地理",
+      "q": "汶萊的首都是哪一座城市？",
+      "options": [
+        "斯里巴加灣市",
+        "吉隆坡",
+        "雅加達",
+        "馬尼拉"
+      ],
+      "answer": 0,
+      "fact": "斯里巴加灣市是汶萊首都，位於婆羅洲北岸。",
+      "conceptId": "fact:country:汶萊",
+      "questionType": "capital",
+      "batchId": "supplement-batch10-006",
+      "sourceUrl": null,
+      "grades": []
+    },
+    {
+      "level": "環球旅行家",
+      "region": "亞洲",
+      "category": "世界地理",
+      "q": "哈薩克的首都為何？",
+      "options": [
+        "阿斯塔納",
+        "阿拉木圖",
+        "塔什干",
+        "比什凱克"
+      ],
+      "answer": 0,
+      "fact": "阿斯塔納是哈薩克首都，阿拉木圖則是前首都與最大城市。",
+      "conceptId": "fact:country:哈薩克",
+      "questionType": "reverse-capital",
+      "batchId": "supplement-batch10-007",
+      "sourceUrl": null,
+      "grades": []
+    },
+    {
+      "level": "環球旅行家",
+      "region": "亞洲",
+      "category": "世界地理",
+      "q": "烏茲別克的首都為何？",
+      "options": [
+        "塔什干",
+        "撒馬爾罕",
+        "布哈拉",
+        "杜尚別"
+      ],
+      "answer": 0,
+      "fact": "塔什干是烏茲別克首都，撒馬爾罕與布哈拉則是絲路古城重鎮。",
+      "conceptId": "fact:country:烏茲別克",
+      "questionType": "reverse-capital",
+      "batchId": "supplement-batch10-008",
+      "sourceUrl": null,
+      "grades": []
+    },
+    {
+      "level": "洲際領隊",
+      "region": "亞洲",
+      "category": "世界遺產",
+      "q": "以石英砂岩峰林聞名的武陵源景區位於中國哪一座城市？",
+      "options": [
+        "張家界",
+        "長沙",
+        "桂林",
+        "黃山"
+      ],
+      "answer": 0,
+      "fact": "張家界以石英砂岩峰林地貌聞名，是武陵源世界自然遺產核心區。",
+      "conceptId": "fact:city:張家界國家森林公園",
+      "questionType": "landmark-city",
+      "batchId": "supplement-batch10-009",
+      "sourceUrl": null,
+      "grades": [],
+      "landmark": "張家界國家森林公園",
+      "landmarkDetail": "中國・張家界國家森林公園"
+    },
+    {
+      "level": "洲際領隊",
+      "region": "亞洲",
+      "category": "世界遺產",
+      "q": "雲南納西族文化古城位於中國哪一座城市？",
+      "options": [
+        "麗江",
+        "大理",
+        "昆明",
+        "香格里拉"
+      ],
+      "answer": 0,
+      "fact": "麗江古城位於雲南省，以納西族文化與四方街聞名。",
+      "conceptId": "fact:city:麗江古城",
+      "questionType": "landmark-city",
+      "batchId": "supplement-batch10-010",
+      "sourceUrl": null,
+      "grades": [],
+      "landmark": "麗江古城",
+      "landmarkDetail": "中國・麗江古城"
+    },
+    {
+      "level": "洲際領隊",
+      "region": "亞洲",
+      "category": "世界遺產",
+      "q": "海上鳥居的嚴島神社位於日本哪一座城市？",
+      "options": [
+        "廣島",
+        "京都",
+        "奈良",
+        "札幌"
+      ],
+      "answer": 0,
+      "fact": "嚴島神社位於廣島縣的宮島，以海中大鳥居聞名。",
+      "conceptId": "fact:city:嚴島神社",
+      "questionType": "landmark-city",
+      "batchId": "supplement-batch10-011",
+      "sourceUrl": null,
+      "grades": [],
+      "landmark": "嚴島神社",
+      "landmarkDetail": "日本・嚴島神社"
+    },
+    {
+      "level": "國家達人",
+      "region": "亞洲",
+      "category": "世界遺產",
+      "q": "韓國景福宮位於哪一座城市？",
+      "options": [
+        "首爾",
+        "釜山",
+        "大邱",
+        "仁川"
+      ],
+      "answer": 0,
+      "fact": "景福宮是朝鮮王朝正宮，位於首爾市中心。",
+      "conceptId": "fact:city:景福宮",
+      "questionType": "landmark-city",
+      "batchId": "supplement-batch10-012",
+      "sourceUrl": null,
+      "grades": [],
+      "landmark": "景福宮",
+      "landmarkDetail": "亞洲・景福宮"
+    },
+    {
+      "level": "洲際領隊",
+      "region": "亞洲",
+      "category": "世界遺產",
+      "q": "濱海灣金沙酒店位於哪一座城市？",
+      "options": [
+        "新加坡",
+        "吉隆坡",
+        "曼谷",
+        "雅加達"
+      ],
+      "answer": 0,
+      "fact": "濱海灣金沙位於新加坡市中心濱海灣，以空中花園與無邊際泳池聞名。",
+      "conceptId": "fact:city:濱海灣金沙",
+      "questionType": "landmark-city",
+      "batchId": "supplement-batch10-013",
+      "sourceUrl": null,
+      "grades": [],
+      "landmark": "濱海灣金沙",
+      "landmarkDetail": "亞洲・濱海灣金沙"
+    },
+    {
+      "level": "環球旅行家",
+      "region": "亞洲",
+      "category": "世界遺產",
+      "q": "玫瑰色岩雕古城佩特拉位於約旦哪一座城市附近？",
+      "options": [
+        "瓦迪穆薩",
+        "安曼",
+        "耶路撒冷",
+        "開羅"
+      ],
+      "answer": 0,
+      "fact": "佩特拉古城入口鄰近瓦迪穆薩鎮，是約旦最重要的考古旅遊景點。",
+      "conceptId": "fact:city:佩特拉古城",
+      "questionType": "landmark-city",
+      "batchId": "supplement-batch10-014",
+      "sourceUrl": null,
+      "grades": [],
+      "landmark": "佩特拉古城",
+      "landmarkDetail": "約旦・佩特拉古城"
+    },
+    {
+      "level": "洲際領隊",
+      "region": "北美洲",
+      "category": "世界遺產",
+      "q": "加拿大側觀賞尼加拉瀑布的主要觀光城市是哪一座城市？",
+      "options": [
+        "尼加拉瀑布城",
+        "多倫多",
+        "渥太華",
+        "蒙特婁"
+      ],
+      "answer": 0,
+      "fact": "尼加拉瀑布城位於安大略省，與美國側瀑布景區隔河相望。",
+      "conceptId": "fact:city:尼加拉瀑布",
+      "questionType": "landmark-city",
+      "batchId": "supplement-batch10-015",
+      "sourceUrl": null,
+      "grades": [],
+      "landmark": "尼加拉瀑布",
+      "landmarkDetail": "北美洲・尼加拉瀑布"
+    },
+    {
+      "level": "洲際領隊",
+      "region": "旅行知識",
+      "category": "旅行知識",
+      "q": "出國旅行需要當地貨幣時，較穩健的做法是？",
+      "options": [
+        "比較銀行與合法換匯點的匯率與手續費",
+        "向陌生人街邊換匯",
+        "只帶大量外幣現金不申報",
+        "拒絕任何收據"
+      ],
+      "answer": 0,
+      "fact": "合法管道換匯較有保障，街邊黑市可能涉及假鈔或詐騙風險。",
+      "conceptId": "fact:travel:外幣兌換",
+      "questionType": "travel",
+      "batchId": "supplement-batch10-016",
+      "sourceUrl": null,
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ]
+    },
+    {
+      "level": "洲際領隊",
+      "region": "旅行知識",
+      "category": "旅行知識",
+      "q": "計畫在海外自行租車旅行時，通常需要準備？",
+      "options": [
+        "本國駕照與符合規定的國際駕照或翻譯件",
+        "不需任何證件",
+        "僅護照影本",
+        "他人駕照"
+      ],
+      "answer": 0,
+      "fact": "各國對租車證件要求不同，出發前應確認目的地與租車公司規定。",
+      "conceptId": "fact:travel:國際駕照",
+      "questionType": "travel",
+      "batchId": "supplement-batch10-017",
+      "sourceUrl": null,
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ]
+    },
+    {
+      "level": "洲際領隊",
+      "region": "旅行知識",
+      "category": "旅行知識",
+      "q": "搭乘廉價航空時，較容易產生額外費用的是？",
+      "options": [
+        "超過規定的手提或托運行李",
+        "準時登機",
+        "線上劃位",
+        "列印登機證"
+      ],
+      "answer": 0,
+      "fact": "廉航票價常不含行李，超重或加購座位都可能增加成本。",
+      "conceptId": "fact:travel:廉航手提行李",
+      "questionType": "travel",
+      "batchId": "supplement-batch10-018",
+      "sourceUrl": null,
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ]
+    },
+    {
+      "level": "洲際領隊",
+      "region": "旅行知識",
+      "category": "旅行知識",
+      "q": "入住海外旅館或民宿時，較常需要配合的事項是？",
+      "options": [
+        "出示護照並完成入住登記",
+        "不需任何身分證明",
+        "拒絕填寫任何資料",
+        "由他人代為冒名入住"
+      ],
+      "answer": 0,
+      "fact": "許多國家要求旅宿登記旅客身分，以便治安與稅務管理。",
+      "conceptId": "fact:travel:旅館登記",
+      "questionType": "travel",
+      "batchId": "supplement-batch10-019",
+      "sourceUrl": null,
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ]
+    },
+    {
+      "level": "洲際領隊",
+      "region": "旅行知識",
+      "category": "旅行知識",
+      "q": "參加團體旅行時，準時到達集合地點的主要原因是？",
+      "options": [
+        "避免耽誤全團行程與交通班次",
+        "可以故意讓大家等待",
+        "與行程無關",
+        "領隊會無限延後出發"
+      ],
+      "answer": 0,
+      "fact": "團體行程常預訂巴士、餐廳與景點時段，遲到可能影響後續安排。",
+      "conceptId": "fact:travel:團體集合",
+      "questionType": "travel",
+      "batchId": "supplement-batch10-020",
+      "sourceUrl": null,
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ]
+    },
+    {
+      "level": "洲際領隊",
+      "region": "亞洲",
+      "category": "世界地理",
+      "q": "約旦的首都是哪一座城市？",
+      "options": [
+        "安曼",
+        "耶路撒冷",
+        "開羅",
+        "貝魯特"
+      ],
+      "answer": 0,
+      "fact": "安曼是約旦首都，也是前往佩特拉古城與死海的重要門戶。",
+      "conceptId": "fact:country:約旦",
+      "questionType": "capital",
+      "batchId": "supplement-batch11-001",
+      "sourceUrl": null,
+      "grades": []
+    },
+    {
+      "level": "洲際領隊",
+      "region": "亞洲",
+      "category": "世界地理",
+      "q": "卡達的首都是哪一座城市？",
+      "options": [
+        "多哈",
+        "杜拜",
+        "阿布達比",
+        "利雅德"
+      ],
+      "answer": 0,
+      "fact": "多哈是卡達首都，瀕臨波斯灣，以現代建築與伊斯蘭藝術博物館聞名。",
+      "conceptId": "fact:country:卡達",
+      "questionType": "capital",
+      "batchId": "supplement-batch11-002",
+      "sourceUrl": null,
+      "grades": []
+    },
+    {
+      "level": "國家達人",
+      "region": "亞洲",
+      "category": "世界地理",
+      "q": "阿拉伯聯合大公國的首都是哪一座城市？",
+      "options": [
+        "阿布達比",
+        "杜拜",
+        "多哈",
+        "麥納麥"
+      ],
+      "answer": 0,
+      "fact": "阿布達比是阿聯酋首都，杜拜則是著名商業與旅遊城市。",
+      "conceptId": "fact:country:阿拉伯聯合大公國",
+      "questionType": "capital",
+      "batchId": "supplement-batch11-003",
+      "sourceUrl": null,
+      "grades": []
+    },
+    {
+      "level": "環球旅行家",
+      "region": "亞洲",
+      "category": "世界地理",
+      "q": "喬治亞的首都是哪一座城市？",
+      "options": [
+        "第比利斯",
+        "巴庫",
+        "葉里溫",
+        "安卡拉"
+      ],
+      "answer": 0,
+      "fact": "第比利斯位於高加索地區，是喬治亞首都與絲路古城之一。",
+      "conceptId": "fact:country:喬治亞",
+      "questionType": "capital",
+      "batchId": "supplement-batch11-004",
+      "sourceUrl": null,
+      "grades": []
+    },
+    {
+      "level": "環球旅行家",
+      "region": "亞洲",
+      "category": "世界地理",
+      "q": "亞美尼亞的首都是哪一座城市？",
+      "options": [
+        "葉里溫",
+        "第比利斯",
+        "巴庫",
+        "德黑蘭"
+      ],
+      "answer": 0,
+      "fact": "葉里溫位於亞美尼亞高原，是該國首都與文化中心。",
+      "conceptId": "fact:country:亞美尼亞",
+      "questionType": "capital",
+      "batchId": "supplement-batch11-005",
+      "sourceUrl": null,
+      "grades": []
+    },
+    {
+      "level": "環球旅行家",
+      "region": "亞洲",
+      "category": "世界地理",
+      "q": "亞塞拜然的首都為何？",
+      "options": [
+        "巴庫",
+        "第比利斯",
+        "塔什干",
+        "德黑蘭"
+      ],
+      "answer": 0,
+      "fact": "巴庫位於里海西岸，是亞塞拜然首都與石油歷史名城。",
+      "conceptId": "fact:country:亞塞拜然",
+      "questionType": "reverse-capital",
+      "batchId": "supplement-batch11-006",
+      "sourceUrl": null,
+      "grades": []
+    },
+    {
+      "level": "洲際領隊",
+      "region": "亞洲",
+      "category": "世界遺產",
+      "q": "猶太教重要聖地哭牆位於哪一座城市？",
+      "options": [
+        "耶路撒冷",
+        "安曼",
+        "開羅",
+        "大馬士革"
+      ],
+      "answer": 0,
+      "fact": "哭牆是猶太教重要聖地，位於耶路撒冷舊城聖殿山遺址旁。",
+      "conceptId": "fact:city:哭牆",
+      "questionType": "landmark-city",
+      "batchId": "supplement-batch11-007",
+      "sourceUrl": null,
+      "grades": [],
+      "landmark": "哭牆",
+      "landmarkDetail": "亞洲・哭牆"
+    },
+    {
+      "level": "環球旅行家",
+      "region": "亞洲",
+      "category": "世界遺產",
+      "q": "伊朗伊瑪目清真寺位於哪一座城市？",
+      "options": [
+        "伊斯法罕",
+        "德黑蘭",
+        "設拉子",
+        "大不里士"
+      ],
+      "answer": 0,
+      "fact": "伊瑪目清真寺位於伊斯法罕伊瑪目廣場，是波斯建築藝術代表作。",
+      "conceptId": "fact:city:伊瑪目清真寺",
+      "questionType": "landmark-city",
+      "batchId": "supplement-batch11-008",
+      "sourceUrl": null,
+      "grades": [],
+      "landmark": "伊瑪目清真寺",
+      "landmarkDetail": "亞洲・伊瑪目清真寺"
+    },
+    {
+      "level": "環球旅行家",
+      "region": "亞洲",
+      "category": "世界遺產",
+      "q": "烏茲別克著名的雷吉斯坦廣場位於哪一座城市？",
+      "options": [
+        "撒馬爾罕",
+        "布哈拉",
+        "塔什干",
+        "希瓦"
+      ],
+      "answer": 0,
+      "fact": "雷吉斯坦廣場位於撒馬爾罕，是絲路沿線著名的伊斯蘭建築群。",
+      "conceptId": "fact:city:雷吉斯坦廣場",
+      "questionType": "landmark-city",
+      "batchId": "supplement-batch11-009",
+      "sourceUrl": null,
+      "grades": [],
+      "landmark": "雷吉斯坦廣場",
+      "landmarkDetail": "亞洲・雷吉斯坦廣場"
+    },
+    {
+      "level": "洲際領隊",
+      "region": "亞洲",
+      "category": "世界遺產",
+      "q": "卡達伊斯蘭藝術博物館位於哪一座城市？",
+      "options": [
+        "多哈",
+        "杜拜",
+        "阿布達比",
+        "麥加"
+      ],
+      "answer": 0,
+      "fact": "博物館位於多哈濱海灣，展示伊斯蘭世界藝術與文物。",
+      "conceptId": "fact:city:伊斯蘭藝術博物館",
+      "questionType": "landmark-city",
+      "batchId": "supplement-batch11-010",
+      "sourceUrl": null,
+      "grades": [],
+      "landmark": "伊斯蘭藝術博物館",
+      "landmarkDetail": "亞洲・伊斯蘭藝術博物館"
+    },
+    {
+      "level": "洲際領隊",
+      "region": "亞洲",
+      "category": "世界遺產",
+      "q": "巴基斯坦拉合爾城堡位於哪一座城市？",
+      "options": [
+        "拉合爾",
+        "伊斯蘭堡",
+        "卡拉奇",
+        "新德里"
+      ],
+      "answer": 0,
+      "fact": "拉合爾城堡是蒙兀兒帝國時期堡壘，位於巴基斯坦旁遮普省。",
+      "conceptId": "fact:city:拉合爾城堡",
+      "questionType": "landmark-city",
+      "batchId": "supplement-batch11-011",
+      "sourceUrl": null,
+      "grades": [],
+      "landmark": "拉合爾城堡",
+      "landmarkDetail": "亞洲・拉合爾城堡"
+    },
+    {
+      "level": "洲際領隊",
+      "region": "亞洲",
+      "category": "世界遺產",
+      "q": "緬甸最著名的佛教大金塔位於哪一座城市？",
+      "options": [
+        "仰光",
+        "奈比多",
+        "曼德勒",
+        "曼谷"
+      ],
+      "answer": 0,
+      "fact": "大金塔位於仰光，是緬甸最重要的佛教聖地之一。",
+      "conceptId": "fact:city:大金塔",
+      "questionType": "landmark-city",
+      "batchId": "supplement-batch11-012",
+      "sourceUrl": null,
+      "grades": [],
+      "landmark": "大金塔",
+      "landmarkDetail": "亞洲・大金塔"
+    },
+    {
+      "level": "環球旅行家",
+      "region": "亞洲",
+      "category": "世界遺產",
+      "q": "斯里蘭卡獅子岩古堡位於哪一座城市附近？",
+      "options": [
+        "錫吉里耶",
+        "可倫坡",
+        "康提",
+        "加勒"
+      ],
+      "answer": 0,
+      "fact": "獅子岩位於斯里蘭卡中部錫吉里耶，是古代宮殿與要塞遺跡。",
+      "conceptId": "fact:city:獅子岩",
+      "questionType": "landmark-city",
+      "batchId": "supplement-batch11-013",
+      "sourceUrl": null,
+      "grades": [],
+      "landmark": "獅子岩",
+      "landmarkDetail": "亞洲・獅子岩"
+    },
+    {
+      "level": "洲際領隊",
+      "region": "非洲",
+      "category": "世界遺產",
+      "q": "突尼斯迦太基古城遺址位於哪一座城市附近？",
+      "options": [
+        "突尼斯市",
+        "阿爾及爾",
+        "開羅",
+        "卡薩布蘭卡"
+      ],
+      "answer": 0,
+      "fact": "迦太基古城位於突尼斯首都突尼斯市北方，瀕臨地中海。",
+      "conceptId": "fact:city:迦太基古城",
+      "questionType": "landmark-city",
+      "batchId": "supplement-batch11-014",
+      "sourceUrl": null,
+      "grades": [],
+      "landmark": "迦太基古城",
+      "landmarkDetail": "非洲・迦太基古城"
+    },
+    {
+      "level": "洲際領隊",
+      "region": "歐洲",
+      "category": "世界遺產",
+      "q": "希臘衛城與帕德嫩神廟位於哪一座城市？",
+      "options": [
+        "雅典",
+        "羅馬",
+        "伊斯坦堡",
+        "索菲亞"
+      ],
+      "answer": 0,
+      "fact": "雅典衛城位於希臘首都雅典市中心的高地上。",
+      "conceptId": "fact:city:雅典衛城",
+      "questionType": "landmark-city",
+      "batchId": "supplement-batch11-015",
+      "sourceUrl": null,
+      "grades": [],
+      "landmark": "雅典衛城",
+      "landmarkDetail": "歐洲・雅典衛城"
+    },
+    {
+      "level": "洲際領隊",
+      "region": "世界地理",
+      "category": "世界地理",
+      "q": "波斯灣主要位於哪一個地理區域？",
+      "options": [
+        "中東",
+        "北歐",
+        "加勒比",
+        "南極"
+      ],
+      "answer": 0,
+      "fact": "波斯灣介於伊朗與阿拉伯半島之間，是重要石油航運通道。",
+      "conceptId": "fact:geo:波斯灣",
+      "questionType": "world-fact",
+      "batchId": "supplement-batch11-016",
+      "sourceUrl": null,
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ]
+    },
+    {
+      "level": "洲際領隊",
+      "region": "世界地理",
+      "category": "世界地理",
+      "q": "紅海透過蘇伊士運河可連接哪一片海域？",
+      "options": [
+        "地中海",
+        "印度洋",
+        "北冰洋",
+        "波羅的海"
+      ],
+      "answer": 0,
+      "fact": "紅海位於非洲與阿拉伯半島之間，經蘇伊士運河與地中海相通。",
+      "conceptId": "fact:geo:紅海",
+      "questionType": "world-fact",
+      "batchId": "supplement-batch11-017",
+      "sourceUrl": null,
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ]
+    },
+    {
+      "level": "洲際領隊",
+      "region": "世界地理",
+      "category": "世界地理",
+      "q": "黑海主要位於哪一個地理區域？",
+      "options": [
+        "東歐與西亞交界",
+        "南美洲",
+        "大洋洲",
+        "北極圈內"
+      ],
+      "answer": 0,
+      "fact": "黑海被土耳其、保加利亞、烏克蘭、俄羅斯等多國環繞。",
+      "conceptId": "fact:geo:黑海",
+      "questionType": "world-fact",
+      "batchId": "supplement-batch11-018",
+      "sourceUrl": null,
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ]
+    },
+    {
+      "level": "環球旅行家",
+      "region": "世界地理",
+      "category": "世界地理",
+      "q": "帕米爾高原被稱為「世界屋脊」的延伸，主要位於哪一個區域？",
+      "options": [
+        "中亞",
+        "西歐",
+        "撒哈拉",
+        "安第斯"
+      ],
+      "answer": 0,
+      "fact": "帕米爾高原橫跨塔吉克、阿富汗、中國新疆等地，是亞洲多條山脈交會處。",
+      "conceptId": "fact:geo:帕米爾高原",
+      "questionType": "world-fact",
+      "batchId": "supplement-batch11-019",
+      "sourceUrl": null,
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ]
+    },
+    {
+      "level": "洲際領隊",
+      "region": "世界地理",
+      "category": "世界地理",
+      "q": "博斯普魯斯海峽連接黑海與哪一片海域？",
+      "options": [
+        "馬爾馬拉海",
+        "紅海",
+        "裡海",
+        "阿拉伯海"
+      ],
+      "answer": 0,
+      "fact": "博斯普魯斯海峽穿過伊斯坦堡，是黑海通往地中海航線的關鍵水道。",
+      "conceptId": "fact:geo:博斯普魯斯海峽",
+      "questionType": "world-fact",
+      "batchId": "supplement-batch11-020",
+      "sourceUrl": null,
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ]
+    },
+    {
+      "level": "洲際領隊",
+      "region": "世界地理",
+      "category": "世界地理",
+      "q": "亞馬遜河主要流經哪一個大洲？",
+      "options": [
+        "南美洲",
+        "非洲",
+        "亞洲",
+        "北美洲"
+      ],
+      "answer": 0,
+      "fact": "亞馬遜河流域擁有世界最大的熱帶雨林，橫跨巴西等多國。",
+      "conceptId": "fact:geo:亞馬遜河",
+      "questionType": "world-fact",
+      "batchId": "supplement-batch12-001",
+      "sourceUrl": null,
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ]
+    },
+    {
+      "level": "洲際領隊",
+      "region": "世界地理",
+      "category": "世界地理",
+      "q": "長江最終注入哪一片海域？",
+      "options": [
+        "東海",
+        "南海",
+        "渤海",
+        "日本海"
+      ],
+      "answer": 0,
+      "fact": "長江是中國第一長河，在上海附近注入東海。",
+      "conceptId": "fact:geo:長江",
+      "questionType": "world-fact",
+      "batchId": "supplement-batch12-002",
+      "sourceUrl": null,
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ]
+    },
+    {
+      "level": "洲際領隊",
+      "region": "世界地理",
+      "category": "世界地理",
+      "q": "黃河因含沙量高被稱為「中華民族的搖籃」，它注入哪一片海域？",
+      "options": [
+        "渤海",
+        "黃海",
+        "東海",
+        "南海"
+      ],
+      "answer": 0,
+      "fact": "黃河流經北方平原，在山東省注入渤海。",
+      "conceptId": "fact:geo:黃河",
+      "questionType": "world-fact",
+      "batchId": "supplement-batch12-003",
+      "sourceUrl": null,
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ]
+    },
+    {
+      "level": "洲際領隊",
+      "region": "世界地理",
+      "category": "世界地理",
+      "q": "喜馬拉雅山脈最高峰珠穆朗瑪峰位於哪一個地理區域？",
+      "options": [
+        "南亞與中亞交界",
+        "西歐",
+        "北極圈",
+        "加勒比"
+      ],
+      "answer": 0,
+      "fact": "喜馬拉雅山脈橫跨尼泊爾、中國西藏、印度、不丹等國。",
+      "conceptId": "fact:geo:喜馬拉雅山脈",
+      "questionType": "world-fact",
+      "batchId": "supplement-batch12-004",
+      "sourceUrl": null,
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ]
+    },
+    {
+      "level": "洲際領隊",
+      "region": "世界地理",
+      "category": "世界地理",
+      "q": "青藏高原被稱為「世界屋脊」，主要位於哪一個國家境內？",
+      "options": [
+        "中國",
+        "印度",
+        "俄羅斯",
+        "蒙古"
+      ],
+      "answer": 0,
+      "fact": "青藏高原平均海拔高，是長江、黃河、湄公河等多條大河的發源地。",
+      "conceptId": "fact:geo:青藏高原",
+      "questionType": "world-fact",
+      "batchId": "supplement-batch12-005",
+      "sourceUrl": null,
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ]
+    },
+    {
+      "level": "洲際領隊",
+      "region": "世界地理",
+      "category": "世界地理",
+      "q": "印度河主要流經哪一個地理區域？",
+      "options": [
+        "南亞",
+        "東南亞",
+        "中東",
+        "北歐"
+      ],
+      "answer": 0,
+      "fact": "印度河流經巴基斯坦平原，是南亞重要農業灌溉水源。",
+      "conceptId": "fact:geo:印度河",
+      "questionType": "world-fact",
+      "batchId": "supplement-batch12-006",
+      "sourceUrl": null,
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ]
+    },
+    {
+      "level": "洲際領隊",
+      "region": "世界地理",
+      "category": "世界地理",
+      "q": "阿拉伯海位於印度半島與哪一側之間？",
+      "options": [
+        "阿拉伯半島",
+        "非洲南端",
+        "澳洲",
+        "日本列島"
+      ],
+      "answer": 0,
+      "fact": "阿拉伯海連接印度洋，是波斯灣與印度洋之間的重要海域。",
+      "conceptId": "fact:geo:阿拉伯海",
+      "questionType": "world-fact",
+      "batchId": "supplement-batch12-007",
+      "sourceUrl": null,
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ]
+    },
+    {
+      "level": "洲際領隊",
+      "region": "世界地理",
+      "category": "世界地理",
+      "q": "孟加拉灣位於印度半島東側，屬於哪一個大洋？",
+      "options": [
+        "印度洋",
+        "太平洋",
+        "大西洋",
+        "北冰洋"
+      ],
+      "answer": 0,
+      "fact": "孟加拉灣沿岸受季風影響，恒河與布拉馬普特拉河在此匯合入海。",
+      "conceptId": "fact:geo:孟加拉灣",
+      "questionType": "world-fact",
+      "batchId": "supplement-batch12-008",
+      "sourceUrl": null,
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ]
+    },
+    {
+      "level": "洲際領隊",
+      "region": "世界地理",
+      "category": "世界地理",
+      "q": "北海位於大不列顛島與哪一個半島之間？",
+      "options": [
+        "斯堪地那維亞半島",
+        "伊比利半島",
+        "巴爾幹半島",
+        "義大利半島"
+      ],
+      "answer": 0,
+      "fact": "北海連接英國、挪威、丹麥、德國等國海岸，石油與航運資源豐富。",
+      "conceptId": "fact:geo:北海",
+      "questionType": "world-fact",
+      "batchId": "supplement-batch12-009",
+      "sourceUrl": null,
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ]
+    },
+    {
+      "level": "環球旅行家",
+      "region": "世界地理",
+      "category": "世界地理",
+      "q": "白令海峽分隔哪兩個大洲？",
+      "options": [
+        "亞洲與北美洲",
+        "歐洲與非洲",
+        "南美洲與非洲",
+        "大洋洲與南極洲"
+      ],
+      "answer": 0,
+      "fact": "白令海峽最窄處約 85 公里，是亞洲與北美洲的傳統分界之一。",
+      "conceptId": "fact:geo:白令海峽",
+      "questionType": "world-fact",
+      "batchId": "supplement-batch12-010",
+      "sourceUrl": null,
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ]
+    },
+    {
+      "level": "環球旅行家",
+      "region": "世界地理",
+      "category": "世界地理",
+      "q": "德雷克海峽位於南美洲南端與哪一個大洲之間？",
+      "options": [
+        "南極洲",
+        "非洲",
+        "澳洲",
+        "歐洲"
+      ],
+      "answer": 0,
+      "fact": "德雷克海峽是前往南極洲的重要航道，風浪強勁。",
+      "conceptId": "fact:geo:德雷克海峽",
+      "questionType": "world-fact",
+      "batchId": "supplement-batch12-011",
+      "sourceUrl": null,
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ]
+    },
+    {
+      "level": "洲際領隊",
+      "region": "世界地理",
+      "category": "世界地理",
+      "q": "烏拉山脈常被視為哪兩個大洲的分界？",
+      "options": [
+        "歐洲與亞洲",
+        "非洲與歐洲",
+        "亞洲與北美洲",
+        "南美洲與北美洲"
+      ],
+      "answer": 0,
+      "fact": "烏拉山脈橫貫俄羅斯西部，是歐亞分界線的重要參考。",
+      "conceptId": "fact:geo:烏拉山脈",
+      "questionType": "world-fact",
+      "batchId": "supplement-batch12-012",
+      "sourceUrl": null,
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ]
+    },
+    {
+      "level": "洲際領隊",
+      "region": "世界地理",
+      "category": "世界地理",
+      "q": "戈壁沙漠主要分布在哪一個地理區域？",
+      "options": [
+        "蒙古與中國北部",
+        "撒哈拉",
+        "澳洲內陸",
+        "南美洲西岸"
+      ],
+      "answer": 0,
+      "fact": "戈壁是亞洲冷沙漠，橫跨蒙古與中國內蒙古、甘肅等地。",
+      "conceptId": "fact:geo:戈壁沙漠",
+      "questionType": "world-fact",
+      "batchId": "supplement-batch12-013",
+      "sourceUrl": null,
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ]
+    },
+    {
+      "level": "環球旅行家",
+      "region": "世界地理",
+      "category": "世界地理",
+      "q": "塔克拉馬干沙漠位於中國哪一個自治區？",
+      "options": [
+        "新疆",
+        "西藏",
+        "內蒙古",
+        "青海"
+      ],
+      "answer": 0,
+      "fact": "塔克拉馬干是中國最大沙漠，位於塔里木盆地，古絲路橫穿其北緣。",
+      "conceptId": "fact:geo:塔克拉馬干沙漠",
+      "questionType": "world-fact",
+      "batchId": "supplement-batch12-014",
+      "sourceUrl": null,
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ]
+    },
+    {
+      "level": "洲際領隊",
+      "region": "世界地理",
+      "category": "世界地理",
+      "q": "喀拉哈里沙漠主要位於哪一個大洲？",
+      "options": [
+        "非洲",
+        "亞洲",
+        "南美洲",
+        "大洋洲"
+      ],
+      "answer": 0,
+      "fact": "喀拉哈里沙漠橫跨波札那、納米比亞與南非部分地區。",
+      "conceptId": "fact:geo:喀拉哈里沙漠",
+      "questionType": "world-fact",
+      "batchId": "supplement-batch12-015",
+      "sourceUrl": null,
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ]
+    },
+    {
+      "level": "洲際領隊",
+      "region": "世界地理",
+      "category": "世界地理",
+      "q": "洛磯山脈主要位於北美哪一個國家？",
+      "options": [
+        "美國與加拿大",
+        "墨西哥",
+        "古巴",
+        "巴西"
+      ],
+      "answer": 0,
+      "fact": "洛磯山脈縱貫北美西部，是重要國家公園與滑雪旅遊區。",
+      "conceptId": "fact:geo:洛磯山脈",
+      "questionType": "world-fact",
+      "batchId": "supplement-batch12-016",
+      "sourceUrl": null,
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ]
+    },
+    {
+      "level": "洲際領隊",
+      "region": "世界地理",
+      "category": "世界地理",
+      "q": "多瑙河被稱為歐洲第二大河，它最終注入哪一片海域？",
+      "options": [
+        "黑海",
+        "地中海",
+        "北海",
+        "波羅的海"
+      ],
+      "answer": 0,
+      "fact": "多瑙河流經維也納、布達佩斯、貝爾格勒等城市，在羅馬尼亞注入黑海。",
+      "conceptId": "fact:geo:多瑙河",
+      "questionType": "world-fact",
+      "batchId": "supplement-batch12-017",
+      "sourceUrl": null,
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ]
+    },
+    {
+      "level": "環球旅行家",
+      "region": "世界地理",
+      "category": "世界地理",
+      "q": "非洲最高峰乞力馬扎羅山位於哪一個國家？",
+      "options": [
+        "坦尚尼亞",
+        "肯亞",
+        "埃及",
+        "南非"
+      ],
+      "answer": 0,
+      "fact": "乞力馬扎羅山是休眠火山，位於坦尚尼亞東北部，山頂終年積雪。",
+      "conceptId": "fact:geo:乞力馬扎羅山",
+      "questionType": "world-fact",
+      "batchId": "supplement-batch12-018",
+      "sourceUrl": null,
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ]
+    },
+    {
+      "level": "洲際領隊",
+      "region": "世界地理",
+      "category": "世界地理",
+      "q": "澳洲東部的大分水嶺對河流流向的主要影響是？",
+      "options": [
+        "東側河流注入太平洋",
+        "所有河流注入印度洋",
+        "河流不流向海洋",
+        "河流全部注入內陸湖"
+      ],
+      "answer": 0,
+      "fact": "大分水嶺是澳洲東部重要山系，東坡短河注入太平洋，西坡河流較長。",
+      "conceptId": "fact:geo:大分水嶺",
+      "questionType": "world-fact",
+      "batchId": "supplement-batch12-019",
+      "sourceUrl": null,
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ]
+    },
+    {
+      "level": "洲際領隊",
+      "region": "世界地理",
+      "category": "世界地理",
+      "q": "台灣海峽位於台灣島與哪一側之間？",
+      "options": [
+        "中國大陸東南沿海",
+        "日本本島",
+        "菲律賓呂宋島",
+        "朝鮮半島"
+      ],
+      "answer": 0,
+      "fact": "台灣海峽是連接東海與南海的重要水道，最窄處約 130 公里。",
+      "conceptId": "fact:geo:台灣海峽",
+      "questionType": "world-fact",
+      "batchId": "supplement-batch12-020",
+      "sourceUrl": null,
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ]
+    },
+    {
+      "level": "洲際領隊",
+      "region": "世界地理",
+      "category": "世界地理",
+      "q": "赤道附近終年高溫多雨，植被茂密，這屬於哪一種氣候類型？",
+      "options": [
+        "熱帶雨林氣候",
+        "地中海氣候",
+        "寒帶氣候",
+        "溫帶沙漠氣候"
+      ],
+      "answer": 0,
+      "fact": "熱帶雨林氣候常見於亞馬遜、剛果盆地與東南亞部分地區。",
+      "conceptId": "fact:geo:熱帶雨林氣候",
+      "questionType": "world-fact",
+      "batchId": "supplement-batch13-001",
+      "sourceUrl": null,
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ]
+    },
+    {
+      "level": "洲際領隊",
+      "region": "世界地理",
+      "category": "世界地理",
+      "q": "受海洋影響，冬季較溫和、降水較均勻，西歐常見的氣候類型是？",
+      "options": [
+        "溫帶海洋性氣候",
+        "熱帶沙漠氣候",
+        "副極地氣候",
+        "高原氣候"
+      ],
+      "answer": 0,
+      "fact": "英國、法國西北部等地多屬溫帶海洋性氣候，適合全年旅遊但需防雨。",
+      "conceptId": "fact:geo:溫帶海洋性氣候",
+      "questionType": "world-fact",
+      "batchId": "supplement-batch13-002",
+      "sourceUrl": null,
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ]
+    },
+    {
+      "level": "洲際領隊",
+      "region": "世界地理",
+      "category": "世界地理",
+      "q": "冬夏溫差大、降水較集中，內陸大陸常見的氣候類型是？",
+      "options": [
+        "溫帶大陸性氣候",
+        "熱帶雨林氣候",
+        "地中海氣候",
+        "赤道氣候"
+      ],
+      "answer": 0,
+      "fact": "溫帶大陸性氣候常見於北美與亞洲內陸，旅行需準備四季衣物。",
+      "conceptId": "fact:geo:溫帶大陸性氣候",
+      "questionType": "world-fact",
+      "batchId": "supplement-batch13-003",
+      "sourceUrl": null,
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ]
+    },
+    {
+      "level": "洲際領隊",
+      "region": "世界地理",
+      "category": "世界地理",
+      "q": "北極圈附近冬季嚴寒、夏季短暫，主要屬於哪一種氣候帶？",
+      "options": [
+        "寒帶氣候",
+        "熱帶氣候",
+        "地中海氣候",
+        "季風氣候"
+      ],
+      "answer": 0,
+      "fact": "寒帶地區如北歐北部、西伯利亞與加拿大北部，極光與冰雪活動興盛。",
+      "conceptId": "fact:geo:寒帶氣候",
+      "questionType": "world-fact",
+      "batchId": "supplement-batch13-004",
+      "sourceUrl": null,
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ]
+    },
+    {
+      "level": "環球旅行家",
+      "region": "世界地理",
+      "category": "世界地理",
+      "q": "副熱帶高壓帶控制下，空氣下沉、降水少，較容易形成哪種環境？",
+      "options": [
+        "沙漠或乾燥區",
+        "終年暴雨雨林",
+        "永久冰原",
+        "深海海溝"
+      ],
+      "answer": 0,
+      "fact": "撒哈拉沙漠與澳洲內陸部分乾燥氣候與副熱帶高壓有關。",
+      "conceptId": "fact:geo:副熱帶高壓",
+      "questionType": "world-fact",
+      "batchId": "supplement-batch13-005",
+      "sourceUrl": null,
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ]
+    },
+    {
+      "level": "洲際領隊",
+      "region": "世界地理",
+      "category": "世界地理",
+      "q": "海拔升高導致氣溫下降，青藏高原屬於哪一種氣候特徵？",
+      "options": [
+        "高原氣候",
+        "熱帶海洋氣候",
+        "副極地氣候",
+        "沙漠氣候"
+      ],
+      "answer": 0,
+      "fact": "高原氣候日夜溫差大，前往高海拔地區需注意保暖與高原反應。",
+      "conceptId": "fact:geo:高原氣候",
+      "questionType": "world-fact",
+      "batchId": "supplement-batch13-006",
+      "sourceUrl": null,
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ]
+    },
+    {
+      "level": "環球旅行家",
+      "region": "世界地理",
+      "category": "世界地理",
+      "q": "墨西哥灣流屬於哪一類洋流？",
+      "options": [
+        "北大西洋暖流",
+        "南極寒流",
+        "赤道逆流",
+        "地中海鹽度流"
+      ],
+      "answer": 0,
+      "fact": "墨西哥灣流將熱帶暖水向北輸送，影響西歐沿海氣候較為溫和。",
+      "conceptId": "fact:geo:墨西哥灣流",
+      "questionType": "world-fact",
+      "batchId": "supplement-batch13-007",
+      "sourceUrl": null,
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ]
+    },
+    {
+      "level": "洲際領隊",
+      "region": "世界地理",
+      "category": "世界地理",
+      "q": "黑潮（日本暖流）主要影響哪一個地區的海岸氣候？",
+      "options": [
+        "日本東岸",
+        "巴西西岸",
+        "挪威西岸",
+        "非洲西岸"
+      ],
+      "answer": 0,
+      "fact": "黑潮源自熱帶太平洋，使日本東岸冬季較同緯度地區溫暖。",
+      "conceptId": "fact:geo:黑潮",
+      "questionType": "world-fact",
+      "batchId": "supplement-batch13-008",
+      "sourceUrl": null,
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ]
+    },
+    {
+      "level": "環球旅行家",
+      "region": "世界地理",
+      "category": "世界地理",
+      "q": "秘魯寒流（洪堡洋流）主要影響哪一側海岸？",
+      "options": [
+        "南美洲西岸",
+        "歐洲西岸",
+        "非洲東岸",
+        "澳洲東岸"
+      ],
+      "answer": 0,
+      "fact": "秘魯寒流帶來豐富營養鹽，支持秘魯沿海漁業，也使沿岸氣候較涼燥。",
+      "conceptId": "fact:geo:秘魯寒流",
+      "questionType": "world-fact",
+      "batchId": "supplement-batch13-009",
+      "sourceUrl": null,
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ]
+    },
+    {
+      "level": "環球旅行家",
+      "region": "世界地理",
+      "category": "世界地理",
+      "q": "本格拉寒流主要流經哪一個大洲的西岸？",
+      "options": [
+        "非洲",
+        "南美洲",
+        "北美洲",
+        "歐洲"
+      ],
+      "answer": 0,
+      "fact": "本格拉寒流沿非洲西南海岸向北，影響納米比亞與安哥拉沿海氣候。",
+      "conceptId": "fact:geo:本格拉寒流",
+      "questionType": "world-fact",
+      "batchId": "supplement-batch13-010",
+      "sourceUrl": null,
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ]
+    },
+    {
+      "level": "洲際領隊",
+      "region": "世界地理",
+      "category": "世界地理",
+      "q": "全球約多數活火山與強震分布在哪一條地質帶？",
+      "options": [
+        "環太平洋火山帶",
+        "赤道雨林帶",
+        "北極苔原帶",
+        "撒哈拉沙漠帶"
+      ],
+      "answer": 0,
+      "fact": "日本、印尼、智利、美國西岸等地皆位於環太平洋火山帶，旅行需留意地質風險。",
+      "conceptId": "fact:geo:環太平洋火山帶",
+      "questionType": "world-fact",
+      "batchId": "supplement-batch13-011",
+      "sourceUrl": null,
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ]
+    },
+    {
+      "level": "環球旅行家",
+      "region": "世界地理",
+      "category": "世界地理",
+      "q": "歐洲最高活火山埃特納位於哪一個國家？",
+      "options": [
+        "義大利",
+        "冰島",
+        "希臘",
+        "土耳其"
+      ],
+      "answer": 0,
+      "fact": "埃特納火山位於西西里島，是地中海地區著名的活火山景觀。",
+      "conceptId": "fact:geo:埃特納火山",
+      "questionType": "world-fact",
+      "batchId": "supplement-batch13-012",
+      "sourceUrl": null,
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ]
+    },
+    {
+      "level": "洲際領隊",
+      "region": "世界地理",
+      "category": "世界地理",
+      "q": "公元 79 年掩埋龐貝古城的維蘇威火山位於哪一個國家？",
+      "options": [
+        "義大利",
+        "西班牙",
+        "土耳其",
+        "希臘"
+      ],
+      "answer": 0,
+      "fact": "維蘇威火山位於那不勒斯灣附近，龐貝遺址是重要考古旅遊景點。",
+      "conceptId": "fact:geo:維蘇威火山",
+      "questionType": "world-fact",
+      "batchId": "supplement-batch13-013",
+      "sourceUrl": null,
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ]
+    },
+    {
+      "level": "環球旅行家",
+      "region": "世界地理",
+      "category": "世界地理",
+      "q": "美國黃石國家公園的地熱景觀（如老忠實間歇泉）與哪種地質活動有關？",
+      "options": [
+        "火山與地熱活動",
+        "珊瑚礁生長",
+        "冰川刨蝕",
+        "風成沙丘"
+      ],
+      "answer": 0,
+      "fact": "黃石座落於超級火山地質區，間歇泉與溫泉是地熱活動的表現。",
+      "conceptId": "fact:geo:黃石火山",
+      "questionType": "world-fact",
+      "batchId": "supplement-batch13-014",
+      "sourceUrl": null,
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ]
+    },
+    {
+      "level": "洲際領隊",
+      "region": "世界地理",
+      "category": "世界地理",
+      "q": "萊茵河最終注入哪一片海域？",
+      "options": [
+        "北海",
+        "地中海",
+        "黑海",
+        "波羅的海"
+      ],
+      "answer": 0,
+      "fact": "萊茵河流經瑞士、德國、荷蘭等地，是歐洲重要航運與觀光河流。",
+      "conceptId": "fact:geo:萊茵河",
+      "questionType": "world-fact",
+      "batchId": "supplement-batch13-015",
+      "sourceUrl": null,
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ]
+    },
+    {
+      "level": "環球旅行家",
+      "region": "世界地理",
+      "category": "世界地理",
+      "q": "育空河主要流經哪一個地理區域？",
+      "options": [
+        "阿拉斯加與加拿大西北部",
+        "撒哈拉沙漠",
+        "南極洲",
+        "加勒比海島"
+      ],
+      "answer": 0,
+      "fact": "育空河是北美重要河流，河谷風光與極地探險旅遊知名。",
+      "conceptId": "fact:geo:育空河",
+      "questionType": "world-fact",
+      "batchId": "supplement-batch13-016",
+      "sourceUrl": null,
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ]
+    },
+    {
+      "level": "洲際領隊",
+      "region": "世界地理",
+      "category": "世界地理",
+      "q": "日本最大的淡水湖是？",
+      "options": [
+        "琵琶湖",
+        "富士五湖",
+        "洞爺湖",
+        "支笏湖"
+      ],
+      "answer": 0,
+      "fact": "琵琶湖位於滋賀縣，為近畿地區重要水源，周邊有許多歷史古城。",
+      "conceptId": "fact:geo:琵琶湖",
+      "questionType": "world-fact",
+      "batchId": "supplement-batch13-017",
+      "sourceUrl": null,
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ]
+    },
+    {
+      "level": "洲際領隊",
+      "region": "世界地理",
+      "category": "世界地理",
+      "q": "科羅拉多大峽谷主要由哪條河流長期侵蝕形成？",
+      "options": [
+        "科羅拉多河",
+        "密西西比河",
+        "育空河",
+        "哥倫比亞河"
+      ],
+      "answer": 0,
+      "fact": "科羅拉多大峽谷位於美國亞利桑那州，是世界著名的河谷地貌景觀。",
+      "conceptId": "fact:geo:科羅拉多大峽谷",
+      "questionType": "world-fact",
+      "batchId": "supplement-batch13-018",
+      "sourceUrl": null,
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ]
+    },
+    {
+      "level": "洲際領隊",
+      "region": "世界地理",
+      "category": "世界地理",
+      "q": "石灰岩地區受水流溶蝕形成溶洞、石林等地貌，稱為？",
+      "options": [
+        "喀斯特地貌",
+        "冰蚀地貌",
+        "火山熔岩地貌",
+        "海岸沙丘地貌"
+      ],
+      "answer": 0,
+      "fact": "中國桂林、越南下龍灣與巴爾干部分地區可見典型喀斯特景觀。",
+      "conceptId": "fact:geo:喀斯特地貌",
+      "questionType": "world-fact",
+      "batchId": "supplement-batch13-019",
+      "sourceUrl": null,
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ]
+    },
+    {
+      "level": "環球旅行家",
+      "region": "世界地理",
+      "category": "世界地理",
+      "q": "地球上最大的淡水儲存庫之一位於哪一個地區？",
+      "options": [
+        "南極冰蓋",
+        "撒哈拉沙漠",
+        "里海",
+        "死海"
+      ],
+      "answer": 0,
+      "fact": "南極冰蓋覆蓋南極大陸大部分區域，對全球海平面與氣候有重要影響。",
+      "conceptId": "fact:geo:南極冰蓋",
+      "questionType": "world-fact",
+      "batchId": "supplement-batch13-020",
+      "sourceUrl": null,
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ]
+    },
+    {
+      "level": "洲際領隊",
+      "region": "旅行知識",
+      "category": "旅行知識",
+      "q": "搭乘航班前透過航空公司 App 或網站完成線上報到，主要好處是？",
+      "options": [
+        "節省機場櫃台等候時間並提前選位",
+        "可免費升級頭等艙",
+        "不必攜帶護照",
+        "行李一定免費托運"
+      ],
+      "answer": 0,
+      "fact": "多數航空公司開放航班起飛前 24～48 小時線上報到，仍可列印或下載電子登機證。",
+      "conceptId": "fact:travel:線上報到",
+      "questionType": "travel",
+      "batchId": "supplement-batch14-001",
+      "sourceUrl": null,
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ]
+    },
+    {
+      "level": "洲際領隊",
+      "region": "旅行知識",
+      "category": "旅行知識",
+      "q": "國際航班通常在起飛前多久關閉登機門？",
+      "options": [
+        "約起飛前 15～30 分鐘",
+        "起飛後 10 分鐘",
+        "起飛前 3 小時",
+        "抵達機場即可隨時登機"
+      ],
+      "answer": 0,
+      "fact": "即使已完成報到，仍應提早通過安檢並抵達登機門，以免錯過登機。",
+      "conceptId": "fact:travel:登機門關閉",
+      "questionType": "travel",
+      "batchId": "supplement-batch14-002",
+      "sourceUrl": null,
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ]
+    },
+    {
+      "level": "洲際領隊",
+      "region": "旅行知識",
+      "category": "旅行知識",
+      "q": "航班大幅延誤時，旅客較應優先做的事是？",
+      "options": [
+        "向航空公司確認後續航班與補償規定",
+        "自行離開機場不告知",
+        "拒絕任何溝通",
+        "擅自改搭其他航空不登記"
+      ],
+      "answer": 0,
+      "fact": "各國與各航空公司對延誤的食宿、改票規定不同，應保留登機證與延誤證明。",
+      "conceptId": "fact:travel:航班延誤",
+      "questionType": "travel",
+      "batchId": "supplement-batch14-003",
+      "sourceUrl": null,
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ]
+    },
+    {
+      "level": "洲際領隊",
+      "region": "旅行知識",
+      "category": "旅行知識",
+      "q": "抵達目的地卻找不到托運行李時，應優先？",
+      "options": [
+        "至行李服務櫃台填寫異常報告",
+        "直接離開機場不申報",
+        "自行開箱他人行李",
+        "在社群媒體發文即可"
+      ],
+      "answer": 0,
+      "fact": "填寫行李追蹤單（PIR）是後續尋回與理賠的重要依據，應保留收據與聯絡方式。",
+      "conceptId": "fact:travel:行李延誤申報",
+      "questionType": "travel",
+      "batchId": "supplement-batch14-004",
+      "sourceUrl": null,
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ]
+    },
+    {
+      "level": "洲際領隊",
+      "region": "旅行知識",
+      "category": "旅行知識",
+      "q": "在國外購物後申請退稅，通常需要？",
+      "options": [
+        "保留購買憑證並在出境前辦理手續",
+        "不需任何單據",
+        "入境時即可退稅",
+        "只要口頭申請"
+      ],
+      "answer": 0,
+      "fact": "各國退稅門檻、商品類別與辦理地點不同，購物時可詢問店家是否參與退稅計畫。",
+      "conceptId": "fact:travel:退稅手續",
+      "questionType": "travel",
+      "batchId": "supplement-batch14-005",
+      "sourceUrl": null,
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ]
+    },
+    {
+      "level": "洲際領隊",
+      "region": "旅行知識",
+      "category": "旅行知識",
+      "q": "在海外使用 ATM 提款時，較安全的做法是？",
+      "options": [
+        "選擇銀行或官方機構設置的 ATM",
+        "使用來路不明的路邊機台",
+        "讓陌生人代為操作",
+        "大聲念出密碼"
+      ],
+      "answer": 0,
+      "fact": "提款前留意是否有異常裝置，並確認銀行是否收取海外手續費與匯率。",
+      "conceptId": "fact:travel:海外ATM提款",
+      "questionType": "travel",
+      "batchId": "supplement-batch14-006",
+      "sourceUrl": null,
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ]
+    },
+    {
+      "level": "洲際領隊",
+      "region": "旅行知識",
+      "category": "旅行知識",
+      "q": "長途旅行時，現金與卡片較穩健的保管方式是？",
+      "options": [
+        "分散放置並避免全部放在同一個口袋",
+        "全部放在後背包外袋",
+        "只帶一張卡且無備份",
+        "將密碼寫在卡片背面"
+      ],
+      "answer": 0,
+      "fact": "分散保管可降低遺失或被竊時的損失，重要卡片應與護照分開放置。",
+      "conceptId": "fact:travel:現金分散保管",
+      "questionType": "travel",
+      "batchId": "supplement-batch14-007",
+      "sourceUrl": null,
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ]
+    },
+    {
+      "level": "洲際領隊",
+      "region": "旅行知識",
+      "category": "旅行知識",
+      "q": "在海外使用信用卡消費時，較應留意？",
+      "options": [
+        "不讓卡片離開視線並確認交易金額",
+        "將卡片與密碼交給陌生人",
+        "在不可信網站輸入卡號",
+        "忽略對帳單"
+      ],
+      "answer": 0,
+      "fact": "旅行期間可開啟交易通知，發現異常立即聯絡發卡銀行凍結卡片。",
+      "conceptId": "fact:travel:信用卡安全",
+      "questionType": "travel",
+      "batchId": "supplement-batch14-008",
+      "sourceUrl": null,
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ]
+    },
+    {
+      "level": "洲際領隊",
+      "region": "旅行知識",
+      "category": "旅行知識",
+      "q": "在機場或旅館使用公共無線網路時，較安全的做法是？",
+      "options": [
+        "避免進行網路銀行或輸入重要密碼",
+        "登入所有帳號並儲存密碼",
+        "連接任何未加密熱點",
+        "關閉手機所有安全設定"
+      ],
+      "answer": 0,
+      "fact": "公共 WiFi 可能被竊聽，敏感操作建議使用行動網路或 VPN。",
+      "conceptId": "fact:travel:公共WiFi安全",
+      "questionType": "travel",
+      "batchId": "supplement-batch14-009",
+      "sourceUrl": null,
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ]
+    },
+    {
+      "level": "洲際領隊",
+      "region": "旅行知識",
+      "category": "旅行知識",
+      "q": "出國旅行自備小型醫藥包，較實用的內容包括？",
+      "options": [
+        "常用藥品、創可貼與個人處方藥",
+        "只帶香水",
+        "大量未標示藥丸",
+        "他人處方藥"
+      ],
+      "answer": 0,
+      "fact": "暈車藥、止痛藥、過敏藥等可依目的地與個人需求準備，處方藥應保留說明或醫師證明。",
+      "conceptId": "fact:travel:旅行醫藥包",
+      "questionType": "travel",
+      "batchId": "supplement-batch14-010",
+      "sourceUrl": null,
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ]
+    },
+    {
+      "level": "洲際領隊",
+      "region": "旅行知識",
+      "category": "旅行知識",
+      "q": "攜帶處方藥出境時，較建議的做法是？",
+      "options": [
+        "保留原包裝與醫師處方或英文說明",
+        "拆散裝入無標示袋子",
+        "攜帶超量無證明藥品",
+        "替他人攜帶不明藥物"
+      ],
+      "answer": 0,
+      "fact": "部分國家對特定藥品有管制，出發前應查詢目的地入境規定。",
+      "conceptId": "fact:travel:處方藥攜帶",
+      "questionType": "travel",
+      "batchId": "supplement-batch14-011",
+      "sourceUrl": null,
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ]
+    },
+    {
+      "level": "洲際領隊",
+      "region": "旅行知識",
+      "category": "旅行知識",
+      "q": "參訪日本寺廟或神社時，較常見的禮儀是？",
+      "options": [
+        "進入前脫鞋並保持安靜",
+        "大聲喧嘩拍照",
+        "任意觸摸祭器",
+        "拒絕遵守指示牌"
+      ],
+      "answer": 0,
+      "fact": "日本寺社多要求脫鞋、低聲參拜，部分區域禁止攝影。",
+      "conceptId": "fact:travel:寺廟參訪禮儀",
+      "questionType": "travel",
+      "batchId": "supplement-batch14-012",
+      "sourceUrl": null,
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ]
+    },
+    {
+      "level": "洲際領隊",
+      "region": "旅行知識",
+      "category": "旅行知識",
+      "q": "參觀清真寺時，較應遵守的禮儀是？",
+      "options": [
+        "穿著遮蔽身體的衣物並在指定時間參訪",
+        "穿著短褲背心進入",
+        "於祈禱時間大聲喧嘩",
+        "無視入口規定"
+      ],
+      "answer": 0,
+      "fact": "許多清真寺提供罩袍或頭巾，非穆斯林應避開主麻聚禮時段或依指引參觀。",
+      "conceptId": "fact:travel:清真寺禮儀",
+      "questionType": "travel",
+      "batchId": "supplement-batch14-013",
+      "sourceUrl": null,
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ]
+    },
+    {
+      "level": "洲際領隊",
+      "region": "旅行知識",
+      "category": "旅行知識",
+      "q": "在部分歐洲城市，週日許多商店休業，旅行規劃時應？",
+      "options": [
+        "提前確認營業時間並預留採購時間",
+        "假設全天營業",
+        "週日一定可退稅",
+        "所有博物館週日免費"
+      ],
+      "answer": 0,
+      "fact": "德國、瑞士等國週日商店常休業，超市與藥局也可能縮短營業。",
+      "conceptId": "fact:travel:歐洲周日休店",
+      "questionType": "travel",
+      "batchId": "supplement-batch14-014",
+      "sourceUrl": null,
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ]
+    },
+    {
+      "level": "洲際領隊",
+      "region": "旅行知識",
+      "category": "旅行知識",
+      "q": "熱門景點（如博物館或世界遺產）在旺季較建議的做法是？",
+      "options": [
+        "提前線上預約入場時段",
+        "完全不查詢直接前往",
+        "假設隨時可進入",
+        "只需現場排隊一定進得去"
+      ],
+      "answer": 0,
+      "fact": "羅浮宮、梵蒂岡博物館等熱門景點常需提前預約，否則可能無法入場。",
+      "conceptId": "fact:travel:景點預約",
+      "questionType": "travel",
+      "batchId": "supplement-batch14-015",
+      "sourceUrl": null,
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ]
+    },
+    {
+      "level": "洲際領隊",
+      "region": "旅行知識",
+      "category": "旅行知識",
+      "q": "入住旅館時，護照與現金較建議的保管方式是？",
+      "options": [
+        "使用房內保險箱或前台保管服務",
+        "隨意放在床頭櫃",
+        "全部塞在窗邊",
+        "交給陌生人代管"
+      ],
+      "answer": 0,
+      "fact": "外出時不應將所有證件與財物帶在身上，保險箱可降低遺失風險。",
+      "conceptId": "fact:travel:旅館保險箱",
+      "questionType": "travel",
+      "batchId": "supplement-batch14-016",
+      "sourceUrl": null,
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ]
+    },
+    {
+      "level": "洲際領隊",
+      "region": "旅行知識",
+      "category": "旅行知識",
+      "q": "退房離開旅館前，較應檢查的事項是？",
+      "options": [
+        "保險箱、充電器與護照是否已帶走",
+        "不必檢查任何物品",
+        "留下所有證件",
+        "故意不結帳"
+      ],
+      "answer": 0,
+      "fact": "退房前應巡視床鋪、浴室與抽屜，遺失物品追回的機會較低。",
+      "conceptId": "fact:travel:退房檢查",
+      "questionType": "travel",
+      "batchId": "supplement-batch14-017",
+      "sourceUrl": null,
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ]
+    },
+    {
+      "level": "洲際領隊",
+      "region": "旅行知識",
+      "category": "旅行知識",
+      "q": "搭乘飛機時，行動電源通常應？",
+      "options": [
+        "放在手提行李中並遵守容量規定",
+        "放在托運行李內",
+        "完全禁止攜帶",
+        "不必遵守任何規定"
+      ],
+      "answer": 0,
+      "fact": "各航空公司對鋰電池容量有限制，托運行李中攜帶行動電源通常被禁止。",
+      "conceptId": "fact:travel:行動電源登機",
+      "questionType": "travel",
+      "batchId": "supplement-batch14-018",
+      "sourceUrl": null,
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ]
+    },
+    {
+      "level": "洲際領隊",
+      "region": "旅行知識",
+      "category": "旅行知識",
+      "q": "報名旅行社團體行程前，較應仔細閱讀的內容是？",
+      "options": [
+        "行程表、費用包含項目與取消規定",
+        "只看封面照片",
+        "不需閱讀任何合約",
+        "只聽朋友口述"
+      ],
+      "answer": 0,
+      "fact": "旅遊契約應載明住宿、餐食、自費項目與不可抗力條款，簽約前應確認。",
+      "conceptId": "fact:travel:旅遊契約",
+      "questionType": "travel",
+      "batchId": "supplement-batch14-019",
+      "sourceUrl": null,
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ]
+    },
+    {
+      "level": "洲際領隊",
+      "region": "旅行知識",
+      "category": "旅行知識",
+      "q": "出發前備份護照與行程資料的主要目的是？",
+      "options": [
+        "遺失時可加速向領事館或旅行社求助",
+        "用來偽造證件",
+        "完全沒有必要",
+        "僅為了佔用手機空間"
+      ],
+      "answer": 0,
+      "fact": "可將護照與簽證影本存於雲端或電子郵件，並與同行者分開保管。",
+      "conceptId": "fact:travel:旅遊憑證備份",
+      "questionType": "travel",
+      "batchId": "supplement-batch14-020",
+      "sourceUrl": null,
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ]
     }
   ]
 }

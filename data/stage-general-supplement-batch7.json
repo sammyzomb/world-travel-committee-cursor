@@ -1,0 +1,541 @@
+{
+  "batchId": "stage-general-supplement-batch7",
+  "generatedAt": "2026-09-15T09:15:00.000Z",
+  "purpose": "地標尋城與交通航運補題：grades 為空表示各學級皆可抽。",
+  "gapContext": {
+    "target": "有照片地標的城市辨識與旅行交通常識",
+    "newUniqueConcepts": 20
+  },
+  "questions": [
+    {
+      "id": "supplement-batch7-001",
+      "conceptId": "fact:city:布蘭登堡門",
+      "level": "國家達人",
+      "grades": [],
+      "questionType": "地標定位",
+      "category": "世界遺產",
+      "region": "歐洲",
+      "q": "布蘭登堡門位於德國哪一座城市？",
+      "options": [
+        "柏林",
+        "慕尼黑",
+        "漢堡",
+        "法蘭克福"
+      ],
+      "correctAnswer": "柏林",
+      "answerIndex": 0,
+      "fact": "布蘭登堡門是柏林象徵性地標，位於巴黎廣場西側。",
+      "landmark": "布蘭登堡門",
+      "landmarkDetail": "德國・柏林",
+      "auditStatus": "pending"
+    },
+    {
+      "id": "supplement-batch7-002",
+      "conceptId": "fact:city:基督像",
+      "level": "洲際領隊",
+      "grades": [],
+      "questionType": "地標定位",
+      "category": "世界遺產",
+      "region": "南美洲",
+      "q": "矗立在科科瓦多山上的基督像位於巴西哪一座城市？",
+      "options": [
+        "里約熱內盧",
+        "聖保羅",
+        "巴西利亞",
+        "薩爾瓦多"
+      ],
+      "correctAnswer": "里約熱內盧",
+      "answerIndex": 0,
+      "fact": "基督像矗立在里約的科科瓦多山頂，俯瞰瓜納巴拉灣。",
+      "landmark": "基督像",
+      "landmarkDetail": "巴西・里約熱內盧",
+      "auditStatus": "pending"
+    },
+    {
+      "id": "supplement-batch7-003",
+      "conceptId": "fact:city:兵馬俑",
+      "level": "國家達人",
+      "grades": [],
+      "questionType": "地標定位",
+      "category": "世界遺產",
+      "region": "亞洲",
+      "q": "秦始皇兵馬俑博物館位於中國哪一座城市？",
+      "options": [
+        "西安",
+        "北京",
+        "洛陽",
+        "南京"
+      ],
+      "correctAnswer": "西安",
+      "answerIndex": 0,
+      "fact": "兵馬俑位於陝西省西安市臨潼區，是秦代陪葬坑遺址。",
+      "landmark": "兵馬俑",
+      "landmarkDetail": "中國・西安",
+      "auditStatus": "pending"
+    },
+    {
+      "id": "supplement-batch7-004",
+      "conceptId": "fact:city:莫高窟",
+      "level": "洲際領隊",
+      "grades": [],
+      "questionType": "地標定位",
+      "category": "世界遺產",
+      "region": "亞洲",
+      "q": "莫高窟石窟群位於中國哪一座城市？",
+      "options": [
+        "敦煌",
+        "嘉峪關",
+        "烏魯木齊",
+        "蘭州"
+      ],
+      "correctAnswer": "敦煌",
+      "answerIndex": 0,
+      "fact": "莫高窟位於甘肅敦煌市鳴沙山東麓，是絲路藝術寶庫。",
+      "landmark": "莫高窟",
+      "landmarkDetail": "中國・敦煌",
+      "auditStatus": "pending"
+    },
+    {
+      "id": "supplement-batch7-005",
+      "conceptId": "fact:city:阿爾罕布拉宮",
+      "level": "洲際領隊",
+      "grades": [],
+      "questionType": "地標定位",
+      "category": "世界遺產",
+      "region": "歐洲",
+      "q": "阿爾罕布拉宮位於西班牙哪一座城市？",
+      "options": [
+        "格拉納達",
+        "塞維亞",
+        "馬德里",
+        "巴塞隆納"
+      ],
+      "correctAnswer": "格拉納達",
+      "answerIndex": 0,
+      "fact": "阿爾罕布拉宮位於安達盧西亞的格拉納達，展現伊斯蘭與基督教建築融合。",
+      "landmark": "阿爾罕布拉宮",
+      "landmarkDetail": "西班牙・格拉納達",
+      "auditStatus": "pending"
+    },
+    {
+      "id": "supplement-batch7-006",
+      "conceptId": "fact:city:美泉宮",
+      "level": "洲際領隊",
+      "grades": [],
+      "questionType": "地標定位",
+      "category": "世界遺產",
+      "region": "歐洲",
+      "q": "美泉宮位於奧地利哪一座城市？",
+      "options": [
+        "維也納",
+        "薩爾斯堡",
+        "因斯布魯克",
+        "格拉茨"
+      ],
+      "correctAnswer": "維也納",
+      "answerIndex": 0,
+      "fact": "美泉宮是哈布斯堡王朝夏宮，位於維也納西南郊。",
+      "landmark": "美泉宮",
+      "landmarkDetail": "奧地利・維也納",
+      "auditStatus": "pending"
+    },
+    {
+      "id": "supplement-batch7-007",
+      "conceptId": "fact:city:查理大橋",
+      "level": "國家達人",
+      "grades": [],
+      "questionType": "地標定位",
+      "category": "世界遺產",
+      "region": "歐洲",
+      "q": "查理大橋橫跨伏爾塔瓦河，它位於捷克哪一座城市？",
+      "options": [
+        "布拉格",
+        "布爾諾",
+        "奧斯特拉瓦",
+        "卡羅維瓦里"
+      ],
+      "correctAnswer": "布拉格",
+      "answerIndex": 0,
+      "fact": "查理大橋連接布拉格舊城與小城，是捷克最受歡迎的觀光橋梁。",
+      "landmark": "查理大橋",
+      "landmarkDetail": "捷克・布拉格",
+      "auditStatus": "pending"
+    },
+    {
+      "id": "supplement-batch7-008",
+      "conceptId": "fact:city:大皇宮",
+      "level": "國家達人",
+      "grades": [],
+      "questionType": "地標定位",
+      "category": "世界遺產",
+      "region": "亞洲",
+      "q": "泰國大皇宮與玉佛寺位於哪一座城市？",
+      "options": [
+        "曼谷",
+        "清邁",
+        "普吉",
+        "芭達雅"
+      ],
+      "correctAnswer": "曼谷",
+      "answerIndex": 0,
+      "fact": "大皇宮是泰國王室舉行典禮的重要場所，位於曼谷湄南河畔。",
+      "landmark": "大皇宮",
+      "landmarkDetail": "泰國・曼谷",
+      "auditStatus": "pending"
+    },
+    {
+      "id": "supplement-batch7-009",
+      "conceptId": "fact:city:哈里法塔",
+      "level": "洲際領隊",
+      "grades": [],
+      "questionType": "地標定位",
+      "category": "世界遺產",
+      "region": "亞洲",
+      "q": "哈里法塔位於阿拉伯聯合大公國哪一座城市？",
+      "options": [
+        "杜拜",
+        "阿布達比",
+        "多哈",
+        "麥加"
+      ],
+      "correctAnswer": "杜拜",
+      "answerIndex": 0,
+      "fact": "哈里法塔高 828 公尺，位於杜拜市中心，是目前世界最高建築之一。",
+      "landmark": "哈里法塔",
+      "landmarkDetail": "阿聯酋・杜拜",
+      "auditStatus": "pending"
+    },
+    {
+      "id": "supplement-batch7-010",
+      "conceptId": "fact:city:下龍灣",
+      "level": "洲際領隊",
+      "grades": [],
+      "questionType": "地標定位",
+      "category": "世界遺產",
+      "region": "亞洲",
+      "q": "下龍灣石灰岩海灣景觀位於越南哪一座城市？",
+      "options": [
+        "下龍市",
+        "河內",
+        "胡志明市",
+        "順化"
+      ],
+      "correctAnswer": "下龍市",
+      "answerIndex": 0,
+      "fact": "下龍灣位於越南北部廣寧省的下龍市，以喀斯特海灣地貌聞名。",
+      "landmark": "下龍灣",
+      "landmarkDetail": "越南・下龍",
+      "auditStatus": "pending"
+    },
+    {
+      "id": "supplement-batch7-011",
+      "conceptId": "fact:travel:歐洲鐵路通票",
+      "level": "洲際領隊",
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ],
+      "questionType": "交通航運",
+      "category": "旅行知識",
+      "region": "旅行知識",
+      "q": "在歐洲多國以鐵路自由行時，較常使用的票種概念是？",
+      "options": [
+        "鐵路通票或點對點車票",
+        "只搭國內公車",
+        "不需任何車票",
+        "僅能搭乘郵輪"
+      ],
+      "correctAnswer": "鐵路通票或點對點車票",
+      "answerIndex": 0,
+      "fact": "歐洲鐵路網密集，通票適合跨國移動，熱門路線也可預訂座位。",
+      "auditStatus": "pending"
+    },
+    {
+      "id": "supplement-batch7-012",
+      "conceptId": "fact:travel:郵輪登船",
+      "level": "洲際領隊",
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ],
+      "questionType": "交通航運",
+      "category": "旅行知識",
+      "region": "旅行知識",
+      "q": "搭乘郵輪旅行，登船當天較建議的做法是？",
+      "options": [
+        "依規定時間提前抵達港口辦理登船",
+        "起飛前才趕到碼頭",
+        "不攜帶任何證件",
+        "拒絕安全演練"
+      ],
+      "correctAnswer": "依規定時間提前抵達港口辦理登船",
+      "answerIndex": 0,
+      "fact": "郵輪登船需辦理護照查驗與行李托運，錯過關艙時間可能無法上船。",
+      "auditStatus": "pending"
+    },
+    {
+      "id": "supplement-batch7-013",
+      "conceptId": "fact:travel:托運限重",
+      "level": "洲際領隊",
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ],
+      "questionType": "交通航運",
+      "category": "旅行知識",
+      "region": "旅行知識",
+      "q": "搭乘航空公司航班時，托運行李通常需要留意？",
+      "options": [
+        "各航空公司的重量與件數限制",
+        "行李可無限超重",
+        "所有物品都可托運",
+        "不需標示姓名"
+      ],
+      "correctAnswer": "各航空公司的重量與件數限制",
+      "answerIndex": 0,
+      "fact": "超重行李可能需付費，廉航與長程航班規定差異大，出發前應查詢。",
+      "auditStatus": "pending"
+    },
+    {
+      "id": "supplement-batch7-014",
+      "conceptId": "fact:travel:入境申報",
+      "level": "洲際領隊",
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ],
+      "questionType": "交通航運",
+      "category": "旅行知識",
+      "region": "旅行知識",
+      "q": "抵達國外機場辦理入境時，較應配合的事項是？",
+      "options": [
+        "誠實填寫入境申報資料",
+        "隱瞞攜帶物品",
+        "拒絕出示護照",
+        "擅自闖入管制區"
+      ],
+      "correctAnswer": "誠實填寫入境申報資料",
+      "answerIndex": 0,
+      "fact": "入境卡或電子申報常詢問停留目的、地址與攜帶物品，應據實填寫。",
+      "auditStatus": "pending"
+    },
+    {
+      "id": "supplement-batch7-015",
+      "conceptId": "fact:travel:免稅限量",
+      "level": "洲際領隊",
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ],
+      "questionType": "交通航運",
+      "category": "旅行知識",
+      "region": "旅行知識",
+      "q": "在機場免稅店購物後入境本國，較應留意？",
+      "options": [
+        "當地對酒類、香菸等免稅品的限量規定",
+        "可無限攜帶任何商品",
+        "不需保留購買憑證",
+        "所有食品都可任意帶入"
+      ],
+      "correctAnswer": "當地對酒類、香菸等免稅品的限量規定",
+      "answerIndex": 0,
+      "fact": "各國對入境免稅品有數量與金額上限，超量可能需補稅或遭沒收。",
+      "auditStatus": "pending"
+    },
+    {
+      "id": "supplement-batch7-016",
+      "conceptId": "fact:travel:新幹線",
+      "level": "洲際領隊",
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ],
+      "questionType": "交通航運",
+      "category": "旅行知識",
+      "region": "旅行知識",
+      "q": "在日本以高速鐵路連接東京與大阪等城市，主要交通工具是？",
+      "options": [
+        "新幹線",
+        "渡輪",
+        "沙漠駱駝",
+        "雪地摩托"
+      ],
+      "correctAnswer": "新幹線",
+      "answerIndex": 0,
+      "fact": "新幹線是日本高速鐵路系統，東海道新幹線連接東京、名古屋與大阪。",
+      "auditStatus": "pending"
+    },
+    {
+      "id": "supplement-batch7-017",
+      "conceptId": "fact:travel:旅遊旺季",
+      "level": "洲際領隊",
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ],
+      "questionType": "交通航運",
+      "category": "旅行知識",
+      "region": "旅行知識",
+      "q": "規劃旅行時，「旺季」通常意味著？",
+      "options": [
+        "人潮與價格較高，需提早預訂",
+        "所有景點完全免費",
+        "航班一定取消",
+        "不需任何預約"
+      ],
+      "correctAnswer": "人潮與價格較高，需提早預訂",
+      "answerIndex": 0,
+      "fact": "寒暑假、國定假日與賞櫻賞楓季常是旺季，機票與住宿應提早規劃。",
+      "auditStatus": "pending"
+    },
+    {
+      "id": "supplement-batch7-018",
+      "conceptId": "fact:travel:電源轉接頭",
+      "level": "洲際領隊",
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ],
+      "questionType": "交通航運",
+      "category": "旅行知識",
+      "region": "旅行知識",
+      "q": "出國旅行攜帶電子設備時，較應事先確認？",
+      "options": [
+        "目的地插座型式與電壓",
+        "只需帶一條延長線",
+        "所有國家插座都相同",
+        "不必攜帶充電器"
+      ],
+      "correctAnswer": "目的地插座型式與電壓",
+      "answerIndex": 0,
+      "fact": "歐洲、英國、美國等插座規格不同，轉接頭與變壓器可避免充電困擾。",
+      "auditStatus": "pending"
+    },
+    {
+      "id": "supplement-batch7-019",
+      "conceptId": "fact:travel:轉機簽證",
+      "level": "洲際領隊",
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ],
+      "questionType": "交通航運",
+      "category": "旅行知識",
+      "region": "旅行知識",
+      "q": "搭乘需在中途國家轉機的航班時，出發前較應確認？",
+      "options": [
+        "是否需要過境或轉機簽證",
+        "轉機一定免簽",
+        "不需護照",
+        "行李一定直掛"
+      ],
+      "correctAnswer": "是否需要過境或轉機簽證",
+      "answerIndex": 0,
+      "fact": "部分國家即使不下機過境也可能需要簽證，應查詢航空公司與使館規定。",
+      "auditStatus": "pending"
+    },
+    {
+      "id": "supplement-batch7-020",
+      "conceptId": "fact:travel:馬六甲海峽",
+      "level": "洲際領隊",
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ],
+      "questionType": "交通航運",
+      "category": "旅行知識",
+      "region": "旅行知識",
+      "q": "馬六甲海峽是連接哪兩片海域的重要航道？",
+      "options": [
+        "南海與印度洋",
+        "地中海與紅海",
+        "北海與波羅的海",
+        "北冰洋與太平洋"
+      ],
+      "correctAnswer": "南海與印度洋",
+      "answerIndex": 0,
+      "fact": "馬六甲海峽介於馬來半島與蘇門答臘之間，是全球最繁忙的海運通道之一。",
+      "auditStatus": "pending"
+    }
+  ]
+}

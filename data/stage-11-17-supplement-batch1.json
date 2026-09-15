@@ -1,7 +1,7 @@
 {
   "batchId": "stage-11-17-supplement-batch1",
   "generatedAt": "2026-09-14T10:00:00.000Z",
-  "purpose": "高三～研二整局去重後知識點缺口的第一批補題草案；尚未匯入 questions.json。",
+  "purpose": "高三～研二整局去重後知識點缺口的第一批補題；已匯入 questions.json#supplementQuestions。",
   "gapContext": {
     "analysisReport": "data/stage-11-17-gap-report.json",
     "confirmedGapSummary": [

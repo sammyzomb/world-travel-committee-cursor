@@ -1,0 +1,631 @@
+{
+  "batchId": "stage-general-supplement-batch14",
+  "generatedAt": "2026-09-15T11:05:00.000Z",
+  "purpose": "旅行實務專題補題：grades 為空表示各學級皆可抽。",
+  "gapContext": {
+    "target": "出發前至旅途中的實用旅行知識",
+    "newUniqueConcepts": 20
+  },
+  "questions": [
+    {
+      "id": "supplement-batch14-001",
+      "conceptId": "fact:travel:線上報到",
+      "level": "洲際領隊",
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ],
+      "questionType": "旅行知識",
+      "category": "旅行知識",
+      "region": "旅行知識",
+      "q": "搭乘航班前透過航空公司 App 或網站完成線上報到，主要好處是？",
+      "options": [
+        "節省機場櫃台等候時間並提前選位",
+        "可免費升級頭等艙",
+        "不必攜帶護照",
+        "行李一定免費托運"
+      ],
+      "correctAnswer": "節省機場櫃台等候時間並提前選位",
+      "answerIndex": 0,
+      "fact": "多數航空公司開放航班起飛前 24～48 小時線上報到，仍可列印或下載電子登機證。",
+      "auditStatus": "pending"
+    },
+    {
+      "id": "supplement-batch14-002",
+      "conceptId": "fact:travel:登機門關閉",
+      "level": "洲際領隊",
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ],
+      "questionType": "交通航運",
+      "category": "旅行知識",
+      "region": "旅行知識",
+      "q": "國際航班通常在起飛前多久關閉登機門？",
+      "options": [
+        "約起飛前 15～30 分鐘",
+        "起飛後 10 分鐘",
+        "起飛前 3 小時",
+        "抵達機場即可隨時登機"
+      ],
+      "correctAnswer": "約起飛前 15～30 分鐘",
+      "answerIndex": 0,
+      "fact": "即使已完成報到，仍應提早通過安檢並抵達登機門，以免錯過登機。",
+      "auditStatus": "pending"
+    },
+    {
+      "id": "supplement-batch14-003",
+      "conceptId": "fact:travel:航班延誤",
+      "level": "洲際領隊",
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ],
+      "questionType": "交通航運",
+      "category": "旅行知識",
+      "region": "旅行知識",
+      "q": "航班大幅延誤時，旅客較應優先做的事是？",
+      "options": [
+        "向航空公司確認後續航班與補償規定",
+        "自行離開機場不告知",
+        "拒絕任何溝通",
+        "擅自改搭其他航空不登記"
+      ],
+      "correctAnswer": "向航空公司確認後續航班與補償規定",
+      "answerIndex": 0,
+      "fact": "各國與各航空公司對延誤的食宿、改票規定不同，應保留登機證與延誤證明。",
+      "auditStatus": "pending"
+    },
+    {
+      "id": "supplement-batch14-004",
+      "conceptId": "fact:travel:行李延誤申報",
+      "level": "洲際領隊",
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ],
+      "questionType": "交通航運",
+      "category": "旅行知識",
+      "region": "旅行知識",
+      "q": "抵達目的地卻找不到托運行李時，應優先？",
+      "options": [
+        "至行李服務櫃台填寫異常報告",
+        "直接離開機場不申報",
+        "自行開箱他人行李",
+        "在社群媒體發文即可"
+      ],
+      "correctAnswer": "至行李服務櫃台填寫異常報告",
+      "answerIndex": 0,
+      "fact": "填寫行李追蹤單（PIR）是後續尋回與理賠的重要依據，應保留收據與聯絡方式。",
+      "auditStatus": "pending"
+    },
+    {
+      "id": "supplement-batch14-005",
+      "conceptId": "fact:travel:退稅手續",
+      "level": "洲際領隊",
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ],
+      "questionType": "旅行知識",
+      "category": "旅行知識",
+      "region": "旅行知識",
+      "q": "在國外購物後申請退稅，通常需要？",
+      "options": [
+        "保留購買憑證並在出境前辦理手續",
+        "不需任何單據",
+        "入境時即可退稅",
+        "只要口頭申請"
+      ],
+      "correctAnswer": "保留購買憑證並在出境前辦理手續",
+      "answerIndex": 0,
+      "fact": "各國退稅門檻、商品類別與辦理地點不同，購物時可詢問店家是否參與退稅計畫。",
+      "auditStatus": "pending"
+    },
+    {
+      "id": "supplement-batch14-006",
+      "conceptId": "fact:travel:海外ATM提款",
+      "level": "洲際領隊",
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ],
+      "questionType": "旅行知識",
+      "category": "旅行知識",
+      "region": "旅行知識",
+      "q": "在海外使用 ATM 提款時，較安全的做法是？",
+      "options": [
+        "選擇銀行或官方機構設置的 ATM",
+        "使用來路不明的路邊機台",
+        "讓陌生人代為操作",
+        "大聲念出密碼"
+      ],
+      "correctAnswer": "選擇銀行或官方機構設置的 ATM",
+      "answerIndex": 0,
+      "fact": "提款前留意是否有異常裝置，並確認銀行是否收取海外手續費與匯率。",
+      "auditStatus": "pending"
+    },
+    {
+      "id": "supplement-batch14-007",
+      "conceptId": "fact:travel:現金分散保管",
+      "level": "洲際領隊",
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ],
+      "questionType": "旅行知識",
+      "category": "旅行知識",
+      "region": "旅行知識",
+      "q": "長途旅行時，現金與卡片較穩健的保管方式是？",
+      "options": [
+        "分散放置並避免全部放在同一個口袋",
+        "全部放在後背包外袋",
+        "只帶一張卡且無備份",
+        "將密碼寫在卡片背面"
+      ],
+      "correctAnswer": "分散放置並避免全部放在同一個口袋",
+      "answerIndex": 0,
+      "fact": "分散保管可降低遺失或被竊時的損失，重要卡片應與護照分開放置。",
+      "auditStatus": "pending"
+    },
+    {
+      "id": "supplement-batch14-008",
+      "conceptId": "fact:travel:信用卡安全",
+      "level": "洲際領隊",
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ],
+      "questionType": "旅行知識",
+      "category": "旅行知識",
+      "region": "旅行知識",
+      "q": "在海外使用信用卡消費時，較應留意？",
+      "options": [
+        "不讓卡片離開視線並確認交易金額",
+        "將卡片與密碼交給陌生人",
+        "在不可信網站輸入卡號",
+        "忽略對帳單"
+      ],
+      "correctAnswer": "不讓卡片離開視線並確認交易金額",
+      "answerIndex": 0,
+      "fact": "旅行期間可開啟交易通知，發現異常立即聯絡發卡銀行凍結卡片。",
+      "auditStatus": "pending"
+    },
+    {
+      "id": "supplement-batch14-009",
+      "conceptId": "fact:travel:公共WiFi安全",
+      "level": "洲際領隊",
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ],
+      "questionType": "旅行知識",
+      "category": "旅行知識",
+      "region": "旅行知識",
+      "q": "在機場或旅館使用公共無線網路時，較安全的做法是？",
+      "options": [
+        "避免進行網路銀行或輸入重要密碼",
+        "登入所有帳號並儲存密碼",
+        "連接任何未加密熱點",
+        "關閉手機所有安全設定"
+      ],
+      "correctAnswer": "避免進行網路銀行或輸入重要密碼",
+      "answerIndex": 0,
+      "fact": "公共 WiFi 可能被竊聽，敏感操作建議使用行動網路或 VPN。",
+      "auditStatus": "pending"
+    },
+    {
+      "id": "supplement-batch14-010",
+      "conceptId": "fact:travel:旅行醫藥包",
+      "level": "洲際領隊",
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ],
+      "questionType": "旅行知識",
+      "category": "旅行知識",
+      "region": "旅行知識",
+      "q": "出國旅行自備小型醫藥包，較實用的內容包括？",
+      "options": [
+        "常用藥品、創可貼與個人處方藥",
+        "只帶香水",
+        "大量未標示藥丸",
+        "他人處方藥"
+      ],
+      "correctAnswer": "常用藥品、創可貼與個人處方藥",
+      "answerIndex": 0,
+      "fact": "暈車藥、止痛藥、過敏藥等可依目的地與個人需求準備，處方藥應保留說明或醫師證明。",
+      "auditStatus": "pending"
+    },
+    {
+      "id": "supplement-batch14-011",
+      "conceptId": "fact:travel:處方藥攜帶",
+      "level": "洲際領隊",
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ],
+      "questionType": "旅行知識",
+      "category": "旅行知識",
+      "region": "旅行知識",
+      "q": "攜帶處方藥出境時，較建議的做法是？",
+      "options": [
+        "保留原包裝與醫師處方或英文說明",
+        "拆散裝入無標示袋子",
+        "攜帶超量無證明藥品",
+        "替他人攜帶不明藥物"
+      ],
+      "correctAnswer": "保留原包裝與醫師處方或英文說明",
+      "answerIndex": 0,
+      "fact": "部分國家對特定藥品有管制，出發前應查詢目的地入境規定。",
+      "auditStatus": "pending"
+    },
+    {
+      "id": "supplement-batch14-012",
+      "conceptId": "fact:travel:寺廟參訪禮儀",
+      "level": "洲際領隊",
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ],
+      "questionType": "旅行知識",
+      "category": "旅行知識",
+      "region": "旅行知識",
+      "q": "參訪日本寺廟或神社時，較常見的禮儀是？",
+      "options": [
+        "進入前脫鞋並保持安靜",
+        "大聲喧嘩拍照",
+        "任意觸摸祭器",
+        "拒絕遵守指示牌"
+      ],
+      "correctAnswer": "進入前脫鞋並保持安靜",
+      "answerIndex": 0,
+      "fact": "日本寺社多要求脫鞋、低聲參拜，部分區域禁止攝影。",
+      "auditStatus": "pending"
+    },
+    {
+      "id": "supplement-batch14-013",
+      "conceptId": "fact:travel:清真寺禮儀",
+      "level": "洲際領隊",
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ],
+      "questionType": "旅行知識",
+      "category": "旅行知識",
+      "region": "旅行知識",
+      "q": "參觀清真寺時，較應遵守的禮儀是？",
+      "options": [
+        "穿著遮蔽身體的衣物並在指定時間參訪",
+        "穿著短褲背心進入",
+        "於祈禱時間大聲喧嘩",
+        "無視入口規定"
+      ],
+      "correctAnswer": "穿著遮蔽身體的衣物並在指定時間參訪",
+      "answerIndex": 0,
+      "fact": "許多清真寺提供罩袍或頭巾，非穆斯林應避開主麻聚禮時段或依指引參觀。",
+      "auditStatus": "pending"
+    },
+    {
+      "id": "supplement-batch14-014",
+      "conceptId": "fact:travel:歐洲周日休店",
+      "level": "洲際領隊",
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ],
+      "questionType": "旅行知識",
+      "category": "旅行知識",
+      "region": "旅行知識",
+      "q": "在部分歐洲城市，週日許多商店休業，旅行規劃時應？",
+      "options": [
+        "提前確認營業時間並預留採購時間",
+        "假設全天營業",
+        "週日一定可退稅",
+        "所有博物館週日免費"
+      ],
+      "correctAnswer": "提前確認營業時間並預留採購時間",
+      "answerIndex": 0,
+      "fact": "德國、瑞士等國週日商店常休業，超市與藥局也可能縮短營業。",
+      "auditStatus": "pending"
+    },
+    {
+      "id": "supplement-batch14-015",
+      "conceptId": "fact:travel:景點預約",
+      "level": "洲際領隊",
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ],
+      "questionType": "旅行知識",
+      "category": "旅行知識",
+      "region": "旅行知識",
+      "q": "熱門景點（如博物館或世界遺產）在旺季較建議的做法是？",
+      "options": [
+        "提前線上預約入場時段",
+        "完全不查詢直接前往",
+        "假設隨時可進入",
+        "只需現場排隊一定進得去"
+      ],
+      "correctAnswer": "提前線上預約入場時段",
+      "answerIndex": 0,
+      "fact": "羅浮宮、梵蒂岡博物館等熱門景點常需提前預約，否則可能無法入場。",
+      "auditStatus": "pending"
+    },
+    {
+      "id": "supplement-batch14-016",
+      "conceptId": "fact:travel:旅館保險箱",
+      "level": "洲際領隊",
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ],
+      "questionType": "旅行知識",
+      "category": "旅行知識",
+      "region": "旅行知識",
+      "q": "入住旅館時，護照與現金較建議的保管方式是？",
+      "options": [
+        "使用房內保險箱或前台保管服務",
+        "隨意放在床頭櫃",
+        "全部塞在窗邊",
+        "交給陌生人代管"
+      ],
+      "correctAnswer": "使用房內保險箱或前台保管服務",
+      "answerIndex": 0,
+      "fact": "外出時不應將所有證件與財物帶在身上，保險箱可降低遺失風險。",
+      "auditStatus": "pending"
+    },
+    {
+      "id": "supplement-batch14-017",
+      "conceptId": "fact:travel:退房檢查",
+      "level": "洲際領隊",
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ],
+      "questionType": "旅行知識",
+      "category": "旅行知識",
+      "region": "旅行知識",
+      "q": "退房離開旅館前，較應檢查的事項是？",
+      "options": [
+        "保險箱、充電器與護照是否已帶走",
+        "不必檢查任何物品",
+        "留下所有證件",
+        "故意不結帳"
+      ],
+      "correctAnswer": "保險箱、充電器與護照是否已帶走",
+      "answerIndex": 0,
+      "fact": "退房前應巡視床鋪、浴室與抽屜，遺失物品追回的機會較低。",
+      "auditStatus": "pending"
+    },
+    {
+      "id": "supplement-batch14-018",
+      "conceptId": "fact:travel:行動電源登機",
+      "level": "洲際領隊",
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ],
+      "questionType": "交通航運",
+      "category": "旅行知識",
+      "region": "旅行知識",
+      "q": "搭乘飛機時，行動電源通常應？",
+      "options": [
+        "放在手提行李中並遵守容量規定",
+        "放在托運行李內",
+        "完全禁止攜帶",
+        "不必遵守任何規定"
+      ],
+      "correctAnswer": "放在手提行李中並遵守容量規定",
+      "answerIndex": 0,
+      "fact": "各航空公司對鋰電池容量有限制，托運行李中攜帶行動電源通常被禁止。",
+      "auditStatus": "pending"
+    },
+    {
+      "id": "supplement-batch14-019",
+      "conceptId": "fact:travel:旅遊契約",
+      "level": "洲際領隊",
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ],
+      "questionType": "旅行知識",
+      "category": "旅行知識",
+      "region": "旅行知識",
+      "q": "報名旅行社團體行程前，較應仔細閱讀的內容是？",
+      "options": [
+        "行程表、費用包含項目與取消規定",
+        "只看封面照片",
+        "不需閱讀任何合約",
+        "只聽朋友口述"
+      ],
+      "correctAnswer": "行程表、費用包含項目與取消規定",
+      "answerIndex": 0,
+      "fact": "旅遊契約應載明住宿、餐食、自費項目與不可抗力條款，簽約前應確認。",
+      "auditStatus": "pending"
+    },
+    {
+      "id": "supplement-batch14-020",
+      "conceptId": "fact:travel:旅遊憑證備份",
+      "level": "洲際領隊",
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ],
+      "questionType": "旅行知識",
+      "category": "旅行知識",
+      "region": "旅行知識",
+      "q": "出發前備份護照與行程資料的主要目的是？",
+      "options": [
+        "遺失時可加速向領事館或旅行社求助",
+        "用來偽造證件",
+        "完全沒有必要",
+        "僅為了佔用手機空間"
+      ],
+      "correctAnswer": "遺失時可加速向領事館或旅行社求助",
+      "answerIndex": 0,
+      "fact": "可將護照與簽證影本存於雲端或電子郵件，並與同行者分開保管。",
+      "auditStatus": "pending"
+    }
+  ]
+}

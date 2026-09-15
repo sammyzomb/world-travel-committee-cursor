@@ -1,0 +1,631 @@
+{
+  "batchId": "stage-general-supplement-batch12",
+  "generatedAt": "2026-09-15T10:35:00.000Z",
+  "purpose": "自然地理專題補題：grades 為空表示各學級皆可抽。",
+  "gapContext": {
+    "target": "深化世界自然地理素養",
+    "newUniqueConcepts": 20
+  },
+  "questions": [
+    {
+      "id": "supplement-batch12-001",
+      "conceptId": "fact:geo:亞馬遜河",
+      "level": "洲際領隊",
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ],
+      "questionType": "自然地理",
+      "category": "世界地理",
+      "region": "世界地理",
+      "q": "亞馬遜河主要流經哪一個大洲？",
+      "options": [
+        "南美洲",
+        "非洲",
+        "亞洲",
+        "北美洲"
+      ],
+      "correctAnswer": "南美洲",
+      "answerIndex": 0,
+      "fact": "亞馬遜河流域擁有世界最大的熱帶雨林，橫跨巴西等多國。",
+      "auditStatus": "pending"
+    },
+    {
+      "id": "supplement-batch12-002",
+      "conceptId": "fact:geo:長江",
+      "level": "洲際領隊",
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ],
+      "questionType": "自然地理",
+      "category": "世界地理",
+      "region": "世界地理",
+      "q": "長江最終注入哪一片海域？",
+      "options": [
+        "東海",
+        "南海",
+        "渤海",
+        "日本海"
+      ],
+      "correctAnswer": "東海",
+      "answerIndex": 0,
+      "fact": "長江是中國第一長河，在上海附近注入東海。",
+      "auditStatus": "pending"
+    },
+    {
+      "id": "supplement-batch12-003",
+      "conceptId": "fact:geo:黃河",
+      "level": "洲際領隊",
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ],
+      "questionType": "自然地理",
+      "category": "世界地理",
+      "region": "世界地理",
+      "q": "黃河因含沙量高被稱為「中華民族的搖籃」，它注入哪一片海域？",
+      "options": [
+        "渤海",
+        "黃海",
+        "東海",
+        "南海"
+      ],
+      "correctAnswer": "渤海",
+      "answerIndex": 0,
+      "fact": "黃河流經北方平原，在山東省注入渤海。",
+      "auditStatus": "pending"
+    },
+    {
+      "id": "supplement-batch12-004",
+      "conceptId": "fact:geo:喜馬拉雅山脈",
+      "level": "洲際領隊",
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ],
+      "questionType": "自然地理",
+      "category": "世界地理",
+      "region": "世界地理",
+      "q": "喜馬拉雅山脈最高峰珠穆朗瑪峰位於哪一個地理區域？",
+      "options": [
+        "南亞與中亞交界",
+        "西歐",
+        "北極圈",
+        "加勒比"
+      ],
+      "correctAnswer": "南亞與中亞交界",
+      "answerIndex": 0,
+      "fact": "喜馬拉雅山脈橫跨尼泊爾、中國西藏、印度、不丹等國。",
+      "auditStatus": "pending"
+    },
+    {
+      "id": "supplement-batch12-005",
+      "conceptId": "fact:geo:青藏高原",
+      "level": "洲際領隊",
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ],
+      "questionType": "自然地理",
+      "category": "世界地理",
+      "region": "世界地理",
+      "q": "青藏高原被稱為「世界屋脊」，主要位於哪一個國家境內？",
+      "options": [
+        "中國",
+        "印度",
+        "俄羅斯",
+        "蒙古"
+      ],
+      "correctAnswer": "中國",
+      "answerIndex": 0,
+      "fact": "青藏高原平均海拔高，是長江、黃河、湄公河等多條大河的發源地。",
+      "auditStatus": "pending"
+    },
+    {
+      "id": "supplement-batch12-006",
+      "conceptId": "fact:geo:印度河",
+      "level": "洲際領隊",
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ],
+      "questionType": "自然地理",
+      "category": "世界地理",
+      "region": "世界地理",
+      "q": "印度河主要流經哪一個地理區域？",
+      "options": [
+        "南亞",
+        "東南亞",
+        "中東",
+        "北歐"
+      ],
+      "correctAnswer": "南亞",
+      "answerIndex": 0,
+      "fact": "印度河流經巴基斯坦平原，是南亞重要農業灌溉水源。",
+      "auditStatus": "pending"
+    },
+    {
+      "id": "supplement-batch12-007",
+      "conceptId": "fact:geo:阿拉伯海",
+      "level": "洲際領隊",
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ],
+      "questionType": "自然地理",
+      "category": "世界地理",
+      "region": "世界地理",
+      "q": "阿拉伯海位於印度半島與哪一側之間？",
+      "options": [
+        "阿拉伯半島",
+        "非洲南端",
+        "澳洲",
+        "日本列島"
+      ],
+      "correctAnswer": "阿拉伯半島",
+      "answerIndex": 0,
+      "fact": "阿拉伯海連接印度洋，是波斯灣與印度洋之間的重要海域。",
+      "auditStatus": "pending"
+    },
+    {
+      "id": "supplement-batch12-008",
+      "conceptId": "fact:geo:孟加拉灣",
+      "level": "洲際領隊",
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ],
+      "questionType": "自然地理",
+      "category": "世界地理",
+      "region": "世界地理",
+      "q": "孟加拉灣位於印度半島東側，屬於哪一個大洋？",
+      "options": [
+        "印度洋",
+        "太平洋",
+        "大西洋",
+        "北冰洋"
+      ],
+      "correctAnswer": "印度洋",
+      "answerIndex": 0,
+      "fact": "孟加拉灣沿岸受季風影響，恒河與布拉馬普特拉河在此匯合入海。",
+      "auditStatus": "pending"
+    },
+    {
+      "id": "supplement-batch12-009",
+      "conceptId": "fact:geo:北海",
+      "level": "洲際領隊",
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ],
+      "questionType": "自然地理",
+      "category": "世界地理",
+      "region": "世界地理",
+      "q": "北海位於大不列顛島與哪一個半島之間？",
+      "options": [
+        "斯堪地那維亞半島",
+        "伊比利半島",
+        "巴爾幹半島",
+        "義大利半島"
+      ],
+      "correctAnswer": "斯堪地那維亞半島",
+      "answerIndex": 0,
+      "fact": "北海連接英國、挪威、丹麥、德國等國海岸，石油與航運資源豐富。",
+      "auditStatus": "pending"
+    },
+    {
+      "id": "supplement-batch12-010",
+      "conceptId": "fact:geo:白令海峽",
+      "level": "環球旅行家",
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ],
+      "questionType": "自然地理",
+      "category": "世界地理",
+      "region": "世界地理",
+      "q": "白令海峽分隔哪兩個大洲？",
+      "options": [
+        "亞洲與北美洲",
+        "歐洲與非洲",
+        "南美洲與非洲",
+        "大洋洲與南極洲"
+      ],
+      "correctAnswer": "亞洲與北美洲",
+      "answerIndex": 0,
+      "fact": "白令海峽最窄處約 85 公里，是亞洲與北美洲的傳統分界之一。",
+      "auditStatus": "pending"
+    },
+    {
+      "id": "supplement-batch12-011",
+      "conceptId": "fact:geo:德雷克海峽",
+      "level": "環球旅行家",
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ],
+      "questionType": "自然地理",
+      "category": "世界地理",
+      "region": "世界地理",
+      "q": "德雷克海峽位於南美洲南端與哪一個大洲之間？",
+      "options": [
+        "南極洲",
+        "非洲",
+        "澳洲",
+        "歐洲"
+      ],
+      "correctAnswer": "南極洲",
+      "answerIndex": 0,
+      "fact": "德雷克海峽是前往南極洲的重要航道，風浪強勁。",
+      "auditStatus": "pending"
+    },
+    {
+      "id": "supplement-batch12-012",
+      "conceptId": "fact:geo:烏拉山脈",
+      "level": "洲際領隊",
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ],
+      "questionType": "自然地理",
+      "category": "世界地理",
+      "region": "世界地理",
+      "q": "烏拉山脈常被視為哪兩個大洲的分界？",
+      "options": [
+        "歐洲與亞洲",
+        "非洲與歐洲",
+        "亞洲與北美洲",
+        "南美洲與北美洲"
+      ],
+      "correctAnswer": "歐洲與亞洲",
+      "answerIndex": 0,
+      "fact": "烏拉山脈橫貫俄羅斯西部，是歐亞分界線的重要參考。",
+      "auditStatus": "pending"
+    },
+    {
+      "id": "supplement-batch12-013",
+      "conceptId": "fact:geo:戈壁沙漠",
+      "level": "洲際領隊",
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ],
+      "questionType": "自然地理",
+      "category": "世界地理",
+      "region": "世界地理",
+      "q": "戈壁沙漠主要分布在哪一個地理區域？",
+      "options": [
+        "蒙古與中國北部",
+        "撒哈拉",
+        "澳洲內陸",
+        "南美洲西岸"
+      ],
+      "correctAnswer": "蒙古與中國北部",
+      "answerIndex": 0,
+      "fact": "戈壁是亞洲冷沙漠，橫跨蒙古與中國內蒙古、甘肅等地。",
+      "auditStatus": "pending"
+    },
+    {
+      "id": "supplement-batch12-014",
+      "conceptId": "fact:geo:塔克拉馬干沙漠",
+      "level": "環球旅行家",
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ],
+      "questionType": "自然地理",
+      "category": "世界地理",
+      "region": "世界地理",
+      "q": "塔克拉馬干沙漠位於中國哪一個自治區？",
+      "options": [
+        "新疆",
+        "西藏",
+        "內蒙古",
+        "青海"
+      ],
+      "correctAnswer": "新疆",
+      "answerIndex": 0,
+      "fact": "塔克拉馬干是中國最大沙漠，位於塔里木盆地，古絲路橫穿其北緣。",
+      "auditStatus": "pending"
+    },
+    {
+      "id": "supplement-batch12-015",
+      "conceptId": "fact:geo:喀拉哈里沙漠",
+      "level": "洲際領隊",
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ],
+      "questionType": "自然地理",
+      "category": "世界地理",
+      "region": "世界地理",
+      "q": "喀拉哈里沙漠主要位於哪一個大洲？",
+      "options": [
+        "非洲",
+        "亞洲",
+        "南美洲",
+        "大洋洲"
+      ],
+      "correctAnswer": "非洲",
+      "answerIndex": 0,
+      "fact": "喀拉哈里沙漠橫跨波札那、納米比亞與南非部分地區。",
+      "auditStatus": "pending"
+    },
+    {
+      "id": "supplement-batch12-016",
+      "conceptId": "fact:geo:洛磯山脈",
+      "level": "洲際領隊",
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ],
+      "questionType": "自然地理",
+      "category": "世界地理",
+      "region": "世界地理",
+      "q": "洛磯山脈主要位於北美哪一個國家？",
+      "options": [
+        "美國與加拿大",
+        "墨西哥",
+        "古巴",
+        "巴西"
+      ],
+      "correctAnswer": "美國與加拿大",
+      "answerIndex": 0,
+      "fact": "洛磯山脈縱貫北美西部，是重要國家公園與滑雪旅遊區。",
+      "auditStatus": "pending"
+    },
+    {
+      "id": "supplement-batch12-017",
+      "conceptId": "fact:geo:多瑙河",
+      "level": "洲際領隊",
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ],
+      "questionType": "自然地理",
+      "category": "世界地理",
+      "region": "世界地理",
+      "q": "多瑙河被稱為歐洲第二大河，它最終注入哪一片海域？",
+      "options": [
+        "黑海",
+        "地中海",
+        "北海",
+        "波羅的海"
+      ],
+      "correctAnswer": "黑海",
+      "answerIndex": 0,
+      "fact": "多瑙河流經維也納、布達佩斯、貝爾格勒等城市，在羅馬尼亞注入黑海。",
+      "auditStatus": "pending"
+    },
+    {
+      "id": "supplement-batch12-018",
+      "conceptId": "fact:geo:乞力馬扎羅山",
+      "level": "環球旅行家",
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ],
+      "questionType": "自然地理",
+      "category": "世界地理",
+      "region": "世界地理",
+      "q": "非洲最高峰乞力馬扎羅山位於哪一個國家？",
+      "options": [
+        "坦尚尼亞",
+        "肯亞",
+        "埃及",
+        "南非"
+      ],
+      "correctAnswer": "坦尚尼亞",
+      "answerIndex": 0,
+      "fact": "乞力馬扎羅山是休眠火山，位於坦尚尼亞東北部，山頂終年積雪。",
+      "auditStatus": "pending"
+    },
+    {
+      "id": "supplement-batch12-019",
+      "conceptId": "fact:geo:大分水嶺",
+      "level": "洲際領隊",
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ],
+      "questionType": "自然地理",
+      "category": "世界地理",
+      "region": "世界地理",
+      "q": "澳洲東部的大分水嶺對河流流向的主要影響是？",
+      "options": [
+        "東側河流注入太平洋",
+        "所有河流注入印度洋",
+        "河流不流向海洋",
+        "河流全部注入內陸湖"
+      ],
+      "correctAnswer": "東側河流注入太平洋",
+      "answerIndex": 0,
+      "fact": "大分水嶺是澳洲東部重要山系，東坡短河注入太平洋，西坡河流較長。",
+      "auditStatus": "pending"
+    },
+    {
+      "id": "supplement-batch12-020",
+      "conceptId": "fact:geo:台灣海峽",
+      "level": "洲際領隊",
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ],
+      "questionType": "自然地理",
+      "category": "世界地理",
+      "region": "世界地理",
+      "q": "台灣海峽位於台灣島與哪一側之間？",
+      "options": [
+        "中國大陸東南沿海",
+        "日本本島",
+        "菲律賓呂宋島",
+        "朝鮮半島"
+      ],
+      "correctAnswer": "中國大陸東南沿海",
+      "answerIndex": 0,
+      "fact": "台灣海峽是連接東海與南海的重要水道，最窄處約 130 公里。",
+      "auditStatus": "pending"
+    }
+  ]
+}

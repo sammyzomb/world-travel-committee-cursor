@@ -1,0 +1,219 @@
+{
+  "generatedAt": "2026-09-15T09:49:33.794Z",
+  "totals": {
+    "approved": 865,
+    "pending": 0,
+    "disabled": 237,
+    "travelApproved": 24,
+    "travelTotal": 25,
+    "tourApproved": 15,
+    "tourTotal": 20,
+    "supplement": 280,
+    "withPhotoVisual": 573,
+    "withoutVisual": 269
+  },
+  "pendingBySource": {},
+  "thinStages": [],
+  "stageInventory": [
+    {
+      "stageIndex": 0,
+      "grade": "小一",
+      "poolSize": 85,
+      "uniqueConcepts": 46,
+      "headroom": -39
+    },
+    {
+      "stageIndex": 1,
+      "grade": "小二",
+      "poolSize": 80,
+      "uniqueConcepts": 45,
+      "headroom": -35
+    },
+    {
+      "stageIndex": 2,
+      "grade": "小三",
+      "poolSize": 212,
+      "uniqueConcepts": 101,
+      "headroom": -111
+    },
+    {
+      "stageIndex": 3,
+      "grade": "小四",
+      "poolSize": 75,
+      "uniqueConcepts": 58,
+      "headroom": -17
+    },
+    {
+      "stageIndex": 4,
+      "grade": "小五",
+      "poolSize": 168,
+      "uniqueConcepts": 159,
+      "headroom": -9
+    },
+    {
+      "stageIndex": 5,
+      "grade": "小六",
+      "poolSize": 88,
+      "uniqueConcepts": 85,
+      "headroom": -3
+    },
+    {
+      "stageIndex": 6,
+      "grade": "國一",
+      "poolSize": 218,
+      "uniqueConcepts": 189,
+      "headroom": -29
+    },
+    {
+      "stageIndex": 7,
+      "grade": "國二",
+      "poolSize": 94,
+      "uniqueConcepts": 94,
+      "headroom": 0
+    },
+    {
+      "stageIndex": 8,
+      "grade": "國三",
+      "poolSize": 271,
+      "uniqueConcepts": 271,
+      "headroom": 0
+    },
+    {
+      "stageIndex": 9,
+      "grade": "高一",
+      "poolSize": 45,
+      "uniqueConcepts": 35,
+      "headroom": -10
+    },
+    {
+      "stageIndex": 10,
+      "grade": "高二",
+      "poolSize": 73,
+      "uniqueConcepts": 63,
+      "headroom": -10
+    },
+    {
+      "stageIndex": 11,
+      "grade": "高三",
+      "poolSize": 105,
+      "uniqueConcepts": 105,
+      "headroom": 0
+    },
+    {
+      "stageIndex": 12,
+      "grade": "大一",
+      "poolSize": 120,
+      "uniqueConcepts": 120,
+      "headroom": 0
+    },
+    {
+      "stageIndex": 13,
+      "grade": "大二",
+      "poolSize": 105,
+      "uniqueConcepts": 105,
+      "headroom": 0
+    },
+    {
+      "stageIndex": 14,
+      "grade": "大三",
+      "poolSize": 129,
+      "uniqueConcepts": 119,
+      "headroom": -10
+    },
+    {
+      "stageIndex": 15,
+      "grade": "大四",
+      "poolSize": 105,
+      "uniqueConcepts": 105,
+      "headroom": 0
+    },
+    {
+      "stageIndex": 16,
+      "grade": "研一",
+      "poolSize": 98,
+      "uniqueConcepts": 98,
+      "headroom": 0
+    },
+    {
+      "stageIndex": 17,
+      "grade": "研二",
+      "poolSize": 122,
+      "uniqueConcepts": 112,
+      "headroom": -10
+    }
+  ],
+  "replayStress": [
+    {
+      "seed": 1,
+      "avoidConceptCount": 20,
+      "playableStageCount": 18,
+      "totalQuestions": 142,
+      "completeThroughFinal": true,
+      "firstGap": null
+    },
+    {
+      "seed": 1,
+      "avoidConceptCount": 40,
+      "playableStageCount": 18,
+      "totalQuestions": 142,
+      "completeThroughFinal": true,
+      "firstGap": null
+    },
+    {
+      "seed": 1,
+      "avoidConceptCount": 60,
+      "playableStageCount": 18,
+      "totalQuestions": 142,
+      "completeThroughFinal": true,
+      "firstGap": null
+    },
+    {
+      "seed": 42,
+      "avoidConceptCount": 20,
+      "playableStageCount": 18,
+      "totalQuestions": 142,
+      "completeThroughFinal": true,
+      "firstGap": null
+    },
+    {
+      "seed": 42,
+      "avoidConceptCount": 40,
+      "playableStageCount": 18,
+      "totalQuestions": 142,
+      "completeThroughFinal": true,
+      "firstGap": null
+    },
+    {
+      "seed": 42,
+      "avoidConceptCount": 60,
+      "playableStageCount": 18,
+      "totalQuestions": 142,
+      "completeThroughFinal": true,
+      "firstGap": null
+    },
+    {
+      "seed": 2026,
+      "avoidConceptCount": 20,
+      "playableStageCount": 18,
+      "totalQuestions": 142,
+      "completeThroughFinal": true,
+      "firstGap": null
+    },
+    {
+      "seed": 2026,
+      "avoidConceptCount": 40,
+      "playableStageCount": 18,
+      "totalQuestions": 142,
+      "completeThroughFinal": true,
+      "firstGap": null
+    },
+    {
+      "seed": 2026,
+      "avoidConceptCount": 60,
+      "playableStageCount": 18,
+      "totalQuestions": 142,
+      "completeThroughFinal": true,
+      "firstGap": null
+    }
+  ]
+}

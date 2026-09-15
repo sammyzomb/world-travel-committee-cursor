@@ -1,3 +1,4 @@
+import landmarkStaticManifest from "../data/landmark-static-manifest.json";
 import { heritageLandmarkImages } from "./landmark-images-heritage";
 
 /** Wikimedia Commons 免費圖片，可商用（依各檔案 CC 授權）。 */
@@ -360,8 +361,10 @@ export function getLandmarkImage(landmark: string): LandmarkImage | undefined {
   return landmarkImages[landmark];
 }
 
-/** 經本站代理載入，避免瀏覽器直接連 Wikimedia 失敗。 */
+/** 優先使用建置時下載的本地靜態圖；缺檔時退回 API 代理。 */
 export function getLandmarkImageSrc(landmark: string): string | undefined {
   if (!landmarkImages[landmark]) return undefined;
+  const localEntry = landmarkStaticManifest.entries[landmark];
+  if (localEntry?.path && !localEntry.failed) return localEntry.path;
   return `/api/landmark-image?name=${encodeURIComponent(landmark)}`;
 }

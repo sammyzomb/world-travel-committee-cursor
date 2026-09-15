@@ -17,12 +17,22 @@ export type StageRuleViolation = {
   reason: string;
 };
 
+function questionGradesAllowStage(question: Question, stageIndex: number) {
+  if (question.grades.length === 0) return true;
+  const grade = educationStages[stageIndex]?.name;
+  return grade ? question.grades.includes(grade) : false;
+}
+
 export function questionMatchesStageRules(question: Question, stageIndex: number) {
   if (stageIndex === 0) {
     if (question.kind === "tf") {
       return question.auditStatus === "approved";
     }
     return question.level === "旅行新手" && question.kind !== "tf";
+  }
+
+  if (!questionGradesAllowStage(question, stageIndex)) {
+    return false;
   }
 
   const stage = educationStages[stageIndex];
@@ -62,6 +72,11 @@ export function describeStageRuleViolation(question: Question, stageIndex: numbe
   }
 
   const stage = educationStages[stageIndex];
+  if (!questionGradesAllowStage(question, stageIndex)) {
+    const allowed = question.grades.join("、");
+    return `此題僅適用 ${allowed}`;
+  }
+
   if (!(stage.pool as readonly string[]).includes(question.level)) {
     return `難度 ${question.level} 不在 ${stage.name} pool`;
   }

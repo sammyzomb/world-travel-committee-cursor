@@ -1,0 +1,647 @@
+{
+  "generatedAt": "2026-09-15T06:26:33.456Z",
+  "nasRoot": "\\\\192.168.3.3\\【行程總彙】",
+  "scannedFiles": 35617,
+  "suggestions": [
+    {
+      "landmark": "艾菲爾鐵塔",
+      "status": "missing"
+    },
+    {
+      "landmark": "大笨鐘",
+      "status": "missing"
+    },
+    {
+      "landmark": "羅馬競技場",
+      "status": "missing"
+    },
+    {
+      "landmark": "普拉多博物館",
+      "status": "missing"
+    },
+    {
+      "landmark": "布蘭登堡門",
+      "status": "candidate",
+      "via": "path-contains",
+      "sourcePath": "\\\\192.168.3.3\\【行程總彙】\\4-1.歐洲\\●中西南歐\\德國\\柏林Berlin\\布蘭登堡門_巴黎廣場\\布蘭登堡門shutterstock_490048132.jpg",
+      "relativePath": "4-1.歐洲\\●中西南歐\\德國\\柏林Berlin\\布蘭登堡門_巴黎廣場\\布蘭登堡門shutterstock_490048132.jpg"
+    },
+    {
+      "landmark": "美泉宮",
+      "status": "missing"
+    },
+    {
+      "landmark": "國會大廈",
+      "status": "candidate",
+      "via": "basename",
+      "sourcePath": "\\\\192.168.3.3\\【行程總彙】\\3.大洋洲-紐 澳 帛琉 南太\\1-紐西蘭行程\\@照片圖庫\\20260108紐西蘭20天 ASHLEY許家樸\\0120第13天夏洛特女王峽灣（搭渡輪）－威靈頓（舊聖保羅教堂、纜車）\\國會大廈.JPG",
+      "relativePath": "3.大洋洲-紐 澳 帛琉 南太\\1-紐西蘭行程\\@照片圖庫\\20260108紐西蘭20天 ASHLEY許家樸\\0120第13天夏洛特女王峽灣（搭渡輪）－威靈頓（舊聖保羅教堂、纜車）\\國會大廈.JPG"
+    },
+    {
+      "landmark": "吉薩金字塔群",
+      "status": "missing"
+    },
+    {
+      "landmark": "奈洛比國家公園",
+      "status": "candidate",
+      "via": "path-contains",
+      "sourcePath": "\\\\192.168.3.3\\【行程總彙】\\5-非洲\\@照片圖庫\\@領隊\\2013-0716肯亞維多利亞16日-阿貴\\肯亞\\730奈洛比市區\\IMG_6523.JPG",
+      "relativePath": "5-非洲\\@照片圖庫\\@領隊\\2013-0716肯亞維多利亞16日-阿貴\\肯亞\\730奈洛比市區\\IMG_6523.JPG"
+    },
+    {
+      "landmark": "桌山",
+      "status": "missing"
+    },
+    {
+      "landmark": "庫圖比亞清真寺",
+      "status": "missing"
+    },
+    {
+      "landmark": "自由女神像",
+      "status": "missing"
+    },
+    {
+      "landmark": "國會山莊",
+      "status": "missing"
+    },
+    {
+      "landmark": "太陽金字塔",
+      "status": "missing"
+    },
+    {
+      "landmark": "基督像",
+      "status": "missing"
+    },
+    {
+      "landmark": "馬丘比丘",
+      "status": "candidate",
+      "via": "path-contains",
+      "sourcePath": "\\\\192.168.3.3\\【行程總彙】\\0-0-EDM+影片\\2024\\2024-6月-年度重點\\2祕魯12日 ✔️\\LIM12B_祕魯 馬丘比丘 印加帝國傳奇12日_反面.jpg",
+      "relativePath": "0-0-EDM+影片\\2024\\2024-6月-年度重點\\2祕魯12日 ✔️\\LIM12B_祕魯 馬丘比丘 印加帝國傳奇12日_反面.jpg"
+    },
+    {
+      "landmark": "富士山",
+      "status": "missing"
+    },
+    {
+      "landmark": "太平洋",
+      "status": "candidate",
+      "via": "path-contains",
+      "sourcePath": "\\\\192.168.3.3\\【行程總彙】\\0-0-EDM+影片\\2024\\2024-旅展\\11月ITF旅展\\1.A4DM_EDM區\\南太平洋26日-NAN24A-DM-20241018_背面.jpg",
+      "relativePath": "0-0-EDM+影片\\2024\\2024-旅展\\11月ITF旅展\\1.A4DM_EDM區\\南太平洋26日-NAN24A-DM-20241018_背面.jpg"
+    },
+    {
+      "landmark": "聖克里斯托瓦爾山",
+      "status": "missing"
+    },
+    {
+      "landmark": "五月廣場",
+      "status": "missing"
+    },
+    {
+      "landmark": "月亮谷",
+      "status": "missing"
+    },
+    {
+      "landmark": "雪梨歌劇院",
+      "status": "missing"
+    },
+    {
+      "landmark": "紐西蘭國會大廈",
+      "status": "missing"
+    },
+    {
+      "landmark": "大皇宮",
+      "status": "missing"
+    },
+    {
+      "landmark": "景福宮",
+      "status": "missing"
+    },
+    {
+      "landmark": "濱海灣金沙",
+      "status": "missing"
+    },
+    {
+      "landmark": "清水寺",
+      "status": "missing"
+    },
+    {
+      "landmark": "東大寺",
+      "status": "missing"
+    },
+    {
+      "landmark": "泰姬瑪哈陵",
+      "status": "missing"
+    },
+    {
+      "landmark": "聖索菲亞大教堂",
+      "status": "missing"
+    },
+    {
+      "landmark": "哈里法塔",
+      "status": "missing"
+    },
+    {
+      "landmark": "紅場",
+      "status": "missing"
+    },
+    {
+      "landmark": "帕德嫩神廟",
+      "status": "missing"
+    },
+    {
+      "landmark": "查理大橋",
+      "status": "missing"
+    },
+    {
+      "landmark": "藍湖",
+      "status": "missing"
+    },
+    {
+      "landmark": "庫肯霍夫花園",
+      "status": "missing"
+    },
+    {
+      "landmark": "金門大橋",
+      "status": "missing"
+    },
+    {
+      "landmark": "奇琴伊察",
+      "status": "missing"
+    },
+    {
+      "landmark": "伊瓜蘇瀑布",
+      "status": "candidate",
+      "via": "path-contains",
+      "sourcePath": "\\\\192.168.3.3\\【行程總彙】\\保留系列資料\\1-5.自由行\\美洲\\南美洲\\地圖\\IGR3G-阿根廷-伊瓜蘇瀑布-自由行-3日-01.jpg",
+      "relativePath": "保留系列資料\\1-5.自由行\\美洲\\南美洲\\地圖\\IGR3G-阿根廷-伊瓜蘇瀑布-自由行-3日-01.jpg"
+    },
+    {
+      "landmark": "迦太基古城",
+      "status": "missing"
+    },
+    {
+      "landmark": "雙子星塔",
+      "status": "missing"
+    },
+    {
+      "landmark": "維多利亞港",
+      "status": "missing"
+    },
+    {
+      "landmark": "聖馬可廣場",
+      "status": "missing"
+    },
+    {
+      "landmark": "聖母百花大教堂",
+      "status": "missing"
+    },
+    {
+      "landmark": "吳哥窟",
+      "status": "candidate",
+      "via": "path-contains",
+      "sourcePath": "\\\\192.168.3.3\\【行程總彙】\\7-1.攝影\\1-6攝影\\地圖\\6.吳哥窟＿景區地圖.png",
+      "relativePath": "7-1.攝影\\1-6攝影\\地圖\\6.吳哥窟＿景區地圖.png"
+    },
+    {
+      "landmark": "佩特拉古城",
+      "status": "missing"
+    },
+    {
+      "landmark": "聖家堂",
+      "status": "missing"
+    },
+    {
+      "landmark": "婆羅浮屠",
+      "status": "candidate",
+      "via": "path-contains",
+      "sourcePath": "\\\\192.168.3.3\\【行程總彙】\\0-0-EDM+影片\\2024\\2024-旅展\\4月台北春季旅展\\A4DM\\BWN08A-爪哇婆羅浮屠佛塔火山汶萊王國東方杜拜8日-A4DM-20240308_正面.jpg",
+      "relativePath": "0-0-EDM+影片\\2024\\2024-旅展\\4月台北春季旅展\\A4DM\\BWN08A-爪哇婆羅浮屠佛塔火山汶萊王國東方杜拜8日-A4DM-20240308_正面.jpg"
+    },
+    {
+      "landmark": "獅子岩",
+      "status": "missing"
+    },
+    {
+      "landmark": "雷吉斯坦廣場",
+      "status": "missing"
+    },
+    {
+      "landmark": "哈瓦那舊城",
+      "status": "missing"
+    },
+    {
+      "landmark": "下龍灣",
+      "status": "candidate",
+      "via": "path-contains",
+      "sourcePath": "\\\\192.168.3.3\\【行程總彙】\\0-0-EDM+影片\\2025\\2025-5月\\20250513 北越下龍灣 海上VILLA 5日.jpg",
+      "relativePath": "0-0-EDM+影片\\2025\\2025-5月\\20250513 北越下龍灣 海上VILLA 5日.jpg"
+    },
+    {
+      "landmark": "大金塔",
+      "status": "missing"
+    },
+    {
+      "landmark": "少女峰",
+      "status": "missing"
+    },
+    {
+      "landmark": "塞倫蓋蒂國家公園",
+      "status": "candidate",
+      "via": "path-contains",
+      "sourcePath": "\\\\192.168.3.3\\【行程總彙】\\5-非洲\\@照片圖庫\\@領隊\\2013-0716肯亞維多利亞16日-阿貴\\肯亞\\723塞倫蓋蒂國家公園\\IMG_5421.JPG",
+      "relativePath": "5-非洲\\@照片圖庫\\@領隊\\2013-0716肯亞維多利亞16日-阿貴\\肯亞\\723塞倫蓋蒂國家公園\\IMG_5421.JPG"
+    },
+    {
+      "landmark": "天使瀑布",
+      "status": "missing"
+    },
+    {
+      "landmark": "珠穆朗瑪峰",
+      "status": "missing"
+    },
+    {
+      "landmark": "孫德爾邦",
+      "status": "missing"
+    },
+    {
+      "landmark": "拉合爾城堡",
+      "status": "missing"
+    },
+    {
+      "landmark": "伊瑪目清真寺",
+      "status": "missing"
+    },
+    {
+      "landmark": "哭牆",
+      "status": "missing"
+    },
+    {
+      "landmark": "王國中心塔",
+      "status": "missing"
+    },
+    {
+      "landmark": "伊斯蘭藝術博物館",
+      "status": "missing"
+    },
+    {
+      "landmark": "普西山",
+      "status": "missing"
+    },
+    {
+      "landmark": "碧瑤",
+      "status": "missing"
+    },
+    {
+      "landmark": "奧馬爾清真寺",
+      "status": "missing"
+    },
+    {
+      "landmark": "成吉思汗廣場",
+      "status": "candidate",
+      "via": "path-contains",
+      "sourcePath": "\\\\192.168.3.3\\【行程總彙】\\1-3西伯利亞鐵路+俄羅斯\\@照片圖庫\\20240712蒙貝13日領隊照片-李小萍\\成吉思汗廣場 歷史博物館\\LINE_ALBUM_714成吉思汗廣場 歷史博物館_240727_11.jpg",
+      "relativePath": "1-3西伯利亞鐵路+俄羅斯\\@照片圖庫\\20240712蒙貝13日領隊照片-李小萍\\成吉思汗廣場 歷史博物館\\LINE_ALBUM_714成吉思汗廣場 歷史博物館_240727_11.jpg"
+    },
+    {
+      "landmark": "巴伊傑列克塔",
+      "status": "missing"
+    },
+    {
+      "landmark": "和平橋",
+      "status": "missing"
+    },
+    {
+      "landmark": "維格蘭雕塑公園",
+      "status": "missing"
+    },
+    {
+      "landmark": "赫爾辛基大教堂",
+      "status": "candidate",
+      "via": "path-contains",
+      "sourcePath": "\\\\192.168.3.3\\【行程總彙】\\1-4北極光\\@照片圖庫\\@領隊\\20250125芬蘭挪威10日-陳妍方\\0126抵達赫爾辛基 市區觀光\\赫爾辛基機場\\赫爾辛基機場 (5).jpg",
+      "relativePath": "1-4北極光\\@照片圖庫\\@領隊\\20250125芬蘭挪威10日-陳妍方\\0126抵達赫爾辛基 市區觀光\\赫爾辛基機場\\赫爾辛基機場 (5).jpg"
+    },
+    {
+      "landmark": "市政廳",
+      "status": "candidate",
+      "via": "path-contains",
+      "sourcePath": "\\\\192.168.3.3\\【行程總彙】\\4-1.歐洲\\●中西南歐\\德國\\漢諾威 市政廳shutterstock_627773894.jpg",
+      "relativePath": "4-1.歐洲\\●中西南歐\\德國\\漢諾威 市政廳shutterstock_627773894.jpg"
+    },
+    {
+      "landmark": "美人魚雕像",
+      "status": "missing"
+    },
+    {
+      "landmark": "老城廣場",
+      "status": "missing"
+    },
+    {
+      "landmark": "聖三一學院",
+      "status": "missing"
+    },
+    {
+      "landmark": "貝倫塔",
+      "status": "missing"
+    },
+    {
+      "landmark": "原子球塔",
+      "status": "missing"
+    },
+    {
+      "landmark": "卡列梅格丹城堡",
+      "status": "missing"
+    },
+    {
+      "landmark": "拉利貝拉岩刻教堂",
+      "status": "missing"
+    },
+    {
+      "landmark": "索蘇斯佛雷沙漠",
+      "status": "missing"
+    },
+    {
+      "landmark": "維多利亞瀑布",
+      "status": "candidate",
+      "via": "path-contains",
+      "sourcePath": "\\\\192.168.3.3\\【行程總彙】\\5-非洲\\@影片\\20230712-東非-陳妍方\\影片\\維多利亞瀑布 直升機\\20230722_171922+0200-uid-5847BE90-B1D3-4830-A4B9-E7C822ED623B-5029384.jpg",
+      "relativePath": "5-非洲\\@影片\\20230712-東非-陳妍方\\影片\\維多利亞瀑布 直升機\\20230722_171922+0200-uid-5847BE90-B1D3-4830-A4B9-E7C822ED623B-5029384.jpg"
+    },
+    {
+      "landmark": "良知之父紀念碑",
+      "status": "missing"
+    },
+    {
+      "landmark": "加拉帕戈斯群島",
+      "status": "missing"
+    },
+    {
+      "landmark": "獨立廣場",
+      "status": "missing"
+    },
+    {
+      "landmark": "鄧恩河瀑布",
+      "status": "missing"
+    },
+    {
+      "landmark": "萬里長城",
+      "status": "missing"
+    },
+    {
+      "landmark": "紫禁城",
+      "status": "missing"
+    },
+    {
+      "landmark": "兵馬俑",
+      "status": "missing"
+    },
+    {
+      "landmark": "莫高窟",
+      "status": "missing"
+    },
+    {
+      "landmark": "樂山大佛",
+      "status": "missing"
+    },
+    {
+      "landmark": "張家界國家森林公園",
+      "status": "candidate",
+      "via": "path-contains",
+      "sourcePath": "\\\\192.168.3.3\\【行程總彙】\\7-1.攝影\\1-6攝影\\地圖\\DYG08P_張家界攝影8日_ALL_MAP.jpg",
+      "relativePath": "7-1.攝影\\1-6攝影\\地圖\\DYG08P_張家界攝影8日_ALL_MAP.jpg"
+    },
+    {
+      "landmark": "黃山",
+      "status": "missing"
+    },
+    {
+      "landmark": "麗江古城",
+      "status": "candidate",
+      "via": "path-contains",
+      "sourcePath": "\\\\192.168.3.3\\【行程總彙】\\0-0-EDM+影片\\2024\\2024-6月-年度重點\\4稻城亞丁南線15日 ✔️\\CTU15A_稻城亞丁 四姑娘山 麗江古城 香格里拉（川滇南環線）15日_背面.jpg",
+      "relativePath": "0-0-EDM+影片\\2024\\2024-6月-年度重點\\4稻城亞丁南線15日 ✔️\\CTU15A_稻城亞丁 四姑娘山 麗江古城 香格里拉（川滇南環線）15日_背面.jpg"
+    },
+    {
+      "landmark": "布達拉宮",
+      "status": "missing"
+    },
+    {
+      "landmark": "嚴島神社",
+      "status": "missing"
+    },
+    {
+      "landmark": "姬路城",
+      "status": "missing"
+    },
+    {
+      "landmark": "佛國寺",
+      "status": "missing"
+    },
+    {
+      "landmark": "會安古城",
+      "status": "missing"
+    },
+    {
+      "landmark": "金邊皇宮",
+      "status": "missing"
+    },
+    {
+      "landmark": "加德滿都谷地",
+      "status": "missing"
+    },
+    {
+      "landmark": "琥珀堡",
+      "status": "missing"
+    },
+    {
+      "landmark": "藍色清真寺",
+      "status": "missing"
+    },
+    {
+      "landmark": "卡帕多奇亞",
+      "status": "missing"
+    },
+    {
+      "landmark": "耶路撒冷古城",
+      "status": "missing"
+    },
+    {
+      "landmark": "杰拉什古城",
+      "status": "missing"
+    },
+    {
+      "landmark": "新天鵝堡",
+      "status": "candidate",
+      "via": "path-contains",
+      "sourcePath": "\\\\192.168.3.3\\【行程總彙】\\4-1.歐洲\\●中西南歐\\德國\\新天鵝堡Schloss Neuschwanstein\\新天鵝堡shutterstock_1344676493.jpg",
+      "relativePath": "4-1.歐洲\\●中西南歐\\德國\\新天鵝堡Schloss Neuschwanstein\\新天鵝堡shutterstock_1344676493.jpg"
+    },
+    {
+      "landmark": "凡爾賽宮",
+      "status": "candidate",
+      "via": "path-contains",
+      "sourcePath": "\\\\192.168.3.3\\【行程總彙】\\保留系列資料\\1-5.自由行\\歐洲\\地圖\\CDG05G-法國-巴黎-凡爾賽宮-自由行-5日-01.jpg",
+      "relativePath": "保留系列資料\\1-5.自由行\\歐洲\\地圖\\CDG05G-法國-巴黎-凡爾賽宮-自由行-5日-01.jpg"
+    },
+    {
+      "landmark": "聖米歇爾山",
+      "status": "missing"
+    },
+    {
+      "landmark": "阿爾罕布拉宮",
+      "status": "missing"
+    },
+    {
+      "landmark": "塞哥維亞古城",
+      "status": "missing"
+    },
+    {
+      "landmark": "雅典衛城",
+      "status": "missing"
+    },
+    {
+      "landmark": "龐貝古城",
+      "status": "missing"
+    },
+    {
+      "landmark": "威尼斯古城",
+      "status": "candidate",
+      "via": "path-contains",
+      "sourcePath": "\\\\192.168.3.3\\【行程總彙】\\保留系列資料\\1-5.自由行\\歐洲\\地圖\\NAP08L-義大利-米蘭-威尼斯-比薩斜塔-五魚村-自由行-6日-01 - 複製.jpg",
+      "relativePath": "保留系列資料\\1-5.自由行\\歐洲\\地圖\\NAP08L-義大利-米蘭-威尼斯-比薩斜塔-五魚村-自由行-6日-01 - 複製.jpg"
+    },
+    {
+      "landmark": "烏菲茲美術館",
+      "status": "missing"
+    },
+    {
+      "landmark": "威斯敏斯特宮",
+      "status": "missing"
+    },
+    {
+      "landmark": "巨石陣",
+      "status": "missing"
+    },
+    {
+      "landmark": "布拉格城堡",
+      "status": "missing"
+    },
+    {
+      "landmark": "維利奇卡鹽礦",
+      "status": "candidate",
+      "via": "path-contains",
+      "sourcePath": "\\\\192.168.3.3\\【行程總彙】\\4-1.歐洲\\●中西南歐\\波蘭\\20180905-18波波14日領隊照片-李小萍\\0907維利奇卡鹽礦.克拉克夫\\IMG_0145.JPG",
+      "relativePath": "4-1.歐洲\\●中西南歐\\波蘭\\20180905-18波波14日領隊照片-李小萍\\0907維利奇卡鹽礦.克拉克夫\\IMG_0145.JPG"
+    },
+    {
+      "landmark": "辛格韋德利爾國家公園",
+      "status": "missing"
+    },
+    {
+      "landmark": "克里姆林宮",
+      "status": "candidate",
+      "via": "path-contains",
+      "sourcePath": "\\\\192.168.3.3\\【行程總彙】\\1-4北極光\\@照片圖庫\\@領隊\\20260308 摩爾曼斯克 11+1日 - 游博勝(Matt)\\Day3 莫斯科 (克里姆林宮、莫斯科地鐵、伊茲麥洛夫市集)\\克里姆林宮\\LINE_ALBUM_俄羅斯摩爾曼D3_260320_122.jpg",
+      "relativePath": "1-4北極光\\@照片圖庫\\@領隊\\20260308 摩爾曼斯克 11+1日 - 游博勝(Matt)\\Day3 莫斯科 (克里姆林宮、莫斯科地鐵、伊茲麥洛夫市集)\\克里姆林宮\\LINE_ALBUM_俄羅斯摩爾曼D3_260320_122.jpg"
+    },
+    {
+      "landmark": "冬宮博物館",
+      "status": "missing"
+    },
+    {
+      "landmark": "杜布羅夫尼克古城",
+      "status": "missing"
+    },
+    {
+      "landmark": "大峽谷國家公園",
+      "status": "missing"
+    },
+    {
+      "landmark": "優勝美地國家公園",
+      "status": "missing"
+    },
+    {
+      "landmark": "黃石國家公園",
+      "status": "missing"
+    },
+    {
+      "landmark": "尼加拉瀑布",
+      "status": "candidate",
+      "via": "path-contains",
+      "sourcePath": "\\\\192.168.3.3\\【行程總彙】\\0-0-EDM+影片\\2025\\2025-9月\\YVR14K_加拿大-黃刀北極光-洛磯山脈-八百里楓紅-尼加拉瀑布-魁北克-14日_250902.jpg",
+      "relativePath": "0-0-EDM+影片\\2025\\2025-9月\\YVR14K_加拿大-黃刀北極光-洛磯山脈-八百里楓紅-尼加拉瀑布-魁北克-14日_250902.jpg"
+    },
+    {
+      "landmark": "瓦哈卡歷史中心",
+      "status": "missing"
+    },
+    {
+      "landmark": "薩爾瓦多歷史中心",
+      "status": "missing"
+    },
+    {
+      "landmark": "莫雷諾冰川",
+      "status": "missing"
+    },
+    {
+      "landmark": "庫斯科古城",
+      "status": "candidate",
+      "via": "path-contains",
+      "sourcePath": "\\\\192.168.3.3\\【行程總彙】\\保留系列資料\\1-5.自由行\\美洲\\中美洲\\地圖\\LIM7G-秘魯-利馬-庫斯科-聖谷-馬丘比丘-深度-自由行-7日-01.jpg",
+      "relativePath": "保留系列資料\\1-5.自由行\\美洲\\中美洲\\地圖\\LIM7G-秘魯-利馬-庫斯科-聖谷-馬丘比丘-深度-自由行-7日-01.jpg"
+    },
+    {
+      "landmark": "摩艾石像",
+      "status": "candidate",
+      "via": "path-contains",
+      "sourcePath": "\\\\192.168.3.3\\【行程總彙】\\0-0-EDM+影片\\2024\\2024-旅展\\11月ITF旅展\\3.A4DM_無須修改\\南美六國復活節島31日-LIM31A-DM-20240311_背面.jpg",
+      "relativePath": "0-0-EDM+影片\\2024\\2024-旅展\\11月ITF旅展\\3.A4DM_無須修改\\南美六國復活節島31日-LIM31A-DM-20240311_背面.jpg"
+    },
+    {
+      "landmark": "大堡礁",
+      "status": "missing"
+    },
+    {
+      "landmark": "烏魯魯",
+      "status": "missing"
+    },
+    {
+      "landmark": "乞力馬扎羅山",
+      "status": "missing"
+    },
+    {
+      "landmark": "馬拉喀什老城",
+      "status": "missing"
+    },
+    {
+      "landmark": "羅本島",
+      "status": "missing"
+    },
+    {
+      "landmark": "阿布辛貝神廟",
+      "status": "missing"
+    },
+    {
+      "landmark": "魁北克古城",
+      "status": "candidate",
+      "via": "path-contains",
+      "sourcePath": "\\\\192.168.3.3\\【行程總彙】\\1-1台灣旅遊\\@照片圖庫\\●情境圖\\煙火\\魁北克_shutterstock_1179431848.jpg",
+      "relativePath": "1-1台灣旅遊\\@照片圖庫\\●情境圖\\煙火\\魁北克_shutterstock_1179431848.jpg"
+    },
+    {
+      "landmark": "小孩堤防風車群",
+      "status": "missing"
+    },
+    {
+      "landmark": "波斯波利斯古城",
+      "status": "missing"
+    },
+    {
+      "landmark": "旅遊地標",
+      "status": "missing"
+    }
+  ],
+  "manualEntries": {}
+}

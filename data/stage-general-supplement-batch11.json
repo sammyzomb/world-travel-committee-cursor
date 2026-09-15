@@ -1,0 +1,484 @@
+{
+  "batchId": "stage-general-supplement-batch11",
+  "generatedAt": "2026-09-15T10:20:00.000Z",
+  "purpose": "中東與中亞首都、地標與自然地理補題。",
+  "gapContext": {
+    "target": "中東中亞地理素養與有照片地標",
+    "newUniqueConcepts": 20
+  },
+  "questions": [
+    {
+      "id": "supplement-batch11-001",
+      "conceptId": "fact:country:約旦",
+      "level": "洲際領隊",
+      "grades": [],
+      "questionType": "首都記憶",
+      "category": "世界地理",
+      "region": "亞洲",
+      "q": "約旦的首都是哪一座城市？",
+      "options": [
+        "安曼",
+        "耶路撒冷",
+        "開羅",
+        "貝魯特"
+      ],
+      "correctAnswer": "安曼",
+      "answerIndex": 0,
+      "fact": "安曼是約旦首都，也是前往佩特拉古城與死海的重要門戶。",
+      "auditStatus": "pending"
+    },
+    {
+      "id": "supplement-batch11-002",
+      "conceptId": "fact:country:卡達",
+      "level": "洲際領隊",
+      "grades": [],
+      "questionType": "首都記憶",
+      "category": "世界地理",
+      "region": "亞洲",
+      "q": "卡達的首都是哪一座城市？",
+      "options": [
+        "多哈",
+        "杜拜",
+        "阿布達比",
+        "利雅德"
+      ],
+      "correctAnswer": "多哈",
+      "answerIndex": 0,
+      "fact": "多哈是卡達首都，瀕臨波斯灣，以現代建築與伊斯蘭藝術博物館聞名。",
+      "auditStatus": "pending"
+    },
+    {
+      "id": "supplement-batch11-003",
+      "conceptId": "fact:country:阿拉伯聯合大公國",
+      "level": "國家達人",
+      "grades": [],
+      "questionType": "首都記憶",
+      "category": "世界地理",
+      "region": "亞洲",
+      "q": "阿拉伯聯合大公國的首都是哪一座城市？",
+      "options": [
+        "阿布達比",
+        "杜拜",
+        "多哈",
+        "麥納麥"
+      ],
+      "correctAnswer": "阿布達比",
+      "answerIndex": 0,
+      "fact": "阿布達比是阿聯酋首都，杜拜則是著名商業與旅遊城市。",
+      "auditStatus": "pending"
+    },
+    {
+      "id": "supplement-batch11-004",
+      "conceptId": "fact:country:喬治亞",
+      "level": "環球旅行家",
+      "grades": [],
+      "questionType": "首都記憶",
+      "category": "世界地理",
+      "region": "亞洲",
+      "q": "喬治亞的首都是哪一座城市？",
+      "options": [
+        "第比利斯",
+        "巴庫",
+        "葉里溫",
+        "安卡拉"
+      ],
+      "correctAnswer": "第比利斯",
+      "answerIndex": 0,
+      "fact": "第比利斯位於高加索地區，是喬治亞首都與絲路古城之一。",
+      "auditStatus": "pending"
+    },
+    {
+      "id": "supplement-batch11-005",
+      "conceptId": "fact:country:亞美尼亞",
+      "level": "環球旅行家",
+      "grades": [],
+      "questionType": "首都記憶",
+      "category": "世界地理",
+      "region": "亞洲",
+      "q": "亞美尼亞的首都是哪一座城市？",
+      "options": [
+        "葉里溫",
+        "第比利斯",
+        "巴庫",
+        "德黑蘭"
+      ],
+      "correctAnswer": "葉里溫",
+      "answerIndex": 0,
+      "fact": "葉里溫位於亞美尼亞高原，是該國首都與文化中心。",
+      "auditStatus": "pending"
+    },
+    {
+      "id": "supplement-batch11-006",
+      "conceptId": "fact:country:亞塞拜然",
+      "level": "環球旅行家",
+      "grades": [],
+      "questionType": "首都定位",
+      "category": "世界地理",
+      "region": "亞洲",
+      "q": "亞塞拜然的首都為何？",
+      "options": [
+        "巴庫",
+        "第比利斯",
+        "塔什干",
+        "德黑蘭"
+      ],
+      "correctAnswer": "巴庫",
+      "answerIndex": 0,
+      "fact": "巴庫位於里海西岸，是亞塞拜然首都與石油歷史名城。",
+      "auditStatus": "pending"
+    },
+    {
+      "id": "supplement-batch11-007",
+      "conceptId": "fact:city:哭牆",
+      "level": "洲際領隊",
+      "grades": [],
+      "questionType": "地標定位",
+      "category": "世界遺產",
+      "region": "亞洲",
+      "q": "猶太教重要聖地哭牆位於哪一座城市？",
+      "options": [
+        "耶路撒冷",
+        "安曼",
+        "開羅",
+        "大馬士革"
+      ],
+      "correctAnswer": "耶路撒冷",
+      "answerIndex": 0,
+      "fact": "哭牆是猶太教重要聖地，位於耶路撒冷舊城聖殿山遺址旁。",
+      "landmark": "哭牆",
+      "landmarkDetail": "耶路撒冷",
+      "auditStatus": "pending"
+    },
+    {
+      "id": "supplement-batch11-008",
+      "conceptId": "fact:city:伊瑪目清真寺",
+      "level": "環球旅行家",
+      "grades": [],
+      "questionType": "地標定位",
+      "category": "世界遺產",
+      "region": "亞洲",
+      "q": "伊朗伊瑪目清真寺位於哪一座城市？",
+      "options": [
+        "伊斯法罕",
+        "德黑蘭",
+        "設拉子",
+        "大不里士"
+      ],
+      "correctAnswer": "伊斯法罕",
+      "answerIndex": 0,
+      "fact": "伊瑪目清真寺位於伊斯法罕伊瑪目廣場，是波斯建築藝術代表作。",
+      "landmark": "伊瑪目清真寺",
+      "landmarkDetail": "伊朗・伊斯法罕",
+      "auditStatus": "pending"
+    },
+    {
+      "id": "supplement-batch11-009",
+      "conceptId": "fact:city:雷吉斯坦廣場",
+      "level": "環球旅行家",
+      "grades": [],
+      "questionType": "地標定位",
+      "category": "世界遺產",
+      "region": "亞洲",
+      "q": "烏茲別克著名的雷吉斯坦廣場位於哪一座城市？",
+      "options": [
+        "撒馬爾罕",
+        "布哈拉",
+        "塔什干",
+        "希瓦"
+      ],
+      "correctAnswer": "撒馬爾罕",
+      "answerIndex": 0,
+      "fact": "雷吉斯坦廣場位於撒馬爾罕，是絲路沿線著名的伊斯蘭建築群。",
+      "landmark": "雷吉斯坦廣場",
+      "landmarkDetail": "烏茲別克・撒馬爾罕",
+      "auditStatus": "pending"
+    },
+    {
+      "id": "supplement-batch11-010",
+      "conceptId": "fact:city:伊斯蘭藝術博物館",
+      "level": "洲際領隊",
+      "grades": [],
+      "questionType": "地標定位",
+      "category": "世界遺產",
+      "region": "亞洲",
+      "q": "卡達伊斯蘭藝術博物館位於哪一座城市？",
+      "options": [
+        "多哈",
+        "杜拜",
+        "阿布達比",
+        "麥加"
+      ],
+      "correctAnswer": "多哈",
+      "answerIndex": 0,
+      "fact": "博物館位於多哈濱海灣，展示伊斯蘭世界藝術與文物。",
+      "landmark": "伊斯蘭藝術博物館",
+      "landmarkDetail": "卡達・多哈",
+      "auditStatus": "pending"
+    },
+    {
+      "id": "supplement-batch11-011",
+      "conceptId": "fact:city:拉合爾城堡",
+      "level": "洲際領隊",
+      "grades": [],
+      "questionType": "地標定位",
+      "category": "世界遺產",
+      "region": "亞洲",
+      "q": "巴基斯坦拉合爾城堡位於哪一座城市？",
+      "options": [
+        "拉合爾",
+        "伊斯蘭堡",
+        "卡拉奇",
+        "新德里"
+      ],
+      "correctAnswer": "拉合爾",
+      "answerIndex": 0,
+      "fact": "拉合爾城堡是蒙兀兒帝國時期堡壘，位於巴基斯坦旁遮普省。",
+      "landmark": "拉合爾城堡",
+      "landmarkDetail": "巴基斯坦・拉合爾",
+      "auditStatus": "pending"
+    },
+    {
+      "id": "supplement-batch11-012",
+      "conceptId": "fact:city:大金塔",
+      "level": "洲際領隊",
+      "grades": [],
+      "questionType": "地標定位",
+      "category": "世界遺產",
+      "region": "亞洲",
+      "q": "緬甸最著名的佛教大金塔位於哪一座城市？",
+      "options": [
+        "仰光",
+        "奈比多",
+        "曼德勒",
+        "曼谷"
+      ],
+      "correctAnswer": "仰光",
+      "answerIndex": 0,
+      "fact": "大金塔位於仰光，是緬甸最重要的佛教聖地之一。",
+      "landmark": "大金塔",
+      "landmarkDetail": "緬甸・仰光",
+      "auditStatus": "pending"
+    },
+    {
+      "id": "supplement-batch11-013",
+      "conceptId": "fact:city:獅子岩",
+      "level": "環球旅行家",
+      "grades": [],
+      "questionType": "地標定位",
+      "category": "世界遺產",
+      "region": "亞洲",
+      "q": "斯里蘭卡獅子岩古堡位於哪一座城市附近？",
+      "options": [
+        "錫吉里耶",
+        "可倫坡",
+        "康提",
+        "加勒"
+      ],
+      "correctAnswer": "錫吉里耶",
+      "answerIndex": 0,
+      "fact": "獅子岩位於斯里蘭卡中部錫吉里耶，是古代宮殿與要塞遺跡。",
+      "landmark": "獅子岩",
+      "landmarkDetail": "斯里蘭卡・錫吉里耶",
+      "auditStatus": "pending"
+    },
+    {
+      "id": "supplement-batch11-014",
+      "conceptId": "fact:city:迦太基古城",
+      "level": "洲際領隊",
+      "grades": [],
+      "questionType": "地標定位",
+      "category": "世界遺產",
+      "region": "非洲",
+      "q": "突尼斯迦太基古城遺址位於哪一座城市附近？",
+      "options": [
+        "突尼斯市",
+        "阿爾及爾",
+        "開羅",
+        "卡薩布蘭卡"
+      ],
+      "correctAnswer": "突尼斯市",
+      "answerIndex": 0,
+      "fact": "迦太基古城位於突尼斯首都突尼斯市北方，瀕臨地中海。",
+      "landmark": "迦太基古城",
+      "landmarkDetail": "突尼斯・突尼斯市",
+      "auditStatus": "pending"
+    },
+    {
+      "id": "supplement-batch11-015",
+      "conceptId": "fact:city:雅典衛城",
+      "level": "洲際領隊",
+      "grades": [],
+      "questionType": "地標定位",
+      "category": "世界遺產",
+      "region": "歐洲",
+      "q": "希臘衛城與帕德嫩神廟位於哪一座城市？",
+      "options": [
+        "雅典",
+        "羅馬",
+        "伊斯坦堡",
+        "索菲亞"
+      ],
+      "correctAnswer": "雅典",
+      "answerIndex": 0,
+      "fact": "雅典衛城位於希臘首都雅典市中心的高地上。",
+      "landmark": "雅典衛城",
+      "landmarkDetail": "希臘・雅典",
+      "auditStatus": "pending"
+    },
+    {
+      "id": "supplement-batch11-016",
+      "conceptId": "fact:geo:波斯灣",
+      "level": "洲際領隊",
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ],
+      "questionType": "自然地理",
+      "category": "世界地理",
+      "region": "世界地理",
+      "q": "波斯灣主要位於哪一個地理區域？",
+      "options": [
+        "中東",
+        "北歐",
+        "加勒比",
+        "南極"
+      ],
+      "correctAnswer": "中東",
+      "answerIndex": 0,
+      "fact": "波斯灣介於伊朗與阿拉伯半島之間，是重要石油航運通道。",
+      "auditStatus": "pending"
+    },
+    {
+      "id": "supplement-batch11-017",
+      "conceptId": "fact:geo:紅海",
+      "level": "洲際領隊",
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ],
+      "questionType": "自然地理",
+      "category": "世界地理",
+      "region": "世界地理",
+      "q": "紅海透過蘇伊士運河可連接哪一片海域？",
+      "options": [
+        "地中海",
+        "印度洋",
+        "北冰洋",
+        "波羅的海"
+      ],
+      "correctAnswer": "地中海",
+      "answerIndex": 0,
+      "fact": "紅海位於非洲與阿拉伯半島之間，經蘇伊士運河與地中海相通。",
+      "auditStatus": "pending"
+    },
+    {
+      "id": "supplement-batch11-018",
+      "conceptId": "fact:geo:黑海",
+      "level": "洲際領隊",
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ],
+      "questionType": "自然地理",
+      "category": "世界地理",
+      "region": "世界地理",
+      "q": "黑海主要位於哪一個地理區域？",
+      "options": [
+        "東歐與西亞交界",
+        "南美洲",
+        "大洋洲",
+        "北極圈內"
+      ],
+      "correctAnswer": "東歐與西亞交界",
+      "answerIndex": 0,
+      "fact": "黑海被土耳其、保加利亞、烏克蘭、俄羅斯等多國環繞。",
+      "auditStatus": "pending"
+    },
+    {
+      "id": "supplement-batch11-019",
+      "conceptId": "fact:geo:帕米爾高原",
+      "level": "環球旅行家",
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ],
+      "questionType": "自然地理",
+      "category": "世界地理",
+      "region": "世界地理",
+      "q": "帕米爾高原被稱為「世界屋脊」的延伸，主要位於哪一個區域？",
+      "options": [
+        "中亞",
+        "西歐",
+        "撒哈拉",
+        "安第斯"
+      ],
+      "correctAnswer": "中亞",
+      "answerIndex": 0,
+      "fact": "帕米爾高原橫跨塔吉克、阿富汗、中國新疆等地，是亞洲多條山脈交會處。",
+      "auditStatus": "pending"
+    },
+    {
+      "id": "supplement-batch11-020",
+      "conceptId": "fact:geo:博斯普魯斯海峽",
+      "level": "洲際領隊",
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ],
+      "questionType": "自然地理",
+      "category": "世界地理",
+      "region": "世界地理",
+      "q": "博斯普魯斯海峽連接黑海與哪一片海域？",
+      "options": [
+        "馬爾馬拉海",
+        "紅海",
+        "裡海",
+        "阿拉伯海"
+      ],
+      "correctAnswer": "馬爾馬拉海",
+      "answerIndex": 0,
+      "fact": "博斯普魯斯海峽穿過伊斯坦堡，是黑海通往地中海航線的關鍵水道。",
+      "auditStatus": "pending"
+    }
+  ]
+}

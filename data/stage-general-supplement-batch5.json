@@ -1,0 +1,633 @@
+{
+  "batchId": "stage-general-supplement-batch5",
+  "generatedAt": "2026-09-15T08:45:00.000Z",
+  "purpose": "地理與旅遊安全補題：grades 為空表示各學級皆可抽。",
+  "gapContext": {
+    "target": "地理素養與旅遊安全常識",
+    "newUniqueConcepts": 20
+  },
+  "questions": [
+    {
+      "id": "supplement-batch5-001",
+      "conceptId": "fact:safety:高原症",
+      "level": "洲際領隊",
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ],
+      "questionType": "旅遊安全",
+      "category": "旅行知識",
+      "region": "旅行知識",
+      "q": "前往高海拔地區旅行，預防高原症較穩健的做法是？",
+      "options": [
+        "逐步上升並充分休息",
+        "抵達後立即劇烈運動",
+        "完全不吃東西",
+        "拒絕補充水分"
+      ],
+      "correctAnswer": "逐步上升並充分休息",
+      "answerIndex": 0,
+      "fact": "高原症與海拔上升速度有關，循序適應並留意頭痛、噁心等症狀很重要。",
+      "auditStatus": "pending"
+    },
+    {
+      "id": "supplement-batch5-002",
+      "conceptId": "fact:safety:中暑",
+      "level": "洲際領隊",
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ],
+      "questionType": "旅遊安全",
+      "category": "旅行知識",
+      "region": "旅行知識",
+      "q": "炎熱天氣戶外旅行，預防中暑較有效的方式是？",
+      "options": [
+        "補充水分並避開正午烈日",
+        "長時間不喝水",
+        "只喝含酒精飲料",
+        "穿著厚重不透氣衣物"
+      ],
+      "correctAnswer": "補充水分並避開正午烈日",
+      "answerIndex": 0,
+      "fact": "中暑可因脫水與體溫過高引起，應適時休息並補充電解質。",
+      "auditStatus": "pending"
+    },
+    {
+      "id": "supplement-batch5-003",
+      "conceptId": "fact:safety:溺水",
+      "level": "洲際領隊",
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ],
+      "questionType": "旅遊安全",
+      "category": "旅行知識",
+      "region": "旅行知識",
+      "q": "在海邊或泳池戲水時，較安全的做法是？",
+      "options": [
+        "在有人看守與標示允許的區域活動",
+        "獨自到無人海灘夜泳",
+        "忽略旗幟與警示",
+        "酒後游泳"
+      ],
+      "correctAnswer": "在有人看守與標示允許的區域活動",
+      "answerIndex": 0,
+      "fact": "許多海灘以旗幟標示浪況與危險區，應遵守當地安全規定。",
+      "auditStatus": "pending"
+    },
+    {
+      "id": "supplement-batch5-004",
+      "conceptId": "fact:safety:地震",
+      "level": "洲際領隊",
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ],
+      "questionType": "旅遊安全",
+      "category": "旅行知識",
+      "region": "旅行知識",
+      "q": "旅行中若遇到地震，室內較建議的初期動作是？",
+      "options": [
+        "趴下、掩護、穩住",
+        "立刻搭電梯下樓",
+        "站在窗戶旁看外面",
+        "打開所有瓦斯"
+      ],
+      "correctAnswer": "趴下、掩護、穩住",
+      "answerIndex": 0,
+      "fact": "地震時應保護頭頸並遠離可能掉落的物品，待搖晃停止再疏散。",
+      "auditStatus": "pending"
+    },
+    {
+      "id": "supplement-batch5-005",
+      "conceptId": "fact:safety:海嘯",
+      "level": "洲際領隊",
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ],
+      "questionType": "旅遊安全",
+      "category": "旅行知識",
+      "region": "旅行知識",
+      "q": "海岸地區收到海嘯警報時，較正確的應對是？",
+      "options": [
+        "迅速往高地或指定避難點移動",
+        "留在海邊拍照",
+        "搭船出海避難",
+        "進入地下停車場"
+      ],
+      "correctAnswer": "迅速往高地或指定避難點移動",
+      "answerIndex": 0,
+      "fact": "海嘯波浪速度極快，應依當地指示撤離至安全高度。",
+      "auditStatus": "pending"
+    },
+    {
+      "id": "supplement-batch5-006",
+      "conceptId": "fact:safety:食物中毒",
+      "level": "洲際領隊",
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ],
+      "questionType": "旅遊安全",
+      "category": "旅行知識",
+      "region": "旅行知識",
+      "q": "在衛生條件不明的地區旅行，降低食物中毒風險的做法是？",
+      "options": [
+        "選擇煮熟且現做食物，注意手部清潔",
+        "只吃未洗的生鮮沙拉",
+        "忽略食材保存溫度",
+        "重複食用隔夜外帶"
+      ],
+      "correctAnswer": "選擇煮熟且現做食物，注意手部清潔",
+      "answerIndex": 0,
+      "fact": "旅行腹瀉常與飲食衛生有關，煮熟食物與瓶裝水較為安全。",
+      "auditStatus": "pending"
+    },
+    {
+      "id": "supplement-batch5-007",
+      "conceptId": "fact:safety:飲用水",
+      "level": "洲際領隊",
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ],
+      "questionType": "旅遊安全",
+      "category": "旅行知識",
+      "region": "旅行知識",
+      "q": "在不確定當地自來水是否可生飲時，較穩健的做法是？",
+      "options": [
+        "飲用密封瓶裝水或煮沸後的水",
+        "直接喝路邊溪水",
+        "用汽水代替所有水分",
+        "完全不補充水分"
+      ],
+      "correctAnswer": "飲用密封瓶裝水或煮沸後的水",
+      "answerIndex": 0,
+      "fact": "部分地區自來水需煮沸或購買瓶裝水，冰塊來源也應留意。",
+      "auditStatus": "pending"
+    },
+    {
+      "id": "supplement-batch5-008",
+      "conceptId": "fact:safety:護照遺失",
+      "level": "洲際領隊",
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ],
+      "questionType": "旅遊安全",
+      "category": "旅行知識",
+      "region": "旅行知識",
+      "q": "在海外遺失護照時，應優先採取的行動是？",
+      "options": [
+        "向駐在國領事館或代表機構求助",
+        "自行偽造文件",
+        "忽略並繼續旅行",
+        "只在社群媒體求助"
+      ],
+      "correctAnswer": "向駐在國領事館或代表機構求助",
+      "answerIndex": 0,
+      "fact": "遺失護照應先報案並聯絡領事館，申請旅行文件或補發護照。",
+      "auditStatus": "pending"
+    },
+    {
+      "id": "supplement-batch5-009",
+      "conceptId": "fact:safety:防曬",
+      "level": "洲際領隊",
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ],
+      "questionType": "旅遊安全",
+      "category": "旅行知識",
+      "region": "旅行知識",
+      "q": "在紫外線強烈的熱帶或高山地區，較重要的防護是？",
+      "options": [
+        "使用防曬並穿戴遮蔽衣物",
+        "故意曬黑不防護",
+        "只擦嬰兒油",
+        "正午長時間曝曬"
+      ],
+      "correctAnswer": "使用防曬並穿戴遮蔽衣物",
+      "answerIndex": 0,
+      "fact": "紫外線在高原與海邊更強，防曬可降低曬傷與長期皮膚傷害風險。",
+      "auditStatus": "pending"
+    },
+    {
+      "id": "supplement-batch5-010",
+      "conceptId": "fact:safety:海關申報",
+      "level": "洲際領隊",
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ],
+      "questionType": "旅遊安全",
+      "category": "旅行知識",
+      "region": "旅行知識",
+      "q": "入境他國時，對於應申報物品較正確的態度是？",
+      "options": [
+        "依規定誠實申報，避免違法攜帶",
+        "全部隱瞞不申報",
+        "只要數量少就不必理會",
+        "替陌生人攜帶不明行李"
+      ],
+      "correctAnswer": "依規定誠實申報，避免違法攜帶",
+      "answerIndex": 0,
+      "fact": "各國對肉類、植物、藥品與高額現金常有申報限制，違規可能遭罰沒或起訴。",
+      "auditStatus": "pending"
+    },
+    {
+      "id": "supplement-batch5-011",
+      "conceptId": "fact:geo:阿爾卑斯山",
+      "level": "洲際領隊",
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ],
+      "questionType": "自然地理",
+      "category": "世界地理",
+      "region": "世界地理",
+      "q": "阿爾卑斯山脈主要橫跨歐洲哪幾個國家所在區域？",
+      "options": [
+        "法國、瑞士、義大利、奧地利等",
+        "巴西、阿根廷",
+        "埃及、蘇丹",
+        "日本、韓國"
+      ],
+      "correctAnswer": "法國、瑞士、義大利、奧地利等",
+      "answerIndex": 0,
+      "fact": "阿爾卑斯山是歐洲重要山系，滑雪與登山旅遊興盛。",
+      "auditStatus": "pending"
+    },
+    {
+      "id": "supplement-batch5-012",
+      "conceptId": "fact:geo:五大湖",
+      "level": "洲際領隊",
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ],
+      "questionType": "自然地理",
+      "category": "世界地理",
+      "region": "世界地理",
+      "q": "北美五大湖主要分布在哪兩個國家之間？",
+      "options": [
+        "美國與加拿大",
+        "墨西哥與古巴",
+        "英國與法國",
+        "中國與俄羅斯"
+      ],
+      "correctAnswer": "美國與加拿大",
+      "answerIndex": 0,
+      "fact": "五大湖為世界最大淡水湖群之一，連接美加重要航運與工業區。",
+      "auditStatus": "pending"
+    },
+    {
+      "id": "supplement-batch5-013",
+      "conceptId": "fact:geo:湄公河",
+      "level": "洲際領隊",
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ],
+      "questionType": "自然地理",
+      "category": "世界地理",
+      "region": "世界地理",
+      "q": "湄公河主要流經哪一個地理區域？",
+      "options": [
+        "中南半島",
+        "中亞草原",
+        "北歐峽灣",
+        "加勒比海島"
+      ],
+      "correctAnswer": "中南半島",
+      "answerIndex": 0,
+      "fact": "湄公河源自青藏高原東南，流經寮國、柬埔寨、越南等國，是重要的農業與航運水道。",
+      "auditStatus": "pending"
+    },
+    {
+      "id": "supplement-batch5-014",
+      "conceptId": "fact:geo:恒河",
+      "level": "洲際領隊",
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ],
+      "questionType": "自然地理",
+      "category": "世界地理",
+      "region": "世界地理",
+      "q": "恒河被視為印度文明重要河流，它最終注入哪一片海域？",
+      "options": [
+        "孟加拉灣",
+        "地中海",
+        "北海",
+        "波斯灣"
+      ],
+      "correctAnswer": "孟加拉灣",
+      "answerIndex": 0,
+      "fact": "恒河流經印度北部平原，在孟加拉國與布拉馬普特拉河匯合後注入孟加拉灣。",
+      "auditStatus": "pending"
+    },
+    {
+      "id": "supplement-batch5-015",
+      "conceptId": "fact:geo:加勒比海",
+      "level": "洲際領隊",
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ],
+      "questionType": "自然地理",
+      "category": "世界地理",
+      "region": "世界地理",
+      "q": "加勒比海位於哪兩個大洲之間的海域？",
+      "options": [
+        "北美洲與南美洲",
+        "歐洲與非洲",
+        "亞洲與大洋洲",
+        "南極洲與澳洲"
+      ],
+      "correctAnswer": "北美洲與南美洲",
+      "answerIndex": 0,
+      "fact": "加勒比海島嶼眾多，是郵輪與度假旅遊熱門區域。",
+      "auditStatus": "pending"
+    },
+    {
+      "id": "supplement-batch5-016",
+      "conceptId": "fact:geo:死海",
+      "level": "洲際領隊",
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ],
+      "questionType": "自然地理",
+      "category": "世界地理",
+      "region": "世界地理",
+      "q": "死海以鹽度高、浮力大聞名，它位於哪一個地理區域？",
+      "options": [
+        "約旦河谷",
+        "喜馬拉雅山區",
+        "亞馬遜雨林",
+        "北極圈內"
+      ],
+      "correctAnswer": "約旦河谷",
+      "answerIndex": 0,
+      "fact": "死海位於以色列、約旦與巴勒斯坦地區，湖面為地球陸地最低點之一。",
+      "auditStatus": "pending"
+    },
+    {
+      "id": "supplement-batch5-017",
+      "conceptId": "fact:geo:天山山脈",
+      "level": "洲際領隊",
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ],
+      "questionType": "自然地理",
+      "category": "世界地理",
+      "region": "世界地理",
+      "q": "天山山脈主要位於哪一個地理區域？",
+      "options": [
+        "中亞",
+        "西歐",
+        "南極",
+        "加勒比"
+      ],
+      "correctAnswer": "中亞",
+      "answerIndex": 0,
+      "fact": "天山橫貫中亞多國，是絲路沿線重要的山地景觀與水源區。",
+      "auditStatus": "pending"
+    },
+    {
+      "id": "supplement-batch5-018",
+      "conceptId": "fact:geo:伊比利半島",
+      "level": "洲際領隊",
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ],
+      "questionType": "自然地理",
+      "category": "世界地理",
+      "region": "世界地理",
+      "q": "西班牙與葡萄牙所在的歐洲半島稱為？",
+      "options": [
+        "伊比利半島",
+        "斯堪地那維亞半島",
+        "巴爾幹半島",
+        "亞平寧半島"
+      ],
+      "correctAnswer": "伊比利半島",
+      "answerIndex": 0,
+      "fact": "伊比利半島位於歐洲西南，以西班牙、葡萄牙為主體。",
+      "auditStatus": "pending"
+    },
+    {
+      "id": "supplement-batch5-019",
+      "conceptId": "fact:safety:雪崩",
+      "level": "洲際領隊",
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ],
+      "questionType": "旅遊安全",
+      "category": "旅行知識",
+      "region": "旅行知識",
+      "q": "冬季在山區滑雪或健行時，遇到雪崩風險較高的做法應避免？",
+      "options": [
+        "偏離標示路線進入未開放雪坡",
+        "留意當地雪崩預報",
+        "跟隨專業導覽",
+        "攜帶通訊設備"
+      ],
+      "correctAnswer": "偏離標示路線進入未開放雪坡",
+      "answerIndex": 0,
+      "fact": "雪崩與降雪、風向與坡度有關，應遵守山區封閉與安全指示。",
+      "auditStatus": "pending"
+    },
+    {
+      "id": "supplement-batch5-020",
+      "conceptId": "fact:geo:大堡礁位置",
+      "level": "洲際領隊",
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ],
+      "questionType": "自然地理",
+      "category": "世界地理",
+      "region": "世界地理",
+      "q": "大堡礁位於澳洲哪一個州的外海？",
+      "options": [
+        "昆士蘭州",
+        "維多利亞州",
+        "西澳州",
+        "塔斯馬尼亞州"
+      ],
+      "correctAnswer": "昆士蘭州",
+      "answerIndex": 0,
+      "fact": "大堡礁沿昆士蘭東岸延伸，是世界最大的珊瑚礁群之一。",
+      "landmark": "大堡礁",
+      "landmarkDetail": "澳洲・昆士蘭",
+      "auditStatus": "pending"
+    }
+  ]
+}

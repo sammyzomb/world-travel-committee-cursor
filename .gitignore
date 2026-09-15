@@ -54,3 +54,7 @@ tsconfig.tsbuildinfo
 # local UI smoke artifacts
 .ui-smoke/
 scripts/.playwright-harness/node_modules/
+
+# landmark binaries are downloaded at build time
+/public/landmarks/*
+!/public/landmarks/.gitkeep

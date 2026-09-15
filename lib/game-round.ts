@@ -84,8 +84,8 @@ function isAvailable(
 ) {
   if (usedQuestionIds.has(item.id)) return false;
   if (usedConceptIds.has(item.conceptId)) return false;
+  if (previousConceptIds.includes(item.conceptId)) return false;
   if (!allowReuse && previousQuestionIds.includes(item.id)) return false;
-  if (!allowReuse && previousConceptIds.includes(item.conceptId)) return false;
   return true;
 }
 
@@ -101,17 +101,7 @@ function sortByStageDifficulty(items: Question[], stageIndex: number) {
 }
 
 function filterPoolForStage(pool: Question[], stageIndex: number) {
-  const allowedTypes = new Set<QuestionType>(allowedTypesForStage(stageIndex));
-  const minTypeRank = minTypeRankForStage(stageIndex);
-  const minLevelRank = minQuestionLevelRankForStage(stageIndex);
-  return pool.filter((item) => {
-    if (!allowedTypes.has(item.questionType)) return false;
-    const typeRank = QUESTION_TYPE_RANK[item.questionType];
-    const levelRank = difficultyRankForLevel(item.level);
-    if (levelRank < minLevelRank) return false;
-    if (typeRank + levelRank * 0.3 < minTypeRank - 0.5) return false;
-    return true;
-  });
+  return pool.filter((item) => questionMatchesStageRules(item, stageIndex));
 }
 
 function maxQuestionsPerType(count: number, availableTypeCount: number, allowedTypeCount: number) {
@@ -151,7 +141,7 @@ function pickDiverseQuestions(
     ...typeOrder,
   ]).size;
   const maxPerType = relaxTypeCap
-    ? Math.ceil(count / Math.max(projectedTypeCount, 1))
+    ? count
     : maxQuestionsPerType(count, projectedTypeCount, allowedTypes.length);
   const selected: Question[] = [...seed];
   const selectedConceptIds = new Set(seed.map((item) => item.conceptId));
@@ -194,8 +184,10 @@ function pickDiverseQuestions(
     for (const item of ranked) {
       if (selected.length >= count) break;
       if (selectedIds.has(item.id)) continue;
-      const usedForType = selected.filter((entry) => entry.questionType === item.questionType).length;
-      if (usedForType >= maxPerType) continue;
+      if (!relaxTypeCap) {
+        const usedForType = selected.filter((entry) => entry.questionType === item.questionType).length;
+        if (usedForType >= maxPerType) continue;
+      }
       if (!tryAdd(item)) continue;
       selectedIds.add(item.id);
     }

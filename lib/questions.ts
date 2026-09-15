@@ -20,6 +20,7 @@ const questionBank = questionBankJson as {
   travelKnowledgeQuestions: RawQuestion[];
   tourQuestions?: RawQuestion[];
   heritageQuestions?: RawQuestion[];
+  supplementQuestions?: SupplementRawQuestion[];
   expandedFacts: ExpandedFact[];
   heritageFacts?: ExpandedFact[];
 };
@@ -55,6 +56,13 @@ type RawQuestion = {
   category?: QuestionCategory;
   landmark?: string;
   landmarkDetail?: string;
+};
+
+type SupplementRawQuestion = RawQuestion & {
+  conceptId?: string;
+  questionType?: QuestionType;
+  batchId?: string;
+  grades?: string[];
 };
 
 type ExpandedFact = [string, string, string, string, string];
@@ -409,6 +417,10 @@ export const tourQuestions: Question[] = applyAuditOverrides(
   }),
 );
 const heritageSource = QUESTION_SOURCES.worldHeritage;
+const supplementSource = {
+  label: "高三研二補題",
+  auditStatus: "approved" as AuditStatus,
+};
 
 export const expandedQuestions: Question[] = applyAuditOverrides(
   buildExpandedQuestions(questionBank.expandedFacts, {
@@ -435,11 +447,32 @@ export const heritageQuestions: Question[] = applyAuditOverrides(
     }),
   ),
 );
+export const supplementQuestions: Question[] = (questionBank.supplementQuestions ?? []).map(
+  (raw, index) => {
+    const meta = {
+      id: makeQuestionId("supplement", raw.batchId ?? raw.conceptId ?? raw.q),
+      conceptId: raw.conceptId ?? conceptIdForRawQuestion(raw, "supplement", index),
+      source: supplementSource.label,
+      auditStatus: supplementSource.auditStatus,
+      grades: raw.grades !== undefined ? raw.grades : [],
+    };
+    const visual = buildVisual(raw);
+    const base = visual ? { ...raw, visual } : raw;
+    return attachMetadata(
+      {
+        ...base,
+        questionType: raw.questionType,
+      },
+      meta,
+    );
+  },
+);
 export const allQuestions: Question[] = [
   ...handPickedQuestions,
   ...travelKnowledgeQuestions,
   ...tourQuestions,
   ...heritageQuestions,
+  ...supplementQuestions,
   ...expandedQuestions,
   ...heritageExpandedQuestions,
 ];
@@ -453,6 +486,7 @@ export const questionBankStats = {
   travelKnowledge: travelKnowledgeQuestions.length,
   tour: tourQuestions.length,
   heritageCurated: heritageQuestions.length,
+  supplement: supplementQuestions.length,
   expandedFacts: questionBank.expandedFacts.length,
   heritageFacts: (questionBank.heritageFacts ?? []).length,
   expandedGenerated: expandedQuestions.length,

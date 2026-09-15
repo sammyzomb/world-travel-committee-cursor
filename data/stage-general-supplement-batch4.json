@@ -1,0 +1,504 @@
+{
+  "batchId": "stage-general-supplement-batch4",
+  "generatedAt": "2026-09-15T08:15:00.000Z",
+  "purpose": "國小～高中通用補題：地標尋城、旅行知識與首都題，grades 為空表示各學級皆可抽。",
+  "gapContext": {
+    "target": "題庫深度與旅行知識覆蓋",
+    "newUniqueConcepts": 18
+  },
+  "questions": [
+    {
+      "id": "supplement-batch4-001",
+      "conceptId": "fact:city:清水寺",
+      "level": "國家達人",
+      "grades": [],
+      "questionType": "地標定位",
+      "category": "世界遺產",
+      "region": "亞洲",
+      "q": "清水寺位於日本哪一座城市？",
+      "options": [
+        "京都",
+        "奈良",
+        "大阪",
+        "東京"
+      ],
+      "correctAnswer": "京都",
+      "answerIndex": 0,
+      "fact": "清水寺位於京都市東山区，是京都最具代表性的木造寺院之一。",
+      "landmark": "清水寺",
+      "landmarkDetail": "日本・京都",
+      "auditStatus": "pending"
+    },
+    {
+      "id": "supplement-batch4-002",
+      "conceptId": "fact:city:東大寺",
+      "level": "國家達人",
+      "grades": [],
+      "questionType": "地標定位",
+      "category": "世界遺產",
+      "region": "亞洲",
+      "q": "東大寺大佛殿位於日本哪一座城市？",
+      "options": [
+        "奈良",
+        "京都",
+        "神戶",
+        "廣島"
+      ],
+      "correctAnswer": "奈良",
+      "answerIndex": 0,
+      "fact": "東大寺位於奈良市，大佛殿是日本規模最大的木造建築之一。",
+      "landmark": "東大寺",
+      "landmarkDetail": "日本・奈良",
+      "auditStatus": "pending"
+    },
+    {
+      "id": "supplement-batch4-003",
+      "conceptId": "fact:city:吳哥窟",
+      "level": "洲際領隊",
+      "grades": [],
+      "questionType": "地標定位",
+      "category": "世界遺產",
+      "region": "亞洲",
+      "q": "吳哥窟位於柬埔寨哪一座城市附近？",
+      "options": [
+        "暹粒",
+        "金邊",
+        "河內",
+        "曼谷"
+      ],
+      "correctAnswer": "暹粒",
+      "answerIndex": 0,
+      "fact": "吳哥窟古蹟群位於暹粒市北方，是高棉帝國時期的宗教建築代表。",
+      "landmark": "吳哥窟",
+      "landmarkDetail": "柬埔寨・暹粒",
+      "auditStatus": "pending"
+    },
+    {
+      "id": "supplement-batch4-004",
+      "conceptId": "fact:city:金門大橋",
+      "level": "洲際領隊",
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ],
+      "questionType": "地標定位",
+      "category": "世界遺產",
+      "region": "北美洲",
+      "q": "金門大橋連接舊金山與馬林郡，它位於美國哪一州？",
+      "options": [
+        "加利福尼亞州",
+        "紐約州",
+        "德州",
+        "佛州"
+      ],
+      "correctAnswer": "加利福尼亞州",
+      "answerIndex": 0,
+      "fact": "金門大橋橫跨舊金山灣入口，是加州舊金山的象徵性地標。",
+      "landmark": "金門大橋",
+      "landmarkDetail": "美國・舊金山",
+      "auditStatus": "pending"
+    },
+    {
+      "id": "supplement-batch4-005",
+      "conceptId": "fact:city:奇琴伊察",
+      "level": "洲際領隊",
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ],
+      "questionType": "地標定位",
+      "category": "世界遺產",
+      "region": "北美洲",
+      "q": "奇琴伊察瑪雅遺址位於墨西哥哪一個州？",
+      "options": [
+        "尤卡坦州",
+        "恰帕斯州",
+        "瓦哈卡州",
+        "南下加利福尼亞州"
+      ],
+      "correctAnswer": "尤卡坦州",
+      "answerIndex": 0,
+      "fact": "奇琴伊察位於尤卡坦半島北部，以庫庫爾坎金字塔聞名。",
+      "landmark": "奇琴伊察",
+      "landmarkDetail": "墨西哥・尤卡坦",
+      "auditStatus": "pending"
+    },
+    {
+      "id": "supplement-batch4-006",
+      "conceptId": "fact:city:雙子星塔",
+      "level": "洲際領隊",
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ],
+      "questionType": "地標定位",
+      "category": "世界遺產",
+      "region": "亞洲",
+      "q": "吉隆坡雙子星塔位於哪一個國家？",
+      "options": [
+        "馬來西亞",
+        "新加坡",
+        "泰國",
+        "印尼"
+      ],
+      "correctAnswer": "馬來西亞",
+      "answerIndex": 0,
+      "fact": "雙子星塔位於馬來西亞首都吉隆坡市中心。",
+      "landmark": "雙子星塔",
+      "landmarkDetail": "馬來西亞・吉隆坡",
+      "auditStatus": "pending"
+    },
+    {
+      "id": "supplement-batch4-007",
+      "conceptId": "fact:travel:行李標籤",
+      "level": "洲際領隊",
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ],
+      "questionType": "旅行知識",
+      "category": "旅行知識",
+      "region": "旅行知識",
+      "q": "托運行李外掛行李牌的主要用途是？",
+      "options": [
+        "辨識行李並標示聯絡方式",
+        "增加行李重量",
+        "代替護照",
+        "免稅申報"
+      ],
+      "correctAnswer": "辨識行李並標示聯絡方式",
+      "answerIndex": 0,
+      "fact": "行李牌有助於轉機或延誤時辨識行李，並方便航空公司聯絡旅客。",
+      "auditStatus": "pending"
+    },
+    {
+      "id": "supplement-batch4-008",
+      "conceptId": "fact:travel:漫遊上網",
+      "level": "洲際領隊",
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ],
+      "questionType": "旅行知識",
+      "category": "旅行知識",
+      "region": "旅行知識",
+      "q": "出國使用手機漫遊前，較穩健的做法是？",
+      "options": [
+        "先確認資費方案與流量上限",
+        "直接關閉飛航模式即可",
+        "不必看合約",
+        "只使用公共 WiFi"
+      ],
+      "correctAnswer": "先確認資費方案與流量上限",
+      "answerIndex": 0,
+      "fact": "漫遊資費因電信商與目的地不同，出發前確認可避免高額帳單。",
+      "auditStatus": "pending"
+    },
+    {
+      "id": "supplement-batch4-009",
+      "conceptId": "fact:travel:旅遊保險",
+      "level": "洲際領隊",
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ],
+      "questionType": "旅行知識",
+      "category": "旅行知識",
+      "region": "旅行知識",
+      "q": "購買旅遊保險時，醫療保障主要用來？",
+      "options": [
+        "支付海外突發醫療與急診費用",
+        "補貼購物折扣",
+        "取代護照",
+        "支付機票升等"
+      ],
+      "correctAnswer": "支付海外突發醫療與急診費用",
+      "answerIndex": 0,
+      "fact": "海外醫療費用可能很高，醫療保障是旅遊保險的核心項目之一。",
+      "auditStatus": "pending"
+    },
+    {
+      "id": "supplement-batch4-010",
+      "conceptId": "fact:travel:紅眼航班",
+      "level": "洲際領隊",
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ],
+      "questionType": "旅行知識",
+      "category": "旅行知識",
+      "region": "旅行知識",
+      "q": "「紅眼航班」通常是指？",
+      "options": [
+        "深夜或凌晨起降的航班",
+        "只有紅色座椅",
+        "免費促銷航班",
+        "直升機班次"
+      ],
+      "correctAnswer": "深夜或凌晨起降的航班",
+      "answerIndex": 0,
+      "fact": "紅眼航班多在夜間飛行，可節省住宿時間，但也較容易有時差疲勞。",
+      "auditStatus": "pending"
+    },
+    {
+      "id": "supplement-batch4-011",
+      "conceptId": "fact:country:巴林",
+      "level": "國家達人",
+      "grades": [],
+      "questionType": "首都記憶",
+      "category": "世界地理",
+      "region": "亞洲",
+      "q": "巴林的首都是哪一座城市？",
+      "options": [
+        "麥納麥",
+        "多哈",
+        "科威特城",
+        "利雅德"
+      ],
+      "correctAnswer": "麥納麥",
+      "answerIndex": 0,
+      "fact": "麥納麥是巴林首都，位於波斯灣島國北部。",
+      "auditStatus": "pending"
+    },
+    {
+      "id": "supplement-batch4-012",
+      "conceptId": "fact:country:賽普勒斯",
+      "level": "國家達人",
+      "grades": [],
+      "questionType": "首都記憶",
+      "category": "世界地理",
+      "region": "歐洲",
+      "q": "賽普勒斯的首都是哪一座城市？",
+      "options": [
+        "尼科西亞",
+        "雅典",
+        "安卡拉",
+        "貝魯特"
+      ],
+      "correctAnswer": "尼科西亞",
+      "answerIndex": 0,
+      "fact": "尼科西亞是賽普勒斯首都，位於地中海東部島國中部。",
+      "auditStatus": "pending"
+    },
+    {
+      "id": "supplement-batch4-013",
+      "conceptId": "fact:geo:安第斯山脈",
+      "level": "洲際領隊",
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ],
+      "questionType": "自然地理",
+      "category": "世界地理",
+      "region": "世界地理",
+      "q": "安第斯山脈主要位於哪一個大陸？",
+      "options": [
+        "南美洲",
+        "北美洲",
+        "歐洲",
+        "非洲"
+      ],
+      "correctAnswer": "南美洲",
+      "answerIndex": 0,
+      "fact": "安第斯山脈縱貫南美洲西岸，是世界最長的陸上山脈之一。",
+      "auditStatus": "pending"
+    },
+    {
+      "id": "supplement-batch4-014",
+      "conceptId": "fact:geo:密西西比河",
+      "level": "洲際領隊",
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ],
+      "questionType": "自然地理",
+      "category": "世界地理",
+      "region": "世界地理",
+      "q": "密西西比河主要流經北美哪一個國家？",
+      "options": [
+        "美國",
+        "加拿大",
+        "墨西哥",
+        "古巴"
+      ],
+      "correctAnswer": "美國",
+      "answerIndex": 0,
+      "fact": "密西西比河是美國中部重要的航運與農業灌溉水道。",
+      "auditStatus": "pending"
+    },
+    {
+      "id": "supplement-batch4-015",
+      "conceptId": "fact:travel:申根簽證",
+      "level": "洲際領隊",
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ],
+      "questionType": "旅行知識",
+      "category": "旅行知識",
+      "region": "旅行知識",
+      "q": "申根簽證的主要作用是？",
+      "options": [
+        "在申根區多國短期停留與通行",
+        "永久居留歐盟",
+        "取代護照",
+        "免費搭乘歐洲鐵路"
+      ],
+      "correctAnswer": "在申根區多國短期停留與通行",
+      "answerIndex": 0,
+      "fact": "持有效申根簽證可在申根成員國境內依規定短期旅行。",
+      "auditStatus": "pending"
+    },
+    {
+      "id": "supplement-batch4-016",
+      "conceptId": "fact:travel:時差調整",
+      "level": "洲際領隊",
+      "grades": [
+        "國三",
+        "高一",
+        "高二",
+        "高三",
+        "大一",
+        "大二",
+        "大三",
+        "大四",
+        "研一",
+        "研二"
+      ],
+      "questionType": "旅行知識",
+      "category": "旅行知識",
+      "region": "旅行知識",
+      "q": "跨越多個時區旅行後，較常出現的生理現象是？",
+      "options": [
+        "時差所導致的睡眠與疲勞",
+        "立即學會當地語言",
+        "體重永久增加",
+        "免疫系統失效"
+      ],
+      "correctAnswer": "時差所導致的睡眠與疲勞",
+      "answerIndex": 0,
+      "fact": "時差會影響生理時鐘，可透過調整睡眠與日照逐步適應。",
+      "auditStatus": "pending"
+    },
+    {
+      "id": "supplement-batch4-017",
+      "conceptId": "fact:country:安道爾",
+      "level": "洲際領隊",
+      "grades": [],
+      "questionType": "首都定位",
+      "category": "世界地理",
+      "region": "歐洲",
+      "q": "安道爾的首都為何？",
+      "options": [
+        "安道爾城",
+        "巴塞隆納",
+        "米蘭",
+        "尼斯"
+      ],
+      "correctAnswer": "安道爾城",
+      "answerIndex": 0,
+      "fact": "安道爾城是安道爾公國首都，位於庇里牛斯山區。",
+      "auditStatus": "pending"
+    },
+    {
+      "id": "supplement-batch4-018",
+      "conceptId": "fact:country:聖馬利諾",
+      "level": "洲際領隊",
+      "grades": [],
+      "questionType": "首都定位",
+      "category": "世界地理",
+      "region": "歐洲",
+      "q": "聖馬利諾的首都為何？",
+      "options": [
+        "聖馬利諾城",
+        "羅馬",
+        "佛羅倫斯",
+        "威尼斯"
+      ],
+      "correctAnswer": "聖馬利諾城",
+      "answerIndex": 0,
+      "fact": "聖馬利諾城是聖馬利諾共和國首都，座落於提蒂諾山。",
+      "auditStatus": "pending"
+    }
+  ]
+}

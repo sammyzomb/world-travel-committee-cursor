@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-14T09:50:49.423Z",
+  "generatedAt": "2026-09-15T08:08:00.597Z",
   "stageRange": {
     "from": 11,
     "to": 17,
@@ -10,56 +10,56 @@
       "stageIndex": 11,
       "grade": "高三",
       "questionsRequired": 9,
-      "eligibleUniqueConcepts": 38,
-      "headroom": 29
+      "eligibleUniqueConcepts": 84,
+      "headroom": 75
     },
     {
       "stageIndex": 12,
       "grade": "大一",
       "questionsRequired": 9,
-      "eligibleUniqueConcepts": 38,
-      "headroom": 29
+      "eligibleUniqueConcepts": 90,
+      "headroom": 81
     },
     {
       "stageIndex": 13,
       "grade": "大二",
       "questionsRequired": 9,
-      "eligibleUniqueConcepts": 38,
-      "headroom": 29
+      "eligibleUniqueConcepts": 84,
+      "headroom": 75
     },
     {
       "stageIndex": 14,
       "grade": "大三",
       "questionsRequired": 9,
-      "eligibleUniqueConcepts": 38,
-      "headroom": 29
+      "eligibleUniqueConcepts": 94,
+      "headroom": 85
     },
     {
       "stageIndex": 15,
       "grade": "大四",
       "questionsRequired": 10,
-      "eligibleUniqueConcepts": 38,
-      "headroom": 28
+      "eligibleUniqueConcepts": 84,
+      "headroom": 74
     },
     {
       "stageIndex": 16,
       "grade": "研一",
       "questionsRequired": 10,
-      "eligibleUniqueConcepts": 38,
-      "headroom": 28
+      "eligibleUniqueConcepts": 77,
+      "headroom": 67
     },
     {
       "stageIndex": 17,
       "grade": "研二",
       "questionsRequired": 10,
-      "eligibleUniqueConcepts": 38,
-      "headroom": 28
+      "eligibleUniqueConcepts": 87,
+      "headroom": 77
     }
   ],
   "seedRuns": [
     {
       "seed": 1,
-      "consumedUniqueConceptsThroughRange": 42,
+      "consumedUniqueConceptsThroughRange": 71,
       "stages": [
         {
           "stageIndex": 11,
@@ -68,7 +68,7 @@
           "drawn": 9,
           "shortfall": 0,
           "kind": "ok",
-          "eligibleUniqueConcepts": 38,
+          "eligibleUniqueConcepts": 84,
           "consumedUniqueConceptsBefore": 14
         },
         {
@@ -78,7 +78,7 @@
           "drawn": 9,
           "shortfall": 0,
           "kind": "ok",
-          "eligibleUniqueConcepts": 38,
+          "eligibleUniqueConcepts": 90,
           "consumedUniqueConceptsBefore": 23
         },
         {
@@ -88,7 +88,7 @@
           "drawn": 9,
           "shortfall": 0,
           "kind": "ok",
-          "eligibleUniqueConcepts": 38,
+          "eligibleUniqueConcepts": 84,
           "consumedUniqueConceptsBefore": 32
         },
         {
@@ -98,42 +98,44 @@
           "drawn": 9,
           "shortfall": 0,
           "kind": "ok",
-          "eligibleUniqueConcepts": 38,
+          "eligibleUniqueConcepts": 94,
           "consumedUniqueConceptsBefore": 41
         },
         {
           "stageIndex": 15,
           "grade": "大四",
           "required": 10,
-          "drawn": 1,
-          "shortfall": 9,
-          "kind": "confirmed_gap",
-          "eligibleUniqueConcepts": 38,
-          "consumedUniqueConceptsBefore": 42
+          "drawn": 10,
+          "shortfall": 0,
+          "kind": "ok",
+          "eligibleUniqueConcepts": 84,
+          "consumedUniqueConceptsBefore": 51
         },
         {
           "stageIndex": 16,
           "grade": "研一",
           "required": 10,
-          "drawn": 0,
-          "shortfall": 10,
-          "kind": "not_simulated",
-          "note": "stage 15 題量不足，後續未模擬"
+          "drawn": 10,
+          "shortfall": 0,
+          "kind": "ok",
+          "eligibleUniqueConcepts": 77,
+          "consumedUniqueConceptsBefore": 61
         },
         {
           "stageIndex": 17,
           "grade": "研二",
           "required": 10,
-          "drawn": 0,
-          "shortfall": 10,
-          "kind": "not_simulated",
-          "note": "stage 15 題量不足，後續未模擬"
+          "drawn": 10,
+          "shortfall": 0,
+          "kind": "ok",
+          "eligibleUniqueConcepts": 87,
+          "consumedUniqueConceptsBefore": 71
         }
       ]
     },
     {
       "seed": 7,
-      "consumedUniqueConceptsThroughRange": 42,
+      "consumedUniqueConceptsThroughRange": 71,
       "stages": [
         {
           "stageIndex": 11,
@@ -142,7 +144,7 @@
           "drawn": 9,
           "shortfall": 0,
           "kind": "ok",
-          "eligibleUniqueConcepts": 38,
+          "eligibleUniqueConcepts": 84,
           "consumedUniqueConceptsBefore": 14
         },
         {
@@ -152,7 +154,7 @@
           "drawn": 9,
           "shortfall": 0,
           "kind": "ok",
-          "eligibleUniqueConcepts": 38,
+          "eligibleUniqueConcepts": 90,
           "consumedUniqueConceptsBefore": 23
         },
         {
@@ -162,7 +164,7 @@
           "drawn": 9,
           "shortfall": 0,
           "kind": "ok",
-          "eligibleUniqueConcepts": 38,
+          "eligibleUniqueConcepts": 84,
           "consumedUniqueConceptsBefore": 32
         },
         {
@@ -172,42 +174,44 @@
           "drawn": 9,
           "shortfall": 0,
           "kind": "ok",
-          "eligibleUniqueConcepts": 38,
+          "eligibleUniqueConcepts": 94,
           "consumedUniqueConceptsBefore": 41
         },
         {
           "stageIndex": 15,
           "grade": "大四",
           "required": 10,
-          "drawn": 1,
-          "shortfall": 9,
-          "kind": "confirmed_gap",
-          "eligibleUniqueConcepts": 38,
-          "consumedUniqueConceptsBefore": 42
+          "drawn": 10,
+          "shortfall": 0,
+          "kind": "ok",
+          "eligibleUniqueConcepts": 84,
+          "consumedUniqueConceptsBefore": 51
         },
         {
           "stageIndex": 16,
           "grade": "研一",
           "required": 10,
-          "drawn": 0,
-          "shortfall": 10,
-          "kind": "not_simulated",
-          "note": "stage 15 題量不足，後續未模擬"
+          "drawn": 10,
+          "shortfall": 0,
+          "kind": "ok",
+          "eligibleUniqueConcepts": 77,
+          "consumedUniqueConceptsBefore": 61
         },
         {
           "stageIndex": 17,
           "grade": "研二",
           "required": 10,
-          "drawn": 0,
-          "shortfall": 10,
-          "kind": "not_simulated",
-          "note": "stage 15 題量不足，後續未模擬"
+          "drawn": 10,
+          "shortfall": 0,
+          "kind": "ok",
+          "eligibleUniqueConcepts": 87,
+          "consumedUniqueConceptsBefore": 71
         }
       ]
     },
     {
       "seed": 42,
-      "consumedUniqueConceptsThroughRange": 40,
+      "consumedUniqueConceptsThroughRange": 71,
       "stages": [
         {
           "stageIndex": 11,
@@ -216,7 +220,7 @@
           "drawn": 9,
           "shortfall": 0,
           "kind": "ok",
-          "eligibleUniqueConcepts": 38,
+          "eligibleUniqueConcepts": 84,
           "consumedUniqueConceptsBefore": 14
         },
         {
@@ -226,7 +230,7 @@
           "drawn": 9,
           "shortfall": 0,
           "kind": "ok",
-          "eligibleUniqueConcepts": 38,
+          "eligibleUniqueConcepts": 90,
           "consumedUniqueConceptsBefore": 23
         },
         {
@@ -236,51 +240,54 @@
           "drawn": 9,
           "shortfall": 0,
           "kind": "ok",
-          "eligibleUniqueConcepts": 38,
+          "eligibleUniqueConcepts": 84,
           "consumedUniqueConceptsBefore": 32
         },
         {
           "stageIndex": 14,
           "grade": "大三",
           "required": 9,
-          "drawn": 8,
-          "shortfall": 1,
-          "kind": "confirmed_gap",
-          "eligibleUniqueConcepts": 38,
-          "consumedUniqueConceptsBefore": 40
+          "drawn": 9,
+          "shortfall": 0,
+          "kind": "ok",
+          "eligibleUniqueConcepts": 94,
+          "consumedUniqueConceptsBefore": 41
         },
         {
           "stageIndex": 15,
           "grade": "大四",
           "required": 10,
-          "drawn": 0,
-          "shortfall": 10,
-          "kind": "not_simulated",
-          "note": "stage 14 題量不足，後續未模擬"
+          "drawn": 10,
+          "shortfall": 0,
+          "kind": "ok",
+          "eligibleUniqueConcepts": 84,
+          "consumedUniqueConceptsBefore": 51
         },
         {
           "stageIndex": 16,
           "grade": "研一",
           "required": 10,
-          "drawn": 0,
-          "shortfall": 10,
-          "kind": "not_simulated",
-          "note": "stage 14 題量不足，後續未模擬"
+          "drawn": 10,
+          "shortfall": 0,
+          "kind": "ok",
+          "eligibleUniqueConcepts": 77,
+          "consumedUniqueConceptsBefore": 61
         },
         {
           "stageIndex": 17,
           "grade": "研二",
           "required": 10,
-          "drawn": 0,
-          "shortfall": 10,
-          "kind": "not_simulated",
-          "note": "stage 14 題量不足，後續未模擬"
+          "drawn": 10,
+          "shortfall": 0,
+          "kind": "ok",
+          "eligibleUniqueConcepts": 87,
+          "consumedUniqueConceptsBefore": 71
         }
       ]
     },
     {
       "seed": 99,
-      "consumedUniqueConceptsThroughRange": 43,
+      "consumedUniqueConceptsThroughRange": 71,
       "stages": [
         {
           "stageIndex": 11,
@@ -289,7 +296,7 @@
           "drawn": 9,
           "shortfall": 0,
           "kind": "ok",
-          "eligibleUniqueConcepts": 38,
+          "eligibleUniqueConcepts": 84,
           "consumedUniqueConceptsBefore": 14
         },
         {
@@ -299,7 +306,7 @@
           "drawn": 9,
           "shortfall": 0,
           "kind": "ok",
-          "eligibleUniqueConcepts": 38,
+          "eligibleUniqueConcepts": 90,
           "consumedUniqueConceptsBefore": 23
         },
         {
@@ -309,7 +316,7 @@
           "drawn": 9,
           "shortfall": 0,
           "kind": "ok",
-          "eligibleUniqueConcepts": 38,
+          "eligibleUniqueConcepts": 84,
           "consumedUniqueConceptsBefore": 32
         },
         {
@@ -319,42 +326,44 @@
           "drawn": 9,
           "shortfall": 0,
           "kind": "ok",
-          "eligibleUniqueConcepts": 38,
+          "eligibleUniqueConcepts": 94,
           "consumedUniqueConceptsBefore": 41
         },
         {
           "stageIndex": 15,
           "grade": "大四",
           "required": 10,
-          "drawn": 2,
-          "shortfall": 8,
-          "kind": "confirmed_gap",
-          "eligibleUniqueConcepts": 38,
-          "consumedUniqueConceptsBefore": 43
+          "drawn": 10,
+          "shortfall": 0,
+          "kind": "ok",
+          "eligibleUniqueConcepts": 84,
+          "consumedUniqueConceptsBefore": 51
         },
         {
           "stageIndex": 16,
           "grade": "研一",
           "required": 10,
-          "drawn": 0,
-          "shortfall": 10,
-          "kind": "not_simulated",
-          "note": "stage 15 題量不足，後續未模擬"
+          "drawn": 10,
+          "shortfall": 0,
+          "kind": "ok",
+          "eligibleUniqueConcepts": 77,
+          "consumedUniqueConceptsBefore": 61
         },
         {
           "stageIndex": 17,
           "grade": "研二",
           "required": 10,
-          "drawn": 0,
-          "shortfall": 10,
-          "kind": "not_simulated",
-          "note": "stage 15 題量不足，後續未模擬"
+          "drawn": 10,
+          "shortfall": 0,
+          "kind": "ok",
+          "eligibleUniqueConcepts": 87,
+          "consumedUniqueConceptsBefore": 71
         }
       ]
     },
     {
       "seed": 2026,
-      "consumedUniqueConceptsThroughRange": 43,
+      "consumedUniqueConceptsThroughRange": 71,
       "stages": [
         {
           "stageIndex": 11,
@@ -363,7 +372,7 @@
           "drawn": 9,
           "shortfall": 0,
           "kind": "ok",
-          "eligibleUniqueConcepts": 38,
+          "eligibleUniqueConcepts": 84,
           "consumedUniqueConceptsBefore": 14
         },
         {
@@ -373,7 +382,7 @@
           "drawn": 9,
           "shortfall": 0,
           "kind": "ok",
-          "eligibleUniqueConcepts": 38,
+          "eligibleUniqueConcepts": 90,
           "consumedUniqueConceptsBefore": 23
         },
         {
@@ -383,7 +392,7 @@
           "drawn": 9,
           "shortfall": 0,
           "kind": "ok",
-          "eligibleUniqueConcepts": 38,
+          "eligibleUniqueConcepts": 84,
           "consumedUniqueConceptsBefore": 32
         },
         {
@@ -393,88 +402,45 @@
           "drawn": 9,
           "shortfall": 0,
           "kind": "ok",
-          "eligibleUniqueConcepts": 38,
+          "eligibleUniqueConcepts": 94,
           "consumedUniqueConceptsBefore": 41
         },
         {
           "stageIndex": 15,
           "grade": "大四",
           "required": 10,
-          "drawn": 2,
-          "shortfall": 8,
-          "kind": "confirmed_gap",
-          "eligibleUniqueConcepts": 38,
-          "consumedUniqueConceptsBefore": 43
+          "drawn": 10,
+          "shortfall": 0,
+          "kind": "ok",
+          "eligibleUniqueConcepts": 84,
+          "consumedUniqueConceptsBefore": 51
         },
         {
           "stageIndex": 16,
           "grade": "研一",
           "required": 10,
-          "drawn": 0,
-          "shortfall": 10,
-          "kind": "not_simulated",
-          "note": "stage 15 題量不足，後續未模擬"
+          "drawn": 10,
+          "shortfall": 0,
+          "kind": "ok",
+          "eligibleUniqueConcepts": 77,
+          "consumedUniqueConceptsBefore": 61
         },
         {
           "stageIndex": 17,
           "grade": "研二",
           "required": 10,
-          "drawn": 0,
-          "shortfall": 10,
-          "kind": "not_simulated",
-          "note": "stage 15 題量不足，後續未模擬"
+          "drawn": 10,
+          "shortfall": 0,
+          "kind": "ok",
+          "eligibleUniqueConcepts": 87,
+          "consumedUniqueConceptsBefore": 71
         }
       ]
     }
   ],
   "playableRunSummary": {
-    "playableStageCount": 11,
-    "totalQuestions": 76,
-    "gaps": [
-      {
-        "kind": "confirmed_gap",
-        "stageIndex": 11,
-        "grade": "高三",
-        "required": 9,
-        "drawn": 8,
-        "shortfall": 1
-      },
-      {
-        "kind": "not_simulated",
-        "stageIndex": 12,
-        "grade": "stage-12",
-        "note": "stage 11 題量不足，後續學級未模擬"
-      },
-      {
-        "kind": "not_simulated",
-        "stageIndex": 13,
-        "grade": "stage-13",
-        "note": "stage 11 題量不足，後續學級未模擬"
-      },
-      {
-        "kind": "not_simulated",
-        "stageIndex": 14,
-        "grade": "stage-14",
-        "note": "stage 11 題量不足，後續學級未模擬"
-      },
-      {
-        "kind": "not_simulated",
-        "stageIndex": 15,
-        "grade": "stage-15",
-        "note": "stage 11 題量不足，後續學級未模擬"
-      },
-      {
-        "kind": "not_simulated",
-        "stageIndex": 16,
-        "grade": "stage-16",
-        "note": "stage 11 題量不足，後續學級未模擬"
-      },
-      {
-        "kind": "not_simulated",
-        "stageIndex": 17,
-        "grade": "stage-17",
-        "note": "stage 11 題量不足，後續學級未模擬"
-      }
-    ]
+    "playableStageCount": 18,
+    "totalQuestions": 142,
+    "gaps": []
   }
 }

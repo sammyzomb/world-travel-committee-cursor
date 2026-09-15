@@ -1,6 +1,6 @@
 {
   "version": 3,
-  "generatedAt": "2026-09-14T09:35:28.752Z",
+  "generatedAt": "2026-09-15T09:49:32.261Z",
   "seeds": [
     1,
     7,
@@ -11,333 +11,78 @@
   "summary": {
     "seedRuns": 5,
     "gapRange": {
-      "minPlayableStages": 11,
-      "maxPlayableStages": 12,
-      "minQuestions": 76,
-      "maxQuestions": 85,
-      "firstGapStages": [
-        12,
-        11
-      ]
+      "minPlayableStages": 18,
+      "maxPlayableStages": 18,
+      "minQuestions": 142,
+      "maxQuestions": 142,
+      "firstGapStages": []
     },
-    "replayPlayableStages": 11,
+    "replayPlayableStages": 18,
     "ruleViolations": true,
-    "allComplete": false,
+    "allComplete": true,
     "fallbackBypassCount": 0
   },
   "seedResults": [
     {
       "seed": 1,
-      "playableStageCount": 12,
-      "totalQuestions": 85,
-      "completeThroughFinal": false,
-      "confirmedGaps": [
-        {
-          "kind": "confirmed_gap",
-          "stageIndex": 12,
-          "grade": "大一",
-          "required": 9,
-          "drawn": 5,
-          "shortfall": 4
-        }
-      ],
-      "notSimulated": [
-        {
-          "kind": "not_simulated",
-          "stageIndex": 13,
-          "grade": "stage-13",
-          "note": "stage 12 題量不足，後續學級未模擬"
-        },
-        {
-          "kind": "not_simulated",
-          "stageIndex": 14,
-          "grade": "stage-14",
-          "note": "stage 12 題量不足，後續學級未模擬"
-        },
-        {
-          "kind": "not_simulated",
-          "stageIndex": 15,
-          "grade": "stage-15",
-          "note": "stage 12 題量不足，後續學級未模擬"
-        },
-        {
-          "kind": "not_simulated",
-          "stageIndex": 16,
-          "grade": "stage-16",
-          "note": "stage 12 題量不足，後續學級未模擬"
-        },
-        {
-          "kind": "not_simulated",
-          "stageIndex": 17,
-          "grade": "stage-17",
-          "note": "stage 12 題量不足，後續學級未模擬"
-        }
-      ],
+      "playableStageCount": 18,
+      "totalQuestions": 142,
+      "completeThroughFinal": true,
+      "confirmedGaps": [],
+      "notSimulated": [],
       "ruleViolations": [],
-      "firstConfirmedGapStage": 12
+      "firstConfirmedGapStage": null
     },
     {
       "seed": 7,
-      "playableStageCount": 11,
-      "totalQuestions": 76,
-      "completeThroughFinal": false,
-      "confirmedGaps": [
-        {
-          "kind": "confirmed_gap",
-          "stageIndex": 11,
-          "grade": "高三",
-          "required": 9,
-          "drawn": 8,
-          "shortfall": 1
-        }
-      ],
-      "notSimulated": [
-        {
-          "kind": "not_simulated",
-          "stageIndex": 12,
-          "grade": "stage-12",
-          "note": "stage 11 題量不足，後續學級未模擬"
-        },
-        {
-          "kind": "not_simulated",
-          "stageIndex": 13,
-          "grade": "stage-13",
-          "note": "stage 11 題量不足，後續學級未模擬"
-        },
-        {
-          "kind": "not_simulated",
-          "stageIndex": 14,
-          "grade": "stage-14",
-          "note": "stage 11 題量不足，後續學級未模擬"
-        },
-        {
-          "kind": "not_simulated",
-          "stageIndex": 15,
-          "grade": "stage-15",
-          "note": "stage 11 題量不足，後續學級未模擬"
-        },
-        {
-          "kind": "not_simulated",
-          "stageIndex": 16,
-          "grade": "stage-16",
-          "note": "stage 11 題量不足，後續學級未模擬"
-        },
-        {
-          "kind": "not_simulated",
-          "stageIndex": 17,
-          "grade": "stage-17",
-          "note": "stage 11 題量不足，後續學級未模擬"
-        }
-      ],
+      "playableStageCount": 18,
+      "totalQuestions": 142,
+      "completeThroughFinal": true,
+      "confirmedGaps": [],
+      "notSimulated": [],
       "ruleViolations": [],
-      "firstConfirmedGapStage": 11
+      "firstConfirmedGapStage": null
     },
     {
       "seed": 42,
-      "playableStageCount": 12,
-      "totalQuestions": 85,
-      "completeThroughFinal": false,
-      "confirmedGaps": [
-        {
-          "kind": "confirmed_gap",
-          "stageIndex": 12,
-          "grade": "大一",
-          "required": 9,
-          "drawn": 5,
-          "shortfall": 4
-        }
-      ],
-      "notSimulated": [
-        {
-          "kind": "not_simulated",
-          "stageIndex": 13,
-          "grade": "stage-13",
-          "note": "stage 12 題量不足，後續學級未模擬"
-        },
-        {
-          "kind": "not_simulated",
-          "stageIndex": 14,
-          "grade": "stage-14",
-          "note": "stage 12 題量不足，後續學級未模擬"
-        },
-        {
-          "kind": "not_simulated",
-          "stageIndex": 15,
-          "grade": "stage-15",
-          "note": "stage 12 題量不足，後續學級未模擬"
-        },
-        {
-          "kind": "not_simulated",
-          "stageIndex": 16,
-          "grade": "stage-16",
-          "note": "stage 12 題量不足，後續學級未模擬"
-        },
-        {
-          "kind": "not_simulated",
-          "stageIndex": 17,
-          "grade": "stage-17",
-          "note": "stage 12 題量不足，後續學級未模擬"
-        }
-      ],
+      "playableStageCount": 18,
+      "totalQuestions": 142,
+      "completeThroughFinal": true,
+      "confirmedGaps": [],
+      "notSimulated": [],
       "ruleViolations": [],
-      "firstConfirmedGapStage": 12
+      "firstConfirmedGapStage": null
     },
     {
       "seed": 99,
-      "playableStageCount": 12,
-      "totalQuestions": 85,
-      "completeThroughFinal": false,
-      "confirmedGaps": [
-        {
-          "kind": "confirmed_gap",
-          "stageIndex": 12,
-          "grade": "大一",
-          "required": 9,
-          "drawn": 5,
-          "shortfall": 4
-        }
-      ],
-      "notSimulated": [
-        {
-          "kind": "not_simulated",
-          "stageIndex": 13,
-          "grade": "stage-13",
-          "note": "stage 12 題量不足，後續學級未模擬"
-        },
-        {
-          "kind": "not_simulated",
-          "stageIndex": 14,
-          "grade": "stage-14",
-          "note": "stage 12 題量不足，後續學級未模擬"
-        },
-        {
-          "kind": "not_simulated",
-          "stageIndex": 15,
-          "grade": "stage-15",
-          "note": "stage 12 題量不足，後續學級未模擬"
-        },
-        {
-          "kind": "not_simulated",
-          "stageIndex": 16,
-          "grade": "stage-16",
-          "note": "stage 12 題量不足，後續學級未模擬"
-        },
-        {
-          "kind": "not_simulated",
-          "stageIndex": 17,
-          "grade": "stage-17",
-          "note": "stage 12 題量不足，後續學級未模擬"
-        }
-      ],
+      "playableStageCount": 18,
+      "totalQuestions": 142,
+      "completeThroughFinal": true,
+      "confirmedGaps": [],
+      "notSimulated": [],
       "ruleViolations": [],
-      "firstConfirmedGapStage": 12
+      "firstConfirmedGapStage": null
     },
     {
       "seed": 2026,
-      "playableStageCount": 12,
-      "totalQuestions": 85,
-      "completeThroughFinal": false,
-      "confirmedGaps": [
-        {
-          "kind": "confirmed_gap",
-          "stageIndex": 12,
-          "grade": "大一",
-          "required": 9,
-          "drawn": 6,
-          "shortfall": 3
-        }
-      ],
-      "notSimulated": [
-        {
-          "kind": "not_simulated",
-          "stageIndex": 13,
-          "grade": "stage-13",
-          "note": "stage 12 題量不足，後續學級未模擬"
-        },
-        {
-          "kind": "not_simulated",
-          "stageIndex": 14,
-          "grade": "stage-14",
-          "note": "stage 12 題量不足，後續學級未模擬"
-        },
-        {
-          "kind": "not_simulated",
-          "stageIndex": 15,
-          "grade": "stage-15",
-          "note": "stage 12 題量不足，後續學級未模擬"
-        },
-        {
-          "kind": "not_simulated",
-          "stageIndex": 16,
-          "grade": "stage-16",
-          "note": "stage 12 題量不足，後續學級未模擬"
-        },
-        {
-          "kind": "not_simulated",
-          "stageIndex": 17,
-          "grade": "stage-17",
-          "note": "stage 12 題量不足，後續學級未模擬"
-        }
-      ],
+      "playableStageCount": 18,
+      "totalQuestions": 142,
+      "completeThroughFinal": true,
+      "confirmedGaps": [],
+      "notSimulated": [],
       "ruleViolations": [],
-      "firstConfirmedGapStage": 12
+      "firstConfirmedGapStage": null
     }
   ],
   "replayAvoidance": {
     "seed": 42,
-    "playableStageCount": 11,
-    "totalQuestions": 76,
-    "completeThroughFinal": false,
-    "confirmedGaps": [
-      {
-        "kind": "confirmed_gap",
-        "stageIndex": 11,
-        "grade": "高三",
-        "required": 9,
-        "drawn": 8,
-        "shortfall": 1
-      }
-    ],
-    "notSimulated": [
-      {
-        "kind": "not_simulated",
-        "stageIndex": 12,
-        "grade": "stage-12",
-        "note": "stage 11 題量不足，後續學級未模擬"
-      },
-      {
-        "kind": "not_simulated",
-        "stageIndex": 13,
-        "grade": "stage-13",
-        "note": "stage 11 題量不足，後續學級未模擬"
-      },
-      {
-        "kind": "not_simulated",
-        "stageIndex": 14,
-        "grade": "stage-14",
-        "note": "stage 11 題量不足，後續學級未模擬"
-      },
-      {
-        "kind": "not_simulated",
-        "stageIndex": 15,
-        "grade": "stage-15",
-        "note": "stage 11 題量不足，後續學級未模擬"
-      },
-      {
-        "kind": "not_simulated",
-        "stageIndex": 16,
-        "grade": "stage-16",
-        "note": "stage 11 題量不足，後續學級未模擬"
-      },
-      {
-        "kind": "not_simulated",
-        "stageIndex": 17,
-        "grade": "stage-17",
-        "note": "stage 11 題量不足，後續學級未模擬"
-      }
-    ],
+    "playableStageCount": 18,
+    "totalQuestions": 142,
+    "completeThroughFinal": true,
+    "confirmedGaps": [],
+    "notSimulated": [],
     "ruleViolations": [],
-    "firstConfirmedGapStage": 11
+    "firstConfirmedGapStage": null
   },
   "inventory": [
     {
