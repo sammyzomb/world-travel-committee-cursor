@@ -13,6 +13,7 @@
     "index:nas-landmark-files": "npx --yes tsx scripts/import-landmark-images-from-nas.mjs --index-only",
     "rematch:nas-landmarks": "npx --yes tsx scripts/import-landmark-images-from-nas.mjs --rematch",
     "import:landmark-images:nas": "npx --yes tsx scripts/import-landmark-images-from-nas.mjs",
+    "seed:nas-manual-landmarks": "node scripts/seed-nas-manual-landmarks.mjs",
     "prebuild": "npm run download:landmark-images",
     "build": "node scripts/run-framework.mjs build",
     "build:netlify": "node scripts/run-framework.mjs build",

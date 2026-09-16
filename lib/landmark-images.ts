@@ -29,8 +29,8 @@ const baseLandmarkImages: Record<string, LandmarkImage> = {
     credit: "Wikimedia Commons / Thomas Wolf",
   },
   "美泉宮": {
-    url: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Schoenbrunn_Wien_2012.jpg/960px-Schoenbrunn_Wien_2012.jpg",
-    credit: "Wikimedia Commons / Thomas Wolf",
+    url: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Gloriette_Sch%C3%B6nbrunn_Wien_%28Zuschnitt%29.jpg/960px-Gloriette_Sch%C3%B6nbrunn_Wien_%28Zuschnitt%29.jpg",
+    credit: "Wikimedia Commons / Gloriette Schönbrunn Wien (Zuschnitt).jpg",
   },
   "國會大廈": {
     url: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Hungarian_Parliament_Building_from_across_the_Danube.jpg/960px-Hungarian_Parliament_Building_from_across_the_Danube.jpg",
@@ -117,20 +117,20 @@ const baseLandmarkImages: Record<string, LandmarkImage> = {
     credit: "Wikimedia Commons / 663highland",
   },
   "東大寺": {
-    url: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Todai-ji_Daibutsuden2005G.jpg/960px-Todai-ji_Daibutsuden2005G.jpg",
-    credit: "Wikimedia Commons / 663highland",
+    url: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/T%C5%8Ddai-ji_hdsr_IMG_3880.jpg/960px-T%C5%8Ddai-ji_hdsr_IMG_3880.jpg",
+    credit: "Wikimedia Commons / Tōdai-ji hdsr IMG 3880.jpg",
   },
   "泰姬瑪哈陵": {
-    url: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Taj_Mahal_in_India_-_Kristian_Bertel.jpg/960px-Taj_Mahal_in_India_-_Kristian_Bertel.jpg",
-    credit: "Wikimedia Commons / Kristian Bertel",
+    url: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/%E6%B3%B0%E5%A7%AC%E7%91%AA%E5%93%88%E9%99%B570.jpg/960px-%E6%B3%B0%E5%A7%AC%E7%91%AA%E5%93%88%E9%99%B570.jpg",
+    credit: "Wikimedia Commons / 泰姬瑪哈陵70.jpg",
   },
   "聖索菲亞大教堂": {
     url: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Hagia_Sophia_Mars_2013.jpg/960px-Hagia_Sophia_Mars_2013.jpg",
     credit: "Wikimedia Commons / Arild Vågen",
   },
   "哈里法塔": {
-    url: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Burj_Khalifa.jpg/960px-Burj_Khalifa.jpg",
-    credit: "Wikimedia Commons / Donaldytong",
+    url: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Burj_Khalifa_%2816260269606%29.jpg/960px-Burj_Khalifa_%2816260269606%29.jpg",
+    credit: "Wikimedia Commons / Burj Khalifa (16260269606).jpg",
   },
   "紅場": {
     url: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Moscow_Red_Square.jpg/960px-Moscow_Red_Square.jpg",
@@ -141,16 +141,16 @@ const baseLandmarkImages: Record<string, LandmarkImage> = {
     credit: "Wikimedia Commons / Steve Swayne",
   },
   "查理大橋": {
-    url: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Prague_07-2016_view_from_Lesser_Town_Tower_of_Charles_Bridge_03.jpg/960px-Prague_07-2016_view_from_Lesser_Town_Tower_of_Charles_Bridge_03.jpg",
-    credit: "Wikimedia Commons / Diliff",
+    url: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Prague_07-2016_View_from_Petrinska_Tower_img2.jpg/960px-Prague_07-2016_View_from_Petrinska_Tower_img2.jpg",
+    credit: "Wikimedia Commons / Prague 07-2016 View from Petrinska Tower img2.jpg",
   },
   "藍湖": {
     url: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Blue_Lagoon%2C_Iceland%2C_2013-08-12%2C_DD_03.JPG/960px-Blue_Lagoon%2C_Iceland%2C_2013-08-12%2C_DD_03.JPG",
     credit: "Wikimedia Commons / Diego Delso",
   },
   "庫肯霍夫花園": {
-    url: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Keukenhof%2C_tulip_fields.jpg/960px-Keukenhof%2C_tulip_fields.jpg",
-    credit: "Wikimedia Commons / Rene Cortin",
+    url: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Keukenhof2.jpg/960px-Keukenhof2.jpg",
+    credit: "Wikimedia Commons / Keukenhof2.jpg",
   },
   "金門大橋": {
     url: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/GoldenGateBridge-001.jpg/960px-GoldenGateBridge-001.jpg",
@@ -161,8 +161,8 @@ const baseLandmarkImages: Record<string, LandmarkImage> = {
     credit: "Wikimedia Commons / Bjørn Christian Tørrissen",
   },
   "伊瓜蘇瀑布": {
-    url: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Iguazu_Cataratas2.jpg/960px-Iguazu_Cataratas2.jpg",
-    credit: "Wikimedia Commons / SF Brit",
+    url: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/YPF_tanker_truck_on_Cataratas_del_Iguaz%C3%BA_International_Airport.jpg/960px-YPF_tanker_truck_on_Cataratas_del_Iguaz%C3%BA_International_Airport.jpg",
+    credit: "Wikimedia Commons / YPF tanker truck on Cataratas del Iguazú International Airport.jpg",
   },
   "迦太基古城": {
     url: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Carthage_Roman_Villas.jpg/960px-Carthage_Roman_Villas.jpg",
@@ -265,12 +265,12 @@ const baseLandmarkImages: Record<string, LandmarkImage> = {
     credit: "Wikimedia Commons / Basile Morin",
   },
   "碧瑤": {
-    url: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Baguio_City_Hall.jpg/960px-Baguio_City_Hall.jpg",
-    credit: "Wikimedia Commons / Ramon FVelasquez",
+    url: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/BGH_flyover_%28Baguio%2C_Benguet%29%282018-11-27%29.jpg/960px-BGH_flyover_%28Baguio%2C_Benguet%29%282018-11-27%29.jpg",
+    credit: "Wikimedia Commons / BGH flyover (Baguio, Benguet)(2018-11-27).jpg",
   },
   "奧馬爾清真寺": {
-    url: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Umayyad_Mosque_Damascus_2009.jpg/960px-Umayyad_Mosque_Damascus_2009.jpg",
-    credit: "Wikimedia Commons / Bernard Gagnon",
+    url: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Sultan_Omar_Ali_Saifuddin_Mosque_02.jpg/960px-Sultan_Omar_Ali_Saifuddin_Mosque_02.jpg",
+    credit: "Wikimedia Commons / Sultan Omar Ali Saifuddin Mosque 02.jpg",
   },
   "成吉思汗廣場": {
     url: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/S%C3%BCkhbaatar_Square_2014.jpg/960px-S%C3%BCkhbaatar_Square_2014.jpg",
@@ -281,16 +281,16 @@ const baseLandmarkImages: Record<string, LandmarkImage> = {
     credit: "Wikimedia Commons / Ken and Nyetta",
   },
   "和平橋": {
-    url: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Bridge_of_Peace%2C_Tbilisi%2C_Georgia.jpg/960px-Bridge_of_Peace%2C_Tbilisi%2C_Georgia.jpg",
-    credit: "Wikimedia Commons / Diego Delso",
+    url: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Peace_Bridge.jpg/960px-Peace_Bridge.jpg",
+    credit: "Wikimedia Commons / Peace Bridge.jpg",
   },
   "維格蘭雕塑公園": {
     url: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/The_Monolith_Vigeland_Park.jpg/960px-The_Monolith_Vigeland_Park.jpg",
     credit: "Wikimedia Commons / Bjørn Erik Pedersen",
   },
   "赫爾辛基大教堂": {
-    url: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Helsinki_cathedral_and_Statue.jpg/960px-Helsinki_cathedral_and_Statue.jpg",
-    credit: "Wikimedia Commons / Jorge Láscar",
+    url: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Lutheran_Cathedral_Helsinki.jpg/960px-Lutheran_Cathedral_Helsinki.jpg",
+    credit: "Wikimedia Commons / Lutheran Cathedral Helsinki.jpg",
   },
   "市政廳": {
     url: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Stockholm_Stadshus_mars_2013.jpg/960px-Stockholm_Stadshus_mars_2013.jpg",
@@ -336,8 +336,6 @@ const baseLandmarkImages: Record<string, LandmarkImage> = {
     url: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Kwame_Nkrumah_Mausoleum_and_Memorial_Park.jpg/960px-Kwame_Nkrumah_Mausoleum_and_Memorial_Park.jpg",
     credit: "Wikimedia Commons / Stig Nygaard",
   },
-  // Bogotá's Museo del Oro: the previous URL showed New Taipei's Gold Museum.
-  // Leave unmapped until a verified, licensed photograph is selected.
   "加拉帕戈斯群島": {
     url: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Gal%C3%A1pagos_Islands_ESA23188644.jpeg/960px-Gal%C3%A1pagos_Islands_ESA23188644.jpeg",
     credit: "Wikimedia Commons / Galápagos Islands ESA23188644.jpeg",

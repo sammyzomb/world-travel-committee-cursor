@@ -485,6 +485,7 @@ if (configuredSubdirs.length === 0 && !options.fullScan && (options.scanOnly || 
 }
 
 let autoIndex = { byBasename: new Map(), files: [] };
+let pathContainsIndex = null;
 const landmarks = Object.keys(landmarkImages);
 const minTokenLength = map.autoMatch?.minTokenLength ?? 3;
 const landmarkTokenMap = buildLandmarkTokenMap(landmarks, aliasMap, minTokenLength);
@@ -503,10 +504,24 @@ if (options.rematchOnly) {
   autoIndex = buildImageIndex(files);
   if (files.length > 0) saveFilesCache(map, files);
 } else if (scanCandidates) {
-  console.log(`Using ${scanCandidates.size} candidates from ${scanOutputPath} (pass --rescan to refresh).`);
+  const cachedFiles = loadFilesCache();
+  if (cachedFiles) {
+    files.push(...cachedFiles);
+    autoIndex = buildImageIndex(files);
+    if (map.autoMatch?.matchPathContains) {
+      pathContainsIndex = buildPathContainsIndex(
+        landmarkTokenMap,
+        files,
+        minTokenLength,
+        map.autoMatch?.maxCandidatesPerLandmark ?? 80,
+      );
+    }
+  }
+  console.log(
+    `Using ${scanCandidates.size} scan candidates + file-cache auto-match (${files.length} files; pass --rescan to refresh).`,
+  );
 }
 
-let pathContainsIndex = null;
 if (!singleImport && !scanCandidates && map.autoMatch?.matchPathContains && files.length > 0) {
   console.log("Building landmark path index ...");
   pathContainsIndex = buildPathContainsIndex(

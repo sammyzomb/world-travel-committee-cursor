@@ -66,12 +66,12 @@ export const heritageLandmarkImages: Record<string, HeritageLandmarkImage> = {
     credit: "Wikimedia Commons / chensiyuan",
   },
   "琥珀堡": {
-    url: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Amber_Palace_Jaipur_2019.jpg/960px-Amber_Palace_Jaipur_2019.jpg",
-    credit: "Wikimedia Commons / Diego Delso",
+    url: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Jaipur_03-2016_05_Amber_Fort.jpg/960px-Jaipur_03-2016_05_Amber_Fort.jpg",
+    credit: "Wikimedia Commons / Jaipur 03-2016 05 Amber Fort.jpg",
   },
   "藍色清真寺": {
-    url: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Blue_Mosque%2C_Istanbul%2C_Turkey.jpg/960px-Blue_Mosque%2C_Istanbul%2C_Turkey.jpg",
-    credit: "Wikimedia Commons / Arild Vågen",
+    url: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Kabood_%28Blue%29_mosque%2C_Tabriz%2C_Iran.jpg/960px-Kabood_%28Blue%29_mosque%2C_Tabriz%2C_Iran.jpg",
+    credit: "Wikimedia Commons / Kabood (Blue) mosque, Tabriz, Iran.jpg",
   },
   "卡帕多奇亞": {
     url: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Cappadocia_balloons.jpg/960px-Cappadocia_balloons.jpg",
@@ -210,20 +210,96 @@ export const heritageLandmarkImages: Record<string, HeritageLandmarkImage> = {
     credit: "Wikimedia Commons / Diego Delso",
   },
   "阿布辛貝神廟": {
-    url: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/RamsesII_at_Abu_Simbel.jpg/960px-RamsesII_at_Abu_Simbel.jpg",
-    credit: "Wikimedia Commons / Hajor",
+    url: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Abu_Simbel_%E9%98%BF%E5%B8%83%E8%BE%9B%E8%B2%9D%E7%A5%9E%E5%BB%9F_-_panoramio.jpg/960px-Abu_Simbel_%E9%98%BF%E5%B8%83%E8%BE%9B%E8%B2%9D%E7%A5%9E%E5%BB%9F_-_panoramio.jpg",
+    credit: "Wikimedia Commons / Abu Simbel 阿布辛貝神廟 - panoramio.jpg",
   },
   "魁北克古城": {
-    url: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Quebec_City_skyline.jpg/960px-Quebec_City_skyline.jpg",
-    credit: "Wikimedia Commons / Diego Delso",
+    url: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/The_Infinite_Game_by_Willy_Verginer%2C_Quebec_city%2C_vieux_Quebec%2C_Canada.jpg/960px-The_Infinite_Game_by_Willy_Verginer%2C_Quebec_city%2C_vieux_Quebec%2C_Canada.jpg",
+    credit: "Wikimedia Commons / The Infinite Game by Willy Verginer, Quebec city, vieux Quebec, Canada.jpg",
   },
   "小孩堤防風車群": {
     url: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Kinderdijk_windmills.jpg/960px-Kinderdijk_windmills.jpg",
     credit: "Wikimedia Commons / Diego Delso",
   },
   "波斯波利斯古城": {
-    url: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Persepolis_24.jpg/960px-Persepolis_24.jpg",
-    credit: "Wikimedia Commons / Diego Delso",
+    url: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Different_Views_of_the_Major_Cities_in_Persia_WDL11740.png/960px-Different_Views_of_the_Major_Cities_in_Persia_WDL11740.png",
+    credit: "Wikimedia Commons / Different Views of the Major Cities in Persia WDL11740.png",
+  },
+  "盧浮宮": {
+    url: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Louvre_Museum_Wikimedia_Commons.jpg/960px-Louvre_Museum_Wikimedia_Commons.jpg",
+    credit: "Wikimedia Commons / Louvre Museum",
+  },
+  "科隆大教堂": {
+    url: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Kranh%C3%A4user_Cologne%2C_April_2018_-01.jpg/960px-Kranh%C3%A4user_Cologne%2C_April_2018_-01.jpg",
+    credit: "Wikimedia Commons / Kranhäuser Cologne, April 2018 -01.jpg",
+  },
+  "比薩斜塔": {
+    url: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/The_Leaning_Tower_of_Pisa_SB.jpeg/960px-The_Leaning_Tower_of_Pisa_SB.jpeg",
+    credit: "Wikimedia Commons / The Leaning Tower of Pisa SB",
+  },
+  "聖瓦西里大教堂": {
+    url: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Saint_Basil%27s_Cathedral_in_Moscow.jpg/960px-Saint_Basil%27s_Cathedral_in_Moscow.jpg",
+    credit: "Wikimedia Commons / Saint Basil's Cathedral in Moscow",
+  },
+  "西斯汀教堂": {
+    url: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Sistine_Chapel_ceiling.jpg/960px-Sistine_Chapel_ceiling.jpg",
+    credit: "Wikimedia Commons / Sistine Chapel ceiling",
+  },
+  "霍亨索倫城堡": {
+    url: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Burg_Hohenzollern_ak.jpg/960px-Burg_Hohenzollern_ak.jpg",
+    credit: "Wikimedia Commons / Burg Hohenzollern ak.jpg",
+  },
+  "哈尔施塔特": {
+    url: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Hallstatt_-_View_from_North.jpg/960px-Hallstatt_-_View_from_North.jpg",
+    credit: "Wikimedia Commons / Hallstatt - View from North",
+  },
+  "班夫國家公園": {
+    url: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Moraine_Lake_17092005.jpg/960px-Moraine_Lake_17092005.jpg",
+    credit: "Wikimedia Commons / Moraine Lake",
+  },
+  "米爾福德峽灣": {
+    url: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Milford_Sound.jpg/960px-Milford_Sound.jpg",
+    credit: "Wikimedia Commons / Milford Sound",
+  },
+  "納斯卡線": {
+    url: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Nazca-lines-aerialview.jpg/960px-Nazca-lines-aerialview.jpg",
+    credit: "Wikimedia Commons / Nazca lines aerialview",
+  },
+  "蒂卡爾遺跡": {
+    url: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Tikal_Temple1_2006_08_11.JPG/960px-Tikal_Temple1_2006_08_11.JPG",
+    credit: "Wikimedia Commons / Tikal Temple1",
+  },
+  "托雷斯德爾潘恩": {
+    url: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Torres_del_Paine%2C_Chile.jpg/960px-Torres_del_Paine%2C_Chile.jpg",
+    credit: "Wikimedia Commons / Torres del Paine, Chile",
+  },
+  "虎穴寺": {
+    url: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Tigers_Nest.jpg/960px-Tigers_Nest.jpg",
+    credit: "Wikimedia Commons / Tigers Nest",
+  },
+  "金閣寺": {
+    url: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Kinkaku-ji_in_Autumn_2018.jpg/960px-Kinkaku-ji_in_Autumn_2018.jpg",
+    credit: "Wikimedia Commons / Kinkaku-ji in Autumn 2018",
+  },
+  "廣島和平紀念公園": {
+    url: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Genbaku_Dome04-r.JPG/960px-Genbaku_Dome04-r.JPG",
+    credit: "Wikimedia Commons / Genbaku Dome",
+  },
+  "馬六甲古城": {
+    url: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Melaka_Straits_Mosque.jpg/960px-Melaka_Straits_Mosque.jpg",
+    credit: "Wikimedia Commons / Melaka Straits Mosque",
+  },
+  "柏林圍牆紀念": {
+    url: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Berlin_wall_1.jpg/960px-Berlin_wall_1.jpg",
+    credit: "Wikimedia Commons / Berlin wall",
+  },
+  "貝爾維德宮": {
+    url: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Belvedere%2C_Vienna.jpg/960px-Belvedere%2C_Vienna.jpg",
+    credit: "Wikimedia Commons / Belvedere, Vienna",
+  },
+  "貝加爾湖": {
+    url: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Baikal_ice.jpg/960px-Baikal_ice.jpg",
+    credit: "Wikimedia Commons / Baikal ice",
   },
   "旅遊地標": {
     url: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/The_Earth_seen_from_Apollo_17.jpg/960px-The_Earth_seen_from_Apollo_17.jpg",
