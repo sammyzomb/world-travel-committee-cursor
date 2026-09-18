@@ -177,7 +177,11 @@ export function buildClientRunState(session: StoredRunSession): ClientRunState {
     session.progress.currentIndex >= session.issuedQuestions.length
       ? Math.max(0, session.issuedQuestions.length - 1)
       : displayQuestionIndex(session);
-  const stageIndex = getStageIndex(session.stageStarts, displayIndex);
+  // Stage clear advances currentIndex to the next stage's first question before reward.
+  const stageLookupIndex = session.progress.pendingReward
+    ? Math.max(0, session.progress.currentIndex - 1)
+    : displayIndex;
+  const stageIndex = getStageIndex(session.stageStarts, stageLookupIndex);
   const stage = getStageAt(stageIndex);
   const nextStage = getStageAt(Math.min(stageIndex + 1, FINAL_STAGE_INDEX));
   const stageLength = getStageLength(
@@ -186,7 +190,9 @@ export function buildClientRunState(session: StoredRunSession): ClientRunState {
     stageIndex,
   );
   const stageStart = session.stageStarts[stageIndex] ?? 0;
-  const stageQuestion = Math.max(1, displayIndex - stageStart + 1);
+  const stageQuestion = session.progress.pendingReward
+    ? stageLength
+    : Math.max(1, displayIndex - stageStart + 1);
   const issued = currentIssued(session);
   const screen = resolveScreen(session);
 
@@ -205,7 +211,11 @@ export function buildClientRunState(session: StoredRunSession): ClientRunState {
     stageLength,
     stageCorrect: session.progress.stageCorrect,
     passRequired: passRequiredForStage(stageLength),
-    progress: stageLength > 0 ? (stageQuestion / stageLength) * 100 : 0,
+    progress: session.progress.pendingReward
+      ? 100
+      : stageLength > 0
+        ? (stageQuestion / stageLength) * 100
+        : 0,
     score: session.progress.score,
     lives: session.progress.lives,
     runStreak: session.progress.runStreak,

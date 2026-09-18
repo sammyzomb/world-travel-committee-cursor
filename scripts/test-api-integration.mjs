@@ -295,6 +295,9 @@ while (rewardState.screen === "play") {
 }
 
 assert.equal(rewardState.screen, "reward");
+assert.equal(rewardState.stage.name, "小一");
+assert.equal(rewardState.nextStage.name, "小二");
+assert.equal(rewardState.stageIndex, 0);
 const continued = await continueCurrent(rewardState, rewardToken);
 assert.equal(continued.status, 200);
 assert.equal(continued.payload.state.screen, "play");

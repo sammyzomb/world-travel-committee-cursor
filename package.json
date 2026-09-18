@@ -49,6 +49,7 @@
     "import:supplement-batch14": "node scripts/import-supplement-batch.mjs --file data/stage-general-supplement-batch14.json",
     "apply:supplement-tiering": "node scripts/apply-supplement-tiering.mjs --sync-batches",
     "dedupe:question-bank": "npx --yes tsx scripts/dedupe-question-bank.mjs",
+    "export:question-bank": "npx --yes tsx scripts/export-question-bank.mjs",
     "verify:concept-avoidance": "npx --yes tsx scripts/verify-concept-avoidance.mjs",
     "approve:travel-tour": "npx --yes tsx scripts/approve-travel-tour-batch.mjs",
     "analyze:question-bank-health": "npx --yes tsx scripts/analyze-question-bank-health.mjs",

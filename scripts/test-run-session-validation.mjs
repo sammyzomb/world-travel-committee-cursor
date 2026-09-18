@@ -1,7 +1,13 @@
 #!/usr/bin/env node
 import assert from "node:assert/strict";
 import { buildPlayableRunPlan } from "../lib/run-plan.ts";
-import { advanceAfterFeedback, createInitialProgress, submitAnswer } from "../lib/run-session-engine.ts";
+import {
+  advanceAfterFeedback,
+  buildClientRunState,
+  continueAfterReward,
+  createInitialProgress,
+  submitAnswer,
+} from "../lib/run-session-engine.ts";
 import { issuedQuestionsFromPlan, validateIssuedRunPlayback } from "../lib/run-session.ts";
 import { STARTING_LIVES } from "../lib/leaderboard-scoring.ts";
 
@@ -31,6 +37,18 @@ for (let index = 0; index < stageZeroEnd; index += 1) {
   session = result.session;
   session = advanceAfterFeedback(session, session.progress.revision).session;
 }
+
+assert.equal(session.progress.pendingReward, true);
+const rewardState = buildClientRunState(session);
+assert.equal(rewardState.screen, "reward");
+assert.equal(rewardState.stage.name, "小一");
+assert.equal(rewardState.nextStage.name, "小二");
+assert.equal(rewardState.stageIndex, 0);
+
+const continued = continueAfterReward(session, session.progress.revision);
+assert.equal(continued.state.screen, "play");
+assert.equal(continued.state.stage.name, "小二");
+assert.equal(continued.state.stageIndex, 1);
 
 const stageAnswers = session.progress.answers;
 assert.equal(
