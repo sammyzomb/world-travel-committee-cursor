@@ -12,7 +12,16 @@ const eslintConfig = defineConfig([
     "out/**",
     "build/**",
     "next-env.d.ts",
+    ".netlify/**",
+    ".output/**",
+    ".wrangler/**",
+    ".sites-runtime/**",
+    "**/node_modules/**",
   ]),
+  {
+    files: ["scripts/*.js"],
+    rules: { "@typescript-eslint/no-require-imports": "off" },
+  },
   {
     files: ["components/ui/**/*.{ts,tsx}", "hooks/use-mobile.ts"],
     rules: {

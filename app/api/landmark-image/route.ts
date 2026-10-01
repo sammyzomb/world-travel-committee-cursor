@@ -1,6 +1,6 @@
 import { readFileSync, existsSync } from "node:fs";
 import { resolve } from "node:path";
-import landmarkStaticManifest from "../../../data/landmark-static-manifest.json";
+import { landmarkStaticManifest } from "../../../lib/landmark-manifest";
 import { getLandmarkImage } from "../../../lib/landmark-images";
 
 const publicRoot = resolve(process.cwd(), "public");

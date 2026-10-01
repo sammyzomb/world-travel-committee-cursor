@@ -24,7 +24,7 @@ const react = {
   useCallback: callback => callback,
   useEffect() {},
 };
-const module = { exports: {} };
+const compiledModule = { exports: {} };
 const compiled = ts.transpileModule(readFileSync(resolve(root, "hooks/use-game-state.ts"), "utf8"), {
   compilerOptions: { module: ts.ModuleKind.CommonJS, target: ts.ScriptTarget.ES2022 },
 }).outputText;
@@ -33,11 +33,11 @@ new Function("require", "module", "exports", compiled)(
     if (name === "react") return react;
     if (name === "../lib/player-progress") return {};
     throw new Error("Unexpected runtime dependency: " + name);
-  }, module, module.exports,
+  }, compiledModule, compiledModule.exports,
 );
 function render() {
   cursor = 0;
-  return module.exports.useGameState();
+  return compiledModule.exports.useGameState();
 }
 const question = {
   id: "question:answered", conceptId: "concept:answered", q: "test",

@@ -16,17 +16,17 @@ function load(path) {
   if (!extname(path)) path += ".ts";
   if (cache.has(path)) return cache.get(path).exports;
   if (path.endsWith(".json")) return JSON.parse(readFileSync(path, "utf8"));
-  const module = { exports: {} };
-  cache.set(path, module);
+  const compiledModule = { exports: {} };
+  cache.set(path, compiledModule);
   const code = ts.transpileModule(readFileSync(path, "utf8"), {
     compilerOptions: { module: ts.ModuleKind.CommonJS, target: ts.ScriptTarget.ES2022, esModuleInterop: true },
   }).outputText;
   const nativeRequire = createRequire(path);
   new Function("require", "module", "exports", code)(
     name => name.startsWith(".") ? load(resolve(dirname(path), name)) : nativeRequire(name),
-    module, module.exports,
+    compiledModule, compiledModule.exports,
   );
-  return module.exports;
+  return compiledModule.exports;
 }
 const { deterministicDistractors } = load(resolve(root, "lib/question-metadata.ts"));
 const candidates = ["答案", "甲", "甲", "乙", "丙", "丁"];
@@ -44,8 +44,14 @@ const quarantined = bank.heritageExpandedQuestions.filter(q =>
 assert(quarantined.length > 0);
 assert(quarantined.every(q => q.auditStatus === "disabled"));
 assert(!bank.approvedQuestions.some(q => quarantined.includes(q)));
-const { getLandmarkImage } = load(resolve(root, "lib/landmark-images.ts"));
+const { getLandmarkImage, getLandmarkImageSrc, getLandmarkImageCredit } = load(resolve(root, "lib/landmark-images.ts"));
 assert.equal(getLandmarkImage("黃金博物館"), undefined);
+assert.equal(getLandmarkImageSrc("普拉多博物館"), "/landmarks/8bb42569ce37.jpg");
+const manifest = JSON.parse(readFileSync(resolve(root, "data/landmark-static-manifest.json"), "utf8"));
+assert.ok(manifest.entries["普拉多博物館"].rejectedPhotoIds.includes("GsMQ8mhqb6A"));
+assert.match(manifest.entries["普拉多博物館"].sourceUrl, /Museo_del_Prado/);
+assert.ok(manifest.entries["普拉多博物館"].imageReviewedAt);
+assert.equal(getLandmarkImageCredit("桌山"), "Unsplash / Peter Burdon");
 
 const fixture = mkdtempSync(resolve(tmpdir(), "question-integrity-"));
 try {
@@ -67,4 +73,4 @@ try {
 } finally {
   rmSync(fixture, { recursive: true, force: true });
 }
-console.log(`PASS: unique generated options, ${quarantined.length} quarantined capital rows, wrong image removed, audit preservation and failure exit.`);
+console.log(`PASS: unique generated options, ${quarantined.length} quarantined capital rows, wrong image replaced with reviewed museum photo, audit preservation and failure exit.`);

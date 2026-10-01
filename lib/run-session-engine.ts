@@ -1,3 +1,4 @@
+import type { QuestionReference } from "./question-reference";
 import type { QuestionVisualData } from "../components/question-visual";
 import {
   educationStages,
@@ -25,6 +26,7 @@ type IssuedQuestionSource = {
   category?: "世界地理" | "旅行知識" | "世界遺產";
   questionType?: string;
   visual?: QuestionVisualData;
+  references?: QuestionReference[];
 };
 
 export type SubmitAnswerInput = {
@@ -66,21 +68,23 @@ export function toIssuedQuestion(
     category: question.category,
     questionType: question.questionType,
     visual: question.visual,
+    references: question.references,
   };
 }
 
-export function toPublicQuestion(issued: IssuedQuestion): PublicQuestion {
+export function toPublicQuestion(issued: IssuedQuestion, answered = false): PublicQuestion {
   return {
     id: issued.questionId,
     conceptId: issued.conceptId,
     q: issued.q,
     options: issued.options,
+    references: answered ? issued.references : undefined,
     level: issued.level,
-    region: issued.region,
+    region: answered ? issued.region : (issued.category ?? "旅遊知識"),
     kind: issued.kind,
     category: issued.category,
     questionType: issued.questionType,
-    visual: issued.visual,
+    visual: answered || (issued.stageIndex === 0 && issued.kind === "tf") ? issued.visual : undefined,
   };
 }
 
@@ -203,7 +207,7 @@ export function buildClientRunState(session: StoredRunSession): ClientRunState {
     screen,
     // Keep the answered public question visible beside feedback and the next button.
     // expectedQuestion()/submitAnswer() still enforce one answer per question.
-    question: screen === "play" && issued ? toPublicQuestion(issued) : null,
+    question: screen === "play" && issued ? toPublicQuestion(issued, Boolean(session.progress.lastFeedback)) : null,
     stage,
     nextStage,
     stageIndex,

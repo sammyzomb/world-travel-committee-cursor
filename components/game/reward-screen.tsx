@@ -61,6 +61,7 @@ export function RewardScreen({
             {POINTS_PER_CORRECT} 分 · 全程最多 {MAX_RUN_QUESTIONS} 題
           </small>
         </div>
+        <div className="reward-actions">
         <button className="primary-button mx-auto" onClick={onContinue}>
           {isGraduationStage ? "畢業完成，進入" : "休息好了，升上"} {nextStage.name}{" "}
           <span>→</span>
@@ -69,6 +70,7 @@ export function RewardScreen({
           重玩
         </button>
         <p className="reward-tip">沒有倒數計時，準備好再繼續。</p>
+        </div>
       </div>
     </section>
   );

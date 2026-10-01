@@ -76,9 +76,7 @@ export function passRequiredForStage(stageLength: number = QUESTIONS_PER_STAGE) 
   return Math.max(PASS_CORRECT_REQUIRED, Math.ceil(stageLength * 0.6));
 }
 
-/** 小一～小三 2 選項 → 小四～小六 3 選項 → 國中以上 4 選項。 */
-export function optionCountForStage(stageIndex: number) {
-  if (stageIndex <= 2) return 2;
-  if (stageIndex <= 5) return 3;
+/** 選擇題保留四個選項；是非題仍為兩個選項。 */
+export function optionCountForStage(_stageIndex: number) {
   return 4;
 }

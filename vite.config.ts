@@ -1,7 +1,7 @@
 import { existsSync, readFileSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 import vinext from "vinext";
-import { defineConfig, type PluginOption } from "vite";
+import { defineConfig, type PluginOption, type UserConfig } from "vite";
 import hostingConfig from "./.openai/hosting.json";
 import { readExecutionProfile } from "./scripts/execution-profile.mjs";
 import { sites } from "./build/sites-vite-plugin";
@@ -64,7 +64,7 @@ const localBindingConfig = {
     : [],
 };
 
-export default defineConfig(async () => {
+export default defineConfig(async (): Promise<UserConfig> => {
   const plugins: PluginOption[] = [vinext()];
 
   if (isNetlifyBuild) {

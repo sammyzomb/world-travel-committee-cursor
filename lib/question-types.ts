@@ -24,7 +24,7 @@ export const QUESTION_TYPE_LABELS: Record<QuestionType, string> = {
   "world-fact": "世界之最",
 };
 
-/** 題型認知難度（越高越難）。 */
+/** 舊題型排序，僅供報表相容；實際認知要求使用 question-demand。 */
 export const QUESTION_TYPE_RANK: Record<QuestionType, number> = {
   tf: 0,
   continent: 1,
@@ -74,27 +74,9 @@ export function inferQuestionType(input: {
   return "city-pick";
 }
 
-/** 各年級允許的題型（越後面越多、越難）。 */
-export const STAGE_ALLOWED_TYPES: QuestionType[][] = [
-  ["tf", "continent"],
-  ["tf", "continent", "country-pick", "city-pick"],
-  ["continent", "country-pick", "city-pick"],
-  ["country-pick", "city-pick", "capital"],
-  ["city-pick", "capital", "landmark-city"],
-  ["city-pick", "capital", "landmark-city"],
-  ["capital", "landmark-city", "country-pick"],
-  ["capital", "landmark-city", "world-fact"],
-  ["landmark-city", "capital", "travel", "world-fact"],
-  ["capital", "reverse-capital", "landmark-city", "travel"],
-  ["reverse-capital", "world-fact", "travel", "capital"],
-  ["reverse-capital", "world-fact", "travel"],
-  ["reverse-capital", "world-fact", "travel", "landmark-city"],
-  ["reverse-capital", "world-fact", "travel"],
-  ["reverse-capital", "world-fact", "travel", "capital"],
-  ["reverse-capital", "world-fact", "travel"],
-  ["world-fact", "reverse-capital", "travel"],
-  ["world-fact", "reverse-capital", "travel", "capital"],
-];
+/** 題型名稱不等同認知難度，各關另外檢查 demand。 */
+export const STAGE_ALLOWED_TYPES: QuestionType[][] = Array.from({ length: 18 }, () =>
+  ["tf", "continent", "country-pick", "city-pick", "capital", "reverse-capital", "landmark-city", "travel", "world-fact"]);
 
 export function allowedTypesForStage(stageIndex: number): QuestionType[] {
   return STAGE_ALLOWED_TYPES[Math.min(stageIndex, STAGE_ALLOWED_TYPES.length - 1)] ?? STAGE_ALLOWED_TYPES[0];

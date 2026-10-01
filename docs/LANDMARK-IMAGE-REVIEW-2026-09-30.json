@@ -1,0 +1,639 @@
+{
+  "reviewedAt": "2026-09-30T09:10:13.820Z",
+  "method": "逐張檢視聯絡表與替代圖，核對條目、地標內容、作者與授權；排除塔上風景、館藏與城外花園。",
+  "images": [
+    {
+      "landmark": "普拉多博物館",
+      "provider": "commons",
+      "artist": "Emilio J. Rodríguez Posada",
+      "source": "https://commons.wikimedia.org/wiki/File:Museo_del_Prado_2016_(25185969599).jpg",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/68/Museo_del_Prado_2016_%2825185969599%29.jpg/960px-Museo_del_Prado_2016_%2825185969599%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "reviewed": true
+    },
+    {
+      "landmark": "聖家堂",
+      "provider": "commons",
+      "artist": "Canaan",
+      "source": "https://commons.wikimedia.org/wiki/File:SF_maig_2_cropped.jpg",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ef/SF_maig_2_cropped.jpg/960px-SF_maig_2_cropped.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "reviewed": true
+    },
+    {
+      "landmark": "大金塔",
+      "provider": "commons",
+      "artist": "Bjørn Christian Tørrissen",
+      "source": "https://commons.wikimedia.org/wiki/File:Shwedagon_Pagoda_2017.jpg",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c4/Shwedagon_Pagoda_2017.jpg/960px-Shwedagon_Pagoda_2017.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "reviewed": true
+    },
+    {
+      "landmark": "少女峰",
+      "provider": "commons",
+      "artist": "4000er",
+      "source": "https://commons.wikimedia.org/wiki/File:Jungfrau03.jpg",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Copyright_rules_by_territory",
+      "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d7/Jungfrau03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "reviewed": true
+    },
+    {
+      "landmark": "天使瀑布",
+      "provider": "commons",
+      "artist": "Rich Childs",
+      "source": "https://commons.wikimedia.org/wiki/File:SaltoAngel1.jpg",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e9/SaltoAngel1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "reviewed": true
+    },
+    {
+      "landmark": "孫德爾邦",
+      "provider": "commons",
+      "artist": "Shihabur Rahman",
+      "source": "https://commons.wikimedia.org/wiki/File:Save_the_sundarbans_20.jpg",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6b/Save_the_sundarbans_20.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "reviewed": true
+    },
+    {
+      "landmark": "拉合爾城堡",
+      "provider": "commons",
+      "artist": "Rohaan Bhatti",
+      "source": "https://commons.wikimedia.org/wiki/File:Lahore_Fort_view_from_Baradari.jpg",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4f/Lahore_Fort_view_from_Baradari.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "reviewed": true
+    },
+    {
+      "landmark": "伊瑪目清真寺",
+      "provider": "commons",
+      "artist": "Patrickringgenberg",
+      "source": "https://commons.wikimedia.org/wiki/File:Isfahan_Royal_Mosque_general_(retouched).jpg",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8d/Isfahan_Royal_Mosque_general_%28retouched%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "reviewed": true
+    },
+    {
+      "landmark": "哭牆",
+      "provider": "commons",
+      "artist": "Golasso",
+      "source": "https://commons.wikimedia.org/wiki/File:Westernwall2.jpg",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/1/17/Westernwall2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "reviewed": true
+    },
+    {
+      "landmark": "王國中心塔",
+      "provider": "commons",
+      "artist": "Hamza A. Durrani",
+      "source": "https://commons.wikimedia.org/wiki/File:Kingdom_Centre_Riyadh_2024.jpeg",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b2/Kingdom_Centre_Riyadh_2024.jpeg/960px-Kingdom_Centre_Riyadh_2024.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "reviewed": true
+    },
+    {
+      "landmark": "伊斯蘭藝術博物館",
+      "provider": "unsplash",
+      "artist": "John Simmons",
+      "source": "https://unsplash.com/photos/green-palm-trees-near-white-concrete-building-during-daytime-dFB3L0Ffl-M",
+      "license": "Unsplash License",
+      "licenseUrl": "https://unsplash.com/license",
+      "downloadUrl": "https://images.unsplash.com/photo-1601600605869-44cc6b2be7c7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMDI1MTY5fDB8MXxzZWFyY2h8Mnx8TXVzZXVtJTIwSXNsYW1pYyUyMEFydCUyMERvaGF8ZW58MHwwfHx8MTc5MDc1OTI2OHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "photoId": "dFB3L0Ffl-M",
+      "reviewed": true
+    },
+    {
+      "landmark": "普西山",
+      "provider": "commons",
+      "artist": "Christophe95",
+      "source": "https://commons.wikimedia.org/wiki/File:Mount_Phou_Si_from_the_Mekong.jpg",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ad/Mount_Phou_Si_from_the_Mekong.jpg/960px-Mount_Phou_Si_from_the_Mekong.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "reviewed": true
+    },
+    {
+      "landmark": "碧瑤",
+      "provider": "commons",
+      "artist": "Patrickroque01",
+      "source": "https://commons.wikimedia.org/wiki/File:Baguio_city_proper_overlooking_Burnham-Harrison_side_(Baguio_city;_12-04-2022).jpg",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a6/Baguio_city_proper_overlooking_Burnham-Harrison_side_%28Baguio_city%3B_12-04-2022%29.jpg/960px-Baguio_city_proper_overlooking_Burnham-Harrison_side_%28Baguio_city%3B_12-04-2022%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "reviewed": true
+    },
+    {
+      "landmark": "巴伊傑列克塔",
+      "provider": "unsplash",
+      "artist": "Travel With",
+      "source": "https://unsplash.com/photos/gray-and-black-metal-tower-Bbok0gkUbq4",
+      "license": "Unsplash License",
+      "licenseUrl": "https://unsplash.com/license",
+      "downloadUrl": "https://images.unsplash.com/photo-1609779310218-d847400cf934?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMDI1MTY5fDB8MXxzZWFyY2h8MXx8QmF5dGVyZWslMjBBc3RhbmF8ZW58MHwwfHx8MTc5MDc1ODk1OXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "photoId": "Bbok0gkUbq4",
+      "reviewed": true
+    },
+    {
+      "landmark": "維格蘭雕塑公園",
+      "provider": "commons",
+      "artist": "Palickap",
+      "source": "https://commons.wikimedia.org/wiki/File:Oslo%2C_Vigeland_Park_(2).jpg",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/b/bd/Oslo%2C_Vigeland_Park_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+      "reviewed": true
+    },
+    {
+      "landmark": "美人魚雕像",
+      "provider": "unsplash",
+      "artist": "reza hoque",
+      "source": "https://unsplash.com/photos/a-statue-of-a-mermaid-sitting-on-a-rock-YxF56mv4OVU",
+      "license": "Unsplash License",
+      "licenseUrl": "https://unsplash.com/license",
+      "downloadUrl": "https://images.unsplash.com/photo-1640504440553-96fedc0b6644?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMDI1MTY5fDB8MXxzZWFyY2h8MXx8TGl0dGxlJTIwTWVybWFpZCUyMENvcGVuaGFnZW58ZW58MHwwfHx8MTc5MDc1ODk2MHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "photoId": "YxF56mv4OVU",
+      "reviewed": true
+    },
+    {
+      "landmark": "老城廣場",
+      "provider": "commons",
+      "artist": "A.Savin",
+      "source": "https://commons.wikimedia.org/wiki/File:Prague_07-2016_View_from_Old_Town_Hall_Tower_img3.jpg",
+      "license": "FAL",
+      "licenseUrl": "http://artlibre.org/licence/lal/en",
+      "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/4/44/Prague_07-2016_View_from_Old_Town_Hall_Tower_img3.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+      "reviewed": true
+    },
+    {
+      "landmark": "聖三一學院",
+      "provider": "commons",
+      "artist": "Stephen Bergin steve_",
+      "source": "https://commons.wikimedia.org/wiki/File:The_entrance_of_the_historic_Trinity_College_(Unsplash).jpg",
+      "license": "CC0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d7/The_entrance_of_the_historic_Trinity_College_%28Unsplash%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "reviewed": true
+    },
+    {
+      "landmark": "貝倫塔",
+      "provider": "commons",
+      "artist": "Alvesgaspar",
+      "source": "https://commons.wikimedia.org/wiki/File:Torre_Bel%C3%A9m_April_2009-4a.jpg",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/6/65/Torre_Bel%C3%A9m_April_2009-4a.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "reviewed": true
+    },
+    {
+      "landmark": "原子球塔",
+      "provider": "commons",
+      "artist": "Trougnouf (Benoit Brummer)",
+      "source": "https://commons.wikimedia.org/wiki/File:The_Atomium_during_civil_twilight_(DSCF1135).jpg",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/6/67/The_Atomium_during_civil_twilight_%28DSCF1135%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "reviewed": true
+    },
+    {
+      "landmark": "卡列梅格丹城堡",
+      "provider": "commons",
+      "artist": "Oliver Bunic",
+      "source": "https://commons.wikimedia.org/wiki/File:P037152-661920_-_Belgrade_fortress_stand_at_the_downtown_of_Belgrade.jpg",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3b/P037152-661920_-_Belgrade_fortress_stand_at_the_downtown_of_Belgrade.jpg/960px-P037152-661920_-_Belgrade_fortress_stand_at_the_downtown_of_Belgrade.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail",
+      "reviewed": true
+    },
+    {
+      "landmark": "拉利貝拉岩刻教堂",
+      "provider": "commons",
+      "artist": "Sailko",
+      "source": "https://commons.wikimedia.org/wiki/File:Lalibela%2C_san_giorgio%2C_esterno_24.jpg",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/aa/Lalibela%2C_san_giorgio%2C_esterno_24.jpg/960px-Lalibela%2C_san_giorgio%2C_esterno_24.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail",
+      "reviewed": true
+    },
+    {
+      "landmark": "索蘇斯佛雷沙漠",
+      "provider": "commons",
+      "artist": "Hans Hillewaert",
+      "source": "https://commons.wikimedia.org/wiki/File:Sossusvlei_south_view.jpg",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3d/Sossusvlei_south_view.jpg/960px-Sossusvlei_south_view.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail",
+      "reviewed": true
+    },
+    {
+      "landmark": "良知之父紀念碑",
+      "provider": "commons",
+      "artist": "Erik B. Anderson",
+      "source": "https://commons.wikimedia.org/wiki/File:Kwame_Nkrumah_Memorial_Park.jpg",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/17/Kwame_Nkrumah_Memorial_Park.jpg/960px-Kwame_Nkrumah_Memorial_Park.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "reviewed": true
+    },
+    {
+      "landmark": "獨立廣場",
+      "provider": "commons",
+      "artist": "Wesborland at English Wikipedia",
+      "source": "https://commons.wikimedia.org/wiki/File:PlazaIndependencia.jpg",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Copyright_rules_by_territory",
+      "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b6/PlazaIndependencia.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "reviewed": true
+    },
+    {
+      "landmark": "鄧恩河瀑布",
+      "provider": "commons",
+      "artist": "Breakyunit at English Wikipedia",
+      "source": "https://commons.wikimedia.org/wiki/File:Dunns_River_Falls_climb.JPG",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/41/Dunns_River_Falls_climb.JPG/960px-Dunns_River_Falls_climb.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "reviewed": true
+    },
+    {
+      "landmark": "紫禁城",
+      "provider": "commons",
+      "artist": "Pixelflake",
+      "source": "https://commons.wikimedia.org/wiki/File:The_Forbidden_City_-_View_from_Coal_Hill.jpg",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ef/The_Forbidden_City_-_View_from_Coal_Hill.jpg/960px-The_Forbidden_City_-_View_from_Coal_Hill.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "reviewed": true
+    },
+    {
+      "landmark": "布達拉宮",
+      "provider": "commons",
+      "artist": "Lhasa Government",
+      "source": "https://commons.wikimedia.org/wiki/File:Potala_Palace_HQ.jpg",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b6/Potala_Palace_HQ.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "reviewed": true
+    },
+    {
+      "landmark": "姬路城",
+      "provider": "commons",
+      "artist": "Nikos Kitsakis",
+      "source": "https://commons.wikimedia.org/wiki/File:Himeji_castle_in_may_2015.jpg",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c1/Himeji_castle_in_may_2015.jpg/960px-Himeji_castle_in_may_2015.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail",
+      "reviewed": true
+    },
+    {
+      "landmark": "佛國寺",
+      "provider": "commons",
+      "artist": "Unknown author Unknown author",
+      "source": "https://commons.wikimedia.org/wiki/File:Lotus_Flower_Bridge_and_Seven_Treasure_Bridge_at_Bulguksa_in_Gyeongju%2C_Korea.jpg",
+      "license": "Public domain",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/eb/Lotus_Flower_Bridge_and_Seven_Treasure_Bridge_at_Bulguksa_in_Gyeongju%2C_Korea.jpg/960px-Lotus_Flower_Bridge_and_Seven_Treasure_Bridge_at_Bulguksa_in_Gyeongju%2C_Korea.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail",
+      "reviewed": true
+    },
+    {
+      "landmark": "會安古城",
+      "provider": "commons",
+      "artist": "xiquinhosilva",
+      "source": "https://commons.wikimedia.org/wiki/File:10549-Hoi-An_(37621348460).jpg",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/27/10549-Hoi-An_%2837621348460%29.jpg/960px-10549-Hoi-An_%2837621348460%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail",
+      "reviewed": true
+    },
+    {
+      "landmark": "金邊皇宮",
+      "provider": "commons",
+      "artist": "Jean-Pierre Dalbéra from Paris, France",
+      "source": "https://commons.wikimedia.org/wiki/File:Le_Palais_Royal_(Phnom_Penh)_(6997773481).jpg",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1e/Le_Palais_Royal_%28Phnom_Penh%29_%286997773481%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "reviewed": true
+    },
+    {
+      "landmark": "加德滿都谷地",
+      "provider": "commons",
+      "artist": "ISS Expedition 25 crew",
+      "source": "https://commons.wikimedia.org/wiki/File:Kathmandu,_Nepal.JPG",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Copyright_rules_by_territory",
+      "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/7/77/Kathmandu%2C_Nepal.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "reviewed": true
+    },
+    {
+      "landmark": "藍色清真寺",
+      "provider": "commons",
+      "artist": "Pedro Szekely from Los Angeles, USA",
+      "source": "https://commons.wikimedia.org/wiki/File:Istanbul_(34223582516)_(cropped).jpg",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/03/Istanbul_%2834223582516%29_%28cropped%29.jpg/960px-Istanbul_%2834223582516%29_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "reviewed": true
+    },
+    {
+      "landmark": "卡帕多奇亞",
+      "provider": "commons",
+      "artist": "Arian Zwegers from Brussels, Belgium",
+      "source": "https://commons.wikimedia.org/wiki/File:Cappadocia_balloon_trip,_Ortahisar_Castle_(11893715185).jpg",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/59/Cappadocia_balloon_trip%2C_Ortahisar_Castle_%2811893715185%29.jpg/960px-Cappadocia_balloon_trip%2C_Ortahisar_Castle_%2811893715185%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "reviewed": true
+    },
+    {
+      "landmark": "耶路撒冷古城",
+      "provider": "commons",
+      "artist": "Edmund Gall",
+      "source": "https://commons.wikimedia.org/wiki/File:2014-06_East_Jerusalem_090_(14936890061).jpg",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f6/2014-06_East_Jerusalem_090_%2814936890061%29.jpg/960px-2014-06_East_Jerusalem_090_%2814936890061%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "reviewed": true
+    },
+    {
+      "landmark": "杰拉什古城",
+      "provider": "commons",
+      "artist": "Petar Milošević",
+      "source": "https://commons.wikimedia.org/wiki/File:Oval_Plaza_(Forum_Romanum,_Gerasa_-_Jerash,_Jordan)_-_%D8%B3%D8%A7%D8%AD%D8%A9_%D8%A7%D9%84%D9%86%D8%AF%D9%88%D8%A9,_%D8%AC%D8%B1%D8%B4.jpg",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/51/Oval_Plaza_%28Forum_Romanum%2C_Gerasa_-_Jerash%2C_Jordan%29_-_%D8%B3%D8%A7%D8%AD%D8%A9_%D8%A7%D9%84%D9%86%D8%AF%D9%88%D8%A9%2C_%D8%AC%D8%B1%D8%B4.jpg/960px-Oval_Plaza_%28Forum_Romanum%2C_Gerasa_-_Jerash%2C_Jordan%29_-_%D8%B3%D8%A7%D8%AD%D8%A9_%D8%A7%D9%84%D9%86%D8%AF%D9%88%D8%A9%2C_%D8%AC%D8%B1%D8%B4.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "reviewed": true
+    },
+    {
+      "landmark": "威斯敏斯特宮",
+      "provider": "commons",
+      "artist": "ThatsTheBoss",
+      "source": "https://commons.wikimedia.org/wiki/File:Palace_of_Westminster_as_seen_from_Westminster_Bridge.jpg",
+      "license": "CC0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/db/Palace_of_Westminster_as_seen_from_Westminster_Bridge.jpg/960px-Palace_of_Westminster_as_seen_from_Westminster_Bridge.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "reviewed": true
+    },
+    {
+      "landmark": "辛格韋德利爾國家公園",
+      "provider": "commons",
+      "artist": "Ivan Sabljak",
+      "source": "https://commons.wikimedia.org/wiki/File:%C3%9Eingvellir_from_the_information_centre.JPG",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/83/%C3%9Eingvellir_from_the_information_centre.JPG/960px-%C3%9Eingvellir_from_the_information_centre.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "reviewed": true
+    },
+    {
+      "landmark": "冬宮博物館",
+      "provider": "commons",
+      "artist": "Godot13",
+      "source": "https://commons.wikimedia.org/wiki/File:RUS-2016-Aerial-SPB-Winter_Palace_(crop).jpg",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/74/RUS-2016-Aerial-SPB-Winter_Palace_%28crop%29.jpg/960px-RUS-2016-Aerial-SPB-Winter_Palace_%28crop%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "reviewed": true
+    },
+    {
+      "landmark": "杜布羅夫尼克古城",
+      "provider": "commons",
+      "artist": "Zysko serhii",
+      "source": "https://commons.wikimedia.org/wiki/File:The_walls_of_the_fortress_and_View_of_the_old_city._panorama.jpg",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/67/The_walls_of_the_fortress_and_View_of_the_old_city._panorama.jpg/960px-The_walls_of_the_fortress_and_View_of_the_old_city._panorama.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "reviewed": true
+    },
+    {
+      "landmark": "大峽谷國家公園",
+      "provider": "commons",
+      "artist": "Murray Foubister",
+      "source": "https://commons.wikimedia.org/wiki/File:Dawn_on_the_S_rim_of_the_Grand_Canyon_(8645178272).jpg",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/a/aa/Dawn_on_the_S_rim_of_the_Grand_Canyon_%288645178272%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "reviewed": true
+    },
+    {
+      "landmark": "優勝美地國家公園",
+      "provider": "commons",
+      "artist": "Thomas Wolf , www.foto-tw.de",
+      "source": "https://commons.wikimedia.org/wiki/File:Half_Dome_with_Eastern_Yosemite_Valley_(50MP).jpg",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ea/Half_Dome_with_Eastern_Yosemite_Valley_%2850MP%29.jpg/960px-Half_Dome_with_Eastern_Yosemite_Valley_%2850MP%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail",
+      "reviewed": true
+    },
+    {
+      "landmark": "黃石國家公園",
+      "provider": "commons",
+      "artist": "Rhododendrites",
+      "source": "https://commons.wikimedia.org/wiki/File:Grand_Canyon_of_the_Yellowstone_Lower_Falls_(95819p).jpg",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/60/Grand_Canyon_of_the_Yellowstone_Lower_Falls_%2895819p%29.jpg/960px-Grand_Canyon_of_the_Yellowstone_Lower_Falls_%2895819p%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail",
+      "reviewed": true
+    },
+    {
+      "landmark": "瓦哈卡歷史中心",
+      "provider": "commons",
+      "artist": "User: (WT-shared) Anyludes at wts wikivoyage",
+      "source": "https://commons.wikimedia.org/wiki/File:Colonial_Oaxaca.jpg",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/80/Colonial_Oaxaca.jpg/960px-Colonial_Oaxaca.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail",
+      "reviewed": true
+    },
+    {
+      "landmark": "薩爾瓦多歷史中心",
+      "provider": "commons",
+      "artist": "Paul R. Burley",
+      "source": "https://commons.wikimedia.org/wiki/File:Centro_Hist%C3%B3rico_Salvador_Vista_A%C3%A9rea_2021-0933.jpg",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/24/Centro_Hist%C3%B3rico_Salvador_Vista_A%C3%A9rea_2021-0933.jpg/960px-Centro_Hist%C3%B3rico_Salvador_Vista_A%C3%A9rea_2021-0933.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail",
+      "reviewed": true
+    },
+    {
+      "landmark": "莫雷諾冰川",
+      "provider": "commons",
+      "artist": "Fernando",
+      "source": "https://commons.wikimedia.org/wiki/File:Perito_Moreno_Glacier_2023.jpg",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c8/Perito_Moreno_Glacier_2023.jpg/960px-Perito_Moreno_Glacier_2023.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "reviewed": true
+    },
+    {
+      "landmark": "大堡礁",
+      "provider": "commons",
+      "artist": "NASA/Kjell Lindgren",
+      "source": "https://commons.wikimedia.org/wiki/File:ISS-45_StoryOfWater,_Great_Barrier_Reef,_Australia.jpg",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Copyright_rules_by_territory",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4f/ISS-45_StoryOfWater%2C_Great_Barrier_Reef%2C_Australia.jpg/960px-ISS-45_StoryOfWater%2C_Great_Barrier_Reef%2C_Australia.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "reviewed": true
+    },
+    {
+      "landmark": "烏魯魯",
+      "provider": "commons",
+      "artist": "Ek2030372672",
+      "source": "https://commons.wikimedia.org/wiki/File:ULURU.jpg",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a8/ULURU.jpg/960px-ULURU.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "reviewed": true
+    },
+    {
+      "landmark": "乞力馬扎羅山",
+      "provider": "commons",
+      "artist": "Sergey Pesterev",
+      "source": "https://commons.wikimedia.org/wiki/File:Kilimanjaro_from_Amboseli.jpg",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6c/Kilimanjaro_from_Amboseli.jpg/960px-Kilimanjaro_from_Amboseli.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "reviewed": true
+    },
+    {
+      "landmark": "馬拉喀什老城",
+      "provider": "commons",
+      "artist": "Jorge Franganillo",
+      "source": "https://commons.wikimedia.org/wiki/File:Souk_in_Marrakech_(54258285385).jpg",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/70/Souk_in_Marrakech_%2854258285385%29.jpg/960px-Souk_in_Marrakech_%2854258285385%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail",
+      "reviewed": true
+    },
+    {
+      "landmark": "羅本島",
+      "provider": "commons",
+      "artist": "South African Tourism from South Africa",
+      "source": "https://commons.wikimedia.org/wiki/File:Robben_Island_-_Cape_Town,_South_Africa_(3883849594).jpg",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/24/Robben_Island_-_Cape_Town%2C_South_Africa_%283883849594%29.jpg/960px-Robben_Island_-_Cape_Town%2C_South_Africa_%283883849594%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "reviewed": true
+    },
+    {
+      "landmark": "小孩堤防風車群",
+      "provider": "commons",
+      "artist": "Lucas Hirschegger",
+      "source": "https://commons.wikimedia.org/wiki/File:KinderdijkMolens02.jpg",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+      "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/f/ff/KinderdijkMolens02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "reviewed": true
+    },
+    {
+      "landmark": "聖瓦西里大教堂",
+      "provider": "commons",
+      "artist": "Tsy1980",
+      "source": "https://commons.wikimedia.org/wiki/File:Saint_Basil%27s_Cathedral_in_Moscow.jpg",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/1/18/Saint_Basil%27s_Cathedral_in_Moscow.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "reviewed": true
+    },
+    {
+      "landmark": "西斯汀教堂",
+      "provider": "commons",
+      "artist": "The original uploader was Snowdog at Italian Wikipedia .",
+      "source": "https://commons.wikimedia.org/wiki/File:Sistina-interno.jpg",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+      "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/8/82/Sistina-interno.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "reviewed": true
+    },
+    {
+      "landmark": "哈尔施塔特",
+      "provider": "commons",
+      "artist": "C.Stadler/Bwag",
+      "source": "https://commons.wikimedia.org/wiki/File:Hallstatt_-_Zentrum_.JPG",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b0/Hallstatt_-_Zentrum_.JPG/960px-Hallstatt_-_Zentrum_.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "reviewed": true
+    },
+    {
+      "landmark": "納斯卡線",
+      "provider": "commons",
+      "artist": ".mw-parser-output .commons-creator-table{background-color:#f0f0ff;box-sizing:border-box;font-size:95%;text-align:start;color:inherit}.mw-parser-output .commons-creator-table>tbody>tr{vertical-align:top}.mw-parser-output .commons-creator-table>tbody>tr>th{background-color:var(--background-color-neutral,#e0e0ee);font-weight:bold;text-align:start;color:inherit}.mw-parser-output .mw-collapsible-toggle-expanded.mw-collapsible-arrowtoggle,.mw-parser-output .mw-collapsible-toggle-expanded .mw-collapsible-arrowtoggle{padding-left:20px!important;background-image:url(\"https://upload.wikimedia.org/wikipedia/commons/1/10/MediaWiki_Vector_skin_action_arrow.png\");background-repeat:no-repeat;background-position:left center}.mw-parser-output .mw-collapsible-toggle-collapsed.mw-collapsible-arrowtoggle,.mw-parser-output .mw-collapsible-toggle-collapsed .mw-collapsible-arrowtoggle{padding-left:20px!important;background-repeat:no-repeat}.mw-parser-output .commons-creator-table[dir=\"ltr\"] .mw-collapsible-toggle-collapsed.mw-collapsible-arrowtoggle,.mw-parser-output .commons-creator-table[dir=\"ltr\"] .mw-collapsible-toggle-collapsed .mw-collapsible-arrowtoggle{background-image:url(\"https://upload.wikimedia.org/wikipedia/commons/4/41/MediaWiki_Vector_skin_right_arrow.png\");background-position:left center}.mw-parser-output .commons-creator-table[dir=\"rtl\"] .mw-collapsible-toggle-collapsed.mw-collapsible-arrowtoggle,.mw-parser-output .commons-creator-table[dir=\"rtl\"] .mw-collapsible-toggle-collapsed .mw-collapsible-arrowtoggle{background-image:url(\"https://upload.wikimedia.org/wikipedia/commons/1/1e/MediaWiki_Vector_skin_left_arrow.png\");background-position:right center}@media(max-width:719px){.mw-parser-output .commons-creator-table,.mw-parser-output .commons-creator-table>tbody{box-sizing:border-box;display:block;width:100%}.mw-parser-output .commons-creator-table>tbody{border-right:1px solid var(--border-color-base,#aaa);border-bottom:1px solid var(--border-color-base,#aaa)}.mw-parser-output .commons-creator-table>tbody>tr{border-top:1px solid var(--border-color-base,#aaa);display:flex;flex-wrap:wrap}.mw-parser-output .commons-creator-table>tbody>tr>th{border-left:1px solid var(--border-color-base,#aaa);padding:2px;flex:1 1 100%}.mw-parser-output .commons-creator-table>tbody>tr>td{border-left:1px solid var(--border-color-base,#aaa);padding:2px;flex:1 1}}@media(min-width:720px){.mw-parser-output .commons-creator-table{border:1px solid var(--border-color-base,#aaa);border-collapse:collapse;border-spacing:0;padding:5px}.mw-parser-output .commons-creator-table>tbody>tr>th,.mw-parser-output .commons-creator-table>tbody>tr>td{border:1px solid var(--border-color-base,#aaa);padding:2px}.mw-parser-output .commons-creator-table>tbody>tr>.halfwidth{max-width:10em}.mw-parser-output .commons-creator-table>tbody>tr>.fullwidth{max-width:20em}}@media screen{html.skin-theme-clientpref-night .mw-parser-output .commons-creator-table{background-color:#0c0b19}}@media screen and (prefers-color-scheme:dark){html.skin-theme-clientpref-os .mw-parser-output .commons-creator-table{background-color:#0c0b19}} Diego Delso &#160;(1974&#8211;)&#160; &#160; &#160;",
+      "source": "https://commons.wikimedia.org/wiki/File:L%C3%ADneas_de_Nazca%2C_Nazca%2C_Per%C3%BA%2C_2015-07-29%2C_DD_49.JPG",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f7/L%C3%ADneas_de_Nazca%2C_Nazca%2C_Per%C3%BA%2C_2015-07-29%2C_DD_49.JPG/960px-L%C3%ADneas_de_Nazca%2C_Nazca%2C_Per%C3%BA%2C_2015-07-29%2C_DD_49.JPG?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail",
+      "reviewed": true
+    },
+    {
+      "landmark": "蒂卡爾遺跡",
+      "provider": "commons",
+      "artist": "Mundo Maya",
+      "source": "https://commons.wikimedia.org/wiki/File:Tikal_3.jpg",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/75/Tikal_3.jpg/960px-Tikal_3.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail",
+      "reviewed": true
+    },
+    {
+      "landmark": "虎穴寺",
+      "provider": "commons",
+      "artist": "Original&#58; Nina R from Africa Derivative work&#58; UnpetitproleX",
+      "source": "https://commons.wikimedia.org/wiki/File:Paro_Taktsang%2C_Bhutan_(edited).jpg",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a6/Paro_Taktsang%2C_Bhutan_%28edited%29.jpg/960px-Paro_Taktsang%2C_Bhutan_%28edited%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail",
+      "reviewed": true
+    },
+    {
+      "landmark": "金閣寺",
+      "provider": "commons",
+      "artist": "Nacaru",
+      "source": "https://commons.wikimedia.org/wiki/File:Golden_Pavilion_Kinkaku-ji_water_mirror_2024.jpg",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0f/Golden_Pavilion_Kinkaku-ji_water_mirror_2024.jpg/960px-Golden_Pavilion_Kinkaku-ji_water_mirror_2024.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail",
+      "reviewed": true
+    },
+    {
+      "landmark": "馬六甲古城",
+      "provider": "commons",
+      "artist": "Atlasmotor",
+      "source": "https://commons.wikimedia.org/wiki/File:Melaka_View.jpg",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7a/Melaka_View.jpg/960px-Melaka_View.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "reviewed": true
+    },
+    {
+      "landmark": "柏林圍牆紀念",
+      "provider": "commons",
+      "artist": "N-Lange.de",
+      "source": "https://commons.wikimedia.org/wiki/File:Mauer-Gedenkst%C3%A4tte.jpg",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1f/Mauer-Gedenkst%C3%A4tte.jpg/960px-Mauer-Gedenkst%C3%A4tte.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "reviewed": true
+    },
+    {
+      "landmark": "貝爾維德宮",
+      "provider": "commons",
+      "artist": "Diego Delso",
+      "source": "https://commons.wikimedia.org/wiki/File:Palacio_Belvedere,_Viena,_Austria,_2020-02-01,_DD_93-95_HDR.jpg",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/84/Palacio_Belvedere%2C_Viena%2C_Austria%2C_2020-02-01%2C_DD_93-95_HDR.jpg/960px-Palacio_Belvedere%2C_Viena%2C_Austria%2C_2020-02-01%2C_DD_93-95_HDR.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "reviewed": true
+    }
+  ]
+}

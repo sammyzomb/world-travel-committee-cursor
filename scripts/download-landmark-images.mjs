@@ -3,7 +3,7 @@
  * 建置前下載地標圖至 public/landmarks，並更新 data/landmark-static-manifest.json。
  */
 import { createHash } from "node:crypto";
-import { mkdirSync, readFileSync, writeFileSync, existsSync } from "node:fs";
+import { mkdirSync, readFileSync, realpathSync, writeFileSync, existsSync } from "node:fs";
 import { resolve, dirname, extname } from "node:path";
 import { fileURLToPath } from "node:url";
 import { landmarkImages } from "../lib/landmark-images.ts";
@@ -70,6 +70,14 @@ async function fetchWithRetry(url) {
 
 async function downloadOne(landmark, image, previous) {
   const existing = previous?.entries?.[landmark];
+  if (existing?.imageRejected) {
+    return { landmark, entry: existing, skipped: true };
+  }
+  // Preserve stock replacements and their credits through subsequent builds.
+  if (existing?.provider && existing?.path && !existing.failed &&
+      existsSync(resolve(root, "public", existing.path.replace(/^\//, "")))) {
+    return { landmark, entry: existing, skipped: true };
+  }
   if (
     !forceRedownload &&
     existing?.sourceUrl === image.url &&
@@ -86,6 +94,15 @@ async function downloadOne(landmark, image, previous) {
     return { landmark, entry: existing, skipped: true };
   }
 
+  if (existing?.provider && existing.downloadUrl && existing.path) {
+    const response = await fetchWithRetry(existing.downloadUrl);
+    const raw = Buffer.from(await response.arrayBuffer());
+    const { createRequire } = await import("node:module");
+    const sharp = createRequire(realpathSync(resolve(root, "node_modules/next/package.json")))("sharp");
+    const buffer = await sharp(raw).rotate().resize({width:1280,height:1280,fit:"inside",withoutEnlargement:true}).jpeg({quality:84}).toBuffer();
+    writeFileSync(resolve(root, "public", existing.path.replace(/^\//, "")), buffer);
+    return { landmark, entry: { ...existing, bytes: buffer.length, failed: false }, skipped: false };
+  }
   const response = await fetchWithRetry(image.url);
   const buffer = Buffer.from(await response.arrayBuffer());
   const ext = extensionFromContentType(response.headers.get("content-type"), image.url);

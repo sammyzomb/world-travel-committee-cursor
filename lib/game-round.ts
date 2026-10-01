@@ -1,3 +1,4 @@
+import { questionDemand, questionFamily } from "./question-demand";
 import {
   educationStages,
   FINAL_STAGE_INDEX,
@@ -9,13 +10,8 @@ import {
   WARMUP_QUESTIONS_FIRST_STAGE,
 } from "./game-config";
 import {
-  allowedTypesForStage,
-  difficultyRankForLevel,
   includesTravelKnowledge,
-  minQuestionLevelRankForStage,
   minTypeRankForStage,
-  QUESTION_TYPE_RANK,
-  type QuestionType,
 } from "./question-types";
 import { gameRandom } from "./game-random";
 import { questionMatchesStageRules } from "./stage-eligibility";
@@ -42,7 +38,7 @@ function shuffled<T>(items: T[]) {
 }
 
 function withOptionCount(item: Question, count: number): Question {
-  if (item.kind === "tf" || item.options.length <= count) return item;
+  if (item.kind === "tf") return item;
   const correct = item.options[item.answer];
   const wrong = shuffled(item.options.filter((_, index) => index !== item.answer)).slice(0, count - 1);
   const options = shuffled([correct, ...wrong]);
@@ -92,8 +88,8 @@ function isAvailable(
 function sortByStageDifficulty(items: Question[], stageIndex: number) {
   const minRank = minTypeRankForStage(stageIndex);
   return [...items].sort((a, b) => {
-    const rankA = QUESTION_TYPE_RANK[a.questionType] + difficultyRankForLevel(a.level) * 0.5;
-    const rankB = QUESTION_TYPE_RANK[b.questionType] + difficultyRankForLevel(b.level) * 0.5;
+    const rankA = questionDemand(a);
+    const rankB = questionDemand(b);
     const biasA = rankA >= minRank ? rankA + 2 : rankA;
     const biasB = rankB >= minRank ? rankB + 2 : rankB;
     return biasB - biasA;
@@ -104,96 +100,36 @@ function filterPoolForStage(pool: Question[], stageIndex: number) {
   return pool.filter((item) => questionMatchesStageRules(item, stageIndex));
 }
 
-function maxQuestionsPerType(count: number, availableTypeCount: number, allowedTypeCount: number) {
-  if (availableTypeCount <= 0) return count;
-  const hardCap = count >= 8 ? 3 : 2;
-  if (allowedTypeCount >= 3 && count >= 5) return hardCap;
-  if (availableTypeCount * hardCap >= count) return hardCap;
-  return Math.ceil(count / availableTypeCount);
-}
-
-/** 同一學級內優先分散題型，避免連續抽到大量同類型題目。 */
-function pickDiverseQuestions(
-  ranked: Question[],
-  count: number,
-  stageIndex: number,
-  seed: Question[] = [],
-  relaxTypeCap = false,
-): Question[] {
-  const allowedTypes = allowedTypesForStage(stageIndex);
-  const seedIds = new Set(seed.map((item) => item.id));
-  const byType = new Map<QuestionType, Question[]>();
-  for (const item of ranked) {
-    if (seedIds.has(item.id)) continue;
-    const list = byType.get(item.questionType) ?? [];
-    list.push(item);
-    byType.set(item.questionType, list);
-  }
-  for (const [type, list] of byType) {
-    byType.set(type, shuffled(list));
-  }
-
-  const typeOrder = shuffled(
-    allowedTypes.filter((type) => (byType.get(type)?.length ?? 0) > 0),
-  );
-  const projectedTypeCount = new Set([
-    ...seed.map((item) => item.questionType),
-    ...typeOrder,
-  ]).size;
-  const maxPerType = relaxTypeCap
-    ? count
-    : maxQuestionsPerType(count, projectedTypeCount, allowedTypes.length);
-  const selected: Question[] = [...seed];
-  const selectedConceptIds = new Set(seed.map((item) => item.conceptId));
-  const typeCursor = new Map<QuestionType, number>();
-  for (const item of seed) {
-    typeCursor.set(item.questionType, (typeCursor.get(item.questionType) ?? 0) + 1);
-  }
-
-  const tryAdd = (item: Question) => {
-    if (selectedConceptIds.has(item.conceptId)) return false;
-    selected.push(item);
-    selectedConceptIds.add(item.conceptId);
-    return true;
-  };
-
-  let guard = 0;
-  while (selected.length < count && guard < count * typeOrder.length * 4) {
-    guard += 1;
-    let progressed = false;
-    for (const type of typeOrder) {
-      if (selected.length >= count) break;
-      const cursor = typeCursor.get(type) ?? 0;
-      if (cursor >= maxPerType) continue;
-      const pool = byType.get(type);
-      if (!pool) continue;
-      for (let index = cursor; index < pool.length; index += 1) {
-        if (selected.length >= count) break;
-        if (tryAdd(pool[index])) {
-          typeCursor.set(type, index + 1);
-          progressed = true;
-          break;
-        }
-      }
+/** 首都、洲別、國家及城市定位共用一個配額，不能以不同型名繞過。 */
+function pickDiverseQuestions(ranked: Question[], count: number, stageIndex: number, seed: Question[] = [], _relaxTypeCap = false, priorFamilyCounts = new Map<string, number>()): Question[] {
+  const selected = [...seed];
+  const concepts = new Set(seed.map(q => q.conceptId));
+  const ids = new Set(seed.map(q => q.id));
+  const familyCounts = new Map<string, number>();
+  for (const q of seed) familyCounts.set(questionFamily(q), (familyCounts.get(questionFamily(q)) ?? 0) + 1);
+  const candidates = shuffled(ranked).filter(q => !ids.has(q.id));
+  while (selected.length < count) {
+    const available = candidates.filter(q => !ids.has(q.id) && !concepts.has(q.conceptId) &&
+      (familyCounts.get(questionFamily(q)) ?? 0) < (questionFamily(q) === 'location-recall' || stageIndex >= 9 ? 1 : 2));
+    // Spread demand across the available families so later stages/replays keep enough choices.
+    const remainingByFamily = new Map<string, Set<string>>();
+    for (const q of available) {
+      const family = questionFamily(q);
+      if (!remainingByFamily.has(family)) remainingByFamily.set(family, new Set());
+      remainingByFamily.get(family)!.add(q.conceptId);
     }
-    if (!progressed) break;
+    available.sort((a, b) => (familyCounts.get(questionFamily(a)) ?? 0) - (familyCounts.get(questionFamily(b)) ?? 0)
+      || questionDemand(b) - questionDemand(a)
+      || Number(Boolean(b.references?.length)) - Number(Boolean(a.references?.length))
+      || (remainingByFamily.get(questionFamily(b))?.size ?? 0) - (remainingByFamily.get(questionFamily(a))?.size ?? 0)
+      || (priorFamilyCounts.get(questionFamily(a)) ?? 0) - (priorFamilyCounts.get(questionFamily(b)) ?? 0));
+    const picked = available[0];
+    if (!picked) break;
+    selected.push(picked); ids.add(picked.id); concepts.add(picked.conceptId);
+    const family = questionFamily(picked);
+    familyCounts.set(family, (familyCounts.get(family) ?? 0) + 1);
   }
-
-  if (selected.length < count) {
-    const selectedIds = new Set(selected.map((entry) => entry.id));
-    for (const item of ranked) {
-      if (selected.length >= count) break;
-      if (selectedIds.has(item.id)) continue;
-      if (!relaxTypeCap) {
-        const usedForType = selected.filter((entry) => entry.questionType === item.questionType).length;
-        if (usedForType >= maxPerType) continue;
-      }
-      if (!tryAdd(item)) continue;
-      selectedIds.add(item.id);
-    }
-  }
-
-  return selected.slice(0, count).slice(seed.length);
+  return selected.slice(seed.length);
 }
 
 function pickFreshQuestions(
@@ -220,7 +156,14 @@ function pickFreshQuestions(
     ),
   );
   const ranked = sortByStageDifficulty(available, stageIndex);
-  const picked = pickDiverseQuestions(ranked, count, stageIndex, seed, relaxTypeCap).map((item) =>
+  const priorFamilyCounts = new Map<string, number>();
+  const currentStageIds = new Set(seed.map(q => q.id));
+  for (const q of [...approvedQuestions, ...warmupQuestions]) {
+    if (!usedQuestionIds.has(q.id) || currentStageIds.has(q.id)) continue;
+    const family = questionFamily(q);
+    priorFamilyCounts.set(family, (priorFamilyCounts.get(family) ?? 0) + 1);
+  }
+  const picked = pickDiverseQuestions(ranked, count, stageIndex, seed, relaxTypeCap, priorFamilyCounts).map((item) =>
     withOptionCount(item, optionCount),
   );
   picked.forEach((item) => {
@@ -304,7 +247,7 @@ function drawStageQuestions(
     const formalChoices = fillStagePool(
       elementaryPool,
       formalCount,
-      2,
+      optionCountForStage(0),
       previousQuestionIds,
       previousConceptIds,
       usedQuestionIds,
@@ -325,7 +268,7 @@ function drawStageQuestions(
       : [];
   const stagePool = travelPool.length > 0 ? [...levelPool, ...travelPool] : levelPool;
 
-  let questions = fillStagePool(
+  const questions = fillStagePool(
     stagePool,
     stageQuestionCount,
     optionCount,
@@ -335,46 +278,6 @@ function drawStageQuestions(
     usedConceptIds,
     stageIndex,
   );
-
-  if (includesTravelKnowledge(stageIndex) && travelPool.length > 0 && questions.length >= 3) {
-    const travelPick = sortByStageDifficulty(
-      travelPool.filter(
-        (item) =>
-          questionMatchesStageRules(item, stageIndex) &&
-          isAvailable(
-            item,
-            previousQuestionIds,
-            previousConceptIds,
-            usedQuestionIds,
-            usedConceptIds,
-            false,
-          ),
-      ),
-      stageIndex,
-    )[0];
-    if (travelPick && !usedConceptIds.has(travelPick.conceptId)) {
-      const typeCounts = new Map<QuestionType, number>();
-      for (const item of questions) {
-        typeCounts.set(item.questionType, (typeCounts.get(item.questionType) ?? 0) + 1);
-      }
-      const dominantType = [...typeCounts.entries()].sort((a, b) => b[1] - a[1])[0]?.[0];
-      const replaceIndex =
-        dominantType !== undefined
-          ? questions.findIndex((item) => item.questionType === dominantType)
-          : -1;
-      const travelSlot = replaceIndex >= 0 ? replaceIndex : Math.min(questions.length - 1, 2);
-      const replaced = questions[travelSlot];
-      const withTravel = [...questions];
-      withTravel[travelSlot] = withOptionCount(travelPick, optionCount);
-      if (replaced) {
-        usedQuestionIds.delete(replaced.id);
-        usedConceptIds.delete(replaced.conceptId);
-      }
-      usedQuestionIds.add(travelPick.id);
-      usedConceptIds.add(travelPick.conceptId);
-      questions = withTravel;
-    }
-  }
 
   return shuffled(questions);
 }

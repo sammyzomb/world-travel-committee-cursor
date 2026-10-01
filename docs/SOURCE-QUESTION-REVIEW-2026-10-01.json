@@ -1,0 +1,339 @@
+{
+  "reviewedAt": "2026-10-01",
+  "questions": 25,
+  "sourceGroups": {
+    "National Geographic": 5,
+    "Seterra": 5,
+    "UNESCO": 5,
+    "World Bank": 5,
+    "iGeo": 5
+  },
+  "scope": "獨立編寫題目；不是抓取或整批翻譯官方題庫。fact 為概念或案例依據，design 僅為題型參考。",
+  "questionsReviewed": [
+    {
+      "id": "source:ocean-motion",
+      "demand": 1,
+      "family": "ocean-motion",
+      "fictionalScenario": false,
+      "references": [
+        {
+          "title": "National Geographic：Ocean Currents",
+          "url": "https://education.nationalgeographic.org/resource/ocean-currents/",
+          "role": "fact"
+        }
+      ]
+    },
+    {
+      "id": "source:weather-sample",
+      "demand": 2,
+      "family": "climate-time-scale",
+      "fictionalScenario": true,
+      "references": [
+        {
+          "title": "National Geographic：All About Climate",
+          "url": "https://education.nationalgeographic.org/resource/all-about-climate/",
+          "role": "fact"
+        }
+      ]
+    },
+    {
+      "id": "source:rainshadow-reversal",
+      "demand": 3,
+      "family": "rainshadow-process",
+      "fictionalScenario": true,
+      "references": [
+        {
+          "title": "National Geographic：All About Climate",
+          "url": "https://education.nationalgeographic.org/resource/all-about-climate/",
+          "role": "fact"
+        }
+      ]
+    },
+    {
+      "id": "source:ocean-density",
+      "demand": 4,
+      "family": "ocean-density-evidence",
+      "fictionalScenario": true,
+      "references": [
+        {
+          "title": "National Geographic：Ocean Currents",
+          "url": "https://education.nationalgeographic.org/resource/ocean-currents/",
+          "role": "fact"
+        }
+      ]
+    },
+    {
+      "id": "source:seafloor-evidence",
+      "demand": 4,
+      "family": "tectonic-evidence",
+      "fictionalScenario": true,
+      "references": [
+        {
+          "title": "National Geographic：Plate Tectonics",
+          "url": "https://education.nationalgeographic.org/resource/plate-tectonics-video/",
+          "role": "fact"
+        }
+      ]
+    },
+    {
+      "id": "source:angkor-system",
+      "demand": 2,
+      "family": "heritage-water-system",
+      "fictionalScenario": false,
+      "references": [
+        {
+          "title": "UNESCO：吳哥",
+          "url": "https://whc.unesco.org/en/list/668/",
+          "role": "fact"
+        }
+      ]
+    },
+    {
+      "id": "source:machu-values",
+      "demand": 3,
+      "family": "mixed-heritage-values",
+      "fictionalScenario": true,
+      "references": [
+        {
+          "title": "UNESCO：馬丘比丘",
+          "url": "https://whc.unesco.org/en/list/274/",
+          "role": "fact"
+        }
+      ]
+    },
+    {
+      "id": "source:serengeti-corridor",
+      "demand": 3,
+      "family": "migration-connectivity",
+      "fictionalScenario": true,
+      "references": [
+        {
+          "title": "UNESCO：塞倫蓋提",
+          "url": "https://whc.unesco.org/en/list/156/",
+          "role": "fact"
+        }
+      ]
+    },
+    {
+      "id": "source:venice-metrics",
+      "demand": 4,
+      "family": "living-city-evaluation",
+      "fictionalScenario": true,
+      "references": [
+        {
+          "title": "UNESCO：威尼斯與潟湖",
+          "url": "https://whc.unesco.org/en/list/394/",
+          "role": "fact"
+        }
+      ]
+    },
+    {
+      "id": "source:reef-catchment",
+      "demand": 4,
+      "family": "ecosystem-boundary",
+      "fictionalScenario": true,
+      "references": [
+        {
+          "title": "UNESCO：大堡礁",
+          "url": "https://whc.unesco.org/en/list/154/",
+          "role": "fact"
+        }
+      ]
+    },
+    {
+      "id": "source:urban-ratio",
+      "demand": 2,
+      "family": "population-denominator",
+      "fictionalScenario": true,
+      "references": [
+        {
+          "title": "世界銀行：都市人口比例的定義",
+          "url": "https://databank.worldbank.org/metadataglossary/world-development-indicators/series/SP.URB.TOTL.IN.ZS",
+          "role": "fact"
+        }
+      ]
+    },
+    {
+      "id": "source:urban-definition",
+      "demand": 4,
+      "family": "cross-country-definition",
+      "fictionalScenario": false,
+      "references": [
+        {
+          "title": "世界銀行：都市人口比例的定義",
+          "url": "https://databank.worldbank.org/metadataglossary/world-development-indicators/series/SP.URB.TOTL.IN.ZS",
+          "role": "fact"
+        }
+      ]
+    },
+    {
+      "id": "source:water-flow",
+      "demand": 2,
+      "family": "water-resource-definition",
+      "fictionalScenario": false,
+      "references": [
+        {
+          "title": "世界銀行：每人內部可再生淡水資源",
+          "url": "https://databank.worldbank.org/metadataglossary/sustainable-development-goals-%28sdgs%29/series/ER.H2O.INTR.PC",
+          "role": "fact"
+        }
+      ]
+    },
+    {
+      "id": "source:water-denominator",
+      "demand": 3,
+      "family": "resource-denominator-change",
+      "fictionalScenario": true,
+      "references": [
+        {
+          "title": "世界銀行：每人內部可再生淡水資源",
+          "url": "https://databank.worldbank.org/metadataglossary/sustainable-development-goals-%28sdgs%29/series/ER.H2O.INTR.PC",
+          "role": "fact"
+        }
+      ]
+    },
+    {
+      "id": "source:weighted-water",
+      "demand": 4,
+      "family": "weighted-country-comparison",
+      "fictionalScenario": true,
+      "references": [
+        {
+          "title": "世界銀行：每人內部可再生淡水資源",
+          "url": "https://databank.worldbank.org/metadataglossary/sustainable-development-goals-%28sdgs%29/series/ER.H2O.INTR.PC",
+          "role": "fact"
+        }
+      ]
+    },
+    {
+      "id": "source:tourism-causality",
+      "demand": 4,
+      "family": "tourism-policy-evidence",
+      "fictionalScenario": true,
+      "references": [
+        {
+          "title": "iGeo：讀圖與問題解決題型設計",
+          "url": "https://geoolympiad.org/wp-content/uploads/2025/04/Test-Guidelines-revised-2025.pdf",
+          "role": "design"
+        }
+      ]
+    },
+    {
+      "id": "source:urban-access",
+      "demand": 3,
+      "family": "urban-accessibility",
+      "fictionalScenario": true,
+      "references": [
+        {
+          "title": "iGeo：讀圖與問題解決題型設計",
+          "url": "https://geoolympiad.org/wp-content/uploads/2025/04/Test-Guidelines-revised-2025.pdf",
+          "role": "design"
+        }
+      ]
+    },
+    {
+      "id": "source:flood-exposure",
+      "demand": 4,
+      "family": "hazard-exposure-vulnerability",
+      "fictionalScenario": true,
+      "references": [
+        {
+          "title": "iGeo：讀圖與問題解決題型設計",
+          "url": "https://geoolympiad.org/wp-content/uploads/2025/04/Test-Guidelines-revised-2025.pdf",
+          "role": "design"
+        }
+      ]
+    },
+    {
+      "id": "source:population-balance",
+      "demand": 3,
+      "family": "population-components",
+      "fictionalScenario": true,
+      "references": [
+        {
+          "title": "iGeo：讀圖與問題解決題型設計",
+          "url": "https://geoolympiad.org/wp-content/uploads/2025/04/Test-Guidelines-revised-2025.pdf",
+          "role": "design"
+        }
+      ]
+    },
+    {
+      "id": "source:landuse-control",
+      "demand": 4,
+      "family": "land-use-study-design",
+      "fictionalScenario": true,
+      "references": [
+        {
+          "title": "iGeo：讀圖與問題解決題型設計",
+          "url": "https://geoolympiad.org/wp-content/uploads/2025/04/Test-Guidelines-revised-2025.pdf",
+          "role": "design"
+        }
+      ]
+    },
+    {
+      "id": "source:coordinate-reading",
+      "demand": 1,
+      "family": "hemisphere-reading",
+      "fictionalScenario": true,
+      "references": [
+        {
+          "title": "Seterra：全球地理測驗題型設計",
+          "url": "https://www.geoguessr.com/es/l/wor",
+          "role": "design"
+        }
+      ]
+    },
+    {
+      "id": "source:map-route-heading",
+      "demand": 2,
+      "family": "relative-map-position",
+      "fictionalScenario": true,
+      "references": [
+        {
+          "title": "Seterra：全球地理測驗題型設計",
+          "url": "https://www.geoguessr.com/es/l/wor",
+          "role": "design"
+        }
+      ]
+    },
+    {
+      "id": "source:map-river-network",
+      "demand": 3,
+      "family": "drainage-network",
+      "fictionalScenario": true,
+      "references": [
+        {
+          "title": "Seterra：全球地理測驗題型設計",
+          "url": "https://www.geoguessr.com/es/l/wor",
+          "role": "design"
+        }
+      ]
+    },
+    {
+      "id": "source:map-path-comparison",
+      "demand": 3,
+      "family": "network-route-choice",
+      "fictionalScenario": true,
+      "references": [
+        {
+          "title": "Seterra：全球地理測驗題型設計",
+          "url": "https://www.geoguessr.com/es/l/wor",
+          "role": "design"
+        }
+      ]
+    },
+    {
+      "id": "source:map-sampling",
+      "demand": 4,
+      "family": "map-generalization",
+      "fictionalScenario": true,
+      "references": [
+        {
+          "title": "Seterra：全球地理測驗題型設計",
+          "url": "https://www.geoguessr.com/es/l/wor",
+          "role": "design"
+        }
+      ]
+    }
+  ]
+}

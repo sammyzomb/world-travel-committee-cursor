@@ -24,7 +24,7 @@ export async function POST(request: Request) {
     if (!selectedOption) {
       return Response.json({ error: "selectedOption is required" }, { status: 400 });
     }
-    if (!Number.isInteger(progressRevision) || progressRevision < 0) {
+    if (typeof progressRevision !== "number" || !Number.isInteger(progressRevision) || progressRevision < 0) {
       return Response.json({ error: "progressRevision is required" }, { status: 400 });
     }
 

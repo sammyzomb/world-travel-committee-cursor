@@ -1,7 +1,7 @@
 import { readFileSync, readdirSync } from "node:fs";
 import { resolve, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
-import { DatabaseSync } from "node:sqlite";
+import { DatabaseSync, type SQLInputValue } from "node:sqlite";
 import { drizzle } from "drizzle-orm/sqlite-proxy";
 import * as schema from "./schema";
 
@@ -23,7 +23,7 @@ function applyMigrations(database: DatabaseSync) {
 
 function rowsAsArrays(statement: DatabaseSync["prepare"] extends (...args: never[]) => infer R
   ? R
-  : never, params: unknown[]) {
+  : never, params: SQLInputValue[]) {
   const columns = statement.columns?.() ?? [];
   const objects = statement.all(...params) as Record<string, unknown>[];
   return objects.map((row) => columns.map((column) => row[column.name]));
@@ -31,7 +31,7 @@ function rowsAsArrays(statement: DatabaseSync["prepare"] extends (...args: never
 
 function rowAsArray(statement: DatabaseSync["prepare"] extends (...args: never[]) => infer R
   ? R
-  : never, params: unknown[]) {
+  : never, params: SQLInputValue[]) {
   const columns = statement.columns?.() ?? [];
   const row = statement.get(...params) as Record<string, unknown> | undefined;
   if (!row) return [];

@@ -1,3 +1,4 @@
+import type { QuestionReference } from "./question-reference";
 import type { QuestionVisualData } from "../components/question-visual";
 import {
   educationStages,
@@ -23,6 +24,7 @@ export type IssuedQuestion = {
   category?: "世界地理" | "旅行知識" | "世界遺產";
   questionType?: string;
   visual?: QuestionVisualData;
+  references?: QuestionReference[];
 };
 
 export type RunEndReason =
@@ -81,6 +83,7 @@ export function issuedQuestionsFromPlan(
     category?: "世界地理" | "旅行知識" | "世界遺產";
     questionType?: string;
     visual?: QuestionVisualData;
+  references?: QuestionReference[];
   }>,
   stageStarts: number[],
 ): IssuedQuestion[] {
@@ -98,6 +101,7 @@ export function issuedQuestionsFromPlan(
     category: question.category,
     questionType: question.questionType,
     visual: question.visual,
+    references: question.references,
   }));
 }
 

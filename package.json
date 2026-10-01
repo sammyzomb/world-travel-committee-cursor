@@ -26,6 +26,8 @@
     "verify:phase1": "npx --yes tsx scripts/verify-phase1.mjs",
     "audit:questions": "node scripts/audit-questions.mjs --write",
     "test:question-integrity": "node scripts/test-question-integrity.mjs",
+    "test:question-taxonomy": "npx --yes tsx scripts/test-question-taxonomy.mjs",
+    "report:question-taxonomy": "npx --yes tsx scripts/report-question-taxonomy.mjs",
     "test:submission": "npx --yes tsx scripts/test-submission-validation.mjs",
     "test:run-session": "npx --yes tsx scripts/test-run-session-validation.mjs",
     "test:integration": "npx --yes tsx scripts/test-run-integration.mjs",
@@ -61,7 +63,11 @@
     "db:migrate:local": "node scripts/migrate-d1.mjs --local",
     "db:migrate:remote": "node scripts/migrate-d1.mjs --remote",
     "deploy:cloudflare": "npm run build && node --import ./scripts/sites-env.mjs ./node_modules/wrangler/bin/wrangler.js deploy --config dist/server/wrangler.json",
-    "deploy:netlify": "npm run build:netlify && npx netlify-cli deploy --prod --dir=dist --functions=.netlify/functions-internal"
+    "deploy:netlify": "npm run build:netlify && npx netlify-cli deploy --prod --dir=dist --functions=.netlify/functions-internal",
+    "test:question-quality": "npx --yes tsx scripts/test-question-quality.mjs",
+    "generate:learning-questions": "node scripts/build-learning-questions.mjs",
+    "test:source-questions": "npx --yes tsx scripts/test-source-questions.mjs",
+    "generate:source-questions": "node scripts/build-source-questions.mjs"
   },
   "dependencies": {
     "@base-ui/react": "^1.7.0",

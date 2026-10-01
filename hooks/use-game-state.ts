@@ -96,13 +96,21 @@ export function useGameState() {
   }, []);
 
   useEffect(() => {
+    let cancelled = false;
     if (screen === "start" || screen === "result") {
-      loadLeaderboard();
+      queueMicrotask(() => {
+        if (!cancelled) void loadLeaderboard();
+      });
     }
+    return () => { cancelled = true; };
   }, [screen, loadLeaderboard]);
 
   useEffect(() => {
-    setPersonalBest(loadPersonalBest());
+    let cancelled = false;
+    queueMicrotask(() => {
+      if (!cancelled) setPersonalBest(loadPersonalBest());
+    });
+    return () => { cancelled = true; };
   }, []);
 
   useEffect(() => {

@@ -8,6 +8,8 @@ export type QuestionVisualData = {
   detail: string;
   image?: string;
   credit?: string;
+  sourceUrl?: string;
+  licenseUrl?: string;
 };
 
 export function QuestionVisual({ visual }: { visual: QuestionVisualData }) {
@@ -28,7 +30,7 @@ export function QuestionVisual({ visual }: { visual: QuestionVisualData }) {
           <span>旅遊景色</span>
           <b>{visual.label}</b>
           <small>{visual.detail}</small>
-          {visual.credit && <em>圖片來源：{visual.credit}</em>}
+          {visual.credit && <em>圖片來源：{visual.credit}{visual.sourceUrl && <> · <a href={visual.sourceUrl} target="_blank" rel="noreferrer">來源</a></>}{visual.licenseUrl && <> · <a href={visual.licenseUrl} target="_blank" rel="noreferrer">授權</a></>}</em>}
         </figcaption>
       </figure>
     );

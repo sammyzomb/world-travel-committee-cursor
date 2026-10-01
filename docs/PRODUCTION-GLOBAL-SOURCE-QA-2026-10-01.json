@@ -1,0 +1,15 @@
+{
+  "ok": true,
+  "sourceChecks": 2,
+  "url": "https://world-travel-committee.tcawg.workers.dev",
+  "questionBankVersion": "6dbbc95e85a9f784",
+  "flows": [
+    "homepage",
+    "answer",
+    "four-options",
+    "hidden-visual",
+    "reward-visible",
+    "source-links-after-answer"
+  ],
+  "deployment": "10e9e566-fc58-46eb-9e76-c3610f1421f8"
+}

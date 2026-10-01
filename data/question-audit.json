@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-15T09:49:28.993Z",
+  "updatedAt": "2026-09-30T08:43:58.650Z",
   "description": "Per-question audit overrides. Hand/travel/tour default pending until validated here.",
   "overrides": {
     "hand:ybriou": {
@@ -1312,10 +1312,13 @@
       "note": "來源 expandedFacts 一致（伊斯蘭堡 → 巴基斯坦）"
     },
     "expanded-landmark:jm3be3": {
-      "auditStatus": "approved",
-      "reviewedAt": "2026-09-14",
-      "reviewer": "audit-script:fact-consistency",
-      "note": "來源 expandedFacts 一致（伊瑪目清真寺 → 德黑蘭）"
+      "auditStatus": "disabled",
+      "reviewedAt": "2026-09-30",
+      "reviewer": "classification-review",
+      "note": "伊瑪目清真寺名稱未限定城市；題庫與選圖對應伊斯法罕，但正解為德黑蘭。先停用，待指定建築後重寫。",
+      "sources": [
+        "https://whc.unesco.org/en/list/115/"
+      ]
     },
     "expanded-city:m473qs": {
       "auditStatus": "disabled",
@@ -1372,10 +1375,13 @@
       "note": "來源 expandedFacts 一致（河內 → 越南）"
     },
     "expanded-landmark:1134uj3": {
-      "auditStatus": "approved",
-      "reviewedAt": "2026-09-14",
-      "reviewer": "audit-script:fact-consistency",
-      "note": "來源 expandedFacts 一致（普西山 → 永珍）"
+      "auditStatus": "disabled",
+      "reviewedAt": "2026-09-30",
+      "reviewer": "classification-review",
+      "note": "普西山位於龍坡邦；原題將永珍列為正解。",
+      "sources": [
+        "https://www.tourismlaos.org/welcome/legendary-landmarks/"
+      ]
     },
     "expanded-city:bke7z6": {
       "auditStatus": "approved",
@@ -1396,10 +1402,13 @@
       "note": "來源 expandedFacts 一致（仰光 → 緬甸）"
     },
     "expanded-landmark:ldue70": {
-      "auditStatus": "approved",
-      "reviewedAt": "2026-09-14",
-      "reviewer": "audit-script:fact-consistency",
-      "note": "來源 expandedFacts 一致（碧瑤 → 馬尼拉）"
+      "auditStatus": "disabled",
+      "reviewedAt": "2026-09-30",
+      "reviewer": "classification-review",
+      "note": "碧瑤本身為菲律賓城市，不位於馬尼拉；原題正解錯誤。",
+      "sources": [
+        "https://psa.gov.ph/classification/psgc/barangays/1430300000"
+      ]
     },
     "expanded-city:1xhzjrt": {
       "auditStatus": "approved",

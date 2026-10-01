@@ -1,3 +1,4 @@
+import type { QuestionReference } from "./question-reference";
 import type { QuestionVisualData } from "../components/question-visual";
 
 /** 客戶端可見的題目（不含正解與解析）。 */
@@ -12,6 +13,7 @@ export type PublicQuestion = {
   category?: "世界地理" | "旅行知識" | "世界遺產";
   questionType?: string;
   visual?: QuestionVisualData;
+  references?: QuestionReference[];
 };
 
 export type AnswerFeedback = {

@@ -1,0 +1,13 @@
+{
+  "ok": true,
+  "url": "https://world-travel-committee.tcawg.workers.dev",
+  "questionBankVersion": "b33734c78e15f4e7",
+  "flows": [
+    "homepage",
+    "answer",
+    "four-options",
+    "hidden-visual",
+    "reward-visible"
+  ],
+  "deployment": "c9b723ff-54b0-4ce6-9881-740bffb8851a"
+}

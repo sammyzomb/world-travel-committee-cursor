@@ -14,7 +14,7 @@ export async function POST(request: Request) {
     if (!sessionToken) {
       return Response.json({ error: "sessionToken is required" }, { status: 400 });
     }
-    if (!Number.isInteger(progressRevision) || progressRevision < 0) {
+    if (typeof progressRevision !== "number" || !Number.isInteger(progressRevision) || progressRevision < 0) {
       return Response.json({ error: "progressRevision is required" }, { status: 400 });
     }
 

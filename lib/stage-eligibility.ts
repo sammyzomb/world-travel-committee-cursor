@@ -1,10 +1,10 @@
+import { questionDemand, minDemandForStage } from "./question-demand";
 import { educationStages } from "./game-config";
 import {
   allowedTypesForStage,
   difficultyRankForLevel,
   includesTravelKnowledge,
   minQuestionLevelRankForStage,
-  minTypeRankForStage,
   QUESTION_TYPE_RANK,
   type QuestionType,
 } from "./question-types";
@@ -24,11 +24,14 @@ function questionGradesAllowStage(question: Question, stageIndex: number) {
 }
 
 export function questionMatchesStageRules(question: Question, stageIndex: number) {
+  if (question.auditStatus !== "approved") return false;
+  if (questionDemand(question) < minDemandForStage(stageIndex)) return false;
+  if (question.kind !== "tf" && question.options[question.answer]?.length >= 2 && question.q.includes(question.options[question.answer])) return false;
   if (stageIndex === 0) {
     if (question.kind === "tf") {
       return question.auditStatus === "approved";
     }
-    return question.level === "旅行新手" && question.kind !== "tf";
+    return question.level === "旅行新手";
   }
 
   if (!questionGradesAllowStage(question, stageIndex)) {
@@ -43,7 +46,7 @@ export function questionMatchesStageRules(question: Question, stageIndex: number
   const allowedTypes = new Set<QuestionType>(allowedTypesForStage(stageIndex));
   if (!allowedTypes.has(question.questionType)) return false;
 
-  const minTypeRank = minTypeRankForStage(stageIndex);
+  const minTypeRank = 0;
   const minLevelRank = minQuestionLevelRankForStage(stageIndex);
   const typeRank = QUESTION_TYPE_RANK[question.questionType];
   const levelRank = difficultyRankForLevel(question.level);
@@ -62,12 +65,14 @@ export function questionMatchesStageRules(question: Question, stageIndex: number
 }
 
 export function describeStageRuleViolation(question: Question, stageIndex: number): string {
+  if (question.auditStatus !== "approved") return "題目尚未核准";
+  if (questionDemand(question) < minDemandForStage(stageIndex)) return "認知要求低於此關下限";
+  if (question.kind !== "tf" && question.options[question.answer]?.length >= 2 && question.q.includes(question.options[question.answer])) return "題幹含有正確答案";
   if (stageIndex === 0) {
     if (question.kind === "tf") {
       return question.auditStatus === "approved" ? "" : "暖身題未核准";
     }
     if (question.level !== "旅行新手") return `小一正式題難度不符：${question.level}`;
-    if (question.kind === "tf") return "小一正式題不可為是非題";
     return "";
   }
 
@@ -92,7 +97,7 @@ export function describeStageRuleViolation(question: Question, stageIndex: numbe
     return `題目難度等級過低（${question.level}）`;
   }
 
-  const minTypeRank = minTypeRankForStage(stageIndex);
+  const minTypeRank = 0;
   const typeRank = QUESTION_TYPE_RANK[question.questionType];
   if (typeRank + levelRank * 0.3 < minTypeRank - 0.5) {
     return `題型／難度組合低於 ${stage.name} 下限`;

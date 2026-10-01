@@ -190,6 +190,15 @@ export function PlayScreen({
               <b>{feedbackMessage(feedback, endedEarly, lives, runStreak)}</b>
               {isWrong && <p className="play-correct-answer">正確答案：{feedback.correctAnswer}</p>}
               <p>{feedback.fact}</p>
+              {current.references?.length ? (
+                <div className="question-references" aria-label="題目參考來源">
+                  {current.references.map(reference => (
+                    <a key={reference.url} href={reference.url} target="_blank" rel="noopener noreferrer">
+                      {reference.role === "design" ? "題型參考" : "內容依據"}：{reference.title} ↗
+                    </a>
+                  ))}
+                </div>
+              ) : null}
             </div>
             <button type="button" className="primary-button play-next-button" onClick={onNext}>
               {nextButtonLabel(endedEarly, questionIndex, roundLength, stageQuestion, stageLength)} →

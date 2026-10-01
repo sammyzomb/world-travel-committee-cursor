@@ -1,7 +1,11 @@
 import questionAuditJson from "../data/question-audit.json";
+import sourceQuestionsJson from "../data/source-questions.json";
+import type { QuestionReference } from "./question-reference";
+import learningQuestionsJson from "../data/learning-questions.json";
+import editorialOverrides from "../data/question-editorial-overrides.json";
 import questionBankJson from "../data/questions.json";
 import type { QuestionVisualData } from "../components/question-visual";
-import { getLandmarkImage, getLandmarkImageSrc } from "./landmark-images";
+import { getLandmarkImage, getLandmarkImageSrc, getLandmarkImageCredit, getLandmarkImageAttribution } from "./landmark-images";
 import {
   conceptIdForRawQuestion,
   deterministicDistractors,
@@ -13,8 +17,9 @@ import {
 } from "./question-metadata";
 import { inferQuestionType, type QuestionType } from "./question-types";
 import { safeVisualCaption } from "./visual-safety";
+import { classifyQuestion, type QuestionClassification } from "./question-taxonomy";
 
-const questionBank = questionBankJson as {
+const questionBank = questionBankJson as unknown as {
   warmupQuestions: RawQuestion[];
   questions: RawQuestion[];
   travelKnowledgeQuestions: RawQuestion[];
@@ -42,6 +47,10 @@ export type Question = {
   kind?: "tf" | "choice";
   category?: QuestionCategory;
   questionType: QuestionType;
+  references?: QuestionReference[];
+  demand?: number;
+  family?: string;
+  classification: QuestionClassification;
   visual?: QuestionVisualData;
 };
 
@@ -96,7 +105,8 @@ function buildVisual(
     label: caption.label,
     detail: caption.detail,
     image: imageSrc,
-    credit: image.credit,
+    credit: getLandmarkImageCredit(raw.landmark),
+    ...getLandmarkImageAttribution(raw.landmark),
   };
 }
 
@@ -122,12 +132,13 @@ function factVisual(
     label: caption.label,
     detail: caption.detail,
     image: imageSrc,
-    credit: image.credit,
+    credit: getLandmarkImageCredit(landmark),
+    ...getLandmarkImageAttribution(landmark),
   };
 }
 
 function attachMetadata(
-  question: Omit<Question, "id" | "conceptId" | "source" | "auditStatus" | "grades" | "questionType"> & {
+  question: Omit<Question, "id" | "conceptId" | "source" | "auditStatus" | "grades" | "questionType" | "classification"> & {
     questionType?: QuestionType;
   },
   meta: {
@@ -147,7 +158,8 @@ function attachMetadata(
       category: rest.category,
       level: rest.level,
     });
-  return { ...rest, questionType, ...meta };
+  const classifiedInput = { ...rest, questionType, ...meta };
+  return { ...classifiedInput, classification: classifyQuestion(classifiedInput) };
 }
 
 function attachVisual(
@@ -330,7 +342,10 @@ function buildExpandedQuestions(
 }
 
 function withDefaultCategory(questions: Question[], category: QuestionCategory): Question[] {
-  return questions.map((item) => ({ ...item, category: item.category ?? category }));
+  return questions.map((item) => {
+    const categorized = { ...item, category: item.category ?? category };
+    return { ...categorized, classification: classifyQuestion(categorized) };
+  });
 }
 
 type AuditOverride = {
@@ -352,6 +367,9 @@ function applyAuditOverrides(questions: Question[]): Question[] {
     ) {
       return { ...item, auditStatus: "disabled" };
     }
+    const editorial = (editorialOverrides as Record<string, Partial<Question>>)[item.id];
+    if (editorial) item = { ...item, ...editorial };
+    if (/^(expanded|heritage)-landmark:/.test(item.id)) return { ...item, auditStatus: "disabled" };
     const override = auditOverrides[item.id];
     if (!override) return item;
     return {
@@ -368,7 +386,7 @@ const tourSource = QUESTION_SOURCES.tour;
 const warmupSource = QUESTION_SOURCES.warmup;
 
 export const warmupQuestions: Question[] = questionBank.warmupQuestions.map((raw, index) =>
-  attachVisual(raw, {
+  attachVisual({ ...raw, category: raw.category ?? "世界地理" }, {
     id: makeQuestionId("warmup", raw.q),
     conceptId: conceptIdForRawQuestion(raw, "warmup", index),
     source: warmupSource.label,
@@ -467,7 +485,11 @@ export const supplementQuestions: Question[] = (questionBank.supplementQuestions
     );
   },
 );
+export const learningQuestions: Question[] = (learningQuestionsJson as unknown as (RawQuestion & { id: string; demand: number; family: string; subtopic: string; grades: string[] })[]).map(raw => attachVisual(raw, { id: raw.id, conceptId: 'learning:' + raw.id, source: '情境與理解題（完整條件與逐題推導）', auditStatus: 'approved', grades: raw.grades }));
+export const sourceQuestions: Question[] = (sourceQuestionsJson as unknown as (RawQuestion & { id: string; demand: number; family: string; subtopic: string; grades: string[]; sourceGroup: string; references: QuestionReference[] })[]).map(raw => attachVisual(raw, { id: raw.id, conceptId: raw.id, source: raw.sourceGroup, auditStatus: 'approved', grades: raw.grades }));
 export const allQuestions: Question[] = [
+  ...sourceQuestions,
+  ...learningQuestions,
   ...handPickedQuestions,
   ...travelKnowledgeQuestions,
   ...tourQuestions,
@@ -491,6 +513,8 @@ export const questionBankStats = {
   heritageFacts: (questionBank.heritageFacts ?? []).length,
   expandedGenerated: expandedQuestions.length,
   heritageGenerated: heritageExpandedQuestions.length,
+  learning: learningQuestions.length,
+  sourceBased: sourceQuestions.length,
   approved: approvedQuestions.length,
   pending: allQuestions.filter((item) => item.auditStatus === "pending").length,
   disabled: allQuestions.filter((item) => item.auditStatus === "disabled").length,
