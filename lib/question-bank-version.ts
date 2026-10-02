@@ -27,6 +27,7 @@ function scoringRulesPayload() {
       `pool=${stage.pool.join("+")}`,
       `opts=${optionCountForStage(stageIndex)}`,
       `demand=${minDemandForStage(stageIndex)}`,
+      `primaryReview=${stageIndex <= 5 ? "explicit-grade-or-location-v1;max-demand=2" : "n/a"}`,
       `familyCap=${stageIndex >= 9 ? 1 : 2};locationCap=1`,
       `count=${count}`,
       `pass=${passRequiredForStage(count)}`,

@@ -1,0 +1,506 @@
+[
+  {
+    "id": "source:ocean-motion",
+    "q": "漂流物隨海水持續朝某方向移動，與海面上下起伏不同。這種水體的定向流動稱為？",
+    "answer": "洋流",
+    "grades": [
+      "小六",
+      "國一"
+    ],
+    "demand": 2,
+    "reviewedAt": "2026-10-02",
+    "references": [
+      {
+        "title": "National Geographic：Ocean Currents",
+        "url": "https://education.nationalgeographic.org/resource/ocean-currents/",
+        "role": "fact"
+      }
+    ],
+    "fictionalScenario": false
+  },
+  {
+    "id": "source:weather-sample",
+    "q": "研究加拿大某城是否有雨季，甲資料是一週天氣，乙資料是多年各月雨量。哪份更適合回答這個問題？",
+    "answer": "乙，能比較多年季節分布",
+    "grades": [
+      "小六",
+      "國一"
+    ],
+    "demand": 2,
+    "reviewedAt": "2026-10-02",
+    "references": [
+      {
+        "title": "National Geographic：All About Climate",
+        "url": "https://education.nationalgeographic.org/resource/all-about-climate/",
+        "role": "fact"
+      }
+    ],
+    "fictionalScenario": true
+  },
+  {
+    "id": "source:rainshadow-reversal",
+    "q": "假設山脈兩側海拔相近，濕潤氣流從西向東，西坡雨量多、東坡少。若濕潤氣流方向改為東向西，其他條件相同，最合理的預期是？",
+    "answer": "較多降雨的一側可能轉為東坡",
+    "grades": [
+      "國二",
+      "國三"
+    ],
+    "demand": 3,
+    "reviewedAt": "2026-10-02",
+    "references": [
+      {
+        "title": "National Geographic：All About Climate",
+        "url": "https://education.nationalgeographic.org/resource/all-about-climate/",
+        "role": "fact"
+      }
+    ],
+    "fictionalScenario": true
+  },
+  {
+    "id": "source:ocean-density",
+    "q": "南極海洋教學實驗：甲樣本低溫高鹽、乙高溫低鹽，甲密度較高。研究者想分辨溫度與鹽度各自的作用。下一組實驗如何最能補足證據？",
+    "answer": "固定鹽度比較溫度，再固定溫度比較鹽度",
+    "grades": [
+      "大三",
+      "大四",
+      "研一",
+      "研二"
+    ],
+    "demand": 4,
+    "reviewedAt": "2026-10-02",
+    "references": [
+      {
+        "title": "National Geographic：Ocean Currents",
+        "url": "https://education.nationalgeographic.org/resource/ocean-currents/",
+        "role": "fact"
+      }
+    ],
+    "fictionalScenario": true
+  },
+  {
+    "id": "source:seafloor-evidence",
+    "q": "教學資料：海底山脊兩側巖石年齡都隨離脊距離增加，且形成大致對稱的年代帶。這組證據較支持哪項解釋，仍須避免哪個過度推論？",
+    "answer": "支持海底擴張；不能僅憑年齡帶預測下一次地震日期",
+    "grades": [
+      "大三",
+      "大四",
+      "研一",
+      "研二"
+    ],
+    "demand": 4,
+    "reviewedAt": "2026-10-02",
+    "references": [
+      {
+        "title": "National Geographic：Plate Tectonics",
+        "url": "https://education.nationalgeographic.org/resource/plate-tectonics-video/",
+        "role": "fact"
+      }
+    ],
+    "fictionalScenario": true
+  },
+  {
+    "id": "source:angkor-system",
+    "q": "吳哥的古代城市除了寺廟，還有水庫、渠道與堤壩。若研究古城如何運作，哪組資料較完整？",
+    "answer": "寺廟、聚落與水利設施的關係",
+    "grades": [
+      "小六",
+      "國一"
+    ],
+    "demand": 2,
+    "reviewedAt": "2026-10-02",
+    "references": [
+      {
+        "title": "UNESCO：吳哥",
+        "url": "https://whc.unesco.org/en/list/668/",
+        "role": "fact"
+      }
+    ],
+    "fictionalScenario": false
+  },
+  {
+    "id": "source:machu-values",
+    "q": "馬丘比丘同時具有文化與自然遺產價值。假設保存計畫只修復石造建築，卻未評估周邊山地棲地與步道影響，主要缺少什麼？",
+    "answer": "自然環境與建築保存的整合評估",
+    "grades": [
+      "高一",
+      "高二",
+      "高三",
+      "大一",
+      "大二"
+    ],
+    "demand": 3,
+    "reviewedAt": "2026-10-02",
+    "references": [
+      {
+        "title": "UNESCO：馬丘比丘",
+        "url": "https://whc.unesco.org/en/list/274/",
+        "role": "fact"
+      }
+    ],
+    "fictionalScenario": true
+  },
+  {
+    "id": "source:serengeti-corridor",
+    "q": "塞倫蓋提的動物遷移跨越大片草原。假設新道路把遷移路線分成兩段，保護目標是維持動物取得草地與水源的移動，評估道路時應優先納入？",
+    "answer": "道路對遷移路線連通性的影響",
+    "grades": [
+      "國二",
+      "國三"
+    ],
+    "demand": 3,
+    "reviewedAt": "2026-10-02",
+    "references": [
+      {
+        "title": "UNESCO：塞倫蓋提",
+        "url": "https://whc.unesco.org/en/list/156/",
+        "role": "fact"
+      }
+    ],
+    "fictionalScenario": true
+  },
+  {
+    "id": "source:venice-metrics",
+    "q": "威尼斯教學案例：觀光收入上升，但常住居民與日常商店減少。市府以收入上升宣稱「文化保存已全面改善」。哪項評估最能檢驗這個主張？",
+    "answer": "同時追蹤居民生活功能、建築狀況與收入，分開判讀",
+    "grades": [
+      "大三",
+      "大四",
+      "研一",
+      "研二"
+    ],
+    "demand": 4,
+    "reviewedAt": "2026-10-02",
+    "references": [
+      {
+        "title": "UNESCO：威尼斯與潟湖",
+        "url": "https://whc.unesco.org/en/list/394/",
+        "role": "fact"
+      }
+    ],
+    "fictionalScenario": true
+  },
+  {
+    "id": "source:reef-catchment",
+    "q": "大堡礁教學情境：管理單位嚴格限制海上活動，但流域的土地利用改變使入海水質惡化。若目標是改善生態系整體狀況，哪種推論與措施較合理？",
+    "answer": "海域管制仍有價值，但需結合上游流域與水質管理",
+    "grades": [
+      "大三",
+      "大四",
+      "研一",
+      "研二"
+    ],
+    "demand": 4,
+    "reviewedAt": "2026-10-02",
+    "references": [
+      {
+        "title": "UNESCO：大堡礁",
+        "url": "https://whc.unesco.org/en/list/154/",
+        "role": "fact"
+      }
+    ],
+    "fictionalScenario": true
+  },
+  {
+    "id": "source:urban-ratio",
+    "q": "都市人口比例與都市人口總數是不同指標。若想了解居民分布在哪些都市，還需要什麼資料？",
+    "answer": "都市位置、範圍與人口分布",
+    "grades": [
+      "國二",
+      "國三"
+    ],
+    "demand": 2,
+    "reviewedAt": "2026-10-02",
+    "references": [
+      {
+        "title": "世界銀行：都市人口比例的定義",
+        "url": "https://databank.worldbank.org/metadataglossary/world-development-indicators/series/SP.URB.TOTL.IN.ZS",
+        "role": "fact"
+      }
+    ],
+    "fictionalScenario": false
+  },
+  {
+    "id": "source:urban-definition",
+    "q": "比較兩國都市人口比例時，甲按行政區劃界定都市，乙按人口密度界定，資料年份也不同。要評估「乙一定更都市化」，最合理的下一步是？",
+    "answer": "確認分類定義與年份，建立可比較口徑後再判讀",
+    "grades": [
+      "大三",
+      "大四",
+      "研一",
+      "研二"
+    ],
+    "demand": 4,
+    "reviewedAt": "2026-10-02",
+    "references": [
+      {
+        "title": "世界銀行：都市人口比例的定義",
+        "url": "https://databank.worldbank.org/metadataglossary/world-development-indicators/series/SP.URB.TOTL.IN.ZS",
+        "role": "fact"
+      }
+    ],
+    "fictionalScenario": false
+  },
+  {
+    "id": "source:water-flow",
+    "q": "「每人內部可再生淡水資源」是年度水資源量除以人口。這個指標能直接當成每戶每天自來水供應量嗎？",
+    "answer": "不能，資源量與輸配、可近性及實際供水不同",
+    "grades": [
+      "國二",
+      "國三"
+    ],
+    "demand": 2,
+    "reviewedAt": "2026-10-02",
+    "references": [
+      {
+        "title": "世界銀行：每人內部可再生淡水資源",
+        "url": "https://databank.worldbank.org/metadataglossary/sustainable-development-goals-%28sdgs%29/series/ER.H2O.INTR.PC",
+        "role": "fact"
+      }
+    ],
+    "fictionalScenario": false
+  },
+  {
+    "id": "source:water-denominator",
+    "q": "教學情境：某國水資源統計看似充足，但偏遠村落仍缺穩定供水。理解這種差異應進一步調查什麼？",
+    "answer": "水源、處理與輸配設施及服務可近性",
+    "grades": [
+      "國二",
+      "國三"
+    ],
+    "demand": 3,
+    "reviewedAt": "2026-10-02",
+    "references": [
+      {
+        "title": "世界銀行：每人內部可再生淡水資源",
+        "url": "https://databank.worldbank.org/metadataglossary/sustainable-development-goals-%28sdgs%29/series/ER.H2O.INTR.PC",
+        "role": "fact"
+      }
+    ],
+    "fictionalScenario": true
+  },
+  {
+    "id": "source:weighted-water",
+    "q": "教學情境：國家整體水資源指標改善，但部分偏遠社區供水仍不穩定。要檢驗「所有居民都已受益」，最合適的評估是？",
+    "answer": "分區檢查服務穩定性、水質與可近性，並核對指標口徑",
+    "grades": [
+      "大三",
+      "大四",
+      "研一",
+      "研二"
+    ],
+    "demand": 4,
+    "reviewedAt": "2026-10-02",
+    "references": [
+      {
+        "title": "世界銀行：每人內部可再生淡水資源",
+        "url": "https://databank.worldbank.org/metadataglossary/sustainable-development-goals-%28sdgs%29/series/ER.H2O.INTR.PC",
+        "role": "fact"
+      }
+    ],
+    "fictionalScenario": true
+  },
+  {
+    "id": "source:tourism-causality",
+    "q": "假設古城分流措施上路後，中心遊客數下降，鄰鎮遊客增加；同時有新鐵路開通。研究者想知道分流措施的效果，哪種設計能較好處理這個問題？",
+    "answer": "比較多地上路前後趨勢，納入鐵路變化與未實施地區",
+    "grades": [
+      "大三",
+      "大四",
+      "研一",
+      "研二"
+    ],
+    "demand": 4,
+    "reviewedAt": "2026-10-02",
+    "references": [
+      {
+        "title": "iGeo：讀圖與問題解決題型設計",
+        "url": "https://geoolympiad.org/wp-content/uploads/2025/04/Test-Guidelines-revised-2025.pdf",
+        "role": "design"
+      }
+    ],
+    "fictionalScenario": true
+  },
+  {
+    "id": "source:urban-access",
+    "q": "教學情境：旅館到博物館甲線較短但必經階梯，乙線較長且全程無階梯。同行者使用輪椅，規劃時最應怎麼做？",
+    "answer": "核對乙線全段無障礙條件，而非只以距離選路",
+    "grades": [
+      "國二",
+      "國三"
+    ],
+    "demand": 3,
+    "reviewedAt": "2026-10-02",
+    "references": [
+      {
+        "title": "iGeo：讀圖與問題解決題型設計",
+        "url": "https://geoolympiad.org/wp-content/uploads/2025/04/Test-Guidelines-revised-2025.pdf",
+        "role": "design"
+      }
+    ],
+    "fictionalScenario": true
+  },
+  {
+    "id": "source:flood-exposure",
+    "q": "教學洪災評估：甲區淹水機率較高，但住戶少且撤離容易；乙區機率較低，住戶多且撤離困難。兩區沒有損失或脆弱度的量化資料。能否只依機率決定哪區總風險較高？",
+    "answer": "不能；還需暴露量、脆弱度與損失資料",
+    "grades": [
+      "大三",
+      "大四",
+      "研一",
+      "研二"
+    ],
+    "demand": 4,
+    "reviewedAt": "2026-10-02",
+    "references": [
+      {
+        "title": "iGeo：讀圖與問題解決題型設計",
+        "url": "https://geoolympiad.org/wp-content/uploads/2025/04/Test-Guidelines-revised-2025.pdf",
+        "role": "design"
+      }
+    ],
+    "fictionalScenario": true
+  },
+  {
+    "id": "source:population-balance",
+    "q": "教學情境：山村人口持續外移，都市就業機會增加。若研究聚落變化，哪組資料較能連結人口移動與地方條件？",
+    "answer": "人口遷移、就業分布、交通與生活服務資料",
+    "grades": [
+      "高一",
+      "高二",
+      "高三",
+      "大一",
+      "大二"
+    ],
+    "demand": 3,
+    "reviewedAt": "2026-10-02",
+    "references": [
+      {
+        "title": "iGeo：讀圖與問題解決題型設計",
+        "url": "https://geoolympiad.org/wp-content/uploads/2025/04/Test-Guidelines-revised-2025.pdf",
+        "role": "design"
+      }
+    ],
+    "fictionalScenario": true
+  },
+  {
+    "id": "source:landuse-control",
+    "q": "假設流域甲新增大量硬鋪面後洪峰上升，但同年暴雨也比以前強。流域乙未新增硬鋪面。要檢驗土地利用的作用，哪組資料最有幫助？",
+    "answer": "兩流域多年降雨、流量與土地利用資料，確認可比較條件",
+    "grades": [
+      "大三",
+      "大四",
+      "研一",
+      "研二"
+    ],
+    "demand": 4,
+    "reviewedAt": "2026-10-02",
+    "references": [
+      {
+        "title": "iGeo：讀圖與問題解決題型設計",
+        "url": "https://geoolympiad.org/wp-content/uploads/2025/04/Test-Guidelines-revised-2025.pdf",
+        "role": "design"
+      }
+    ],
+    "fictionalScenario": true
+  },
+  {
+    "id": "source:coordinate-reading",
+    "q": "觀測點 P 的資料為北緯 20 度、東經 30 度。它位於哪一組半球？",
+    "answer": "北半球與東半球",
+    "grades": [
+      "小四",
+      "小五"
+    ],
+    "demand": 2,
+    "reviewedAt": "2026-10-02",
+    "references": [
+      {
+        "title": "Seterra：全球地理測驗題型設計",
+        "url": "https://www.geoguessr.com/es/l/wor",
+        "role": "design"
+      }
+    ],
+    "fictionalScenario": true
+  },
+  {
+    "id": "source:map-route-heading",
+    "q": "地圖北方朝上，車站位於公園右上方。由公園朝車站的相對方位是？",
+    "answer": "東北方",
+    "grades": [
+      "小六",
+      "國一"
+    ],
+    "demand": 2,
+    "reviewedAt": "2026-10-02",
+    "references": [
+      {
+        "title": "Seterra：全球地理測驗題型設計",
+        "url": "https://www.geoguessr.com/es/l/wor",
+        "role": "design"
+      }
+    ],
+    "fictionalScenario": true
+  },
+  {
+    "id": "source:map-river-network",
+    "q": "教學河網：水流依 A→B→D 入海，另一支流依 C→D 入海，且沒有逆流。若污染物從 B 隨水向下游傳輸，哪個判讀符合這張河網？",
+    "answer": "D 可能受影響，但不能由箭頭推出 A 或 C 也受影響",
+    "grades": [
+      "高一",
+      "高二",
+      "高三",
+      "大一",
+      "大二"
+    ],
+    "demand": 3,
+    "reviewedAt": "2026-10-02",
+    "references": [
+      {
+        "title": "Seterra：全球地理測驗題型設計",
+        "url": "https://www.geoguessr.com/es/l/wor",
+        "role": "design"
+      }
+    ],
+    "fictionalScenario": true
+  },
+  {
+    "id": "source:map-path-comparison",
+    "q": "教學路網：旅館到車站的直線路徑隔著河流，只有上游橋梁可通行。規劃步行路線時，哪個判讀較合理？",
+    "answer": "沿實際道路經橋梁過河，不能把直線當成可走路線",
+    "grades": [
+      "國二",
+      "國三"
+    ],
+    "demand": 3,
+    "reviewedAt": "2026-10-02",
+    "references": [
+      {
+        "title": "Seterra：全球地理測驗題型設計",
+        "url": "https://www.geoguessr.com/es/l/wor",
+        "role": "design"
+      }
+    ],
+    "fictionalScenario": true
+  },
+  {
+    "id": "source:map-sampling",
+    "q": "假設全球概覽地圖省略小島與狹窄水道，區域詳圖保留它們。研究者僅因概覽圖上看不到連接水道，就宣稱兩片水域完全不相通。哪種查核最合理？",
+    "answer": "檢查比例尺、圖例與省略規則，再以詳圖核對連通",
+    "grades": [
+      "大三",
+      "大四",
+      "研一",
+      "研二"
+    ],
+    "demand": 4,
+    "reviewedAt": "2026-10-02",
+    "references": [
+      {
+        "title": "Seterra：全球地理測驗題型設計",
+        "url": "https://www.geoguessr.com/es/l/wor",
+        "role": "design"
+      }
+    ],
+    "fictionalScenario": true
+  }
+]

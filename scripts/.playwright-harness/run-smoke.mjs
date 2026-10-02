@@ -172,6 +172,31 @@ try {
   }
 
 
+  // Source references now start at their reviewed grades, not in the opening stage.
+  await waitForPlay(phone);
+  const referencesBefore = checkedReferenceQuestions;
+  let gradeThreeChecked = 0;
+  for (let step = 0; step < 45 && checkedReferenceQuestions - referencesBefore < 2; step++) {
+    if (await phone.locator('.reward-section').count()) {
+      await phone.locator('.reward-actions .primary-button').click();
+      await phone.waitForSelector('.answer-button:not([disabled])');
+    }
+    const grade = await phone.locator('.play-status .score-pill').first().textContent();
+    if (grade?.includes('小三')) {
+      const q = await phone.locator('.play-question-card h1').textContent();
+      assert.ok(!/平均每|總票價|萬人|都市人口比例|UTC|分母/.test(q), q);
+      gradeThreeChecked++;
+      await screenshot(phone, 'mobile-grade-three-geography');
+    }
+    await answerUntilCorrect(phone);
+    if (await phone.locator('.question-references').count()) {
+      await screenshot(phone, 'mobile-source-feedback');
+      assert.ok(await phone.evaluate(() => document.documentElement.scrollWidth <= innerWidth));
+    }
+    await advanceFeedback(phone);
+  }
+  assert.equal(gradeThreeChecked, 6, 'exercise the actual grade-three stage');
+
   await waitForPlay(desktop);
   await desktop.getByRole("button", { name: /^重玩$/ }).click();
   await desktop.waitForTimeout(3500);

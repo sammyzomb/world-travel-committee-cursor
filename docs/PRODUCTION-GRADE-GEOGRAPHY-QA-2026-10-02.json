@@ -1,0 +1,404 @@
+{
+  "ok": true,
+  "date": "2026-10-02",
+  "url": "https://world-travel-committee.tcawg.workers.dev",
+  "questionBankVersion": "fa5db20ffcbd75c7",
+  "checks": [
+    {
+      "viewport": {
+        "width": 1280,
+        "height": 650
+      },
+      "gradeCounts": {
+        "國小・小一": 5,
+        "國小・小二": 5,
+        "國小・小三": 6,
+        "國小・小四": 6,
+        "國小・小五": 7,
+        "國小・小六": 7
+      },
+      "sourceChecks": 5,
+      "questions": [
+        {
+          "grade": "國小・小一",
+          "id": "warmup:uer62h",
+          "q": "富士山是日本最高的山。"
+        },
+        {
+          "grade": "國小・小一",
+          "id": "warmup:1esry98",
+          "q": "馬丘比丘位於秘魯。"
+        },
+        {
+          "grade": "國小・小一",
+          "id": "learning:geo-child-environment-22",
+          "q": "住在海邊的人使用漁船，主要可能從事哪種活動？"
+        },
+        {
+          "grade": "國小・小一",
+          "id": "learning:geo-child-environment-3",
+          "q": "看見湖邊有野生動物，較適合怎麼做？"
+        },
+        {
+          "grade": "國小・小一",
+          "id": "heritage-city:1s6fbsa",
+          "q": "黃山位於哪一個國家？"
+        },
+        {
+          "grade": "國小・小二",
+          "id": "heritage-continent:1pmz5qk",
+          "q": "土耳其位於哪一洲？"
+        },
+        {
+          "grade": "國小・小二",
+          "id": "learning:geo-child-landscape-4",
+          "q": "森林裡看到倒下的樹幹，較合理的想法是？"
+        },
+        {
+          "grade": "國小・小二",
+          "id": "learning:geo-child-environment-1",
+          "q": "到海灘玩後，自己的垃圾應怎麼處理？"
+        },
+        {
+          "grade": "國小・小二",
+          "id": "learning:geo-child-environment-13",
+          "q": "高山與平原相比，哪項描述較合適？"
+        },
+        {
+          "grade": "國小・小二",
+          "id": "learning:geo-child-environment-5",
+          "q": "晴天戶外走路，哪種裝備較實用？"
+        },
+        {
+          "grade": "國小・小三",
+          "id": "learning:geo-child-geography-7",
+          "q": "看到地圖上兩條步道，一條跨過陡坡、一條沿平地，選路時應看什麼？"
+        },
+        {
+          "grade": "國小・小三",
+          "id": "learning:geo-child-geography-8",
+          "q": "海水退去後露出大片沙地，能說沙灘永久變大了嗎？"
+        },
+        {
+          "grade": "國小・小三",
+          "id": "learning:geo-child-geography-1",
+          "q": "地圖上河流用藍線表示，藍線旁的橋梁符號能幫助找什麼？"
+        },
+        {
+          "grade": "國小・小三",
+          "id": "learning:geo-child-geography-9",
+          "q": "某地有明顯雨季，安排戶外參訪時最應查看什麼？"
+        },
+        {
+          "grade": "國小・小三",
+          "id": "learning:geo-child-geography-10",
+          "q": "旅途中遇到自己不熟悉的飲食習慣，較合適怎麼做？"
+        },
+        {
+          "grade": "國小・小三",
+          "id": "learning:geo-child-geography-2",
+          "q": "河岸有許多蘆葦和水鳥，填平這片濕地最可能造成什麼？"
+        },
+        {
+          "grade": "國小・小四",
+          "id": "learning:basic-rail",
+          "q": "搭火車前，月台號碼與車次應如何核對？"
+        },
+        {
+          "grade": "國小・小四",
+          "id": "learning:basic-habitat",
+          "q": "「棲地」主要指什麼？"
+        },
+        {
+          "grade": "國小・小四",
+          "id": "source:coordinate-reading",
+          "q": "觀測點 P 的資料為北緯 20 度、東經 30 度。它位於哪一組半球？"
+        },
+        {
+          "grade": "國小・小四",
+          "id": "learning:geo-child-geography-5",
+          "q": "沙漠旅行白天晴朗，就能認定晚上也很熱嗎？"
+        },
+        {
+          "grade": "國小・小四",
+          "id": "learning:basic-tide",
+          "q": "海岸一天內水位有規律地升降，通常稱為？"
+        },
+        {
+          "grade": "國小・小四",
+          "id": "learning:basic-river",
+          "q": "河流的上游與下游，主要依什麼區分？"
+        },
+        {
+          "grade": "國小・小五",
+          "id": "learning:concept-park-count",
+          "q": "兩個公園記錄到相近數量的鳥，但一處觀察時間較長。直接說兩地鳥一樣多，有何不足？"
+        },
+        {
+          "grade": "國小・小五",
+          "id": "learning:concept-sediment",
+          "q": "河流進入平緩地區後流速降低。哪種變化較可能出現？"
+        },
+        {
+          "grade": "國小・小五",
+          "id": "learning:basic-booking",
+          "q": "預約景點時段時，最需要同時核對什麼？"
+        },
+        {
+          "grade": "國小・小五",
+          "id": "learning:concept-seasonal-rain",
+          "q": "年雨量相同的兩地，一地雨量集中於兩個月，另一地全年均勻。規劃旅行時應比較？"
+        },
+        {
+          "grade": "國小・小五",
+          "id": "learning:basic-art",
+          "q": "比較兩件藝術品時，哪組資訊更有助於理解？"
+        },
+        {
+          "grade": "國小・小五",
+          "id": "learning:basic-heritage",
+          "q": "文化遺產保存與單純複製外觀的差別是？"
+        },
+        {
+          "grade": "國小・小五",
+          "id": "learning:basic-map",
+          "q": "地圖圖例的主要用途是？"
+        },
+        {
+          "grade": "國小・小六",
+          "id": "learning:geo-child-understanding-13",
+          "q": "高山上植物種類和山腳不同，較合理的解釋是？"
+        },
+        {
+          "grade": "國小・小六",
+          "id": "source:ocean-motion",
+          "q": "漂流物隨海水持續朝某方向移動，與海面上下起伏不同。這種水體的定向流動稱為？"
+        },
+        {
+          "grade": "國小・小六",
+          "id": "source:map-route-heading",
+          "q": "地圖北方朝上，車站位於公園右上方。由公園朝車站的相對方位是？"
+        },
+        {
+          "grade": "國小・小六",
+          "id": "learning:geo-child-understanding-11",
+          "q": "某地每年都有乾濕季，旅行時只看年降雨總量有何不足？"
+        },
+        {
+          "grade": "國小・小六",
+          "id": "source:angkor-system",
+          "q": "吳哥的古代城市除了寺廟，還有水庫、渠道與堤壩。若研究古城如何運作，哪組資料較完整？"
+        },
+        {
+          "grade": "國小・小六",
+          "id": "learning:geo-child-understanding-2",
+          "q": "下游居民關心飲水，上游排入污染物時為何也需留意？"
+        },
+        {
+          "grade": "國小・小六",
+          "id": "source:weather-sample",
+          "q": "研究加拿大某城是否有雨季，甲資料是一週天氣，乙資料是多年各月雨量。哪份更適合回答這個問題？"
+        }
+      ]
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "gradeCounts": {
+        "國小・小一": 5,
+        "國小・小二": 5,
+        "國小・小三": 6,
+        "國小・小四": 6,
+        "國小・小五": 7,
+        "國小・小六": 7
+      },
+      "sourceChecks": 5,
+      "questions": [
+        {
+          "grade": "國小・小一",
+          "id": "warmup:ay2uz6",
+          "q": "世界上最大的海洋是太平洋。"
+        },
+        {
+          "grade": "國小・小一",
+          "id": "warmup:dveciz",
+          "q": "雪梨歌劇院位於澳洲。"
+        },
+        {
+          "grade": "國小・小一",
+          "id": "heritage-continent:wj5psg",
+          "q": "中國位於哪一洲？"
+        },
+        {
+          "grade": "國小・小一",
+          "id": "learning:geo-child-environment-1",
+          "q": "到海灘玩後，自己的垃圾應怎麼處理？"
+        },
+        {
+          "grade": "國小・小一",
+          "id": "learning:geo-child-environment-2",
+          "q": "參觀森林時，為什麼要走指定步道？"
+        },
+        {
+          "grade": "國小・小二",
+          "id": "learning:geo-child-environment-10",
+          "q": "看到海邊浪很大，較適合怎麼做？"
+        },
+        {
+          "grade": "國小・小二",
+          "id": "learning:geo-child-landscape-5",
+          "q": "要分辨山地與平原，照片中的哪項資訊最有幫助？"
+        },
+        {
+          "grade": "國小・小二",
+          "id": "learning:geo-child-environment-5",
+          "q": "晴天戶外走路，哪種裝備較實用？"
+        },
+        {
+          "grade": "國小・小二",
+          "id": "heritage-continent:ac7u9y",
+          "q": "法國位於哪一洲？"
+        },
+        {
+          "grade": "國小・小二",
+          "id": "learning:geo-child-environment-18",
+          "q": "看見山上的樹木和小動物，哪項想法較合適？"
+        },
+        {
+          "grade": "國小・小三",
+          "id": "learning:geo-child-geography-10",
+          "q": "旅途中遇到自己不熟悉的飲食習慣，較合適怎麼做？"
+        },
+        {
+          "grade": "國小・小三",
+          "id": "learning:geo-child-geography-8",
+          "q": "海水退去後露出大片沙地，能說沙灘永久變大了嗎？"
+        },
+        {
+          "grade": "國小・小三",
+          "id": "learning:geo-child-geography-2",
+          "q": "河岸有許多蘆葦和水鳥，填平這片濕地最可能造成什麼？"
+        },
+        {
+          "grade": "國小・小三",
+          "id": "learning:geo-child-geography-7",
+          "q": "看到地圖上兩條步道，一條跨過陡坡、一條沿平地，選路時應看什麼？"
+        },
+        {
+          "grade": "國小・小三",
+          "id": "learning:geo-child-geography-3",
+          "q": "同一天山頂比山腳涼，出發去山頂時應考慮什麼？"
+        },
+        {
+          "grade": "國小・小三",
+          "id": "learning:geo-child-geography-1",
+          "q": "地圖上河流用藍線表示，藍線旁的橋梁符號能幫助找什麼？"
+        },
+        {
+          "grade": "國小・小四",
+          "id": "learning:basic-lake",
+          "q": "與河流相比，湖泊通常有哪項特徵？"
+        },
+        {
+          "grade": "國小・小四",
+          "id": "learning:basic-weather",
+          "q": "今天下雨與某地多年雨季的描述，分別屬於？"
+        },
+        {
+          "grade": "國小・小四",
+          "id": "learning:geo-child-geography-9",
+          "q": "某地有明顯雨季，安排戶外參訪時最應查看什麼？"
+        },
+        {
+          "grade": "國小・小四",
+          "id": "learning:basic-altitude",
+          "q": "海拔與山路實際走過的長度有何不同？"
+        },
+        {
+          "grade": "國小・小四",
+          "id": "source:coordinate-reading",
+          "q": "觀測點 P 的資料為北緯 20 度、東經 30 度。它位於哪一組半球？"
+        },
+        {
+          "grade": "國小・小四",
+          "id": "learning:basic-rail",
+          "q": "搭火車前，月台號碼與車次應如何核對？"
+        },
+        {
+          "grade": "國小・小五",
+          "id": "learning:concept-booking-capacity",
+          "q": "景點採分時預約，並限定同時在場人數。最符合限制的安排是？"
+        },
+        {
+          "grade": "國小・小五",
+          "id": "learning:concept-museum-provenance",
+          "q": "兩件外觀相似的文物，來源記錄完整的一件通常更利於研究什麼？"
+        },
+        {
+          "grade": "國小・小五",
+          "id": "learning:basic-season",
+          "q": "南北半球的主要季節通常有何關係？"
+        },
+        {
+          "grade": "國小・小五",
+          "id": "learning:concept-sediment",
+          "q": "河流進入平緩地區後流速降低。哪種變化較可能出現？"
+        },
+        {
+          "grade": "國小・小五",
+          "id": "learning:concept-corridor",
+          "q": "道路把同一物種的棲地切成兩塊。設置生態通道主要想改善什麼？"
+        },
+        {
+          "grade": "國小・小五",
+          "id": "learning:concept-coast",
+          "q": "海岸某段持續流失沙量。只看一次低潮照片就認定沙灘變大，有何問題？"
+        },
+        {
+          "grade": "國小・小五",
+          "id": "learning:basic-scale",
+          "q": "地圖比例尺用來表示什麼關係？"
+        },
+        {
+          "grade": "國小・小六",
+          "id": "source:map-route-heading",
+          "q": "地圖北方朝上，車站位於公園右上方。由公園朝車站的相對方位是？"
+        },
+        {
+          "grade": "國小・小六",
+          "id": "learning:geo-child-understanding-22",
+          "q": "河流跨越幾個行政區，保護水質為何需要合作？"
+        },
+        {
+          "grade": "國小・小六",
+          "id": "learning:geo-child-understanding-11",
+          "q": "某地每年都有乾濕季，旅行時只看年降雨總量有何不足？"
+        },
+        {
+          "grade": "國小・小六",
+          "id": "source:ocean-motion",
+          "q": "漂流物隨海水持續朝某方向移動，與海面上下起伏不同。這種水體的定向流動稱為？"
+        },
+        {
+          "grade": "國小・小六",
+          "id": "learning:geo-child-understanding-16",
+          "q": "河岸濕地能暫時蓄水，保留濕地一定可避免所有淹水嗎？"
+        },
+        {
+          "grade": "國小・小六",
+          "id": "source:weather-sample",
+          "q": "研究加拿大某城是否有雨季，甲資料是一週天氣，乙資料是多年各月雨量。哪份更適合回答這個問題？"
+        },
+        {
+          "grade": "國小・小六",
+          "id": "source:angkor-system",
+          "q": "吳哥的古代城市除了寺廟，還有水庫、渠道與堤壩。若研究古城如何運作，哪組資料較完整？"
+        }
+      ]
+    }
+  ],
+  "leaderboardSubmitted": false,
+  "deployment": "76950f07-1846-4c97-b3ae-b586d23882bc"
+}

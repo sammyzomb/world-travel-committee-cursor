@@ -46,76 +46,15 @@ try {
 } finally { resetGameRandom(); }
 assert.equal(positions.size, 4, 'correct answers must not stay in a fixed slot');
 
-// Recalculate numeric answers from the displayed stem, independently of the authoring parameters.
-let numericChecks = 0;
+// Regression: geography context must not disguise arithmetic, and primary eligibility is reviewed.
+const arithmetic = /平均每.{0,8}(?:多少|幾)|總票價|總費用.*(?:多少|最低)|換算.*距離|最晚何時|至少.*幾批|差多少|合併後.*每人|人口淨變化/;
 for (const q of learningQuestions) {
   assert.equal(new Set(q.options).size, 4, q.id);
-  const answer = q.options[q.answer];
-  if (q.family === 'timezone-calculation') {
-    const dest = Number(q.q.match(/目的地使用 UTC([+-]\d+)/)[1]);
-    const [,h,m] = q.q.match(/當地 (\d+):(\d+) 起飛/).map(Number);
-    const flight = Number(q.q.match(/飛行 (\d+) 分鐘/)[1]);
-    const total = h * 60 + m + flight + (dest - 8) * 60 + (q.q.includes('車站') ? 65 : 0);
-    const clock = ((total % 1440) + 1440) % 1440;
-    const date = total < 0 ? '前一日 ' : total >= 1440 ? '次日 ' : '同日 ';
-    assert.equal(answer, date + String(Math.floor(clock / 60)).padStart(2,'0') + ':' + String(clock % 60).padStart(2,'0'), q.id);
-    numericChecks++;
-  }
-  if (q.family === 'transport-cost' && q.q.includes('包車')) {
-    const people = Number(q.q.match(/^(\d+) 人/)[1]);
-    const capacity = Number(q.q.match(/可載 (\d+) 人/)[1]);
-    const fee = Number(q.q.match(/每輛 (\d+) 元/)[1]);
-    const price = Number(q.q.match(/鐵路每人 (\d+) 元/)[1]);
-    const coach = Math.ceil(people/capacity)*fee;
-    const rail = people*price - (q.q.includes('整團總費用折') ? Math.floor(people/10)*90 : 0);
-    assert.notEqual(coach, rail, q.id);
-    assert.equal(answer, `${coach < rail ? '包車' : '鐵路'}，${Math.min(coach,rail)} 元`, q.id);
-    numericChecks++;
-  }
-  if (q.family === 'site-capacity' && q.q.includes('每批停留')) {
-    const dwell = Number(q.q.match(/停留 (\d+) 分鐘/)[1]);
-    const interval = Number(q.q.match(/每 (\d+) 分鐘/)[1]);
-    const limit = Number(q.q.match(/超過 (\d+) 人/)[1]);
-    const requested = Number(q.q.match(/(\d+) 人申請/)[1]);
-    assert.equal(answer, `${Math.min(requested, Math.floor(limit/Math.ceil(dwell/interval))*3)} 人`, q.id);
-    numericChecks++;
-  }
-  if (q.family === 'map-scale' && q.q.includes('假設')) {
-    const scale = Number(q.q.match(/1:(\d+)/)[1]);
-    const cm = Number(q.q.match(/量得 (\d+) 公分/)[1]);
-    const km = scale*cm/100000;
-    const minutes = q.q.includes('前半段') ? km/2/3*60 + km/2/6*60 + 18 : km/5*60;
-    assert.equal(answer, `${Math.round(minutes*10)/10} 分鐘`, q.id);
-    numericChecks++;
-  }
-  if (q.family === 'climate-comparison' && q.q.includes('題定指標')) {
-    const a = Number(q.q.match(/甲降雨 (\d+) 毫米/)[1]);
-    const b = Number(q.q.match(/乙 (\d+) 毫米/)[1]);
-    const weight = Number(q.q.match(/月雨量＋(\d+)×/)[1]);
-    const sa=a+weight*10, sb=b+weight*2;
-    assert.notEqual(sa,sb);
-    assert.equal(answer, `${sa<sb?'甲':'乙'}，${Math.min(sa,sb)}`, q.id);
-    numericChecks++;
-  }
-  if (q.family === 'environment-indicators') {
-    const nums = [...q.q.matchAll(/(?:甲團|乙團) (\d+) 人、每人每小時 (\d+) 單位、停留 (\d+) 小時/g)].map(m=>m.slice(1).map(Number));
-    assert.equal(nums.length,2,q.id);
-    const [a,b] = nums.map(xs=>xs.reduce((n,x)=>n*x,1));
-    assert.notEqual(a,b,q.id);
-    assert.equal(answer, `${a<b?'甲':'乙'}，總量 ${Math.min(a,b)}`, q.id);
-    numericChecks++;
-  }
-  if (q.family === 'schedule-backward' && q.q.includes('參觀需')) {
-    const visit = Number(q.q.match(/參觀需 (\d+) 分鐘/)[1]);
-    const walk = Number(q.q.match(/步行 (\d+) 分鐘/)[1]);
-    const buffer = Number(q.q.match(/提早 (\d+) 分鐘/)[1]);
-    const [,h,m] = q.q.match(/火車 (\d+):(\d+)/).map(Number);
-    const start=h*60+m-visit-walk-buffer;
-    assert.equal(answer, String(Math.floor(start/60)).padStart(2,'0')+':'+String(start%60).padStart(2,'0'),q.id);
-    numericChecks++;
-  }
+  assert.ok(q.grades.length > 0, q.id + ' needs an explicit grade review');
+  assert.ok(!arithmetic.test(q.q), q.q);
+  assert.ok(!/^learning:(?:apply-|scenario-)/.test(q.id), 'old arithmetic IDs must be retired');
 }
+for (const q of approvedQuestions) assert.ok(!arithmetic.test(q.q), q.q);
 const raw = JSON.parse(readFileSync(new URL('../data/learning-questions.json', import.meta.url)));
 assert.equal(raw.length, learningQuestions.length);
-assert.equal(numericChecks, 156);
-console.log('PASS: 50 complete runs, demand/family limits, answer shuffling, Mexico scoring, hidden hints and 156 independent numerical checks.');
+console.log('PASS: 50 complete runs, demand/family limits, answer shuffling, Mexico scoring, hidden hints and no arithmetic substitution.');

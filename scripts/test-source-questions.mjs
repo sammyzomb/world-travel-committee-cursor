@@ -26,10 +26,10 @@ for(const q of sourceQuestions){
 assert.equal(groups.size,5);
 assert.equal(sourceQuestions.length,25);
 for(const region of ['亞洲','歐洲','非洲','北美洲','南美洲','大洋洲','南極洲'])assert.ok(regions.has(region),region);
-const answers=new Map(sourceQuestions.map(q=>[q.id,q.options[q.answer]]));
-assert.equal(answers.get('source:weighted-water'),`${(1000000*1000+9000000*100)/(1000000+9000000)} 立方公尺；不能推定服務相同`);
-assert.equal(answers.get('source:population-balance'),`減少 ${Math.abs(8000-5000+2000-6000).toLocaleString('en-US')} 人；自然增加被淨移出抵銷`);
-assert.equal(answers.get('source:map-path-comparison'),`經 C，短 ${(3+8)-(6+2)} 公里`);
+for(const q of sourceQuestions) {
+ assert.ok(q.grades.length > 0, q.id);
+ assert.ok(!/總票價|平均每|淨變化|差多少|合併後/.test(q.q), q.q);
+}
 try{
   for(let seed=1;seed<=10;seed++){
     setGameRandomSeed(seed);
@@ -41,4 +41,4 @@ try{
     assert.equal(replay.completeThroughFinal,true,'priority must not exhaust replay');
   }
 }finally{resetGameRandom();}
-console.log('PASS: five sources, seven regions, original calculations, hidden references, actual round inclusion and replay.');
+console.log('PASS: five sources, seven regions, geographic reasoning and grade review, hidden references, actual round inclusion and replay.');

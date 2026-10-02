@@ -1,4 +1,4 @@
-import { questionDemand, minDemandForStage } from "./question-demand";
+import { questionDemand, minDemandForStage, isLocationRecall } from "./question-demand";
 import { educationStages } from "./game-config";
 import {
   allowedTypesForStage,
@@ -23,8 +23,17 @@ function questionGradesAllowStage(question: Question, stageIndex: number) {
   return grade ? question.grades.includes(grade) : false;
 }
 
+export function isReviewedForPrimary(question: Question, stageIndex: number) {
+  if (stageIndex > 5 || question.kind === "tf") return true;
+  // 舊定位題只可出現在小五以前，仍受每關一題上限限制。
+  if (stageIndex <= 4 && isLocationRecall(question.q) && question.grades.length === 0) return true;
+  return question.grades.includes(educationStages[stageIndex]?.name);
+}
+
 export function questionMatchesStageRules(question: Question, stageIndex: number) {
   if (question.auditStatus !== "approved") return false;
+  if (!isReviewedForPrimary(question, stageIndex)) return false;
+  if (stageIndex <= 5 && questionDemand(question) > 2) return false;
   if (questionDemand(question) < minDemandForStage(stageIndex)) return false;
   if (question.kind !== "tf" && question.options[question.answer]?.length >= 2 && question.q.includes(question.options[question.answer])) return false;
   if (stageIndex === 0) {
@@ -66,6 +75,8 @@ export function questionMatchesStageRules(question: Question, stageIndex: number
 
 export function describeStageRuleViolation(question: Question, stageIndex: number): string {
   if (question.auditStatus !== "approved") return "題目尚未核准";
+  if (!isReviewedForPrimary(question, stageIndex)) return "國小題缺少此年級的內容審查";
+  if (stageIndex <= 5 && questionDemand(question) > 2) return "進階推理不適用國小關卡";
   if (questionDemand(question) < minDemandForStage(stageIndex)) return "認知要求低於此關下限";
   if (question.kind !== "tf" && question.options[question.answer]?.length >= 2 && question.q.includes(question.options[question.answer])) return "題幹含有正確答案";
   if (stageIndex === 0) {

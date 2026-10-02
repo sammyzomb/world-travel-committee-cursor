@@ -35,3 +35,5 @@
 龍坡邦古城：https://whc.unesco.org/en/list/479/
 
 修改與逐題資料：data/learning-questions.json、data/question-editorial-overrides.json；檢驗入口 scripts/test-question-quality.mjs。
+
+> 2026-10-02 更新：本文為前次版本紀錄。計算題與年級分配已由 [地理主題與國小年級修正](GRADE-GEOGRAPHY-QUALITY-2026-10-02.md) 取代，現行題庫版本為 `fa5db20ffcbd75c7`。

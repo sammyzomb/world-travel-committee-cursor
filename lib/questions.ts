@@ -485,7 +485,7 @@ export const supplementQuestions: Question[] = (questionBank.supplementQuestions
     );
   },
 );
-export const learningQuestions: Question[] = (learningQuestionsJson as unknown as (RawQuestion & { id: string; demand: number; family: string; subtopic: string; grades: string[] })[]).map(raw => attachVisual(raw, { id: raw.id, conceptId: 'learning:' + raw.id, source: '情境與理解題（完整條件與逐題推導）', auditStatus: 'approved', grades: raw.grades }));
+export const learningQuestions: Question[] = (learningQuestionsJson as unknown as (RawQuestion & { id: string; demand: number; family: string; subtopic: string; grades: string[] })[]).map(raw => attachVisual(raw, { id: raw.id, conceptId: 'learning:' + raw.id, source: '地理理解與判讀（逐題年級審查）', auditStatus: 'approved', grades: raw.grades }));
 export const sourceQuestions: Question[] = (sourceQuestionsJson as unknown as (RawQuestion & { id: string; demand: number; family: string; subtopic: string; grades: string[]; sourceGroup: string; references: QuestionReference[] })[]).map(raw => attachVisual(raw, { id: raw.id, conceptId: raw.id, source: raw.sourceGroup, auditStatus: 'approved', grades: raw.grades }));
 export const allQuestions: Question[] = [
   ...sourceQuestions,

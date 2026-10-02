@@ -2,8 +2,8 @@
   {
     "id": "source:ocean-motion",
     "sourceGroup": "National Geographic",
-    "level": "旅行新手",
-    "demand": 1,
+    "level": "國家達人",
+    "demand": 2,
     "family": "ocean-motion",
     "subtopic": "oceans-coasts-islands",
     "region": "全球／通用",
@@ -19,9 +19,12 @@
     "kind": "choice",
     "category": "世界地理",
     "questionType": "world-fact",
-    "grades": [],
+    "grades": [
+      "小六",
+      "國一"
+    ],
     "fictionalScenario": false,
-    "reviewedAt": "2026-10-01",
+    "reviewedAt": "2026-10-02",
     "references": [
       {
         "title": "National Geographic：Ocean Currents",
@@ -33,7 +36,7 @@
   {
     "id": "source:weather-sample",
     "sourceGroup": "National Geographic",
-    "level": "城市旅人",
+    "level": "國家達人",
     "demand": 2,
     "family": "climate-time-scale",
     "subtopic": "climate-polar",
@@ -50,9 +53,12 @@
     "kind": "choice",
     "category": "世界地理",
     "questionType": "world-fact",
-    "grades": [],
+    "grades": [
+      "小六",
+      "國一"
+    ],
     "fictionalScenario": true,
-    "reviewedAt": "2026-10-01",
+    "reviewedAt": "2026-10-02",
     "references": [
       {
         "title": "National Geographic：All About Climate",
@@ -81,9 +87,12 @@
     "kind": "choice",
     "category": "世界地理",
     "questionType": "world-fact",
-    "grades": [],
+    "grades": [
+      "國二",
+      "國三"
+    ],
     "fictionalScenario": true,
-    "reviewedAt": "2026-10-01",
+    "reviewedAt": "2026-10-02",
     "references": [
       {
         "title": "National Geographic：All About Climate",
@@ -119,7 +128,7 @@
       "研二"
     ],
     "fictionalScenario": true,
-    "reviewedAt": "2026-10-01",
+    "reviewedAt": "2026-10-02",
     "references": [
       {
         "title": "National Geographic：Ocean Currents",
@@ -136,7 +145,7 @@
     "family": "tectonic-evidence",
     "subtopic": "mountains-volcanoes",
     "region": "全球／通用",
-    "q": "教學資料：海底山脊兩側岩石年齡都隨離脊距離增加，且形成大致對稱的年代帶。這組證據較支持哪項解釋，仍須避免哪個過度推論？",
+    "q": "教學資料：海底山脊兩側巖石年齡都隨離脊距離增加，且形成大致對稱的年代帶。這組證據較支持哪項解釋，仍須避免哪個過度推論？",
     "options": [
       "支持海底擴張；不能僅憑年齡帶預測下一次地震日期",
       "支持海底擴張；能精確推定下一次地震日期",
@@ -155,7 +164,7 @@
       "研二"
     ],
     "fictionalScenario": true,
-    "reviewedAt": "2026-10-01",
+    "reviewedAt": "2026-10-02",
     "references": [
       {
         "title": "National Geographic：Plate Tectonics",
@@ -167,7 +176,7 @@
   {
     "id": "source:angkor-system",
     "sourceGroup": "UNESCO",
-    "level": "城市旅人",
+    "level": "國家達人",
     "demand": 2,
     "family": "heritage-water-system",
     "subtopic": "historic-sites",
@@ -184,9 +193,12 @@
     "kind": "choice",
     "category": "世界遺產",
     "questionType": "world-fact",
-    "grades": [],
+    "grades": [
+      "小六",
+      "國一"
+    ],
     "fictionalScenario": false,
-    "reviewedAt": "2026-10-01",
+    "reviewedAt": "2026-10-02",
     "references": [
       {
         "title": "UNESCO：吳哥",
@@ -223,7 +235,7 @@
       "大二"
     ],
     "fictionalScenario": true,
-    "reviewedAt": "2026-10-01",
+    "reviewedAt": "2026-10-02",
     "references": [
       {
         "title": "UNESCO：馬丘比丘",
@@ -252,9 +264,12 @@
     "kind": "choice",
     "category": "世界遺產",
     "questionType": "world-fact",
-    "grades": [],
+    "grades": [
+      "國二",
+      "國三"
+    ],
     "fictionalScenario": true,
-    "reviewedAt": "2026-10-01",
+    "reviewedAt": "2026-10-02",
     "references": [
       {
         "title": "UNESCO：塞倫蓋提",
@@ -279,7 +294,7 @@
       "收入上升本身足以證明所有保存目標"
     ],
     "answer": 0,
-    "fact": "UNESCO 指出觀光壓力可能改變威尼斯居住與生活功能；單一收入指標不能證明整體文化與社會完整性。數據趨勢為題定情境。",
+    "fact": "UNESCO 指出觀光壓力可能改變威尼斯居住與生活功能；單一收入指標不能證明整體文化與社會完整性。資料趨勢為題定情境。",
     "kind": "choice",
     "category": "世界遺產",
     "questionType": "world-fact",
@@ -290,7 +305,7 @@
       "研二"
     ],
     "fictionalScenario": true,
-    "reviewedAt": "2026-10-01",
+    "reviewedAt": "2026-10-02",
     "references": [
       {
         "title": "UNESCO：威尼斯與潟湖",
@@ -326,7 +341,7 @@
       "研二"
     ],
     "fictionalScenario": true,
-    "reviewedAt": "2026-10-01",
+    "reviewedAt": "2026-10-02",
     "references": [
       {
         "title": "UNESCO：大堡礁",
@@ -338,26 +353,29 @@
   {
     "id": "source:urban-ratio",
     "sourceGroup": "World Bank",
-    "level": "城市旅人",
+    "level": "洲際領隊",
     "demand": 2,
     "family": "population-denominator",
     "subtopic": "population-urban",
     "region": "全球／通用",
-    "q": "教學用甲國有 1,000 萬人，其中 600 萬住在都市；乙國有 200 萬人，其中 160 萬住在都市。哪個判讀同時區分比例與人數？",
+    "q": "都市人口比例與都市人口總數是不同指標。若想了解居民分布在哪些都市，還需要什麼資料？",
     "options": [
-      "乙的都市人口比例較高，甲的都市人口數較多",
-      "乙的都市人口比例與人數都較高",
-      "甲的都市人口比例與人數都較高",
-      "兩國都市人口比例相同"
+      "都市位置、範圍與人口分布",
+      "只看國家總人口就能知道每個都市的位置",
+      "只看首都名稱即可代表所有居民分布",
+      "只比較國旗即可解釋都市結構"
     ],
     "answer": 0,
-    "fact": "甲的比例為 60%、乙為 80%；都市人口數分別是 600 萬與 160 萬。數字是教學假設，不代表任何真實國家。",
+    "fact": "世界銀行的都市人口比例依各國都市定義統計；總體比例不能呈現國內各都市的位置與分布。",
     "kind": "choice",
     "category": "世界地理",
     "questionType": "world-fact",
-    "grades": [],
-    "fictionalScenario": true,
-    "reviewedAt": "2026-10-01",
+    "grades": [
+      "國二",
+      "國三"
+    ],
+    "fictionalScenario": false,
+    "reviewedAt": "2026-10-02",
     "references": [
       {
         "title": "世界銀行：都市人口比例的定義",
@@ -393,7 +411,7 @@
       "研二"
     ],
     "fictionalScenario": false,
-    "reviewedAt": "2026-10-01",
+    "reviewedAt": "2026-10-02",
     "references": [
       {
         "title": "世界銀行：都市人口比例的定義",
@@ -405,7 +423,7 @@
   {
     "id": "source:water-flow",
     "sourceGroup": "World Bank",
-    "level": "國家達人",
+    "level": "洲際領隊",
     "demand": 2,
     "family": "water-resource-definition",
     "subtopic": "resources-development",
@@ -422,9 +440,12 @@
     "kind": "choice",
     "category": "世界地理",
     "questionType": "world-fact",
-    "grades": [],
+    "grades": [
+      "國二",
+      "國三"
+    ],
     "fictionalScenario": false,
-    "reviewedAt": "2026-10-01",
+    "reviewedAt": "2026-10-02",
     "references": [
       {
         "title": "世界銀行：每人內部可再生淡水資源",
@@ -441,21 +462,24 @@
     "family": "resource-denominator-change",
     "subtopic": "resources-development",
     "region": "全球／通用",
-    "q": "教學假設：某國年度內部可再生淡水總量不變，人口由 500 萬增至 1,000 萬。每人資源指標減半，能單憑這項變化說總水資源量也減半嗎？",
+    "q": "教學情境：某國水資源統計看似充足，但偏遠村落仍缺穩定供水。理解這種差異應進一步調查什麼？",
     "options": [
-      "不能，人口分母增加即可使每人指標下降",
-      "能，每人值減半必定代表總量減半",
-      "能，人口變化不會影響任何每人指標",
-      "不能，因為所有每人指標都沒有用途"
+      "水源、處理與輸配設施及服務可近性",
+      "只把全國資源量當成每村獲得的水量",
+      "只看國家總面積，不必調查供水設備",
+      "只要國家有大河就能排除缺水"
     ],
     "answer": 0,
-    "fact": "總量除以人口；分母加倍、分子不變，比值減半。需把指標變化與其分子、分母的變化分開。",
+    "fact": "自然資源統計不等同家庭供水服務，資源位置與設備、可近性都需要另行調查。",
     "kind": "choice",
     "category": "世界地理",
     "questionType": "world-fact",
-    "grades": [],
+    "grades": [
+      "國二",
+      "國三"
+    ],
     "fictionalScenario": true,
-    "reviewedAt": "2026-10-01",
+    "reviewedAt": "2026-10-02",
     "references": [
       {
         "title": "世界銀行：每人內部可再生淡水資源",
@@ -472,15 +496,15 @@
     "family": "weighted-country-comparison",
     "subtopic": "resources-development",
     "region": "全球／通用",
-    "q": "假設甲國人口 100 萬、每人年度內部可再生淡水 1,000 立方公尺；乙國人口 900 萬、每人 100 立方公尺。合併後的每人值是多少，且能否由此推定兩國供水服務相同？",
+    "q": "教學情境：國家整體水資源指標改善，但部分偏遠社區供水仍不穩定。要檢驗「所有居民都已受益」，最合適的評估是？",
     "options": [
-      "190 立方公尺；不能推定服務相同",
-      "550 立方公尺；不能推定服務相同",
-      "190 立方公尺；能推定服務相同",
-      "550 立方公尺；能推定服務相同"
+      "分區檢查服務穩定性、水質與可近性，並核對指標口徑",
+      "只報告全國平均便能證明每戶情況",
+      "只改寫統計單位，就能排除服務差異",
+      "只看新水庫外觀，無需了解使用者"
     ],
     "answer": 0,
-    "fact": "先還原總量：10 億加 9 億立方公尺，再除以 1,000 萬人口，得到 190。資源指標不是供水服務指標；數字均為教學假設。",
+    "fact": "全國資源指標會隱藏空間及服務差異，需以地方服務資料檢驗居民受益情況。",
     "kind": "choice",
     "category": "世界地理",
     "questionType": "world-fact",
@@ -491,7 +515,7 @@
       "研二"
     ],
     "fictionalScenario": true,
-    "reviewedAt": "2026-10-01",
+    "reviewedAt": "2026-10-02",
     "references": [
       {
         "title": "世界銀行：每人內部可再生淡水資源",
@@ -527,7 +551,7 @@
       "研二"
     ],
     "fictionalScenario": true,
-    "reviewedAt": "2026-10-01",
+    "reviewedAt": "2026-10-02",
     "references": [
       {
         "title": "iGeo：讀圖與問題解決題型設計",
@@ -544,21 +568,24 @@
     "family": "urban-accessibility",
     "subtopic": "ground-transport",
     "region": "全球／通用",
-    "q": "教學路網：旅館到博物館甲線 15 分但必經階梯，乙線 20 分且全程無階梯。同行者使用輪椅，題定要求全程無階梯，再選耗時最短的合格路線，應選？",
+    "q": "教學情境：旅館到博物館甲線較短但必經階梯，乙線較長且全程無階梯。同行者使用輪椅，規劃時最應怎麼做？",
     "options": [
-      "乙線，20 分",
-      "甲線，15 分",
-      "兩線都不合格",
-      "只依地圖直線距離，無法使用題定資料"
+      "核對乙線全段無障礙條件，而非只以距離選路",
+      "只因甲線較短就認定適用",
+      "只看博物館入口，忽略中間路段",
+      "只依地圖直線距離保證通行"
     ],
     "answer": 0,
-    "fact": "先檢查無階梯的硬性條件，再比較合格路線耗時。這是原創路網情境，不代表任何城市的現地無障礙資訊。",
+    "fact": "無障礙可近性需核對整條路線與旅客需求。情境原創，不代表現地設施公告。",
     "kind": "choice",
     "category": "世界地理",
     "questionType": "world-fact",
-    "grades": [],
+    "grades": [
+      "國二",
+      "國三"
+    ],
     "fictionalScenario": true,
-    "reviewedAt": "2026-10-01",
+    "reviewedAt": "2026-10-02",
     "references": [
       {
         "title": "iGeo：讀圖與問題解決題型設計",
@@ -594,7 +621,7 @@
       "研二"
     ],
     "fictionalScenario": true,
-    "reviewedAt": "2026-10-01",
+    "reviewedAt": "2026-10-02",
     "references": [
       {
         "title": "iGeo：讀圖與問題解決題型設計",
@@ -611,15 +638,15 @@
     "family": "population-components",
     "subtopic": "population-urban",
     "region": "全球／通用",
-    "q": "假設某城一年出生 8,000 人、死亡 5,000 人、移入 2,000 人、移出 6,000 人，不計其他變動。人口淨變化及較合理的解釋是？",
+    "q": "教學情境：山村人口持續外移，都市就業機會增加。若研究聚落變化，哪組資料較能連結人口移動與地方條件？",
     "options": [
-      "減少 1,000 人；自然增加被淨移出抵銷",
-      "增加 3,000 人；只需計算出生與死亡",
-      "增加 10,000 人；只需計算出生與移入",
-      "減少 4,000 人；只需計算移入與移出"
+      "人口遷移、就業分布、交通與生活服務資料",
+      "只比較兩地建築顏色",
+      "只看一次市區人潮便認定所有居民已遷入",
+      "只依村名長短解釋人口外移"
     ],
     "answer": 0,
-    "fact": "自然增加 3,000 人，淨移出 4,000 人，合計減少 1,000 人。所有數字為教學假設，題型參考 iGeo 人口變化主題。",
+    "fact": "人口移動與生活、就業及空間連接可能相關；需比較多種地方資料，不能僅憑一次觀察推論。情境原創，iGeo 為題型參考。",
     "kind": "choice",
     "category": "世界地理",
     "questionType": "world-fact",
@@ -631,7 +658,7 @@
       "大二"
     ],
     "fictionalScenario": true,
-    "reviewedAt": "2026-10-01",
+    "reviewedAt": "2026-10-02",
     "references": [
       {
         "title": "iGeo：讀圖與問題解決題型設計",
@@ -667,7 +694,7 @@
       "研二"
     ],
     "fictionalScenario": true,
-    "reviewedAt": "2026-10-01",
+    "reviewedAt": "2026-10-02",
     "references": [
       {
         "title": "iGeo：讀圖與問題解決題型設計",
@@ -679,8 +706,8 @@
   {
     "id": "source:coordinate-reading",
     "sourceGroup": "Seterra",
-    "level": "旅行新手",
-    "demand": 1,
+    "level": "城市旅人",
+    "demand": 2,
     "family": "hemisphere-reading",
     "subtopic": "coordinates-time",
     "region": "全球／通用",
@@ -696,9 +723,12 @@
     "kind": "choice",
     "category": "世界地理",
     "questionType": "world-fact",
-    "grades": [],
+    "grades": [
+      "小四",
+      "小五"
+    ],
     "fictionalScenario": true,
-    "reviewedAt": "2026-10-01",
+    "reviewedAt": "2026-10-02",
     "references": [
       {
         "title": "Seterra：全球地理測驗題型設計",
@@ -710,12 +740,12 @@
   {
     "id": "source:map-route-heading",
     "sourceGroup": "Seterra",
-    "level": "城市旅人",
+    "level": "國家達人",
     "demand": 2,
     "family": "relative-map-position",
     "subtopic": "coordinates-time",
     "region": "全球／通用",
-    "q": "假設地圖北方朝上，甲點在北緯 10 度、東經 20 度；乙點在北緯 20 度、東經 30 度，兩點距離不跨日期變更線。乙在甲的哪個方位？",
+    "q": "地圖北方朝上，車站位於公園右上方。由公園朝車站的相對方位是？",
     "options": [
       "東北方",
       "西北方",
@@ -723,13 +753,16 @@
       "西南方"
     ],
     "answer": 0,
-    "fact": "乙的緯度往北增加、經度往東增加，因此相對方位為東北；座標是教學假設。",
+    "fact": "核對指北方向後，上方為北、右方為東，合起來是東北方。地圖位置為教學示意。",
     "kind": "choice",
     "category": "世界地理",
     "questionType": "world-fact",
-    "grades": [],
+    "grades": [
+      "小六",
+      "國一"
+    ],
     "fictionalScenario": true,
-    "reviewedAt": "2026-10-01",
+    "reviewedAt": "2026-10-02",
     "references": [
       {
         "title": "Seterra：全球地理測驗題型設計",
@@ -766,7 +799,7 @@
       "大二"
     ],
     "fictionalScenario": true,
-    "reviewedAt": "2026-10-01",
+    "reviewedAt": "2026-10-02",
     "references": [
       {
         "title": "Seterra：全球地理測驗題型設計",
@@ -783,21 +816,24 @@
     "family": "network-route-choice",
     "subtopic": "ground-transport",
     "region": "全球／通用",
-    "q": "教學路網，線段數字代表公里：A–B 為 3、B–D 為 8、A–C 為 6、C–D 為 2，除此沒有道路。若從 A 到 D 只比較總路程，哪條路較短，差多少？",
+    "q": "教學路網：旅館到車站的直線路徑隔著河流，只有上游橋梁可通行。規劃步行路線時，哪個判讀較合理？",
     "options": [
-      "經 C，短 3 公里",
-      "經 B，短 3 公里",
-      "經 C，短 6 公里",
-      "兩條相同"
+      "沿實際道路經橋梁過河，不能把直線當成可走路線",
+      "直接跨河，因為地圖上兩點很近",
+      "只看旅館與車站名稱，不必查道路",
+      "認定所有相交線都能自由轉彎"
     ],
     "answer": 0,
-    "fact": "經 B 是 3＋8＝11 公里，經 C 是 6＋2＝8 公里，差 3 公里；圖為原創教學路網，不是實際道路。",
+    "fact": "路線需要實際連通與通行條件，地圖幾何距離不能代替橋梁和道路資訊。路網為原創教學情境。",
     "kind": "choice",
     "category": "世界地理",
     "questionType": "world-fact",
-    "grades": [],
+    "grades": [
+      "國二",
+      "國三"
+    ],
     "fictionalScenario": true,
-    "reviewedAt": "2026-10-01",
+    "reviewedAt": "2026-10-02",
     "references": [
       {
         "title": "Seterra：全球地理測驗題型設計",
@@ -833,7 +869,7 @@
       "研二"
     ],
     "fictionalScenario": true,
-    "reviewedAt": "2026-10-01",
+    "reviewedAt": "2026-10-02",
     "references": [
       {
         "title": "Seterra：全球地理測驗題型設計",

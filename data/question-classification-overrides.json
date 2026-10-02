@@ -522,3462 +522,6 @@
     "subtopic": "monuments-landmarks",
     "note": "濱海灣金沙為建築地標；名稱中的海灣不代表海洋題。"
   },
-  "learning:basic-map": {
-    "subtopic": "coordinates-time",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:basic-scale": {
-    "subtopic": "coordinates-time",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:basic-river": {
-    "subtopic": "rivers-lakes-waterfalls",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:basic-lake": {
-    "subtopic": "rivers-lakes-waterfalls",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:basic-weather": {
-    "subtopic": "climate-polar",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:basic-season": {
-    "subtopic": "climate-polar",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:basic-fossil": {
-    "subtopic": "historic-sites",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:basic-museum": {
-    "subtopic": "museums-arts",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:basic-habitat": {
-    "subtopic": "ecology-parks",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:basic-wetland": {
-    "subtopic": "ecology-parks",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:basic-erosion": {
-    "subtopic": "deserts-rocks",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:basic-dune": {
-    "subtopic": "deserts-rocks",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:basic-coral": {
-    "subtopic": "oceans-coasts-islands",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:basic-tide": {
-    "subtopic": "oceans-coasts-islands",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:basic-rail": {
-    "subtopic": "ground-transport",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:basic-transfer": {
-    "subtopic": "ground-transport",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:basic-booking": {
-    "subtopic": "planning-itineraries",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:basic-buffer": {
-    "subtopic": "planning-itineraries",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:basic-heritage": {
-    "subtopic": "heritage-conservation",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:basic-living": {
-    "subtopic": "heritage-conservation",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:basic-altitude": {
-    "subtopic": "mountains-volcanoes",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:basic-volcano": {
-    "subtopic": "mountains-volcanoes",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:basic-garden": {
-    "subtopic": "gardens-landscapes",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:basic-art": {
-    "subtopic": "museums-arts",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:concept-rainshadow": {
-    "subtopic": "climate-polar",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:concept-urban": {
-    "subtopic": "climate-polar",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:concept-sediment": {
-    "subtopic": "deserts-rocks",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:concept-corridor": {
-    "subtopic": "ecology-parks",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:concept-coast": {
-    "subtopic": "oceans-coasts-islands",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:concept-heritage-context": {
-    "subtopic": "historic-sites",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:concept-museum-provenance": {
-    "subtopic": "museums-arts",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:concept-booking-capacity": {
-    "subtopic": "planning-itineraries",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:concept-timezone": {
-    "subtopic": "coordinates-time",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:concept-seasonal-rain": {
-    "subtopic": "climate-polar",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:concept-park-count": {
-    "subtopic": "ecology-parks",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:concept-digital-map": {
-    "subtopic": "digital-equipment",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:concept-watershed": {
-    "subtopic": "rivers-lakes-waterfalls",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:concept-scale-compare": {
-    "subtopic": "coordinates-time",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:concept-glacier": {
-    "subtopic": "deserts-rocks",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:concept-wetland-buffer": {
-    "subtopic": "ecology-parks",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:concept-heritage-original": {
-    "subtopic": "heritage-conservation",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:concept-heritage-community": {
-    "subtopic": "heritage-conservation",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:concept-route-direct": {
-    "subtopic": "ground-transport",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:concept-accessibility": {
-    "subtopic": "ground-transport",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:concept-latitude": {
-    "subtopic": "coordinates-time",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:concept-mountain-route": {
-    "subtopic": "mountains-volcanoes",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:concept-gardens-water": {
-    "subtopic": "gardens-landscapes",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:concept-local-culture": {
-    "subtopic": "culture-etiquette",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-3-0-route": {
-    "subtopic": "ground-transport",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-3-0-clock": {
-    "subtopic": "coordinates-time",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-3-0-ticket": {
-    "subtopic": "ground-transport",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-3-0-schedule": {
-    "subtopic": "planning-itineraries",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-3-0-capacity": {
-    "subtopic": "heritage-conservation",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-3-0-climate": {
-    "subtopic": "climate-polar",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-3-0-ecology": {
-    "subtopic": "ecology-parks",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-3-0-map": {
-    "subtopic": "coordinates-time",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-3-0-evidence": {
-    "subtopic": "ecology-parks",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-3-0-coast": {
-    "subtopic": "oceans-coasts-islands",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-3-0-itinerary": {
-    "subtopic": "planning-itineraries",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-3-0-heritage": {
-    "subtopic": "heritage-conservation",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-4-0-route": {
-    "subtopic": "ground-transport",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-4-0-clock": {
-    "subtopic": "coordinates-time",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-4-0-ticket": {
-    "subtopic": "ground-transport",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-4-0-schedule": {
-    "subtopic": "planning-itineraries",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-4-0-capacity": {
-    "subtopic": "heritage-conservation",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-4-0-climate": {
-    "subtopic": "climate-polar",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-4-0-ecology": {
-    "subtopic": "ecology-parks",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-4-0-map": {
-    "subtopic": "coordinates-time",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-4-0-evidence": {
-    "subtopic": "ecology-parks",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-4-0-coast": {
-    "subtopic": "oceans-coasts-islands",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-4-0-itinerary": {
-    "subtopic": "planning-itineraries",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-4-0-heritage": {
-    "subtopic": "heritage-conservation",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-3-1-route": {
-    "subtopic": "ground-transport",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-3-1-clock": {
-    "subtopic": "coordinates-time",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-3-1-ticket": {
-    "subtopic": "ground-transport",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-3-1-schedule": {
-    "subtopic": "planning-itineraries",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-3-1-capacity": {
-    "subtopic": "heritage-conservation",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-3-1-climate": {
-    "subtopic": "climate-polar",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-3-1-ecology": {
-    "subtopic": "ecology-parks",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-3-1-map": {
-    "subtopic": "coordinates-time",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-3-1-evidence": {
-    "subtopic": "ecology-parks",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-3-1-coast": {
-    "subtopic": "oceans-coasts-islands",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-3-1-itinerary": {
-    "subtopic": "planning-itineraries",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-3-1-heritage": {
-    "subtopic": "heritage-conservation",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-4-1-route": {
-    "subtopic": "ground-transport",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-4-1-clock": {
-    "subtopic": "coordinates-time",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-4-1-ticket": {
-    "subtopic": "ground-transport",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-4-1-schedule": {
-    "subtopic": "planning-itineraries",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-4-1-capacity": {
-    "subtopic": "heritage-conservation",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-4-1-climate": {
-    "subtopic": "climate-polar",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-4-1-ecology": {
-    "subtopic": "ecology-parks",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-4-1-map": {
-    "subtopic": "coordinates-time",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-4-1-evidence": {
-    "subtopic": "ecology-parks",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-4-1-coast": {
-    "subtopic": "oceans-coasts-islands",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-4-1-itinerary": {
-    "subtopic": "planning-itineraries",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-4-1-heritage": {
-    "subtopic": "heritage-conservation",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-3-2-route": {
-    "subtopic": "ground-transport",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-3-2-clock": {
-    "subtopic": "coordinates-time",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-3-2-ticket": {
-    "subtopic": "ground-transport",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-3-2-schedule": {
-    "subtopic": "planning-itineraries",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-3-2-capacity": {
-    "subtopic": "heritage-conservation",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-3-2-climate": {
-    "subtopic": "climate-polar",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-3-2-ecology": {
-    "subtopic": "ecology-parks",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-3-2-map": {
-    "subtopic": "coordinates-time",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-3-2-evidence": {
-    "subtopic": "ecology-parks",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-3-2-coast": {
-    "subtopic": "oceans-coasts-islands",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-3-2-itinerary": {
-    "subtopic": "planning-itineraries",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-3-2-heritage": {
-    "subtopic": "heritage-conservation",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-4-2-route": {
-    "subtopic": "ground-transport",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-4-2-clock": {
-    "subtopic": "coordinates-time",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-4-2-ticket": {
-    "subtopic": "ground-transport",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-4-2-schedule": {
-    "subtopic": "planning-itineraries",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-4-2-capacity": {
-    "subtopic": "heritage-conservation",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-4-2-climate": {
-    "subtopic": "climate-polar",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-4-2-ecology": {
-    "subtopic": "ecology-parks",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-4-2-map": {
-    "subtopic": "coordinates-time",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-4-2-evidence": {
-    "subtopic": "ecology-parks",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-4-2-coast": {
-    "subtopic": "oceans-coasts-islands",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-4-2-itinerary": {
-    "subtopic": "planning-itineraries",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-4-2-heritage": {
-    "subtopic": "heritage-conservation",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-3-3-route": {
-    "subtopic": "ground-transport",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-3-3-clock": {
-    "subtopic": "coordinates-time",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-3-3-ticket": {
-    "subtopic": "ground-transport",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-3-3-schedule": {
-    "subtopic": "planning-itineraries",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-3-3-capacity": {
-    "subtopic": "heritage-conservation",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-3-3-climate": {
-    "subtopic": "climate-polar",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-3-3-ecology": {
-    "subtopic": "ecology-parks",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-3-3-map": {
-    "subtopic": "coordinates-time",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-3-3-evidence": {
-    "subtopic": "ecology-parks",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-3-3-coast": {
-    "subtopic": "oceans-coasts-islands",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-3-3-itinerary": {
-    "subtopic": "planning-itineraries",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-3-3-heritage": {
-    "subtopic": "heritage-conservation",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-4-3-route": {
-    "subtopic": "ground-transport",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-4-3-clock": {
-    "subtopic": "coordinates-time",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-4-3-ticket": {
-    "subtopic": "ground-transport",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-4-3-schedule": {
-    "subtopic": "planning-itineraries",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-4-3-capacity": {
-    "subtopic": "heritage-conservation",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-4-3-climate": {
-    "subtopic": "climate-polar",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-4-3-ecology": {
-    "subtopic": "ecology-parks",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-4-3-map": {
-    "subtopic": "coordinates-time",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-4-3-evidence": {
-    "subtopic": "ecology-parks",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-4-3-coast": {
-    "subtopic": "oceans-coasts-islands",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-4-3-itinerary": {
-    "subtopic": "planning-itineraries",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-4-3-heritage": {
-    "subtopic": "heritage-conservation",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-3-4-route": {
-    "subtopic": "ground-transport",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-3-4-clock": {
-    "subtopic": "coordinates-time",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-3-4-ticket": {
-    "subtopic": "ground-transport",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-3-4-schedule": {
-    "subtopic": "planning-itineraries",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-3-4-capacity": {
-    "subtopic": "heritage-conservation",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-3-4-climate": {
-    "subtopic": "climate-polar",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-3-4-ecology": {
-    "subtopic": "ecology-parks",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-3-4-map": {
-    "subtopic": "coordinates-time",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-3-4-evidence": {
-    "subtopic": "ecology-parks",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-3-4-coast": {
-    "subtopic": "oceans-coasts-islands",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-3-4-itinerary": {
-    "subtopic": "planning-itineraries",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-3-4-heritage": {
-    "subtopic": "heritage-conservation",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-4-4-route": {
-    "subtopic": "ground-transport",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-4-4-clock": {
-    "subtopic": "coordinates-time",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-4-4-ticket": {
-    "subtopic": "ground-transport",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-4-4-schedule": {
-    "subtopic": "planning-itineraries",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-4-4-capacity": {
-    "subtopic": "heritage-conservation",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-4-4-climate": {
-    "subtopic": "climate-polar",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-4-4-ecology": {
-    "subtopic": "ecology-parks",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-4-4-map": {
-    "subtopic": "coordinates-time",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-4-4-evidence": {
-    "subtopic": "ecology-parks",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-4-4-coast": {
-    "subtopic": "oceans-coasts-islands",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-4-4-itinerary": {
-    "subtopic": "planning-itineraries",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-4-4-heritage": {
-    "subtopic": "heritage-conservation",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-3-5-route": {
-    "subtopic": "ground-transport",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-3-5-clock": {
-    "subtopic": "coordinates-time",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-3-5-ticket": {
-    "subtopic": "ground-transport",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-3-5-schedule": {
-    "subtopic": "planning-itineraries",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-3-5-capacity": {
-    "subtopic": "heritage-conservation",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-3-5-climate": {
-    "subtopic": "climate-polar",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-3-5-ecology": {
-    "subtopic": "ecology-parks",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-3-5-map": {
-    "subtopic": "coordinates-time",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-3-5-evidence": {
-    "subtopic": "ecology-parks",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-3-5-coast": {
-    "subtopic": "oceans-coasts-islands",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-3-5-itinerary": {
-    "subtopic": "planning-itineraries",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-3-5-heritage": {
-    "subtopic": "heritage-conservation",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-4-5-route": {
-    "subtopic": "ground-transport",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-4-5-clock": {
-    "subtopic": "coordinates-time",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-4-5-ticket": {
-    "subtopic": "ground-transport",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-4-5-schedule": {
-    "subtopic": "planning-itineraries",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-4-5-capacity": {
-    "subtopic": "heritage-conservation",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-4-5-climate": {
-    "subtopic": "climate-polar",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-4-5-ecology": {
-    "subtopic": "ecology-parks",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-4-5-map": {
-    "subtopic": "coordinates-time",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-4-5-evidence": {
-    "subtopic": "ecology-parks",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-4-5-coast": {
-    "subtopic": "oceans-coasts-islands",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-4-5-itinerary": {
-    "subtopic": "planning-itineraries",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-4-5-heritage": {
-    "subtopic": "heritage-conservation",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-3-6-route": {
-    "subtopic": "ground-transport",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-3-6-clock": {
-    "subtopic": "coordinates-time",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-3-6-ticket": {
-    "subtopic": "ground-transport",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-3-6-schedule": {
-    "subtopic": "planning-itineraries",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-3-6-capacity": {
-    "subtopic": "heritage-conservation",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-3-6-climate": {
-    "subtopic": "climate-polar",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-3-6-ecology": {
-    "subtopic": "ecology-parks",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-3-6-map": {
-    "subtopic": "coordinates-time",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-3-6-evidence": {
-    "subtopic": "ecology-parks",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-3-6-coast": {
-    "subtopic": "oceans-coasts-islands",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-3-6-itinerary": {
-    "subtopic": "planning-itineraries",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-3-6-heritage": {
-    "subtopic": "heritage-conservation",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-4-6-route": {
-    "subtopic": "ground-transport",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-4-6-clock": {
-    "subtopic": "coordinates-time",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-4-6-ticket": {
-    "subtopic": "ground-transport",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-4-6-schedule": {
-    "subtopic": "planning-itineraries",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-4-6-capacity": {
-    "subtopic": "heritage-conservation",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-4-6-climate": {
-    "subtopic": "climate-polar",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-4-6-ecology": {
-    "subtopic": "ecology-parks",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-4-6-map": {
-    "subtopic": "coordinates-time",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-4-6-evidence": {
-    "subtopic": "ecology-parks",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-4-6-coast": {
-    "subtopic": "oceans-coasts-islands",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-4-6-itinerary": {
-    "subtopic": "planning-itineraries",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-4-6-heritage": {
-    "subtopic": "heritage-conservation",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-3-7-route": {
-    "subtopic": "ground-transport",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-3-7-clock": {
-    "subtopic": "coordinates-time",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-3-7-ticket": {
-    "subtopic": "ground-transport",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-3-7-schedule": {
-    "subtopic": "planning-itineraries",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-3-7-capacity": {
-    "subtopic": "heritage-conservation",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-3-7-climate": {
-    "subtopic": "climate-polar",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-3-7-ecology": {
-    "subtopic": "ecology-parks",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-3-7-map": {
-    "subtopic": "coordinates-time",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-3-7-evidence": {
-    "subtopic": "ecology-parks",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-3-7-coast": {
-    "subtopic": "oceans-coasts-islands",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-3-7-itinerary": {
-    "subtopic": "planning-itineraries",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-3-7-heritage": {
-    "subtopic": "heritage-conservation",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-4-7-route": {
-    "subtopic": "ground-transport",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-4-7-clock": {
-    "subtopic": "coordinates-time",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-4-7-ticket": {
-    "subtopic": "ground-transport",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-4-7-schedule": {
-    "subtopic": "planning-itineraries",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-4-7-capacity": {
-    "subtopic": "heritage-conservation",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-4-7-climate": {
-    "subtopic": "climate-polar",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-4-7-ecology": {
-    "subtopic": "ecology-parks",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-4-7-map": {
-    "subtopic": "coordinates-time",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-4-7-evidence": {
-    "subtopic": "ecology-parks",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-4-7-coast": {
-    "subtopic": "oceans-coasts-islands",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-4-7-itinerary": {
-    "subtopic": "planning-itineraries",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-4-7-heritage": {
-    "subtopic": "heritage-conservation",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-3-8-route": {
-    "subtopic": "ground-transport",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-3-8-clock": {
-    "subtopic": "coordinates-time",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-3-8-ticket": {
-    "subtopic": "ground-transport",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-3-8-schedule": {
-    "subtopic": "planning-itineraries",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-3-8-capacity": {
-    "subtopic": "heritage-conservation",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-3-8-climate": {
-    "subtopic": "climate-polar",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-3-8-ecology": {
-    "subtopic": "ecology-parks",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-3-8-map": {
-    "subtopic": "coordinates-time",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-3-8-evidence": {
-    "subtopic": "ecology-parks",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-3-8-coast": {
-    "subtopic": "oceans-coasts-islands",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-3-8-itinerary": {
-    "subtopic": "planning-itineraries",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-3-8-heritage": {
-    "subtopic": "heritage-conservation",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-4-8-route": {
-    "subtopic": "ground-transport",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-4-8-clock": {
-    "subtopic": "coordinates-time",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-4-8-ticket": {
-    "subtopic": "ground-transport",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-4-8-schedule": {
-    "subtopic": "planning-itineraries",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-4-8-capacity": {
-    "subtopic": "heritage-conservation",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-4-8-climate": {
-    "subtopic": "climate-polar",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-4-8-ecology": {
-    "subtopic": "ecology-parks",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-4-8-map": {
-    "subtopic": "coordinates-time",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-4-8-evidence": {
-    "subtopic": "ecology-parks",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-4-8-coast": {
-    "subtopic": "oceans-coasts-islands",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-4-8-itinerary": {
-    "subtopic": "planning-itineraries",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-4-8-heritage": {
-    "subtopic": "heritage-conservation",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-3-9-route": {
-    "subtopic": "ground-transport",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-3-9-clock": {
-    "subtopic": "coordinates-time",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-3-9-ticket": {
-    "subtopic": "ground-transport",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-3-9-schedule": {
-    "subtopic": "planning-itineraries",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-3-9-capacity": {
-    "subtopic": "heritage-conservation",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-3-9-climate": {
-    "subtopic": "climate-polar",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-3-9-ecology": {
-    "subtopic": "ecology-parks",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-3-9-map": {
-    "subtopic": "coordinates-time",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-3-9-evidence": {
-    "subtopic": "ecology-parks",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-3-9-coast": {
-    "subtopic": "oceans-coasts-islands",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-3-9-itinerary": {
-    "subtopic": "planning-itineraries",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-3-9-heritage": {
-    "subtopic": "heritage-conservation",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-4-9-route": {
-    "subtopic": "ground-transport",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-4-9-clock": {
-    "subtopic": "coordinates-time",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-4-9-ticket": {
-    "subtopic": "ground-transport",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-4-9-schedule": {
-    "subtopic": "planning-itineraries",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-4-9-capacity": {
-    "subtopic": "heritage-conservation",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-4-9-climate": {
-    "subtopic": "climate-polar",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-4-9-ecology": {
-    "subtopic": "ecology-parks",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-4-9-map": {
-    "subtopic": "coordinates-time",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-4-9-evidence": {
-    "subtopic": "ecology-parks",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-4-9-coast": {
-    "subtopic": "oceans-coasts-islands",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-4-9-itinerary": {
-    "subtopic": "planning-itineraries",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-4-9-heritage": {
-    "subtopic": "heritage-conservation",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-3-10-route": {
-    "subtopic": "ground-transport",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-3-10-clock": {
-    "subtopic": "coordinates-time",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-3-10-ticket": {
-    "subtopic": "ground-transport",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-3-10-schedule": {
-    "subtopic": "planning-itineraries",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-3-10-capacity": {
-    "subtopic": "heritage-conservation",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-3-10-climate": {
-    "subtopic": "climate-polar",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-3-10-ecology": {
-    "subtopic": "ecology-parks",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-3-10-map": {
-    "subtopic": "coordinates-time",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-3-10-evidence": {
-    "subtopic": "ecology-parks",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-3-10-coast": {
-    "subtopic": "oceans-coasts-islands",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-3-10-itinerary": {
-    "subtopic": "planning-itineraries",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-3-10-heritage": {
-    "subtopic": "heritage-conservation",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-4-10-route": {
-    "subtopic": "ground-transport",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-4-10-clock": {
-    "subtopic": "coordinates-time",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-4-10-ticket": {
-    "subtopic": "ground-transport",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-4-10-schedule": {
-    "subtopic": "planning-itineraries",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-4-10-capacity": {
-    "subtopic": "heritage-conservation",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-4-10-climate": {
-    "subtopic": "climate-polar",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-4-10-ecology": {
-    "subtopic": "ecology-parks",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-4-10-map": {
-    "subtopic": "coordinates-time",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-4-10-evidence": {
-    "subtopic": "ecology-parks",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-4-10-coast": {
-    "subtopic": "oceans-coasts-islands",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-4-10-itinerary": {
-    "subtopic": "planning-itineraries",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-4-10-heritage": {
-    "subtopic": "heritage-conservation",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-3-11-route": {
-    "subtopic": "ground-transport",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-3-11-clock": {
-    "subtopic": "coordinates-time",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-3-11-ticket": {
-    "subtopic": "ground-transport",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-3-11-schedule": {
-    "subtopic": "planning-itineraries",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-3-11-capacity": {
-    "subtopic": "heritage-conservation",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-3-11-climate": {
-    "subtopic": "climate-polar",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-3-11-ecology": {
-    "subtopic": "ecology-parks",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-3-11-map": {
-    "subtopic": "coordinates-time",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-3-11-evidence": {
-    "subtopic": "ecology-parks",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-3-11-coast": {
-    "subtopic": "oceans-coasts-islands",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-3-11-itinerary": {
-    "subtopic": "planning-itineraries",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-3-11-heritage": {
-    "subtopic": "heritage-conservation",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-4-11-route": {
-    "subtopic": "ground-transport",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-4-11-clock": {
-    "subtopic": "coordinates-time",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-4-11-ticket": {
-    "subtopic": "ground-transport",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-4-11-schedule": {
-    "subtopic": "planning-itineraries",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-4-11-capacity": {
-    "subtopic": "heritage-conservation",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-4-11-climate": {
-    "subtopic": "climate-polar",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-4-11-ecology": {
-    "subtopic": "ecology-parks",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-4-11-map": {
-    "subtopic": "coordinates-time",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-4-11-evidence": {
-    "subtopic": "ecology-parks",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-4-11-coast": {
-    "subtopic": "oceans-coasts-islands",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-4-11-itinerary": {
-    "subtopic": "planning-itineraries",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:scenario-4-11-heritage": {
-    "subtopic": "heritage-conservation",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:apply-0": {
-    "subtopic": "coordinates-time",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:apply-1": {
-    "subtopic": "ground-transport",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:apply-2": {
-    "subtopic": "planning-itineraries",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:apply-3": {
-    "subtopic": "heritage-conservation",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:apply-4": {
-    "subtopic": "ecology-parks",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:apply-5": {
-    "subtopic": "climate-polar",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:apply-6": {
-    "subtopic": "coordinates-time",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:apply-7": {
-    "subtopic": "ground-transport",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:apply-8": {
-    "subtopic": "planning-itineraries",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:apply-9": {
-    "subtopic": "heritage-conservation",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:apply-10": {
-    "subtopic": "ecology-parks",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:apply-11": {
-    "subtopic": "climate-polar",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:apply-12": {
-    "subtopic": "coordinates-time",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:apply-13": {
-    "subtopic": "ground-transport",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:apply-14": {
-    "subtopic": "planning-itineraries",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:apply-15": {
-    "subtopic": "heritage-conservation",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:apply-16": {
-    "subtopic": "ecology-parks",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:apply-17": {
-    "subtopic": "climate-polar",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:apply-18": {
-    "subtopic": "coordinates-time",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:apply-19": {
-    "subtopic": "ground-transport",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:apply-20": {
-    "subtopic": "planning-itineraries",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:apply-21": {
-    "subtopic": "heritage-conservation",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:apply-22": {
-    "subtopic": "ecology-parks",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:apply-23": {
-    "subtopic": "climate-polar",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:apply-24": {
-    "subtopic": "coordinates-time",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:apply-25": {
-    "subtopic": "ground-transport",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:apply-26": {
-    "subtopic": "planning-itineraries",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:apply-27": {
-    "subtopic": "heritage-conservation",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:apply-28": {
-    "subtopic": "ecology-parks",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:apply-29": {
-    "subtopic": "climate-polar",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:apply-30": {
-    "subtopic": "coordinates-time",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:apply-31": {
-    "subtopic": "ground-transport",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:apply-32": {
-    "subtopic": "planning-itineraries",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:apply-33": {
-    "subtopic": "heritage-conservation",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:apply-34": {
-    "subtopic": "ecology-parks",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:apply-35": {
-    "subtopic": "climate-polar",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:apply-36": {
-    "subtopic": "coordinates-time",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:apply-37": {
-    "subtopic": "ground-transport",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:apply-38": {
-    "subtopic": "planning-itineraries",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:apply-39": {
-    "subtopic": "heritage-conservation",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:apply-40": {
-    "subtopic": "ecology-parks",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:apply-41": {
-    "subtopic": "climate-polar",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:apply-42": {
-    "subtopic": "coordinates-time",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:apply-43": {
-    "subtopic": "ground-transport",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:apply-44": {
-    "subtopic": "planning-itineraries",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:apply-45": {
-    "subtopic": "heritage-conservation",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:apply-46": {
-    "subtopic": "ecology-parks",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
-  "learning:apply-47": {
-    "subtopic": "climate-polar",
-    "geography": {
-      "regions": [
-        "全球／通用"
-      ]
-    },
-    "note": "教學用情境，條件完整列於題內；認知層級與題目推導分開記錄。"
-  },
   "source:ocean-motion": {
     "subtopic": "oceans-coasts-islands",
     "geography": {
@@ -4202,5 +746,3371 @@
       ]
     },
     "note": "來源逐題記錄；fact 為概念或案例依據，design 僅為題型參考。假設資料不當成官方統計。"
+  },
+  "learning:basic-map": {
+    "subtopic": "coordinates-time",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:basic-scale": {
+    "subtopic": "coordinates-time",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:basic-river": {
+    "subtopic": "rivers-lakes-waterfalls",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:basic-lake": {
+    "subtopic": "rivers-lakes-waterfalls",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:basic-weather": {
+    "subtopic": "climate-polar",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:basic-season": {
+    "subtopic": "climate-polar",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:basic-fossil": {
+    "subtopic": "historic-sites",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:basic-museum": {
+    "subtopic": "museums-arts",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:basic-habitat": {
+    "subtopic": "ecology-parks",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:basic-wetland": {
+    "subtopic": "ecology-parks",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:basic-erosion": {
+    "subtopic": "deserts-rocks",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:basic-dune": {
+    "subtopic": "deserts-rocks",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:basic-coral": {
+    "subtopic": "oceans-coasts-islands",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:basic-tide": {
+    "subtopic": "oceans-coasts-islands",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:basic-rail": {
+    "subtopic": "ground-transport",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:basic-transfer": {
+    "subtopic": "ground-transport",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:basic-booking": {
+    "subtopic": "planning-itineraries",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:basic-buffer": {
+    "subtopic": "planning-itineraries",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:basic-heritage": {
+    "subtopic": "heritage-conservation",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:basic-living": {
+    "subtopic": "heritage-conservation",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:basic-altitude": {
+    "subtopic": "mountains-volcanoes",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:basic-volcano": {
+    "subtopic": "mountains-volcanoes",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:basic-garden": {
+    "subtopic": "gardens-landscapes",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:basic-art": {
+    "subtopic": "museums-arts",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:concept-rainshadow": {
+    "subtopic": "climate-polar",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:concept-urban": {
+    "subtopic": "climate-polar",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:concept-sediment": {
+    "subtopic": "deserts-rocks",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:concept-corridor": {
+    "subtopic": "ecology-parks",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:concept-coast": {
+    "subtopic": "oceans-coasts-islands",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:concept-heritage-context": {
+    "subtopic": "historic-sites",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:concept-museum-provenance": {
+    "subtopic": "museums-arts",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:concept-booking-capacity": {
+    "subtopic": "planning-itineraries",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:concept-timezone": {
+    "subtopic": "coordinates-time",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:concept-seasonal-rain": {
+    "subtopic": "climate-polar",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:concept-park-count": {
+    "subtopic": "ecology-parks",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:concept-digital-map": {
+    "subtopic": "digital-equipment",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:concept-watershed": {
+    "subtopic": "rivers-lakes-waterfalls",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:concept-scale-compare": {
+    "subtopic": "coordinates-time",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:concept-glacier": {
+    "subtopic": "deserts-rocks",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:concept-wetland-buffer": {
+    "subtopic": "ecology-parks",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:concept-heritage-original": {
+    "subtopic": "heritage-conservation",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:concept-heritage-community": {
+    "subtopic": "heritage-conservation",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:concept-route-direct": {
+    "subtopic": "ground-transport",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:concept-accessibility": {
+    "subtopic": "ground-transport",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:concept-latitude": {
+    "subtopic": "coordinates-time",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:concept-mountain-route": {
+    "subtopic": "mountains-volcanoes",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:concept-gardens-water": {
+    "subtopic": "gardens-landscapes",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:concept-local-culture": {
+    "subtopic": "culture-etiquette",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-child-environment-0": {
+    "subtopic": "ecology-parks",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-child-environment-1": {
+    "subtopic": "oceans-coasts-islands",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-child-environment-2": {
+    "subtopic": "ecology-parks",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-child-environment-3": {
+    "subtopic": "ecology-parks",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-child-environment-4": {
+    "subtopic": "climate-polar",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-child-environment-5": {
+    "subtopic": "climate-polar",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-child-environment-6": {
+    "subtopic": "ground-transport",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-child-environment-7": {
+    "subtopic": "rivers-lakes-waterfalls",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-child-environment-8": {
+    "subtopic": "heritage-conservation",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-child-environment-9": {
+    "subtopic": "museums-arts",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-child-environment-10": {
+    "subtopic": "oceans-coasts-islands",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-child-environment-11": {
+    "subtopic": "culture-etiquette",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-child-environment-12": {
+    "subtopic": "coordinates-time",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-child-environment-13": {
+    "subtopic": "mountains-volcanoes",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-child-environment-14": {
+    "subtopic": "oceans-coasts-islands",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-child-environment-15": {
+    "subtopic": "population-urban",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-child-environment-16": {
+    "subtopic": "rivers-lakes-waterfalls",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-child-environment-17": {
+    "subtopic": "deserts-rocks",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-child-environment-18": {
+    "subtopic": "ecology-parks",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-child-environment-19": {
+    "subtopic": "population-urban",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-child-environment-20": {
+    "subtopic": "planning-itineraries",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-child-environment-21": {
+    "subtopic": "culture-etiquette",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-child-environment-22": {
+    "subtopic": "oceans-coasts-islands",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-child-environment-23": {
+    "subtopic": "mountains-volcanoes",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-child-geography-0": {
+    "subtopic": "coordinates-time",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-child-geography-1": {
+    "subtopic": "rivers-lakes-waterfalls",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-child-geography-2": {
+    "subtopic": "ecology-parks",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-child-geography-3": {
+    "subtopic": "climate-polar",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-child-geography-4": {
+    "subtopic": "climate-polar",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-child-geography-5": {
+    "subtopic": "climate-polar",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-child-geography-6": {
+    "subtopic": "heritage-conservation",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-child-geography-7": {
+    "subtopic": "mountains-volcanoes",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-child-geography-8": {
+    "subtopic": "oceans-coasts-islands",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-child-geography-9": {
+    "subtopic": "climate-polar",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-child-geography-10": {
+    "subtopic": "culture-etiquette",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-child-geography-11": {
+    "subtopic": "ground-transport",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-child-landscape-0": {
+    "subtopic": "climate-polar",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-child-landscape-1": {
+    "subtopic": "oceans-coasts-islands",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-child-landscape-2": {
+    "subtopic": "planning-itineraries",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-child-landscape-3": {
+    "subtopic": "oceans-coasts-islands",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-child-landscape-4": {
+    "subtopic": "ecology-parks",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-child-landscape-5": {
+    "subtopic": "mountains-volcanoes",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-child-understanding-0": {
+    "subtopic": "heritage-conservation",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-child-understanding-1": {
+    "subtopic": "ecology-parks",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-child-understanding-2": {
+    "subtopic": "rivers-lakes-waterfalls",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-child-understanding-3": {
+    "subtopic": "climate-polar",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-child-understanding-4": {
+    "subtopic": "museums-arts",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-child-understanding-5": {
+    "subtopic": "rivers-lakes-waterfalls",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-child-understanding-6": {
+    "subtopic": "climate-polar",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-child-understanding-7": {
+    "subtopic": "culture-etiquette",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-child-understanding-8": {
+    "subtopic": "climate-polar",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-child-understanding-9": {
+    "subtopic": "ecology-parks",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-child-understanding-10": {
+    "subtopic": "coordinates-time",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-child-understanding-11": {
+    "subtopic": "climate-polar",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-child-understanding-12": {
+    "subtopic": "heritage-conservation",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-child-understanding-13": {
+    "subtopic": "ecology-parks",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-child-understanding-14": {
+    "subtopic": "oceans-coasts-islands",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-child-understanding-15": {
+    "subtopic": "climate-polar",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-child-understanding-16": {
+    "subtopic": "ecology-parks",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-child-understanding-17": {
+    "subtopic": "coordinates-time",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-child-understanding-18": {
+    "subtopic": "ecology-parks",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-child-understanding-19": {
+    "subtopic": "planning-itineraries",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-child-understanding-20": {
+    "subtopic": "ecology-parks",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-child-understanding-21": {
+    "subtopic": "climate-polar",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-child-understanding-22": {
+    "subtopic": "rivers-lakes-waterfalls",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-child-understanding-23": {
+    "subtopic": "culture-etiquette",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-climate-process-0": {
+    "subtopic": "climate-polar",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-climate-process-1": {
+    "subtopic": "climate-polar",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-climate-process-2": {
+    "subtopic": "climate-polar",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-climate-process-3": {
+    "subtopic": "climate-polar",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-climate-process-4": {
+    "subtopic": "climate-polar",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-climate-process-5": {
+    "subtopic": "climate-polar",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-climate-process-6": {
+    "subtopic": "climate-polar",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-climate-process-7": {
+    "subtopic": "climate-polar",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-climate-process-8": {
+    "subtopic": "climate-polar",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-climate-process-9": {
+    "subtopic": "climate-polar",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-climate-process-10": {
+    "subtopic": "climate-polar",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-climate-process-11": {
+    "subtopic": "climate-polar",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-climate-process-12": {
+    "subtopic": "climate-polar",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-climate-process-13": {
+    "subtopic": "climate-polar",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-climate-process-14": {
+    "subtopic": "climate-polar",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-climate-process-15": {
+    "subtopic": "climate-polar",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-climate-process-16": {
+    "subtopic": "climate-polar",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-climate-process-17": {
+    "subtopic": "climate-polar",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-climate-process-18": {
+    "subtopic": "climate-polar",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-climate-process-19": {
+    "subtopic": "climate-polar",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-river-system-0": {
+    "subtopic": "rivers-lakes-waterfalls",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-river-system-1": {
+    "subtopic": "rivers-lakes-waterfalls",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-river-system-2": {
+    "subtopic": "rivers-lakes-waterfalls",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-river-system-3": {
+    "subtopic": "rivers-lakes-waterfalls",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-river-system-4": {
+    "subtopic": "rivers-lakes-waterfalls",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-river-system-5": {
+    "subtopic": "rivers-lakes-waterfalls",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-river-system-6": {
+    "subtopic": "rivers-lakes-waterfalls",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-river-system-7": {
+    "subtopic": "rivers-lakes-waterfalls",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-river-system-8": {
+    "subtopic": "rivers-lakes-waterfalls",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-river-system-9": {
+    "subtopic": "rivers-lakes-waterfalls",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-river-system-10": {
+    "subtopic": "rivers-lakes-waterfalls",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-river-system-11": {
+    "subtopic": "rivers-lakes-waterfalls",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-river-system-12": {
+    "subtopic": "rivers-lakes-waterfalls",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-river-system-13": {
+    "subtopic": "rivers-lakes-waterfalls",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-river-system-14": {
+    "subtopic": "rivers-lakes-waterfalls",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-river-system-15": {
+    "subtopic": "rivers-lakes-waterfalls",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-river-system-16": {
+    "subtopic": "rivers-lakes-waterfalls",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-river-system-17": {
+    "subtopic": "rivers-lakes-waterfalls",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-river-system-18": {
+    "subtopic": "rivers-lakes-waterfalls",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-river-system-19": {
+    "subtopic": "rivers-lakes-waterfalls",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-coastal-change-0": {
+    "subtopic": "oceans-coasts-islands",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-coastal-change-1": {
+    "subtopic": "oceans-coasts-islands",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-coastal-change-2": {
+    "subtopic": "oceans-coasts-islands",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-coastal-change-3": {
+    "subtopic": "oceans-coasts-islands",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-coastal-change-4": {
+    "subtopic": "oceans-coasts-islands",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-coastal-change-5": {
+    "subtopic": "oceans-coasts-islands",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-coastal-change-6": {
+    "subtopic": "oceans-coasts-islands",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-coastal-change-7": {
+    "subtopic": "oceans-coasts-islands",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-coastal-change-8": {
+    "subtopic": "oceans-coasts-islands",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-coastal-change-9": {
+    "subtopic": "oceans-coasts-islands",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-coastal-change-10": {
+    "subtopic": "oceans-coasts-islands",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-coastal-change-11": {
+    "subtopic": "oceans-coasts-islands",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-coastal-change-12": {
+    "subtopic": "oceans-coasts-islands",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-coastal-change-13": {
+    "subtopic": "oceans-coasts-islands",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-coastal-change-14": {
+    "subtopic": "oceans-coasts-islands",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-coastal-change-15": {
+    "subtopic": "oceans-coasts-islands",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-coastal-change-16": {
+    "subtopic": "oceans-coasts-islands",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-coastal-change-17": {
+    "subtopic": "oceans-coasts-islands",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-coastal-change-18": {
+    "subtopic": "oceans-coasts-islands",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-coastal-change-19": {
+    "subtopic": "oceans-coasts-islands",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-landform-process-0": {
+    "subtopic": "deserts-rocks",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-landform-process-1": {
+    "subtopic": "deserts-rocks",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-landform-process-2": {
+    "subtopic": "deserts-rocks",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-landform-process-3": {
+    "subtopic": "deserts-rocks",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-landform-process-4": {
+    "subtopic": "deserts-rocks",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-landform-process-5": {
+    "subtopic": "deserts-rocks",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-landform-process-6": {
+    "subtopic": "deserts-rocks",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-landform-process-7": {
+    "subtopic": "deserts-rocks",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-landform-process-8": {
+    "subtopic": "deserts-rocks",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-landform-process-9": {
+    "subtopic": "deserts-rocks",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-landform-process-10": {
+    "subtopic": "deserts-rocks",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-landform-process-11": {
+    "subtopic": "deserts-rocks",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-landform-process-12": {
+    "subtopic": "deserts-rocks",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-landform-process-13": {
+    "subtopic": "deserts-rocks",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-landform-process-14": {
+    "subtopic": "deserts-rocks",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-landform-process-15": {
+    "subtopic": "deserts-rocks",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-landform-process-16": {
+    "subtopic": "deserts-rocks",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-landform-process-17": {
+    "subtopic": "deserts-rocks",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-landform-process-18": {
+    "subtopic": "deserts-rocks",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-landform-process-19": {
+    "subtopic": "deserts-rocks",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-tectonic-evidence-0": {
+    "subtopic": "mountains-volcanoes",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-tectonic-evidence-1": {
+    "subtopic": "mountains-volcanoes",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-tectonic-evidence-2": {
+    "subtopic": "mountains-volcanoes",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-tectonic-evidence-3": {
+    "subtopic": "mountains-volcanoes",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-tectonic-evidence-4": {
+    "subtopic": "mountains-volcanoes",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-tectonic-evidence-5": {
+    "subtopic": "mountains-volcanoes",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-tectonic-evidence-6": {
+    "subtopic": "mountains-volcanoes",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-tectonic-evidence-7": {
+    "subtopic": "mountains-volcanoes",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-tectonic-evidence-8": {
+    "subtopic": "mountains-volcanoes",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-tectonic-evidence-9": {
+    "subtopic": "mountains-volcanoes",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-tectonic-evidence-10": {
+    "subtopic": "mountains-volcanoes",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-tectonic-evidence-11": {
+    "subtopic": "mountains-volcanoes",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-tectonic-evidence-12": {
+    "subtopic": "mountains-volcanoes",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-tectonic-evidence-13": {
+    "subtopic": "mountains-volcanoes",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-tectonic-evidence-14": {
+    "subtopic": "mountains-volcanoes",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-tectonic-evidence-15": {
+    "subtopic": "mountains-volcanoes",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-tectonic-evidence-16": {
+    "subtopic": "mountains-volcanoes",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-tectonic-evidence-17": {
+    "subtopic": "mountains-volcanoes",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-tectonic-evidence-18": {
+    "subtopic": "mountains-volcanoes",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-tectonic-evidence-19": {
+    "subtopic": "mountains-volcanoes",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-habitat-connectivity-0": {
+    "subtopic": "ecology-parks",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-habitat-connectivity-1": {
+    "subtopic": "ecology-parks",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-habitat-connectivity-2": {
+    "subtopic": "ecology-parks",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-habitat-connectivity-3": {
+    "subtopic": "ecology-parks",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-habitat-connectivity-4": {
+    "subtopic": "ecology-parks",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-habitat-connectivity-5": {
+    "subtopic": "ecology-parks",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-habitat-connectivity-6": {
+    "subtopic": "ecology-parks",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-habitat-connectivity-7": {
+    "subtopic": "ecology-parks",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-habitat-connectivity-8": {
+    "subtopic": "ecology-parks",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-habitat-connectivity-9": {
+    "subtopic": "ecology-parks",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-habitat-connectivity-10": {
+    "subtopic": "ecology-parks",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-habitat-connectivity-11": {
+    "subtopic": "ecology-parks",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-habitat-connectivity-12": {
+    "subtopic": "ecology-parks",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-habitat-connectivity-13": {
+    "subtopic": "ecology-parks",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-habitat-connectivity-14": {
+    "subtopic": "ecology-parks",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-habitat-connectivity-15": {
+    "subtopic": "ecology-parks",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-habitat-connectivity-16": {
+    "subtopic": "ecology-parks",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-habitat-connectivity-17": {
+    "subtopic": "ecology-parks",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-habitat-connectivity-18": {
+    "subtopic": "ecology-parks",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-habitat-connectivity-19": {
+    "subtopic": "ecology-parks",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-heritage-context-0": {
+    "subtopic": "historic-sites",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-heritage-context-1": {
+    "subtopic": "historic-sites",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-heritage-context-2": {
+    "subtopic": "historic-sites",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-heritage-context-3": {
+    "subtopic": "historic-sites",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-heritage-context-4": {
+    "subtopic": "historic-sites",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-heritage-context-5": {
+    "subtopic": "historic-sites",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-heritage-context-6": {
+    "subtopic": "historic-sites",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-heritage-context-7": {
+    "subtopic": "historic-sites",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-heritage-context-8": {
+    "subtopic": "historic-sites",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-heritage-context-9": {
+    "subtopic": "historic-sites",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-heritage-context-10": {
+    "subtopic": "historic-sites",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-heritage-context-11": {
+    "subtopic": "historic-sites",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-heritage-context-12": {
+    "subtopic": "historic-sites",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-heritage-context-13": {
+    "subtopic": "historic-sites",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-heritage-context-14": {
+    "subtopic": "historic-sites",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-heritage-context-15": {
+    "subtopic": "historic-sites",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-heritage-context-16": {
+    "subtopic": "historic-sites",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-heritage-context-17": {
+    "subtopic": "historic-sites",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-heritage-context-18": {
+    "subtopic": "historic-sites",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-heritage-context-19": {
+    "subtopic": "historic-sites",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-living-culture-0": {
+    "subtopic": "culture-etiquette",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-living-culture-1": {
+    "subtopic": "culture-etiquette",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-living-culture-2": {
+    "subtopic": "culture-etiquette",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-living-culture-3": {
+    "subtopic": "culture-etiquette",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-living-culture-4": {
+    "subtopic": "culture-etiquette",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-living-culture-5": {
+    "subtopic": "culture-etiquette",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-living-culture-6": {
+    "subtopic": "culture-etiquette",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-living-culture-7": {
+    "subtopic": "culture-etiquette",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-living-culture-8": {
+    "subtopic": "culture-etiquette",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-living-culture-9": {
+    "subtopic": "culture-etiquette",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-living-culture-10": {
+    "subtopic": "culture-etiquette",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-living-culture-11": {
+    "subtopic": "culture-etiquette",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-living-culture-12": {
+    "subtopic": "culture-etiquette",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-living-culture-13": {
+    "subtopic": "culture-etiquette",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-living-culture-14": {
+    "subtopic": "culture-etiquette",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-living-culture-15": {
+    "subtopic": "culture-etiquette",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-living-culture-16": {
+    "subtopic": "culture-etiquette",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-living-culture-17": {
+    "subtopic": "culture-etiquette",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-living-culture-18": {
+    "subtopic": "culture-etiquette",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-living-culture-19": {
+    "subtopic": "culture-etiquette",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-urban-space-0": {
+    "subtopic": "population-urban",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-urban-space-1": {
+    "subtopic": "population-urban",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-urban-space-2": {
+    "subtopic": "population-urban",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-urban-space-3": {
+    "subtopic": "population-urban",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-urban-space-4": {
+    "subtopic": "population-urban",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-urban-space-5": {
+    "subtopic": "population-urban",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-urban-space-6": {
+    "subtopic": "population-urban",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-urban-space-7": {
+    "subtopic": "population-urban",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-urban-space-8": {
+    "subtopic": "population-urban",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-urban-space-9": {
+    "subtopic": "population-urban",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-urban-space-10": {
+    "subtopic": "population-urban",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-urban-space-11": {
+    "subtopic": "population-urban",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-urban-space-12": {
+    "subtopic": "population-urban",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-urban-space-13": {
+    "subtopic": "population-urban",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-urban-space-14": {
+    "subtopic": "population-urban",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-urban-space-15": {
+    "subtopic": "population-urban",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-urban-space-16": {
+    "subtopic": "population-urban",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-urban-space-17": {
+    "subtopic": "population-urban",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-urban-space-18": {
+    "subtopic": "population-urban",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-urban-space-19": {
+    "subtopic": "population-urban",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-water-resources-0": {
+    "subtopic": "resources-development",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-water-resources-1": {
+    "subtopic": "resources-development",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-water-resources-2": {
+    "subtopic": "resources-development",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-water-resources-3": {
+    "subtopic": "resources-development",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-water-resources-4": {
+    "subtopic": "resources-development",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-water-resources-5": {
+    "subtopic": "resources-development",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-water-resources-6": {
+    "subtopic": "resources-development",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-water-resources-7": {
+    "subtopic": "resources-development",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-water-resources-8": {
+    "subtopic": "resources-development",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-water-resources-9": {
+    "subtopic": "resources-development",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-water-resources-10": {
+    "subtopic": "resources-development",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-water-resources-11": {
+    "subtopic": "resources-development",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-water-resources-12": {
+    "subtopic": "resources-development",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-water-resources-13": {
+    "subtopic": "resources-development",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-water-resources-14": {
+    "subtopic": "resources-development",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-water-resources-15": {
+    "subtopic": "resources-development",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-water-resources-16": {
+    "subtopic": "resources-development",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-water-resources-17": {
+    "subtopic": "resources-development",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-water-resources-18": {
+    "subtopic": "resources-development",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-water-resources-19": {
+    "subtopic": "resources-development",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-hazard-landuse-0": {
+    "subtopic": "hazards-risk",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-hazard-landuse-1": {
+    "subtopic": "hazards-risk",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-hazard-landuse-2": {
+    "subtopic": "hazards-risk",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-hazard-landuse-3": {
+    "subtopic": "hazards-risk",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-hazard-landuse-4": {
+    "subtopic": "hazards-risk",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-hazard-landuse-5": {
+    "subtopic": "hazards-risk",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-hazard-landuse-6": {
+    "subtopic": "hazards-risk",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-hazard-landuse-7": {
+    "subtopic": "hazards-risk",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-hazard-landuse-8": {
+    "subtopic": "hazards-risk",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-hazard-landuse-9": {
+    "subtopic": "hazards-risk",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-hazard-landuse-10": {
+    "subtopic": "hazards-risk",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-hazard-landuse-11": {
+    "subtopic": "hazards-risk",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-hazard-landuse-12": {
+    "subtopic": "hazards-risk",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-hazard-landuse-13": {
+    "subtopic": "hazards-risk",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-hazard-landuse-14": {
+    "subtopic": "hazards-risk",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-hazard-landuse-15": {
+    "subtopic": "hazards-risk",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-hazard-landuse-16": {
+    "subtopic": "hazards-risk",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-hazard-landuse-17": {
+    "subtopic": "hazards-risk",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-hazard-landuse-18": {
+    "subtopic": "hazards-risk",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-hazard-landuse-19": {
+    "subtopic": "hazards-risk",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-map-reasoning-0": {
+    "subtopic": "coordinates-time",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-map-reasoning-1": {
+    "subtopic": "coordinates-time",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-map-reasoning-2": {
+    "subtopic": "coordinates-time",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-map-reasoning-3": {
+    "subtopic": "coordinates-time",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-map-reasoning-4": {
+    "subtopic": "coordinates-time",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-map-reasoning-5": {
+    "subtopic": "coordinates-time",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-map-reasoning-6": {
+    "subtopic": "coordinates-time",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-map-reasoning-7": {
+    "subtopic": "coordinates-time",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-map-reasoning-8": {
+    "subtopic": "coordinates-time",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-map-reasoning-9": {
+    "subtopic": "coordinates-time",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-map-reasoning-10": {
+    "subtopic": "coordinates-time",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-map-reasoning-11": {
+    "subtopic": "coordinates-time",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-map-reasoning-12": {
+    "subtopic": "coordinates-time",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-map-reasoning-13": {
+    "subtopic": "coordinates-time",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-map-reasoning-14": {
+    "subtopic": "coordinates-time",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-map-reasoning-15": {
+    "subtopic": "coordinates-time",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-map-reasoning-16": {
+    "subtopic": "coordinates-time",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-map-reasoning-17": {
+    "subtopic": "coordinates-time",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-map-reasoning-18": {
+    "subtopic": "coordinates-time",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-map-reasoning-19": {
+    "subtopic": "coordinates-time",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-tourism-management-0": {
+    "subtopic": "planning-itineraries",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-tourism-management-1": {
+    "subtopic": "planning-itineraries",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-tourism-management-2": {
+    "subtopic": "planning-itineraries",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-tourism-management-3": {
+    "subtopic": "planning-itineraries",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-tourism-management-4": {
+    "subtopic": "planning-itineraries",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-tourism-management-5": {
+    "subtopic": "planning-itineraries",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-tourism-management-6": {
+    "subtopic": "planning-itineraries",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-tourism-management-7": {
+    "subtopic": "planning-itineraries",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-tourism-management-8": {
+    "subtopic": "planning-itineraries",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-tourism-management-9": {
+    "subtopic": "planning-itineraries",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-tourism-management-10": {
+    "subtopic": "planning-itineraries",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-tourism-management-11": {
+    "subtopic": "planning-itineraries",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-tourism-management-12": {
+    "subtopic": "planning-itineraries",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-tourism-management-13": {
+    "subtopic": "planning-itineraries",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-tourism-management-14": {
+    "subtopic": "planning-itineraries",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-tourism-management-15": {
+    "subtopic": "planning-itineraries",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-tourism-management-16": {
+    "subtopic": "planning-itineraries",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-tourism-management-17": {
+    "subtopic": "planning-itineraries",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-tourism-management-18": {
+    "subtopic": "planning-itineraries",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
+  },
+  "learning:geo-tourism-management-19": {
+    "subtopic": "planning-itineraries",
+    "geography": {
+      "regions": [
+        "全球／通用"
+      ]
+    },
+    "note": "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。"
   }
 }

@@ -1,0 +1,23 @@
+{
+  "ok": true,
+  "baseUrl": "http://127.0.0.1:8787",
+  "viewports": [
+    "1280x800",
+    "820x1180",
+    "390x844",
+    "1280x650",
+    "844x390"
+  ],
+  "flows": [
+    "answer",
+    "feedback",
+    "reward",
+    "continue",
+    "replay",
+    "death",
+    "leaderboard",
+    "source-links-after-answer"
+  ],
+  "checkedReferenceQuestions": 2,
+  "artifacts": "D:\\GITHUB_2\\國民教育委員會\\world-travel-committee-cursor\\.ui-smoke"
+}
