@@ -249,7 +249,9 @@
       "credit": "Unsplash / Peter Burdon",
       "provider": "unsplash",
       "bytes": 608140,
-      "failed": false
+      "failed": false,
+      "imageRejected": true,
+      "lastError": "Unreviewed stock image: subject not verified"
     },
     "庫圖比亞清真寺": {
       "path": "/landmarks/989a95595e42.jpg",
@@ -257,7 +259,9 @@
       "credit": "Unsplash / Jeslyn Xie",
       "provider": "unsplash",
       "bytes": 313940,
-      "failed": false
+      "failed": false,
+      "imageRejected": true,
+      "lastError": "Unreviewed stock image: subject not verified"
     },
     "國會山莊": {
       "path": "/landmarks/e7ac19343f89.jpg",
@@ -265,7 +269,9 @@
       "credit": "Unsplash / Chris DeSort",
       "provider": "unsplash",
       "bytes": 489172,
-      "failed": false
+      "failed": false,
+      "imageRejected": true,
+      "lastError": "Unreviewed stock image: subject not verified"
     },
     "太陽金字塔": {
       "path": "/landmarks/cb0150dfd88c.jpg",
@@ -273,7 +279,9 @@
       "credit": "Unsplash / Thomas Gabernig",
       "provider": "unsplash",
       "bytes": 441265,
-      "failed": false
+      "failed": false,
+      "imageRejected": true,
+      "lastError": "Unreviewed stock image: subject not verified"
     },
     "聖克里斯托瓦爾山": {
       "path": "/landmarks/5399142bf760.jpg",
@@ -281,7 +289,9 @@
       "credit": "Unsplash / Nikolai Kolosov",
       "provider": "unsplash",
       "bytes": 516209,
-      "failed": false
+      "failed": false,
+      "imageRejected": true,
+      "lastError": "Unreviewed stock image: subject not verified"
     },
     "五月廣場": {
       "path": "/landmarks/6dc5cf4dfb4f.jpg",
@@ -289,7 +299,9 @@
       "credit": "Unsplash / Juan Pablo Mascanfroni",
       "provider": "unsplash",
       "bytes": 631257,
-      "failed": false
+      "failed": false,
+      "imageRejected": true,
+      "lastError": "Unreviewed stock image: subject not verified"
     },
     "月亮谷": {
       "path": "/landmarks/7fbff659f4af.jpg",
@@ -297,7 +309,9 @@
       "credit": "Unsplash / Florian Delée",
       "provider": "unsplash",
       "bytes": 586958,
-      "failed": false
+      "failed": false,
+      "imageRejected": true,
+      "lastError": "Unreviewed stock image: subject not verified"
     },
     "紐西蘭國會大廈": {
       "path": "/landmarks/e0e9294d6c23.jpg",
@@ -305,7 +319,9 @@
       "credit": "Unsplash / Cheung Yin",
       "provider": "unsplash",
       "bytes": 441215,
-      "failed": false
+      "failed": false,
+      "imageRejected": true,
+      "lastError": "Unreviewed stock image: subject not verified"
     },
     "大皇宮": {
       "path": "/landmarks/66e8a6a35515.jpg",
@@ -313,7 +329,9 @@
       "credit": "Unsplash / Jayanth Muppaneni",
       "provider": "unsplash",
       "bytes": 486487,
-      "failed": false
+      "failed": false,
+      "imageRejected": true,
+      "lastError": "Unreviewed stock image: subject not verified"
     },
     "濱海灣金沙": {
       "path": "/landmarks/45f63b020562.jpg",
@@ -321,7 +339,9 @@
       "credit": "Unsplash / sf shen",
       "provider": "unsplash",
       "bytes": 315318,
-      "failed": false
+      "failed": false,
+      "imageRejected": true,
+      "lastError": "Unreviewed stock image: subject not verified"
     },
     "清水寺": {
       "path": "/landmarks/50c1f064da73.jpg",
@@ -329,7 +349,9 @@
       "credit": "Unsplash / Matthew Hope",
       "provider": "unsplash",
       "bytes": 278497,
-      "failed": false
+      "failed": false,
+      "imageRejected": true,
+      "lastError": "Unreviewed stock image: subject not verified"
     },
     "東大寺": {
       "path": "/landmarks/7151a8d468df.jpg",
@@ -343,7 +365,9 @@
       "credit": "Unsplash / NASA",
       "provider": "unsplash",
       "bytes": 134844,
-      "failed": false
+      "failed": false,
+      "imageRejected": true,
+      "lastError": "Unreviewed stock image: subject not verified"
     },
     "哈里法塔": {
       "path": "/landmarks/c9365220e068.jpg",
@@ -366,7 +390,9 @@
       "credit": "Unsplash / William Zhang",
       "provider": "unsplash",
       "bytes": 599701,
-      "failed": false
+      "failed": false,
+      "imageRejected": true,
+      "lastError": "Unreviewed stock image: subject not verified"
     },
     "藍湖": {
       "path": "/landmarks/2fa75fa19ec8.jpg",
@@ -401,15 +427,22 @@
       "credit": "Unsplash / Martin Casagrand",
       "provider": "unsplash",
       "bytes": 412502,
-      "failed": false
+      "failed": false,
+      "imageRejected": true,
+      "lastError": "Unreviewed stock image: subject not verified"
     },
     "雙子星塔": {
-      "path": "/landmarks/c3ca6c19cbf4.jpg",
-      "sourceUrl": "https://unsplash.com/photos/brown-and-green-mountains-under-blue-sky-during-daytime-3TAQVNNfBto",
-      "credit": "Unsplash / Thomas Galler",
-      "provider": "unsplash",
-      "bytes": 538671,
-      "failed": false
+      "path": "/landmarks/petronas-6e3348c645a0.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Petronas_Panorama_II.jpg",
+      "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/8/85/Petronas_Panorama_II.jpg",
+      "credit": "Wikimedia Commons / Someformofhuman (CC BY-SA 4.0；縮圖)",
+      "provider": "commons",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "bytes": 214197,
+      "failed": false,
+      "imageRejected": false,
+      "imageReviewedAt": "2026-10-02"
     },
     "維多利亞港": {
       "path": "/landmarks/408b8f0655d5.jpg",
@@ -417,7 +450,9 @@
       "credit": "Unsplash / Artem Korolev",
       "provider": "unsplash",
       "bytes": 482645,
-      "failed": false
+      "failed": false,
+      "imageRejected": true,
+      "lastError": "Unreviewed stock image: subject not verified"
     },
     "聖馬可廣場": {
       "path": "/landmarks/2fa6863d4aa2.jpg",
@@ -425,7 +460,9 @@
       "credit": "Unsplash / Claudio Schwarz",
       "provider": "unsplash",
       "bytes": 421419,
-      "failed": false
+      "failed": false,
+      "imageRejected": true,
+      "lastError": "Unreviewed stock image: subject not verified"
     },
     "聖母百花大教堂": {
       "path": "/landmarks/add720ce5315.jpg",
@@ -433,7 +470,9 @@
       "credit": "Shutterstock / Contributor 301131619",
       "provider": "shutterstock",
       "bytes": 12539005,
-      "failed": false
+      "failed": false,
+      "imageRejected": true,
+      "lastError": "Unreviewed stock image: subject not verified"
     },
     "吳哥窟": {
       "path": "/landmarks/7751598b74d8.jpg",
@@ -1044,7 +1083,9 @@
       "credit": "Stock photo",
       "provider": "stock",
       "bytes": 204319,
-      "failed": false
+      "failed": false,
+      "imageRejected": true,
+      "lastError": "Unreviewed stock image: subject not verified"
     },
     "龐貝古城": {
       "path": "/landmarks/4e7703412636.jpg",

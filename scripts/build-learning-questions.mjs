@@ -1,6 +1,9 @@
 import { readFileSync, writeFileSync } from "node:fs";
 import { resolve } from "node:path";
-import { cases } from "./geography-editorial-cases.mjs";
+import { cases as geographyCases } from "./geography-editorial-cases.mjs";
+import { cases as travelCases } from "./travel-editorial-cases.mjs";
+import { cases as advancedCases } from './travel-advanced-cases.mjs';
+const cases = [...geographyCases.filter(item => item.band !== 'advanced'), ...travelCases.filter(item => item.band !== 'advanced' || item.index < 12), ...advancedCases];
 
 // 原創地理理解題，情境不是現地公告；不以純計算或換數字擴增題庫。
 const root = resolve(import.meta.dirname, "..");
@@ -9,8 +12,10 @@ const grades = ["小一", "小二", "小三", "小四", "小五", "小六", "國
 function add(id, level, demand, family, subtopic, q, options, fact, allowedGrades = []) {
   if (new Set(options).size !== 4) throw Error(`Repeated options: ${id}`);
   rows.push({ id: `learning:${id}`, level, demand, family, subtopic, q, options, answer: 0, fact,
-    region: "全球／通用", category: subtopic.includes("transport") || /planning|aviation|accommodation/.test(subtopic) ? "旅行知識" : "世界地理",
-    questionType: "world-fact", grades: allowedGrades });
+    region: "全球／通用", category: "旅行知識", travelFocus: true,
+    ...(/雙子星塔/.test(q) ? {landmark:'雙子星塔',landmarkDetail:'馬來西亞・吉隆坡'} : {}),
+    questionType: "world-fact", grades: allowedGrades,
+    ...(/雙子星塔/.test(q) ? {references:[{title:'雙子星塔官方：參觀體驗',url:'https://www.petronastwintowers.com.my/',role:'fact'}]} : /日本.*溫泉/.test(q) ? {references:[{title:'日本觀光局：溫泉禮儀',url:'https://faq.japan-travel.jnto.go.jp/en/guide/how-to-best-enjoy-onsen/',role:'fact'}]} : /新加坡.*小販/.test(q) ? {references:[{title:'UNESCO：新加坡小販文化',url:'https://ich.unesco.org/en/RL/hawker-culture-in-singapore-community-dining-and-culinary-practices-in-a-multicultural-urban-context-01568',role:'fact'}]} : /佛朗明哥/.test(q) ? {references:[{title:'西班牙觀光局：佛朗明哥',url:'https://www.spain.info/en/discover-spain/flamenco-spain/',role:'fact'}]} : /龍坡邦/.test(q) ? {references:[{title:'UNESCO：龍坡邦古城',url:'https://whc.unesco.org/en/list/479/',role:'fact'}]} : /馬丘比丘/.test(q) ? {references:[{title:'UNESCO：馬丘比丘',url:'https://whc.unesco.org/en/list/274/',role:'fact'}]} : /威尼斯/.test(q) ? {references:[{title:'義大利觀光局：威尼斯',url:'https://www.italia.it/it/veneto/venezia',role:'fact'}]} : {}) });
 }
 const basics = [
   ["map", "coordinates-time", "地圖圖例的主要用途是？", ["解釋符號代表的事物", "保證每條路都暢通", "顯示即時天氣", "決定交通票價"], "圖例說明地圖上的符號意義；即時路況、天氣與票價需要其他資訊。"],
@@ -38,7 +43,8 @@ const basics = [
   ["garden", "gardens-landscapes", "園林的文化價值除了植物種類，還可能包含？", ["布局、歷史與人和環境的關係", "只有停車場大小", "只有票價高低", "只有今天的遊客數"], "園林也反映布局、設計與歷史文化。"],
   ["art", "museums-arts", "比較兩件藝術品時，哪組資訊更有助於理解？", ["年代、材料與創作背景", "只有相框售價", "只有觀眾排隊順序", "只有照片像素"], "年代、材料與創作背景共同提供藝術作品的脈絡。"],
 ];
-basics.forEach(([id, sub, q, choices, fact]) => add(`basic-${id}`, "城市旅人", 2, sub, sub, q, choices, fact, ["小四", "小五"]));
+const practicalTopics = new Set(['ground-transport','planning-itineraries','culture-etiquette','digital-equipment','museums-arts']);
+basics.filter(([,sub])=>practicalTopics.has(sub)).forEach(([id, sub, q, choices, fact]) => add(`basic-${id}`, "城市旅人", 2, sub, sub, q, choices, fact, ["小四", "小五"]));
 
 const concepts = [
   ["rainshadow", "climate-polar", "山脈迎風坡雨量多、背風坡雨量少。若風向與海拔條件維持不變，較合理的解釋是？", ["氣流抬升後水氣凝結，越山後水氣減少", "所有高山兩側雨量必然相同", "背風坡因看不到太陽而乾燥", "經度是唯一決定降雨的因素"], "迎風坡氣流抬升形成降雨，越山後常較乾燥。"],
@@ -71,11 +77,17 @@ for (const level of ["城市旅人", "國家達人"]) {
     // 兩層使用不同知識題，補足理解題而非複製同一題改難度標籤。
     if (level === "城市旅人" && i % 2) return;
     if (level === "國家達人" && !(i % 2)) return;
-    add(`concept-${id}`, level, 2, sub, sub, q, choices, fact, level === "城市旅人" ? ["小五"] : ["小六", "國一"]);
+    if(practicalTopics.has(sub) && id !== 'museum-provenance') add(`concept-${id}`, level, 2, sub, sub, q, choices, fact, level === "城市旅人" ? ["小五"] : ["小六", "國一"]);
   });
 }
 
 function childSubtopic(q) {
+  if (/餐|料理|食材|早餐|香料|小販/.test(q)) return 'health-food';
+  if (/雙子|地標|建築|高塔|夜景/.test(q)) return 'monuments-landmarks';
+  if (/旅館|住宿|民宿|飯店|溫泉/.test(q)) return 'accommodation';
+  if (/手作|工藝|紋樣/.test(q)) return 'culture-etiquette';
+  if (/照片|攝影|記錄|網路|手機/.test(q)) return 'digital-equipment';
+  if (/船|港|碼頭/.test(q)) return 'cruises-boats';
   if (/古蹟|古城|古建築|修復|石牆/.test(q)) return "heritage-conservation";
   if (/博物館|展品|文物/.test(q)) return "museums-arts";
   if (/傳統|語言|招牌|習慣|飲食|節慶|編織|祭典|文化/.test(q)) return "culture-etiquette";
@@ -91,6 +103,9 @@ function childSubtopic(q) {
   return "planning-itineraries";
 }
 for (const item of cases) {
+  if(/網站|題庫|旅行問答|旅遊問答/.test(item.q)) continue;
+  if(item.family.startsWith('child-') && /蓄熱|砍除|評估時|植物種類|緯度|曾有冰川|濕地能|主要可能改善|水質為何|河流跨越/.test(item.q)) continue;
+  if (item.band !== 'advanced' && /填平|永久變大|地形變化|蓄熱|生態通道|泥沙|修復前|文物來自|上游排入|濕地可以|地面起伏|地面的高低|哪種地方通常|這種地方稱為|沙粒堆成|仍在實踐/.test(item.q)) continue;
   let {family, subtopic, index, band, q, options, fact} = item;
   let demand, level, allowed;
   if (band === "advanced") {
@@ -102,7 +117,7 @@ for (const item of cases) {
     family = `primary-${subtopic}`;
     demand = band === "early" ? 1 : 2;
     level = band === "early" ? "旅行新手" : band === "middle" ? "城市旅人" : "國家達人";
-    allowed = band === "early" ? grades.slice(0, 3) : band === "middle" ? grades.slice(2, 5) : grades.slice(5, 7);
+    allowed = band === "early" ? grades.slice(0, 3) : band === "middle" ? grades.slice(2, 5) : grades.slice(4, 7);
   }
   add(`geo-${item.family}-${index}`, level, demand, family, subtopic, q, options, fact, allowed);
 }
@@ -111,6 +126,6 @@ writeFileSync(resolve(root, "data/learning-questions.json"), JSON.stringify(rows
 const path = resolve(root, "data/question-classification-overrides.json");
 const classifications = JSON.parse(readFileSync(path, "utf8"));
 for (const id of Object.keys(classifications)) if (id.startsWith("learning:")) delete classifications[id];
-for (const q of rows) classifications[q.id] = { subtopic: q.subtopic, geography: { regions: ["全球／通用"] }, note: "原創地理理解與判讀；適用年級逐題明列，不以算術代表地理難度。" };
+for (const q of rows) classifications[q.id] = { subtopic: q.subtopic, geography: { regions: ["全球／通用"] }, note: "原創旅行情境；適用年級逐題明列，旅行深度來自體驗與判斷。" };
 writeFileSync(path, JSON.stringify(classifications, null, 2) + "\n");
-console.log(`Wrote ${rows.length} geography questions with explicit grade ranges.`);
+console.log(`Wrote ${rows.length} travel questions with explicit grade ranges.`);

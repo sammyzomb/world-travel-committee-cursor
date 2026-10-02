@@ -11,6 +11,8 @@ import { mkdirSync, writeFileSync } from "node:fs";
 import { resolve } from "node:path";
 import { QUESTION_BANK_VERSION } from "../lib/question-bank-version.ts";
 import { approvedQuestions, questionBankStats, warmupQuestions } from "../lib/questions.ts";
+import {educationStages} from '../lib/game-config.ts';
+import {questionMatchesStageRules} from '../lib/stage-eligibility.ts';
 
 const root = resolve(import.meta.dirname, "..");
 const exportsDir = resolve(root, "exports");
@@ -26,6 +28,8 @@ function serializeQuestion(item) {
     references: item.references ?? [],
     demand: item.demand ?? null,
     family: item.family ?? null,
+    travelFocus: Boolean(item.travelFocus),
+    playableGrades: educationStages.filter((_,stage)=>questionMatchesStageRules(item,stage)).map(s=>s.name),
     grades: item.grades,
     level: item.level,
     region: item.region,

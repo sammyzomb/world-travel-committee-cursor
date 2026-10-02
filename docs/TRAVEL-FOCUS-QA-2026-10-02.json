@@ -1,0 +1,99 @@
+{
+  "questionBankVersion": "38d0c8a72b0a30c7",
+  "runs": 100,
+  "stages": [
+    {
+      "grade": "小一",
+      "minTravelShare": 1
+    },
+    {
+      "grade": "小二",
+      "minTravelShare": 1
+    },
+    {
+      "grade": "小三",
+      "minTravelShare": 1
+    },
+    {
+      "grade": "小四",
+      "minTravelShare": 1
+    },
+    {
+      "grade": "小五",
+      "minTravelShare": 1
+    },
+    {
+      "grade": "小六",
+      "minTravelShare": 1
+    },
+    {
+      "grade": "國一",
+      "minTravelShare": 1
+    },
+    {
+      "grade": "國二",
+      "minTravelShare": 1
+    },
+    {
+      "grade": "國三",
+      "minTravelShare": 1
+    },
+    {
+      "grade": "高一",
+      "minTravelShare": 1
+    },
+    {
+      "grade": "高二",
+      "minTravelShare": 1
+    },
+    {
+      "grade": "高三",
+      "minTravelShare": 1
+    },
+    {
+      "grade": "大一",
+      "minTravelShare": 1
+    },
+    {
+      "grade": "大二",
+      "minTravelShare": 1
+    },
+    {
+      "grade": "大三",
+      "minTravelShare": 1
+    },
+    {
+      "grade": "大四",
+      "minTravelShare": 1
+    },
+    {
+      "grade": "研一",
+      "minTravelShare": 1
+    },
+    {
+      "grade": "研二",
+      "minTravelShare": 1
+    }
+  ],
+  "travelQuestions": 387,
+  "rejectedImages": [
+    "桌山",
+    "庫圖比亞清真寺",
+    "國會山莊",
+    "太陽金字塔",
+    "聖克里斯托瓦爾山",
+    "五月廣場",
+    "月亮谷",
+    "紐西蘭國會大廈",
+    "大皇宮",
+    "濱海灣金沙",
+    "清水寺",
+    "聖索菲亞大教堂",
+    "查理大橋",
+    "迦太基古城",
+    "維多利亞港",
+    "聖馬可廣場",
+    "聖母百花大教堂",
+    "塞哥維亞古城"
+  ]
+}

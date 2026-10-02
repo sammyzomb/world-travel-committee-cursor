@@ -35,10 +35,10 @@ try{
     setGameRandomSeed(seed);
     const run=buildPlayableRunPlan();assert.equal(run.completeThroughFinal,true);
     const sourced=run.plan.questions.filter(q=>q.references?.length);
-    assert.ok(sourced.length>=15,'source questions must actually reach playable rounds');
-    assert.equal(new Set(sourced.map(q=>q.source)).size,5,'all five groups should contribute');
+    assert.ok(sourced.length>=5,'verified travel references must actually reach playable rounds');
+    assert.ok(!run.plan.questions.some(q=>q.id.startsWith('source:')&&!q.travelFocus),'academic sources must not displace travel');
     const replay=buildPlayableRunPlan(run.plan.questions.map(q=>q.id),run.plan.questions.map(q=>q.conceptId));
     assert.equal(replay.completeThroughFinal,true,'priority must not exhaust replay');
   }
 }finally{resetGameRandom();}
-console.log('PASS: five sources, seven regions, geographic reasoning and grade review, hidden references, actual round inclusion and replay.');
+console.log('PASS: source metadata, hidden references, travel references in actual rounds, academic exclusion and fresh replay.');

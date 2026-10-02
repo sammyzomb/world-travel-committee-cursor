@@ -176,7 +176,7 @@ try {
   await waitForPlay(phone);
   const referencesBefore = checkedReferenceQuestions;
   let gradeThreeChecked = 0;
-  for (let step = 0; step < 45 && checkedReferenceQuestions - referencesBefore < 2; step++) {
+  for (let step = 0; step < 45 && (checkedReferenceQuestions - referencesBefore < 2 || gradeThreeChecked < 6); step++) {
     if (await phone.locator('.reward-section').count()) {
       await phone.locator('.reward-actions .primary-button').click();
       await phone.waitForSelector('.answer-button:not([disabled])');

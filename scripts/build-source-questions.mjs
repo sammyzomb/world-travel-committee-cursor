@@ -49,6 +49,16 @@ add('map-river-network','seterra',3,'drainage-network','rivers-lakes-waterfalls'
 add('map-path-comparison','seterra',3,'network-route-choice','ground-transport','全球／通用','教學路網：旅館到車站的直線路徑隔著河流，只有上游橋梁可通行。規劃步行路線時，哪個判讀較合理？',['沿實際道路經橋梁過河，不能把直線當成可走路線','直接跨河，因為地圖上兩點很近','只看旅館與車站名稱，不必查道路','認定所有相交線都能自由轉彎'],'路線需要實際連通與通行條件，地圖幾何距離不能代替橋梁和道路資訊。路網為原創教學情境。',true);
 add('map-sampling','seterra',4,'map-generalization','coordinates-time','全球／通用','假設全球概覽地圖省略小島與狹窄水道，區域詳圖保留它們。研究者僅因概覽圖上看不到連接水道，就宣稱兩片水域完全不相通。哪種查核最合理？',['檢查比例尺、圖例與省略規則，再以詳圖核對連通','只把概覽圖放大，便能恢復原本省略的資料','只比較兩張圖的檔案大小','只要概覽圖涵蓋全球，其細節一定比區域圖完整'],'概覽圖會概括與省略細節，放大顯示不會補回沒有收錄的資料。情境原創；Seterra 用作全球地圖題型參考。',true);
 
+const travelRevisions={
+ 'angkor-system':['參訪吳哥想了解古城生活，而不只拍寺廟外觀，哪種導覽內容較完整？',['寺廟、聚落與水利設施的故事','只沿寺廟屋頂拍照，不聽解說','只逛現代紀念品店','只比較入口門牌'],'UNESCO 的吳哥介紹包含寺廟、聚落與水利設施；旅行可從這些內容一起理解古城。'],
+ 'machu-values':['馬丘比丘同時有古建築與山地景觀。你想深入體驗但只有半日，哪種安排較符合目的？',['依開放路線選重點，留建築解說與山景觀察時間','把全部停留用來逛山下商店','只在入口拍照便離開','沿未開放路線趕完所有角落'],'UNESCO 記錄馬丘比丘的文化與自然價值；題定旅行應兼顧遺址解說與山地觀察，實際參訪路線仍需核對官方開放資訊。'],
+ 'serengeti-corridor':['去塞倫蓋提想觀察動物遷移，業者照片很壯觀。比較行程時，哪種期待較合理？',['核對季節與路線，但不把野生動物出現當固定保證','任何月份都能看見照片中同一隊動物','只要多付費就可以要求動物移動','用餵食讓遷移每天準時發生'],'UNESCO 說明塞倫蓋提的大規模動物遷移；旅行觀察仍受自然行為與季節影響，不是固定時間的表演。'],
+ 'venice-metrics':['威尼斯旅行情境：旅伴想看運河、聽老城故事又不便爬階梯。遊船可看景，步行導覽有階梯。哪種安排兼顧需求？',['確認碼頭通行，搭配可達街區的文化解說與返程','只選最長步行路線，靠快走完成','全程留在船上且取消所有解說','沿原路走，到了階梯再要求居民協助抬行李'],'威尼斯是有居民生活的運河城市。題定安排需同時符合觀景、文化內容與通行需求；具體碼頭及街區是否可達須向服務提供者確認。'],
+ 'reef-catchment':['大堡礁旅行情境：你想觀察珊瑚，業者甲提供不接觸的導覽但受海況影響，乙保證摸珊瑚拍照。你又有固定返程，較合適的安排是？',['選符合保護規範的觀察，確認海況變動與返程備案','選可觸摸珊瑚的行程，返程等當天再說','只要照片漂亮便忽略海況與活動方式','把所有活動安排在返程前最後一刻'],'大堡礁的珊瑚與海洋生態是旅行觀察的核心。題定選擇需兼顧不破壞的參與方式、海況變動與可行返程，並非實際業者比較。'],
+};
+for(const q of rows)if(travelRevisions[q.id.slice(7)]) {
+ const [text,options,fact]=travelRevisions[q.id.slice(7)];q.q=text;q.options=options;q.fact=fact;q.travelFocus=true;
+}
 const classifications=JSON.parse(readFileSync(resolve(root,'data/question-classification-overrides.json'),'utf8'));
 for(const q of rows)classifications[q.id]={subtopic:q.subtopic,geography:{regions:[q.region]},note:'來源逐題記錄；fact 為概念或案例依據，design 僅為題型參考。假設資料不當成官方統計。'};
 writeFileSync(resolve(root,'data/source-questions.json'),JSON.stringify(rows,null,2)+'\n');

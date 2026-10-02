@@ -70,7 +70,7 @@ async function fetchWithRetry(url) {
 
 async function downloadOne(landmark, image, previous) {
   const existing = previous?.entries?.[landmark];
-  if (existing?.imageRejected) {
+  if (existing?.imageRejected || (existing?.provider && !existing.imageReviewedAt)) {
     return { landmark, entry: existing, skipped: true };
   }
   // Preserve stock replacements and their credits through subsequent builds.

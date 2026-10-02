@@ -19,6 +19,9 @@ export async function GET(request: Request) {
   }
 
   const localEntry = landmarkStaticManifest.entries[name];
+  if (localEntry?.imageRejected || (localEntry?.provider && !localEntry.imageReviewedAt)) {
+    return new Response('Image awaiting subject review', { status: 404 });
+  }
   if (localEntry?.path && !localEntry.failed) {
     const filePath = resolve(publicRoot, localEntry.path.replace(/^\//, ""));
     if (existsSync(filePath)) {

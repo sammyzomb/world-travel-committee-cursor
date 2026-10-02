@@ -1,0 +1,405 @@
+{
+  "ok": true,
+  "date": "2026-10-02",
+  "url": "https://world-travel-committee.tcawg.workers.dev",
+  "questionBankVersion": "38d0c8a72b0a30c7",
+  "checks": [
+    {
+      "viewport": {
+        "width": 1280,
+        "height": 650
+      },
+      "gradeCounts": {
+        "國小・小一": 5,
+        "國小・小二": 5,
+        "國小・小三": 6,
+        "國小・小四": 6,
+        "國小・小五": 7,
+        "國小・小六": 7
+      },
+      "sourceChecks": 8,
+      "questions": [
+        {
+          "grade": "國小・小一",
+          "id": "warmup:uer62h",
+          "q": "富士山是日本最高的山。"
+        },
+        {
+          "grade": "國小・小一",
+          "id": "warmup:ay2uz6",
+          "q": "世界上最大的海洋是太平洋。"
+        },
+        {
+          "grade": "國小・小一",
+          "id": "learning:geo-child-environment-1",
+          "q": "到海灘玩後，自己的垃圾應怎麼處理？"
+        },
+        {
+          "grade": "國小・小一",
+          "id": "learning:geo-child-environment-17",
+          "q": "旅遊照片中有大片沙丘，哪項描述較合理？"
+        },
+        {
+          "grade": "國小・小一",
+          "id": "learning:geo-child-environment-0",
+          "q": "到公園看鳥，哪種做法較不會打擾牠們？"
+        },
+        {
+          "grade": "國小・小二",
+          "id": "learning:geo-child-landscape-3",
+          "q": "湖邊有警示牌，準備靠近水邊前應怎麼做？"
+        },
+        {
+          "grade": "國小・小二",
+          "id": "learning:geo-child-environment-5",
+          "q": "晴天戶外走路，哪種裝備較實用？"
+        },
+        {
+          "grade": "國小・小二",
+          "id": "learning:geo-child-landscape-4",
+          "q": "森林裡看到倒下的樹幹，較合理的想法是？"
+        },
+        {
+          "grade": "國小・小二",
+          "id": "learning:geo-child-environment-21",
+          "q": "旅途中看見不同語言的招牌，較合理的想法是？"
+        },
+        {
+          "grade": "國小・小二",
+          "id": "learning:geo-child-environment-23",
+          "q": "看到山路轉彎多，較合理的原因是？"
+        },
+        {
+          "grade": "國小・小三",
+          "id": "learning:geo-travel-primary-middle-0",
+          "q": "想看日本溫泉的泡湯文化，入池前通常先做什麼？"
+        },
+        {
+          "grade": "國小・小三",
+          "id": "learning:geo-travel-primary-middle-4",
+          "q": "在威尼斯體驗運河風景，哪種活動較貼合？"
+        },
+        {
+          "grade": "國小・小三",
+          "id": "learning:geo-travel-primary-middle-5",
+          "q": "到龍坡邦逛古城，哪種活動能認識當地氣氛？"
+        },
+        {
+          "grade": "國小・小三",
+          "id": "learning:geo-travel-primary-middle-3",
+          "q": "在西班牙看佛朗明哥表演，主要會體驗什麼？"
+        },
+        {
+          "grade": "國小・小三",
+          "id": "learning:geo-travel-primary-middle-2",
+          "q": "到吉隆坡看雙子星塔，哪種畫面才符合景點？"
+        },
+        {
+          "grade": "國小・小三",
+          "id": "learning:geo-travel-primary-middle-1",
+          "q": "新加坡小販中心除了吃小吃，還能看到什麼？"
+        },
+        {
+          "grade": "國小・小四",
+          "id": "learning:basic-rail",
+          "q": "搭火車前，月台號碼與車次應如何核對？"
+        },
+        {
+          "grade": "國小・小四",
+          "id": "learning:geo-child-geography-10",
+          "q": "旅途中遇到自己不熟悉的飲食習慣，較合適怎麼做？"
+        },
+        {
+          "grade": "國小・小四",
+          "id": "learning:geo-child-geography-3",
+          "q": "同一天山頂比山腳涼，出發去山頂時應考慮什麼？"
+        },
+        {
+          "grade": "國小・小四",
+          "id": "learning:geo-travel-primary-middle-26",
+          "q": "在地方料理課上，除了吃成品還可以學什麼？"
+        },
+        {
+          "grade": "國小・小四",
+          "id": "learning:geo-travel-primary-middle-10",
+          "q": "去積雪小鎮散步，鞋子應優先考慮什麼？"
+        },
+        {
+          "grade": "國小・小四",
+          "id": "learning:basic-art",
+          "q": "比較兩件藝術品時，哪組資訊更有助於理解？"
+        },
+        {
+          "grade": "國小・小五",
+          "id": "learning:geo-travel-primary-middle-25",
+          "q": "準備旅行時，照片裡的晴天能保證當天也晴嗎？"
+        },
+        {
+          "grade": "國小・小五",
+          "id": "learning:geo-travel-primary-middle-7",
+          "q": "看建築時想知道為什麼這樣設計，可以找什麼？"
+        },
+        {
+          "grade": "國小・小五",
+          "id": "learning:geo-child-understanding-19",
+          "q": "導覽員說某習俗全國人人都相同，較合理的態度是？"
+        },
+        {
+          "grade": "國小・小五",
+          "id": "learning:geo-child-geography-9",
+          "q": "某地有明顯雨季，安排戶外參訪時最應查看什麼？"
+        },
+        {
+          "grade": "國小・小五",
+          "id": "learning:geo-travel-primary-upper-6",
+          "q": "市場導覽終點在河岸，晚餐在車站旁，行程應先檢查什麼？"
+        },
+        {
+          "grade": "國小・小五",
+          "id": "learning:geo-travel-primary-upper-13",
+          "q": "想認識傳統工藝卻只有短時間，哪種安排較合適？"
+        },
+        {
+          "grade": "國小・小五",
+          "id": "learning:geo-travel-primary-upper-3",
+          "q": "想參訪日本溫泉但不同設施規則不同，應怎樣準備？"
+        },
+        {
+          "grade": "國小・小六",
+          "id": "learning:geo-child-understanding-7",
+          "q": "想了解傳統節慶的意義，哪種資料較有幫助？"
+        },
+        {
+          "grade": "國小・小六",
+          "id": "learning:geo-travel-primary-upper-2",
+          "q": "看城市地標後還想了解居民生活，哪項能補充不同體驗？"
+        },
+        {
+          "grade": "國小・小六",
+          "id": "learning:geo-travel-primary-upper-1",
+          "q": "兩家餐廳一間介紹地方料理一間主打熟悉的連鎖餐點，想了解飲食文化應怎麼選？"
+        },
+        {
+          "grade": "國小・小六",
+          "id": "learning:geo-travel-primary-upper-15",
+          "q": "旅行照片標成某座寺院，卻來自另一城市，應該怎麼處理？"
+        },
+        {
+          "grade": "國小・小六",
+          "id": "source:angkor-system",
+          "q": "參訪吳哥想了解古城生活，而不只拍寺廟外觀，哪種導覽內容較完整？"
+        },
+        {
+          "grade": "國小・小六",
+          "id": "learning:geo-child-understanding-8",
+          "q": "雨季山區道路容易受落石影響，出發前應查看什麼？"
+        },
+        {
+          "grade": "國小・小六",
+          "id": "learning:geo-travel-primary-upper-16",
+          "q": "鐵路通票能搭乘部分列車，但指定班次另需預約，該怎樣使用？"
+        }
+      ]
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "gradeCounts": {
+        "國小・小一": 5,
+        "國小・小二": 5,
+        "國小・小三": 6,
+        "國小・小四": 6,
+        "國小・小五": 7,
+        "國小・小六": 7
+      },
+      "sourceChecks": 8,
+      "questions": [
+        {
+          "grade": "國小・小一",
+          "id": "warmup:1esry98",
+          "q": "馬丘比丘位於秘魯。"
+        },
+        {
+          "grade": "國小・小一",
+          "id": "warmup:qlfoay",
+          "q": "吉薩金字塔群是位於埃及的知名古蹟。"
+        },
+        {
+          "grade": "國小・小一",
+          "id": "learning:geo-child-environment-17",
+          "q": "旅遊照片中有大片沙丘，哪項描述較合理？"
+        },
+        {
+          "grade": "國小・小一",
+          "id": "learning:geo-child-environment-10",
+          "q": "看到海邊浪很大，較適合怎麼做？"
+        },
+        {
+          "grade": "國小・小一",
+          "id": "learning:geo-child-environment-0",
+          "q": "到公園看鳥，哪種做法較不會打擾牠們？"
+        },
+        {
+          "grade": "國小・小二",
+          "id": "learning:geo-child-landscape-2",
+          "q": "想認識當地生活，哪種做法較合適？"
+        },
+        {
+          "grade": "國小・小二",
+          "id": "learning:geo-child-environment-23",
+          "q": "看到山路轉彎多，較合理的原因是？"
+        },
+        {
+          "grade": "國小・小二",
+          "id": "learning:geo-child-environment-1",
+          "q": "到海灘玩後，自己的垃圾應怎麼處理？"
+        },
+        {
+          "grade": "國小・小二",
+          "id": "learning:geo-child-environment-11",
+          "q": "拍攝正在進行的傳統活動前，應怎麼做？"
+        },
+        {
+          "grade": "國小・小二",
+          "id": "learning:geo-child-landscape-4",
+          "q": "森林裡看到倒下的樹幹，較合理的想法是？"
+        },
+        {
+          "grade": "國小・小三",
+          "id": "learning:geo-travel-primary-middle-5",
+          "q": "到龍坡邦逛古城，哪種活動能認識當地氣氛？"
+        },
+        {
+          "grade": "國小・小三",
+          "id": "learning:geo-travel-primary-middle-1",
+          "q": "新加坡小販中心除了吃小吃，還能看到什麼？"
+        },
+        {
+          "grade": "國小・小三",
+          "id": "learning:geo-travel-primary-middle-3",
+          "q": "在西班牙看佛朗明哥表演，主要會體驗什麼？"
+        },
+        {
+          "grade": "國小・小三",
+          "id": "learning:geo-travel-primary-middle-4",
+          "q": "在威尼斯體驗運河風景，哪種活動較貼合？"
+        },
+        {
+          "grade": "國小・小三",
+          "id": "learning:geo-travel-primary-middle-2",
+          "q": "到吉隆坡看雙子星塔，哪種畫面才符合景點？"
+        },
+        {
+          "grade": "國小・小三",
+          "id": "learning:geo-travel-primary-middle-0",
+          "q": "想看日本溫泉的泡湯文化，入池前通常先做什麼？"
+        },
+        {
+          "grade": "國小・小四",
+          "id": "learning:basic-rail",
+          "q": "搭火車前，月台號碼與車次應如何核對？"
+        },
+        {
+          "grade": "國小・小四",
+          "id": "learning:geo-travel-primary-middle-18",
+          "q": "想買地方工藝伴手禮，哪種問題有助認識特色？"
+        },
+        {
+          "grade": "國小・小四",
+          "id": "learning:geo-travel-primary-middle-15",
+          "q": "旅途中想把景點故事記下來，可以怎麼做？"
+        },
+        {
+          "grade": "國小・小四",
+          "id": "learning:geo-travel-primary-middle-27",
+          "q": "在市場聞到不熟悉的香料，較合適的想法是？"
+        },
+        {
+          "grade": "國小・小四",
+          "id": "learning:geo-child-geography-9",
+          "q": "某地有明顯雨季，安排戶外參訪時最應查看什麼？"
+        },
+        {
+          "grade": "國小・小四",
+          "id": "learning:basic-art",
+          "q": "比較兩件藝術品時，哪組資訊更有助於理解？"
+        },
+        {
+          "grade": "國小・小五",
+          "id": "learning:geo-travel-primary-upper-2",
+          "q": "看城市地標後還想了解居民生活，哪項能補充不同體驗？"
+        },
+        {
+          "grade": "國小・小五",
+          "id": "learning:geo-child-geography-3",
+          "q": "同一天山頂比山腳涼，出發去山頂時應考慮什麼？"
+        },
+        {
+          "grade": "國小・小五",
+          "id": "learning:geo-travel-primary-upper-3",
+          "q": "想參訪日本溫泉但不同設施規則不同，應怎樣準備？"
+        },
+        {
+          "grade": "國小・小五",
+          "id": "learning:geo-travel-primary-middle-6",
+          "q": "旅行想了解當地早餐，哪種安排較合適？"
+        },
+        {
+          "grade": "國小・小五",
+          "id": "learning:geo-travel-primary-upper-0",
+          "q": "同一小鎮有市集和工藝課程，課程固定開始，應該如何安排？"
+        },
+        {
+          "grade": "國小・小五",
+          "id": "learning:geo-travel-primary-upper-15",
+          "q": "旅行照片標成某座寺院，卻來自另一城市，應該怎麼處理？"
+        },
+        {
+          "grade": "國小・小五",
+          "id": "learning:geo-travel-primary-middle-24",
+          "q": "旅行想看當地人的日常商店，哪種活動較貼合？"
+        },
+        {
+          "grade": "國小・小六",
+          "id": "learning:geo-travel-primary-upper-17",
+          "q": "購物伴手禮易碎且接著要多次轉車，應考慮什麼？"
+        },
+        {
+          "grade": "國小・小六",
+          "id": "learning:geo-travel-primary-upper-24",
+          "q": "想看吉隆坡天際線又認識地方飲食，哪種安排較完整？"
+        },
+        {
+          "grade": "國小・小六",
+          "id": "source:angkor-system",
+          "q": "參訪吳哥想了解古城生活，而不只拍寺廟外觀，哪種導覽內容較完整？"
+        },
+        {
+          "grade": "國小・小六",
+          "id": "learning:geo-travel-primary-upper-4",
+          "q": "古城導覽寫明外觀參觀，但你想進建築內看展，應該確認什麼？"
+        },
+        {
+          "grade": "國小・小六",
+          "id": "learning:geo-child-understanding-17",
+          "q": "地圖上公園旁有車站，能直接認定出站就可無障礙到達嗎？"
+        },
+        {
+          "grade": "國小・小六",
+          "id": "learning:geo-travel-primary-upper-23",
+          "q": "城市展覽與戶外市集都想逛，雨天該如何保留體驗？"
+        },
+        {
+          "grade": "國小・小六",
+          "id": "learning:geo-travel-primary-upper-1",
+          "q": "兩家餐廳一間介紹地方料理一間主打熟悉的連鎖餐點，想了解飲食文化應怎麼選？"
+        }
+      ]
+    }
+  ],
+  "leaderboardSubmitted": false,
+  "verifiedTowerPhoto": "/landmarks/petronas-6e3348c645a0.jpg",
+  "rejectedProxyChecked": true
+}

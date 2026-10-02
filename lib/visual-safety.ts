@@ -84,7 +84,7 @@ export function safeVisualCaption(input: {
   }
 
   if (questionText.includes("哪一洲") || questionText.includes("位於哪一洲")) {
-    return { label: genericLandmark, detail: "洲別提示" };
+    return { label: genericLandmark, detail: "延伸認識旅遊地標" };
   }
 
   if (

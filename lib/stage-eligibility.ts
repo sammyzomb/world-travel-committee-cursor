@@ -9,6 +9,7 @@ import {
   type QuestionType,
 } from "./question-types";
 import type { Question } from "./questions";
+import { isPlayableTravelContent } from './travel-focus';
 
 export type StageRuleViolation = {
   questionId: string;
@@ -32,6 +33,7 @@ export function isReviewedForPrimary(question: Question, stageIndex: number) {
 
 export function questionMatchesStageRules(question: Question, stageIndex: number) {
   if (question.auditStatus !== "approved") return false;
+  if (!isPlayableTravelContent(question)) return false;
   if (!isReviewedForPrimary(question, stageIndex)) return false;
   if (stageIndex <= 5 && questionDemand(question) > 2) return false;
   if (questionDemand(question) < minDemandForStage(stageIndex)) return false;

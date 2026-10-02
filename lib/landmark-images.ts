@@ -371,7 +371,7 @@ export function getLandmarkImageCredit(landmark: string): string | undefined {
 export function getLandmarkImageSrc(landmark: string): string | undefined {
   if (!landmarkImages[landmark]) return undefined;
   const localEntry = landmarkStaticManifest.entries[landmark];
-  if (localEntry?.imageRejected) return undefined;
+  if (localEntry?.imageRejected || (localEntry?.provider && !localEntry.imageReviewedAt)) return undefined;
   if (localEntry?.path && !localEntry.failed) return localEntry.path;
   return `/api/landmark-image?name=${encodeURIComponent(landmark)}`;
 }

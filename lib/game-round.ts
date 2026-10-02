@@ -1,4 +1,5 @@
 import { questionDemand, questionFamily } from "./question-demand";
+import { isTravelFocused } from './travel-focus';
 import {
   educationStages,
   FINAL_STAGE_INDEX,
@@ -118,7 +119,8 @@ function pickDiverseQuestions(ranked: Question[], count: number, stageIndex: num
       if (!remainingByFamily.has(family)) remainingByFamily.set(family, new Set());
       remainingByFamily.get(family)!.add(q.conceptId);
     }
-    available.sort((a, b) => (familyCounts.get(questionFamily(a)) ?? 0) - (familyCounts.get(questionFamily(b)) ?? 0)
+    available.sort((a, b) => Number(isTravelFocused(b)) - Number(isTravelFocused(a))
+      || (familyCounts.get(questionFamily(a)) ?? 0) - (familyCounts.get(questionFamily(b)) ?? 0)
       || questionDemand(b) - questionDemand(a)
       || Number(Boolean(b.references?.length)) - Number(Boolean(a.references?.length))
       || (remainingByFamily.get(questionFamily(b))?.size ?? 0) - (remainingByFamily.get(questionFamily(a))?.size ?? 0)

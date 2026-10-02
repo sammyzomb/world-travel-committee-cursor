@@ -42,7 +42,7 @@ export function QuestionVisual({ visual }: { visual: QuestionVisualData }) {
         <img src="/globe.svg" alt="" />
       </div>
       <div>
-        <span>地理提示</span>
+        <span>旅遊地標</span>
         <b>{visual.label}</b>
         <small>{visual.detail}</small>
       </div>

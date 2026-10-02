@@ -31,15 +31,15 @@ export function StartScreen({
             </div>
 
             <div className="start-hero-copy">
-              <p className="mini-label">GEO QUIZ ARCADE</p>
+              <p className="mini-label">TRAVEL QUIZ ARCADE</p>
               <h1 className="start-hero-title">{GAME_HERO_HEADLINE}</h1>
-              <p className="start-hero-subtitle">從小一一路衝到博士，地理梗遊戲開打！</p>
+              <p className="start-hero-subtitle">從小一一路衝到博士，探索世界的旅遊問答！</p>
 
               <div className="start-topic-chips" aria-label="題庫主題">
-                <span><MapPin size={16} /> 地理知識</span>
-                <span><Sparkles size={16} /> 國家知識</span>
+                <span><MapPin size={16} /> 旅遊景點</span>
+                <span><Sparkles size={16} /> 異國文化</span>
                 <span><Crown size={16} /> 世界遺產</span>
-                <span><Plane size={16} /> 旅遊知識</span>
+                <span><Plane size={16} /> 旅行實務</span>
               </div>
 
               {personalBest && (

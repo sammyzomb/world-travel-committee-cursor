@@ -1,0 +1,62 @@
+{
+  "ok": true,
+  "fixture": true,
+  "checks": [
+    {
+      "id": "learning:geo-travel-city-walk-12",
+      "viewport": {
+        "width": 1280,
+        "height": 650
+      }
+    },
+    {
+      "id": "learning:geo-travel-city-walk-12",
+      "viewport": {
+        "width": 820,
+        "height": 1180
+      }
+    },
+    {
+      "id": "learning:geo-travel-city-walk-12",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "learning:geo-travel-city-walk-12",
+      "viewport": {
+        "width": 844,
+        "height": 390
+      }
+    },
+    {
+      "id": "learning:geo-travel-landmark-12",
+      "viewport": {
+        "width": 1280,
+        "height": 650
+      }
+    },
+    {
+      "id": "learning:geo-travel-landmark-12",
+      "viewport": {
+        "width": 820,
+        "height": 1180
+      }
+    },
+    {
+      "id": "learning:geo-travel-landmark-12",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "learning:geo-travel-landmark-12",
+      "viewport": {
+        "width": 844,
+        "height": 390
+      }
+    }
+  ]
+}
