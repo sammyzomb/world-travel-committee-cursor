@@ -1,6 +1,13 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 @import "../vendor/shadcn-tailwind-4.13.0.css";
+
+.puzzle-catalog { margin-top: 1.2rem; padding: 1rem; border: 1px solid #ffffff40; border-radius: 1rem; background: #081d3590; font-size: .95rem; }
+.puzzle-catalog summary { cursor: pointer; color: #ffe191; font-weight: 700; }
+.puzzle-catalog p { margin-top: .75rem; line-height: 1.6; }
+.puzzle-catalog ul { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: .5rem; margin-top: .8rem; }
+.puzzle-catalog li { display: flex; justify-content: space-between; gap: .5rem; }
+.photo-load-error { padding: 2rem; background: #10263b; border-radius: 1rem; }
 :root{--background:#1a5088;--foreground:#f8fafc;--primary:#f5b83b;--primary-foreground:#101827;--border:#ffffff35;--radius:.85rem}
 @theme inline{--color-background:var(--background);--color-foreground:var(--foreground);--color-primary:var(--primary);--color-primary-foreground:var(--primary-foreground);--color-border:var(--border);--font-sans:"Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif}
 *{box-sizing:border-box}body{margin:0;background:#1a5088;color:#f8fafc;font-family:"Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif}.game-shell{background:radial-gradient(circle at 75% 0%,#5eb0f0 0,transparent 38%),radial-gradient(circle at 12% 88%,#3d8fd4 0,transparent 32%),linear-gradient(155deg,#2a6cb0,#3b84c8 52%,#2569ad)}

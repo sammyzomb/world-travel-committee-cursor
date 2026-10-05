@@ -27,6 +27,8 @@ type IssuedQuestionSource = {
   questionType?: string;
   visual?: QuestionVisualData;
   references?: QuestionReference[];
+  puzzleType?: string;
+  visualClue?: boolean;
 };
 
 export type SubmitAnswerInput = {
@@ -69,6 +71,8 @@ export function toIssuedQuestion(
     questionType: question.questionType,
     visual: question.visual,
     references: question.references,
+    puzzleType: question.puzzleType,
+    visualClue: question.visualClue,
   };
 }
 
@@ -83,13 +87,19 @@ export function toPublicQuestion(issued: IssuedQuestion, answered = false): Publ
     region: answered ? issued.region : (issued.category ?? "旅遊知識"),
     kind: issued.kind,
     category: issued.category,
-    questionType: issued.questionType,
-    visual: answered || (issued.stageIndex === 0 && issued.kind === "tf") ? issued.visual : undefined,
+      questionType: issued.questionType,
+      puzzleType: issued.puzzleType,
+      visualClue: issued.visualClue,
+      visual: answered || (issued.stageIndex === 0 && issued.kind === "tf") ? issued.visual : issued.visualClue && issued.visual?.type === 'photo' ? {
+        type:'photo',image:issued.visual.image,label:'旅行明信片',detail:'看圖辨識，作答後揭曉景點',
+        credit:issued.visual.credit && !/\.(?:jpg|jpeg|png|webp)|https?:|\(WT/i.test(issued.visual.credit) && !issued.options.some(option=>issued.visual!.credit!.includes(option)) ? issued.visual.credit : '作者與來源於作答後顯示',
+        licenseUrl:issued.visual.licenseUrl,
+      } : undefined,
   };
 }
 
 function factLabel(issued: IssuedQuestion) {
-  return issued.visual?.label ?? issued.region ?? issued.category ?? "旅遊知識";
+  return issued.visual?.label ?? issued.puzzleType ?? issued.region ?? issued.category ?? "旅遊知識";
 }
 
 function buildRunRecap(answers: RunAnswerRecord[], issuedById: Map<string, IssuedQuestion>) {

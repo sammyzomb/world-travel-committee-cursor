@@ -11,7 +11,7 @@ import { mkdirSync, writeFileSync } from "node:fs";
 import { resolve } from "node:path";
 import { QUESTION_BANK_VERSION } from "../lib/question-bank-version.ts";
 import { approvedQuestions, questionBankStats, warmupQuestions } from "../lib/questions.ts";
-import {educationStages} from '../lib/game-config.ts';
+import {educationStages,formalStageNames} from '../lib/game-config.ts';
 import {questionMatchesStageRules} from '../lib/stage-eligibility.ts';
 
 const root = resolve(import.meta.dirname, "..");
@@ -29,7 +29,10 @@ function serializeQuestion(item) {
     demand: item.demand ?? null,
     family: item.family ?? null,
     travelFocus: Boolean(item.travelFocus),
+    puzzleType: item.puzzleType ?? null,
+    visualClue: Boolean(item.visualClue),
     playableGrades: educationStages.filter((_,stage)=>questionMatchesStageRules(item,stage)).map(s=>s.name),
+    playableStages: educationStages.filter((_,stage)=>questionMatchesStageRules(item,stage)).map(s=>formalStageNames[s.name]),
     grades: item.grades,
     level: item.level,
     region: item.region,
@@ -105,6 +108,10 @@ function exportCsv() {
     "countries",
     "classificationAssignment",
     "classificationReviewRequired",
+    "puzzleType",
+    "visualClue",
+    "activeInGame",
+    "playableStages",
   ];
   const lines = [
     headers.join(","),
@@ -139,6 +146,10 @@ function exportCsv() {
         row.classification.geography.countries.join("|"),
         row.classification.assignment,
         row.classification.reviewRequired,
+        row.puzzleType,
+        row.visualClue,
+        row.playableStages.length>0,
+        row.playableStages.join('|'),
       ]),
     ),
   ];

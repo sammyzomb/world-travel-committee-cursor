@@ -34,7 +34,7 @@ export function EnrollmentAnimation({ onComplete }: { onComplete: () => void }) 
           <div className="enrollment-gate">
             <span className="enrollment-gate-pillar enrollment-gate-pillar-left" />
             <span className="enrollment-gate-pillar enrollment-gate-pillar-right" />
-            <span className="enrollment-gate-sign">小一入學</span>
+            <span className="enrollment-gate-sign">旅行出發</span>
           </div>
           <div className="enrollment-path" />
         </div>
@@ -57,10 +57,10 @@ export function EnrollmentAnimation({ onComplete }: { onComplete: () => void }) 
         </div>
 
         <div className="enrollment-copy">
-          <p className="mini-label enrollment-phase enrollment-phase-1">ELEMENTARY ENROLLMENT</p>
-          <h1 className="enrollment-phase enrollment-phase-2">小一入學典禮</h1>
+          <p className="mini-label enrollment-phase enrollment-phase-1">TRAVEL ADVENTURE</p>
+          <h1 className="enrollment-phase enrollment-phase-2">旅遊益智挑戰</h1>
           <p className="enrollment-phase enrollment-phase-3">
-            背上書包，踏上你的<span>世界旅行</span>學習之旅
+            帶上好奇心，踏上你的<span>世界旅行</span>解謎之旅
           </p>
         </div>
 

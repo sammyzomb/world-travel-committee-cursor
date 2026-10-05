@@ -1,0 +1,133 @@
+{
+  "date": "2026-10-05",
+  "url": "http://127.0.0.1:8787",
+  "questionBankVersion": "3b2061df2c4d682f",
+  "ok": true,
+  "leaderboardSubmitted": false,
+  "checks": [
+    {
+      "viewport": {
+        "width": 1280,
+        "height": 650
+      },
+      "questions": [
+        "warmup:7l9oe2",
+        "warmup:1esry98",
+        "puzzle:photo-27",
+        "puzzle:photo-0",
+        "puzzle:photo-31",
+        "puzzle:photo-8",
+        "puzzle:photo-26",
+        "puzzle:photo-28",
+        "puzzle:photo-23",
+        "puzzle:photo-41",
+        "puzzle:culture-venice",
+        "puzzle:photo-61",
+        "puzzle:heritage-clue-0",
+        "puzzle:photo-50",
+        "puzzle:culture-flamenco",
+        "puzzle:heritage-clue-3",
+        "puzzle:culture-hawker",
+        "puzzle:heritage-clue-1",
+        "puzzle:heritage-clue-2",
+        "puzzle:photo-47",
+        "puzzle:culture-onsen",
+        "puzzle:photo-87",
+        "puzzle:photo-130",
+        "puzzle:culture-petronas",
+        "puzzle:heritage-clue-4",
+        "puzzle:culture-luang",
+        "puzzle:photo-74",
+        "puzzle:heritage-clue-6",
+        "puzzle:culture-angkor",
+        "puzzle:photo-115",
+        "puzzle:heritage-clue-7",
+        "puzzle:photo-135",
+        "puzzle:heritage-clue-5",
+        "puzzle:photo-127",
+        "puzzle:photo-119",
+        "puzzle:culture-machu"
+      ],
+      "photos": 18,
+      "sources": 16
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "questions": [
+        "warmup:dveciz",
+        "warmup:uer62h",
+        "puzzle:photo-10",
+        "puzzle:photo-21",
+        "puzzle:photo-8",
+        "puzzle:photo-3",
+        "puzzle:photo-40",
+        "puzzle:photo-17",
+        "puzzle:photo-30",
+        "puzzle:photo-31",
+        "puzzle:culture-onsen",
+        "puzzle:heritage-clue-3",
+        "puzzle:culture-venice",
+        "puzzle:heritage-clue-2",
+        "puzzle:photo-71",
+        "puzzle:photo-62",
+        "puzzle:culture-flamenco",
+        "puzzle:culture-hawker",
+        "puzzle:heritage-clue-1",
+        "puzzle:photo-90",
+        "puzzle:heritage-clue-0",
+        "puzzle:photo-81",
+        "puzzle:heritage-clue-6",
+        "puzzle:heritage-clue-5",
+        "puzzle:photo-92",
+        "puzzle:culture-petronas",
+        "puzzle:culture-angkor",
+        "puzzle:photo-116",
+        "puzzle:culture-machu",
+        "puzzle:culture-luang",
+        "puzzle:photo-100",
+        "puzzle:heritage-clue-4",
+        "puzzle:photo-106",
+        "puzzle:photo-97",
+        "puzzle:photo-124",
+        "puzzle:heritage-clue-7"
+      ],
+      "photos": 18,
+      "sources": 16
+    },
+    {
+      "photoFailureBlocksAnswer": true,
+      "retryRestoresAnswer": true
+    },
+    {
+      "longQuestionFixture": "puzzle:album-23",
+      "viewport": {
+        "width": 1280,
+        "height": 650
+      }
+    },
+    {
+      "longQuestionFixture": "puzzle:album-23",
+      "viewport": {
+        "width": 820,
+        "height": 1180
+      }
+    },
+    {
+      "longQuestionFixture": "puzzle:album-23",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "longQuestionFixture": "puzzle:album-23",
+      "viewport": {
+        "width": 844,
+        "height": 390
+      }
+    }
+  ]
+}

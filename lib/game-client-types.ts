@@ -14,6 +14,8 @@ export type PublicQuestion = {
   questionType?: string;
   visual?: QuestionVisualData;
   references?: QuestionReference[];
+  puzzleType?: string;
+  visualClue?: boolean;
 };
 
 export type AnswerFeedback = {

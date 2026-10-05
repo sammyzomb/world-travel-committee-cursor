@@ -2,6 +2,8 @@ import { Crown, MapPin, Plane, Sparkles, Trophy } from "lucide-react";
 import { GAME_HERO_HEADLINE } from "../../lib/brand";
 import type { LeaderboardEntry } from "../../lib/leaderboard-types";
 import type { PersonalBest } from "../../lib/player-progress";
+import catalog from '../../data/travel-puzzle-catalog.json';
+import { travelStageLabel } from '../../lib/travel-stage-label';
 type StartScreenProps = {
   leaderboard: LeaderboardEntry[];
   leaderboardLoading: boolean;
@@ -33,7 +35,7 @@ export function StartScreen({
             <div className="start-hero-copy">
               <p className="mini-label">TRAVEL QUIZ ARCADE</p>
               <h1 className="start-hero-title">{GAME_HERO_HEADLINE}</h1>
-              <p className="start-hero-subtitle">從小一一路衝到博士，探索世界的旅遊問答！</p>
+              <p className="start-hero-subtitle">全年齡旅遊益智挑戰：看景點、認文化、解開旅行線索。難度隨關卡提升，沒有作答倒數。</p>
 
               <div className="start-topic-chips" aria-label="題庫主題">
                 <span><MapPin size={16} /> 旅遊景點</span>
@@ -45,7 +47,7 @@ export function StartScreen({
               {personalBest && (
                 <p className="start-personal-best">
                   <Trophy size={15} />
-                  個人最佳 {personalBest.bestScore.toLocaleString()} 分 · 最高 {personalBest.bestStageName}
+                  個人最佳 {personalBest.bestScore.toLocaleString()} 分 · 最高 {travelStageLabel(personalBest.bestStageName)}
                   {personalBest.maxStreak >= 3 ? ` · ${personalBest.maxStreak} 連勝` : ""}
                 </p>
               )}
@@ -53,6 +55,12 @@ export function StartScreen({
               <button type="button" className="primary-button start-play-button" onClick={onBegin}>
                 主線闖關 <span>→</span>
               </button>
+              <details className="puzzle-catalog">
+                <summary>查看題庫：{catalog.total} 題・{Object.keys(catalog.types).length} 種益智題型</summary>
+                <p>景點照片題 {catalog.photoCount} 題；文化題有資料來源。推理題使用明示的情境設定，包含同類規則的不同題目，不代表真實交通或店家資訊。</p>
+                <ul>{Object.entries(catalog.types).map(([name,count])=><li key={name}><b>{name}</b><span>{count} 題</span></li>)}</ul>
+                <p>前段辨識景點與文化；中段讀懂線索；後段交叉核對多個條件。舊版定位、學術與字數失衡的情境題已退出本次闖關。</p>
+              </details>
             </div>
           </div>
         </div>
@@ -81,7 +89,7 @@ export function StartScreen({
                   <span className={index < 3 ? "podium" : ""}>{index + 1}</span>
                   <div className="leader-row-copy">
                     <b>{row.playerName}</b>
-                    <small>{row.stageReached}</small>
+                    <small>{travelStageLabel(row.stageReached)}</small>
                   </div>
                   <strong>{row.score.toLocaleString()}</strong>
                 </div>

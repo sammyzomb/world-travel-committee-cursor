@@ -53,7 +53,7 @@ export function getStageAt(stageIndex: number) {
 }
 
 export function getStageCompletionLabel(stage: { name: string; group: string }, isGraduation: boolean) {
-  if (isGraduation) return `${stage.group}全部學業`;
+  if (isGraduation) return formalStageNames[stage.name] ?? stage.name;
   return formalStageNames[stage.name] ?? `${stage.group}${stage.name}`;
 }
 
@@ -120,6 +120,7 @@ function pickDiverseQuestions(ranked: Question[], count: number, stageIndex: num
       remainingByFamily.get(family)!.add(q.conceptId);
     }
     available.sort((a, b) => Number(isTravelFocused(b)) - Number(isTravelFocused(a))
+      || selected.filter(q=>q.puzzleType===a.puzzleType).length - selected.filter(q=>q.puzzleType===b.puzzleType).length
       || (familyCounts.get(questionFamily(a)) ?? 0) - (familyCounts.get(questionFamily(b)) ?? 0)
       || questionDemand(b) - questionDemand(a)
       || Number(Boolean(b.references?.length)) - Number(Boolean(a.references?.length))

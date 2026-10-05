@@ -60,6 +60,8 @@ type ClassificationInput = {
   questionType: string;
   kind?: string;
   landmark?: string;
+  puzzleType?: string;
+  subtopic?: QuestionSubtopic;
 };
 
 const referenceFacts = [...questionBank.expandedFacts, ...questionBank.heritageFacts];
@@ -171,7 +173,7 @@ export function classifyQuestion(input: ClassificationInput): QuestionClassifica
     note?: string;
     sources?: string[];
   }>)[input.id];
-  const subtopic = manual?.subtopic ?? inferSubtopic(input);
+  const subtopic = manual?.subtopic ?? (input.puzzleType && input.subtopic ? input.subtopic : inferSubtopic(input));
   const definition = QUESTION_SUBTOPICS[subtopic];
   if (!definition) throw new Error(`Unknown question subtopic: ${subtopic} (${input.id})`);
   const geography: QuestionClassification["geography"] = manual?.geography

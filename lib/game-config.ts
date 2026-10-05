@@ -1,4 +1,5 @@
-/** 題目難度由低到高，對應國小 → 研究所漸進。 */
+import { travelStageLabel } from './travel-stage-label';
+/** 全年齡的旅行挑戰難度；舊年級鍵只用於儲存資料相容。 */
 export const QUESTION_LEVELS = [
   "旅行新手",
   "城市旅人",
@@ -31,13 +32,7 @@ export const educationStages = [
   { name: "研二", group: "研究所", pool: ["環球旅行家"] },
 ] as const;
 
-export const formalStageNames: Record<string, string> = {
-  小一: "國小一年級", 小二: "國小二年級", 小三: "國小三年級", 小四: "國小四年級", 小五: "國小五年級", 小六: "國小六年級",
-  國一: "國中一年級", 國二: "國中二年級", 國三: "國中三年級",
-  高一: "高中一年級", 高二: "高中二年級", 高三: "高中三年級",
-  大一: "大學一年級", 大二: "大學二年級", 大三: "大學三年級", 大四: "大學四年級",
-  研一: "研究所一年級", 研二: "研究所二年級",
-};
+export const formalStageNames: Record<string, string> = Object.fromEntries(educationStages.map(stage=>[stage.name,travelStageLabel(stage.name)]));
 
 /** 小六、國三、高三、大四、研二為學制畢業節點。 */
 export const graduationStageIndexes = new Set([5, 8, 11, 15, 17]);

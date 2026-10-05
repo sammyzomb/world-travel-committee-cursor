@@ -4,6 +4,8 @@ import { STARTING_LIVES } from "../../lib/game-config";
 import type { AnswerFeedback, PublicQuestion } from "../../lib/game-client-types";
 import { streakCheerMessage } from "../../lib/streak-messages";
 import { shouldShowRegionChip } from "../../lib/visual-safety";
+import { travelStageLabel } from '../../lib/travel-stage-label';
+import { useState } from 'react';
 
 type PlayScreenProps = {
   stage: { name: string; group: string };
@@ -70,6 +72,8 @@ export function PlayScreen({
   onNext,
   onReplay,
 }: PlayScreenProps) {
+  const [loadedPhotoId,setLoadedPhotoId]=useState<string|null>(null);
+  const waitingForPhoto=Boolean(current.visualClue && !feedback && loadedPhotoId!==current.id);
   const selected = feedback?.selectedIndex ?? null;
   const correctIndex = feedback?.correctIndex ?? null;
   const isWrong = feedback ? !feedback.isCorrect : false;
@@ -96,7 +100,7 @@ export function PlayScreen({
       </div>
 
       <div className="play-status mb-3 flex items-center justify-between gap-3 sm:mb-4">
-        <span className="score-pill">{stage.group}・{stage.name}</span>
+        <span className="score-pill">{travelStageLabel(stage.name)}</span>
         <div className="flex gap-2">
           {runStreak >= 2 && (
             <span className="streak-pill" aria-label={`連勝 ${runStreak} 題`}>
@@ -117,16 +121,16 @@ export function PlayScreen({
         </div>
       </div>
 
-      <div className="question-card play-question-card">
+      <div className="question-card play-question-card" data-question-id={current.id}>
         <div className="play-question-main">
           {current.visual && (
             <div className="play-visual-slot">
-              <QuestionVisual key={current.q} visual={current.visual} />
+              <QuestionVisual key={current.id} visual={current.visual} requiredClue={current.visualClue} onPhotoReady={ready=>setLoadedPhotoId(ready?current.id:null)} />
             </div>
           )}
           <div className="play-question-copy">
             <div className="flex items-center justify-between gap-2">
-              {showRegion ? (
+              {current.puzzleType ? <span className="region-chip">{current.puzzleType}</span> : showRegion ? (
                 <span
                   className={`region-chip ${
                     current.category === "旅行知識"
@@ -151,6 +155,7 @@ export function PlayScreen({
               </span>
             </div>
             <h1>{current.q}</h1>
+            {waitingForPhoto && <p role="status">照片載入後即可作答。</p>}
             <div className={`answer-grid ${current.kind === "tf" ? "true-false-grid" : ""}`}>
               {current.options.map((option, optionIndex) => {
                 let className = "answer-button";
@@ -163,7 +168,7 @@ export function PlayScreen({
                     className={className}
                     key={option}
                     onClick={() => onChoose(optionIndex)}
-                    disabled={feedback !== null}
+                    disabled={feedback !== null || waitingForPhoto}
                   >
                     <span>
                       {current.kind === "tf"

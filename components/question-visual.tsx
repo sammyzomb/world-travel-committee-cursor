@@ -12,19 +12,23 @@ export type QuestionVisualData = {
   licenseUrl?: string;
 };
 
-export function QuestionVisual({ visual }: { visual: QuestionVisualData }) {
+export function QuestionVisual({ visual,requiredClue=false,onPhotoReady }: { visual: QuestionVisualData; requiredClue?:boolean;onPhotoReady?:(ready:boolean)=>void }) {
   const [imageFailed, setImageFailed] = useState(false);
+  const [attempt,setAttempt]=useState(0);
   const showPhoto = visual.type === "photo" && visual.image && !imageFailed;
+
+  if(imageFailed && requiredClue) return <div className="photo-load-error" role="alert"><p>景點照片載入失敗，請重新載入後再作答。</p><button className="rank-button" onClick={()=>{setAttempt(x=>x+1);setImageFailed(false);}}>重新載入照片</button></div>;
 
   if (showPhoto) {
     return (
       <figure className="question-photo question-photo-compact">
         <img
-          src={visual.image}
+          src={attempt ? `${visual.image}${visual.image?.includes('?')?'&':'?'}retry=${attempt}` : visual.image}
           alt="旅遊景色參考圖"
-          loading="lazy"
+          loading={requiredClue?'eager':'lazy'}
           referrerPolicy="no-referrer"
-          onError={() => setImageFailed(true)}
+          onLoad={()=>onPhotoReady?.(true)}
+          onError={() => {setImageFailed(true);onPhotoReady?.(false);}}
         />
         <figcaption>
           <span>旅遊景色</span>

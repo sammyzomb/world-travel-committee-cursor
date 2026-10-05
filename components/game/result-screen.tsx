@@ -13,6 +13,7 @@ import { ShareScoreCard } from "./share-score-card";
 import type { SubmitState } from "../../lib/leaderboard-types";
 import type { PersonalBest } from "../../lib/player-progress";
 import type { RunRecap } from "../../lib/run-recap";
+import { travelStageLabel } from '../../lib/travel-stage-label';
 
 type ResultScreenProps = {
   endedEarly: boolean;
@@ -34,7 +35,7 @@ type ResultScreenProps = {
 export function ResultScreen({
   endedEarly,
   fullCompletion,
-  stageName,
+  stageName: storedStageName,
   score,
   maxRunStreak,
   runRecap,
@@ -47,6 +48,7 @@ export function ResultScreen({
   onSubmitScore,
   onRestart,
 }: ResultScreenProps) {
+  const stageName=travelStageLabel(storedStageName);
   return (
     <section className="result-section mx-auto w-full max-w-5xl px-4 py-10 text-center sm:px-8">
       {fullCompletion && (
@@ -72,17 +74,17 @@ export function ResultScreen({
           </div>
         )}
         <p className="mini-label mt-4">
-          {fullCompletion ? "FULL CLEAR・研二通關" : endedEarly ? "本局 GG" : "RUN END"}
+          {fullCompletion ? "FULL CLEAR・環球通關" : endedEarly ? "本局 GG" : "RUN END"}
         </p>
-        {fullCompletion && <h2 className="final-graduation-title">完整破關！研二學業完成</h2>}
+        {fullCompletion && <h2 className="final-graduation-title">完整破關！環球挑戰完成</h2>}
         <span className="degree-badge">
-          {fullCompletion ? "研二畢業" : endedEarly ? `${stageName}止步` : `${stageName}結束`}
+          {fullCompletion ? "環球旅行家" : endedEarly ? `${stageName}止步` : `${stageName}結束`}
         </span>
         <h1>{score.toLocaleString()} 分</h1>
         <p className="run-streak-copy">本局最高連勝 {maxRunStreak} 題</p>
         {isNewPersonalBest && personalBest && (
           <p className="personal-best-badge">
-            <Trophy size={16} /> 刷新個人最佳！最高到達 {personalBest.bestStageName}
+            <Trophy size={16} /> 刷新個人最佳！最高到達 {travelStageLabel(personalBest.bestStageName)}
           </p>
         )}
         {runRecap && runRecap.totalAnswered > 0 && (
@@ -91,7 +93,7 @@ export function ResultScreen({
               <BookOpen size={14} /> KNOWLEDGE RECAP
             </p>
             <p className="knowledge-recap-summary">
-              本局答了 {runRecap.totalAnswered} 題，認識 {runRecap.uniqueConcepts} 個旅遊知識點
+              本局完成 {runRecap.totalAnswered} 題旅遊辨識與推理挑戰
               {runRecap.wrongCount > 0 ? `（錯 ${runRecap.wrongCount} 題，記下來下次更強）` : ""}
             </p>
             {runRecap.highlights.length > 0 && (
@@ -108,7 +110,7 @@ export function ResultScreen({
         )}
         <p>
           {fullCompletion
-            ? "從小一一路升到研二，十八級學制全部通關！"
+            ? "十八關旅遊益智挑戰全部通關！"
             : endedEarly
               ? `在【${stageName}】被題目終結，換一組再來復仇！`
               : `本局在【${stageName}】結束，繼續挑戰衝更高分！`}

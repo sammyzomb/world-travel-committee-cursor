@@ -2,7 +2,7 @@ import { Gift, GraduationCap, Sparkles } from "lucide-react";
 import { CheerAnimation } from "../cheer-animation";
 import { ORGANIZATION_NAME } from "../../lib/brand";
 import { MAX_RUN_QUESTIONS, POINTS_PER_CORRECT, questionsPerStage } from "../../lib/game-config";
-import { getStageCompletionLabel } from "../../lib/game-round";
+import { travelStageLabel } from '../../lib/travel-stage-label';
 
 type RewardScreenProps = {
   isGraduationStage: boolean;
@@ -42,16 +42,16 @@ export function RewardScreen({
           <Sparkles />
         </div>
         <p className="mini-label">
-          {isGraduationStage ? "GRADUATION・畢業爽感" : "STAGE CLEAR・通關"}
+          {isGraduationStage ? "MILESTONE・旅行里程碑" : "STAGE CLEAR・通關"}
         </p>
-        <h1>{isGraduationStage ? `${stage.group}畢業！` : "恭喜！"}</h1>
+        <h1>{isGraduationStage ? '旅行里程碑達成！' : "恭喜！"}</h1>
         <p className="completion-copy">
           恭喜完成{ORGANIZATION_NAME}
           <br />
-          <b>{getStageCompletionLabel(stage, isGraduationStage)}關卡</b>
+          <b>{travelStageLabel(stage.name)}</b>
         </p>
         <p>
-          本級答對 {stageCorrect} 題，接下來將升上 <b>{nextStage.name}</b>
+          本關答對 {stageCorrect} 題，接下來挑戰 <b>{travelStageLabel(nextStage.name)}</b>
         </p>
         <div className="reward-bonus">
           <span>升級準備</span>
@@ -63,7 +63,7 @@ export function RewardScreen({
         </div>
         <div className="reward-actions">
         <button className="primary-button mx-auto" onClick={onContinue}>
-          {isGraduationStage ? "畢業完成，進入" : "休息好了，升上"} {nextStage.name}{" "}
+          繼續挑戰 {travelStageLabel(nextStage.name)}{" "}
           <span>→</span>
         </button>
         <button type="button" className="rank-button mx-auto mt-3" onClick={onReplay}>

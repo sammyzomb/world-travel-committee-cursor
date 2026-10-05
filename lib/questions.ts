@@ -2,6 +2,7 @@ import questionAuditJson from "../data/question-audit.json";
 import sourceQuestionsJson from "../data/source-questions.json";
 import type { QuestionReference } from "./question-reference";
 import learningQuestionsJson from "../data/learning-questions.json";
+import travelPuzzlesJson from "../data/travel-puzzles.json";
 import editorialOverrides from "../data/question-editorial-overrides.json";
 import questionBankJson from "../data/questions.json";
 import type { QuestionVisualData } from "../components/question-visual";
@@ -51,6 +52,8 @@ export type Question = {
   demand?: number;
   family?: string;
   travelFocus?: boolean;
+  puzzleType?: string;
+  visualClue?: boolean;
   classification: QuestionClassification;
   visual?: QuestionVisualData;
 };
@@ -488,7 +491,13 @@ export const supplementQuestions: Question[] = (questionBank.supplementQuestions
 );
 export const learningQuestions: Question[] = (learningQuestionsJson as unknown as (RawQuestion & { id: string; demand: number; family: string; subtopic: string; grades: string[] })[]).map(raw => attachVisual(raw, { id: raw.id, conceptId: 'learning:' + raw.id, source: '旅行體驗與文化（逐題年級審查）', auditStatus: 'approved', grades: raw.grades }));
 export const sourceQuestions: Question[] = (sourceQuestionsJson as unknown as (RawQuestion & { id: string; demand: number; family: string; subtopic: string; grades: string[]; sourceGroup: string; references: QuestionReference[] })[]).map(raw => attachVisual(raw, { id: raw.id, conceptId: raw.id, source: raw.sourceGroup, auditStatus: 'approved', grades: raw.grades }));
+export const puzzleQuestions: Question[] = (travelPuzzlesJson as unknown as (RawQuestion & {id:string;grades:string[]})[]).map(raw => {
+  const question=attachVisual(raw, {id:raw.id,conceptId:raw.id,source:'旅遊益智原創題',auditStatus:'approved',grades:raw.grades});
+  if(raw.landmark && question.visual) question.visual={...question.visual,label:raw.landmark,detail:'旅行景點辨識'};
+  return question;
+});
 export const allQuestions: Question[] = [
+  ...puzzleQuestions,
   ...sourceQuestions,
   ...learningQuestions,
   ...handPickedQuestions,

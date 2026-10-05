@@ -19,7 +19,7 @@ export function CheerAnimation({
         <span className="cheer-label">喝采！</span>
         <span className="cheer-hand cheer-hand-right">👏</span>
       </div>
-      <div className="cheer-subline">{isGraduation ? "畢業啦！" : "太厲害了！"}</div>
+      <div className="cheer-subline">{isGraduation ? "里程碑達成！" : "太厲害了！"}</div>
       <div className="cheer-sparkles">
         {Array.from({ length: isGraduation ? 10 : 6 }, (_, index) => (
           <i key={index} />

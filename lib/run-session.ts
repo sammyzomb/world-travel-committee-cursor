@@ -25,6 +25,8 @@ export type IssuedQuestion = {
   questionType?: string;
   visual?: QuestionVisualData;
   references?: QuestionReference[];
+  puzzleType?: string;
+  visualClue?: boolean;
 };
 
 export type RunEndReason =
@@ -84,6 +86,8 @@ export function issuedQuestionsFromPlan(
     questionType?: string;
     visual?: QuestionVisualData;
   references?: QuestionReference[];
+    puzzleType?: string;
+    visualClue?: boolean;
   }>,
   stageStarts: number[],
 ): IssuedQuestion[] {
@@ -102,6 +106,8 @@ export function issuedQuestionsFromPlan(
     questionType: question.questionType,
     visual: question.visual,
     references: question.references,
+    puzzleType: question.puzzleType,
+    visualClue: question.visualClue,
   }));
 }
 
