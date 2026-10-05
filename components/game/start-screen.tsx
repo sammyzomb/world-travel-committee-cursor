@@ -35,7 +35,7 @@ export function StartScreen({
             <div className="start-hero-copy">
               <p className="mini-label">TRAVEL QUIZ ARCADE</p>
               <h1 className="start-hero-title">{GAME_HERO_HEADLINE}</h1>
-              <p className="start-hero-subtitle">全年齡旅遊益智挑戰：看景點、認文化、解開旅行線索。難度隨關卡提升，沒有作答倒數。</p>
+              <p className="start-hero-subtitle">全年齡都能挑戰！從小一一路升到研究所，用旅行知識與解謎能力闖出你的最終等級。</p>
 
               <div className="start-topic-chips" aria-label="題庫主題">
                 <span><MapPin size={16} /> 旅遊景點</span>
@@ -59,7 +59,7 @@ export function StartScreen({
                 <summary>查看題庫：{catalog.total} 題・{Object.keys(catalog.types).length} 種益智題型</summary>
                 <p>景點照片題 {catalog.photoCount} 題；文化題有資料來源。推理題使用明示的情境設定，包含同類規則的不同題目，不代表真實交通或店家資訊。</p>
                 <ul>{Object.entries(catalog.types).map(([name,count])=><li key={name}><b>{name}</b><span>{count} 題</span></li>)}</ul>
-                <p>前段辨識景點與文化；中段讀懂線索；後段交叉核對多個條件。舊版定位、學術與字數失衡的情境題已退出本次闖關。</p>
+                <p>學校年級是遊戲的趣味等級，不代表玩家年齡或學校課程。前段辨識景點與文化；中段讀懂線索；後段交叉核對多個條件。</p>
               </details>
             </div>
           </div>

@@ -74,11 +74,11 @@ export function ResultScreen({
           </div>
         )}
         <p className="mini-label mt-4">
-          {fullCompletion ? "FULL CLEAR・環球通關" : endedEarly ? "本局 GG" : "RUN END"}
+          {fullCompletion ? "FULL CLEAR・研究所通關" : endedEarly ? "本局 GG" : "RUN END"}
         </p>
-        {fullCompletion && <h2 className="final-graduation-title">完整破關！環球挑戰完成</h2>}
+        {fullCompletion && <h2 className="final-graduation-title">完整破關！研究所畢業</h2>}
         <span className="degree-badge">
-          {fullCompletion ? "環球旅行家" : endedEarly ? `${stageName}止步` : `${stageName}結束`}
+          {fullCompletion ? "研究所畢業" : `最終等級：${stageName}`}
         </span>
         <h1>{score.toLocaleString()} 分</h1>
         <p className="run-streak-copy">本局最高連勝 {maxRunStreak} 題</p>
@@ -110,7 +110,7 @@ export function ResultScreen({
         )}
         <p>
           {fullCompletion
-            ? "十八關旅遊益智挑戰全部通關！"
+            ? "從小一一路升到研二，十八級旅遊益智挑戰全部通關！"
             : endedEarly
               ? `在【${stageName}】被題目終結，換一組再來復仇！`
               : `本局在【${stageName}】結束，繼續挑戰衝更高分！`}

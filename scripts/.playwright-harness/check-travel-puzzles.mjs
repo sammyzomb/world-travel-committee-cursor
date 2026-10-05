@@ -32,7 +32,7 @@ try {
    const id=await page.locator('.play-question-card').getAttribute('data-question-id');ids.push(id);
    const q=questions.get(id);assert.ok(q,id);
    assert.ok(q.kind==='tf'||q.puzzleType,id);
-   assert.ok(!/小一|小二|小三|國小|研二/.test(await page.locator('.play-status').textContent()));
+   assert.match(await page.locator('.play-status .score-pill').first().textContent(),/國小・小[一二三四五六]/);
    assert.equal(await page.locator('.question-references').count(),0);
    if(q.visualClue) {
     assert.ok(await page.locator('.question-photo img').evaluate(n=>n.complete&&n.naturalWidth>0));

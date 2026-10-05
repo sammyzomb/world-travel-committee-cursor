@@ -4,7 +4,6 @@ import { STARTING_LIVES } from "../../lib/game-config";
 import type { AnswerFeedback, PublicQuestion } from "../../lib/game-client-types";
 import { streakCheerMessage } from "../../lib/streak-messages";
 import { shouldShowRegionChip } from "../../lib/visual-safety";
-import { travelStageLabel } from '../../lib/travel-stage-label';
 import { useState } from 'react';
 
 type PlayScreenProps = {
@@ -100,7 +99,7 @@ export function PlayScreen({
       </div>
 
       <div className="play-status mb-3 flex items-center justify-between gap-3 sm:mb-4">
-        <span className="score-pill">{travelStageLabel(stage.name)}</span>
+        <span className="score-pill">{stage.group}・{stage.name}</span>
         <div className="flex gap-2">
           {runStreak >= 2 && (
             <span className="streak-pill" aria-label={`連勝 ${runStreak} 題`}>

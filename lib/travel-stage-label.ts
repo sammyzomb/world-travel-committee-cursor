@@ -3,6 +3,11 @@ const fullNames=['國小一年級','國小二年級','國小三年級','國小�
 export function travelStageLabel(value:string) {
   let index=oldNames.indexOf(value);
   if(index<0) index=fullNames.indexOf(value);
+  if(index<0) {
+    const challenge=value.match(/^第\s*(\d+)\s*關・/);
+    if(challenge) index=Number(challenge[1])-1;
+  }
+  if(index>=0 && index<fullNames.length) return fullNames[index];
   if(index<0) return value;
-  return `第 ${index+1} 關・${index<2?'旅行新手':index<5?'城市旅人':index<7?'國家達人':index<9?'洲際領隊':'環球旅行家'}`;
+  return value;
 }

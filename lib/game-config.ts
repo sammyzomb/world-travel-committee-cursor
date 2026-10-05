@@ -1,5 +1,5 @@
 import { travelStageLabel } from './travel-stage-label';
-/** 全年齡的旅行挑戰難度；舊年級鍵只用於儲存資料相容。 */
+/** 全年齡旅行挑戰；學校年級是趣味等級，並非參加年齡或課程適齡標示。 */
 export const QUESTION_LEVELS = [
   "旅行新手",
   "城市旅人",
