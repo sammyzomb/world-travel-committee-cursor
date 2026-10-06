@@ -1,0 +1,63 @@
+{
+  "ok": true,
+  "fixture": true,
+  "nextInsideQuestionCard": true,
+  "checks": [
+    {
+      "id": "puzzle:album-23",
+      "viewport": {
+        "width": 1280,
+        "height": 650
+      }
+    },
+    {
+      "id": "puzzle:album-23",
+      "viewport": {
+        "width": 820,
+        "height": 1180
+      }
+    },
+    {
+      "id": "puzzle:album-23",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "puzzle:album-23",
+      "viewport": {
+        "width": 844,
+        "height": 390
+      }
+    },
+    {
+      "id": "learning:geo-travel-landmark-12",
+      "viewport": {
+        "width": 1280,
+        "height": 650
+      }
+    },
+    {
+      "id": "learning:geo-travel-landmark-12",
+      "viewport": {
+        "width": 820,
+        "height": 1180
+      }
+    },
+    {
+      "id": "learning:geo-travel-landmark-12",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "learning:geo-travel-landmark-12",
+      "viewport": {
+        "width": 844,
+        "height": 390
+      }
+    }
+  ]
+}

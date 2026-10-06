@@ -1,0 +1,41 @@
+{
+  "date": "2026-10-06",
+  "url": "https://world-travel-committee.tcawg.workers.dev",
+  "questionBankVersion": "3b2061df2c4d682f",
+  "questionLimit": 5,
+  "ok": true,
+  "nextInsideQuestionCard": true,
+  "leaderboardSubmitted": false,
+  "checks": [
+    {
+      "viewport": {
+        "width": 1280,
+        "height": 650
+      },
+      "questions": [
+        "warmup:7l9oe2",
+        "warmup:dveciz",
+        "puzzle:photo-23",
+        "puzzle:photo-16",
+        "puzzle:photo-24"
+      ],
+      "photos": 3,
+      "sources": 0
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "questions": [
+        "warmup:uer62h",
+        "warmup:qlfoay",
+        "puzzle:photo-2",
+        "puzzle:photo-5",
+        "puzzle:photo-9"
+      ],
+      "photos": 3,
+      "sources": 0
+    }
+  ]
+}

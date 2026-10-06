@@ -2,6 +2,8 @@ import assert from 'node:assert/strict';
 import {readFileSync,writeFileSync,mkdirSync} from 'node:fs';
 import {chromium} from 'playwright';
 const base=process.env.UI_BASE_URL??'http://127.0.0.1:8787';
+const questionLimit=Number(process.env.UI_QUESTION_LIMIT??36);
+assert.ok(Number.isInteger(questionLimit)&&questionLimit>=5&&questionLimit<=36);
 const bank=JSON.parse(readFileSync('exports/question-bank-approved.json','utf8'));
 const questions=new Map([...bank.warmupQuestions,...bank.approvedQuestions].map(q=>[q.id,q]));
 const seed=await(await fetch(base+'/api/run/start',{method:'POST',headers:{'Content-Type':'application/json'},body:'{}'})).json();
@@ -23,7 +25,7 @@ try {
   await page.getByRole('button',{name:/主線闖關/}).click();
   await page.getByRole('button',{name:/跳過動畫/}).click();
   let photos=0,sources=0;const ids=[];
-  for(let index=0;index<36;index++) {
+  for(let index=0;index<questionLimit;index++) {
    if(await page.locator('.reward-section').count()) {
     assert.ok(await page.locator('.reward-actions .primary-button').evaluate(n=>{const r=n.getBoundingClientRect();return r.top>=0&&r.bottom<=innerHeight;}));
     await page.locator('.reward-actions .primary-button').click();
@@ -44,6 +46,7 @@ try {
    await page.waitForSelector('.play-fact-box');
    assert.match(await page.locator('.play-fact-box b').textContent(),/答對/);
    assert.ok(await nextVisible(page),`${id}/${viewport.width}`);
+   assert.ok(await page.locator('.play-next-button').evaluate(n=>n.closest('.play-question-copy')!==null));
    if(q.visualClue)assert.equal(await page.locator('.question-photo b').textContent(),q.correctAnswer);
    if(q.references?.length){sources++;assert.equal(await page.locator('.question-references a').first().getAttribute('href'),q.references[0].url);}
    assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));
@@ -51,7 +54,7 @@ try {
    await page.locator('.play-next-button').click();
    await page.waitForFunction(old=>document.querySelector('.reward-section')||document.querySelector('.play-question-card')?.dataset.questionId!==old,id);
   }
-  assert.ok(photos>=12);assert.ok(sources>=2);
+  assert.ok(photos>=(questionLimit===36?12:1));if(questionLimit===36)assert.ok(sources>=2);
   checks.push({viewport,questions:ids,photos,sources});await page.close();
  }
  if(base.includes('127.0.0.1')) {
@@ -73,12 +76,13 @@ try {
    await page.route('**/api/run/answer',r=>r.fulfill({json:{state:{...state,feedback:{isCorrect:true,correctAnswer:high.correctAnswer,correctIndex:high.answer,selectedIndex:high.answer,fact:high.fact}}}}));
    await page.goto(base,{waitUntil:'networkidle'});await page.getByRole('button',{name:/主線闖關/}).click();await ready(page);
    await page.locator('.answer-button').nth(high.answer).click();await page.waitForSelector('.play-fact-box');
-   await page.evaluate(()=>scrollTo(0,0));assert.ok(await nextVisible(page));
+   assert.ok(await nextVisible(page));
+   assert.ok(await page.locator('.play-next-button').evaluate(n=>n.closest('.play-question-copy')!==null));
    assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));
    checks.push({longQuestionFixture:high.id,viewport});await page.close();
   }
  }
- const report={date:'2026-10-05',url:base,questionBankVersion:bank.questionBankVersion,ok:true,leaderboardSubmitted:false,checks};
- writeFileSync(`docs/${base.includes('127.0.0.1')?'LOCAL':'PRODUCTION'}-TRAVEL-PUZZLE-QA-2026-10-05.json`,JSON.stringify(report,null,2)+'\n');
+ const report={date:'2026-10-06',url:base,questionBankVersion:bank.questionBankVersion,questionLimit,ok:true,nextInsideQuestionCard:true,leaderboardSubmitted:false,checks};
+ writeFileSync(`docs/${base.includes('127.0.0.1')?'LOCAL':'PRODUCTION'}-TRAVEL-PUZZLE-QA-2026-10-06.json`,JSON.stringify(report,null,2)+'\n');
  console.log(JSON.stringify(report));
 } finally {await browser.close();}

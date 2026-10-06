@@ -4,7 +4,7 @@ import { STARTING_LIVES } from "../../lib/game-config";
 import type { AnswerFeedback, PublicQuestion } from "../../lib/game-client-types";
 import { streakCheerMessage } from "../../lib/streak-messages";
 import { shouldShowRegionChip } from "../../lib/visual-safety";
-import { useState } from 'react';
+import { useLayoutEffect, useRef, useState } from 'react';
 
 type PlayScreenProps = {
   stage: { name: string; group: string };
@@ -72,6 +72,10 @@ export function PlayScreen({
   onReplay,
 }: PlayScreenProps) {
   const [loadedPhotoId,setLoadedPhotoId]=useState<string|null>(null);
+  const nextButtonRef=useRef<HTMLButtonElement>(null);
+  useLayoutEffect(()=>{
+    if(feedback) nextButtonRef.current?.scrollIntoView({block:'nearest',inline:'nearest',behavior:'instant'});
+  },[feedback]);
   const waitingForPhoto=Boolean(current.visualClue && !feedback && loadedPhotoId!==current.id);
   const selected = feedback?.selectedIndex ?? null;
   const correctIndex = feedback?.correctIndex ?? null;
@@ -124,7 +128,10 @@ export function PlayScreen({
         <div className="play-question-main">
           {current.visual && (
             <div className="play-visual-slot">
-              <QuestionVisual key={current.id} visual={current.visual} requiredClue={current.visualClue} onPhotoReady={ready=>setLoadedPhotoId(ready?current.id:null)} />
+              <QuestionVisual key={current.id} visual={current.visual} requiredClue={current.visualClue} onPhotoReady={ready=>{
+                setLoadedPhotoId(ready?current.id:null);
+                if(ready && feedback) nextButtonRef.current?.scrollIntoView({block:'nearest',inline:'nearest',behavior:'instant'});
+              }} />
             </div>
           )}
           <div className="play-question-copy">
@@ -186,8 +193,6 @@ export function PlayScreen({
                 );
               })}
             </div>
-          </div>
-        </div>
         {feedback && (
           <div className="fact-box play-fact-box">
             <div className="play-fact-copy">
@@ -204,11 +209,13 @@ export function PlayScreen({
                 </div>
               ) : null}
             </div>
-            <button type="button" className="primary-button play-next-button" onClick={onNext}>
+            <button ref={nextButtonRef} type="button" className="primary-button play-next-button" onClick={onNext}>
               {nextButtonLabel(endedEarly, questionIndex, roundLength, stageQuestion, stageLength)} →
             </button>
           </div>
         )}
+          </div>
+        </div>
       </div>
     </section>
   );

@@ -1,0 +1,73 @@
+{
+  "date": "2026-10-06",
+  "url": "http://127.0.0.1:8787",
+  "questionBankVersion": "3b2061df2c4d682f",
+  "questionLimit": 5,
+  "ok": true,
+  "nextInsideQuestionCard": true,
+  "leaderboardSubmitted": false,
+  "checks": [
+    {
+      "viewport": {
+        "width": 1280,
+        "height": 650
+      },
+      "questions": [
+        "warmup:ay2uz6",
+        "warmup:1esry98",
+        "puzzle:photo-28",
+        "puzzle:photo-43",
+        "puzzle:photo-11"
+      ],
+      "photos": 3,
+      "sources": 0
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "questions": [
+        "warmup:dveciz",
+        "warmup:uer62h",
+        "puzzle:photo-0",
+        "puzzle:photo-4",
+        "puzzle:photo-5"
+      ],
+      "photos": 3,
+      "sources": 0
+    },
+    {
+      "photoFailureBlocksAnswer": true,
+      "retryRestoresAnswer": true
+    },
+    {
+      "longQuestionFixture": "puzzle:album-23",
+      "viewport": {
+        "width": 1280,
+        "height": 650
+      }
+    },
+    {
+      "longQuestionFixture": "puzzle:album-23",
+      "viewport": {
+        "width": 820,
+        "height": 1180
+      }
+    },
+    {
+      "longQuestionFixture": "puzzle:album-23",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "longQuestionFixture": "puzzle:album-23",
+      "viewport": {
+        "width": 844,
+        "height": 390
+      }
+    }
+  ]
+}

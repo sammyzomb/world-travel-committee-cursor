@@ -18,13 +18,13 @@ try{
   await page.waitForSelector('.answer-button:not([disabled])');
   assert.equal(await page.locator('.play-visual-slot').count(),0);
   await page.locator('.answer-button').nth(q.answer).click();await page.waitForSelector('.play-next-button');
-  await page.evaluate(()=>scrollTo(0,0));
+  assert.ok(await page.locator('.play-next-button').evaluate(n=>n.closest('.play-question-copy')!==null),'next button belongs inside the question column');
   assert.ok(await page.locator('.play-next-button').evaluate(n=>{const r=n.getBoundingClientRect();return r.top>=0&&r.bottom<=innerHeight&&n.contains(document.elementFromPoint(r.x+r.width/2,r.y+r.height/2));}),`visible next ${q.id}/${viewport.width}`);
   assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));
   if(q.imageSrc)await page.waitForFunction(()=>document.querySelector('.question-photo img')?.naturalWidth>0);
   await page.screenshot({path:`.ui-smoke/travel-${q===tower?'tower':'long'}-${viewport.width}.png`,fullPage:true});
   checks.push({id:q.id,viewport});await page.close();
  }
- writeFileSync('docs/TRAVEL-LAYOUT-QA-2026-10-02.json',JSON.stringify({ok:true,fixture:true,checks},null,2)+'\n');
+ writeFileSync('docs/TRAVEL-LAYOUT-QA-2026-10-06.json',JSON.stringify({ok:true,fixture:true,nextInsideQuestionCard:true,checks},null,2)+'\n');
  console.log('PASS: long travel questions and verified landmark feedback; four viewports; next button visible and unobstructed.');
 }finally{await browser.close();}
