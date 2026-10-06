@@ -1,0 +1,329 @@
+{
+  "policy": "看圖題須有人工辨識審查，且路徑及檔案雜湊符合；可下載不等於可出題。",
+  "entries": {
+    "艾菲爾鐵塔": {
+      "path": "/landmarks/61836c847109.jpg",
+      "sha256": "e26f8d655bc26852cff6f24a97eefd53b07bc945ad1a7379d30b750638a7cfdd",
+      "reviewedAt": "2026-10-06",
+      "reason": "人工檢視照片：主體與景點相符，具有可辨識的建築或景觀特徵。"
+    },
+    "大笨鐘": {
+      "path": "/landmarks/923015c06971.jpg",
+      "sha256": "14f5044f53ddc49edb8769e93c366531345607be57b4915be84067d48612a8b4",
+      "reviewedAt": "2026-10-06",
+      "reason": "人工檢視照片：主體與景點相符，具有可辨識的建築或景觀特徵。"
+    },
+    "羅馬競技場": {
+      "path": "/landmarks/36744379858b.jpg",
+      "sha256": "6ce63b8ccd2a664ec6b278edca696f66d434631df783df9f658c2c293a0aacba",
+      "reviewedAt": "2026-10-06",
+      "reason": "人工檢視照片：主體與景點相符，具有可辨識的建築或景觀特徵。"
+    },
+    "布蘭登堡門": {
+      "path": "/landmarks/e15e0d71ad9f.jpg",
+      "sha256": "1e9b30176eed052221a0f61bb3b5974c84812271ca043fc0a5ebdeb719d4a140",
+      "reviewedAt": "2026-10-06",
+      "reason": "人工檢視照片：主體與景點相符，具有可辨識的建築或景觀特徵。"
+    },
+    "基督像": {
+      "path": "/landmarks/3433d5ffa31b.jpg",
+      "sha256": "686711062de8e55b8f4810d8c770a5497267164cf334177fb6f8dccc66321e7c",
+      "reviewedAt": "2026-10-06",
+      "reason": "人工檢視照片：主體與景點相符，具有可辨識的建築或景觀特徵。"
+    },
+    "馬丘比丘": {
+      "path": "/landmarks/f79d5717a6e0.jpg",
+      "sha256": "60659bf5ce2f1273422e3348e7b4cf731e955194f8261a9912e9c5e66feccd15",
+      "reviewedAt": "2026-10-06",
+      "reason": "人工檢視照片：主體與景點相符，具有可辨識的建築或景觀特徵。"
+    },
+    "富士山": {
+      "path": "/landmarks/e294ab9d429f.jpg",
+      "sha256": "fe87f5a8edc860482b6f4409850598f583345eecbbe3588fc5526768eccfeb1d",
+      "reviewedAt": "2026-10-06",
+      "reason": "人工檢視照片：主體與景點相符，具有可辨識的建築或景觀特徵。"
+    },
+    "雪梨歌劇院": {
+      "path": "/landmarks/666f95eaaec0.jpg",
+      "sha256": "d30f80cc9ae48d62e205da4a62cdd07160c3a9dda2267f4cd5382007eb790e58",
+      "reviewedAt": "2026-10-06",
+      "reason": "人工檢視照片：主體與景點相符，具有可辨識的建築或景觀特徵。"
+    },
+    "帕德嫩神廟": {
+      "path": "/landmarks/06e1501bbb37.jpg",
+      "sha256": "e3df67dd818e913c4cce12348b67ddf3c4a6c036a06799ad2b0988936794dc12",
+      "reviewedAt": "2026-10-06",
+      "reason": "人工檢視照片：主體與景點相符，具有可辨識的建築或景觀特徵。"
+    },
+    "金門大橋": {
+      "path": "/landmarks/e681321c1003.jpg",
+      "sha256": "31713c5924743d47827e97411b76a2e80b881947a2029295e61668b95a6f61a9",
+      "reviewedAt": "2026-10-06",
+      "reason": "人工檢視照片：主體與景點相符，具有可辨識的建築或景觀特徵。"
+    },
+    "樂山大佛": {
+      "path": "/landmarks/11e44347fd6b.jpg",
+      "sha256": "961752a7e92e3aa3c761860b85f31c06998ea8d60248a13efe841ac601003081",
+      "reviewedAt": "2026-10-06",
+      "reason": "人工檢視照片：主體與景點相符，具有可辨識的建築或景觀特徵。"
+    },
+    "張家界國家森林公園": {
+      "path": "/landmarks/ef7d38d3db25.jpg",
+      "sha256": "ba3a26520d898c7fffc79d4f7ee7bec4979d7dc51f1ae4a39fd0e4190592339c",
+      "reviewedAt": "2026-10-06",
+      "reason": "人工檢視照片：主體與景點相符，具有可辨識的建築或景觀特徵。"
+    },
+    "威尼斯古城": {
+      "path": "/landmarks/8b0ba686efb3.jpg",
+      "sha256": "2a9e5983e31aa7cebf6daa63c2900eab38fb961efb25b99ceb1d6cdff5404769",
+      "reviewedAt": "2026-10-06",
+      "reason": "人工檢視照片：主體與景點相符，具有可辨識的建築或景觀特徵。"
+    },
+    "吉薩金字塔群": {
+      "path": "/landmarks/2ef058b170c8.jpg",
+      "sha256": "b5048ce7d7f79d1b237e0dbc85c6f67c9456cfac8f4d4e441c6e8c52e677b3ce",
+      "reviewedAt": "2026-10-06",
+      "reason": "人工檢視照片：主體與景點相符，具有可辨識的建築或景觀特徵。"
+    },
+    "自由女神像": {
+      "path": "/landmarks/2c92b18e193b.jpg",
+      "sha256": "a58c21627c24c15721d32f4331bd346d861224f15a2bc04a12f05013443ee05a",
+      "reviewedAt": "2026-10-06",
+      "reason": "人工檢視照片：主體與景點相符，具有可辨識的建築或景觀特徵。"
+    },
+    "萬里長城": {
+      "path": "/landmarks/96b0579d0171.jpg",
+      "sha256": "f2f0434f4810ac92b42f0be7523e538caef04c45772c640ce828dcdfb42d806c",
+      "reviewedAt": "2026-10-06",
+      "reason": "人工檢視照片：主體與景點相符，具有可辨識的建築或景觀特徵。"
+    },
+    "嚴島神社": {
+      "path": "/landmarks/48c70bdbe879.jpg",
+      "sha256": "c591d109c38fcb298b036a3534758e4592427360854c33389029df62802b8657",
+      "reviewedAt": "2026-10-06",
+      "reason": "人工檢視照片：主體與景點相符，具有可辨識的建築或景觀特徵。"
+    },
+    "雅典衛城": {
+      "path": "/landmarks/c5792e47dccd.jpg",
+      "sha256": "2c5fbb3a49510cd86f8e00fa49525c7e8761547c5c491cbfedd1eac7e17818db",
+      "reviewedAt": "2026-10-06",
+      "reason": "人工檢視照片：主體與景點相符，具有可辨識的建築或景觀特徵。"
+    },
+    "尼加拉瀑布": {
+      "path": "/landmarks/0afeed05ce03.jpg",
+      "sha256": "d010ac4487384f80d7f0f9879cec33028b7e5c8a4f846d7413cc1825006cacfc",
+      "reviewedAt": "2026-10-06",
+      "reason": "人工檢視照片：主體與景點相符，具有可辨識的建築或景觀特徵。"
+    },
+    "哈里法塔": {
+      "path": "/landmarks/c9365220e068.jpg",
+      "sha256": "588f27665397ad8f1d5ad8da0863ae79ace781e50d87f7f768af14df39ee3a2b",
+      "reviewedAt": "2026-10-06",
+      "reason": "人工檢視照片：主體與景點相符，具有可辨識的建築或景觀特徵。"
+    },
+    "奇琴伊察": {
+      "path": "/landmarks/177591b0cbb0.jpg",
+      "sha256": "8462a823246de57f1541b0057de050f268d8f122f61b838d9658ef9dfdf5a7f8",
+      "reviewedAt": "2026-10-06",
+      "reason": "人工檢視照片：主體與景點相符，具有可辨識的建築或景觀特徵。"
+    },
+    "雙子星塔": {
+      "path": "/landmarks/petronas-6e3348c645a0.jpg",
+      "sha256": "6e3348c645a039977ccc9e6879e1ec80a4b963903b6d7ee745474e722638b7d8",
+      "reviewedAt": "2026-10-06",
+      "reason": "人工檢視照片：主體與景點相符，具有可辨識的建築或景觀特徵。"
+    },
+    "吳哥窟": {
+      "path": "/landmarks/7751598b74d8.jpg",
+      "sha256": "8674c093b9f1c03ff97a8de50be5af14bde1abdc72ad51707663653af810972b",
+      "reviewedAt": "2026-10-06",
+      "reason": "人工檢視照片：主體與景點相符，具有可辨識的建築或景觀特徵。"
+    },
+    "佩特拉古城": {
+      "path": "/landmarks/c65db2f3cc9f.jpeg",
+      "sha256": "37161cff400251206381a60961d1056f55025d3d05d2346677602278bb7e9c1a",
+      "reviewedAt": "2026-10-06",
+      "reason": "人工檢視照片：主體與景點相符，具有可辨識的建築或景觀特徵。"
+    },
+    "聖家堂": {
+      "path": "/landmarks/b48bae63de7a.jpg",
+      "sha256": "90a557b62b31f6c60c9da913c1af9a053060bd60656b063e8d32ae10f41a6653",
+      "reviewedAt": "2026-10-06",
+      "reason": "人工檢視照片：主體與景點相符，具有可辨識的建築或景觀特徵。"
+    },
+    "雷吉斯坦廣場": {
+      "path": "/landmarks/92d62400e92e.jpg",
+      "sha256": "92ebd88e09d904c658e20fc8403a684a4dc84bde61ec3de3c81ecc1be5b82ffe",
+      "reviewedAt": "2026-10-06",
+      "reason": "人工檢視照片：主體與景點相符，具有可辨識的建築或景觀特徵。"
+    },
+    "大金塔": {
+      "path": "/landmarks/436903fb4f2a.jpg",
+      "sha256": "0a2ca7e62f607929a14f10efd211faf8483cfbe37f2c4d9ed30512ab875b5d26",
+      "reviewedAt": "2026-10-06",
+      "reason": "人工檢視照片：主體與景點相符，具有可辨識的建築或景觀特徵。"
+    },
+    "王國中心塔": {
+      "path": "/landmarks/6f892324d750.jpg",
+      "sha256": "43e299d52aa2a6619df41754aeeb700af64c737d58f43e3e2769154c4a246a1e",
+      "reviewedAt": "2026-10-06",
+      "reason": "人工檢視照片：主體與景點相符，具有可辨識的建築或景觀特徵。"
+    },
+    "奧馬爾清真寺": {
+      "path": "/landmarks/c68952b42430.jpg",
+      "sha256": "53afc5beb571ddfa9486e5d6589315301a1ddb6b3c5ddfc814dbee706697797e",
+      "reviewedAt": "2026-10-06",
+      "reason": "人工檢視照片：主體與景點相符，具有可辨識的建築或景觀特徵。"
+    },
+    "赫爾辛基大教堂": {
+      "path": "/landmarks/25e53cc2474b.jpg",
+      "sha256": "19c5073e05f3f5dda1cea2de97bec54a9bbc677f5027804bfcc969adee5d4ae5",
+      "reviewedAt": "2026-10-06",
+      "reason": "人工檢視照片：主體與景點相符，具有可辨識的建築或景觀特徵。"
+    },
+    "美人魚雕像": {
+      "path": "/landmarks/84bb5fa05187.jpg",
+      "sha256": "62f3a48af16d11fd69cb402739865e094832f1e1ce6825632e1864f0b22d6b42",
+      "reviewedAt": "2026-10-06",
+      "reason": "人工檢視照片：主體與景點相符，具有可辨識的建築或景觀特徵。"
+    },
+    "貝倫塔": {
+      "path": "/landmarks/2cf531866ad1.jpg",
+      "sha256": "0f3ada2af4ee3513abc7a60c78d4b31390aa17afe7f90e5e9e707c91c4f9fde7",
+      "reviewedAt": "2026-10-06",
+      "reason": "人工檢視照片：主體與景點相符，具有可辨識的建築或景觀特徵。"
+    },
+    "原子球塔": {
+      "path": "/landmarks/4be2606df7fa.jpg",
+      "sha256": "b714096b3f27dcb18af389b86bbfa95fe949ea40613b95f57f12b9da120f410c",
+      "reviewedAt": "2026-10-06",
+      "reason": "人工檢視照片：主體與景點相符，具有可辨識的建築或景觀特徵。"
+    },
+    "拉利貝拉岩刻教堂": {
+      "path": "/landmarks/29f76c741a4c.jpg",
+      "sha256": "4892955b06d5c7f56214b128293d05670117ad9559ab6283606ed21eeb6c591f",
+      "reviewedAt": "2026-10-06",
+      "reason": "人工檢視照片：主體與景點相符，具有可辨識的建築或景觀特徵。"
+    },
+    "布達拉宮": {
+      "path": "/landmarks/d3b3f970db30.jpg",
+      "sha256": "2c34de8e49895389f7e33b1ccda3f4bb97d117c7c6ef0bd3ae460dde801fce0b",
+      "reviewedAt": "2026-10-06",
+      "reason": "人工檢視照片：主體與景點相符，具有可辨識的建築或景觀特徵。"
+    },
+    "姬路城": {
+      "path": "/landmarks/7250adbacfde.jpg",
+      "sha256": "152fc49405f6c2bd9ee95893955c5d703f54a1475123b3f54a73ace133a8aef7",
+      "reviewedAt": "2026-10-06",
+      "reason": "人工檢視照片：主體與景點相符，具有可辨識的建築或景觀特徵。"
+    },
+    "藍色清真寺": {
+      "path": "/landmarks/d46c79eb9280.jpg",
+      "sha256": "170963b37d858b0172381e7f99308425907d0251cdf3bb57fd92c78d453c06c2",
+      "reviewedAt": "2026-10-06",
+      "reason": "人工檢視照片：主體與景點相符，具有可辨識的建築或景觀特徵。"
+    },
+    "卡帕多奇亞": {
+      "path": "/landmarks/b996699d44e0.jpg",
+      "sha256": "bf98bc9933dda2ce5e1a744146c1d2387e574c18e71adbe2fd6299f44ff22882",
+      "reviewedAt": "2026-10-06",
+      "reason": "人工檢視照片：主體與景點相符，具有可辨識的建築或景觀特徵。"
+    },
+    "新天鵝堡": {
+      "path": "/landmarks/0c0d781b9db7.jpg",
+      "sha256": "ae6e41610c6f41c4f9172ebdcc1df107cdbe5da6d6f6d9d852476dbf7a809a19",
+      "reviewedAt": "2026-10-06",
+      "reason": "人工檢視照片：主體與景點相符，具有可辨識的建築或景觀特徵。"
+    },
+    "聖米歇爾山": {
+      "path": "/landmarks/4daf161221dd.jpg",
+      "sha256": "7387c1d9d4d2571ff06b2c20a5fd1502b99caf02eb876976b517944991c8c395",
+      "reviewedAt": "2026-10-06",
+      "reason": "人工檢視照片：主體與景點相符，具有可辨識的建築或景觀特徵。"
+    },
+    "威斯敏斯特宮": {
+      "path": "/landmarks/4c82908a5d09.jpg",
+      "sha256": "207e6a924c8f8b1ceba60c2f40b4a9b0353bdb8ccf87374e99c9da4481280e0c",
+      "reviewedAt": "2026-10-06",
+      "reason": "人工檢視照片：主體與景點相符，具有可辨識的建築或景觀特徵。"
+    },
+    "杜布羅夫尼克古城": {
+      "path": "/landmarks/553b75050cf3.jpg",
+      "sha256": "717a2be318f661e63a67a2dfd4b5cef253f420223bec4e51d0b1dfbce8233d46",
+      "reviewedAt": "2026-10-06",
+      "reason": "人工檢視照片：主體與景點相符，具有可辨識的建築或景觀特徵。"
+    },
+    "大峽谷國家公園": {
+      "path": "/landmarks/1ee1efeeb387.jpg",
+      "sha256": "24ee366f57615bc4108df95014a4070555517ba4072b3c3f55a519d7dbf0b9c2",
+      "reviewedAt": "2026-10-06",
+      "reason": "人工檢視照片：主體與景點相符，具有可辨識的建築或景觀特徵。"
+    },
+    "優勝美地國家公園": {
+      "path": "/landmarks/fd92b57633c8.jpg",
+      "sha256": "fc537d0d03a1228ba2c1f0206b832b1a5b6278140215b19d196058f493c3b6d5",
+      "reviewedAt": "2026-10-06",
+      "reason": "人工檢視照片：主體與景點相符，具有可辨識的建築或景觀特徵。"
+    },
+    "烏魯魯": {
+      "path": "/landmarks/0d2458a677ed.jpg",
+      "sha256": "c984d04c1f3d8a499d3fc70865df7278561e348f2201a73ce2087d978960543e",
+      "reviewedAt": "2026-10-06",
+      "reason": "人工檢視照片：主體與景點相符，具有可辨識的建築或景觀特徵。"
+    },
+    "阿布辛貝神廟": {
+      "path": "/landmarks/293e3bfabe90.jpg",
+      "sha256": "105ab754fddd55e5dd735e9762e30b761bb47c5a59a07d1c01746e3992a2b489",
+      "reviewedAt": "2026-10-06",
+      "reason": "人工檢視照片：主體與景點相符，具有可辨識的建築或景觀特徵。"
+    },
+    "小孩堤防風車群": {
+      "path": "/landmarks/9db60f722439.jpg",
+      "sha256": "4173e43aab5227d571255852031d443f3b23d91afebf093a73f5c8373b8aed3c",
+      "reviewedAt": "2026-10-06",
+      "reason": "人工檢視照片：主體與景點相符，具有可辨識的建築或景觀特徵。"
+    },
+    "比薩斜塔": {
+      "path": "/landmarks/f3e5664b4800.jpeg",
+      "sha256": "0f4d6d8e71141e45c6413885a9a6f6459478781bfa1bef4c35f5b52a9f619f41",
+      "reviewedAt": "2026-10-06",
+      "reason": "人工檢視照片：主體與景點相符，具有可辨識的建築或景觀特徵。"
+    },
+    "盧浮宮": {
+      "path": "/landmarks/923ee138a1d4.jpg",
+      "sha256": "286d6714ee0ce0d224db9c40de150af1be82d1b6d78bf376cd2eab82c176ab58",
+      "reviewedAt": "2026-10-06",
+      "reason": "人工檢視照片：主體與景點相符，具有可辨識的建築或景觀特徵。"
+    },
+    "聖瓦西里大教堂": {
+      "path": "/landmarks/6cf70b189967.jpg",
+      "sha256": "a6caa6b84dca4592ad510258ab12f4a4187d0b502587c32667ee5961ceece410",
+      "reviewedAt": "2026-10-06",
+      "reason": "人工檢視照片：主體與景點相符，具有可辨識的建築或景觀特徵。"
+    },
+    "霍亨索倫城堡": {
+      "path": "/landmarks/a1b0e31b2c35.jpg",
+      "sha256": "53d6ccc9ac1d817f443a79dff70fb553137c0e098f955f4f9ab76de77a603300",
+      "reviewedAt": "2026-10-06",
+      "reason": "人工檢視照片：主體與景點相符，具有可辨識的建築或景觀特徵。"
+    },
+    "虎穴寺": {
+      "path": "/landmarks/c4ba80616569.jpg",
+      "sha256": "800b2c5bcd0acfb92083a5f0303d899c46d0862c20bb2cb4446e69985ca7ea5f",
+      "reviewedAt": "2026-10-06",
+      "reason": "人工檢視照片：主體與景點相符，具有可辨識的建築或景觀特徵。"
+    },
+    "金閣寺": {
+      "path": "/landmarks/f8e761899b97.jpg",
+      "sha256": "641e8458b45b8f82ddbeb2c044b54d161e72c3ba45e7295f7930a500152e720e",
+      "reviewedAt": "2026-10-06",
+      "reason": "人工檢視照片：主體與景點相符，具有可辨識的建築或景觀特徵。"
+    },
+    "廣島和平紀念公園": {
+      "path": "/landmarks/5a1181dd16ae.jpg",
+      "sha256": "890025e2ea39b9b5567a40e69c794c44fb993a492b099c65ee378098e38813e5",
+      "reviewedAt": "2026-10-06",
+      "reason": "人工檢視照片：主體與景點相符，具有可辨識的建築或景觀特徵。"
+    }
+  }
+}

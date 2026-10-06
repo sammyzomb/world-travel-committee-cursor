@@ -5,6 +5,7 @@ const base=process.env.UI_BASE_URL??'http://127.0.0.1:8787';
 const questionLimit=Number(process.env.UI_QUESTION_LIMIT??36);
 assert.ok(Number.isInteger(questionLimit)&&questionLimit>=5&&questionLimit<=36);
 const bank=JSON.parse(readFileSync('exports/question-bank-approved.json','utf8'));
+const catalog=JSON.parse(readFileSync('data/travel-puzzle-catalog.json','utf8'));
 const questions=new Map([...bank.warmupQuestions,...bank.approvedQuestions].map(q=>[q.id,q]));
 const seed=await(await fetch(base+'/api/run/start',{method:'POST',headers:{'Content-Type':'application/json'},body:'{}'})).json();
 assert.equal(seed.questionBankVersion,bank.questionBankVersion);
@@ -21,10 +22,10 @@ try {
   await page.goto(base,{waitUntil:'networkidle'});
   assert.match(await page.locator('.start-hero-subtitle').textContent(),/全年齡/);
   await page.locator('.puzzle-catalog summary').click();
-  assert.match(await page.locator('.puzzle-catalog summary').textContent(),/516/);
+  assert.ok((await page.locator('.puzzle-catalog summary').textContent()).includes(String(catalog.total)));
   await page.getByRole('button',{name:/主線闖關/}).click();
   await page.getByRole('button',{name:/跳過動畫/}).click();
-  let photos=0,sources=0;const ids=[];
+  let photos=0,sources=0,previousPhoto=false;const ids=[],stages=new Map();
   for(let index=0;index<questionLimit;index++) {
    if(await page.locator('.reward-section').count()) {
     assert.ok(await page.locator('.reward-actions .primary-button').evaluate(n=>{const r=n.getBoundingClientRect();return r.top>=0&&r.bottom<=innerHeight;}));
@@ -34,7 +35,14 @@ try {
    const id=await page.locator('.play-question-card').getAttribute('data-question-id');ids.push(id);
    const q=questions.get(id);assert.ok(q,id);
    assert.ok(q.kind==='tf'||q.puzzleType,id);
-   assert.match(await page.locator('.play-status .score-pill').first().textContent(),/國小・小[一二三四五六]/);
+   const stageLabel=await page.locator('.play-status .score-pill').first().textContent();
+   assert.match(stageLabel,/國小・小[一二三四五六]/);
+   if(!stages.has(stageLabel)) stages.set(stageLabel,{questions:0,photos:0,types:new Set()});
+   const stage=stages.get(stageLabel);stage.questions++;
+   if(q.puzzleType)stage.types.add(q.puzzleType);
+   if(q.visualClue)stage.photos++;
+   assert.ok(stage.photos<=1,stageLabel);
+   assert.ok(!q.visualClue||!previousPhoto,'consecutive photo questions');previousPhoto=Boolean(q.visualClue);
    assert.equal(await page.locator('.question-references').count(),0);
    if(q.visualClue) {
     assert.ok(await page.locator('.question-photo img').evaluate(n=>n.complete&&n.naturalWidth>0));
@@ -54,8 +62,10 @@ try {
    await page.locator('.play-next-button').click();
    await page.waitForFunction(old=>document.querySelector('.reward-section')||document.querySelector('.play-question-card')?.dataset.questionId!==old,id);
   }
-  assert.ok(photos>=(questionLimit===36?12:1));if(questionLimit===36)assert.ok(sources>=2);
-  checks.push({viewport,questions:ids,photos,sources});await page.close();
+  assert.ok(photos>=1);if(questionLimit===36)assert.ok(sources>=2);
+  const stageResults=[...stages].map(([label,s])=>({label,questions:s.questions,photos:s.photos,types:[...s.types]}));
+  if(questionLimit===36)assert.ok(stageResults.every(s=>s.types.length>=3));
+  checks.push({viewport,questions:ids,photos,sources,stages:stageResults});await page.close();
  }
  if(base.includes('127.0.0.1')) {
   // 圖片失敗時不讓看圖題盲猜，重試成功後恢復作答。

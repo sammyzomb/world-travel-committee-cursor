@@ -57,7 +57,7 @@ export function StartScreen({
               </button>
               <details className="puzzle-catalog">
                 <summary>查看題庫：{catalog.total} 題・{Object.keys(catalog.types).length} 種益智題型</summary>
-                <p>景點照片題 {catalog.photoCount} 題；文化題有資料來源。推理題使用明示的情境設定，包含同類規則的不同題目，不代表真實交通或店家資訊。</p>
+                <p>景點照片題 {catalog.photoCount} 題，每關最多一題，穿插文化探索與旅行益智。文化題有資料來源。推理題使用明示的情境設定，不代表真實交通或店家資訊。</p>
                 <ul>{Object.entries(catalog.types).map(([name,count])=><li key={name}><b>{name}</b><span>{count} 題</span></li>)}</ul>
                 <p>學校年級是遊戲的趣味等級，不代表玩家年齡或學校課程。前段辨識景點與文化；中段讀懂線索；後段交叉核對多個條件。</p>
               </details>

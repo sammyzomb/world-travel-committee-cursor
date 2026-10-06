@@ -1,0 +1,106 @@
+{
+  "date": "2026-10-06",
+  "questionBankVersion": "33d609f7cbdd1f07",
+  "catalog": {
+    "total": 514,
+    "photoCount": 54,
+    "types": {
+      "看圖認景點": 54,
+      "文化探索": 36,
+      "行程排序": 108,
+      "旅伴配對": 108,
+      "路線推理": 84,
+      "線索解謎": 84,
+      "異國文化": 8,
+      "旅行線索": 32
+    }
+  },
+  "independentlySolvedLogicQuestions": 384,
+  "runs": 100,
+  "maxPhotosPerStage": 1,
+  "noConsecutivePhotos": true,
+  "minTypesPerStage": 3,
+  "old": {
+    "questions": 387,
+    "uniqueLongestCorrect": 327,
+    "longestStrategyExpected": 0.8727390180878553
+  },
+  "new": {
+    "questions": 514,
+    "longestStrategyExpected": 0.2485408560311284
+  },
+  "stages": [
+    {
+      "stage": 1,
+      "longestStrategyExpected": 0.25
+    },
+    {
+      "stage": 2,
+      "longestStrategyExpected": 0.25
+    },
+    {
+      "stage": 3,
+      "longestStrategyExpected": 0.23874999999999993
+    },
+    {
+      "stage": 4,
+      "longestStrategyExpected": 0.2433333333333332
+    },
+    {
+      "stage": 5,
+      "longestStrategyExpected": 0.2224999999999999
+    },
+    {
+      "stage": 6,
+      "longestStrategyExpected": 0.23607142857142857
+    },
+    {
+      "stage": 7,
+      "longestStrategyExpected": 0.25071428571428583
+    },
+    {
+      "stage": 8,
+      "longestStrategyExpected": 0.25
+    },
+    {
+      "stage": 9,
+      "longestStrategyExpected": 0.25
+    },
+    {
+      "stage": 10,
+      "longestStrategyExpected": 0.25
+    },
+    {
+      "stage": 11,
+      "longestStrategyExpected": 0.25
+    },
+    {
+      "stage": 12,
+      "longestStrategyExpected": 0.25
+    },
+    {
+      "stage": 13,
+      "longestStrategyExpected": 0.25
+    },
+    {
+      "stage": 14,
+      "longestStrategyExpected": 0.25
+    },
+    {
+      "stage": 15,
+      "longestStrategyExpected": 0.25
+    },
+    {
+      "stage": 16,
+      "longestStrategyExpected": 0.25
+    },
+    {
+      "stage": 17,
+      "longestStrategyExpected": 0.25
+    },
+    {
+      "stage": 18,
+      "longestStrategyExpected": 0.25
+    }
+  ]
+}

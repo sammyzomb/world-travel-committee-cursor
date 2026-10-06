@@ -1,5 +1,6 @@
 import assert from 'node:assert/strict';
-import {writeFileSync,existsSync} from 'node:fs';
+import {writeFileSync,existsSync,readFileSync} from 'node:fs';
+import {createHash} from 'node:crypto';
 import {puzzleQuestions,learningQuestions} from '../lib/questions.ts';
 import {buildPlayableRunPlan} from '../lib/run-plan.ts';
 import {setGameRandomSeed,resetGameRandom} from '../lib/game-random.ts';
@@ -12,6 +13,7 @@ const longestRate=qs=>qs.reduce((sum,q)=>{
  const max=Math.max(...q.options.map(o=>o.length)),ties=q.options.filter(o=>o.length===max).length;
  return sum+(q.options[q.answer].length===max?1/ties:0);
 },0)/qs.length;
+const reviews=JSON.parse(readFileSync('data/photo-quiz-review.json','utf8')).entries;
 assert.equal(puzzleQuestions.length,catalog.total);
 assert.ok(longestRate(puzzleQuestions)<.3,'longest-answer strategy should not beat random guessing materially');
 // Independently read each logic question's written conditions and check all four choices.
@@ -20,7 +22,15 @@ for(const q of puzzleQuestions) {
  assert.equal(new Set(q.options).size,4);
  assert.ok(Array.from({length:18},(_,i)=>questionMatchesStageRules(q,i)).some(Boolean),q.id);
  let valid;
- if(q.puzzleType==='行程排序') {
+ if(q.id.startsWith('puzzle:mini-order-')) {
+  const match=q.q.match(/旅行小謎題：(.+)之後去(.+)，接著去(.+)，最後到(.+)。哪張/);
+  assert.ok(match,q.id);
+  valid=q.options.map(o=>o.split(' → ').join('|')===match.slice(1).join('|'));
+ } else if(q.id.startsWith('puzzle:mini-match-')) {
+  const chosen=[...q.q.matchAll(/阿[晴海森]選([^、。]+)/g)].map(m=>m[1]);
+  assert.equal(chosen.length,3,q.id);
+  valid=q.options.map(o=>!chosen.includes(o));
+ } else if(q.puzzleType==='行程排序') {
   const pairs=[...q.q.matchAll(/「([^」]+)」須在「([^」]+)」之前/g)].map(m=>[m[1],m[2]]);
   valid=q.options.map(o=>{const stops=o.split(' → ');return new Set(stops).size===4&&pairs.every(([a,b])=>stops.indexOf(a)<stops.indexOf(b));});
  } else if(q.puzzleType==='路線推理') {
@@ -38,6 +48,9 @@ for(const q of puzzleQuestions) {
  if(q.visualClue) {
   assert.equal(q.visual?.type,'photo',q.id);
   assert.ok(existsSync('public'+q.visual.image),q.id);
+  const review=reviews[q.visual.label];
+  assert.equal(review?.path,q.visual.image,q.id);
+  assert.equal(review.sha256,createHash('sha256').update(readFileSync('public'+q.visual.image)).digest('hex'),q.id);
   for(const issued of [toIssuedQuestion(q,2),issuedQuestionsFromPlan([q],[0])[0]]) {
    const publicQ=toPublicQuestion(issued);
    assert.equal(publicQ.visual.image,q.visual.image);
@@ -64,14 +77,18 @@ try {
    for(let s=0;s<18;s++) {
     const qs=result.plan.questions.slice(result.plan.stageStarts[s],result.plan.stageStarts[s+1]).filter(q=>q.kind!=='tf');
     assert.ok(qs.every(q=>q.puzzleType&&questionMatchesStageRules(q,s)));
+    assert.ok(qs.filter(q=>q.visualClue).length<=1,`photo cap / seed ${seed} / stage ${s}`);
+    assert.ok(new Set(qs.map(q=>q.puzzleType)).size>=3,`variety / seed ${seed} / stage ${s}`);
+    for(const type of new Set(qs.map(q=>q.puzzleType))) assert.ok(qs.filter(q=>q.puzzleType===type).length<=(s<=6?2:3));
     stageRates[s].push(longestRate(qs));
    }
    runs++;
+   result.plan.questions.forEach((q,i)=>assert.ok(!q.visualClue||!result.plan.questions[i-1]?.visualClue,`consecutive photos / ${seed} / ${i}`));
   }
  }
 } finally {resetGameRandom();}
 const oldUniqueLongest=learningQuestions.filter(q=>q.options[q.answer].length>Math.max(...q.options.filter((_,i)=>i!==q.answer).map(o=>o.length))).length;
-const report={date:'2026-10-05',questionBankVersion:QUESTION_BANK_VERSION,catalog,independentlySolvedLogicQuestions:solved,runs,old:{questions:learningQuestions.length,uniqueLongestCorrect:oldUniqueLongest,longestStrategyExpected:longestRate(learningQuestions)},new:{questions:puzzleQuestions.length,longestStrategyExpected:longestRate(puzzleQuestions)},stages:stageRates.map((rates,index)=>({stage:index+1,longestStrategyExpected:rates.reduce((a,b)=>a+b,0)/rates.length}))};
+const report={date:'2026-10-06',questionBankVersion:QUESTION_BANK_VERSION,catalog,independentlySolvedLogicQuestions:solved,runs,maxPhotosPerStage:1,noConsecutivePhotos:true,minTypesPerStage:3,old:{questions:learningQuestions.length,uniqueLongestCorrect:oldUniqueLongest,longestStrategyExpected:longestRate(learningQuestions)},new:{questions:puzzleQuestions.length,longestStrategyExpected:longestRate(puzzleQuestions)},stages:stageRates.map((rates,index)=>({stage:index+1,longestStrategyExpected:rates.reduce((a,b)=>a+b,0)/rates.length}))};
 assert.ok(report.stages.every(s=>s.longestStrategyExpected<.33));
-writeFileSync('docs/TRAVEL-PUZZLE-QA-2026-10-05.json',JSON.stringify(report,null,2)+'\n');
+writeFileSync('docs/TRAVEL-PUZZLE-VARIETY-QA-2026-10-06.json',JSON.stringify(report,null,2)+'\n');
 console.log(JSON.stringify(report,null,2));

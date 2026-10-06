@@ -1,8 +1,8 @@
 {
   "date": "2026-10-06",
   "url": "http://127.0.0.1:8787",
-  "questionBankVersion": "3b2061df2c4d682f",
-  "questionLimit": 5,
+  "questionBankVersion": "33d609f7cbdd1f07",
+  "questionLimit": 36,
   "ok": true,
   "nextInsideQuestionCard": true,
   "leaderboardSubmitted": false,
@@ -14,13 +14,119 @@
       },
       "questions": [
         "warmup:ay2uz6",
-        "warmup:1esry98",
-        "puzzle:photo-28",
-        "puzzle:photo-43",
-        "puzzle:photo-11"
+        "warmup:qlfoay",
+        "puzzle:mini-match-0-6",
+        "puzzle:photo-117",
+        "puzzle:discovery-6",
+        "puzzle:discovery-1",
+        "puzzle:mini-order-0-7",
+        "puzzle:photo-90",
+        "puzzle:mini-match-0-2",
+        "puzzle:discovery-4",
+        "puzzle:mini-order-1-6",
+        "puzzle:heritage-clue-0",
+        "puzzle:culture-onsen",
+        "puzzle:photo-24",
+        "puzzle:mini-match-1-6",
+        "puzzle:discovery-22",
+        "puzzle:mini-match-1-0",
+        "puzzle:discovery-19",
+        "puzzle:mini-order-1-4",
+        "puzzle:photo-47",
+        "puzzle:culture-venice",
+        "puzzle:heritage-clue-3",
+        "puzzle:discovery-12",
+        "puzzle:heritage-clue-5",
+        "puzzle:mini-order-2-5",
+        "puzzle:photo-62",
+        "puzzle:mini-match-1-7",
+        "puzzle:culture-hawker",
+        "puzzle:discovery-26",
+        "puzzle:discovery-31",
+        "puzzle:culture-luang",
+        "puzzle:mini-order-2-4",
+        "puzzle:photo-50",
+        "puzzle:mini-match-2-0",
+        "puzzle:heritage-clue-4",
+        "puzzle:discovery-35"
       ],
-      "photos": 3,
-      "sources": 0
+      "photos": 6,
+      "sources": 17,
+      "stages": [
+        {
+          "label": "國小・小一",
+          "questions": 5,
+          "photos": 1,
+          "types": [
+            "旅伴配對",
+            "看圖認景點",
+            "文化探索"
+          ]
+        },
+        {
+          "label": "國小・小二",
+          "questions": 5,
+          "photos": 1,
+          "types": [
+            "文化探索",
+            "行程排序",
+            "看圖認景點",
+            "旅伴配對"
+          ]
+        },
+        {
+          "label": "國小・小三",
+          "questions": 6,
+          "photos": 1,
+          "types": [
+            "行程排序",
+            "旅行線索",
+            "異國文化",
+            "看圖認景點",
+            "旅伴配對",
+            "文化探索"
+          ]
+        },
+        {
+          "label": "國小・小四",
+          "questions": 6,
+          "photos": 1,
+          "types": [
+            "旅伴配對",
+            "文化探索",
+            "行程排序",
+            "看圖認景點",
+            "異國文化",
+            "旅行線索"
+          ]
+        },
+        {
+          "label": "國小・小五",
+          "questions": 7,
+          "photos": 1,
+          "types": [
+            "文化探索",
+            "旅行線索",
+            "行程排序",
+            "看圖認景點",
+            "旅伴配對",
+            "異國文化"
+          ]
+        },
+        {
+          "label": "國小・小六",
+          "questions": 7,
+          "photos": 1,
+          "types": [
+            "文化探索",
+            "異國文化",
+            "行程排序",
+            "看圖認景點",
+            "旅伴配對",
+            "旅行線索"
+          ]
+        }
+      ]
     },
     {
       "viewport": {
@@ -29,13 +135,119 @@
       },
       "questions": [
         "warmup:dveciz",
-        "warmup:uer62h",
-        "puzzle:photo-0",
-        "puzzle:photo-4",
-        "puzzle:photo-5"
+        "warmup:ay2uz6",
+        "puzzle:discovery-3",
+        "puzzle:photo-134",
+        "puzzle:mini-match-0-4",
+        "puzzle:discovery-1",
+        "puzzle:mini-match-0-1",
+        "puzzle:photo-21",
+        "puzzle:mini-order-0-2",
+        "puzzle:discovery-2",
+        "puzzle:discovery-23",
+        "puzzle:heritage-clue-3",
+        "puzzle:culture-hawker",
+        "puzzle:photo-24",
+        "puzzle:mini-match-1-6",
+        "puzzle:mini-order-1-1",
+        "puzzle:heritage-clue-2",
+        "puzzle:mini-order-1-4",
+        "puzzle:culture-venice",
+        "puzzle:photo-18",
+        "puzzle:discovery-13",
+        "puzzle:mini-match-1-5",
+        "puzzle:discovery-33",
+        "puzzle:mini-order-2-4",
+        "puzzle:culture-luang",
+        "puzzle:photo-44",
+        "puzzle:mini-match-1-1",
+        "puzzle:heritage-clue-5",
+        "puzzle:discovery-20",
+        "puzzle:discovery-34",
+        "puzzle:heritage-clue-4",
+        "puzzle:mini-order-2-1",
+        "puzzle:photo-113",
+        "puzzle:mini-match-2-0",
+        "puzzle:culture-petronas",
+        "puzzle:discovery-28"
       ],
-      "photos": 3,
-      "sources": 0
+      "photos": 6,
+      "sources": 17,
+      "stages": [
+        {
+          "label": "國小・小一",
+          "questions": 5,
+          "photos": 1,
+          "types": [
+            "文化探索",
+            "看圖認景點",
+            "旅伴配對"
+          ]
+        },
+        {
+          "label": "國小・小二",
+          "questions": 5,
+          "photos": 1,
+          "types": [
+            "文化探索",
+            "旅伴配對",
+            "看圖認景點",
+            "行程排序"
+          ]
+        },
+        {
+          "label": "國小・小三",
+          "questions": 6,
+          "photos": 1,
+          "types": [
+            "文化探索",
+            "旅行線索",
+            "異國文化",
+            "看圖認景點",
+            "旅伴配對",
+            "行程排序"
+          ]
+        },
+        {
+          "label": "國小・小四",
+          "questions": 6,
+          "photos": 1,
+          "types": [
+            "旅行線索",
+            "行程排序",
+            "異國文化",
+            "看圖認景點",
+            "文化探索",
+            "旅伴配對"
+          ]
+        },
+        {
+          "label": "國小・小五",
+          "questions": 7,
+          "photos": 1,
+          "types": [
+            "文化探索",
+            "行程排序",
+            "異國文化",
+            "看圖認景點",
+            "旅伴配對",
+            "旅行線索"
+          ]
+        },
+        {
+          "label": "國小・小六",
+          "questions": 7,
+          "photos": 1,
+          "types": [
+            "文化探索",
+            "旅行線索",
+            "行程排序",
+            "看圖認景點",
+            "旅伴配對",
+            "異國文化"
+          ]
+        }
+      ]
     },
     {
       "photoFailureBlocksAnswer": true,

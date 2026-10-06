@@ -111,6 +111,8 @@ function pickDiverseQuestions(ranked: Question[], count: number, stageIndex: num
   const candidates = shuffled(ranked).filter(q => !ids.has(q.id));
   while (selected.length < count) {
     const available = candidates.filter(q => !ids.has(q.id) && !concepts.has(q.conceptId) &&
+      (!q.visualClue || !selected.some(item=>item.visualClue)) &&
+      (!q.puzzleType || selected.filter(item=>item.puzzleType===q.puzzleType).length<(stageIndex<=6?2:3)) &&
       (familyCounts.get(questionFamily(q)) ?? 0) < (questionFamily(q) === 'location-recall' || stageIndex >= 9 ? 1 : 2));
     // Spread demand across the available families so later stages/replays keep enough choices.
     const remainingByFamily = new Map<string, Set<string>>();
@@ -119,7 +121,8 @@ function pickDiverseQuestions(ranked: Question[], count: number, stageIndex: num
       if (!remainingByFamily.has(family)) remainingByFamily.set(family, new Set());
       remainingByFamily.get(family)!.add(q.conceptId);
     }
-    available.sort((a, b) => Number(isTravelFocused(b)) - Number(isTravelFocused(a))
+    available.sort((a, b) => (selected.length===0?Number(Boolean(b.visualClue))-Number(Boolean(a.visualClue)):0)
+      || Number(isTravelFocused(b)) - Number(isTravelFocused(a))
       || selected.filter(q=>q.puzzleType===a.puzzleType).length - selected.filter(q=>q.puzzleType===b.puzzleType).length
       || (familyCounts.get(questionFamily(a)) ?? 0) - (familyCounts.get(questionFamily(b)) ?? 0)
       || questionDemand(b) - questionDemand(a)
@@ -133,6 +136,23 @@ function pickDiverseQuestions(ranked: Question[], count: number, stageIndex: num
     familyCounts.set(family, (familyCounts.get(family) ?? 0) + 1);
   }
   return selected.slice(seed.length);
+}
+
+/** 看圖題每關最多一題，固定穿插在中段，避免兩關交界連續猜照片。 */
+function interleaveStageQuestions(questions: Question[]) {
+  const photos=questions.filter(q=>q.visualClue);
+  const remaining=shuffled(questions.filter(q=>!q.visualClue));
+  const ordered: Question[]=[];
+  while(remaining.length) {
+    const counts=new Map<string,number>();
+    for(const q of remaining) counts.set(q.puzzleType??q.kind??q.questionType,(counts.get(q.puzzleType??q.kind??q.questionType)??0)+1);
+    const previous=ordered.at(-1)?.puzzleType;
+    remaining.sort((a,b)=>Number(a.puzzleType===previous)-Number(b.puzzleType===previous)||
+      (counts.get(b.puzzleType??b.kind??b.questionType)??0)-(counts.get(a.puzzleType??a.kind??a.questionType)??0));
+    ordered.push(remaining.shift()!);
+  }
+  if(photos.length) ordered.splice(Math.floor(questions.length/2),0,...photos);
+  return ordered;
 }
 
 function pickFreshQuestions(
@@ -257,7 +277,7 @@ function drawStageQuestions(
       usedConceptIds,
       stageIndex,
     );
-    return [...shuffled(warmupChoices), ...shuffled(formalChoices)];
+    return [...shuffled(warmupChoices), ...interleaveStageQuestions(formalChoices)];
   }
 
   const stage = educationStages[stageIndex];
@@ -282,7 +302,7 @@ function drawStageQuestions(
     stageIndex,
   );
 
-  return shuffled(questions);
+  return interleaveStageQuestions(questions);
 }
 
 export function createRound(

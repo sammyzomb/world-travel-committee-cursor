@@ -1,29 +1,46 @@
 import { readFileSync, writeFileSync } from 'node:fs';
 import { resolve } from 'node:path';
+import { createHash } from 'node:crypto';
+import { earlyTravelFacts } from './early-travel-facts.mjs';
 const root = resolve(import.meta.dirname, '..');
 const manifest = JSON.parse(readFileSync(resolve(root, 'data/landmark-static-manifest.json'), 'utf8')).entries;
 const grades = ['小一','小二','小三','小四','小五','小六','國一','國二','國三','高一','高二','高三','大一','大二','大三','大四','研一','研二'];
 const levels = ['旅行新手','城市旅人','國家達人','洲際領隊','環球旅行家'];
 const rows = [];
+const photoReviews = JSON.parse(readFileSync(resolve(root,'data/photo-quiz-review.json'),'utf8')).entries;
+const previousPhotos = new Map(JSON.parse(readFileSync(resolve(root,'data/travel-puzzles.json'),'utf8')).filter(q=>q.visualClue).map(q=>[q.landmark,q.id.replace('puzzle:','')]));
 function add(id, band, puzzleType, q, options, answer, fact, extra = {}) {
-  const ranges = [[0,2],[2,4],[4,6],[7,8],[8,13],[14,17]];
+  const ranges = [[0,2],[2,4],[4,6],[6,8],[8,13],[14,17]];
   const [lo, hi] = ranges[band];
   rows.push({id:`puzzle:${id}`,level:levels[Math.min(band,4)],demand:band===0?1:band<3?2:band===5?4:3,
     family:`puzzle:${puzzleType}:${id}`,subtopic:puzzleType==='看圖認景點'?'monuments-landmarks':'planning-itineraries',
     region:'世界旅行',category:'旅行知識',questionType:'world-fact',travelFocus:true,puzzleType,
     grades:grades.slice(lo,hi+1),q,options,answer,fact,...extra});
 }
-const names = Object.entries(manifest).filter(([name,e])=> !e.imageRejected && (!e.provider || e.imageReviewedAt) && !['太平洋','旅遊地標'].includes(name)).map(([name])=>name);
+const names = Object.entries(manifest).filter(([name,e])=> {
+  const review=photoReviews[name];
+  return !e.imageRejected && !e.failed && review?.path===e.path && review.sha256===createHash('sha256').update(readFileSync(resolve(root,'public',e.path.slice(1)))).digest('hex');
+}).map(([name])=>name);
 // 圖片本身是題目的線索；名稱、地區、來源連結只在揭曉後提供。
 names.forEach((name,i)=>{
-  const band=i<44?0:i<92?1:2;
+  const band=i%3;
   const wrong=names.filter(n=>n!==name).sort((a,b)=>Math.abs(a.length-name.length)-Math.abs(b.length-name.length)||a.localeCompare(b)).slice(0,3);
   const options=[name,...wrong];
-  add(`photo-${i}`,band,'看圖認景點','觀察照片中的建築或景觀，這張旅行明信片拍的是哪個景點？',options,0,
+  add(previousPhotos.get(name)??`photo-reviewed-${i}`,band,'看圖認景點','觀察照片中的建築或景觀，這張旅行明信片拍的是哪個景點？',options,0,
     `照片中的景點是${name}。可從外形、周圍景觀與建築細節辨識；圖片來源可在揭曉後查閱。`,{landmark:name,visualClue:true});
 });
 function permutations(xs) {return xs.length<2?[xs]:xs.flatMap((x,i)=>permutations(xs.filter((_,j)=>j!==i)).map(t=>[x,...t]));}
 const perms=permutations([0,1,2,3]);
+earlyTravelFacts.forEach(([q,options,fact,code],i)=>add(`discovery-${i}`,Math.floor(i/12),'文化探索',q,options,0,fact,{subtopic:'culture-etiquette',references:[{title:'UNESCO：景點與文化資料',url:`https://whc.unesco.org/en/list/${code}/`,role:'fact'}]}));
+// 入門也混合短篇旅行益智；條件直接寫在題幹，不需要計算或猜圖。
+const miniExperiences=[['市場','茶屋','劇場','花園'],['碼頭','藝廊','咖啡','老街'],['陶藝','書店','餐館','燈會'],['展館','庭院','手作','夕照'],['運河','早餐','公園','演奏'],['城堡','街市','點心','海港'],['神社','工坊','旅館','夜景'],['寺廟','茶館','畫室','湖畔']];
+for(let band=0;band<3;band++)for(let i=0;i<8;i++) {
+  const a=miniExperiences[i],target=perms[(i*3+band*7)%24];
+  const options=[target,...[1,5,11].map(offset=>perms[((i*3+band*7)+offset)%24])];
+  add(`mini-order-${band}-${i}`,band,'行程排序',`旅行小謎題：${a[target[0]]}之後去${a[target[1]]}，接著去${a[target[2]]}，最後到${a[target[3]]}。哪張行程卡符合安排？`,options.map(p=>p.map(x=>a[x]).join(' → ')),0,'依照題目提到的先後順序核對四站。這是旅行解謎設定，並非現地路線。');
+  const people=['阿晴','阿海','阿森','阿月'];
+  add(`mini-match-${band}-${i}`,band,'旅伴配對',`四位旅伴各選一個不同體驗。${people[0]}選${a[target[0]]}、${people[1]}選${a[target[1]]}、${people[2]}選${a[target[2]]}。${people[3]}要選剩下哪個？`,[a[target[3]],a[target[0]],a[target[1]],a[target[2]]],0,`四個體驗是${a.join('、')}，前三位已選三種，剩下${a[target[3]]}。每個體驗只分配一次。`);
+}
 const cities=['京都','巴黎','里斯本','伊斯坦堡','布拉格','首爾','吉隆坡','新加坡','墨西哥城','布宜諾斯艾利斯','雪梨','溫哥華','曼谷','清邁','河內','會安','羅馬','佛羅倫斯','巴塞隆納','馬德里','阿姆斯特丹','哥本哈根','赫爾辛基','斯德哥爾摩','雷克雅維克','開羅','馬拉喀什','奈洛比','東京','倫敦','柏林','維也納'];
 const activities=[['市集','花園','展館','夜景'],['老街','陶藝','茶屋','劇場'],['碼頭','咖啡','藝廊','音樂'],['早餐','手作','公園','燈會'],['散步','書店','餐館','表演'],['運河','繪畫','點心','夕照'],['庭院','染布','茶點','演奏']];
 function choicesFor(valid, i) {

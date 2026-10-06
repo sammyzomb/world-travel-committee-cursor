@@ -78,7 +78,10 @@
       "path": "/landmarks/a94c23a5638e.jpg",
       "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Shishiiwa_Onigajo_Shichirimihama.jpg/960px-Shishiiwa_Onigajo_Shichirimihama.jpg",
       "credit": "Wikimedia Commons / Shishiiwa Onigajo Shichirimihama.jpg",
-      "bytes": 184703
+      "bytes": 184703,
+      "imageRejected": true,
+      "imageRejectionReason": "海岸岩石，不是斯里蘭卡獅子岩",
+      "imageReviewedAt": "2026-10-06"
     },
     "珠穆朗瑪峰": {
       "path": "/landmarks/267ad48f6a0a.jpg",
@@ -96,7 +99,10 @@
       "path": "/landmarks/0deb628a72fa.jpg",
       "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Xian_China_Terracotta-Army-Museum-01.jpg/960px-Xian_China_Terracotta-Army-Museum-01.jpg",
       "credit": "Wikimedia Commons / Xian China Terracotta-Army-Museum-01.jpg",
-      "bytes": 126094
+      "bytes": 126094,
+      "imageRejected": true,
+      "imageRejectionReason": "博物館外觀，沒有兵馬俑",
+      "imageReviewedAt": "2026-10-06"
     },
     "樂山大佛": {
       "path": "/landmarks/11e44347fd6b.jpg",
@@ -138,7 +144,10 @@
       "path": "/landmarks/c44b2f1a5693.jpg",
       "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/%E6%B3%B0%E5%A7%AC%E7%91%AA%E5%93%88%E9%99%B570.jpg/960px-%E6%B3%B0%E5%A7%AC%E7%91%AA%E5%93%88%E9%99%B570.jpg",
       "credit": "Wikimedia Commons / 泰姬瑪哈陵70.jpg",
-      "bytes": 178001
+      "bytes": 178001,
+      "imageRejected": true,
+      "imageRejectionReason": "普通房屋廢墟，不是泰姬瑪哈陵",
+      "imageReviewedAt": "2026-10-06"
     },
     "萬里長城": {
       "path": "/landmarks/96b0579d0171.jpg",
@@ -186,7 +195,10 @@
       "path": "/landmarks/e0a15899c420.jpg",
       "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Stonehenge_Heel_Stone.jpg/960px-Stonehenge_Heel_Stone.jpg",
       "credit": "Wikimedia Commons / Stonehenge Heel Stone.jpg",
-      "bytes": 576439
+      "bytes": 576439,
+      "imageRejected": true,
+      "imageRejectionReason": "單塊石頭，沒有巨石陣特徵",
+      "imageReviewedAt": "2026-10-06"
     },
     "維利奇卡鹽礦": {
       "path": "/landmarks/d1b7f6dfacd4.jpg",
@@ -195,7 +207,10 @@
       "sourceUrl": "\\\\192.168.3.3\\【行程總彙】\\4-1.歐洲\\●中西南歐\\波蘭\\20180905-18波波14日領隊照片-李小萍\\0907維利奇卡鹽礦.克拉克夫\\IMG_0145.JPG",
       "credit": "行程總彙圖庫",
       "bytes": 4829636,
-      "failed": false
+      "failed": false,
+      "imageRejected": true,
+      "imageRejectionReason": "火車，沒有鹽礦景物",
+      "imageReviewedAt": "2026-10-06"
     },
     "尼加拉瀑布": {
       "path": "/landmarks/0afeed05ce03.jpg",
@@ -232,7 +247,10 @@
       "sourceUrl": "\\\\192.168.3.3\\【行程總彙】\\3.大洋洲-紐 澳 帛琉 南太\\1-紐西蘭行程\\@照片圖庫\\20260108紐西蘭20天 ASHLEY許家樸\\0120第13天夏洛特女王峽灣（搭渡輪）－威靈頓（舊聖保羅教堂、纜車）\\國會大廈.JPG",
       "credit": "行程總彙圖庫",
       "bytes": 3526154,
-      "failed": false
+      "failed": false,
+      "imageRejected": true,
+      "imageRejectionReason": "旋轉人像，非目標國會大廈",
+      "imageReviewedAt": "2026-10-06"
     },
     "奈洛比國家公園": {
       "path": "/landmarks/d1914a3a5319.jpg",
@@ -241,7 +259,10 @@
       "sourceUrl": "\\\\192.168.3.3\\【行程總彙】\\5-非洲\\@照片圖庫\\@領隊\\2013-0716肯亞維多利亞16日-阿貴\\肯亞\\730奈洛比市區\\IMG_6523.JPG",
       "credit": "行程總彙圖庫",
       "bytes": 6528325,
-      "failed": false
+      "failed": false,
+      "imageRejected": true,
+      "imageRejectionReason": "城市街道，非國家公園",
+      "imageReviewedAt": "2026-10-06"
     },
     "桌山": {
       "path": "/landmarks/c80fec8e391a.jpg",
@@ -357,7 +378,10 @@
       "path": "/landmarks/7151a8d468df.jpg",
       "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/T%C5%8Ddai-ji_hdsr_IMG_3880.jpg/960px-T%C5%8Ddai-ji_hdsr_IMG_3880.jpg",
       "credit": "Wikimedia Commons / Tōdai-ji hdsr IMG 3880.jpg",
-      "bytes": 104444
+      "bytes": 104444,
+      "imageRejected": true,
+      "imageRejectionReason": "水鳥，沒有東大寺",
+      "imageReviewedAt": "2026-10-06"
     },
     "聖索菲亞大教堂": {
       "path": "/landmarks/f4d0744de3ff.jpg",
@@ -382,7 +406,10 @@
       "sourceUrl": "\\\\192.168.3.3\\【行程總彙】\\1-4北極光\\@照片圖庫\\@領隊\\20260123 摩爾曼斯克11日-馬筠家\\照片\\D3莫斯科(克里姆林宮、紅場、莫斯科地鐵)\\LINE_ALBUM_20260125_260213_54.jpg",
       "credit": "行程總彙圖庫",
       "bytes": 406264,
-      "failed": false
+      "failed": false,
+      "imageRejected": true,
+      "imageRejectionReason": "橋樑，非紅場",
+      "imageReviewedAt": "2026-10-06"
     },
     "查理大橋": {
       "path": "/landmarks/d4ba36962649.jpg",
@@ -419,7 +446,10 @@
       "path": "/landmarks/76451a90f553.jpg",
       "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/YPF_tanker_truck_on_Cataratas_del_Iguaz%C3%BA_International_Airport.jpg/960px-YPF_tanker_truck_on_Cataratas_del_Iguaz%C3%BA_International_Airport.jpg",
       "credit": "Wikimedia Commons / YPF tanker truck on Cataratas del Iguazú International Airport.jpg",
-      "bytes": 157002
+      "bytes": 157002,
+      "imageRejected": true,
+      "imageRejectionReason": "伊瓜蘇機場油罐車，非瀑布",
+      "imageReviewedAt": "2026-10-06"
     },
     "迦太基古城": {
       "path": "/landmarks/86ed61aadfa9.jpg",
@@ -506,7 +536,10 @@
       "sourceUrl": "\\\\192.168.3.3\\【行程總彙】\\0-0-EDM+影片\\2024\\2024-6月-年度重點\\2爪哇汶萊8日 ✔️\\BWN08A_爪哇婆羅浮屠佛塔 婆羅摩火山 汶萊王國東方杜拜 小資 8日.jpg",
       "credit": "行程總彙圖庫",
       "bytes": 1483651,
-      "failed": false
+      "failed": false,
+      "imageRejected": true,
+      "imageRejectionReason": "旅遊廣告拼貼，非婆羅浮屠主體",
+      "imageReviewedAt": "2026-10-06"
     },
     "雷吉斯坦廣場": {
       "path": "/landmarks/92d62400e92e.jpg",
@@ -527,7 +560,10 @@
       "sourceUrl": "\\\\192.168.3.3\\【行程總彙】\\0-0-EDM+影片\\2025\\2025-5月\\20250513 北越下龍灣 海上VILLA 5日.jpg",
       "credit": "行程總彙圖庫",
       "bytes": 1718491,
-      "failed": false
+      "failed": false,
+      "imageRejected": true,
+      "imageRejectionReason": "旅遊廣告，非下龍灣",
+      "imageReviewedAt": "2026-10-06"
     },
     "大金塔": {
       "path": "/landmarks/436903fb4f2a.jpg",
@@ -695,7 +731,10 @@
       "sourceUrl": "\\\\192.168.3.3\\【行程總彙】\\1-3西伯利亞鐵路+俄羅斯\\@照片圖庫\\20240712蒙貝13日領隊照片-李小萍\\成吉思汗廣場 歷史博物館\\LINE_ALBUM_714成吉思汗廣場 歷史博物館_240727_11.jpg",
       "credit": "行程總彙圖庫",
       "bytes": 1062573,
-      "failed": false
+      "failed": false,
+      "imageRejected": true,
+      "imageRejectionReason": "人群與紀念碑，非景點主體",
+      "imageReviewedAt": "2026-10-06"
     },
     "巴伊傑列克塔": {
       "path": "/landmarks/ad3edd6202ca.jpg",
@@ -715,7 +754,10 @@
       "path": "/landmarks/299aeca31a4a.jpg",
       "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Peace_Bridge.jpg/960px-Peace_Bridge.jpg",
       "credit": "Wikimedia Commons / Peace Bridge.jpg",
-      "bytes": 225228
+      "bytes": 225228,
+      "imageRejected": true,
+      "imageRejectionReason": "非喬治亞和平橋的外形",
+      "imageReviewedAt": "2026-10-06"
     },
     "維格蘭雕塑公園": {
       "path": "/landmarks/de1f5d4c086a.jpg",
@@ -743,7 +785,10 @@
       "sourceUrl": "\\\\192.168.3.3\\【行程總彙】\\4-1.歐洲\\●中西南歐\\德國\\漢諾威 市政廳shutterstock_627773894.jpg",
       "credit": "行程總彙圖庫",
       "bytes": 19429663,
-      "failed": false
+      "failed": false,
+      "imageRejected": true,
+      "imageRejectionReason": "非指向明確的市政廳",
+      "imageReviewedAt": "2026-10-06"
     },
     "美人魚雕像": {
       "path": "/landmarks/84bb5fa05187.jpg",
@@ -783,7 +828,9 @@
       "license": "CC0",
       "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
       "articleUrl": "https://en.wikipedia.org/wiki/Trinity_College_Dublin",
-      "imageReviewedAt": "2026-09-30T09:10:15.500Z"
+      "imageReviewedAt": "2026-10-06",
+      "imageRejected": true,
+      "imageRejectionReason": "非聖三一學院主體"
     },
     "貝倫塔": {
       "path": "/landmarks/2cf531866ad1.jpg",
@@ -857,7 +904,10 @@
       "sourceUrl": "\\\\192.168.3.3\\【行程總彙】\\5-非洲\\@影片\\20230712-東非-陳妍方\\影片\\維多利亞瀑布 直升機\\20230722_171922+0200-uid-5847BE90-B1D3-4830-A4B9-E7C822ED623B-5029384.jpg",
       "credit": "行程總彙圖庫",
       "bytes": 6469458,
-      "failed": false
+      "failed": false,
+      "imageRejected": true,
+      "imageRejectionReason": "旋轉車輛與道路，非維多利亞瀑布",
+      "imageReviewedAt": "2026-10-06"
     },
     "良知之父紀念碑": {
       "path": "/landmarks/0bf7c00a7d43.jpg",
@@ -993,7 +1043,9 @@
       "license": "Public domain",
       "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Copyright_rules_by_territory",
       "articleUrl": "https://en.wikipedia.org/wiki/Kathmandu_Valley",
-      "imageReviewedAt": "2026-09-30T09:10:16.676Z"
+      "imageReviewedAt": "2026-10-06",
+      "imageRejected": true,
+      "imageRejectionReason": "衛星地圖，不適合谷地看圖題"
     },
     "琥珀堡": {
       "path": "/landmarks/47c735d08a6f.jpg",
@@ -1069,7 +1121,10 @@
       "sourceUrl": "\\\\192.168.3.3\\【行程總彙】\\保留系列資料\\1-5.自由行\\歐洲\\地圖\\CDG05G-法國-巴黎-凡爾賽宮-自由行-5日-01.jpg",
       "credit": "行程總彙圖庫",
       "bytes": 736898,
-      "failed": false
+      "failed": false,
+      "imageRejected": true,
+      "imageRejectionReason": "旅行路線圖，非凡爾賽宮",
+      "imageReviewedAt": "2026-10-06"
     },
     "聖米歇爾山": {
       "path": "/landmarks/4daf161221dd.jpg",
@@ -1110,7 +1165,10 @@
       "path": "/landmarks/c90fad205329.jpg",
       "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Guard_at_the_Prague_castle%2C_Prague_-_7620_%28cropped%29.jpg/960px-Guard_at_the_Prague_castle%2C_Prague_-_7620_%28cropped%29.jpg",
       "credit": "Wikimedia Commons / Guard at the Prague castle, Prague - 7620 (cropped).jpg",
-      "bytes": 297567
+      "bytes": 297567,
+      "imageRejected": true,
+      "imageRejectionReason": "衛兵，非布拉格城堡",
+      "imageReviewedAt": "2026-10-06"
     },
     "辛格韋德利爾國家公園": {
       "path": "/landmarks/b30c03b880d0.jpg",
@@ -1245,7 +1303,10 @@
       "sourceUrl": "\\\\192.168.3.3\\【行程總彙】\\保留系列資料\\1-5.自由行\\美洲\\中美洲\\地圖\\LIM7G-秘魯-利馬-庫斯科-聖谷-馬丘比丘-深度-自由行-7日-01.jpg",
       "credit": "行程總彙圖庫",
       "bytes": 288226,
-      "failed": false
+      "failed": false,
+      "imageRejected": true,
+      "imageRejectionReason": "旅行路線圖，非庫斯科古城",
+      "imageReviewedAt": "2026-10-06"
     },
     "摩艾石像": {
       "path": "/landmarks/e12441f762a2.jpg",
@@ -1254,7 +1315,10 @@
       "sourceUrl": "\\\\192.168.3.3\\【行程總彙】\\0-0-EDM+影片\\2024\\2024-旅展\\11月ITF旅展\\3.A4DM_無須修改\\南美六國復活節島31日-LIM31A-DM-20240311_背面.jpg",
       "credit": "行程總彙圖庫",
       "bytes": 6996261,
-      "failed": false
+      "failed": false,
+      "imageRejected": true,
+      "imageRejectionReason": "旅遊廣告拼貼，非摩艾石像主體",
+      "imageReviewedAt": "2026-10-06"
     },
     "大堡礁": {
       "path": "/landmarks/5ad9b3007588.jpg",
@@ -1334,7 +1398,10 @@
       "sourceUrl": "\\\\192.168.3.3\\【行程總彙】\\1-1台灣旅遊\\@照片圖庫\\●情境圖\\煙火\\魁北克_shutterstock_1179431848.jpg",
       "credit": "行程總彙圖庫",
       "bytes": 9649946,
-      "failed": false
+      "failed": false,
+      "imageRejected": true,
+      "imageRejectionReason": "煙火，非魁北克古城",
+      "imageReviewedAt": "2026-10-06"
     },
     "小孩堤防風車群": {
       "path": "/landmarks/9db60f722439.jpg",
@@ -1353,7 +1420,10 @@
       "path": "/landmarks/644cf899820c.png",
       "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Different_Views_of_the_Major_Cities_in_Persia_WDL11740.png/960px-Different_Views_of_the_Major_Cities_in_Persia_WDL11740.png",
       "credit": "Wikimedia Commons / Different Views of the Major Cities in Persia WDL11740.png",
-      "bytes": 1661970
+      "bytes": 1661970,
+      "imageRejected": true,
+      "imageRejectionReason": "古版畫拼貼，非波斯波利斯主體",
+      "imageReviewedAt": "2026-10-06"
     },
     "科隆大教堂": {
       "path": "/landmarks/10b5de6994d0.jpg",
@@ -1374,7 +1444,10 @@
       "sourceUrl": "\\\\192.168.3.3\\【行程總彙】\\4-2.北美洲\\1.加拿大行程\\@照片圖庫\\@領隊\\20180901加拿大黃刀鎮14日-江上易\\班夫\\IMG_E4084.JPG",
       "credit": "行程總彙圖庫",
       "bytes": 3213122,
-      "failed": false
+      "failed": false,
+      "imageRejected": true,
+      "imageRejectionReason": "市區街道，非班夫國家公園主體",
+      "imageReviewedAt": "2026-10-06"
     },
     "米爾福德峽灣": {
       "path": "/landmarks/a706d89303ac.jpg",
@@ -1392,7 +1465,10 @@
       "sourceUrl": "\\\\192.168.3.3\\【行程總彙】\\0-1主推行程2025\\北極80度-斯瓦巴14+19日\\官網提供\\前进号\\前进号Fram图\\外观\\Torres_del_Paine_NP_Chile_HGR_149248_1920_Photo_Genna_Roland.jpg",
       "credit": "行程總彙圖庫",
       "bytes": 2027338,
-      "failed": false
+      "failed": false,
+      "imageRejected": true,
+      "imageRejectionReason": "船隻，非托雷斯德爾潘恩主體",
+      "imageReviewedAt": "2026-10-06"
     },
     "貝加爾湖": {
       "path": "/landmarks/668bdf0f8911.jpeg",

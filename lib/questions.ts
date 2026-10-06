@@ -3,6 +3,7 @@ import sourceQuestionsJson from "../data/source-questions.json";
 import type { QuestionReference } from "./question-reference";
 import learningQuestionsJson from "../data/learning-questions.json";
 import travelPuzzlesJson from "../data/travel-puzzles.json";
+import photoQuizReviewJson from "../data/photo-quiz-review.json";
 import editorialOverrides from "../data/question-editorial-overrides.json";
 import questionBankJson from "../data/questions.json";
 import type { QuestionVisualData } from "../components/question-visual";
@@ -494,6 +495,8 @@ export const sourceQuestions: Question[] = (sourceQuestionsJson as unknown as (R
 export const puzzleQuestions: Question[] = (travelPuzzlesJson as unknown as (RawQuestion & {id:string;grades:string[]})[]).map(raw => {
   const question=attachVisual(raw, {id:raw.id,conceptId:raw.id,source:'旅遊益智原創題',auditStatus:'approved',grades:raw.grades});
   if(raw.landmark && question.visual) question.visual={...question.visual,label:raw.landmark,detail:'旅行景點辨識'};
+  const photoReviews=photoQuizReviewJson.entries as Record<string,{path:string}>;
+  if(question.visualClue && (!raw.landmark || question.visual?.type!=='photo' || photoReviews[raw.landmark]?.path!==question.visual.image)) question.auditStatus='disabled';
   return question;
 });
 export const allQuestions: Question[] = [
