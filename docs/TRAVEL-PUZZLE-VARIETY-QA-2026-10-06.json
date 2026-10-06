@@ -1,21 +1,22 @@
 {
   "date": "2026-10-06",
-  "questionBankVersion": "33d609f7cbdd1f07",
+  "questionBankVersion": "19f1ecca76a663b0",
   "catalog": {
     "total": 514,
     "photoCount": 54,
     "types": {
       "看圖認景點": 54,
       "文化探索": 36,
+      "旅行判斷": 24,
       "行程排序": 108,
-      "旅伴配對": 108,
       "路線推理": 84,
+      "旅伴配對": 84,
       "線索解謎": 84,
       "異國文化": 8,
       "旅行線索": 32
     }
   },
-  "independentlySolvedLogicQuestions": 384,
+  "independentlySolvedLogicQuestions": 360,
   "runs": 100,
   "maxPhotosPerStage": 1,
   "noConsecutivePhotos": true,
@@ -27,7 +28,7 @@
   },
   "new": {
     "questions": 514,
-    "longestStrategyExpected": 0.2485408560311284
+    "longestStrategyExpected": 0.24756809338521402
   },
   "stages": [
     {
@@ -40,23 +41,23 @@
     },
     {
       "stage": 3,
-      "longestStrategyExpected": 0.23874999999999993
+      "longestStrategyExpected": 0.2383333333333333
     },
     {
       "stage": 4,
-      "longestStrategyExpected": 0.2433333333333332
+      "longestStrategyExpected": 0.24624999999999983
     },
     {
       "stage": 5,
-      "longestStrategyExpected": 0.2224999999999999
+      "longestStrategyExpected": 0.21749999999999992
     },
     {
       "stage": 6,
-      "longestStrategyExpected": 0.23607142857142857
+      "longestStrategyExpected": 0.22678571428571423
     },
     {
       "stage": 7,
-      "longestStrategyExpected": 0.25071428571428583
+      "longestStrategyExpected": 0.24392857142857147
     },
     {
       "stage": 8,

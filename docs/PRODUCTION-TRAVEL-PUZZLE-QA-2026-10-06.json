@@ -1,7 +1,7 @@
 {
   "date": "2026-10-06",
   "url": "https://world-travel-committee.tcawg.workers.dev",
-  "questionBankVersion": "33d609f7cbdd1f07",
+  "questionBankVersion": "19f1ecca76a663b0",
   "questionLimit": 10,
   "ok": true,
   "nextInsideQuestionCard": true,
@@ -13,16 +13,16 @@
         "height": 650
       },
       "questions": [
-        "warmup:7l9oe2",
-        "warmup:1esry98",
-        "puzzle:mini-match-0-4",
-        "puzzle:photo-134",
-        "puzzle:discovery-9",
+        "warmup:qlfoay",
+        "warmup:ay2uz6",
+        "puzzle:discovery-0",
+        "puzzle:photo-6",
+        "puzzle:mini-order-0-1",
         "puzzle:discovery-1",
-        "puzzle:mini-order-0-5",
-        "puzzle:photo-21",
-        "puzzle:mini-match-0-5",
-        "puzzle:discovery-10"
+        "puzzle:mini-order-0-6",
+        "puzzle:photo-0",
+        "puzzle:travel-choice-2",
+        "puzzle:discovery-6"
       ],
       "photos": 2,
       "sources": 3,
@@ -32,9 +32,9 @@
           "questions": 5,
           "photos": 1,
           "types": [
-            "旅伴配對",
+            "文化探索",
             "看圖認景點",
-            "文化探索"
+            "行程排序"
           ]
         },
         {
@@ -45,7 +45,7 @@
             "文化探索",
             "行程排序",
             "看圖認景點",
-            "旅伴配對"
+            "旅行判斷"
           ]
         }
       ]
@@ -56,16 +56,16 @@
         "height": 844
       },
       "questions": [
-        "warmup:uer62h",
-        "warmup:7l9oe2",
-        "puzzle:discovery-7",
-        "puzzle:photo-6",
-        "puzzle:mini-match-0-6",
-        "puzzle:discovery-1",
-        "puzzle:mini-match-0-2",
-        "puzzle:photo-90",
-        "puzzle:mini-order-0-4",
-        "puzzle:discovery-10"
+        "warmup:1esry98",
+        "warmup:dveciz",
+        "puzzle:discovery-9",
+        "puzzle:photo-69",
+        "puzzle:travel-choice-5",
+        "puzzle:discovery-0",
+        "puzzle:mini-order-0-0",
+        "puzzle:photo-117",
+        "puzzle:travel-choice-6",
+        "puzzle:discovery-3"
       ],
       "photos": 2,
       "sources": 3,
@@ -77,7 +77,7 @@
           "types": [
             "文化探索",
             "看圖認景點",
-            "旅伴配對"
+            "旅行判斷"
           ]
         },
         {
@@ -86,9 +86,9 @@
           "photos": 1,
           "types": [
             "文化探索",
-            "旅伴配對",
+            "行程排序",
             "看圖認景點",
-            "行程排序"
+            "旅行判斷"
           ]
         }
       ]

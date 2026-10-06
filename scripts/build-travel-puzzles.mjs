@@ -2,6 +2,7 @@ import { readFileSync, writeFileSync } from 'node:fs';
 import { resolve } from 'node:path';
 import { createHash } from 'node:crypto';
 import { earlyTravelFacts } from './early-travel-facts.mjs';
+import { travelChoiceCases } from './travel-choice-cases.mjs';
 const root = resolve(import.meta.dirname, '..');
 const manifest = JSON.parse(readFileSync(resolve(root, 'data/landmark-static-manifest.json'), 'utf8')).entries;
 const grades = ['小一','小二','小三','小四','小五','小六','國一','國二','國三','高一','高二','高三','大一','大二','大三','大四','研一','研二'];
@@ -32,14 +33,13 @@ names.forEach((name,i)=>{
 function permutations(xs) {return xs.length<2?[xs]:xs.flatMap((x,i)=>permutations(xs.filter((_,j)=>j!==i)).map(t=>[x,...t]));}
 const perms=permutations([0,1,2,3]);
 earlyTravelFacts.forEach(([q,options,fact,code],i)=>add(`discovery-${i}`,Math.floor(i/12),'文化探索',q,options,0,fact,{subtopic:'culture-etiquette',references:[{title:'UNESCO：景點與文化資料',url:`https://whc.unesco.org/en/list/${code}/`,role:'fact'}]}));
+travelChoiceCases.forEach(([q,options,fact],i)=>add(`travel-choice-${i}`,Math.floor(i/8),'旅行判斷',q,options,0,fact));
 // 入門也混合短篇旅行益智；條件直接寫在題幹，不需要計算或猜圖。
 const miniExperiences=[['市場','茶屋','劇場','花園'],['碼頭','藝廊','咖啡','老街'],['陶藝','書店','餐館','燈會'],['展館','庭院','手作','夕照'],['運河','早餐','公園','演奏'],['城堡','街市','點心','海港'],['神社','工坊','旅館','夜景'],['寺廟','茶館','畫室','湖畔']];
 for(let band=0;band<3;band++)for(let i=0;i<8;i++) {
   const a=miniExperiences[i],target=perms[(i*3+band*7)%24];
   const options=[target,...[1,5,11].map(offset=>perms[((i*3+band*7)+offset)%24])];
   add(`mini-order-${band}-${i}`,band,'行程排序',`旅行小謎題：${a[target[0]]}之後去${a[target[1]]}，接著去${a[target[2]]}，最後到${a[target[3]]}。哪張行程卡符合安排？`,options.map(p=>p.map(x=>a[x]).join(' → ')),0,'依照題目提到的先後順序核對四站。這是旅行解謎設定，並非現地路線。');
-  const people=['阿晴','阿海','阿森','阿月'];
-  add(`mini-match-${band}-${i}`,band,'旅伴配對',`四位旅伴各選一個不同體驗。${people[0]}選${a[target[0]]}、${people[1]}選${a[target[1]]}、${people[2]}選${a[target[2]]}。${people[3]}要選剩下哪個？`,[a[target[3]],a[target[0]],a[target[1]],a[target[2]]],0,`四個體驗是${a.join('、')}，前三位已選三種，剩下${a[target[3]]}。每個體驗只分配一次。`);
 }
 const cities=['京都','巴黎','里斯本','伊斯坦堡','布拉格','首爾','吉隆坡','新加坡','墨西哥城','布宜諾斯艾利斯','雪梨','溫哥華','曼谷','清邁','河內','會安','羅馬','佛羅倫斯','巴塞隆納','馬德里','阿姆斯特丹','哥本哈根','赫爾辛基','斯德哥爾摩','雷克雅維克','開羅','馬拉喀什','奈洛比','東京','倫敦','柏林','維也納'];
 const activities=[['市集','花園','展館','夜景'],['老街','陶藝','茶屋','劇場'],['碼頭','咖啡','藝廊','音樂'],['早餐','手作','公園','燈會'],['散步','書店','餐館','表演'],['運河','繪畫','點心','夕照'],['庭院','染布','茶點','演奏']];
@@ -74,7 +74,7 @@ for(let band=3;band<=5;band++) {
     const conditions=advanced?[[0,target[0],true],[1,target[0],false],[1,target[2],false],[2,target[0],false],[2,target[3],false]]:[[0,target[0],true],[1,target[1],true],[2,target[2],true]];
     const validMatch=p=>conditions.every(([person,act,is])=>is?p[person]===act:p[person]!==act);
     choices=choicesFor(validMatch,i+2);
-    add(`match-${band}-${i}`,band,'旅伴配對',`${city}旅行日記謎題：四人各選一項體驗，不能重複。${conditions.map(([p,x,is])=>`${people[p]}${is?'選':'沒選'}${a[x]}`).join('；')}。哪一份名單符合所有線索？`,
+    add(`match-${band}-${i}`,band,'旅伴配對',`${city}旅行日記謎題：可選的行程卡有${a.join('、')}。四人各選一張，不能重複。${conditions.map(([p,x,is])=>`${people[p]}${is?'選':'沒選'}${a[x]}`).join('；')}。哪一份名單符合所有線索？`,
       choices.map(p=>p.map((x,j)=>`${people[j]}：${a[x]}`).join('／')),0,`先固定已確定的體驗，再排除不符合的配對；每項體驗只能分配一次。正確名單是${choices[0].map((x,j)=>`${people[j]}：${a[x]}`).join('／')}。`);
     const venues=['甲館','乙館','丙館','丁館'];
     const attrs=[['室內','戶外'],['手作','導覽'],['需預約','免預約'],['上午開放','下午開放']];

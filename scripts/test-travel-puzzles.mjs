@@ -15,6 +15,7 @@ const longestRate=qs=>qs.reduce((sum,q)=>{
 },0)/qs.length;
 const reviews=JSON.parse(readFileSync('data/photo-quiz-review.json','utf8')).entries;
 assert.equal(puzzleQuestions.length,catalog.total);
+assert.ok(!puzzleQuestions.some(q=>q.id.startsWith('puzzle:mini-match-')||q.q.includes('要選剩下哪個')),'retire under-specified leftover-choice questions');
 assert.ok(longestRate(puzzleQuestions)<.3,'longest-answer strategy should not beat random guessing materially');
 // Independently read each logic question's written conditions and check all four choices.
 let solved=0;
@@ -26,10 +27,6 @@ for(const q of puzzleQuestions) {
   const match=q.q.match(/旅行小謎題：(.+)之後去(.+)，接著去(.+)，最後到(.+)。哪張/);
   assert.ok(match,q.id);
   valid=q.options.map(o=>o.split(' → ').join('|')===match.slice(1).join('|'));
- } else if(q.id.startsWith('puzzle:mini-match-')) {
-  const chosen=[...q.q.matchAll(/阿[晴海森]選([^、。]+)/g)].map(m=>m[1]);
-  assert.equal(chosen.length,3,q.id);
-  valid=q.options.map(o=>!chosen.includes(o));
  } else if(q.puzzleType==='行程排序') {
   const pairs=[...q.q.matchAll(/「([^」]+)」須在「([^」]+)」之前/g)].map(m=>[m[1],m[2]]);
   valid=q.options.map(o=>{const stops=o.split(' → ');return new Set(stops).size===4&&pairs.every(([a,b])=>stops.indexOf(a)<stops.indexOf(b));});
@@ -37,6 +34,10 @@ for(const q of puzzleQuestions) {
   const edges=q.q.split('路線為 ')[1].split('。')[0].split('、');
   valid=q.options.map(o=>{const stops=o.split(' → ');return new Set(stops).size===4&&stops.slice(0,3).every((s,j)=>edges.includes(s+'→'+stops[j+1]));});
  } else if(q.puzzleType==='旅伴配對') {
+  const activities=q.q.match(/可選的行程卡有([^。]+)。/);
+  assert.ok(activities,q.id);
+  const pool=activities[1].split('、');assert.equal(new Set(pool).size,4,q.id);
+  assert.ok(q.options.every(o=>o.split('／').every(pair=>pool.includes(pair.split('：')[1]))),q.id);
   const clues=[...q.q.matchAll(/(小安|小樂|小米|小禾)(沒選|選)([^；。]+)/g)];
   valid=q.options.map(o=>{const assignments=Object.fromEntries(o.split('／').map(x=>x.split('：')));return new Set(Object.values(assignments)).size===4&&clues.every(([,p,verb,act])=>verb==='選'?assignments[p]===act:assignments[p]!==act);});
  } else if(q.puzzleType==='線索解謎') {

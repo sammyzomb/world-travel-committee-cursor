@@ -1,6 +1,6 @@
 {
-  "exportedAt": "2026-10-06T06:54:45.430Z",
-  "questionBankVersion": "33d609f7cbdd1f07",
+  "exportedAt": "2026-10-06T07:50:00.947Z",
+  "questionBankVersion": "19f1ecca76a663b0",
   "stats": {
     "warmup": 6,
     "handPicked": 65,
@@ -6097,6 +6097,1470 @@
       "imageSrc": null
     },
     {
+      "id": "puzzle:travel-choice-0",
+      "conceptId": "puzzle:travel-choice-0",
+      "auditStatus": "approved",
+      "source": "旅遊益智原創題",
+      "references": [],
+      "demand": 1,
+      "family": "puzzle:旅行判斷:travel-choice-0",
+      "travelFocus": true,
+      "puzzleType": "旅行判斷",
+      "visualClue": false,
+      "playableGrades": [
+        "小一",
+        "小二",
+        "小三"
+      ],
+      "playableStages": [
+        "國小一年級",
+        "國小二年級",
+        "國小三年級"
+      ],
+      "grades": [
+        "小一",
+        "小二",
+        "小三"
+      ],
+      "level": "旅行新手",
+      "region": "世界旅行",
+      "category": "旅行知識",
+      "questionType": "world-fact",
+      "classification": {
+        "version": 1,
+        "topic": "旅行實務",
+        "subtopic": "planning-itineraries",
+        "subtopicLabel": "行程規劃與團體旅遊",
+        "tags": [],
+        "geography": {
+          "regions": [
+            "全球／通用"
+          ],
+          "countries": [],
+          "basis": "general"
+        },
+        "assignment": "rule",
+        "reviewRequired": false
+      },
+      "kind": null,
+      "q": "展館允許拍照，但告示寫「禁止使用閃光燈」。拍照前應如何設定？",
+      "options": [
+        "關閉閃光",
+        "加強閃光",
+        "調亮螢幕",
+        "啟用連拍"
+      ],
+      "answer": 0,
+      "correctAnswer": "關閉閃光",
+      "fact": "禁止的是閃光燈，拍攝前要確認它已關閉。",
+      "landmark": null,
+      "landmarkDetail": null,
+      "imageSrc": null
+    },
+    {
+      "id": "puzzle:travel-choice-1",
+      "conceptId": "puzzle:travel-choice-1",
+      "auditStatus": "approved",
+      "source": "旅遊益智原創題",
+      "references": [],
+      "demand": 1,
+      "family": "puzzle:旅行判斷:travel-choice-1",
+      "travelFocus": true,
+      "puzzleType": "旅行判斷",
+      "visualClue": false,
+      "playableGrades": [
+        "小一",
+        "小二",
+        "小三"
+      ],
+      "playableStages": [
+        "國小一年級",
+        "國小二年級",
+        "國小三年級"
+      ],
+      "grades": [
+        "小一",
+        "小二",
+        "小三"
+      ],
+      "level": "旅行新手",
+      "region": "世界旅行",
+      "category": "旅行知識",
+      "questionType": "world-fact",
+      "classification": {
+        "version": 1,
+        "topic": "旅行實務",
+        "subtopic": "planning-itineraries",
+        "subtopicLabel": "行程規劃與團體旅遊",
+        "tags": [],
+        "geography": {
+          "regions": [
+            "全球／通用"
+          ],
+          "countries": [],
+          "basis": "general"
+        },
+        "assignment": "rule",
+        "reviewRequired": false
+      },
+      "kind": null,
+      "q": "景點入口分成「已預約」與「現場購票」兩隊。你已收到預約確認信，應排哪隊？",
+      "options": [
+        "已預約隊",
+        "現場購票",
+        "團體集合",
+        "出口通道"
+      ],
+      "answer": 0,
+      "correctAnswer": "已預約隊",
+      "fact": "題目已說明你完成預約，應使用已預約的入場隊伍。",
+      "landmark": null,
+      "landmarkDetail": null,
+      "imageSrc": null
+    },
+    {
+      "id": "puzzle:travel-choice-2",
+      "conceptId": "puzzle:travel-choice-2",
+      "auditStatus": "approved",
+      "source": "旅遊益智原創題",
+      "references": [],
+      "demand": 1,
+      "family": "puzzle:旅行判斷:travel-choice-2",
+      "travelFocus": true,
+      "puzzleType": "旅行判斷",
+      "visualClue": false,
+      "playableGrades": [
+        "小一",
+        "小二",
+        "小三"
+      ],
+      "playableStages": [
+        "國小一年級",
+        "國小二年級",
+        "國小三年級"
+      ],
+      "grades": [
+        "小一",
+        "小二",
+        "小三"
+      ],
+      "level": "旅行新手",
+      "region": "世界旅行",
+      "category": "旅行知識",
+      "questionType": "world-fact",
+      "classification": {
+        "version": 1,
+        "topic": "旅行實務",
+        "subtopic": "planning-itineraries",
+        "subtopicLabel": "行程規劃與團體旅遊",
+        "tags": [],
+        "geography": {
+          "regions": [
+            "全球／通用"
+          ],
+          "countries": [],
+          "basis": "general"
+        },
+        "assignment": "rule",
+        "reviewRequired": false
+      },
+      "kind": null,
+      "q": "想在老街慢慢欣賞店屋外觀，哪種安排最符合目的？",
+      "options": [
+        "步行遊覽",
+        "搭車直達",
+        "室內休息",
+        "直接離開"
+      ],
+      "answer": 0,
+      "correctAnswer": "步行遊覽",
+      "fact": "步行遊覽能慢慢觀察沿街建築；其餘選項不符合題目目的。",
+      "landmark": null,
+      "landmarkDetail": null,
+      "imageSrc": null
+    },
+    {
+      "id": "puzzle:travel-choice-3",
+      "conceptId": "puzzle:travel-choice-3",
+      "auditStatus": "approved",
+      "source": "旅遊益智原創題",
+      "references": [],
+      "demand": 1,
+      "family": "puzzle:旅行判斷:travel-choice-3",
+      "travelFocus": true,
+      "puzzleType": "旅行判斷",
+      "visualClue": false,
+      "playableGrades": [
+        "小一",
+        "小二",
+        "小三"
+      ],
+      "playableStages": [
+        "國小一年級",
+        "國小二年級",
+        "國小三年級"
+      ],
+      "grades": [
+        "小一",
+        "小二",
+        "小三"
+      ],
+      "level": "旅行新手",
+      "region": "世界旅行",
+      "category": "旅行知識",
+      "questionType": "world-fact",
+      "classification": {
+        "version": 1,
+        "topic": "旅行實務",
+        "subtopic": "planning-itineraries",
+        "subtopicLabel": "行程規劃與團體旅遊",
+        "tags": [],
+        "geography": {
+          "regions": [
+            "全球／通用"
+          ],
+          "countries": [],
+          "basis": "general"
+        },
+        "assignment": "rule",
+        "reviewRequired": false
+      },
+      "kind": null,
+      "q": "博物館告示寫「請勿觸摸展品」。想觀察雕刻細節，應採取哪種方式？",
+      "options": [
+        "近看不碰",
+        "伸手摸看",
+        "搬動展品",
+        "依靠展品"
+      ],
+      "answer": 0,
+      "correctAnswer": "近看不碰",
+      "fact": "可以在允許的距離觀察，不能用手觸摸、搬動或依靠展品。",
+      "landmark": null,
+      "landmarkDetail": null,
+      "imageSrc": null
+    },
+    {
+      "id": "puzzle:travel-choice-4",
+      "conceptId": "puzzle:travel-choice-4",
+      "auditStatus": "approved",
+      "source": "旅遊益智原創題",
+      "references": [],
+      "demand": 1,
+      "family": "puzzle:旅行判斷:travel-choice-4",
+      "travelFocus": true,
+      "puzzleType": "旅行判斷",
+      "visualClue": false,
+      "playableGrades": [
+        "小一",
+        "小二",
+        "小三"
+      ],
+      "playableStages": [
+        "國小一年級",
+        "國小二年級",
+        "國小三年級"
+      ],
+      "grades": [
+        "小一",
+        "小二",
+        "小三"
+      ],
+      "level": "旅行新手",
+      "region": "世界旅行",
+      "category": "旅行知識",
+      "questionType": "world-fact",
+      "classification": {
+        "version": 1,
+        "topic": "旅行實務",
+        "subtopic": "planning-itineraries",
+        "subtopicLabel": "行程規劃與團體旅遊",
+        "tags": [],
+        "geography": {
+          "regions": [
+            "全球／通用"
+          ],
+          "countries": [],
+          "basis": "general"
+        },
+        "assignment": "rule",
+        "reviewRequired": false
+      },
+      "kind": null,
+      "q": "船票寫「河岸碼頭上船」，地圖另標示火車站、機場及客運站。應如何前往搭船？",
+      "options": [
+        "前往碼頭",
+        "前往車站",
+        "前往機場",
+        "前往總站"
+      ],
+      "answer": 0,
+      "correctAnswer": "前往碼頭",
+      "fact": "上船地點已在船票中交代，要依船票前往碼頭。",
+      "landmark": null,
+      "landmarkDetail": null,
+      "imageSrc": null
+    },
+    {
+      "id": "puzzle:travel-choice-5",
+      "conceptId": "puzzle:travel-choice-5",
+      "auditStatus": "approved",
+      "source": "旅遊益智原創題",
+      "references": [],
+      "demand": 1,
+      "family": "puzzle:旅行判斷:travel-choice-5",
+      "travelFocus": true,
+      "puzzleType": "旅行判斷",
+      "visualClue": false,
+      "playableGrades": [
+        "小一",
+        "小二",
+        "小三"
+      ],
+      "playableStages": [
+        "國小一年級",
+        "國小二年級",
+        "國小三年級"
+      ],
+      "grades": [
+        "小一",
+        "小二",
+        "小三"
+      ],
+      "level": "旅行新手",
+      "region": "世界旅行",
+      "category": "旅行知識",
+      "questionType": "world-fact",
+      "classification": {
+        "version": 1,
+        "topic": "旅行實務",
+        "subtopic": "planning-itineraries",
+        "subtopicLabel": "行程規劃與團體旅遊",
+        "tags": [],
+        "geography": {
+          "regions": [
+            "全球／通用"
+          ],
+          "countries": [],
+          "basis": "general"
+        },
+        "assignment": "rule",
+        "reviewRequired": false
+      },
+      "kind": null,
+      "q": "寺廟入口告示寫「進入殿內前請脫鞋」。你要走進殿內，應怎麼做？",
+      "options": [
+        "先脫鞋子",
+        "直接走入",
+        "只脫外套",
+        "只收雨傘"
+      ],
+      "answer": 0,
+      "correctAnswer": "先脫鞋子",
+      "fact": "依這座寺廟的現場告示，在進殿前脫鞋；不能推論所有寺廟規則相同。",
+      "landmark": null,
+      "landmarkDetail": null,
+      "imageSrc": null
+    },
+    {
+      "id": "puzzle:travel-choice-6",
+      "conceptId": "puzzle:travel-choice-6",
+      "auditStatus": "approved",
+      "source": "旅遊益智原創題",
+      "references": [],
+      "demand": 1,
+      "family": "puzzle:旅行判斷:travel-choice-6",
+      "travelFocus": true,
+      "puzzleType": "旅行判斷",
+      "visualClue": false,
+      "playableGrades": [
+        "小一",
+        "小二",
+        "小三"
+      ],
+      "playableStages": [
+        "國小一年級",
+        "國小二年級",
+        "國小三年級"
+      ],
+      "grades": [
+        "小一",
+        "小二",
+        "小三"
+      ],
+      "level": "旅行新手",
+      "region": "世界旅行",
+      "category": "旅行知識",
+      "questionType": "world-fact",
+      "classification": {
+        "version": 1,
+        "topic": "旅行實務",
+        "subtopic": "planning-itineraries",
+        "subtopicLabel": "行程規劃與團體旅遊",
+        "tags": [],
+        "geography": {
+          "regions": [
+            "全球／通用"
+          ],
+          "countries": [],
+          "basis": "general"
+        },
+        "assignment": "rule",
+        "reviewRequired": false
+      },
+      "kind": null,
+      "q": "觀景步道的岔路標示「左往觀景台、右往停車場」。想欣賞全景應走哪邊？",
+      "options": [
+        "左側步道",
+        "右側步道",
+        "停車入口",
+        "原路離開"
+      ],
+      "answer": 0,
+      "correctAnswer": "左側步道",
+      "fact": "左側步道通往題目指定的觀景台。",
+      "landmark": null,
+      "landmarkDetail": null,
+      "imageSrc": null
+    },
+    {
+      "id": "puzzle:travel-choice-7",
+      "conceptId": "puzzle:travel-choice-7",
+      "auditStatus": "approved",
+      "source": "旅遊益智原創題",
+      "references": [],
+      "demand": 1,
+      "family": "puzzle:旅行判斷:travel-choice-7",
+      "travelFocus": true,
+      "puzzleType": "旅行判斷",
+      "visualClue": false,
+      "playableGrades": [
+        "小一",
+        "小二",
+        "小三"
+      ],
+      "playableStages": [
+        "國小一年級",
+        "國小二年級",
+        "國小三年級"
+      ],
+      "grades": [
+        "小一",
+        "小二",
+        "小三"
+      ],
+      "level": "旅行新手",
+      "region": "世界旅行",
+      "category": "旅行知識",
+      "questionType": "world-fact",
+      "classification": {
+        "version": 1,
+        "topic": "旅行實務",
+        "subtopic": "planning-itineraries",
+        "subtopicLabel": "行程規劃與團體旅遊",
+        "tags": [],
+        "geography": {
+          "regions": [
+            "全球／通用"
+          ],
+          "countries": [],
+          "basis": "general"
+        },
+        "assignment": "rule",
+        "reviewRequired": false
+      },
+      "kind": null,
+      "q": "市場攤主提供了試吃盤，你想品嚐當地點心。哪種方式符合這個安排？",
+      "options": [
+        "取用試吃",
+        "拿走整盒",
+        "拆開商品",
+        "翻動貨箱"
+      ],
+      "answer": 0,
+      "correctAnswer": "取用試吃",
+      "fact": "試吃盤是攤主提供的試吃範圍，不等於其他商品可自行拿取。",
+      "landmark": null,
+      "landmarkDetail": null,
+      "imageSrc": null
+    },
+    {
+      "id": "puzzle:travel-choice-8",
+      "conceptId": "puzzle:travel-choice-8",
+      "auditStatus": "approved",
+      "source": "旅遊益智原創題",
+      "references": [],
+      "demand": 2,
+      "family": "puzzle:旅行判斷:travel-choice-8",
+      "travelFocus": true,
+      "puzzleType": "旅行判斷",
+      "visualClue": false,
+      "playableGrades": [
+        "小三",
+        "小四",
+        "小五"
+      ],
+      "playableStages": [
+        "國小三年級",
+        "國小四年級",
+        "國小五年級"
+      ],
+      "grades": [
+        "小三",
+        "小四",
+        "小五"
+      ],
+      "level": "城市旅人",
+      "region": "世界旅行",
+      "category": "旅行知識",
+      "questionType": "world-fact",
+      "classification": {
+        "version": 1,
+        "topic": "旅行實務",
+        "subtopic": "planning-itineraries",
+        "subtopicLabel": "行程規劃與團體旅遊",
+        "tags": [],
+        "geography": {
+          "regions": [
+            "全球／通用"
+          ],
+          "countries": [],
+          "basis": "general"
+        },
+        "assignment": "rule",
+        "reviewRequired": false
+      },
+      "kind": null,
+      "q": "旅行想體驗陶藝，而且只接受可親手製作的活動。哪項最符合需求？",
+      "options": [
+        "陶藝手作",
+        "陶器展覽",
+        "陶器拍賣",
+        "陶器攝影"
+      ],
+      "answer": 0,
+      "correctAnswer": "陶藝手作",
+      "fact": "親手製作才符合這次需求；看展、拍賣或攝影不是同一種體驗。",
+      "landmark": null,
+      "landmarkDetail": null,
+      "imageSrc": null
+    },
+    {
+      "id": "puzzle:travel-choice-9",
+      "conceptId": "puzzle:travel-choice-9",
+      "auditStatus": "approved",
+      "source": "旅遊益智原創題",
+      "references": [],
+      "demand": 2,
+      "family": "puzzle:旅行判斷:travel-choice-9",
+      "travelFocus": true,
+      "puzzleType": "旅行判斷",
+      "visualClue": false,
+      "playableGrades": [
+        "小三",
+        "小四",
+        "小五"
+      ],
+      "playableStages": [
+        "國小三年級",
+        "國小四年級",
+        "國小五年級"
+      ],
+      "grades": [
+        "小三",
+        "小四",
+        "小五"
+      ],
+      "level": "城市旅人",
+      "region": "世界旅行",
+      "category": "旅行知識",
+      "questionType": "world-fact",
+      "classification": {
+        "version": 1,
+        "topic": "旅行實務",
+        "subtopic": "planning-itineraries",
+        "subtopicLabel": "行程規劃與團體旅遊",
+        "tags": [],
+        "geography": {
+          "regions": [
+            "全球／通用"
+          ],
+          "countries": [],
+          "basis": "general"
+        },
+        "assignment": "rule",
+        "reviewRequired": false
+      },
+      "kind": null,
+      "q": "旅館預約的是雙床房，兩位旅伴希望各睡一張床。應確認哪種房型？",
+      "options": [
+        "兩張單床",
+        "一張大床",
+        "單張沙發",
+        "共用通鋪"
+      ],
+      "answer": 0,
+      "correctAnswer": "兩張單床",
+      "fact": "題目要求兩位旅伴各有一張床，要確認房內提供兩張單人床。",
+      "landmark": null,
+      "landmarkDetail": null,
+      "imageSrc": null
+    },
+    {
+      "id": "puzzle:travel-choice-10",
+      "conceptId": "puzzle:travel-choice-10",
+      "auditStatus": "approved",
+      "source": "旅遊益智原創題",
+      "references": [],
+      "demand": 2,
+      "family": "puzzle:旅行判斷:travel-choice-10",
+      "travelFocus": true,
+      "puzzleType": "旅行判斷",
+      "visualClue": false,
+      "playableGrades": [
+        "小三",
+        "小四",
+        "小五"
+      ],
+      "playableStages": [
+        "國小三年級",
+        "國小四年級",
+        "國小五年級"
+      ],
+      "grades": [
+        "小三",
+        "小四",
+        "小五"
+      ],
+      "level": "城市旅人",
+      "region": "世界旅行",
+      "category": "旅行知識",
+      "questionType": "world-fact",
+      "classification": {
+        "version": 1,
+        "topic": "旅行實務",
+        "subtopic": "planning-itineraries",
+        "subtopicLabel": "行程規劃與團體旅遊",
+        "tags": [],
+        "geography": {
+          "regions": [
+            "全球／通用"
+          ],
+          "countries": [],
+          "basis": "general"
+        },
+        "assignment": "rule",
+        "reviewRequired": false
+      },
+      "kind": null,
+      "q": "景點門票標示「限本人當日使用」。旅伴想借票隔天入場，哪種做法符合票面規則？",
+      "options": [
+        "另購新票",
+        "轉借舊票",
+        "隔日重用",
+        "修改日期"
+      ],
+      "answer": 0,
+      "correctAnswer": "另購新票",
+      "fact": "借給他人及隔天重用都違反題目票面條件，應為旅伴另外購票。",
+      "landmark": null,
+      "landmarkDetail": null,
+      "imageSrc": null
+    },
+    {
+      "id": "puzzle:travel-choice-11",
+      "conceptId": "puzzle:travel-choice-11",
+      "auditStatus": "approved",
+      "source": "旅遊益智原創題",
+      "references": [],
+      "demand": 2,
+      "family": "puzzle:旅行判斷:travel-choice-11",
+      "travelFocus": true,
+      "puzzleType": "旅行判斷",
+      "visualClue": false,
+      "playableGrades": [
+        "小三",
+        "小四",
+        "小五"
+      ],
+      "playableStages": [
+        "國小三年級",
+        "國小四年級",
+        "國小五年級"
+      ],
+      "grades": [
+        "小三",
+        "小四",
+        "小五"
+      ],
+      "level": "城市旅人",
+      "region": "世界旅行",
+      "category": "旅行知識",
+      "questionType": "world-fact",
+      "classification": {
+        "version": 1,
+        "topic": "旅行實務",
+        "subtopic": "planning-itineraries",
+        "subtopicLabel": "行程規劃與團體旅遊",
+        "tags": [],
+        "geography": {
+          "regions": [
+            "全球／通用"
+          ],
+          "countries": [],
+          "basis": "general"
+        },
+        "assignment": "rule",
+        "reviewRequired": false
+      },
+      "kind": null,
+      "q": "想在雨天欣賞藝術，而且不想淋雨。哪個行程最符合這兩項需求？",
+      "options": [
+        "室內藝廊",
+        "露天雕塑",
+        "戶外壁畫",
+        "河岸畫攤"
+      ],
+      "answer": 0,
+      "correctAnswer": "室內藝廊",
+      "fact": "室內藝廊同時符合欣賞藝術與避雨；其餘選項在戶外。",
+      "landmark": null,
+      "landmarkDetail": null,
+      "imageSrc": null
+    },
+    {
+      "id": "puzzle:travel-choice-12",
+      "conceptId": "puzzle:travel-choice-12",
+      "auditStatus": "approved",
+      "source": "旅遊益智原創題",
+      "references": [],
+      "demand": 2,
+      "family": "puzzle:旅行判斷:travel-choice-12",
+      "travelFocus": true,
+      "puzzleType": "旅行判斷",
+      "visualClue": false,
+      "playableGrades": [
+        "小三",
+        "小四",
+        "小五"
+      ],
+      "playableStages": [
+        "國小三年級",
+        "國小四年級",
+        "國小五年級"
+      ],
+      "grades": [
+        "小三",
+        "小四",
+        "小五"
+      ],
+      "level": "城市旅人",
+      "region": "世界旅行",
+      "category": "旅行知識",
+      "questionType": "world-fact",
+      "classification": {
+        "version": 1,
+        "topic": "旅行實務",
+        "subtopic": "planning-itineraries",
+        "subtopicLabel": "行程規劃與團體旅遊",
+        "tags": [],
+        "geography": {
+          "regions": [
+            "全球／通用"
+          ],
+          "countries": [],
+          "basis": "general"
+        },
+        "assignment": "rule",
+        "reviewRequired": false
+      },
+      "kind": null,
+      "q": "旅伴想看傳統音樂的現場演出，不想只看物品展示。應選哪項活動？",
+      "options": [
+        "現場演奏",
+        "樂器展覽",
+        "唱片選購",
+        "樂譜閱讀"
+      ],
+      "answer": 0,
+      "correctAnswer": "現場演奏",
+      "fact": "現場演奏才符合看音樂現場演出的目的。",
+      "landmark": null,
+      "landmarkDetail": null,
+      "imageSrc": null
+    },
+    {
+      "id": "puzzle:travel-choice-13",
+      "conceptId": "puzzle:travel-choice-13",
+      "auditStatus": "approved",
+      "source": "旅遊益智原創題",
+      "references": [],
+      "demand": 2,
+      "family": "puzzle:旅行判斷:travel-choice-13",
+      "travelFocus": true,
+      "puzzleType": "旅行判斷",
+      "visualClue": false,
+      "playableGrades": [
+        "小三",
+        "小四",
+        "小五"
+      ],
+      "playableStages": [
+        "國小三年級",
+        "國小四年級",
+        "國小五年級"
+      ],
+      "grades": [
+        "小三",
+        "小四",
+        "小五"
+      ],
+      "level": "城市旅人",
+      "region": "世界旅行",
+      "category": "旅行知識",
+      "questionType": "world-fact",
+      "classification": {
+        "version": 1,
+        "topic": "旅行實務",
+        "subtopic": "planning-itineraries",
+        "subtopicLabel": "行程規劃與團體旅遊",
+        "tags": [],
+        "geography": {
+          "regions": [
+            "全球／通用"
+          ],
+          "countries": [],
+          "basis": "general"
+        },
+        "assignment": "rule",
+        "reviewRequired": false
+      },
+      "kind": null,
+      "q": "火車票寫「B 車次」，月台上兩班列車分別標示 A、B。上車前最該核對什麼？",
+      "options": [
+        "列車車次",
+        "車身顏色",
+        "乘客衣著",
+        "月台座椅"
+      ],
+      "answer": 0,
+      "correctAnswer": "列車車次",
+      "fact": "應核對列車的車次是否與車票相符，其他外觀不是題目提供的搭乘依據。",
+      "landmark": null,
+      "landmarkDetail": null,
+      "imageSrc": null
+    },
+    {
+      "id": "puzzle:travel-choice-14",
+      "conceptId": "puzzle:travel-choice-14",
+      "auditStatus": "approved",
+      "source": "旅遊益智原創題",
+      "references": [],
+      "demand": 2,
+      "family": "puzzle:旅行判斷:travel-choice-14",
+      "travelFocus": true,
+      "puzzleType": "旅行判斷",
+      "visualClue": false,
+      "playableGrades": [
+        "小三",
+        "小四",
+        "小五"
+      ],
+      "playableStages": [
+        "國小三年級",
+        "國小四年級",
+        "國小五年級"
+      ],
+      "grades": [
+        "小三",
+        "小四",
+        "小五"
+      ],
+      "level": "城市旅人",
+      "region": "世界旅行",
+      "category": "旅行知識",
+      "questionType": "world-fact",
+      "classification": {
+        "version": 1,
+        "topic": "旅行實務",
+        "subtopic": "planning-itineraries",
+        "subtopicLabel": "行程規劃與團體旅遊",
+        "tags": [],
+        "geography": {
+          "regions": [
+            "全球／通用"
+          ],
+          "countries": [],
+          "basis": "general"
+        },
+        "assignment": "rule",
+        "reviewRequired": false
+      },
+      "kind": null,
+      "q": "古城導覽有步行團與巴士團。你想近距離觀察小巷，而且接受步行，哪項較符合目的？",
+      "options": [
+        "步行導覽",
+        "巴士直行",
+        "車站候車",
+        "旅館休息"
+      ],
+      "answer": 0,
+      "correctAnswer": "步行導覽",
+      "fact": "步行導覽較符合進入小巷近距離觀察的目標。",
+      "landmark": null,
+      "landmarkDetail": null,
+      "imageSrc": null
+    },
+    {
+      "id": "puzzle:travel-choice-15",
+      "conceptId": "puzzle:travel-choice-15",
+      "auditStatus": "approved",
+      "source": "旅遊益智原創題",
+      "references": [],
+      "demand": 2,
+      "family": "puzzle:旅行判斷:travel-choice-15",
+      "travelFocus": true,
+      "puzzleType": "旅行判斷",
+      "visualClue": false,
+      "playableGrades": [
+        "小三",
+        "小四",
+        "小五"
+      ],
+      "playableStages": [
+        "國小三年級",
+        "國小四年級",
+        "國小五年級"
+      ],
+      "grades": [
+        "小三",
+        "小四",
+        "小五"
+      ],
+      "level": "城市旅人",
+      "region": "世界旅行",
+      "category": "旅行知識",
+      "questionType": "world-fact",
+      "classification": {
+        "version": 1,
+        "topic": "旅行實務",
+        "subtopic": "planning-itineraries",
+        "subtopicLabel": "行程規劃與團體旅遊",
+        "tags": [],
+        "geography": {
+          "regions": [
+            "全球／通用"
+          ],
+          "countries": [],
+          "basis": "general"
+        },
+        "assignment": "rule",
+        "reviewRequired": false
+      },
+      "kind": null,
+      "q": "旅館說明「行李可寄放，取回時出示寄放收據」。離開寄放櫃台前應保留什麼？",
+      "options": [
+        "行李收據",
+        "餐廳菜單",
+        "景點海報",
+        "活動傳單"
+      ],
+      "answer": 0,
+      "correctAnswer": "行李收據",
+      "fact": "題目明確規定憑寄放收據取回行李，應妥善保留。",
+      "landmark": null,
+      "landmarkDetail": null,
+      "imageSrc": null
+    },
+    {
+      "id": "puzzle:travel-choice-16",
+      "conceptId": "puzzle:travel-choice-16",
+      "auditStatus": "approved",
+      "source": "旅遊益智原創題",
+      "references": [],
+      "demand": 2,
+      "family": "puzzle:旅行判斷:travel-choice-16",
+      "travelFocus": true,
+      "puzzleType": "旅行判斷",
+      "visualClue": false,
+      "playableGrades": [
+        "小五",
+        "小六",
+        "國一"
+      ],
+      "playableStages": [
+        "國小五年級",
+        "國小六年級",
+        "國中一年級"
+      ],
+      "grades": [
+        "小五",
+        "小六",
+        "國一"
+      ],
+      "level": "國家達人",
+      "region": "世界旅行",
+      "category": "旅行知識",
+      "questionType": "world-fact",
+      "classification": {
+        "version": 1,
+        "topic": "旅行實務",
+        "subtopic": "planning-itineraries",
+        "subtopicLabel": "行程規劃與團體旅遊",
+        "tags": [],
+        "geography": {
+          "regions": [
+            "全球／通用"
+          ],
+          "countries": [],
+          "basis": "general"
+        },
+        "assignment": "rule",
+        "reviewRequired": false
+      },
+      "kind": null,
+      "q": "旅行當天景點暫停開放，但同區文化館正常開放。想繼續認識當地文化，哪項安排合理？",
+      "options": [
+        "改訪文化館",
+        "闖入封閉區",
+        "堵住景點門",
+        "跨越警戒線"
+      ],
+      "answer": 0,
+      "correctAnswer": "改訪文化館",
+      "fact": "文化館仍開放且符合旅行目的，封閉景點不應強行進入。",
+      "landmark": null,
+      "landmarkDetail": null,
+      "imageSrc": null
+    },
+    {
+      "id": "puzzle:travel-choice-17",
+      "conceptId": "puzzle:travel-choice-17",
+      "auditStatus": "approved",
+      "source": "旅遊益智原創題",
+      "references": [],
+      "demand": 2,
+      "family": "puzzle:旅行判斷:travel-choice-17",
+      "travelFocus": true,
+      "puzzleType": "旅行判斷",
+      "visualClue": false,
+      "playableGrades": [
+        "小五",
+        "小六",
+        "國一"
+      ],
+      "playableStages": [
+        "國小五年級",
+        "國小六年級",
+        "國中一年級"
+      ],
+      "grades": [
+        "小五",
+        "小六",
+        "國一"
+      ],
+      "level": "國家達人",
+      "region": "世界旅行",
+      "category": "旅行知識",
+      "questionType": "world-fact",
+      "classification": {
+        "version": 1,
+        "topic": "旅行實務",
+        "subtopic": "planning-itineraries",
+        "subtopicLabel": "行程規劃與團體旅遊",
+        "tags": [],
+        "geography": {
+          "regions": [
+            "全球／通用"
+          ],
+          "countries": [],
+          "basis": "general"
+        },
+        "assignment": "rule",
+        "reviewRequired": false
+      },
+      "kind": null,
+      "q": "渡船有末班時間。這次旅行必須搭船回去，市集可自由參觀。應先確認哪項資訊？",
+      "options": [
+        "回程船班",
+        "市集招牌",
+        "商店配色",
+        "路邊雕像"
+      ],
+      "answer": 0,
+      "correctAnswer": "回程船班",
+      "fact": "必須搭船回去是必要條件，先確認回程船班，才知道市集可停留到何時。",
+      "landmark": null,
+      "landmarkDetail": null,
+      "imageSrc": null
+    },
+    {
+      "id": "puzzle:travel-choice-18",
+      "conceptId": "puzzle:travel-choice-18",
+      "auditStatus": "approved",
+      "source": "旅遊益智原創題",
+      "references": [],
+      "demand": 2,
+      "family": "puzzle:旅行判斷:travel-choice-18",
+      "travelFocus": true,
+      "puzzleType": "旅行判斷",
+      "visualClue": false,
+      "playableGrades": [
+        "小五",
+        "小六",
+        "國一"
+      ],
+      "playableStages": [
+        "國小五年級",
+        "國小六年級",
+        "國中一年級"
+      ],
+      "grades": [
+        "小五",
+        "小六",
+        "國一"
+      ],
+      "level": "國家達人",
+      "region": "世界旅行",
+      "category": "旅行知識",
+      "questionType": "world-fact",
+      "classification": {
+        "version": 1,
+        "topic": "旅行實務",
+        "subtopic": "planning-itineraries",
+        "subtopicLabel": "行程規劃與團體旅遊",
+        "tags": [],
+        "geography": {
+          "regions": [
+            "全球／通用"
+          ],
+          "countries": [],
+          "basis": "general"
+        },
+        "assignment": "rule",
+        "reviewRequired": false
+      },
+      "kind": null,
+      "q": "兩個展覽都想參觀；甲只在上午開放，乙全天開放。哪種順序較能兼顧兩者？",
+      "options": [
+        "先甲後乙",
+        "先乙後甲",
+        "下午到甲",
+        "晚上到甲"
+      ],
+      "answer": 0,
+      "correctAnswer": "先甲後乙",
+      "fact": "甲的開放時間較受限，先安排甲，再利用乙全天開放的彈性。",
+      "landmark": null,
+      "landmarkDetail": null,
+      "imageSrc": null
+    },
+    {
+      "id": "puzzle:travel-choice-19",
+      "conceptId": "puzzle:travel-choice-19",
+      "auditStatus": "approved",
+      "source": "旅遊益智原創題",
+      "references": [],
+      "demand": 2,
+      "family": "puzzle:旅行判斷:travel-choice-19",
+      "travelFocus": true,
+      "puzzleType": "旅行判斷",
+      "visualClue": false,
+      "playableGrades": [
+        "小五",
+        "小六",
+        "國一"
+      ],
+      "playableStages": [
+        "國小五年級",
+        "國小六年級",
+        "國中一年級"
+      ],
+      "grades": [
+        "小五",
+        "小六",
+        "國一"
+      ],
+      "level": "國家達人",
+      "region": "世界旅行",
+      "category": "旅行知識",
+      "questionType": "world-fact",
+      "classification": {
+        "version": 1,
+        "topic": "旅行實務",
+        "subtopic": "planning-itineraries",
+        "subtopicLabel": "行程規劃與團體旅遊",
+        "tags": [],
+        "geography": {
+          "regions": [
+            "全球／通用"
+          ],
+          "countries": [],
+          "basis": "general"
+        },
+        "assignment": "rule",
+        "reviewRequired": false
+      },
+      "kind": null,
+      "q": "夜間導覽必須事先預約，白天逛街無須預約。確定想參加夜間導覽，應優先完成什麼？",
+      "options": [
+        "預約導覽",
+        "選購紀念品",
+        "安排午餐店",
+        "挑選拍照點"
+      ],
+      "answer": 0,
+      "correctAnswer": "預約導覽",
+      "fact": "夜間導覽有事先預約的必要條件，應先確定能參加，再安排彈性的活動。",
+      "landmark": null,
+      "landmarkDetail": null,
+      "imageSrc": null
+    },
+    {
+      "id": "puzzle:travel-choice-20",
+      "conceptId": "puzzle:travel-choice-20",
+      "auditStatus": "approved",
+      "source": "旅遊益智原創題",
+      "references": [],
+      "demand": 2,
+      "family": "puzzle:旅行判斷:travel-choice-20",
+      "travelFocus": true,
+      "puzzleType": "旅行判斷",
+      "visualClue": false,
+      "playableGrades": [
+        "小五",
+        "小六",
+        "國一"
+      ],
+      "playableStages": [
+        "國小五年級",
+        "國小六年級",
+        "國中一年級"
+      ],
+      "grades": [
+        "小五",
+        "小六",
+        "國一"
+      ],
+      "level": "國家達人",
+      "region": "世界旅行",
+      "category": "旅行知識",
+      "questionType": "world-fact",
+      "classification": {
+        "version": 1,
+        "topic": "旅行實務",
+        "subtopic": "planning-itineraries",
+        "subtopicLabel": "行程規劃與團體旅遊",
+        "tags": [],
+        "geography": {
+          "regions": [
+            "全球／通用"
+          ],
+          "countries": [],
+          "basis": "general"
+        },
+        "assignment": "rule",
+        "reviewRequired": false
+      },
+      "kind": null,
+      "q": "旅伴只能參加免預約活動，而且想親手做作品。哪個行程符合全部條件？",
+      "options": [
+        "免約手作",
+        "預約手作",
+        "免約看展",
+        "預約看展"
+      ],
+      "answer": 0,
+      "correctAnswer": "免約手作",
+      "fact": "免預約與親手製作兩個條件都要符合，免約手作才同時符合。",
+      "landmark": null,
+      "landmarkDetail": null,
+      "imageSrc": null
+    },
+    {
+      "id": "puzzle:travel-choice-21",
+      "conceptId": "puzzle:travel-choice-21",
+      "auditStatus": "approved",
+      "source": "旅遊益智原創題",
+      "references": [],
+      "demand": 2,
+      "family": "puzzle:旅行判斷:travel-choice-21",
+      "travelFocus": true,
+      "puzzleType": "旅行判斷",
+      "visualClue": false,
+      "playableGrades": [
+        "小五",
+        "小六",
+        "國一"
+      ],
+      "playableStages": [
+        "國小五年級",
+        "國小六年級",
+        "國中一年級"
+      ],
+      "grades": [
+        "小五",
+        "小六",
+        "國一"
+      ],
+      "level": "國家達人",
+      "region": "世界旅行",
+      "category": "旅行知識",
+      "questionType": "world-fact",
+      "classification": {
+        "version": 1,
+        "topic": "旅行實務",
+        "subtopic": "planning-itineraries",
+        "subtopicLabel": "行程規劃與團體旅遊",
+        "tags": [],
+        "geography": {
+          "regions": [
+            "全球／通用"
+          ],
+          "countries": [],
+          "basis": "general"
+        },
+        "assignment": "rule",
+        "reviewRequired": false
+      },
+      "kind": null,
+      "q": "景點有北、南兩個入口，已訂導覽的集合點在北入口。應先查哪條抵達路線？",
+      "options": [
+        "往北門走",
+        "往南門走",
+        "往出口走",
+        "往後勤走"
+      ],
+      "answer": 0,
+      "correctAnswer": "往北門走",
+      "fact": "導覽集合點指定北入口，應依這個地點規劃抵達路線。",
+      "landmark": null,
+      "landmarkDetail": null,
+      "imageSrc": null
+    },
+    {
+      "id": "puzzle:travel-choice-22",
+      "conceptId": "puzzle:travel-choice-22",
+      "auditStatus": "approved",
+      "source": "旅遊益智原創題",
+      "references": [],
+      "demand": 2,
+      "family": "puzzle:旅行判斷:travel-choice-22",
+      "travelFocus": true,
+      "puzzleType": "旅行判斷",
+      "visualClue": false,
+      "playableGrades": [
+        "小五",
+        "小六",
+        "國一"
+      ],
+      "playableStages": [
+        "國小五年級",
+        "國小六年級",
+        "國中一年級"
+      ],
+      "grades": [
+        "小五",
+        "小六",
+        "國一"
+      ],
+      "level": "國家達人",
+      "region": "世界旅行",
+      "category": "旅行知識",
+      "questionType": "world-fact",
+      "classification": {
+        "version": 1,
+        "topic": "旅行實務",
+        "subtopic": "planning-itineraries",
+        "subtopicLabel": "行程規劃與團體旅遊",
+        "tags": [],
+        "geography": {
+          "regions": [
+            "全球／通用"
+          ],
+          "countries": [],
+          "basis": "general"
+        },
+        "assignment": "rule",
+        "reviewRequired": false
+      },
+      "kind": null,
+      "q": "旅伴這次不能走階梯。訂房頁面只有階梯照片，沒說是否有電梯。訂房前最應確認什麼？",
+      "options": [
+        "進出方式",
+        "窗簾顏色",
+        "房號尾數",
+        "招牌字體"
+      ],
+      "answer": 0,
+      "correctAnswer": "進出方式",
+      "fact": "先確認旅伴能否使用無階梯路線抵達及進出房間，不能只憑照片猜測。",
+      "landmark": null,
+      "landmarkDetail": null,
+      "imageSrc": null
+    },
+    {
+      "id": "puzzle:travel-choice-23",
+      "conceptId": "puzzle:travel-choice-23",
+      "auditStatus": "approved",
+      "source": "旅遊益智原創題",
+      "references": [],
+      "demand": 2,
+      "family": "puzzle:旅行判斷:travel-choice-23",
+      "travelFocus": true,
+      "puzzleType": "旅行判斷",
+      "visualClue": false,
+      "playableGrades": [
+        "小五",
+        "小六",
+        "國一"
+      ],
+      "playableStages": [
+        "國小五年級",
+        "國小六年級",
+        "國中一年級"
+      ],
+      "grades": [
+        "小五",
+        "小六",
+        "國一"
+      ],
+      "level": "國家達人",
+      "region": "世界旅行",
+      "category": "旅行知識",
+      "questionType": "world-fact",
+      "classification": {
+        "version": 1,
+        "topic": "旅行實務",
+        "subtopic": "planning-itineraries",
+        "subtopicLabel": "行程規劃與團體旅遊",
+        "tags": [],
+        "geography": {
+          "regions": [
+            "全球／通用"
+          ],
+          "countries": [],
+          "basis": "general"
+        },
+        "assignment": "rule",
+        "reviewRequired": false
+      },
+      "kind": null,
+      "q": "旅伴想安靜欣賞古蹟，不想參加音樂活動。哪張行程卡最符合這次需求？",
+      "options": [
+        "古蹟靜覽",
+        "古蹟音樂會",
+        "市集音樂會",
+        "廣場演唱會"
+      ],
+      "answer": 0,
+      "correctAnswer": "古蹟靜覽",
+      "fact": "只有古蹟靜覽同時符合參訪古蹟與不參加音樂活動。",
+      "landmark": null,
+      "landmarkDetail": null,
+      "imageSrc": null
+    },
+    {
       "id": "puzzle:mini-order-0-0",
       "conceptId": "puzzle:mini-order-0-0",
       "auditStatus": "approved",
@@ -6153,67 +7617,6 @@
       "answer": 0,
       "correctAnswer": "市場 → 茶屋 → 劇場 → 花園",
       "fact": "依照題目提到的先後順序核對四站。這是旅行解謎設定，並非現地路線。",
-      "landmark": null,
-      "landmarkDetail": null,
-      "imageSrc": null
-    },
-    {
-      "id": "puzzle:mini-match-0-0",
-      "conceptId": "puzzle:mini-match-0-0",
-      "auditStatus": "approved",
-      "source": "旅遊益智原創題",
-      "references": [],
-      "demand": 1,
-      "family": "puzzle:旅伴配對:mini-match-0-0",
-      "travelFocus": true,
-      "puzzleType": "旅伴配對",
-      "visualClue": false,
-      "playableGrades": [
-        "小一",
-        "小二",
-        "小三"
-      ],
-      "playableStages": [
-        "國小一年級",
-        "國小二年級",
-        "國小三年級"
-      ],
-      "grades": [
-        "小一",
-        "小二",
-        "小三"
-      ],
-      "level": "旅行新手",
-      "region": "世界旅行",
-      "category": "旅行知識",
-      "questionType": "world-fact",
-      "classification": {
-        "version": 1,
-        "topic": "旅行實務",
-        "subtopic": "planning-itineraries",
-        "subtopicLabel": "行程規劃與團體旅遊",
-        "tags": [],
-        "geography": {
-          "regions": [
-            "全球／通用"
-          ],
-          "countries": [],
-          "basis": "general"
-        },
-        "assignment": "rule",
-        "reviewRequired": false
-      },
-      "kind": null,
-      "q": "四位旅伴各選一個不同體驗。阿晴選市場、阿海選茶屋、阿森選劇場。阿月要選剩下哪個？",
-      "options": [
-        "花園",
-        "市場",
-        "茶屋",
-        "劇場"
-      ],
-      "answer": 0,
-      "correctAnswer": "花園",
-      "fact": "四個體驗是市場、茶屋、劇場、花園，前三位已選三種，剩下花園。每個體驗只分配一次。",
       "landmark": null,
       "landmarkDetail": null,
       "imageSrc": null
@@ -6280,67 +7683,6 @@
       "imageSrc": null
     },
     {
-      "id": "puzzle:mini-match-0-1",
-      "conceptId": "puzzle:mini-match-0-1",
-      "auditStatus": "approved",
-      "source": "旅遊益智原創題",
-      "references": [],
-      "demand": 1,
-      "family": "puzzle:旅伴配對:mini-match-0-1",
-      "travelFocus": true,
-      "puzzleType": "旅伴配對",
-      "visualClue": false,
-      "playableGrades": [
-        "小一",
-        "小二",
-        "小三"
-      ],
-      "playableStages": [
-        "國小一年級",
-        "國小二年級",
-        "國小三年級"
-      ],
-      "grades": [
-        "小一",
-        "小二",
-        "小三"
-      ],
-      "level": "旅行新手",
-      "region": "世界旅行",
-      "category": "旅行知識",
-      "questionType": "world-fact",
-      "classification": {
-        "version": 1,
-        "topic": "旅行實務",
-        "subtopic": "planning-itineraries",
-        "subtopicLabel": "行程規劃與團體旅遊",
-        "tags": [],
-        "geography": {
-          "regions": [
-            "全球／通用"
-          ],
-          "countries": [],
-          "basis": "general"
-        },
-        "assignment": "rule",
-        "reviewRequired": false
-      },
-      "kind": null,
-      "q": "四位旅伴各選一個不同體驗。阿晴選碼頭、阿海選咖啡、阿森選老街。阿月要選剩下哪個？",
-      "options": [
-        "藝廊",
-        "碼頭",
-        "咖啡",
-        "老街"
-      ],
-      "answer": 0,
-      "correctAnswer": "藝廊",
-      "fact": "四個體驗是碼頭、藝廊、咖啡、老街，前三位已選三種，剩下藝廊。每個體驗只分配一次。",
-      "landmark": null,
-      "landmarkDetail": null,
-      "imageSrc": null
-    },
-    {
       "id": "puzzle:mini-order-0-2",
       "conceptId": "puzzle:mini-order-0-2",
       "auditStatus": "approved",
@@ -6397,67 +7739,6 @@
       "answer": 0,
       "correctAnswer": "書店 → 陶藝 → 餐館 → 燈會",
       "fact": "依照題目提到的先後順序核對四站。這是旅行解謎設定，並非現地路線。",
-      "landmark": null,
-      "landmarkDetail": null,
-      "imageSrc": null
-    },
-    {
-      "id": "puzzle:mini-match-0-2",
-      "conceptId": "puzzle:mini-match-0-2",
-      "auditStatus": "approved",
-      "source": "旅遊益智原創題",
-      "references": [],
-      "demand": 1,
-      "family": "puzzle:旅伴配對:mini-match-0-2",
-      "travelFocus": true,
-      "puzzleType": "旅伴配對",
-      "visualClue": false,
-      "playableGrades": [
-        "小一",
-        "小二",
-        "小三"
-      ],
-      "playableStages": [
-        "國小一年級",
-        "國小二年級",
-        "國小三年級"
-      ],
-      "grades": [
-        "小一",
-        "小二",
-        "小三"
-      ],
-      "level": "旅行新手",
-      "region": "世界旅行",
-      "category": "旅行知識",
-      "questionType": "world-fact",
-      "classification": {
-        "version": 1,
-        "topic": "旅行實務",
-        "subtopic": "planning-itineraries",
-        "subtopicLabel": "行程規劃與團體旅遊",
-        "tags": [],
-        "geography": {
-          "regions": [
-            "全球／通用"
-          ],
-          "countries": [],
-          "basis": "general"
-        },
-        "assignment": "rule",
-        "reviewRequired": false
-      },
-      "kind": null,
-      "q": "四位旅伴各選一個不同體驗。阿晴選書店、阿海選陶藝、阿森選餐館。阿月要選剩下哪個？",
-      "options": [
-        "燈會",
-        "書店",
-        "陶藝",
-        "餐館"
-      ],
-      "answer": 0,
-      "correctAnswer": "燈會",
-      "fact": "四個體驗是陶藝、書店、餐館、燈會，前三位已選三種，剩下燈會。每個體驗只分配一次。",
       "landmark": null,
       "landmarkDetail": null,
       "imageSrc": null
@@ -6524,67 +7805,6 @@
       "imageSrc": null
     },
     {
-      "id": "puzzle:mini-match-0-3",
-      "conceptId": "puzzle:mini-match-0-3",
-      "auditStatus": "approved",
-      "source": "旅遊益智原創題",
-      "references": [],
-      "demand": 1,
-      "family": "puzzle:旅伴配對:mini-match-0-3",
-      "travelFocus": true,
-      "puzzleType": "旅伴配對",
-      "visualClue": false,
-      "playableGrades": [
-        "小一",
-        "小二",
-        "小三"
-      ],
-      "playableStages": [
-        "國小一年級",
-        "國小二年級",
-        "國小三年級"
-      ],
-      "grades": [
-        "小一",
-        "小二",
-        "小三"
-      ],
-      "level": "旅行新手",
-      "region": "世界旅行",
-      "category": "旅行知識",
-      "questionType": "world-fact",
-      "classification": {
-        "version": 1,
-        "topic": "旅行實務",
-        "subtopic": "planning-itineraries",
-        "subtopicLabel": "行程規劃與團體旅遊",
-        "tags": [],
-        "geography": {
-          "regions": [
-            "全球／通用"
-          ],
-          "countries": [],
-          "basis": "general"
-        },
-        "assignment": "rule",
-        "reviewRequired": false
-      },
-      "kind": null,
-      "q": "四位旅伴各選一個不同體驗。阿晴選庭院、阿海選手作、阿森選夕照。阿月要選剩下哪個？",
-      "options": [
-        "展館",
-        "庭院",
-        "手作",
-        "夕照"
-      ],
-      "answer": 0,
-      "correctAnswer": "展館",
-      "fact": "四個體驗是展館、庭院、手作、夕照，前三位已選三種，剩下展館。每個體驗只分配一次。",
-      "landmark": null,
-      "landmarkDetail": null,
-      "imageSrc": null
-    },
-    {
       "id": "puzzle:mini-order-0-4",
       "conceptId": "puzzle:mini-order-0-4",
       "auditStatus": "approved",
@@ -6641,67 +7861,6 @@
       "answer": 0,
       "correctAnswer": "公園 → 運河 → 早餐 → 演奏",
       "fact": "依照題目提到的先後順序核對四站。這是旅行解謎設定，並非現地路線。",
-      "landmark": null,
-      "landmarkDetail": null,
-      "imageSrc": null
-    },
-    {
-      "id": "puzzle:mini-match-0-4",
-      "conceptId": "puzzle:mini-match-0-4",
-      "auditStatus": "approved",
-      "source": "旅遊益智原創題",
-      "references": [],
-      "demand": 1,
-      "family": "puzzle:旅伴配對:mini-match-0-4",
-      "travelFocus": true,
-      "puzzleType": "旅伴配對",
-      "visualClue": false,
-      "playableGrades": [
-        "小一",
-        "小二",
-        "小三"
-      ],
-      "playableStages": [
-        "國小一年級",
-        "國小二年級",
-        "國小三年級"
-      ],
-      "grades": [
-        "小一",
-        "小二",
-        "小三"
-      ],
-      "level": "旅行新手",
-      "region": "世界旅行",
-      "category": "旅行知識",
-      "questionType": "world-fact",
-      "classification": {
-        "version": 1,
-        "topic": "旅行實務",
-        "subtopic": "planning-itineraries",
-        "subtopicLabel": "行程規劃與團體旅遊",
-        "tags": [],
-        "geography": {
-          "regions": [
-            "全球／通用"
-          ],
-          "countries": [],
-          "basis": "general"
-        },
-        "assignment": "rule",
-        "reviewRequired": false
-      },
-      "kind": null,
-      "q": "四位旅伴各選一個不同體驗。阿晴選公園、阿海選運河、阿森選早餐。阿月要選剩下哪個？",
-      "options": [
-        "演奏",
-        "公園",
-        "運河",
-        "早餐"
-      ],
-      "answer": 0,
-      "correctAnswer": "演奏",
-      "fact": "四個體驗是運河、早餐、公園、演奏，前三位已選三種，剩下演奏。每個體驗只分配一次。",
       "landmark": null,
       "landmarkDetail": null,
       "imageSrc": null
@@ -6768,67 +7927,6 @@
       "imageSrc": null
     },
     {
-      "id": "puzzle:mini-match-0-5",
-      "conceptId": "puzzle:mini-match-0-5",
-      "auditStatus": "approved",
-      "source": "旅遊益智原創題",
-      "references": [],
-      "demand": 1,
-      "family": "puzzle:旅伴配對:mini-match-0-5",
-      "travelFocus": true,
-      "puzzleType": "旅伴配對",
-      "visualClue": false,
-      "playableGrades": [
-        "小一",
-        "小二",
-        "小三"
-      ],
-      "playableStages": [
-        "國小一年級",
-        "國小二年級",
-        "國小三年級"
-      ],
-      "grades": [
-        "小一",
-        "小二",
-        "小三"
-      ],
-      "level": "旅行新手",
-      "region": "世界旅行",
-      "category": "旅行知識",
-      "questionType": "world-fact",
-      "classification": {
-        "version": 1,
-        "topic": "旅行實務",
-        "subtopic": "planning-itineraries",
-        "subtopicLabel": "行程規劃與團體旅遊",
-        "tags": [],
-        "geography": {
-          "regions": [
-            "全球／通用"
-          ],
-          "countries": [],
-          "basis": "general"
-        },
-        "assignment": "rule",
-        "reviewRequired": false
-      },
-      "kind": null,
-      "q": "四位旅伴各選一個不同體驗。阿晴選點心、阿海選街市、阿森選海港。阿月要選剩下哪個？",
-      "options": [
-        "城堡",
-        "點心",
-        "街市",
-        "海港"
-      ],
-      "answer": 0,
-      "correctAnswer": "城堡",
-      "fact": "四個體驗是城堡、街市、點心、海港，前三位已選三種，剩下城堡。每個體驗只分配一次。",
-      "landmark": null,
-      "landmarkDetail": null,
-      "imageSrc": null
-    },
-    {
       "id": "puzzle:mini-order-0-6",
       "conceptId": "puzzle:mini-order-0-6",
       "auditStatus": "approved",
@@ -6885,67 +7983,6 @@
       "answer": 0,
       "correctAnswer": "夜景 → 神社 → 工坊 → 旅館",
       "fact": "依照題目提到的先後順序核對四站。這是旅行解謎設定，並非現地路線。",
-      "landmark": null,
-      "landmarkDetail": null,
-      "imageSrc": null
-    },
-    {
-      "id": "puzzle:mini-match-0-6",
-      "conceptId": "puzzle:mini-match-0-6",
-      "auditStatus": "approved",
-      "source": "旅遊益智原創題",
-      "references": [],
-      "demand": 1,
-      "family": "puzzle:旅伴配對:mini-match-0-6",
-      "travelFocus": true,
-      "puzzleType": "旅伴配對",
-      "visualClue": false,
-      "playableGrades": [
-        "小一",
-        "小二",
-        "小三"
-      ],
-      "playableStages": [
-        "國小一年級",
-        "國小二年級",
-        "國小三年級"
-      ],
-      "grades": [
-        "小一",
-        "小二",
-        "小三"
-      ],
-      "level": "旅行新手",
-      "region": "世界旅行",
-      "category": "旅行知識",
-      "questionType": "world-fact",
-      "classification": {
-        "version": 1,
-        "topic": "旅行實務",
-        "subtopic": "planning-itineraries",
-        "subtopicLabel": "行程規劃與團體旅遊",
-        "tags": [],
-        "geography": {
-          "regions": [
-            "全球／通用"
-          ],
-          "countries": [],
-          "basis": "general"
-        },
-        "assignment": "rule",
-        "reviewRequired": false
-      },
-      "kind": null,
-      "q": "四位旅伴各選一個不同體驗。阿晴選夜景、阿海選神社、阿森選工坊。阿月要選剩下哪個？",
-      "options": [
-        "旅館",
-        "夜景",
-        "神社",
-        "工坊"
-      ],
-      "answer": 0,
-      "correctAnswer": "旅館",
-      "fact": "四個體驗是神社、工坊、旅館、夜景，前三位已選三種，剩下旅館。每個體驗只分配一次。",
       "landmark": null,
       "landmarkDetail": null,
       "imageSrc": null
@@ -7012,67 +8049,6 @@
       "imageSrc": null
     },
     {
-      "id": "puzzle:mini-match-0-7",
-      "conceptId": "puzzle:mini-match-0-7",
-      "auditStatus": "approved",
-      "source": "旅遊益智原創題",
-      "references": [],
-      "demand": 1,
-      "family": "puzzle:旅伴配對:mini-match-0-7",
-      "travelFocus": true,
-      "puzzleType": "旅伴配對",
-      "visualClue": false,
-      "playableGrades": [
-        "小一",
-        "小二",
-        "小三"
-      ],
-      "playableStages": [
-        "國小一年級",
-        "國小二年級",
-        "國小三年級"
-      ],
-      "grades": [
-        "小一",
-        "小二",
-        "小三"
-      ],
-      "level": "旅行新手",
-      "region": "世界旅行",
-      "category": "旅行知識",
-      "questionType": "world-fact",
-      "classification": {
-        "version": 1,
-        "topic": "旅行實務",
-        "subtopic": "planning-itineraries",
-        "subtopicLabel": "行程規劃與團體旅遊",
-        "tags": [],
-        "geography": {
-          "regions": [
-            "全球／通用"
-          ],
-          "countries": [],
-          "basis": "general"
-        },
-        "assignment": "rule",
-        "reviewRequired": false
-      },
-      "kind": null,
-      "q": "四位旅伴各選一個不同體驗。阿晴選湖畔、阿海選茶館、阿森選畫室。阿月要選剩下哪個？",
-      "options": [
-        "寺廟",
-        "湖畔",
-        "茶館",
-        "畫室"
-      ],
-      "answer": 0,
-      "correctAnswer": "寺廟",
-      "fact": "四個體驗是寺廟、茶館、畫室、湖畔，前三位已選三種，剩下寺廟。每個體驗只分配一次。",
-      "landmark": null,
-      "landmarkDetail": null,
-      "imageSrc": null
-    },
-    {
       "id": "puzzle:mini-order-1-0",
       "conceptId": "puzzle:mini-order-1-0",
       "auditStatus": "approved",
@@ -7129,67 +8105,6 @@
       "answer": 0,
       "correctAnswer": "茶屋 → 市場 → 花園 → 劇場",
       "fact": "依照題目提到的先後順序核對四站。這是旅行解謎設定，並非現地路線。",
-      "landmark": null,
-      "landmarkDetail": null,
-      "imageSrc": null
-    },
-    {
-      "id": "puzzle:mini-match-1-0",
-      "conceptId": "puzzle:mini-match-1-0",
-      "auditStatus": "approved",
-      "source": "旅遊益智原創題",
-      "references": [],
-      "demand": 2,
-      "family": "puzzle:旅伴配對:mini-match-1-0",
-      "travelFocus": true,
-      "puzzleType": "旅伴配對",
-      "visualClue": false,
-      "playableGrades": [
-        "小三",
-        "小四",
-        "小五"
-      ],
-      "playableStages": [
-        "國小三年級",
-        "國小四年級",
-        "國小五年級"
-      ],
-      "grades": [
-        "小三",
-        "小四",
-        "小五"
-      ],
-      "level": "城市旅人",
-      "region": "世界旅行",
-      "category": "旅行知識",
-      "questionType": "world-fact",
-      "classification": {
-        "version": 1,
-        "topic": "旅行實務",
-        "subtopic": "planning-itineraries",
-        "subtopicLabel": "行程規劃與團體旅遊",
-        "tags": [],
-        "geography": {
-          "regions": [
-            "全球／通用"
-          ],
-          "countries": [],
-          "basis": "general"
-        },
-        "assignment": "rule",
-        "reviewRequired": false
-      },
-      "kind": null,
-      "q": "四位旅伴各選一個不同體驗。阿晴選茶屋、阿海選市場、阿森選花園。阿月要選剩下哪個？",
-      "options": [
-        "劇場",
-        "茶屋",
-        "市場",
-        "花園"
-      ],
-      "answer": 0,
-      "correctAnswer": "劇場",
-      "fact": "四個體驗是市場、茶屋、劇場、花園，前三位已選三種，剩下劇場。每個體驗只分配一次。",
       "landmark": null,
       "landmarkDetail": null,
       "imageSrc": null
@@ -7256,67 +8171,6 @@
       "imageSrc": null
     },
     {
-      "id": "puzzle:mini-match-1-1",
-      "conceptId": "puzzle:mini-match-1-1",
-      "auditStatus": "approved",
-      "source": "旅遊益智原創題",
-      "references": [],
-      "demand": 2,
-      "family": "puzzle:旅伴配對:mini-match-1-1",
-      "travelFocus": true,
-      "puzzleType": "旅伴配對",
-      "visualClue": false,
-      "playableGrades": [
-        "小三",
-        "小四",
-        "小五"
-      ],
-      "playableStages": [
-        "國小三年級",
-        "國小四年級",
-        "國小五年級"
-      ],
-      "grades": [
-        "小三",
-        "小四",
-        "小五"
-      ],
-      "level": "城市旅人",
-      "region": "世界旅行",
-      "category": "旅行知識",
-      "questionType": "world-fact",
-      "classification": {
-        "version": 1,
-        "topic": "旅行實務",
-        "subtopic": "planning-itineraries",
-        "subtopicLabel": "行程規劃與團體旅遊",
-        "tags": [],
-        "geography": {
-          "regions": [
-            "全球／通用"
-          ],
-          "countries": [],
-          "basis": "general"
-        },
-        "assignment": "rule",
-        "reviewRequired": false
-      },
-      "kind": null,
-      "q": "四位旅伴各選一個不同體驗。阿晴選藝廊、阿海選老街、阿森選碼頭。阿月要選剩下哪個？",
-      "options": [
-        "咖啡",
-        "藝廊",
-        "老街",
-        "碼頭"
-      ],
-      "answer": 0,
-      "correctAnswer": "咖啡",
-      "fact": "四個體驗是碼頭、藝廊、咖啡、老街，前三位已選三種，剩下咖啡。每個體驗只分配一次。",
-      "landmark": null,
-      "landmarkDetail": null,
-      "imageSrc": null
-    },
-    {
       "id": "puzzle:mini-order-1-2",
       "conceptId": "puzzle:mini-order-1-2",
       "auditStatus": "approved",
@@ -7373,67 +8227,6 @@
       "answer": 0,
       "correctAnswer": "餐館 → 陶藝 → 燈會 → 書店",
       "fact": "依照題目提到的先後順序核對四站。這是旅行解謎設定，並非現地路線。",
-      "landmark": null,
-      "landmarkDetail": null,
-      "imageSrc": null
-    },
-    {
-      "id": "puzzle:mini-match-1-2",
-      "conceptId": "puzzle:mini-match-1-2",
-      "auditStatus": "approved",
-      "source": "旅遊益智原創題",
-      "references": [],
-      "demand": 2,
-      "family": "puzzle:旅伴配對:mini-match-1-2",
-      "travelFocus": true,
-      "puzzleType": "旅伴配對",
-      "visualClue": false,
-      "playableGrades": [
-        "小三",
-        "小四",
-        "小五"
-      ],
-      "playableStages": [
-        "國小三年級",
-        "國小四年級",
-        "國小五年級"
-      ],
-      "grades": [
-        "小三",
-        "小四",
-        "小五"
-      ],
-      "level": "城市旅人",
-      "region": "世界旅行",
-      "category": "旅行知識",
-      "questionType": "world-fact",
-      "classification": {
-        "version": 1,
-        "topic": "旅行實務",
-        "subtopic": "planning-itineraries",
-        "subtopicLabel": "行程規劃與團體旅遊",
-        "tags": [],
-        "geography": {
-          "regions": [
-            "全球／通用"
-          ],
-          "countries": [],
-          "basis": "general"
-        },
-        "assignment": "rule",
-        "reviewRequired": false
-      },
-      "kind": null,
-      "q": "四位旅伴各選一個不同體驗。阿晴選餐館、阿海選陶藝、阿森選燈會。阿月要選剩下哪個？",
-      "options": [
-        "書店",
-        "餐館",
-        "陶藝",
-        "燈會"
-      ],
-      "answer": 0,
-      "correctAnswer": "書店",
-      "fact": "四個體驗是陶藝、書店、餐館、燈會，前三位已選三種，剩下書店。每個體驗只分配一次。",
       "landmark": null,
       "landmarkDetail": null,
       "imageSrc": null
@@ -7500,67 +8293,6 @@
       "imageSrc": null
     },
     {
-      "id": "puzzle:mini-match-1-3",
-      "conceptId": "puzzle:mini-match-1-3",
-      "auditStatus": "approved",
-      "source": "旅遊益智原創題",
-      "references": [],
-      "demand": 2,
-      "family": "puzzle:旅伴配對:mini-match-1-3",
-      "travelFocus": true,
-      "puzzleType": "旅伴配對",
-      "visualClue": false,
-      "playableGrades": [
-        "小三",
-        "小四",
-        "小五"
-      ],
-      "playableStages": [
-        "國小三年級",
-        "國小四年級",
-        "國小五年級"
-      ],
-      "grades": [
-        "小三",
-        "小四",
-        "小五"
-      ],
-      "level": "城市旅人",
-      "region": "世界旅行",
-      "category": "旅行知識",
-      "questionType": "world-fact",
-      "classification": {
-        "version": 1,
-        "topic": "旅行實務",
-        "subtopic": "planning-itineraries",
-        "subtopicLabel": "行程規劃與團體旅遊",
-        "tags": [],
-        "geography": {
-          "regions": [
-            "全球／通用"
-          ],
-          "countries": [],
-          "basis": "general"
-        },
-        "assignment": "rule",
-        "reviewRequired": false
-      },
-      "kind": null,
-      "q": "四位旅伴各選一個不同體驗。阿晴選手作、阿海選夕照、阿森選展館。阿月要選剩下哪個？",
-      "options": [
-        "庭院",
-        "手作",
-        "夕照",
-        "展館"
-      ],
-      "answer": 0,
-      "correctAnswer": "庭院",
-      "fact": "四個體驗是展館、庭院、手作、夕照，前三位已選三種，剩下庭院。每個體驗只分配一次。",
-      "landmark": null,
-      "landmarkDetail": null,
-      "imageSrc": null
-    },
-    {
       "id": "puzzle:mini-order-1-4",
       "conceptId": "puzzle:mini-order-1-4",
       "auditStatus": "approved",
@@ -7617,67 +8349,6 @@
       "answer": 0,
       "correctAnswer": "演奏 → 運河 → 公園 → 早餐",
       "fact": "依照題目提到的先後順序核對四站。這是旅行解謎設定，並非現地路線。",
-      "landmark": null,
-      "landmarkDetail": null,
-      "imageSrc": null
-    },
-    {
-      "id": "puzzle:mini-match-1-4",
-      "conceptId": "puzzle:mini-match-1-4",
-      "auditStatus": "approved",
-      "source": "旅遊益智原創題",
-      "references": [],
-      "demand": 2,
-      "family": "puzzle:旅伴配對:mini-match-1-4",
-      "travelFocus": true,
-      "puzzleType": "旅伴配對",
-      "visualClue": false,
-      "playableGrades": [
-        "小三",
-        "小四",
-        "小五"
-      ],
-      "playableStages": [
-        "國小三年級",
-        "國小四年級",
-        "國小五年級"
-      ],
-      "grades": [
-        "小三",
-        "小四",
-        "小五"
-      ],
-      "level": "城市旅人",
-      "region": "世界旅行",
-      "category": "旅行知識",
-      "questionType": "world-fact",
-      "classification": {
-        "version": 1,
-        "topic": "旅行實務",
-        "subtopic": "planning-itineraries",
-        "subtopicLabel": "行程規劃與團體旅遊",
-        "tags": [],
-        "geography": {
-          "regions": [
-            "全球／通用"
-          ],
-          "countries": [],
-          "basis": "general"
-        },
-        "assignment": "rule",
-        "reviewRequired": false
-      },
-      "kind": null,
-      "q": "四位旅伴各選一個不同體驗。阿晴選演奏、阿海選運河、阿森選公園。阿月要選剩下哪個？",
-      "options": [
-        "早餐",
-        "演奏",
-        "運河",
-        "公園"
-      ],
-      "answer": 0,
-      "correctAnswer": "早餐",
-      "fact": "四個體驗是運河、早餐、公園、演奏，前三位已選三種，剩下早餐。每個體驗只分配一次。",
       "landmark": null,
       "landmarkDetail": null,
       "imageSrc": null
@@ -7744,67 +8415,6 @@
       "imageSrc": null
     },
     {
-      "id": "puzzle:mini-match-1-5",
-      "conceptId": "puzzle:mini-match-1-5",
-      "auditStatus": "approved",
-      "source": "旅遊益智原創題",
-      "references": [],
-      "demand": 2,
-      "family": "puzzle:旅伴配對:mini-match-1-5",
-      "travelFocus": true,
-      "puzzleType": "旅伴配對",
-      "visualClue": false,
-      "playableGrades": [
-        "小三",
-        "小四",
-        "小五"
-      ],
-      "playableStages": [
-        "國小三年級",
-        "國小四年級",
-        "國小五年級"
-      ],
-      "grades": [
-        "小三",
-        "小四",
-        "小五"
-      ],
-      "level": "城市旅人",
-      "region": "世界旅行",
-      "category": "旅行知識",
-      "questionType": "world-fact",
-      "classification": {
-        "version": 1,
-        "topic": "旅行實務",
-        "subtopic": "planning-itineraries",
-        "subtopicLabel": "行程規劃與團體旅遊",
-        "tags": [],
-        "geography": {
-          "regions": [
-            "全球／通用"
-          ],
-          "countries": [],
-          "basis": "general"
-        },
-        "assignment": "rule",
-        "reviewRequired": false
-      },
-      "kind": null,
-      "q": "四位旅伴各選一個不同體驗。阿晴選海港、阿海選點心、阿森選城堡。阿月要選剩下哪個？",
-      "options": [
-        "街市",
-        "海港",
-        "點心",
-        "城堡"
-      ],
-      "answer": 0,
-      "correctAnswer": "街市",
-      "fact": "四個體驗是城堡、街市、點心、海港，前三位已選三種，剩下街市。每個體驗只分配一次。",
-      "landmark": null,
-      "landmarkDetail": null,
-      "imageSrc": null
-    },
-    {
       "id": "puzzle:mini-order-1-6",
       "conceptId": "puzzle:mini-order-1-6",
       "auditStatus": "approved",
@@ -7861,67 +8471,6 @@
       "answer": 0,
       "correctAnswer": "神社 → 工坊 → 夜景 → 旅館",
       "fact": "依照題目提到的先後順序核對四站。這是旅行解謎設定，並非現地路線。",
-      "landmark": null,
-      "landmarkDetail": null,
-      "imageSrc": null
-    },
-    {
-      "id": "puzzle:mini-match-1-6",
-      "conceptId": "puzzle:mini-match-1-6",
-      "auditStatus": "approved",
-      "source": "旅遊益智原創題",
-      "references": [],
-      "demand": 2,
-      "family": "puzzle:旅伴配對:mini-match-1-6",
-      "travelFocus": true,
-      "puzzleType": "旅伴配對",
-      "visualClue": false,
-      "playableGrades": [
-        "小三",
-        "小四",
-        "小五"
-      ],
-      "playableStages": [
-        "國小三年級",
-        "國小四年級",
-        "國小五年級"
-      ],
-      "grades": [
-        "小三",
-        "小四",
-        "小五"
-      ],
-      "level": "城市旅人",
-      "region": "世界旅行",
-      "category": "旅行知識",
-      "questionType": "world-fact",
-      "classification": {
-        "version": 1,
-        "topic": "旅行實務",
-        "subtopic": "planning-itineraries",
-        "subtopicLabel": "行程規劃與團體旅遊",
-        "tags": [],
-        "geography": {
-          "regions": [
-            "全球／通用"
-          ],
-          "countries": [],
-          "basis": "general"
-        },
-        "assignment": "rule",
-        "reviewRequired": false
-      },
-      "kind": null,
-      "q": "四位旅伴各選一個不同體驗。阿晴選神社、阿海選工坊、阿森選夜景。阿月要選剩下哪個？",
-      "options": [
-        "旅館",
-        "神社",
-        "工坊",
-        "夜景"
-      ],
-      "answer": 0,
-      "correctAnswer": "旅館",
-      "fact": "四個體驗是神社、工坊、旅館、夜景，前三位已選三種，剩下旅館。每個體驗只分配一次。",
       "landmark": null,
       "landmarkDetail": null,
       "imageSrc": null
@@ -7988,67 +8537,6 @@
       "imageSrc": null
     },
     {
-      "id": "puzzle:mini-match-1-7",
-      "conceptId": "puzzle:mini-match-1-7",
-      "auditStatus": "approved",
-      "source": "旅遊益智原創題",
-      "references": [],
-      "demand": 2,
-      "family": "puzzle:旅伴配對:mini-match-1-7",
-      "travelFocus": true,
-      "puzzleType": "旅伴配對",
-      "visualClue": false,
-      "playableGrades": [
-        "小三",
-        "小四",
-        "小五"
-      ],
-      "playableStages": [
-        "國小三年級",
-        "國小四年級",
-        "國小五年級"
-      ],
-      "grades": [
-        "小三",
-        "小四",
-        "小五"
-      ],
-      "level": "城市旅人",
-      "region": "世界旅行",
-      "category": "旅行知識",
-      "questionType": "world-fact",
-      "classification": {
-        "version": 1,
-        "topic": "旅行實務",
-        "subtopic": "planning-itineraries",
-        "subtopicLabel": "行程規劃與團體旅遊",
-        "tags": [],
-        "geography": {
-          "regions": [
-            "全球／通用"
-          ],
-          "countries": [],
-          "basis": "general"
-        },
-        "assignment": "rule",
-        "reviewRequired": false
-      },
-      "kind": null,
-      "q": "四位旅伴各選一個不同體驗。阿晴選寺廟、阿海選湖畔、阿森選茶館。阿月要選剩下哪個？",
-      "options": [
-        "畫室",
-        "寺廟",
-        "湖畔",
-        "茶館"
-      ],
-      "answer": 0,
-      "correctAnswer": "畫室",
-      "fact": "四個體驗是寺廟、茶館、畫室、湖畔，前三位已選三種，剩下畫室。每個體驗只分配一次。",
-      "landmark": null,
-      "landmarkDetail": null,
-      "imageSrc": null
-    },
-    {
       "id": "puzzle:mini-order-2-0",
       "conceptId": "puzzle:mini-order-2-0",
       "auditStatus": "approved",
@@ -8105,67 +8593,6 @@
       "answer": 0,
       "correctAnswer": "劇場 → 茶屋 → 市場 → 花園",
       "fact": "依照題目提到的先後順序核對四站。這是旅行解謎設定，並非現地路線。",
-      "landmark": null,
-      "landmarkDetail": null,
-      "imageSrc": null
-    },
-    {
-      "id": "puzzle:mini-match-2-0",
-      "conceptId": "puzzle:mini-match-2-0",
-      "auditStatus": "approved",
-      "source": "旅遊益智原創題",
-      "references": [],
-      "demand": 2,
-      "family": "puzzle:旅伴配對:mini-match-2-0",
-      "travelFocus": true,
-      "puzzleType": "旅伴配對",
-      "visualClue": false,
-      "playableGrades": [
-        "小五",
-        "小六",
-        "國一"
-      ],
-      "playableStages": [
-        "國小五年級",
-        "國小六年級",
-        "國中一年級"
-      ],
-      "grades": [
-        "小五",
-        "小六",
-        "國一"
-      ],
-      "level": "國家達人",
-      "region": "世界旅行",
-      "category": "旅行知識",
-      "questionType": "world-fact",
-      "classification": {
-        "version": 1,
-        "topic": "旅行實務",
-        "subtopic": "planning-itineraries",
-        "subtopicLabel": "行程規劃與團體旅遊",
-        "tags": [],
-        "geography": {
-          "regions": [
-            "全球／通用"
-          ],
-          "countries": [],
-          "basis": "general"
-        },
-        "assignment": "rule",
-        "reviewRequired": false
-      },
-      "kind": null,
-      "q": "四位旅伴各選一個不同體驗。阿晴選劇場、阿海選茶屋、阿森選市場。阿月要選剩下哪個？",
-      "options": [
-        "花園",
-        "劇場",
-        "茶屋",
-        "市場"
-      ],
-      "answer": 0,
-      "correctAnswer": "花園",
-      "fact": "四個體驗是市場、茶屋、劇場、花園，前三位已選三種，剩下花園。每個體驗只分配一次。",
       "landmark": null,
       "landmarkDetail": null,
       "imageSrc": null
@@ -8232,67 +8659,6 @@
       "imageSrc": null
     },
     {
-      "id": "puzzle:mini-match-2-1",
-      "conceptId": "puzzle:mini-match-2-1",
-      "auditStatus": "approved",
-      "source": "旅遊益智原創題",
-      "references": [],
-      "demand": 2,
-      "family": "puzzle:旅伴配對:mini-match-2-1",
-      "travelFocus": true,
-      "puzzleType": "旅伴配對",
-      "visualClue": false,
-      "playableGrades": [
-        "小五",
-        "小六",
-        "國一"
-      ],
-      "playableStages": [
-        "國小五年級",
-        "國小六年級",
-        "國中一年級"
-      ],
-      "grades": [
-        "小五",
-        "小六",
-        "國一"
-      ],
-      "level": "國家達人",
-      "region": "世界旅行",
-      "category": "旅行知識",
-      "questionType": "world-fact",
-      "classification": {
-        "version": 1,
-        "topic": "旅行實務",
-        "subtopic": "planning-itineraries",
-        "subtopicLabel": "行程規劃與團體旅遊",
-        "tags": [],
-        "geography": {
-          "regions": [
-            "全球／通用"
-          ],
-          "countries": [],
-          "basis": "general"
-        },
-        "assignment": "rule",
-        "reviewRequired": false
-      },
-      "kind": null,
-      "q": "四位旅伴各選一個不同體驗。阿晴選咖啡、阿海選老街、阿森選藝廊。阿月要選剩下哪個？",
-      "options": [
-        "碼頭",
-        "咖啡",
-        "老街",
-        "藝廊"
-      ],
-      "answer": 0,
-      "correctAnswer": "碼頭",
-      "fact": "四個體驗是碼頭、藝廊、咖啡、老街，前三位已選三種，剩下碼頭。每個體驗只分配一次。",
-      "landmark": null,
-      "landmarkDetail": null,
-      "imageSrc": null
-    },
-    {
       "id": "puzzle:mini-order-2-2",
       "conceptId": "puzzle:mini-order-2-2",
       "auditStatus": "approved",
@@ -8349,67 +8715,6 @@
       "answer": 0,
       "correctAnswer": "燈會 → 書店 → 陶藝 → 餐館",
       "fact": "依照題目提到的先後順序核對四站。這是旅行解謎設定，並非現地路線。",
-      "landmark": null,
-      "landmarkDetail": null,
-      "imageSrc": null
-    },
-    {
-      "id": "puzzle:mini-match-2-2",
-      "conceptId": "puzzle:mini-match-2-2",
-      "auditStatus": "approved",
-      "source": "旅遊益智原創題",
-      "references": [],
-      "demand": 2,
-      "family": "puzzle:旅伴配對:mini-match-2-2",
-      "travelFocus": true,
-      "puzzleType": "旅伴配對",
-      "visualClue": false,
-      "playableGrades": [
-        "小五",
-        "小六",
-        "國一"
-      ],
-      "playableStages": [
-        "國小五年級",
-        "國小六年級",
-        "國中一年級"
-      ],
-      "grades": [
-        "小五",
-        "小六",
-        "國一"
-      ],
-      "level": "國家達人",
-      "region": "世界旅行",
-      "category": "旅行知識",
-      "questionType": "world-fact",
-      "classification": {
-        "version": 1,
-        "topic": "旅行實務",
-        "subtopic": "planning-itineraries",
-        "subtopicLabel": "行程規劃與團體旅遊",
-        "tags": [],
-        "geography": {
-          "regions": [
-            "全球／通用"
-          ],
-          "countries": [],
-          "basis": "general"
-        },
-        "assignment": "rule",
-        "reviewRequired": false
-      },
-      "kind": null,
-      "q": "四位旅伴各選一個不同體驗。阿晴選燈會、阿海選書店、阿森選陶藝。阿月要選剩下哪個？",
-      "options": [
-        "餐館",
-        "燈會",
-        "書店",
-        "陶藝"
-      ],
-      "answer": 0,
-      "correctAnswer": "餐館",
-      "fact": "四個體驗是陶藝、書店、餐館、燈會，前三位已選三種，剩下餐館。每個體驗只分配一次。",
       "landmark": null,
       "landmarkDetail": null,
       "imageSrc": null
@@ -8476,67 +8781,6 @@
       "imageSrc": null
     },
     {
-      "id": "puzzle:mini-match-2-3",
-      "conceptId": "puzzle:mini-match-2-3",
-      "auditStatus": "approved",
-      "source": "旅遊益智原創題",
-      "references": [],
-      "demand": 2,
-      "family": "puzzle:旅伴配對:mini-match-2-3",
-      "travelFocus": true,
-      "puzzleType": "旅伴配對",
-      "visualClue": false,
-      "playableGrades": [
-        "小五",
-        "小六",
-        "國一"
-      ],
-      "playableStages": [
-        "國小五年級",
-        "國小六年級",
-        "國中一年級"
-      ],
-      "grades": [
-        "小五",
-        "小六",
-        "國一"
-      ],
-      "level": "國家達人",
-      "region": "世界旅行",
-      "category": "旅行知識",
-      "questionType": "world-fact",
-      "classification": {
-        "version": 1,
-        "topic": "旅行實務",
-        "subtopic": "planning-itineraries",
-        "subtopicLabel": "行程規劃與團體旅遊",
-        "tags": [],
-        "geography": {
-          "regions": [
-            "全球／通用"
-          ],
-          "countries": [],
-          "basis": "general"
-        },
-        "assignment": "rule",
-        "reviewRequired": false
-      },
-      "kind": null,
-      "q": "四位旅伴各選一個不同體驗。阿晴選夕照、阿海選手作、阿森選庭院。阿月要選剩下哪個？",
-      "options": [
-        "展館",
-        "夕照",
-        "手作",
-        "庭院"
-      ],
-      "answer": 0,
-      "correctAnswer": "展館",
-      "fact": "四個體驗是展館、庭院、手作、夕照，前三位已選三種，剩下展館。每個體驗只分配一次。",
-      "landmark": null,
-      "landmarkDetail": null,
-      "imageSrc": null
-    },
-    {
       "id": "puzzle:mini-order-2-4",
       "conceptId": "puzzle:mini-order-2-4",
       "auditStatus": "approved",
@@ -8593,67 +8837,6 @@
       "answer": 0,
       "correctAnswer": "運河 → 公園 → 早餐 → 演奏",
       "fact": "依照題目提到的先後順序核對四站。這是旅行解謎設定，並非現地路線。",
-      "landmark": null,
-      "landmarkDetail": null,
-      "imageSrc": null
-    },
-    {
-      "id": "puzzle:mini-match-2-4",
-      "conceptId": "puzzle:mini-match-2-4",
-      "auditStatus": "approved",
-      "source": "旅遊益智原創題",
-      "references": [],
-      "demand": 2,
-      "family": "puzzle:旅伴配對:mini-match-2-4",
-      "travelFocus": true,
-      "puzzleType": "旅伴配對",
-      "visualClue": false,
-      "playableGrades": [
-        "小五",
-        "小六",
-        "國一"
-      ],
-      "playableStages": [
-        "國小五年級",
-        "國小六年級",
-        "國中一年級"
-      ],
-      "grades": [
-        "小五",
-        "小六",
-        "國一"
-      ],
-      "level": "國家達人",
-      "region": "世界旅行",
-      "category": "旅行知識",
-      "questionType": "world-fact",
-      "classification": {
-        "version": 1,
-        "topic": "旅行實務",
-        "subtopic": "planning-itineraries",
-        "subtopicLabel": "行程規劃與團體旅遊",
-        "tags": [],
-        "geography": {
-          "regions": [
-            "全球／通用"
-          ],
-          "countries": [],
-          "basis": "general"
-        },
-        "assignment": "rule",
-        "reviewRequired": false
-      },
-      "kind": null,
-      "q": "四位旅伴各選一個不同體驗。阿晴選運河、阿海選公園、阿森選早餐。阿月要選剩下哪個？",
-      "options": [
-        "演奏",
-        "運河",
-        "公園",
-        "早餐"
-      ],
-      "answer": 0,
-      "correctAnswer": "演奏",
-      "fact": "四個體驗是運河、早餐、公園、演奏，前三位已選三種，剩下演奏。每個體驗只分配一次。",
       "landmark": null,
       "landmarkDetail": null,
       "imageSrc": null
@@ -8720,67 +8903,6 @@
       "imageSrc": null
     },
     {
-      "id": "puzzle:mini-match-2-5",
-      "conceptId": "puzzle:mini-match-2-5",
-      "auditStatus": "approved",
-      "source": "旅遊益智原創題",
-      "references": [],
-      "demand": 2,
-      "family": "puzzle:旅伴配對:mini-match-2-5",
-      "travelFocus": true,
-      "puzzleType": "旅伴配對",
-      "visualClue": false,
-      "playableGrades": [
-        "小五",
-        "小六",
-        "國一"
-      ],
-      "playableStages": [
-        "國小五年級",
-        "國小六年級",
-        "國中一年級"
-      ],
-      "grades": [
-        "小五",
-        "小六",
-        "國一"
-      ],
-      "level": "國家達人",
-      "region": "世界旅行",
-      "category": "旅行知識",
-      "questionType": "world-fact",
-      "classification": {
-        "version": 1,
-        "topic": "旅行實務",
-        "subtopic": "planning-itineraries",
-        "subtopicLabel": "行程規劃與團體旅遊",
-        "tags": [],
-        "geography": {
-          "regions": [
-            "全球／通用"
-          ],
-          "countries": [],
-          "basis": "general"
-        },
-        "assignment": "rule",
-        "reviewRequired": false
-      },
-      "kind": null,
-      "q": "四位旅伴各選一個不同體驗。阿晴選城堡、阿海選海港、阿森選點心。阿月要選剩下哪個？",
-      "options": [
-        "街市",
-        "城堡",
-        "海港",
-        "點心"
-      ],
-      "answer": 0,
-      "correctAnswer": "街市",
-      "fact": "四個體驗是城堡、街市、點心、海港，前三位已選三種，剩下街市。每個體驗只分配一次。",
-      "landmark": null,
-      "landmarkDetail": null,
-      "imageSrc": null
-    },
-    {
       "id": "puzzle:mini-order-2-6",
       "conceptId": "puzzle:mini-order-2-6",
       "auditStatus": "approved",
@@ -8842,67 +8964,6 @@
       "imageSrc": null
     },
     {
-      "id": "puzzle:mini-match-2-6",
-      "conceptId": "puzzle:mini-match-2-6",
-      "auditStatus": "approved",
-      "source": "旅遊益智原創題",
-      "references": [],
-      "demand": 2,
-      "family": "puzzle:旅伴配對:mini-match-2-6",
-      "travelFocus": true,
-      "puzzleType": "旅伴配對",
-      "visualClue": false,
-      "playableGrades": [
-        "小五",
-        "小六",
-        "國一"
-      ],
-      "playableStages": [
-        "國小五年級",
-        "國小六年級",
-        "國中一年級"
-      ],
-      "grades": [
-        "小五",
-        "小六",
-        "國一"
-      ],
-      "level": "國家達人",
-      "region": "世界旅行",
-      "category": "旅行知識",
-      "questionType": "world-fact",
-      "classification": {
-        "version": 1,
-        "topic": "旅行實務",
-        "subtopic": "planning-itineraries",
-        "subtopicLabel": "行程規劃與團體旅遊",
-        "tags": [],
-        "geography": {
-          "regions": [
-            "全球／通用"
-          ],
-          "countries": [],
-          "basis": "general"
-        },
-        "assignment": "rule",
-        "reviewRequired": false
-      },
-      "kind": null,
-      "q": "四位旅伴各選一個不同體驗。阿晴選工坊、阿海選旅館、阿森選神社。阿月要選剩下哪個？",
-      "options": [
-        "夜景",
-        "工坊",
-        "旅館",
-        "神社"
-      ],
-      "answer": 0,
-      "correctAnswer": "夜景",
-      "fact": "四個體驗是神社、工坊、旅館、夜景，前三位已選三種，剩下夜景。每個體驗只分配一次。",
-      "landmark": null,
-      "landmarkDetail": null,
-      "imageSrc": null
-    },
-    {
       "id": "puzzle:mini-order-2-7",
       "conceptId": "puzzle:mini-order-2-7",
       "auditStatus": "approved",
@@ -8959,67 +9020,6 @@
       "answer": 0,
       "correctAnswer": "茶館 → 湖畔 → 畫室 → 寺廟",
       "fact": "依照題目提到的先後順序核對四站。這是旅行解謎設定，並非現地路線。",
-      "landmark": null,
-      "landmarkDetail": null,
-      "imageSrc": null
-    },
-    {
-      "id": "puzzle:mini-match-2-7",
-      "conceptId": "puzzle:mini-match-2-7",
-      "auditStatus": "approved",
-      "source": "旅遊益智原創題",
-      "references": [],
-      "demand": 2,
-      "family": "puzzle:旅伴配對:mini-match-2-7",
-      "travelFocus": true,
-      "puzzleType": "旅伴配對",
-      "visualClue": false,
-      "playableGrades": [
-        "小五",
-        "小六",
-        "國一"
-      ],
-      "playableStages": [
-        "國小五年級",
-        "國小六年級",
-        "國中一年級"
-      ],
-      "grades": [
-        "小五",
-        "小六",
-        "國一"
-      ],
-      "level": "國家達人",
-      "region": "世界旅行",
-      "category": "旅行知識",
-      "questionType": "world-fact",
-      "classification": {
-        "version": 1,
-        "topic": "旅行實務",
-        "subtopic": "planning-itineraries",
-        "subtopicLabel": "行程規劃與團體旅遊",
-        "tags": [],
-        "geography": {
-          "regions": [
-            "全球／通用"
-          ],
-          "countries": [],
-          "basis": "general"
-        },
-        "assignment": "rule",
-        "reviewRequired": false
-      },
-      "kind": null,
-      "q": "四位旅伴各選一個不同體驗。阿晴選茶館、阿海選湖畔、阿森選畫室。阿月要選剩下哪個？",
-      "options": [
-        "寺廟",
-        "茶館",
-        "湖畔",
-        "畫室"
-      ],
-      "answer": 0,
-      "correctAnswer": "寺廟",
-      "fact": "四個體驗是寺廟、茶館、畫室、湖畔，前三位已選三種，剩下寺廟。每個體驗只分配一次。",
       "landmark": null,
       "landmarkDetail": null,
       "imageSrc": null
@@ -9199,7 +9199,7 @@
         "reviewRequired": false
       },
       "kind": null,
-      "q": "京都旅行日記謎題：四人各選一項體驗，不能重複。小安選早餐；小樂選公園；小米選燈會。哪一份名單符合所有線索？",
+      "q": "京都旅行日記謎題：可選的行程卡有早餐、手作、公園、燈會。四人各選一張，不能重複。小安選早餐；小樂選公園；小米選燈會。哪一份名單符合所有線索？",
       "options": [
         "小安：早餐／小樂：公園／小米：燈會／小禾：手作",
         "小安：早餐／小樂：公園／小米：手作／小禾：燈會",
@@ -9451,7 +9451,7 @@
         "reviewRequired": false
       },
       "kind": null,
-      "q": "巴黎旅行日記謎題：四人各選一項體驗，不能重複。小安選書店；小樂選餐館；小米選散步。哪一份名單符合所有線索？",
+      "q": "巴黎旅行日記謎題：可選的行程卡有散步、書店、餐館、表演。四人各選一張，不能重複。小安選書店；小樂選餐館；小米選散步。哪一份名單符合所有線索？",
       "options": [
         "小安：書店／小樂：餐館／小米：散步／小禾：表演",
         "小安：散步／小樂：餐館／小米：表演／小禾：書店",
@@ -9703,7 +9703,7 @@
         "reviewRequired": false
       },
       "kind": null,
-      "q": "里斯本旅行日記謎題：四人各選一項體驗，不能重複。小安選點心；小樂選運河；小米選夕照。哪一份名單符合所有線索？",
+      "q": "里斯本旅行日記謎題：可選的行程卡有運河、繪畫、點心、夕照。四人各選一張，不能重複。小安選點心；小樂選運河；小米選夕照。哪一份名單符合所有線索？",
       "options": [
         "小安：點心／小樂：運河／小米：夕照／小禾：繪畫",
         "小安：運河／小樂：夕照／小米：繪畫／小禾：點心",
@@ -9955,7 +9955,7 @@
         "reviewRequired": false
       },
       "kind": null,
-      "q": "伊斯坦堡旅行日記謎題：四人各選一項體驗，不能重複。小安選演奏；小樂選庭院；小米選染布。哪一份名單符合所有線索？",
+      "q": "伊斯坦堡旅行日記謎題：可選的行程卡有庭院、染布、茶點、演奏。四人各選一張，不能重複。小安選演奏；小樂選庭院；小米選染布。哪一份名單符合所有線索？",
       "options": [
         "小安：演奏／小樂：庭院／小米：染布／小禾：茶點",
         "小安：庭院／小樂：演奏／小米：茶點／小禾：染布",
@@ -10207,7 +10207,7 @@
         "reviewRequired": false
       },
       "kind": null,
-      "q": "布拉格旅行日記謎題：四人各選一項體驗，不能重複。小安選夜景；小樂選展館；小米選花園。哪一份名單符合所有線索？",
+      "q": "布拉格旅行日記謎題：可選的行程卡有市集、花園、展館、夜景。四人各選一張，不能重複。小安選夜景；小樂選展館；小米選花園。哪一份名單符合所有線索？",
       "options": [
         "小安：夜景／小樂：展館／小米：花園／小禾：市集",
         "小安：花園／小樂：市集／小米：展館／小禾：夜景",
@@ -10459,7 +10459,7 @@
         "reviewRequired": false
       },
       "kind": null,
-      "q": "首爾旅行日記謎題：四人各選一項體驗，不能重複。小安選老街；小樂選劇場；小米選陶藝。哪一份名單符合所有線索？",
+      "q": "首爾旅行日記謎題：可選的行程卡有老街、陶藝、茶屋、劇場。四人各選一張，不能重複。小安選老街；小樂選劇場；小米選陶藝。哪一份名單符合所有線索？",
       "options": [
         "小安：老街／小樂：劇場／小米：陶藝／小禾：茶屋",
         "小安：陶藝／小樂：茶屋／小米：老街／小禾：劇場",
@@ -10711,7 +10711,7 @@
         "reviewRequired": false
       },
       "kind": null,
-      "q": "吉隆坡旅行日記謎題：四人各選一項體驗，不能重複。小安選咖啡；小樂選藝廊；小米選音樂。哪一份名單符合所有線索？",
+      "q": "吉隆坡旅行日記謎題：可選的行程卡有碼頭、咖啡、藝廊、音樂。四人各選一張，不能重複。小安選咖啡；小樂選藝廊；小米選音樂。哪一份名單符合所有線索？",
       "options": [
         "小安：咖啡／小樂：藝廊／小米：音樂／小禾：碼頭",
         "小安：咖啡／小樂：藝廊／小米：碼頭／小禾：音樂",
@@ -10963,7 +10963,7 @@
         "reviewRequired": false
       },
       "kind": null,
-      "q": "新加坡旅行日記謎題：四人各選一項體驗，不能重複。小安選公園；小樂選手作；小米選早餐。哪一份名單符合所有線索？",
+      "q": "新加坡旅行日記謎題：可選的行程卡有早餐、手作、公園、燈會。四人各選一張，不能重複。小安選公園；小樂選手作；小米選早餐。哪一份名單符合所有線索？",
       "options": [
         "小安：公園／小樂：手作／小米：早餐／小禾：燈會",
         "小安：手作／小樂：公園／小米：燈會／小禾：早餐",
@@ -11215,7 +11215,7 @@
         "reviewRequired": false
       },
       "kind": null,
-      "q": "墨西哥城旅行日記謎題：四人各選一項體驗，不能重複。小安選表演；小樂選散步；小米選餐館。哪一份名單符合所有線索？",
+      "q": "墨西哥城旅行日記謎題：可選的行程卡有散步、書店、餐館、表演。四人各選一張，不能重複。小安選表演；小樂選散步；小米選餐館。哪一份名單符合所有線索？",
       "options": [
         "小安：表演／小樂：散步／小米：餐館／小禾：書店",
         "小安：書店／小樂：表演／小米：散步／小禾：餐館",
@@ -11467,7 +11467,7 @@
         "reviewRequired": false
       },
       "kind": null,
-      "q": "布宜諾斯艾利斯旅行日記謎題：四人各選一項體驗，不能重複。小安選運河；小樂選繪畫；小米選點心。哪一份名單符合所有線索？",
+      "q": "布宜諾斯艾利斯旅行日記謎題：可選的行程卡有運河、繪畫、點心、夕照。四人各選一張，不能重複。小安選運河；小樂選繪畫；小米選點心。哪一份名單符合所有線索？",
       "options": [
         "小安：運河／小樂：繪畫／小米：點心／小禾：夕照",
         "小安：點心／小樂：運河／小米：繪畫／小禾：夕照",
@@ -11719,7 +11719,7 @@
         "reviewRequired": false
       },
       "kind": null,
-      "q": "雪梨旅行日記謎題：四人各選一項體驗，不能重複。小安選庭院；小樂選演奏；小米選茶點。哪一份名單符合所有線索？",
+      "q": "雪梨旅行日記謎題：可選的行程卡有庭院、染布、茶點、演奏。四人各選一張，不能重複。小安選庭院；小樂選演奏；小米選茶點。哪一份名單符合所有線索？",
       "options": [
         "小安：庭院／小樂：演奏／小米：茶點／小禾：染布",
         "小安：茶點／小樂：庭院／小米：演奏／小禾：染布",
@@ -11965,7 +11965,7 @@
         "reviewRequired": false
       },
       "kind": null,
-      "q": "溫哥華旅行日記謎題：四人各選一項體驗，不能重複。小安選花園；小樂選夜景；小米選市集。哪一份名單符合所有線索？",
+      "q": "溫哥華旅行日記謎題：可選的行程卡有市集、花園、展館、夜景。四人各選一張，不能重複。小安選花園；小樂選夜景；小米選市集。哪一份名單符合所有線索？",
       "options": [
         "小安：花園／小樂：夜景／小米：市集／小禾：展館",
         "小安：展館／小樂：花園／小米：市集／小禾：夜景",
@@ -12215,7 +12215,7 @@
         "reviewRequired": false
       },
       "kind": null,
-      "q": "曼谷旅行日記謎題：四人各選一項體驗，不能重複。小安選茶屋；小樂選陶藝；小米選劇場。哪一份名單符合所有線索？",
+      "q": "曼谷旅行日記謎題：可選的行程卡有老街、陶藝、茶屋、劇場。四人各選一張，不能重複。小安選茶屋；小樂選陶藝；小米選劇場。哪一份名單符合所有線索？",
       "options": [
         "小安：茶屋／小樂：陶藝／小米：劇場／小禾：老街",
         "小安：茶屋／小樂：陶藝／小米：老街／小禾：劇場",
@@ -12461,7 +12461,7 @@
         "reviewRequired": false
       },
       "kind": null,
-      "q": "清邁旅行日記謎題：四人各選一項體驗，不能重複。小安選音樂；小樂選咖啡；小米選碼頭。哪一份名單符合所有線索？",
+      "q": "清邁旅行日記謎題：可選的行程卡有碼頭、咖啡、藝廊、音樂。四人各選一張，不能重複。小安選音樂；小樂選咖啡；小米選碼頭。哪一份名單符合所有線索？",
       "options": [
         "小安：音樂／小樂：咖啡／小米：碼頭／小禾：藝廊",
         "小安：藝廊／小樂：咖啡／小米：音樂／小禾：碼頭",
@@ -12711,7 +12711,7 @@
         "reviewRequired": false
       },
       "kind": null,
-      "q": "河內旅行日記謎題：四人各選一項體驗，不能重複。小安選早餐；小樂選手作；小米選燈會。哪一份名單符合所有線索？",
+      "q": "河內旅行日記謎題：可選的行程卡有早餐、手作、公園、燈會。四人各選一張，不能重複。小安選早餐；小樂選手作；小米選燈會。哪一份名單符合所有線索？",
       "options": [
         "小安：早餐／小樂：手作／小米：燈會／小禾：公園",
         "小安：公園／小樂：燈會／小米：手作／小禾：早餐",
@@ -12963,7 +12963,7 @@
         "reviewRequired": false
       },
       "kind": null,
-      "q": "會安旅行日記謎題：四人各選一項體驗，不能重複。小安選書店；小樂選散步；小米選餐館。哪一份名單符合所有線索？",
+      "q": "會安旅行日記謎題：可選的行程卡有散步、書店、餐館、表演。四人各選一張，不能重複。小安選書店；小樂選散步；小米選餐館。哪一份名單符合所有線索？",
       "options": [
         "小安：書店／小樂：散步／小米：餐館／小禾：表演",
         "小安：表演／小樂：散步／小米：書店／小禾：餐館",
@@ -13215,7 +13215,7 @@
         "reviewRequired": false
       },
       "kind": null,
-      "q": "羅馬旅行日記謎題：四人各選一項體驗，不能重複。小安選繪畫；小樂選夕照；小米選點心。哪一份名單符合所有線索？",
+      "q": "羅馬旅行日記謎題：可選的行程卡有運河、繪畫、點心、夕照。四人各選一張，不能重複。小安選繪畫；小樂選夕照；小米選點心。哪一份名單符合所有線索？",
       "options": [
         "小安：繪畫／小樂：夕照／小米：點心／小禾：運河",
         "小安：夕照／小樂：運河／小米：點心／小禾：繪畫",
@@ -13467,7 +13467,7 @@
         "reviewRequired": false
       },
       "kind": null,
-      "q": "佛羅倫斯旅行日記謎題：四人各選一項體驗，不能重複。小安選茶點；小樂選演奏；小米選庭院。哪一份名單符合所有線索？",
+      "q": "佛羅倫斯旅行日記謎題：可選的行程卡有庭院、染布、茶點、演奏。四人各選一張，不能重複。小安選茶點；小樂選演奏；小米選庭院。哪一份名單符合所有線索？",
       "options": [
         "小安：茶點／小樂：演奏／小米：庭院／小禾：染布",
         "小安：演奏／小樂：染布／小米：庭院／小禾：茶點",
@@ -13713,7 +13713,7 @@
         "reviewRequired": false
       },
       "kind": null,
-      "q": "巴塞隆納旅行日記謎題：四人各選一項體驗，不能重複。小安選夜景；小樂選花園；小米選展館。哪一份名單符合所有線索？",
+      "q": "巴塞隆納旅行日記謎題：可選的行程卡有市集、花園、展館、夜景。四人各選一張，不能重複。小安選夜景；小樂選花園；小米選展館。哪一份名單符合所有線索？",
       "options": [
         "小安：夜景／小樂：花園／小米：展館／小禾：市集",
         "小安：夜景／小樂：花園／小米：市集／小禾：展館",
@@ -13963,7 +13963,7 @@
         "reviewRequired": false
       },
       "kind": null,
-      "q": "馬德里旅行日記謎題：四人各選一項體驗，不能重複。小安選老街；小樂選茶屋；小米選陶藝。哪一份名單符合所有線索？",
+      "q": "馬德里旅行日記謎題：可選的行程卡有老街、陶藝、茶屋、劇場。四人各選一張，不能重複。小安選老街；小樂選茶屋；小米選陶藝。哪一份名單符合所有線索？",
       "options": [
         "小安：老街／小樂：茶屋／小米：陶藝／小禾：劇場",
         "小安：劇場／小樂：茶屋／小米：老街／小禾：陶藝",
@@ -14215,7 +14215,7 @@
         "reviewRequired": false
       },
       "kind": null,
-      "q": "阿姆斯特丹旅行日記謎題：四人各選一項體驗，不能重複。小安選咖啡；小樂選碼頭；小米選音樂。哪一份名單符合所有線索？",
+      "q": "阿姆斯特丹旅行日記謎題：可選的行程卡有碼頭、咖啡、藝廊、音樂。四人各選一張，不能重複。小安選咖啡；小樂選碼頭；小米選音樂。哪一份名單符合所有線索？",
       "options": [
         "小安：咖啡／小樂：碼頭／小米：音樂／小禾：藝廊",
         "小安：音樂／小樂：藝廊／小米：咖啡／小禾：碼頭",
@@ -14467,7 +14467,7 @@
         "reviewRequired": false
       },
       "kind": null,
-      "q": "哥本哈根旅行日記謎題：四人各選一項體驗，不能重複。小安選公園；小樂選早餐；小米選手作。哪一份名單符合所有線索？",
+      "q": "哥本哈根旅行日記謎題：可選的行程卡有早餐、手作、公園、燈會。四人各選一張，不能重複。小安選公園；小樂選早餐；小米選手作。哪一份名單符合所有線索？",
       "options": [
         "小安：公園／小樂：早餐／小米：手作／小禾：燈會",
         "小安：早餐／小樂：手作／小米：公園／小禾：燈會",
@@ -14719,7 +14719,7 @@
         "reviewRequired": false
       },
       "kind": null,
-      "q": "赫爾辛基旅行日記謎題：四人各選一項體驗，不能重複。小安選餐館；小樂選表演；小米選書店。哪一份名單符合所有線索？",
+      "q": "赫爾辛基旅行日記謎題：可選的行程卡有散步、書店、餐館、表演。四人各選一張，不能重複。小安選餐館；小樂選表演；小米選書店。哪一份名單符合所有線索？",
       "options": [
         "小安：餐館／小樂：表演／小米：書店／小禾：散步",
         "小安：散步／小樂：書店／小米：表演／小禾：餐館",
@@ -14971,7 +14971,7 @@
         "reviewRequired": false
       },
       "kind": null,
-      "q": "斯德哥爾摩旅行日記謎題：四人各選一項體驗，不能重複。小安選夕照；小樂選點心；小米選運河。哪一份名單符合所有線索？",
+      "q": "斯德哥爾摩旅行日記謎題：可選的行程卡有運河、繪畫、點心、夕照。四人各選一張，不能重複。小安選夕照；小樂選點心；小米選運河。哪一份名單符合所有線索？",
       "options": [
         "小安：夕照／小樂：點心／小米：運河／小禾：繪畫",
         "小安：運河／小樂：點心／小米：繪畫／小禾：夕照",
@@ -15250,7 +15250,7 @@
         "reviewRequired": false
       },
       "kind": null,
-      "q": "京都旅行日記謎題：四人各選一項體驗，不能重複。小安選散步；小樂選表演；小米選書店。哪一份名單符合所有線索？",
+      "q": "京都旅行日記謎題：可選的行程卡有散步、書店、餐館、表演。四人各選一張，不能重複。小安選散步；小樂選表演；小米選書店。哪一份名單符合所有線索？",
       "options": [
         "小安：散步／小樂：表演／小米：書店／小禾：餐館",
         "小安：散步／小樂：餐館／小米：書店／小禾：表演",
@@ -15538,7 +15538,7 @@
         "reviewRequired": false
       },
       "kind": null,
-      "q": "巴黎旅行日記謎題：四人各選一項體驗，不能重複。小安選繪畫；小樂選點心；小米選夕照。哪一份名單符合所有線索？",
+      "q": "巴黎旅行日記謎題：可選的行程卡有運河、繪畫、點心、夕照。四人各選一張，不能重複。小安選繪畫；小樂選點心；小米選夕照。哪一份名單符合所有線索？",
       "options": [
         "小安：繪畫／小樂：點心／小米：夕照／小禾：運河",
         "小安：運河／小樂：點心／小米：夕照／小禾：繪畫",
@@ -15826,7 +15826,7 @@
         "reviewRequired": false
       },
       "kind": null,
-      "q": "里斯本旅行日記謎題：四人各選一項體驗，不能重複。小安選茶點；小樂選染布；小米選庭院。哪一份名單符合所有線索？",
+      "q": "里斯本旅行日記謎題：可選的行程卡有庭院、染布、茶點、演奏。四人各選一張，不能重複。小安選茶點；小樂選染布；小米選庭院。哪一份名單符合所有線索？",
       "options": [
         "小安：茶點／小樂：染布／小米：庭院／小禾：演奏",
         "小安：庭院／小樂：演奏／小米：染布／小禾：茶點",
@@ -16114,7 +16114,7 @@
         "reviewRequired": false
       },
       "kind": null,
-      "q": "伊斯坦堡旅行日記謎題：四人各選一項體驗，不能重複。小安選夜景；小樂選市集；小米選展館。哪一份名單符合所有線索？",
+      "q": "伊斯坦堡旅行日記謎題：可選的行程卡有市集、花園、展館、夜景。四人各選一張，不能重複。小安選夜景；小樂選市集；小米選展館。哪一份名單符合所有線索？",
       "options": [
         "小安：夜景／小樂：市集／小米：展館／小禾：花園",
         "小安：市集／小樂：夜景／小米：展館／小禾：花園",
@@ -16402,7 +16402,7 @@
         "reviewRequired": false
       },
       "kind": null,
-      "q": "布拉格旅行日記謎題：四人各選一項體驗，不能重複。小安選老街；小樂選陶藝；小米選茶屋。哪一份名單符合所有線索？",
+      "q": "布拉格旅行日記謎題：可選的行程卡有老街、陶藝、茶屋、劇場。四人各選一張，不能重複。小安選老街；小樂選陶藝；小米選茶屋。哪一份名單符合所有線索？",
       "options": [
         "小安：老街／小樂：陶藝／小米：茶屋／小禾：劇場",
         "小安：陶藝／小樂：老街／小米：劇場／小禾：茶屋",
@@ -16690,7 +16690,7 @@
         "reviewRequired": false
       },
       "kind": null,
-      "q": "首爾旅行日記謎題：四人各選一項體驗，不能重複。小安選碼頭；小樂選音樂；小米選藝廊。哪一份名單符合所有線索？",
+      "q": "首爾旅行日記謎題：可選的行程卡有碼頭、咖啡、藝廊、音樂。四人各選一張，不能重複。小安選碼頭；小樂選音樂；小米選藝廊。哪一份名單符合所有線索？",
       "options": [
         "小安：碼頭／小樂：音樂／小米：藝廊／小禾：咖啡",
         "小安：咖啡／小樂：藝廊／小米：碼頭／小禾：音樂",
@@ -16978,7 +16978,7 @@
         "reviewRequired": false
       },
       "kind": null,
-      "q": "吉隆坡旅行日記謎題：四人各選一項體驗，不能重複。小安選手作；小樂選燈會；小米選早餐。哪一份名單符合所有線索？",
+      "q": "吉隆坡旅行日記謎題：可選的行程卡有早餐、手作、公園、燈會。四人各選一張，不能重複。小安選手作；小樂選燈會；小米選早餐。哪一份名單符合所有線索？",
       "options": [
         "小安：手作／小樂：燈會／小米：早餐／小禾：公園",
         "小安：手作／小樂：公園／小米：早餐／小禾：燈會",
@@ -17266,7 +17266,7 @@
         "reviewRequired": false
       },
       "kind": null,
-      "q": "新加坡旅行日記謎題：四人各選一項體驗，不能重複。小安選餐館；小樂選書店；小米選表演。哪一份名單符合所有線索？",
+      "q": "新加坡旅行日記謎題：可選的行程卡有散步、書店、餐館、表演。四人各選一張，不能重複。小安選餐館；小樂選書店；小米選表演。哪一份名單符合所有線索？",
       "options": [
         "小安：餐館／小樂：書店／小米：表演／小禾：散步",
         "小安：書店／小樂：餐館／小米：表演／小禾：散步",
@@ -17554,7 +17554,7 @@
         "reviewRequired": false
       },
       "kind": null,
-      "q": "墨西哥城旅行日記謎題：四人各選一項體驗，不能重複。小安選夕照；小樂選繪畫；小米選運河。哪一份名單符合所有線索？",
+      "q": "墨西哥城旅行日記謎題：可選的行程卡有運河、繪畫、點心、夕照。四人各選一張，不能重複。小安選夕照；小樂選繪畫；小米選運河。哪一份名單符合所有線索？",
       "options": [
         "小安：夕照／小樂：繪畫／小米：運河／小禾：點心",
         "小安：繪畫／小樂：夕照／小米：運河／小禾：點心",
@@ -17842,7 +17842,7 @@
         "reviewRequired": false
       },
       "kind": null,
-      "q": "布宜諾斯艾利斯旅行日記謎題：四人各選一項體驗，不能重複。小安選庭院；小樂選染布；小米選演奏。哪一份名單符合所有線索？",
+      "q": "布宜諾斯艾利斯旅行日記謎題：可選的行程卡有庭院、染布、茶點、演奏。四人各選一張，不能重複。小安選庭院；小樂選染布；小米選演奏。哪一份名單符合所有線索？",
       "options": [
         "小安：庭院／小樂：染布／小米：演奏／小禾：茶點",
         "小安：茶點／小樂：庭院／小米：染布／小禾：演奏",
@@ -18130,7 +18130,7 @@
         "reviewRequired": false
       },
       "kind": null,
-      "q": "雪梨旅行日記謎題：四人各選一項體驗，不能重複。小安選花園；小樂選市集；小米選展館。哪一份名單符合所有線索？",
+      "q": "雪梨旅行日記謎題：可選的行程卡有市集、花園、展館、夜景。四人各選一張，不能重複。小安選花園；小樂選市集；小米選展館。哪一份名單符合所有線索？",
       "options": [
         "小安：花園／小樂：市集／小米：展館／小禾：夜景",
         "小安：展館／小樂：市集／小米：夜景／小禾：花園",
@@ -18412,7 +18412,7 @@
         "reviewRequired": false
       },
       "kind": null,
-      "q": "溫哥華旅行日記謎題：四人各選一項體驗，不能重複。小安選陶藝；小樂選劇場；小米選茶屋。哪一份名單符合所有線索？",
+      "q": "溫哥華旅行日記謎題：可選的行程卡有老街、陶藝、茶屋、劇場。四人各選一張，不能重複。小安選陶藝；小樂選劇場；小米選茶屋。哪一份名單符合所有線索？",
       "options": [
         "小安：陶藝／小樂：劇場／小米：茶屋／小禾：老街",
         "小安：茶屋／小樂：陶藝／小米：老街／小禾：劇場",
@@ -18698,7 +18698,7 @@
         "reviewRequired": false
       },
       "kind": null,
-      "q": "曼谷旅行日記謎題：四人各選一項體驗，不能重複。小安選藝廊；小樂選音樂；小米選碼頭。哪一份名單符合所有線索？",
+      "q": "曼谷旅行日記謎題：可選的行程卡有碼頭、咖啡、藝廊、音樂。四人各選一張，不能重複。小安選藝廊；小樂選音樂；小米選碼頭。哪一份名單符合所有線索？",
       "options": [
         "小安：藝廊／小樂：音樂／小米：碼頭／小禾：咖啡",
         "小安：藝廊／小樂：咖啡／小米：碼頭／小禾：音樂",
@@ -18980,7 +18980,7 @@
         "reviewRequired": false
       },
       "kind": null,
-      "q": "清邁旅行日記謎題：四人各選一項體驗，不能重複。小安選燈會；小樂選手作；小米選公園。哪一份名單符合所有線索？",
+      "q": "清邁旅行日記謎題：可選的行程卡有早餐、手作、公園、燈會。四人各選一張，不能重複。小安選燈會；小樂選手作；小米選公園。哪一份名單符合所有線索？",
       "options": [
         "小安：燈會／小樂：手作／小米：公園／小禾：早餐",
         "小安：公園／小樂：手作／小米：燈會／小禾：早餐",
@@ -19266,7 +19266,7 @@
         "reviewRequired": false
       },
       "kind": null,
-      "q": "河內旅行日記謎題：四人各選一項體驗，不能重複。小安選散步；小樂選餐館；小米選書店。哪一份名單符合所有線索？",
+      "q": "河內旅行日記謎題：可選的行程卡有散步、書店、餐館、表演。四人各選一張，不能重複。小安選散步；小樂選餐館；小米選書店。哪一份名單符合所有線索？",
       "options": [
         "小安：散步／小樂：餐館／小米：書店／小禾：表演",
         "小安：餐館／小樂：表演／小米：書店／小禾：散步",
@@ -19554,7 +19554,7 @@
         "reviewRequired": false
       },
       "kind": null,
-      "q": "會安旅行日記謎題：四人各選一項體驗，不能重複。小安選繪畫；小樂選運河；小米選夕照。哪一份名單符合所有線索？",
+      "q": "會安旅行日記謎題：可選的行程卡有運河、繪畫、點心、夕照。四人各選一張，不能重複。小安選繪畫；小樂選運河；小米選夕照。哪一份名單符合所有線索？",
       "options": [
         "小安：繪畫／小樂：運河／小米：夕照／小禾：點心",
         "小安：夕照／小樂：運河／小米：繪畫／小禾：點心",
@@ -19842,7 +19842,7 @@
         "reviewRequired": false
       },
       "kind": null,
-      "q": "羅馬旅行日記謎題：四人各選一項體驗，不能重複。小安選茶點；小樂選庭院；小米選染布。哪一份名單符合所有線索？",
+      "q": "羅馬旅行日記謎題：可選的行程卡有庭院、染布、茶點、演奏。四人各選一張，不能重複。小安選茶點；小樂選庭院；小米選染布。哪一份名單符合所有線索？",
       "options": [
         "小安：茶點／小樂：庭院／小米：染布／小禾：演奏",
         "小安：演奏／小樂：庭院／小米：茶點／小禾：染布",
@@ -20130,7 +20130,7 @@
         "reviewRequired": false
       },
       "kind": null,
-      "q": "佛羅倫斯旅行日記謎題：四人各選一項體驗，不能重複。小安選展館；小樂選夜景；小米選花園。哪一份名單符合所有線索？",
+      "q": "佛羅倫斯旅行日記謎題：可選的行程卡有市集、花園、展館、夜景。四人各選一張，不能重複。小安選展館；小樂選夜景；小米選花園。哪一份名單符合所有線索？",
       "options": [
         "小安：展館／小樂：夜景／小米：花園／小禾：市集",
         "小安：夜景／小樂：花園／小米：市集／小禾：展館",
@@ -20412,7 +20412,7 @@
         "reviewRequired": false
       },
       "kind": null,
-      "q": "巴塞隆納旅行日記謎題：四人各選一項體驗，不能重複。小安選劇場；小樂選茶屋；小米選老街。哪一份名單符合所有線索？",
+      "q": "巴塞隆納旅行日記謎題：可選的行程卡有老街、陶藝、茶屋、劇場。四人各選一張，不能重複。小安選劇場；小樂選茶屋；小米選老街。哪一份名單符合所有線索？",
       "options": [
         "小安：劇場／小樂：茶屋／小米：老街／小禾：陶藝",
         "小安：劇場／小樂：陶藝／小米：老街／小禾：茶屋",
@@ -20698,7 +20698,7 @@
         "reviewRequired": false
       },
       "kind": null,
-      "q": "馬德里旅行日記謎題：四人各選一項體驗，不能重複。小安選碼頭；小樂選藝廊；小米選音樂。哪一份名單符合所有線索？",
+      "q": "馬德里旅行日記謎題：可選的行程卡有碼頭、咖啡、藝廊、音樂。四人各選一張，不能重複。小安選碼頭；小樂選藝廊；小米選音樂。哪一份名單符合所有線索？",
       "options": [
         "小安：碼頭／小樂：藝廊／小米：音樂／小禾：咖啡",
         "小安：音樂／小樂：藝廊／小米：碼頭／小禾：咖啡",
@@ -20986,7 +20986,7 @@
         "reviewRequired": false
       },
       "kind": null,
-      "q": "阿姆斯特丹旅行日記謎題：四人各選一項體驗，不能重複。小安選手作；小樂選公園；小米選早餐。哪一份名單符合所有線索？",
+      "q": "阿姆斯特丹旅行日記謎題：可選的行程卡有早餐、手作、公園、燈會。四人各選一張，不能重複。小安選手作；小樂選公園；小米選早餐。哪一份名單符合所有線索？",
       "options": [
         "小安：手作／小樂：公園／小米：早餐／小禾：燈會",
         "小安：燈會／小樂：公園／小米：手作／小禾：早餐",
@@ -21274,7 +21274,7 @@
         "reviewRequired": false
       },
       "kind": null,
-      "q": "哥本哈根旅行日記謎題：四人各選一項體驗，不能重複。小安選餐館；小樂選散步；小米選表演。哪一份名單符合所有線索？",
+      "q": "哥本哈根旅行日記謎題：可選的行程卡有散步、書店、餐館、表演。四人各選一張，不能重複。小安選餐館；小樂選散步；小米選表演。哪一份名單符合所有線索？",
       "options": [
         "小安：餐館／小樂：散步／小米：表演／小禾：書店",
         "小安：散步／小樂：書店／小米：餐館／小禾：表演",
@@ -21562,7 +21562,7 @@
         "reviewRequired": false
       },
       "kind": null,
-      "q": "赫爾辛基旅行日記謎題：四人各選一項體驗，不能重複。小安選夕照；小樂選運河；小米選繪畫。哪一份名單符合所有線索？",
+      "q": "赫爾辛基旅行日記謎題：可選的行程卡有運河、繪畫、點心、夕照。四人各選一張，不能重複。小安選夕照；小樂選運河；小米選繪畫。哪一份名單符合所有線索？",
       "options": [
         "小安：夕照／小樂：運河／小米：繪畫／小禾：點心",
         "小安：運河／小樂：繪畫／小米：夕照／小禾：點心",
@@ -21850,7 +21850,7 @@
         "reviewRequired": false
       },
       "kind": null,
-      "q": "斯德哥爾摩旅行日記謎題：四人各選一項體驗，不能重複。小安選演奏；小樂選茶點；小米選染布。哪一份名單符合所有線索？",
+      "q": "斯德哥爾摩旅行日記謎題：可選的行程卡有庭院、染布、茶點、演奏。四人各選一張，不能重複。小安選演奏；小樂選茶點；小米選染布。哪一份名單符合所有線索？",
       "options": [
         "小安：演奏／小樂：茶點／小米：染布／小禾：庭院",
         "小安：庭院／小樂：茶點／小米：染布／小禾：演奏",
@@ -22138,7 +22138,7 @@
         "reviewRequired": false
       },
       "kind": null,
-      "q": "雷克雅維克旅行日記謎題：四人各選一項體驗，不能重複。小安選市集；小樂選夜景；小米選花園。哪一份名單符合所有線索？",
+      "q": "雷克雅維克旅行日記謎題：可選的行程卡有市集、花園、展館、夜景。四人各選一張，不能重複。小安選市集；小樂選夜景；小米選花園。哪一份名單符合所有線索？",
       "options": [
         "小安：市集／小樂：夜景／小米：花園／小禾：展館",
         "小安：市集／小樂：展館／小米：夜景／小禾：花園",
@@ -22426,7 +22426,7 @@
         "reviewRequired": false
       },
       "kind": null,
-      "q": "開羅旅行日記謎題：四人各選一項體驗，不能重複。小安選陶藝；小樂選茶屋；小米選劇場。哪一份名單符合所有線索？",
+      "q": "開羅旅行日記謎題：可選的行程卡有老街、陶藝、茶屋、劇場。四人各選一張，不能重複。小安選陶藝；小樂選茶屋；小米選劇場。哪一份名單符合所有線索？",
       "options": [
         "小安：陶藝／小樂：茶屋／小米：劇場／小禾：老街",
         "小安：老街／小樂：劇場／小米：陶藝／小禾：茶屋",
@@ -22714,7 +22714,7 @@
         "reviewRequired": false
       },
       "kind": null,
-      "q": "馬拉喀什旅行日記謎題：四人各選一項體驗，不能重複。小安選藝廊；小樂選咖啡；小米選碼頭。哪一份名單符合所有線索？",
+      "q": "馬拉喀什旅行日記謎題：可選的行程卡有碼頭、咖啡、藝廊、音樂。四人各選一張，不能重複。小安選藝廊；小樂選咖啡；小米選碼頭。哪一份名單符合所有線索？",
       "options": [
         "小安：藝廊／小樂：咖啡／小米：碼頭／小禾：音樂",
         "小安：碼頭／小樂：音樂／小米：藝廊／小禾：咖啡",
@@ -22996,7 +22996,7 @@
         "reviewRequired": false
       },
       "kind": null,
-      "q": "奈洛比旅行日記謎題：四人各選一項體驗，不能重複。小安選燈會；小樂選早餐；小米選公園。哪一份名單符合所有線索？",
+      "q": "奈洛比旅行日記謎題：可選的行程卡有早餐、手作、公園、燈會。四人各選一張，不能重複。小安選燈會；小樂選早餐；小米選公園。哪一份名單符合所有線索？",
       "options": [
         "小安：燈會／小樂：早餐／小米：公園／小禾：手作",
         "小安：手作／小樂：早餐／小米：公園／小禾：燈會",
@@ -23276,7 +23276,7 @@
         "reviewRequired": false
       },
       "kind": null,
-      "q": "東京旅行日記謎題：四人各選一項體驗，不能重複。小安選散步；小樂選書店；小米選餐館。哪一份名單符合所有線索？",
+      "q": "東京旅行日記謎題：可選的行程卡有散步、書店、餐館、表演。四人各選一張，不能重複。小安選散步；小樂選書店；小米選餐館。哪一份名單符合所有線索？",
       "options": [
         "小安：散步／小樂：書店／小米：餐館／小禾：表演",
         "小安：書店／小樂：餐館／小米：散步／小禾：表演",
@@ -23562,7 +23562,7 @@
         "reviewRequired": false
       },
       "kind": null,
-      "q": "倫敦旅行日記謎題：四人各選一項體驗，不能重複。小安選運河；小樂選夕照；小米選點心。哪一份名單符合所有線索？",
+      "q": "倫敦旅行日記謎題：可選的行程卡有運河、繪畫、點心、夕照。四人各選一張，不能重複。小安選運河；小樂選夕照；小米選點心。哪一份名單符合所有線索？",
       "options": [
         "小安：運河／小樂：夕照／小米：點心／小禾：繪畫",
         "小安：繪畫／小樂：點心／小米：夕照／小禾：運河",
@@ -23850,7 +23850,7 @@
         "reviewRequired": false
       },
       "kind": null,
-      "q": "柏林旅行日記謎題：四人各選一項體驗，不能重複。小安選染布；小樂選演奏；小米選庭院。哪一份名單符合所有線索？",
+      "q": "柏林旅行日記謎題：可選的行程卡有庭院、染布、茶點、演奏。四人各選一張，不能重複。小安選染布；小樂選演奏；小米選庭院。哪一份名單符合所有線索？",
       "options": [
         "小安：染布／小樂：演奏／小米：庭院／小禾：茶點",
         "小安：染布／小樂：茶點／小米：演奏／小禾：庭院",
@@ -24138,7 +24138,7 @@
         "reviewRequired": false
       },
       "kind": null,
-      "q": "維也納旅行日記謎題：四人各選一項體驗，不能重複。小安選展館；小樂選花園；小米選夜景。哪一份名單符合所有線索？",
+      "q": "維也納旅行日記謎題：可選的行程卡有市集、花園、展館、夜景。四人各選一張，不能重複。小安選展館；小樂選花園；小米選夜景。哪一份名單符合所有線索？",
       "options": [
         "小安：展館／小樂：花園／小米：夜景／小禾：市集",
         "小安：花園／小樂：夜景／小米：市集／小禾：展館",
@@ -24408,7 +24408,7 @@
         "reviewRequired": false
       },
       "kind": null,
-      "q": "京都旅行日記謎題：四人各選一項體驗，不能重複。小安選運河；小樂沒選運河；小樂沒選點心；小米沒選運河；小米沒選繪畫。哪一份名單符合所有線索？",
+      "q": "京都旅行日記謎題：可選的行程卡有運河、繪畫、點心、夕照。四人各選一張，不能重複。小安選運河；小樂沒選運河；小樂沒選點心；小米沒選運河；小米沒選繪畫。哪一份名單符合所有線索？",
       "options": [
         "小安：運河／小樂：繪畫／小米：點心／小禾：夕照",
         "小安：運河／小樂：夕照／小米：繪畫／小禾：點心",
@@ -24672,7 +24672,7 @@
         "reviewRequired": false
       },
       "kind": null,
-      "q": "巴黎旅行日記謎題：四人各選一項體驗，不能重複。小安選染布；小樂沒選染布；小樂沒選庭院；小米沒選染布；小米沒選茶點。哪一份名單符合所有線索？",
+      "q": "巴黎旅行日記謎題：可選的行程卡有庭院、染布、茶點、演奏。四人各選一張，不能重複。小安選染布；小樂沒選染布；小樂沒選庭院；小米沒選染布；小米沒選茶點。哪一份名單符合所有線索？",
       "options": [
         "小安：染布／小樂：茶點／小米：庭院／小禾：演奏",
         "小安：庭院／小樂：茶點／小米：演奏／小禾：染布",
@@ -24936,7 +24936,7 @@
         "reviewRequired": false
       },
       "kind": null,
-      "q": "里斯本旅行日記謎題：四人各選一項體驗，不能重複。小安選展館；小樂沒選展館；小樂沒選夜景；小米沒選展館；小米沒選市集。哪一份名單符合所有線索？",
+      "q": "里斯本旅行日記謎題：可選的行程卡有市集、花園、展館、夜景。四人各選一張，不能重複。小安選展館；小樂沒選展館；小樂沒選夜景；小米沒選展館；小米沒選市集。哪一份名單符合所有線索？",
       "options": [
         "小安：展館／小樂：市集／小米：花園／小禾：夜景",
         "小安：市集／小樂：夜景／小米：花園／小禾：展館",
@@ -25200,7 +25200,7 @@
         "reviewRequired": false
       },
       "kind": null,
-      "q": "伊斯坦堡旅行日記謎題：四人各選一項體驗，不能重複。小安選劇場；小樂沒選劇場；小樂沒選老街；小米沒選劇場；小米沒選茶屋。哪一份名單符合所有線索？",
+      "q": "伊斯坦堡旅行日記謎題：可選的行程卡有老街、陶藝、茶屋、劇場。四人各選一張，不能重複。小安選劇場；小樂沒選劇場；小樂沒選老街；小米沒選劇場；小米沒選茶屋。哪一份名單符合所有線索？",
       "options": [
         "小安：劇場／小樂：陶藝／小米：老街／小禾：茶屋",
         "小安：老街／小樂：劇場／小米：茶屋／小禾：陶藝",
@@ -25464,7 +25464,7 @@
         "reviewRequired": false
       },
       "kind": null,
-      "q": "布拉格旅行日記謎題：四人各選一項體驗，不能重複。小安選碼頭；小樂沒選碼頭；小樂沒選音樂；小米沒選碼頭；小米沒選藝廊。哪一份名單符合所有線索？",
+      "q": "布拉格旅行日記謎題：可選的行程卡有碼頭、咖啡、藝廊、音樂。四人各選一張，不能重複。小安選碼頭；小樂沒選碼頭；小樂沒選音樂；小米沒選碼頭；小米沒選藝廊。哪一份名單符合所有線索？",
       "options": [
         "小安：碼頭／小樂：咖啡／小米：音樂／小禾：藝廊",
         "小安：咖啡／小樂：藝廊／小米：音樂／小禾：碼頭",
@@ -25728,7 +25728,7 @@
         "reviewRequired": false
       },
       "kind": null,
-      "q": "首爾旅行日記謎題：四人各選一項體驗，不能重複。小安選手作；小樂沒選手作；小樂沒選公園；小米沒選手作；小米沒選燈會。哪一份名單符合所有線索？",
+      "q": "首爾旅行日記謎題：可選的行程卡有早餐、手作、公園、燈會。四人各選一張，不能重複。小安選手作；小樂沒選手作；小樂沒選公園；小米沒選手作；小米沒選燈會。哪一份名單符合所有線索？",
       "options": [
         "小安：手作／小樂：早餐／小米：公園／小禾：燈會",
         "小安：手作／小樂：公園／小米：早餐／小禾：燈會",
@@ -25992,7 +25992,7 @@
         "reviewRequired": false
       },
       "kind": null,
-      "q": "吉隆坡旅行日記謎題：四人各選一項體驗，不能重複。小安選書店；小樂沒選書店；小樂沒選餐館；小米沒選書店；小米沒選散步。哪一份名單符合所有線索？",
+      "q": "吉隆坡旅行日記謎題：可選的行程卡有散步、書店、餐館、表演。四人各選一張，不能重複。小安選書店；小樂沒選書店；小樂沒選餐館；小米沒選書店；小米沒選散步。哪一份名單符合所有線索？",
       "options": [
         "小安：書店／小樂：散步／小米：餐館／小禾：表演",
         "小安：書店／小樂：表演／小米：散步／小禾：餐館",
@@ -26256,7 +26256,7 @@
         "reviewRequired": false
       },
       "kind": null,
-      "q": "新加坡旅行日記謎題：四人各選一項體驗，不能重複。小安選點心；小樂沒選點心；小樂沒選運河；小米沒選點心；小米沒選繪畫。哪一份名單符合所有線索？",
+      "q": "新加坡旅行日記謎題：可選的行程卡有運河、繪畫、點心、夕照。四人各選一張，不能重複。小安選點心；小樂沒選點心；小樂沒選運河；小米沒選點心；小米沒選繪畫。哪一份名單符合所有線索？",
       "options": [
         "小安：點心／小樂：繪畫／小米：運河／小禾：夕照",
         "小安：繪畫／小樂：點心／小米：夕照／小禾：運河",
@@ -26520,7 +26520,7 @@
         "reviewRequired": false
       },
       "kind": null,
-      "q": "墨西哥城旅行日記謎題：四人各選一項體驗，不能重複。小安選演奏；小樂沒選演奏；小樂沒選茶點；小米沒選演奏；小米沒選庭院。哪一份名單符合所有線索？",
+      "q": "墨西哥城旅行日記謎題：可選的行程卡有庭院、染布、茶點、演奏。四人各選一張，不能重複。小安選演奏；小樂沒選演奏；小樂沒選茶點；小米沒選演奏；小米沒選庭院。哪一份名單符合所有線索？",
       "options": [
         "小安：演奏／小樂：庭院／小米：染布／小禾：茶點",
         "小安：染布／小樂：演奏／小米：庭院／小禾：茶點",
@@ -26784,7 +26784,7 @@
         "reviewRequired": false
       },
       "kind": null,
-      "q": "布宜諾斯艾利斯旅行日記謎題：四人各選一項體驗，不能重複。小安選市集；小樂沒選市集；小樂沒選花園；小米沒選市集；小米沒選夜景。哪一份名單符合所有線索？",
+      "q": "布宜諾斯艾利斯旅行日記謎題：可選的行程卡有市集、花園、展館、夜景。四人各選一張，不能重複。小安選市集；小樂沒選市集；小樂沒選花園；小米沒選市集；小米沒選夜景。哪一份名單符合所有線索？",
       "options": [
         "小安：市集／小樂：展館／小米：花園／小禾：夜景",
         "小安：展館／小樂：花園／小米：市集／小禾：夜景",
@@ -27048,7 +27048,7 @@
         "reviewRequired": false
       },
       "kind": null,
-      "q": "雪梨旅行日記謎題：四人各選一項體驗，不能重複。小安選陶藝；小樂沒選陶藝；小樂沒選劇場；小米沒選陶藝；小米沒選茶屋。哪一份名單符合所有線索？",
+      "q": "雪梨旅行日記謎題：可選的行程卡有老街、陶藝、茶屋、劇場。四人各選一張，不能重複。小安選陶藝；小樂沒選陶藝；小樂沒選劇場；小米沒選陶藝；小米沒選茶屋。哪一份名單符合所有線索？",
       "options": [
         "小安：陶藝／小樂：老街／小米：劇場／小禾：茶屋",
         "小安：茶屋／小樂：陶藝／小米：劇場／小禾：老街",
@@ -27306,7 +27306,7 @@
         "reviewRequired": false
       },
       "kind": null,
-      "q": "溫哥華旅行日記謎題：四人各選一項體驗，不能重複。小安選藝廊；小樂沒選藝廊；小樂沒選咖啡；小米沒選藝廊；小米沒選音樂。哪一份名單符合所有線索？",
+      "q": "溫哥華旅行日記謎題：可選的行程卡有碼頭、咖啡、藝廊、音樂。四人各選一張，不能重複。小安選藝廊；小樂沒選藝廊；小樂沒選咖啡；小米沒選藝廊；小米沒選音樂。哪一份名單符合所有線索？",
       "options": [
         "小安：藝廊／小樂：碼頭／小米：咖啡／小禾：音樂",
         "小安：藝廊／小樂：咖啡／小米：碼頭／小禾：音樂",
@@ -27568,7 +27568,7 @@
         "reviewRequired": false
       },
       "kind": null,
-      "q": "曼谷旅行日記謎題：四人各選一項體驗，不能重複。小安選公園；小樂沒選公園；小樂沒選手作；小米沒選公園；小米沒選早餐。哪一份名單符合所有線索？",
+      "q": "曼谷旅行日記謎題：可選的行程卡有早餐、手作、公園、燈會。四人各選一張，不能重複。小安選公園；小樂沒選公園；小樂沒選手作；小米沒選公園；小米沒選早餐。哪一份名單符合所有線索？",
       "options": [
         "小安：公園／小樂：早餐／小米：手作／小禾：燈會",
         "小安：公園／小樂：燈會／小米：早餐／小禾：手作",
@@ -27826,7 +27826,7 @@
         "reviewRequired": false
       },
       "kind": null,
-      "q": "清邁旅行日記謎題：四人各選一項體驗，不能重複。小安選表演；小樂沒選表演；小樂沒選散步；小米沒選表演；小米沒選書店。哪一份名單符合所有線索？",
+      "q": "清邁旅行日記謎題：可選的行程卡有散步、書店、餐館、表演。四人各選一張，不能重複。小安選表演；小樂沒選表演；小樂沒選散步；小米沒選表演；小米沒選書店。哪一份名單符合所有線索？",
       "options": [
         "小安：表演／小樂：書店／小米：散步／小禾：餐館",
         "小安：餐館／小樂：書店／小米：表演／小禾：散步",
@@ -28088,7 +28088,7 @@
         "reviewRequired": false
       },
       "kind": null,
-      "q": "河內旅行日記謎題：四人各選一項體驗，不能重複。小安選運河；小樂沒選運河；小樂沒選夕照；小米沒選運河；小米沒選繪畫。哪一份名單符合所有線索？",
+      "q": "河內旅行日記謎題：可選的行程卡有運河、繪畫、點心、夕照。四人各選一張，不能重複。小安選運河；小樂沒選運河；小樂沒選夕照；小米沒選運河；小米沒選繪畫。哪一份名單符合所有線索？",
       "options": [
         "小安：運河／小樂：繪畫／小米：點心／小禾：夕照",
         "小安：夕照／小樂：運河／小米：點心／小禾：繪畫",
@@ -28352,7 +28352,7 @@
         "reviewRequired": false
       },
       "kind": null,
-      "q": "會安旅行日記謎題：四人各選一項體驗，不能重複。小安選染布；小樂沒選染布；小樂沒選庭院；小米沒選染布；小米沒選演奏。哪一份名單符合所有線索？",
+      "q": "會安旅行日記謎題：可選的行程卡有庭院、染布、茶點、演奏。四人各選一張，不能重複。小安選染布；小樂沒選染布；小樂沒選庭院；小米沒選染布；小米沒選演奏。哪一份名單符合所有線索？",
       "options": [
         "小安：染布／小樂：茶點／小米：庭院／小禾：演奏",
         "小安：演奏／小樂：染布／小米：庭院／小禾：茶點",
@@ -28616,7 +28616,7 @@
         "reviewRequired": false
       },
       "kind": null,
-      "q": "羅馬旅行日記謎題：四人各選一項體驗，不能重複。小安選展館；小樂沒選展館；小樂沒選夜景；小米沒選展館；小米沒選花園。哪一份名單符合所有線索？",
+      "q": "羅馬旅行日記謎題：可選的行程卡有市集、花園、展館、夜景。四人各選一張，不能重複。小安選展館；小樂沒選展館；小樂沒選夜景；小米沒選展館；小米沒選花園。哪一份名單符合所有線索？",
       "options": [
         "小安：展館／小樂：市集／小米：夜景／小禾：花園",
         "小安：夜景／小樂：花園／小米：展館／小禾：市集",
@@ -28880,7 +28880,7 @@
         "reviewRequired": false
       },
       "kind": null,
-      "q": "佛羅倫斯旅行日記謎題：四人各選一項體驗，不能重複。小安選劇場；小樂沒選劇場；小樂沒選陶藝；小米沒選劇場；小米沒選茶屋。哪一份名單符合所有線索？",
+      "q": "佛羅倫斯旅行日記謎題：可選的行程卡有老街、陶藝、茶屋、劇場。四人各選一張，不能重複。小安選劇場；小樂沒選劇場；小樂沒選陶藝；小米沒選劇場；小米沒選茶屋。哪一份名單符合所有線索？",
       "options": [
         "小安：劇場／小樂：老街／小米：陶藝／小禾：茶屋",
         "小安：劇場／小樂：陶藝／小米：老街／小禾：茶屋",
@@ -29138,7 +29138,7 @@
         "reviewRequired": false
       },
       "kind": null,
-      "q": "巴塞隆納旅行日記謎題：四人各選一項體驗，不能重複。小安選音樂；小樂沒選音樂；小樂沒選咖啡；小米沒選音樂；小米沒選碼頭。哪一份名單符合所有線索？",
+      "q": "巴塞隆納旅行日記謎題：可選的行程卡有碼頭、咖啡、藝廊、音樂。四人各選一張，不能重複。小安選音樂；小樂沒選音樂；小樂沒選咖啡；小米沒選音樂；小米沒選碼頭。哪一份名單符合所有線索？",
       "options": [
         "小安：音樂／小樂：碼頭／小米：咖啡／小禾：藝廊",
         "小安：音樂／小樂：藝廊／小米：碼頭／小禾：咖啡",
@@ -29400,7 +29400,7 @@
         "reviewRequired": false
       },
       "kind": null,
-      "q": "馬德里旅行日記謎題：四人各選一項體驗，不能重複。小安選早餐；小樂沒選早餐；小樂沒選手作；小米沒選早餐；小米沒選公園。哪一份名單符合所有線索？",
+      "q": "馬德里旅行日記謎題：可選的行程卡有早餐、手作、公園、燈會。四人各選一張，不能重複。小安選早餐；小樂沒選早餐；小樂沒選手作；小米沒選早餐；小米沒選公園。哪一份名單符合所有線索？",
       "options": [
         "小安：早餐／小樂：公園／小米：手作／小禾：燈會",
         "小安：早餐／小樂：手作／小米：公園／小禾：燈會",
@@ -29664,7 +29664,7 @@
         "reviewRequired": false
       },
       "kind": null,
-      "q": "阿姆斯特丹旅行日記謎題：四人各選一項體驗，不能重複。小安選書店；小樂沒選書店；小樂沒選表演；小米沒選書店；小米沒選散步。哪一份名單符合所有線索？",
+      "q": "阿姆斯特丹旅行日記謎題：可選的行程卡有散步、書店、餐館、表演。四人各選一張，不能重複。小安選書店；小樂沒選書店；小樂沒選表演；小米沒選書店；小米沒選散步。哪一份名單符合所有線索？",
       "options": [
         "小安：書店／小樂：散步／小米：餐館／小禾：表演",
         "小安：散步／小樂：書店／小米：表演／小禾：餐館",
@@ -29928,7 +29928,7 @@
         "reviewRequired": false
       },
       "kind": null,
-      "q": "哥本哈根旅行日記謎題：四人各選一項體驗，不能重複。小安選點心；小樂沒選點心；小樂沒選運河；小米沒選點心；小米沒選夕照。哪一份名單符合所有線索？",
+      "q": "哥本哈根旅行日記謎題：可選的行程卡有運河、繪畫、點心、夕照。四人各選一張，不能重複。小安選點心；小樂沒選點心；小樂沒選運河；小米沒選點心；小米沒選夕照。哪一份名單符合所有線索？",
       "options": [
         "小安：點心／小樂：繪畫／小米：運河／小禾：夕照",
         "小安：運河／小樂：點心／小米：繪畫／小禾：夕照",
@@ -30192,7 +30192,7 @@
         "reviewRequired": false
       },
       "kind": null,
-      "q": "赫爾辛基旅行日記謎題：四人各選一項體驗，不能重複。小安選演奏；小樂沒選演奏；小樂沒選茶點；小米沒選演奏；小米沒選染布。哪一份名單符合所有線索？",
+      "q": "赫爾辛基旅行日記謎題：可選的行程卡有庭院、染布、茶點、演奏。四人各選一張，不能重複。小安選演奏；小樂沒選演奏；小樂沒選茶點；小米沒選演奏；小米沒選染布。哪一份名單符合所有線索？",
       "options": [
         "小安：演奏／小樂：庭院／小米：茶點／小禾：染布",
         "小安：庭院／小樂：茶點／小米：演奏／小禾：染布",
@@ -30456,7 +30456,7 @@
         "reviewRequired": false
       },
       "kind": null,
-      "q": "斯德哥爾摩旅行日記謎題：四人各選一項體驗，不能重複。小安選市集；小樂沒選市集；小樂沒選展館；小米沒選市集；小米沒選夜景。哪一份名單符合所有線索？",
+      "q": "斯德哥爾摩旅行日記謎題：可選的行程卡有市集、花園、展館、夜景。四人各選一張，不能重複。小安選市集；小樂沒選市集；小樂沒選展館；小米沒選市集；小米沒選夜景。哪一份名單符合所有線索？",
       "options": [
         "小安：市集／小樂：花園／小米：展館／小禾：夜景",
         "小安：花園／小樂：市集／小米：夜景／小禾：展館",
@@ -30720,7 +30720,7 @@
         "reviewRequired": false
       },
       "kind": null,
-      "q": "雷克雅維克旅行日記謎題：四人各選一項體驗，不能重複。小安選老街；小樂沒選老街；小樂沒選茶屋；小米沒選老街；小米沒選陶藝。哪一份名單符合所有線索？",
+      "q": "雷克雅維克旅行日記謎題：可選的行程卡有老街、陶藝、茶屋、劇場。四人各選一張，不能重複。小安選老街；小樂沒選老街；小樂沒選茶屋；小米沒選老街；小米沒選陶藝。哪一份名單符合所有線索？",
       "options": [
         "小安：老街／小樂：陶藝／小米：茶屋／小禾：劇場",
         "小安：陶藝／小樂：茶屋／小米：老街／小禾：劇場",
@@ -30984,7 +30984,7 @@
         "reviewRequired": false
       },
       "kind": null,
-      "q": "開羅旅行日記謎題：四人各選一項體驗，不能重複。小安選咖啡；小樂沒選咖啡；小樂沒選碼頭；小米沒選咖啡；小米沒選藝廊。哪一份名單符合所有線索？",
+      "q": "開羅旅行日記謎題：可選的行程卡有碼頭、咖啡、藝廊、音樂。四人各選一張，不能重複。小安選咖啡；小樂沒選咖啡；小樂沒選碼頭；小米沒選咖啡；小米沒選藝廊。哪一份名單符合所有線索？",
       "options": [
         "小安：咖啡／小樂：藝廊／小米：碼頭／小禾：音樂",
         "小安：咖啡／小樂：碼頭／小米：藝廊／小禾：音樂",
@@ -31248,7 +31248,7 @@
         "reviewRequired": false
       },
       "kind": null,
-      "q": "馬拉喀什旅行日記謎題：四人各選一項體驗，不能重複。小安選公園；小樂沒選公園；小樂沒選燈會；小米沒選公園；小米沒選早餐。哪一份名單符合所有線索？",
+      "q": "馬拉喀什旅行日記謎題：可選的行程卡有早餐、手作、公園、燈會。四人各選一張，不能重複。小安選公園；小樂沒選公園；小樂沒選燈會；小米沒選公園；小米沒選早餐。哪一份名單符合所有線索？",
       "options": [
         "小安：公園／小樂：早餐／小米：手作／小禾：燈會",
         "小安：手作／小樂：早餐／小米：燈會／小禾：公園",
@@ -31506,7 +31506,7 @@
         "reviewRequired": false
       },
       "kind": null,
-      "q": "奈洛比旅行日記謎題：四人各選一項體驗，不能重複。小安選表演；小樂沒選表演；小樂沒選散步；小米沒選表演；小米沒選餐館。哪一份名單符合所有線索？",
+      "q": "奈洛比旅行日記謎題：可選的行程卡有散步、書店、餐館、表演。四人各選一張，不能重複。小安選表演；小樂沒選表演；小樂沒選散步；小米沒選表演；小米沒選餐館。哪一份名單符合所有線索？",
       "options": [
         "小安：表演／小樂：書店／小米：散步／小禾：餐館",
         "小安：書店／小樂：餐館／小米：散步／小禾：表演",
